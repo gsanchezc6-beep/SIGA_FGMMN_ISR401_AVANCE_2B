@@ -1,0 +1,6 @@
+Dimension,Media_Humano,Media_LLM,Estadistico,p_valor,Cohen_d
+Completitud(1-5),3.91,4.12,t=-1.805,0.2129,-1.042
+Ausencia_ambiguedad(1-5),3.61,3.86,t=-4.071,0.0554,-2.35
+Verificabilidad(1-5),3.65,3.87,t=-2.534,0.1268,-1.463
+Correccion_fuente(1-5),4.29,4.49,W=1.000,0.5,-0.91
+Consistencia_interna(1-5),4.15,4.38,t=-9.123,0.0118,-5.267
