@@ -1,0 +1,123 @@
+======================================================================
+TRANSCRIPCIÓN ANONIMIZADA — PROYECTO SIGA (ISR-401)
+Sistema Inteligente de Gestión de Aulas — Equipo FGMMN — UTEQ
+======================================================================
+Identificador de evidencia : EV-10
+Fecha de la sesión         : 2026-07-21
+Técnica de elicitación     : Entrevista semiestructurada
+Modalidad de registro      : Video MP4 H.264 + audio extraído
+Código de participante     : COORD-02
+Perfil del participante    : Coordinación de carrera
+Zona de evidencia          : [P] Pública (material anonimizado)
+Anonimización              : sin nombres propios; los cargos únicos y
+                             los terceros mencionados se sustituyen por
+                             marcadores genéricos entre corchetes.
+======================================================================
+
+Entrevista EV-10
+
+Entrevistador: Hola, buenas tardes. Mi nombre es Sánchez, soy de la Facultad de Ciencias de la Computación. Eh, bueno, en este momento le voy a hacer una entrevista de aproximadamente 15 a 20 minutos para poder conocer más. Y este... le presento aquí un consentimiento eh... para poder grabar esto. ¿Podría firmarlo? Muchas gracias. Ahora, eh... las preguntas van a ser algo, digamos, eh... entendibles como tal. Primero, ¿cuánto tiempo lleva desempeñando su labor en la facultad?
+
+COORD-02: Ya como unos dos años, cuatro semestres.
+
+Entrevistador: Eh, ¿cómo se dan actualmente los horarios del uso de las aulas?
+
+COORD-02: A ver, primero realizamos un recorrido por las instalaciones para asegurarnos cuáles son las aulitas funcionales, cuál es el funcionamiento del aire, el proyector y demás; una lista de requerimientos y pasar... ya conforme a eso vemos cuáles pudieran ser los funcionales y hacer una matriz. Entonces, yo veo cuántos paralelos tengo y voy asignando. Por lo general, nosotros las paredes acá nos dividimos como que por piso para poner de una sola sección. Actualmente estamos en los edificios... primer piso, primer piso... luego de que está esto, ya vamos al trabajo en... Entonces, bueno, obviamente aquí para crear el horario hay que tenerlo asignado previamente. Voy a hacer, por ejemplo, primero A: me toca en la 105, selecciono la 105 y voy creando el horario. Ahora, sobre el tema de los horarios, eh... bueno, obviamente acá uno de los criterios siempre es ir revisando, pensando que no se pase más de 3 horas porque pedagógicamente ya es cansado, y que no se repitan. Por ejemplo, tengo acá Psicología General, yo doy una investigación y Psicología General, y al mismo tiempo que al docente le vaya quedando espacio para su almuerzo y que no se vea una jornada tan cargada. Por ejemplo, que tenga de 7:30 a 2:30 y luego de 2:30 a 5:30, porque es demasiado cansado. Entonces, eh... por lo general, ¿qué hago? Comparto mi pantalla; en una tengo el horario del curso y en la otra el horario docente para ver cómo van funcionando esos cambios y no ir... este... obviamente este es un proceso larguísimo, lo reviso unas tres o cuatro veces y se van haciendo cambios.
+
+Entrevistador: ¿Y han habido situaciones en que, pues, un docente se ha quedado sin tiempo para poder almorzar debido a estas situaciones del horario?
+
+COORD-02: Eh, verás, en algún momento de pronto se nos pasa, pero antes de aprobar los horarios volvemos a hacer una revisión exhaustiva en todos ellos. Si yo identifico algo, pues voy a arreglar, y si tengo que mover el horario de otro profesor, me comunico con este profesor y le explico. ¿Por qué? Para pedirle el favor de que vamos a tener que hacer esto. Muchas veces tenemos docentes compartidos con otras carreras, entonces ahí trabajamos en equipo, nos damos la mano. Por ejemplo, si en Educación Básica a mí ya se me hace imposible mover, me comunico con esta coordinadora para decirle: "Por favor, ayúdeme liberando tal hora de acá porque necesito ponerle acá porque necesito liberar el espacio de...". Entonces se vuelve un rompecabezas lo que hacemos, con mucha paciencia, pero siempre al final verificando el bienestar del docente y también de los estudiantes. Entonces, ahí toca sorpresa y trabajo largo y estresante, pero es lo positivo.
+
+Entrevistador: Muy bien. Eh, ¿con cuántas aulas o... para este caso, cuántos paralelos coordina?
+
+COORD-02: Ahorita tengo 26 paralelos. 26 paralelos. Eh, dos de primero, cuatro de segundo a sexto, y 2 de séptimo y 2 de octavo. Por lo general, la... funciona en la mañana y el... en la tarde. Y cuando son cuatro, ahí en la mañana... eh, este, 6 en la tarde.
+
+Entrevistador: Eh, en este caso, cuando surge un conflicto horario o una necesidad de cambio de aula, ¿qué pasos sigue? Por ejemplo, si eh... un docente le dice: "Por favor, no voy a poder asistir", eh... ¿qué situaciones hay o cómo usted puede resolver este tipo de conflictos?
+
+COORD-02: Eh, siempre primero el diálogo, ¿no? Este... escuchar cuáles son las necesidades del docente. "Por favor, tal día...". Ah, o sea, ¿cuando no voy a poder asistir a la clase o cuando estoy haciendo los horarios?
+
+Entrevistador: Eh, de hecho, me gustaría que me explique de ambos casos. Primero, cuando están haciendo los horarios.
+
+COORD-02: A veces me solicitan, por ejemplo: "Tal día, por favor, te quiero pedir, no me pongas a las 7:30 de la entrada, póngame a las 8:30" o algo así. Entonces, tratamos de mediar. Si te puedo apoyar dos o tres días, lo hago, pero si se me hace imposible porque por eso termino perjudicando a otros, te digo que lo lamento mucho, pero no voy a poder hacer. Entonces, siempre con un buen diálogo, una buena comunicación y también este... eh... enseñando muchas veces. A veces les digo: "Mire, usted mismo ve aquí y vemos cómo podemos hacerlo", porque por ayudar a uno no se puede perjudicar a otro; hay que tratar de buscar el bienestar común. Ahora, cuando el docente tiene alguna situación médica, a veces son cosas que surgen de la nada. Bueno, pues así mismo nos comunicamos: "¿Sabe qué? Me pasó esta emergencia, a mi hijo le pasó algo en la escuela, tengo que irme ahorita". Y hablamos. "Okay, eh... vaya, manténganos informados". Los chicos quedan con una tarea, el equipo de coordinación y la coordinación de área verifica, se da cuenta y se sigue trabajando. Eh, cuando ya es un tema médico, los procesos que se siguen son: certificado médico, se va por días, se sube a la plataforma, se aprueba y luego se hacen los trámites de recuperación. Entonces, cuando son cosas imprevistas se manejan rápido internamente; cuando ya son cosas más formales, o sea, hay que seguir el proceso de acuerdo a lo que establece la normativa.
+
+Entrevistador: Eh, ¿qué información necesita conocer sobre el estado de un aula antes de asignarla? ¿Funcionamiento de equipos, toda la capacidad? Eh, ¿cómo la consigue?
+
+COORD-02: Todas. Primero, este... que funcione el aire. Que funcione el aire. Probamos que funcione el proyector y el espacio. Por eso tenemos aulas que, por ejemplo, tienen capacidad para 45 o 48 estudiantes, y verificamos. Por ejemplo, la 107 y la 108 son mis aulas más grandes. Pongo, por lo general, a los grupos más grandes acá. Eh, las otras son más pequeñas, para grupos más reducidos, donde nos entren las bancas y también los pupitres; hay unipersonales, eh... también hay de mesa con silla. Entonces, vamos viendo cómo podemos acomodar y, por lo general, yo hago una matriz y coordino con los conserjes. Por ejemplo, el aula 108 para Primero B: tengo tantos matriculados, voy a necesitar tantas bancas, primero ubicamos y... pues vamos decidiendo. A veces pasan cosas, como que el proyector funcionaba y dejó de funcionar. Tenemos que inmediatamente ir a buscar otra aula, tratar de sopesar y actualizar.
+
+Entrevistador: Eh, ¿de pronto ha pasado que se asignó una aula y ocurrió algún problema o tuvo conflictos, o...? ¿Qué tipo de conflicto? Por ejemplo, este... que el equipo fallara, como usted mencionó, que por ejemplo tiene que estar al 100%, pero de pronto no se verificaron las cosas y...
+
+COORD-02: A ver, el tema es que de verificar, siempre lo verificamos porque estamos constantemente revisando cosas. La cuestión es que a veces pasan imprevistos. Por ejemplo, ahorita... eh... hace un mes y medio tuvimos algunos temas de... se nos quemaron... eh... temas de reposiciones y cambios que se salen de nuestras manos porque no se hace rápido la solicitud con compras públicas, ya que es otro proceso. Entonces, lamentablemente tenemos dos aulas donde no funciona el aire, pero bueno, a pesar de eso siguen siendo funcionales con proyector, tienen más espacio y los chicos siguen ahí. Entonces, a veces se puede solventar porque hay espacio y uno los mueve. Pero otras veces, como ahora en este momento, nos encontramos sin espacio porque el edificio del fondo está en mantenimiento, entonces no tenemos opción. Tenemos como tres o cuatro aulas donde no funciona el aire y tenemos que seguir ahí con abanicos, con ventiladores, tratando de ir a la biblioteca, tratando de solventar, pero sin interrumpir el proceso de aprendizaje.
+
+Entrevistador: Y una pregunta rápida, ¿ha sucedido que, por ejemplo, un aire o un proyector se queden encendidos todo el día y no se apaguen?
+
+COORD-02: No, por lo general no. Los conserjes son muy prolijos. Antes de irse, realizan un recorrido aula por aula, apagando aires y apagando proyectores. Aparte de eso, nosotros siempre estamos con esta campaña con los chicos: si no vamos a usar el proyector, apaguémoslo para no usar energía innecesaria; cierren las puertas para que no se escape el aire, y si nos vamos, dejamos apagando todo y cerramos todo. Hasta con la limpieza de los cursos se turnan para barrer, para limpiar las basuras y tratar de colaborar en esta cultura de limpieza, de orden y de conciencia por el medio ambiente.
+
+Entrevistador: Eh, bueno, si usted pudiese eh... automatizar una sola tarea de coordinación que hoy hace manualmente, ¿cuál sería?
+
+COORD-02: Ah, un montón.
+
+Entrevistador: ¿Cuál es la que representa una sobrecarga, digamos, que usted preferiría que se conectase directamente con nuestro sistema? Que bueno, se vería de esta manera, por ejemplo, ya eh... tenemos acá un apartado de reportes. Eh, en este apartado de reportes, uy... este apartado de reportes, pues tendríamos eh... la generación como tal... eh... nos muestra un consumo energético de los incidentes registrados, que es lo que veníamos hablando, eh... del seguimiento de tickets. Esta parte sería que, por ejemplo, si hay un incidente y lo reportan, pero no hay ningún este... ningún ticket abierto, esto quiere decir, por ejemplo, usted no le dio... ah, no, le llegó una este... notificación de que, bueno, sucedió esto, entonces "yo quiero que lo resuelvan ahora", por ejemplo, entonces genera un ticket como tal, entonces le aparece de esta manera. Ahora, eh... con relación al horario, ¿a usted le parecería perfecto que dentro de la generación de los reportes pues nos muestre también el horario en el que ocurrió el incidente, o lo ve irrelevante?
+
+COORD-02: Sí, como que irrelevante, porque a ver... si es un tema de aire acondicionado, eh... no importa cuánto haya pasado, lo importante es que se resuelva. Si es un tema de proyector, lo importante es que se resuelva. Ahora, si, por ejemplo, se produjo un daño a la propiedad, se rompió una pizarra, se cayó algo... eh... más claro, también dependería de saber el contexto bajo qué... qué pasó. Mira, te comento lo que pasó acá hace una semana. La docente iba a bajar la pantalla del... del telón, este para el proyector, hizo así, le cayó encima y casi le golpea la espalda. Se desprendió solito. Entonces, okay, lo reportaron, pero más que eso, lo que se quiere es que se repare. Pero, por ejemplo, hemos tenido otras situaciones en que los chicos por estar jugando en algún momento se lanzaron contra la pizarra y la hicieron perder estabilidad. Entonces, antes de saber de pronto a qué hora fue o algo, ya pasó y... vamos a solucionarlo. Depende, depende.
+
+Entrevistador: Claro. Entonces, de hecho eso sí es importante para nosotros porque... bueno, podrían poner un detalle y en tal caso, por ejemplo, el docente podría identificar que pasó esto y este contexto como tal, eh... para que sepan de pronto eh... fue un error del estudiante, tenemos que pedirle esto para solventarlo.
+
+COORD-02: Claro, porque por ejemplo, son muy raras, han pasado en pocas ocasiones, pero por ejemplo, puede ocurrir que se dio un pequeño incidente que fue en el receso, o ya había acabado la hora y entre que uno entra y el otro sale pasó esto, o de pronto el docente tuvo alguna reunión y no pudo justamente estar... pero más que eso es como... sería como el detalle con esto y llevar la solución, porque no se trata como de una sobrecarga como tal, ¿no? Pero, por ejemplo, procesos de... ¿qué sé yo?, de seguimiento de la asistencia virtual, eh... de seguimiento de lo que, por ejemplo, es el cumplimiento de los chicos, sino que hay cosas que por más que quieran automatizar, no sé por qué... Por ejemplo, yo abro la matriz, están mal los chicos, veo que están en el promedio más bajo y tengo que llamarlos de uno en uno para reunirnos y ver qué es lo que está pasando. Creo que lo más molesto de pronto serían temas de... de papeleo. Por ejemplo, informes o reportes, este... cumplimientos que a veces, por ejemplo, hay que consolidar las evidencias de los 26 paralelos, de las 26 tutorías para enviar un reporte, y eso toma tiempo. Que por ejemplo hay que armar la matriz con los datos de los chicos, entonces eso toma tiempo. Aun así, tratamos de optimizarlo lo mayormente posible, pero esas cositas mecánicas como que toman a veces tiempo. Bueno, ahora que con la inteligencia artificial muchos procesos también se automatizan mucho más rápido. Entonces, pues si quiero tomar una foto y digitalizar, ayuda, ¿no?
+
+Entrevistador: Bueno, este... cuando necesita saber si una aula está libre, ¿cuánto le toma averiguar que está disponible? ¿Le toca llamar?
+
+COORD-02: Me hace reír, porque aquí... digo, una llamada... que por ejemplo, ya está aquí en este edificio. Una llamada rápida a los coordinadores de área o a los conserjes y lo verificamos. Menos de cinco minutos, depende del... la llamada. Eso siempre.
+
+Entrevistador: Perfecto. Eh, bueno, ¿qué tan seguido la información de horario o disponibilidad que usted eh... tiene resulta estar desactualizada o equivocada?
+
+COORD-02: Eh, en realidad siempre la tenemos actualizada porque, por ejemplo, yo hago los horarios, yo descargo los horarios aprobados del SGA y... si se produce un cambio de horario, automáticamente vuelvo a descargar y actualizar. Están los horarios de los profesores y están los horarios de los paralelos. Asimismo, por ejemplo, con los chicos se comparte, se puede ver el horario... no sé qué, sí sabemos, lo tenemos acá, lo tenemos en el SGA, lo tenemos en el celular y si algo se actualiza, actualizamos todo y lo volvemos a enviar al grupo de la coordinación para que esté actualizado. Entonces, es inmediato. Siempre es inmediato porque son cosas que sí debemos saber, porque cualquier cosa sucede y uno consulta: "Ah, también está el aula con el profesor... así está la...".
+
+Entrevistador: Perfecto. Eh, ¿con otro sistema que ya usa el académico institucional debería conectarse eh... con... con nuestro...? Le enseñaré, pues, cómo se vería el apartado de nuestros paneles. Por ejemplo, el horario. Buscar señalamientos y si no, ya estuvo... vamos a arreglarlo, ¿no?
+
+COORD-02: Claro.
+
+Entrevistador: Eh, el tema de por seguridad, ¿qué información considera usted que solo la coordinadora podría ver y no, por ejemplo, un docente dentro de como tal un sistema de, digamos, mantenimiento? Por ejemplo, está bien que los horarios sean públicos en este caso, pero hay un... por ejemplo, que es el horario de... de aula... este... por ejemplo, para el público como tal... pero ¿qué otra información usted...?
+
+COORD-02: El horario de aula... el horario de aula es público. O sea, por ejemplo, este... el horario de cada aula dentro de... A ver, sería solamente lo de la carrera. El estudiante tiene acceso al horario de su área. Lo que de pronto no puede ver son los horarios de los docentes; el estudiante no tiene por qué tener o saber el horario completo del docente, por eso a eso me refiero.
+
+Entrevistador: ¿Qué considera usted, además de los horarios, que no debería ser visto, por ejemplo, por un conserje o por un... este... docente? ¿O sea, solamente lo de mantenimiento o de... tanto igual eso les puede servir?
+
+COORD-02: Claro que sí, vamos... por ejemplo, temas de... por temas de algún tipo de seguimiento de derivaciones a departamentos, departamento de inclusión y demás, por supuesto. Esa es información súper delicada que no tiene por qué nadie saberlo. Pero creo que lo que son los aspectos de mantenimiento y horarios, al contrario, mejor que estemos bien informados para que sepamos dónde está cada quien y... qué estamos haciendo. Lo único que de pronto no compartiría sería el horario del docente como tal, eso sí lo restringiría solamente para el uso de la coordinación y para el [DECANATO]. Los chicos van... este... no saben dónde está, lo buscan: "Ah, mira, él ya se fue, de pronto lo puedes encontrar por...". No sería como que...
+
+Entrevistador: Perfecto. Eh, bueno, supongamos que usted podría usar este sistema como tal, que lo que le permitiría ver son eh... las cámaras, usted podría regular la temperatura del aire acondicionado que tenemos actualmente, verificar la humedad o este... ver si el aula está sucia, está disponible... Ya, digamos, este... si el sistema falla justo cuando usted necesita eh... reasignar un aula con urgencia, ¿qué tan rápido usted esperaría que el soporte técnico lo solucione?
+
+COORD-02: A ver, es que si el soporte técnico se va a tardar 20 minutos o media hora en solucionarlo, y lo voy a hacer al instante en 5 minutos... ya estoy aquí, ya solucioné.
+
+Entrevistador: Pero supongamos, por ejemplo, que usted, digamos... usted trabaja en estas facultades que tienen la... es la misma Facultad de Educación, pero que tiene tres edificios.
+
+COORD-02: Sí, edificios, perdón.
+
+Entrevistador: Este, usted trabaja en uno y en el otro edificio está...
+
+COORD-02: Sí, ajá.
+
+Entrevistador: Entonces, por ejemplo, esta situación le tomaría salir de aquí, caminar y de pronto... Entonces, ¿más o menos cuánto podría tardar?
+
+COORD-02: Claro, sería el tiempo prudente máximo que no me tome más de lo que me pudiera tomar a mí... 2 o 3 minutos.
+
+Entrevistador: Perfecto. Eh, bueno, respecto al apartado, digamos, de mantenimiento. Bueno, lo hacemos... la gestión de solicitudes de mantenimiento. Aquí sería para asignar el aula en el que yo estoy reportando ahora, el equipo afectado, el tipo de incidente, la prioridad en el caso de que quiera que se solucione ahora o no, y una descripción. Esto no sería lo mismo que, por ejemplo, el contexto que se estaba hablando, sino que, por ejemplo, eh... ocurre que el proyector este... no tiene cable HDMI o no le vale la de... conexión Wifi para hacer la... la comparación. Entonces, usted podría asignar el aula tal, el equipo del proyector, el tipo de incidente... "sucedió esta cuestión" y así... Entonces, usted eh... puede directamente guardar esta solicitud. Esto genera un ticket y, bueno, el responsable de hacer esta consulta... este... puede abrir uno de estos acá para poder ir directamente, le llega una notificación y ya está seleccionado. ¿Le parecería este un... una adición este...?
+
+COORD-02: Me parece súper interesante. ¿Qué le adicionaría yo? Una respuesta, porque ya yo genero mi ticket y tengo que esperar a que algún día me lo respondan. Entonces, pudiera como que implementar... ¿qué? Eh, un tiempo de respuesta mínimo, por decir... mínimo, si es de alta prioridad, mínimo un día; si es media, dos o tres días; si es baja, hasta 5 días de respuesta. Que me... que me respondan o obligar que me respondan en ese tiempo para agilizar. Y de pronto también que me den feedback y me dejen ver en qué punto está la gestión o si "no lo podemos reparar porque no lo reportó acá" o "tenemos que gestionar con compras públicas", porque ¿te imaginas? A pesar de que hay una muy buena gestión de la información, al ser un sistema público dependemos de otras instancias, ¿no? Que si no hay el cable hay que comprarlo, y para comprarlo hay que pasarlo y hay que aprobarlo, y que tiene que desembolsar, y que compras públicas, ¿no? Entonces, hay muchas cosas que, por ejemplo, nosotros... lo reportamos de una forma muy bonita, podemos tener un mejor seguimiento de... pero lo reportamos con el secretario. La secretaria mandó un correo y "¿qué pasó con...? Ah, me dijeron tal cosa". Ya. A pesar de que no se pueda solucionar inmediatamente, al menos lo que te daría es la sensación de saber en qué momento o qué más es necesario para hacerlo.
+
+Entrevistador: Por ejemplo, con lo que usted dice, ¿podría añadirse un, digamos, un botón o una sección que me permita enviar un push en este caso para que vean en qué momento, o sea, en qué parte está...?
+
+COORD-02: Y que me respondan rápido. Claro. Solicitud de acuerdo a la prioridad y que me digan en qué estado se encuentra y cuáles serían los siguientes pasos, o sea, que me mantengan informada. Por ejemplo: "Su solicitud ya fue recibida, la estamos revisando en tal área, le informamos que es posible que tal día estaremos allí para reparar o podemos agendar la visita con el técnico del aire X, Y o Z", o simplemente: "Eh, tendríamos que esperar porque hay que gestionar con compras públicas". Entonces, creo que ahí sí sería muy efectivo cuando tengamos un problema, podernos mantener como que bien informados de qué está pasando, sí.
+
+Entrevistador: Bueno, este... la verdad demasiado bien. Muchas gracias por eso, por responder a estas preguntas más o menos. Eh, bueno, de las que se van a poder hacer más prototipos, ¿cuál resolvería como tal un problema que ha tenido aquí?
+
+COORD-02: Sobre todo el de la gestión de un mantenimiento, porque a veces sí siento que hay como una desconexión... nos dicen que no saben cuándo vienen los técnicos porque hablan por aquí, hablan por allá, y uno como que se olvida y después se vuelve a acordar y entonces cambiamos... Yo creo que con este sistema, de pronto con un sistema de alertas, todo estaría realmente... si me preguntas, mucho más interesante este que al tema de horarios, porque en total el tema de horarios no es algo como que nos genere demasiado problema, es algo que manejamos, que el sistema cumple. Por ejemplo, yo esto sí lo veo muy interesante.
+
+Entrevistador: ¿Hay algo importante que no hayamos cubierto como...?
+
+COORD-02: Eh, bueno, sobre todo con lo que es la gestión de la infraestructura sería eso. Una gestión creo que está muy interesante para el proyecto. Y tal vez acá sería, en cambio, lo que es la gestión académica. Por ejemplo, hay muchas cosas que nosotros en esta parte del... mismo que muchas veces se ve como, por ejemplo, asegurar de alguna otra manera cómo sabemos que se están cumpliendo los resultados de aprendizaje, cómo estamos logrando un aprendizaje efectivo, porque a veces cuantificar una nota no siempre lo demuestra. Entonces sí tenemos los procesos de evaluación alternativa y cada docente te podrá decir, "Okay, yo tengo una perspectiva", y ver cómo lograr sistematizar esa gran cantidad de información que es cualitativa también para nosotros poder tener una idea. Ese sería uno de los aspectos que como coordinaciones nos ayudaría muchísimo, sobre todo cuando tenemos muchos estudiantes, se nos vuelve mucho más pesado. También, por ejemplo, otra cosa que yo considero necesaria es como tener una plataforma así parecida a esta con la gestión de las solicitudes de tutorías. Por ejemplo, los tutores reportan un caso: "Tengo acá a los estudiantes...", entonces nos lo mandan por correo, nosotros en la agendita anotamos y lo derivamos y todo. Si tuviéramos un sistema donde pudiéramos gestionar todas las acciones: "Estudiante T se derivó acá, estado: ya la colega lo va a atender", "Estudiante tal con tal...", o sea, que pudiera ser alimentado por los tutores y gestionado también desde la coordinación. También sería una cosa fantástica porque en el SGA sí hay un módulo de tutoría, pero solo nos permite visualizar, no gestionar, porque ahí hay una diferencia enorme. Esas serían mis dos necesidades.
+
+Entrevistador: Pónganse a hacer más proyectos.
+
+COORD-02: Listo. Muchas gracias.
+
+Entrevistador: Un gusto. Sus respuestas han sido de las mejores.

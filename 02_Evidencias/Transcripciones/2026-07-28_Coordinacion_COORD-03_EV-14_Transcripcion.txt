@@ -1,0 +1,192 @@
+======================================================================
+TRANSCRIPCIÓN ANONIMIZADA — PROYECTO SIGA (ISR-401)
+Sistema Inteligente de Gestión de Aulas — Equipo FGMMN — UTEQ
+======================================================================
+Identificador de evidencia : EV-14
+Fecha de la sesión         : 2026-07-28
+Técnica de elicitación     : Entrevista semiestructurada
+Modalidad de registro      : Audio MP3 (sin video, por petición del participante)
+Código de participante     : COORD-03
+Perfil del participante    : Coordinación de carrera
+Zona de evidencia          : [P] Pública (material anonimizado)
+Anonimización              : sin nombres propios; los cargos únicos y
+                             los terceros mencionados se sustituyen por
+                             marcadores genéricos entre corchetes.
+======================================================================
+
+Entrevista EV-14
+Entrevistador: Primero me presento, soy el estudiante [ENTREVISTADOR] de la carrera de Software de la UTEQ. Estamos completando el ERS del SIGA, que es un sistema de gestión inteligente de aulas. Y su experiencia como coordinadora es clave tanto para definir qué debe hacer el sistema como para confirmar si lo que ya estamos diseñando tiene algún tipo de sentido. La entrevista va a tomar entre 20 a 25 minutos y bueno, conforme a la ley orgánica de protección de datos personales, confirmar su consentimiento firmado y bueno, empezamos a grabar.
+
+Entrevistador: 1. ¿Cuánto tiempo lleva desempeñando su rol de coordinadora en la facultad?
+
+COORD-03: Dos años.
+
+Entrevistador: 2. ¿Cómo organiza y asigna actualmente los horarios y el uso de las aulas?
+
+COORD-03: Bueno, los horarios se organizan de manera consolidada entre las cuatro carreras que tienen las facultades, puesto que nosotros compartimos docentes. O sea, no hay solo docentes exclusivos de cada carrera. Entonces, lo que hacemos nosotros es crear una propuesta de horarios por carrera y luego la consolidamos con las cuatro carreras. Y en función de eso, vamos identificando si hay choques de horarios o no y luego hasta que quede ya el horario cuadrado. Ahora, las asignaciones de aulas se realizan en función de la capacidad que tiene cada aula. Principalmente eso.
+
+De acuerdo al número de estudiantes que nosotros ya tenemos conocimiento, que son los que aprobaron las asignaturas en el semestre previo, y en función de eso se identifica la capacidad de cada aula para poderles asignar.
+
+Entrevistador: 3. ¿Con cuántas aulas o paralelos coordina en este semestre? COORD-03: Bueno, en este semestre nosotros tenemos 9 paralelos como carrera.
+
+Entrevistador: 4. ¿Cuándo surge un conflicto de horario o una necesidad de cambio de aula, qué pasos sigue hoy? ¿Por qué se hace de esa manera y no de otra? COORD-03: A ver, bueno. Por conflictos de horario generalmente no, porque ya nosotros todo eso lo resolvemos antes del inicio de clases. Entonces, eso ya queda el horario cuadrado, y la ventaja que tenemos es que, a través del sistema de gestión académica, el SGA nos genera automáticamente, nos envía alertas cuando tenemos un choque de horario o conflicto de aula.
+
+Entonces, es fácil identificarlo porque el SGA ya nos avisa. O sea, que en esto ya no tiene ningún tipo de problema. No. No, no, en eso no tendríamos problema porque si de pronto, incluso a veces hasta por error, si registramos mal el número de aula, incluso hasta eso nos avisa. Entonces, ahí nos pone conflicto de aula cuando, por ejemplo, digamos, la carrera de finanzas registró el aula 212 para clases de sus alumnos cuando esa aula ya estaba asignada para administración pública. Entonces, el sistema automáticamente nos alerta. Y cuando es choque de horario, de la misma manera, simplemente no nos permite registrar el horario de la asignatura de un determinado paralelo si ya está ese docente considerado en otra aula de otra carrera.
+
+Entrevistador: 5. ¿Qué información necesita conocer sobre el estado de un aula antes de asignar? Como disponibilidad, funcionamiento de equipos, capacidad. COORD-03: Bueno, de hecho, todos esos aspectos, ¿no? Nosotros verificamos que tenga, que cuente con todos los mobiliarios necesarios de acuerdo al número de estudiantes que vamos a destinar a ese paralelo. En este caso, los equipos informáticos están en funcionamiento adecuado. Bueno, específicamente el proyector, que es una de las herramientas que se utiliza. El tema del acondicionador de aire y, en este caso, los mobiliarios. Eso es lo que nosotros verificamos. Y generalmente siempre lo hacemos ya al momento que va finalizando el semestre. Vamos identificando si alguno de estos equipos está en malas condiciones y ya en el tiempo que queda hasta que se inicie el nuevo semestre, el nuevo ciclo de estudios, ya se haya subsanado eso.
+
+Entrevistador: ¿Hoy en día cómo lo consigues?
+
+COORD-03: Ese tipo de información que me acabas de mencionar. Bueno, eso nos toca hacerlo manualmente. Entonces, lo que se hace es al momento ya cuando vamos cerrando el ciclo, hacemos una revisión in situ. Entonces, vamos verificando o a su vez nosotros siempre les decimos a los presidentes de curso que cuando existe alguna dificultad tanto con el proyector como con el acondicionador de aire o algún mobiliario, ellos nos informan inmediatamente a través de un grupo de WhatsApp que tenemos. Entonces, de esa manera recibimos la información. Sin embargo, si no ha sido reportado nada al momento de finalizar el semestre, nosotros hacemos un control previo un mes antes del inicio de clases. Vamos haciendo una revisión, verificando que funcionan los acondicionadores de aire y asimismo el proyector, y verificando el número de mobiliarios que estén completos para los estudiantes que van a ingresar.
+
+Entrevistador: 6. Cuéntenme sobre la última vez que asignó un aula y resultó tener un problema como algún equipo dañado, el clima o conflictos de horario. ¿Qué pasó y cómo lo resolvió?
+
+COORD-03: Ya, bueno, el conflicto de horario ya le mencioné que eso el sistema automáticamente nos notifica y eso nosotros lo hacemos al inicio del periodo académico, cuando es el periodo de matrículas. Es más, para el periodo de matrículas ya eso tiene que estar solucionado. Entonces, ya eso no nos va a ocurrir en el desarrollo de las clases. Con respecto a lo otro me preguntaba, equipos dañados. Los equipos dañados, eso nosotros cómo lo solucionamos. Inmediatamente no lo podemos hacer. Por ejemplo, recientemente tuvimos un inconveniente nosotros con un aula que nos reportaron que se dañó el proyector.
+
+Entonces, eso tardó en poder solucionar esa situación más o menos unas tres semanas.
+
+Entrevistador: ¿Por qué?
+
+COORD-03: Porque nosotros no tenemos activos fijos disponibles aquí en la facultad. Dentro de la universidad existe un departamento que exclusivamente se encarga de eso, que es el departamento de activos fijos. Entonces, ahí hubo que hacer todo un procedimiento. Llegó un técnico asignado por el área de activos fijos, del área administrativa, para que el técnico verifique que en efecto ya el proyector no tiene solución, o a su vez, si tiene solución, pasarlo al área técnica. En este caso es el área de TICS. Pero el técnico, luego de la evaluación que realizó, dijo que ya el proyector ya no iba a funcionar. Le hagan lo que le hagan. Entonces, de ahí eso se pasa, el reporte.
+
+El área administrativa tiene que pasar el reporte al área de activos fijos para que le den de baja ese proyector y nos puedan asignar un nuevo proyector. Entonces, todo ese proceso tardó casi tres semanas. Entonces, de esa manera, bueno, finalmente logramos solucionarlo haciendo el seguimiento permanente. Porque como tenemos dos campus, lo que nos indicaban es que hay unos días que los técnicos están en el campus La María y otros días están aquí en el campus central. Entonces, por eso se tardó prácticamente tres semanas en solucionar eso.
+
+Entrevistador: 7. Si pudiera automatizar una sola tarea de coordinación que hoy en día hace manualmente, ¿cuál sería?
+
+COORD-03: Bueno, de todas las tareas que hacemos manualmente en la actualidad, sería, por ejemplo, la asistencia de los docentes. O sea, que a través de las cámaras se pudiera verificar.
+
+Porque aquí, por ejemplo, si ustedes se han dado cuenta, todas las aulas, las puertas son completamente cerradas. Mientras que en otras edificaciones pueden encontrar puertas como las que están aquí. Hay al menos un espacio que usted pase y puede ver que en efecto el docente está impartiendo clases. Entonces, aquí a veces por las múltiples tareas que nosotros tenemos, porque no solo pasamos en coordinación, también damos clases y tenemos otras responsabilidades en la universidad. A veces de pronto no alcanzamos a hacer el control. Y si yo tengo acceso a las cámaras que me permitan monitorear, puedo evidenciar a través de la cámara que el docente en efecto está impartiendo su clase y registro la información correspondiente.
+
+Entrevistador: 9. Hoy, cuando necesita saber si un aula está libre, ¿cuánto le toma averiguar?
+
+COORD-03: Con los utilitarios que manejamos y como tenemos ya nosotros el horario tanto en el sistema como en manera digital. Sí, a lo mucho unos 2, 3 minutos, ¿no? Siempre y cuando tengamos acceso disponible, ¿no? Sobre todo, cuando no nos falle el internet. Si pudiera verlo al instante en un panel o aplicación,
+
+Entrevistador: ¿cuánto tiempo esperaría que tarde mostrar esa información? Puede poner una cifra en segundos.
+
+COORD-03: Unos 20 segundos. Creo que sería lo ideal.
+
+Entrevistador: ¿Qué tan seguido la información de horario o disponibilidad que usted tiene resulta estar desactualizada o equivocada?
+
+COORD-03: Bueno, desactualizada o equivocada ahora es difícil. Como le dije, como eso lo manejamos a través del SGA, es casi que imposible. Tal vez de pronto si lo lleváramos solo de manera manual, tal vez.
+
+Porque a veces de pronto, como a veces nos falla el internet o se va la luz, de pronto podemos correr el riesgo que el documento que tenemos impreso no era el actualizado. Solo en ese caso podría ser. Pero de ahí con el sistema, eso sí está todo el día.
+
+Entrevistador: Si el sistema nuevo dejara de funcionar por algunas horas y tuviera que volver a coordinar todo manualmente, me refiero al futuro sistema SIGA, que lo mostré. ¿Qué tan grave sería? ¿En qué momento del semestre sería peor que esto sucediera?
+
+COORD-03: Bueno, yo creo que al inicio. Al inicio del semestre. Sería como que lo más grave.
+
+Entrevistador: Y en cifras de horas, ¿cuántas horas sería el límite tolerable a este tipo de desfase?
+
+COORD-03: Ah, en cuestión de horas. Bueno, es que, si ya nosotros nos adaptamos al nuevo sistema, así como que va a ser incómodo, ¿no?
+
+Entrevistador: ¿Un máximo de horas cuánto sería?
+
+COORD-03: Un máximo de horas que se pudiera tolerar. Unas 2 horas.
+
+Entrevistador: ¿Con qué otro sistema que ya usa, como horario académico digital o horario institucional, este debería conectarse con el SIGA para que le sea realmente útil?
+
+COORD-03: Bueno, si el SIGA específicamente nos va a dar las funciones de control de aulas, control de, ¿cuáles eran los controles que nos iba a dar el SIGA?
+
+Entrevistador: Control de aulas, alertas, mantenimiento, hacer reportes y la gestión de usuarios.
+
+COORD-03: Ya. Y la opción de reportes, ¿qué tipos de reportes? Con respecto solo a lo que es el uso de aulas.
+
+Entrevistador: Sí. Aquí está el apartado de reportes en cual podemos ver el aula, fecha inicio, fecha fin, qué tipo de reporte. Y, bueno, aquí lo podemos generar, el cual se va a generar, en sí, toda la información de esas aulas. Ya. Como el uso energético, entre otras cosas.
+
+COORD-03: Ya. Entonces, ahora sí volvamos a la pregunta.
+
+Entrevistador: Sería, ¿con qué otro sistema que ella usa debería conectarse el SIGA para que le sea realmente útil?
+
+COORD-03: Bueno, creo que debería ser con el SGA.
+
+Entrevistador: ¿Qué pasaría en el caso, no? Si no se conectan, ¿qué información tendría que ingresar 2 veces?
+
+COORD-03: Bueno, en este caso, más que nada que el aula esté abierta y que los usuarios estén dentro de ella. Eso sería como que lo.
+
+Entrevistador: ¿Qué haría que este sistema fuera fácil o difícil de usar para usted en su día a día de coordinación?
+
+COORD-03: Bueno, yo creo que sería fácil porque de acuerdo a la información que usted me está proporcionando, que podríamos revisar y que de acuerdo al diseño que usted me está mostrando. Creo que sería muy fácil de utilizar y de generar reportes. Sería rápido.
+
+Entrevistador: ¿Qué información de coordinación considera que debería ver solo usted y no, por ejemplo, un docente o conserje?
+
+COORD-03: Información que debería ver solo yo. Yo creo que básicamente los reportes de control, ¿no?
+
+Entrevistador: ¿Qué problema traería que otro rol viera o cambiara esa información?
+
+COORD-03: Repite, por favor.
+
+Entrevistador: ¿Qué problema traería que otro rol, por ejemplo, docente o consejero, viera esa información y la cambiara?
+
+COORD-03: O sea, ¿pero que en la forma como llevamos actualmente o? Voy a intentar, por ejemplo, usted dijo sobre los reportes, ¿verdad?
+
+Entrevistador: Sabemos que en la gestión de usuarios, usted como coordinador podría ver qué otros usuarios están usando este sistema. Mientras que un docente o conserje que esté en este sistema registrado, ellos no podrán ver qué otros usuarios también están usando este sistema. Eso sería una limitación. Entre otras, podría ser, yo creo que es la generación de reportes. Usted como coordinadora podría generar esos reportes. Y alguien más que tenga la posibilidad de intentar cambiar alguna información de aquí. ¿Cuál sería la más sensible?
+
+COORD-03: Ya. Bueno.
+
+La más sensible podría ser indicar que el aula está ocupada cuando no lo está Que generalmente tiene que ver, eso está directamente relacionado con la asistencia de los docentes. Porque, bueno, por ponerle un ejemplo, ¿no? En la actualidad, nosotros como coordinación, de acuerdo con lo que establece el estatus dentro de nuestras responsabilidades, es velar porque todos los docentes cumplan con su trabajo, con su horario de clases, ¿no? Entonces, en ese aspecto, en parte nos ayuda el SGA. Si bien al momento que el docente abre su clase, el sistema reporta que la clase está abierta. Entonces, se asume que el docente está en su clase, Pero como esa apertura se la puede hacer no solo dentro del campus, sino también desde fuera del campus, no tengo la certeza que en efecto el docente esté ahí.
+
+Entonces, ¿qué tal si alguien tuviera acceso, como usted dice, y yo genero el reporte y me sale que todas las aulas están ocupadas en ese momento cuando no todas están? Porque ustedes, como estudiantes, sabrán la realidad, ¿no? No siempre todo es lo que parece.
+
+Entrevistador: Si el sistema falla justo cuando necesita reasignar un aula con urgencia, ¿qué tan rápido esperaría que el soporte técnico lo solucione?
+
+COORD-03: Ya, ¿qué tan rápido que el soporte técnico lo solucione? Bueno, yo creo que eso va a depender del tipo de incidencia que se dé también, ¿no? Bueno. Y en promedio creo que a lo mucho sería en, bueno, ¿me dijo específicamente el problema?
+
+Entrevistador: Solo nomás si el sistema falla justo cuando necesita reasignar un aula con urgencia.
+
+COORD-03: Ya, si el sistema falla. Bueno, generalmente cuando son clases, las clases no esperan mucho. Entonces, yo creo que lo mucho que podría esperar sería entre 30 a 60 minutos. Porque generalmente los horarios que nosotros distribuimos son entre, como mínimo, 2 horas de clases y máximo 3 horas de clases con una asignatura. Entonces, sí se podría sacrificar la 1 hora de clases. Pero ya que al menos en la segunda hora de clases ya puedan estar funcionando y recibiendo sus clases normalmente.
+
+Entrevistador: Bueno, la historia de usuario vinculada al requisito funcional que tenemos en el número siete, que trata sobre un panel de control centralizado, más o menos como los que tenemos aquí.
+
+Esto describe, pero que usted necesitaría ver, o falta algo, o sobra algo.
+
+COORD-03: A ver, si es con respecto al control de aulas, que es básicamente lo que ustedes están ofreciendo, ¿no? Ajá. Bueno, a ver, dice: alerta generada.
+
+Entrevistador: En el sistema de alertas es cuando un aula tiene algún tipo de problema, de dificultad.
+
+COORD-03: Ajá.
+
+Entrevistador: Por ejemplo, un proyector sin señal HDMI, que eso suele ocurrir.
+
+COORD-03: Sí.
+
+Entrevistador: Por ejemplo, nosotros tuvimos unos problemas anteriormente en algunos semestres. Y aquí se le puede asignar qué prioridad va a tener, como en este caso es alta, o sea, es muy necesario eso. La fecha y hora registrada, el estado, que en este caso, como ejemplo, tendremos pendiente, y el responsable, o sea, quién se va a encargar de la reparación. Y acá en los mantenimientos podemos registrar la solicitud asignando el aula. En este caso sería, como este ejemplo, laboratorio 201 o aula 105. Equipo afectado, aquí podemos especificar qué equipo está dañado, como un proyector, climatización, sensor o conectividad.
+
+El tipo de incidencia, la prioridad baja, media, alta, como se puede observar aquí. La descripción, hablar más en detalle sobre el problema que tiene. Y guardamos esa solicitud. Ya, aquí una pregunta.
+
+COORD-03: ¿En el tipo de incidencia no han considerado poner varias opciones como en las otras?
+
+Entrevistador: Sí, aquí dice selección del tipo, lo cual se podría abrir una pestaña más donde van a ver muchas más opciones. Varias opciones como en las otras, a eso me refiero. Y bueno, también los tickets, que ese vendría a ser como el número de la solicitud. Así que, ¿esto describe lo que usted necesitaría ver o faltaría algo?
+
+COORD-03: Sí, básicamente para el tema de, sobre todo, poder solucionar los tipos de incidencias que generalmente se presentan, que justo son estos, no. Además, se presenta regularmente. Yo creo que sí, sí cumple con lo necesario.
+
+Entrevistador: Del 1 al 5, ¿qué tan bien esto resuelve su necesidad real de coordinación? COORD-03: Bueno, yo creo que sí, sería 5.
+
+Entrevistador: Sobre la gestión de mantenimiento, ¿esta historia representa cómo usted daría seguimiento a un ticket? ¿Y qué cambiaría?
+
+COORD-03: Bueno, aquí sí, en esta parte sí como darles una sugerencia, o bueno, que me aclaren una parte. Esto de aquí prácticamente es para que nosotros hagamos solo las solicitudes, hagamos el monitoreo o también establezcamos la solución. Porque recuerden que esta parte de mantenimiento y solución de esto, esto lo lleva el área administrativa. Nosotros simplemente gestionamos.
+
+Entrevistador: Sí, o sea, aquí usted hace la solicitud y le llegará al área administrativa, como menciona. Y bueno, supongo que traería algunos beneficios porque es con mayor rapidez que llega la información.
+
+COORD-03: Claro, eso sí. Sino que esa parte la aclaraba porque nosotros lo que tendríamos, o sea, básicamente haríamos es el registro y que este SIGA nos permitiera hacer el monitoreo de en qué estado se encuentran cada una de las peticiones.
+
+Entrevistador: Sí, exactamente. De las dos historias mostradas, ¿cuál resolvería el problema más urgente hoy? De las dos HU.
+
+COORD-03: Bueno, la primera era sobre el panel de control centralizado
+
+Entrevistador: Esto es todo en general. Y la siguiente fue algo más específico que sería la gestión de mantenimiento
+
+COORD-03: Bueno, yo creo que esta es la que me solucionaría
+
+Entrevistador: la gestión de mantenimiento.
+
+COORD-03: Sí, la gestión de mantenimiento, definitivamente. Porque eso nos reduce tiempo, sobre todo porque aquí muchas veces nos toca llamar por teléfono si la persona no está disponible, nos toca irla a buscar en la oficina y a veces tenemos otras cosas que hacer. Y sobre todo, bueno, aquí como les decía, todos damos clases, todos tenemos responsabilidades de coordinación y de otras labores que realizamos en la universidad.
+
+Y a veces, cuando uno no va, no los encuentra o cuando ellos vienen, no estamos. Entonces, esto sería excelente. Para mí sería excelente porque yo simplemente hago el reporte a través de este sistema del requerimiento que tengo en la determinada aula. Entonces, así yo no esté, la persona viene y ya sabe dónde tiene que acercarse y qué es lo que tiene que solucionar.
+
+Entrevistador: ¿Hay algo importante para su rol que no hayamos cubierto?
+
+COORD-03: Bueno, con respecto a lo que están ofreciendo, creo que está completo. Tal vez si luego hicieran otra implementación en otras áreas que necesitáramos, genial. Como en procesos, por ejemplo, de prácticas laborales, de vinculación, que es algo que incluso la universidad sé que está avanzando y que de hecho está previsto crearlo ya y digitalizarlo en el SGA, pero si lo pudieran hacer. Y lo otro, que también de pronto, el poder tener como un programa en el cual cuadrar el horario antes de subirlo al SGA y que ya al SGA lo subamos perfecto sin tener que hacer muchas modificaciones.
+
+Entrevistador: Bueno, eso sería todo, coordinadora. Ok, muchas gracias.
+
+COORD-03: Muchas gracias. Y muchos éxitos en su proyecto.

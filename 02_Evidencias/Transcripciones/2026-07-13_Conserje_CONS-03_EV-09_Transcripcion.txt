@@ -1,0 +1,92 @@
+======================================================================
+TRANSCRIPCIÓN ANONIMIZADA — PROYECTO SIGA (ISR-401)
+Sistema Inteligente de Gestión de Aulas — Equipo FGMMN — UTEQ
+======================================================================
+Identificador de evidencia : EV-09
+Fecha de la sesión         : 2026-07-13
+Técnica de elicitación     : Entrevista semiestructurada
+Modalidad de registro      : Video MP4 H.264 + audio extraído
+Código de participante     : CONS-03
+Perfil del participante    : Personal de servicios generales
+Zona de evidencia          : [P] Pública (material anonimizado)
+Anonimización              : sin nombres propios; los cargos únicos y
+                             los terceros mencionados se sustituyen por
+                             marcadores genéricos entre corchetes.
+======================================================================
+
+Entrevista EV-09
+Entrevistador: Buenas tardes. Soy [ENTREVISTADOR], estudiante de la carrera de Software. Estamos desarrollando el sistema SIGA para la Gestión Inteligente del Aula y queremos conocer su experiencia como conserje. Bueno esto es clave para entender que realmente necesita la facultad. La entrevista tendrá una duración aproximada de 15 minutos, será grabada en video y audio con fines académicos y sus datos serán tratados de acuerdo con la Ley Orgánica de Protección de Datos Personales.
+
+¿Me confirma su consentimiento firmado y si podemos a comenzar a grabar?
+
+CONS-03: Sí.
+
+Entrevistador: Muy bien comencemos con la entrevista abierta ¿cuánto tiempo ha desempeñado su rol en la facultad?
+
+CONS-03: 16 años.
+
+Entrevistador: En un día típico, ¿cuáles son sus principales responsabilidades relacionadas con las aulas?
+
+CONS-03: Aquí del mantenimiento de las aulas, control de proyectores y el aire.
+
+Entrevistador: ¿Cómo se entera actualmente que un aula tiene un problema? Por ejemplo, equipos dañados, clima y limpieza.
+
+CONS-03: Cuando hay problemas en los equipos los estudiantes me avisan está fallando un proyecto, un aire.
+
+Entrevistador: Cuando detecta una falla o anomalía, ¿a quién reporta el problema y cómo lo hace?
+
+CONS-03: Lo reporto a la [AUTORIDAD DE LA FACULTAD].
+
+Entrevistador: ¿Cómo realiza el reporte?
+
+CONS-03: Los estudiantes me avisan que tal cosa esta fallando, yo enseguida le comunico a la [AUTORIDAD DE LA FACULTAD], en tal aula está fallando tal equipo.
+
+Entrevistador: ¿Por qué reporta así y no de otra forma?
+
+CONS-03: yo hablo personalmente con ella.
+
+Entrevistador: Entonces, ¿usted no realiza un escrito?
+
+CONS-03: No. Ella realiza el escrito y ella manda para el técnico.
+
+Entrevistador: ¿Cuénteme sobre la última vez que tuvo un problema serio relacionado con un aula? Por ejemplo, una falla, un conflicto e horario, un equipo que se quedó encendido toda la noche
+
+CONS-03: Si si me han quedado y he tenido problemas.
+
+Entrevistador: ¿Qué paso exactamente? ¿Cómo lo resolvió? ¿Y cuánto tiempo le tomo con ese problema?
+
+CONS-03: Fue un día.
+
+Entrevistador: ¿Cuál fue el problema?
+
+CONS-03: el problema es que cuando ya están encendido vengo abrir las aulas y ya encuentro algo encendido y bueno se me quede ese proyector ayer encendido y se me olvido.
+
+Entrevistador: ¿y tuvo problemas con el [DECANATO]?
+
+CONS-03: Claro enseguida, ya que cuando quedan encendidos ya están los guardias llamando a la [AUTORIDAD DE LA FACULTAD].
+
+Entrevistador: Pensando en ese caso, ¿qué información o herramienta hubiera necesitado tener a mano en ese momento para resolver el problema más rápido?
+
+CONS-03: Para trasladarme en un vehículo ya que me encontraba en la casa
+
+Entrevistador: Bueno Ahora le voy a mostrar lo que trata nuestro sistema SIGA. Donde tiene un panel de control y le va ayudar lo que es la administración de aulas, bueno como puede ver este es el menú de inicio donde poder ver el estado de aula en tiempo real, aulas monitoreadas, alertas activas, equipos encendidos y red de IOT y bien aquí tendrá varios paneles lo cual de aulas mantenimiento, paneles, reportes y usuarios.
+
+Entrevistador: Bien aquí tenemos un panel consolidado lo cual usted podrá ver mediante el sistema, si un aula esta ocupada eh la temperatura en esa aula, la humedad, el proyector ver si este encendido o apagado o si esta sin señal HDMI eh la climatización si esta activo y apagado, su conectividad y bueno la acción que podrá ver mas detalle sobre cada aula.
+
+Entrevistador: Bueno ¿Usted qué opina de este sistema?
+
+CONS-03: Me Sirve, me sirve demasiado en lo que es la administración.
+
+Entrevistador: ¿Qué tan útil le serviría este sistema a diario y por qué?
+
+CONS-03: Tener controlado controles de las aulas y todo.
+
+Entrevistador: Bueno y Si pudiera agregar una nueva función al sistema, ¿cuál sería?
+
+CONS-03: Seria mucho mejor claro.
+
+Entrevistador: Finalmente, ¿hay algo más que usted considere importante que no le hemos preguntado?
+
+CONS-03: No. Para mi esta todo bien con lo que es de los proyectores aula si todo está bien.
+
+CONS-03: Bueno eso seria todo y Muchas gracias por su atención.

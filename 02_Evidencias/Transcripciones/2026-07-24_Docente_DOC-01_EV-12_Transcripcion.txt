@@ -1,0 +1,164 @@
+======================================================================
+TRANSCRIPCIÓN ANONIMIZADA — PROYECTO SIGA (ISR-401)
+Sistema Inteligente de Gestión de Aulas — Equipo FGMMN — UTEQ
+======================================================================
+Identificador de evidencia : EV-12
+Fecha de la sesión         : 2026-07-24
+Técnica de elicitación     : Entrevista semiestructurada
+Modalidad de registro      : Video MP4 H.264 + audio extraído
+Código de participante     : DOC-01
+Perfil del participante    : Docente de la carrera
+Zona de evidencia          : [P] Pública (material anonimizado)
+Anonimización              : sin nombres propios; los cargos únicos y
+                             los terceros mencionados se sustituyen por
+                             marcadores genéricos entre corchetes.
+======================================================================
+
+Entrevista EV-12
+Entrevistador: ¿Qué número de entrevista es soy?
+
+DOC-01: Ustedes serían el número 15.
+
+Grabador: Uno, dos, tres. Okay.
+
+Entrevistador: Buenas tardes, soy [ENTREVISTADOR] de la Facultad de Ciencias de la Computación. Eh pues en este momento estamos en la parte de recopilación de datos para el desarrollo de un sistema inteligente de gestión áulica. El sistema consiste en la detección de eh mediante el uso de las cámaras, perdón, que si un aula está sucia o está limpia. Podrá detectar si está ocupada o está vacía. También podrá, este, apagar y encender el proyector y regular la temperatura del aire acondicionado, lo mismo, podrá apagarlo y encenderlo. Okay. Ahora, este, le haré unas preguntas sencillas para conocer su rol.
+
+Entrevistador: ¿Cuánto tiempo lleva dictando clases en la facultad?
+
+DOC-01: Ya este es mi segundo semestre.
+
+Entrevistador: Ya, entonces sería su primer año o segundo...
+
+DOC-01: Primer año.
+
+Entrevistador: Primer año, sí.
+
+DOC-01: Sí. Entrevistador: Y en docencia en general, ¿cuánto tiene?
+
+DOC-01: En esta universidad tengo alrededor ya de dos años y medio y también di clases en otra universidad.
+
+Entrevistador: Mmm. Okay. ¿Cuántas aulas o laboratorios distintos usa en este semestre, por ejemplo?
+
+DOC-01: En este semestre utilizo los laboratorios de la Facultad de Ciencias de Computación, los de TICS he utilizado y también doy clases en la María y he utilizado también los laboratorios de la Facultad de Ciencia e Industria de Producción de la María.
+
+Entrevistador: Además de las aulas, de las aulas de aqui, por ejemplo.
+
+DOC-01: Y también las aulas de clase, claro. O sea, yo abarco dos facultades en ese sentido. Entrevistador: Ah, ya. Antes de entrar a dictar clases como tal, ¿qué es lo primero que revisa o le preocupa de un aula?
+
+DOC-01: Que exista la... el... que funcione el proyector. Literalmente es lo primero para poder dictar mi clase de manera normal. Segundo, ya viene el bienestar de ustedes, el hecho de que quiero que funcione también el aire acondicionado y que las luces también estén acordes para poder dictar mejor la clase.
+
+Entrevistador: Okay. Bueno, en este momento le voy a presentar unos mockups. A ver. (Risas) Entrevistador: Vaya firme. Y aquí pondría su nombre.
+
+DOC-01: Ah, okay.
+
+Entrevistador: Listo, muchas gracias. Okay, en este momento le voy a presentar lo que, bueno, viene siendo el panel de control. Okay. Este panel de control consiste en unos paneles que demuestra cuántas aulas están monitoreadas, las alertas activas en ese momento, los equipos encendidos y la red IoT que esté bien. La red IoT, bueno, vendría a ser el dispositivo que se va a utilizar. Okay. Este panel se divide pues entre las aulas, la ocupación, la temperatura, la humedad, el proyector y la climatización. Estas partes de acá es la conectividad que me dice de la red IoT y las acciones. Al momento de darle en ver detalle, me aparecerá, podría enseñárselo así, este, como tal una cámara. Me muestra una cámara y me puede permitir encender o apagar el proyector, encender, apagar el aire acondicionado y regular la temperatura. Es como, digamos, este, lo mismo que está aquí, ya, pero este recuadro me mostraría la cámara y tendría las opciones.
+
+DOC-01: Quiere decir que se utilizaría para antes de iniciar mi clase.
+
+Entrevistador: Lo podría hacer en cualquier momento. O sea, por ejemplo, usted antes de ingresar a la clase, ah, dos y media...
+
+DOC-01: Aclimato el aula antes de ingresar mis horas de clase.
+
+Entrevistador: Exactamente.
+
+DOC-01: Y también tengo la oportunidad de dejar apagado una vez culminadas mis horas de clase.
+
+Entrevistador: Lo que sería lo recomendado. Por incidencias anteriores, este, un aire acondicionado se quedó encendido y se quemó. Un proyector se quedó encendido y se quemó. Entonces al ser pues una universidad pública, no es como que puedan decir, voy a comprarlo. Tienen que ir a compras públicas, creo que se llama esta parte.
+
+DOC-01: Claro, es un proceso administrativo largo.
+
+Entrevistador: Y es exactamente, además que es tedioso.
+
+DOC-01: Bueno, y aparte de que cuando uno termina clase como docente, no siempre se acuerda dejar apagado todo. Igual sería bueno que solo se apagara cuando ya no hubiera estudiantes en el aula.
+
+Entrevistador: Eso también se haría otra acción. Pero, por ejemplo, después de mostrarle el panel de control, le mostraría lo que viene siendo las alertas. En este caso, este es el panel de alertas que me muestra las alertas críticas, las pendientes y las atendidas de hoy. Esta parte la vería como tal el conserje. Esto podría verlo él, pero también lo puede ver usted. Por ejemplo, puede ver si en el laboratorio 201, esto es para considerar si es apto para su clase, pues el proyector está sin señal. Por ejemplo, sin señal HDMI, no tiene el cable. La prioridad es alta, obviamente. Y bueno, esto me dice a qué hora fue, por ejemplo, 9:15. Además que el estado pues está pendiente, o sea, no está...
+
+DOC-01: O sea, la hora que explica el momento en que el proyector se quedó sin señal.
+
+Entrevistador: Exactamente. Y bueno, el responsable es TIC, o sea, el responsable técnico podría ser el conserje en este caso. Porque el conserje pues hace todas estas funciones. Y ya. Entonces usted podría igualmente filtrar, o sea, para saber, quiero el aula 101, quiero el laboratorio 201, y me filtra todas esas opciones. También me mostrará una parte del detalle, o sea...
+
+DOC-01: O sea, en ese sentido simplemente me mostraría qué está mal, pero no tengo alguna como para reportar esto.
+
+Entrevistador: Ah, claro. Este, puede verse aquí, usted ve que una de estas aulas está con problemas y usted le pone crear ticket. Entonces se crea una solicitud.
+
+DOC-01: ¿Y a quién le llega esa solicitud?
+
+Entrevistador: Al responsable, en este caso TI. Y después, por ejemplo, esta de acá que tiene que el aire acondicionado está activo fuera del horario y eso es mantenimiento, o sea, al conserje mismo.
+
+DOC-01: O sea, no se apagó el aire y se mantuvo encendido.
+
+Entrevistador: Entonces estos reportes se llenan automáticamente.
+
+DOC-01: O sea, básicamente esto juega también con los horarios de clase.
+
+Entrevistador: Exacto. Por eso la parte de la coordinadora fue esencial para que nos dé el horario de aula y el horario de clases. Entonces aquí también usted tendrá un detalle para ver más, o sea, tener contexto de qué es lo que sucedió y todas las cuestiones. Y bueno, entonces usted podría notificar al responsable y/o crear un ticket en caso de que pues no haya sido atendido. Y en la parte de la gestión de solicitud de mantenimiento, por ejemplo, usted puede incluso registrar una falla. Puede seleccionar el aula, el equipo afectado, el tipo de incidente y la prioridad. Y además de la descripción que usted le pueda dar contexto. Esto, bueno, también mostrará un seguimiento de ticket que es como el historial. Y por ejemplo, si yo le doy clic a este ticket de acá, me mostrará el historial. O sea, si ha estado abierto, cerrado, se volvió a cerrar o está en proceso.
+
+DOC-01: Por ejemplo, una consulta, en el anterior. Si se supone en este de acá me avisa que el aula tiene algún problema, proyector sin señal, y justo me toque esas horas, yo ya no lo utilizaría. O sea, me avisa con anterioridad. Listo. Entonces, literalmente, ¿quién reporta? ¿El docente con el que se quedó sin señal realiza el...?
+
+Entrevistador: Usted puede, o sea, esto es automático. O sea, por eso es un sistema inteligente. Si el proyector detecta que ya no tiene señal, entonces llega automáticamente el reporte, la ID que es el que se va a generar, el aula, el tipo de anomalía, la prioridad en la que está porque está categorizada por los tipos de prioridades, el momento en el que ocurrió y pues el estado. El estado me dice que por ejemplo no ha sido atendido, por eso está en pendiente.
+
+DOC-01: Ah, okay. Entonces quiere decir que alguien ya lo reportó.
+
+Entrevistador: El reporte es automático. Automático y manual. O sea, usted también lo puede hacer manualmente. Por ejemplo que, digamos, lo que le estaba mencionando, el aire acondicionado está goteando. Ya, eso no lo podría detectar como tal el sistema.
+
+DOC-01: Okay, entonces si el hecho de que el proyector está sin señal, ya se estaría reportando de manera automática. Entonces ya no sería necesario que yo creara un ticket porque eso ya se... Solamente esto sería para un problema que esté sucediendo bajo mis horas de clase. Y yo viera que en un caso, por ejemplo, como hay bastantes problemas de luz, puede que en ese momento que esté el aire enfriando bien, por así decirlo, deje de hacerlo. Entonces esa anomalía ya la puedo atender yo a través de crear un ticket porque fue bajo mis horas.
+
+Entrevistador: Por lo tanto, si usted le da por ejemplo crear el ticket, empieza a registrar estos datos de acá, pum, crea la solicitud.
+
+DOC-01: Aunque se supone que si esto es automático también lo haría.
+
+Entrevistador: Sí, pero por ejemplo hay situaciones que ya se salen como tal de lo, digamos, establecido. Por ejemplo, lo de las luces. Eso es algo que no se podría realmente decir, tenemos un problema eléctrico. ¿Por qué? Porque la facultad no es inteligente. Entonces hay dispositivos que son por ejemplo para las toma corrientes. Usted conecta algo, conecta una lámpara, digamos, y usted lo programa, a las 3 de la tarde quiero que se apague. Entonces eso lo vuelve inteligente. Sin embargo, ustedes tienen una corriente directa, por lo tanto da problemas. En tal caso, lo que se podría hacer es que ese encendedor, bueno, ese switch, se lo vuelva inteligente. Y ahí sí se podría conectar con nuestro sistema. Lo que se puede hacer es que mediante el uso de la cámara reportar, hay un titileo, por ejemplo, de las luces. Está prende y apaga, prende y apaga. Y eso pues también estorba o genera ruido al estar dando clase. Entonces ahí...
+
+DOC-01: O si alguien llega, o sea, ya el aula está vacío y siguen encendidas las luces. Entrevistador: Sí, eso sí. Eso sí reportaría como tal.
+
+DOC-01: Ya, ¿qué más?
+
+Entrevistador: Después de eso ya viene el apartado de los reportes. Que bueno, esta parte sí le digo como tal es para nuestros conserjes, pero me sirve que usted también dé su opinión. Por ejemplo, aquí vemos una parte de los reportes que muestra el porcentaje de ocupación. Digamos que en el día se ocupó todas las aulas un 76%. Hubieron algunas que estaban vacías. El consumo eléctrico total es 420 kilowatts por hora. Y tenemos aquí el número de incidencias registradas ese día. Ahora yo puedo filtrar todo esto aquí para un aula en específico para saber cuánto porcentaje tuvo de ocupación y cuánto estuvo consumiendo. Además de eso se puede exportar en Excel y en PDF para tener una vista más buena. Debido a que los conserjes deberían hacer un reporte de mantenimiento y no existe. No existe ningún formato, no existe nada de estas cosas. Todo se maneja por videos, mensajes, que realmente no es como que hay un historial, no hay una constancia de todas maneras.
+
+DOC-01: Claro.
+
+Entrevistador: Por lo tanto, pues ahí está. Ahora, una vez visto los cuatro, bueno, estos son mockups. Pues ya viendo esto, ¿qué es lo primero que le llama la atención para bien o para mal?
+
+DOC-01: ¿De todo el proceso?
+
+Entrevistador: De todo el proceso.
+
+DOC-01: Me parece muy interesante porque no solamente están tratando de que hacer un aula eficiente y automatizada, sino que también netamente están ayudando a la universidad. Porque al que las aulas se, digamos, automaticen en apagarse las luces, en ver que el aire se apague básicamente de manera automática, ayudan inclusive a que su nivel de vida se estire, o sea, aumente un poquito más. Porque para eso básicamente estarían ayudando inclusive hasta ahorrarle la luz a la universidad. Aparte de eso, el mantenimiento apoya bastante en el hecho de que ayuda a que si existe algún problema, se pueda detectar a tiempo para que sea solucionado a tiempo y evitar percances y que se cancelen las clases. Eso es de mucha ayuda, mucha ayuda créeme, para los docentes. Entonces me parece muy interesante que básicamente abarque desde el hecho de apoyo a la facultad y, bueno, solo estamos hablando de la facultad, que más adelante esto llegue a pasar en toda la universidad, es el ahorro de energía y es el apoyo inclusive en la parte económica, porque estamos cuidando los equipos. Estaríamos cuidando los equipos. Y si llegase a haber algún tipo de mantenimiento, se puede hacer de manera oportuna antes de que se siga agravando más el equipo. Entrevistador: Okay. Por ejemplo, de las cuatro vistas que tenemos aquí, ¿cuál es la que usted piensa que usaría un poco más?
+
+DOC-01: El estado de aulas en tiempo real.
+
+Entrevistador: El del panel.
+
+DOC-01: Sí, porque me parece que cada vez que inicie clases o anticiparme un día antes para saber cómo se encuentra el estado del aula. Me daría como un vistazo básicamente de cómo se encuentra el aula en la que voy a trabajar. Esa y también las alertas. Si alguien, porque también podría ver si existe alertas, ¿no? Alguien las haya reportado. Y especialmente si es el aula en la que yo voy a utilizar. Si es así, me da la oportunidad de poder cambiar de aula con tiempo y pedirle inclusive a la coordinadora, ya que esa está en mantenimiento.
+
+Entrevistador: Okay. Bueno. No, le voy a dejar para que siga. Hoy cuando usted llega a un aula y el proyector no prende o no tiene señal, ¿cuánto tiempo pierde de su clase resolviendo o esperando ayuda? DOC-01: Si quiero, unos 15 minutos a media hora. Porque realmente hay ciertos temas que son necesarios utilizar el proyector. Aquellos temas que son bajos números se utiliza tranquilamente la pizarra. Pero sí uno pierde bastante tiempo esperando a que funcione especialmente el proyector, esperando a que, bueno, a veces inclusive el material aquí no se encuentra, buscar al conserje para poder encontrar el control y encenderlo. Y especialmente es el uso del HDMI.
+
+Entrevistador: Claro. ¿Qué tan seguido le ha tocado interrumpir una clase por un problema técnico del aula?
+
+DOC-01: Por, al inicio cuando se trata de las diapositivas y logro conectarme, ya literalmente la clase fluye. Realmente por aire acondicionados también me ha tocado que no enfría lo suficiente y conforme pasa la hora ya se vuelve algo complejo y no se puede trabajar. Entonces sí se ha interrumpido algunas clases con respecto al ambiente y el aire acondicionado.
+
+Entrevistador: Okay. Yéndonos al apartado de las alertas, si usted reporta una falla desde la pantalla de mantenimiento que le mostré, ¿en cuánto tiempo esperaría que le den una respuesta, o sea, una solución?
+
+DOC-01: Bueno, tendría que colocar, si en un caso yo la estoy reportando, ya, primero se tiene que respetar el horario del personal de mantenimiento, ¿no? Y como usted lo dijo, es una entidad pública. Entonces en ese sentido, con que llegue, o sea, que llegue a ser atendida por el responsable, me parece que lo que normalmente administrativamente se coloca en una entidad es de 24 a 36 horas. Ya, pero lamentablemente como estamos hablando de clases, se estaría interrumpiendo esos días para no solamente mi clase, sino también para los docentes que van a ocuparla. Entonces yo creería que debería atenderse dentro del mismo día y que inclusive haya como una respuesta de que si esa aula va a tomar más tiempo arreglar o realizar el mantenimiento, se nos avise. Ya que yo creé esa alerta, por así decirlo. Sería interesante.
+
+Entrevistador: Claro, eso sería como el seguimiento de su reporte. Y bueno, en la parte de, bueno, si usted pudiera ver en este caso, si pudiera ver el estado del aula antes de entrar a su clase, ¿cómo le haría sentir eso?
+
+DOC-01: Ah, okay. Agradecida. No, en realidad sería muy útil porque como decía en este primer panel, que yo puedo evaluar cómo se encuentra el estado de mi aula, realmente saldría más tranquila a entrar a dar mi clase. Porque yo sé que todo la parte de equipos va a estar trabajando de manera óptima. Entonces no va a haber ninguna interrupción y como que daría más tranquilidad y seguridad al poder desarrollar la clase con los estudiantes.
+
+Entrevistador: Okay. Y bueno, para finalizar, de todo lo que hemos hablado, ¿qué es lo que usted considera como docente que no se haya preguntado?
+
+DOC-01: Nada. Yo creo que han abarcado los temas más importantes con respecto al estado de las aulas, el mantenimiento de los mismos, que se generen solicitudes o una gestión de solicitudes con respecto al problema que exista, y bueno, y la generación de reportes. En realidad me parece que ustedes han abarcado bien el problema de mantenimiento y de gestión interna.
+
+Entrevistador: Muchas gracias. Gracias por su tiempo.
+
+(Risas)
+
+Grabador: Fue mi idea.
+
+DOC-01: Espero les haya servido.
+
+Entrevistador: Sí. ¿Esa es suya o mía?
+
+DOC-01: No.
+
+Entrevistador: Es el único lapicero con...

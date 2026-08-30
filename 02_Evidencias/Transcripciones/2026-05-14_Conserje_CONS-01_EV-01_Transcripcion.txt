@@ -1,0 +1,92 @@
+======================================================================
+TRANSCRIPCIÓN ANONIMIZADA — PROYECTO SIGA (ISR-401)
+Sistema Inteligente de Gestión de Aulas — Equipo FGMMN — UTEQ
+======================================================================
+Identificador de evidencia : EV-01
+Fecha de la sesión         : 2026-05-14
+Técnica de elicitación     : Entrevista semiestructurada
+Modalidad de registro      : Video MP4 H.264 + audio extraído
+Código de participante     : CONS-01
+Perfil del participante    : Personal de servicios generales
+Zona de evidencia          : [P] Pública (material anonimizado)
+Anonimización              : sin nombres propios; los cargos únicos y
+                             los terceros mencionados se sustituyen por
+                             marcadores genéricos entre corchetes.
+======================================================================
+
+Entrevista EV-01
+Entrevistador: 1. ¿Cuentan actualmente con algún sistema de cámaras en las aulas? ¿Para qué se utiliza y qué limitaciones tiene?
+
+CONS-01: Si
+
+Entrevistador: 2. ¿Cómo se monitorea actualmente el estado general de las aulas de forma remota, o simplemente no existe esa capacidad?
+
+CONS-01: Por las camaras
+
+Entrevistador: 3. ¿Qué tan difícil resulta para el personal administrativo conocer en tiempo real qué aulas están en uso, cuáles están libres o cuáles presentan algún problema?
+
+CONS-01: Si hay problema como se llama en el aula 103 que tenemos problema ya que el aire esta dañado, pero ahí tenemos aulas que están desocupadas y otras no en la mañana y en la tarde
+
+Entrevistador: 4. ¿Existe algún registro histórico del uso de las aulas, el estado de los equipos o las condiciones ambientales? ¿Cómo se genera y quién lo consulta?
+
+Entrevistador: O sea usted lleva registro como están las aulas
+
+CONS-01: si yo hago los informes y los llevo al [AUTORIDAD DE LA FACULTAD]
+
+Entrevistador: Bueno aquí hay una pregunta grande
+
+Entrevistador: 5. ¿Qué barreras impiden actualmente a las autoridades tener un control remoto y en tiempo real de toda la infraestructura?
+
+CONS-01: ¿Eso lo controla el control de los aires lo remoto no?
+
+Entrevistador: 6. ¿Cómo se determina actualmente si un aula está ocupada o vacía, y quién es el responsable de verificarlo?
+
+CONS-01: Yo soy el responsable
+
+Entrevistador: 7. ¿Con qué frecuencia se realizan inspecciones físicas para verificar el estado de limpieza de las aulas y quién las lleva a cabo?
+
+CONS-01: La limpieza todos los días.
+
+Entrevistador: 8. ¿Existen casos en los que un aula ha permanecido ocupada, vacía o en mal estado de limpieza sin que nadie lo haya detectado a tiempo? ¿Qué consecuencias tuvo?
+
+CONS-01: Hasta la vez ahorita limpio todas las aulas, estoy viendo por las cámaras, me voy desocupando y voy haciendo la limpieza, aquí se deja limpio todo para que no me llamen la atención.
+
+Entrevistador: 9. ¿Cuáles son las principales consecuencias o pérdidas generadas por no detectar a tiempo el estado real de un aula?
+
+CONS-01: Hasta la vez no se ha perdido nada
+
+Entrevistador: O sea hasta la vez ha habido alguna situación importante
+
+CONS-01: No
+
+Entrevistador: 10. ¿Cómo se gestiona actualmente el encendido y apagado del proyector en las aulas, y qué problemas ha generado ese proceso?
+
+CONS-01: Ahorita esta mal, los proyectores si funcionan el problema son los cables, el HDMI ese es el que esta dañado:
+
+Entrevistador: Seria problema de mantenimiento
+
+CONS-01: Claro
+
+Entrevistador: 11. ¿Ha ocurrido que el proyector u otros equipos queden encendidos sin que haya clases? ¿Con qué frecuencia y qué impacto tiene?
+
+CONS-01: Tengo que irlos a apagar, voy a mirar
+
+Entrevistador: Usted siempre verifica
+
+CONS-01: Si, de que todo este apagado
+
+Entrevistador: 12. ¿Cómo se regula actualmente la temperatura dentro de las aulas y quién tiene la potestad de hacerlo?
+
+CONS-01: De aquí lo único es que cuando algún aula tiene el aire demasiado frio tengo que ir a bajarle la temperatura.
+
+Entrevistador: 13. ¿Qué problemas han reportado docentes o estudiantes relacionados con el confort térmico durante las clases?
+
+CONS-01: Ninguna
+
+Entrevistador: 14. ¿Existen aulas donde el aire acondicionado se queda encendido fuera del horario de uso? ¿Cómo se detecta y corrige esa situación?
+
+CONS-01: De ahí yo paso a revisión a ver que aula tiene prendido el aire para ir apagarlo.
+
+Entrevistador: 15. ¿Cómo se gestiona el equilibrio entre garantizar el confort térmico para estudiantes y docentes, y evitar el desperdicio de energía fuera de los horarios de clase?
+
+CONS-01: Cuando desocupan el aula yo apago los aires.
