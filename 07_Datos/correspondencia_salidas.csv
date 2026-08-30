@@ -1,0 +1,18 @@
+salida,tipo,script_que_la_produce,etapa_del_makefile,entrada
+datos_procesados/puntuaciones_consolidadas.csv,datos,scripts/analizar_resultados.py,consolidar,datos_crudos/juez1.csv juez2.csv juez3.csv
+resultados/acuerdo_interevaluador.csv,tabla,scripts/analizar_resultados.py,acuerdo,datos_procesados/puntuaciones_consolidadas.csv
+resultados/supuestos.csv,tabla,scripts/analizar_resultados.py,supuestos,datos_procesados/puntuaciones_consolidadas.csv
+resultados/hipotesis.csv,tabla,scripts/analizar_resultados.py,hipotesis,datos_procesados/puntuaciones_consolidadas.csv
+resultados/efectos.csv,tabla,scripts/analizar_resultados.py,efectos,datos_procesados/puntuaciones_consolidadas.csv
+resultados/resumen_resultados.csv,tabla,scripts/analizar_resultados.py,efectos,datos_procesados/puntuaciones_consolidadas.csv
+resultados/power_calculation.csv,tabla,scripts/power_calculation.py,potencia,parametros declarados en el protocolo registrado
+tablas/saturacion_por_entrevista.csv,tabla,scripts/curva_saturacion.py,saturacion,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv
+figuras/curva_saturacion.png,figura,scripts/curva_saturacion.py,saturacion,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv
+tablas/tabla_descriptivos.tex,tabla,scripts/generar_tablas.py,tablas,resultados/resumen_resultados.csv
+tablas/tabla_hipotesis.tex,tabla,scripts/generar_tablas.py,tablas,resultados/hipotesis.csv
+tablas/tabla_acuerdo.tex,tabla,scripts/generar_tablas.py,tablas,resultados/acuerdo_interevaluador.csv
+tablas/tabla_supuestos.tex,tabla,scripts/generar_tablas.py,tablas,resultados/supuestos.csv
+tablas/tabla_power_calculation.tex,tabla,scripts/power_calculation.py,potencia,resultados/power_calculation.csv
+figuras/fig02_distribucion_por_dimension.png,figura,scripts/generar_figuras.py,figuras,datos_procesados/puntuaciones_consolidadas.csv
+figuras/fig03_tamanos_efecto.png,figura,scripts/generar_figuras.py,figuras,resultados/efectos.csv
+figuras/fig04_acuerdo_interevaluador.png,figura,scripts/generar_figuras.py,figuras,resultados/acuerdo_interevaluador.csv

@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Pruebas de supuestos: normalidad (Shapiro-Wilk) y homogeneidad de varianzas (Levene)}
+\label{tab:supuestos}
+\begin{tabular}{lllllllll}
+\toprule
+Dimension & n\_jueces & Shapiro\_p\_Humano & Shapiro\_p\_LLM & Normal\_Humano & Normal\_LLM & Levene\_estadistico & Levene\_p & Varianzas\_homogeneas \\
+\midrule
+Completitud & 3 & 0.780 & 0.537 & Sí & Sí & 0.122 & 0.745 & Sí \\
+Ausencia\_ambiguedad & 3 & 0.253 & 0.843 & Sí & Sí & 0.002 & 0.969 & Sí \\
+Verificabilidad & 3 & 0.780 & 0.637 & Sí & Sí & 0.458 & 0.536 & Sí \\
+Correccion\_fuente & 3 & 0.298 & 0.000 & Sí & No & 0.115 & 0.751 & Sí \\
+Consistencia\_interna & 3 & 0.843 & 0.537 & Sí & Sí & 0.002 & 0.964 & Sí \\
+\bottomrule
+\end{tabular}
+\end{table}

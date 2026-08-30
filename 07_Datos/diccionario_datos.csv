@@ -1,0 +1,54 @@
+archivo,variable,tipo,rango_o_valores,significado,unidad
+juez1.csv juez2.csv juez3.csv,Item_ciego,texto,Item-01 a Item-51,Identificador ciego del requisito evaluado que oculta su origen humano o LLM,-
+juez1.csv juez2.csv juez3.csv,Completitud(1-5),entero,1 a 5,Grado en que el requisito describe la funcion sin omisiones,puntos de rubrica
+juez1.csv juez2.csv juez3.csv,Ausencia_ambiguedad(1-5),entero,1 a 5,Grado en que el requisito admite una sola interpretacion,puntos de rubrica
+juez1.csv juez2.csv juez3.csv,Verificabilidad(1-5),entero,1 a 5,Grado en que el requisito puede comprobarse de forma objetiva,puntos de rubrica
+juez1.csv juez2.csv juez3.csv,Correccion_fuente(1-5),entero,1 a 5,Fidelidad del requisito respecto del material de entrevista,puntos de rubrica
+juez1.csv juez2.csv juez3.csv,Consistencia_interna(1-5),entero,1 a 5,Ausencia de contradiccion con los demas requisitos del conjunto,puntos de rubrica
+puntuaciones_consolidadas.csv,juez,texto,juez1 juez2 juez3,Evaluador independiente que emitio la puntuacion,-
+puntuaciones_consolidadas.csv,item_ciego,texto,Item-01 a Item-51,Identificador ciego del requisito,-
+puntuaciones_consolidadas.csv,origen,texto,Humano o LLM,Brazo del cuasi-experimento al que pertenece el requisito,-
+puntuaciones_consolidadas.csv,dimension,texto,las cinco dimensiones de calidad,Dimension de la rubrica evaluada,-
+puntuaciones_consolidadas.csv,puntuacion,decimal,1.0 a 5.0,Valor asignado por el juez,puntos de rubrica
+acuerdo_interevaluador.csv,Cohen_kappa_juezI_juezJ,decimal,-1.0 a 1.0,Kappa de Cohen ponderado lineal para ese par de jueces,coeficiente
+acuerdo_interevaluador.csv,Fleiss_kappa_3jueces,decimal,-1.0 a 1.0,Kappa de Fleiss para los tres jueces en conjunto,coeficiente
+supuestos.csv,Shapiro_W,decimal,0.0 a 1.0,Estadistico de Shapiro-Wilk para normalidad de las diferencias,-
+supuestos.csv,Levene_p,decimal,0.0 a 1.0,Valor p de Levene para homogeneidad de varianzas,probabilidad
+hipotesis.csv,Prueba,texto,t apareada o Wilcoxon de rangos con signo,Prueba aplicada segun el resultado de Shapiro-Wilk,-
+hipotesis.csv,Estadistico_valor,decimal,sin acotar,Valor del estadistico de contraste,-
+hipotesis.csv,p_valor,decimal,0.0 a 1.0,Valor p sin ajustar,probabilidad
+hipotesis.csv,p_valor_ajustado_holm,decimal,0.0 a 1.0,Valor p tras correccion de Holm-Bonferroni sobre las cinco dimensiones,probabilidad
+hipotesis.csv,significativo_alpha_05_ajustado,booleano,True o False,Significancia al cinco por ciento tras la correccion,-
+efectos.csv,Tipo_efecto,texto,Cohen d apareado o Cliff delta,Estadistico de magnitud del efecto empleado,-
+efectos.csv,Valor,decimal,sin acotar,Magnitud del efecto estimada,-
+efectos.csv,IC95_inferior,decimal,sin acotar,Limite inferior del intervalo de confianza al 95 por ciento,-
+efectos.csv,IC95_superior,decimal,sin acotar,Limite superior del intervalo de confianza al 95 por ciento,-
+efectos.csv,n_bootstrap,entero,10000,Numero de replicas de bootstrap,replicas
+efectos.csv,semilla,entero,20260802,Semilla del generador pseudoaleatorio,-
+power_calculation.csv,Cohen_d_objetivo,decimal,0.5,Tamano del efecto que el estudio se propuso detectar,-
+power_calculation.csv,alpha,decimal,0.05,Nivel de significacion declarado antes de recolectar,probabilidad
+power_calculation.csv,potencia_deseada,decimal,0.8,Potencia estadistica objetivo,probabilidad
+power_calculation.csv,n_necesario,decimal,33.37,Unidades requeridas para alcanzar la potencia objetivo,unidades
+power_calculation.csv,n_actual,entero,3,Unidades efectivamente disponibles en el analisis,unidades
+power_calculation.csv,potencia_alcanzada_con_n_actual,decimal,0.0841,Potencia real alcanzada con las unidades disponibles,probabilidad
+saturacion_por_entrevista.csv,orden,entero,1 a 10,Posicion cronologica de la entrevista,-
+saturacion_por_entrevista.csv,id_evidencia,texto,EV-nn,Identificador de la entrevista,-
+saturacion_por_entrevista.csv,codigos_nuevos,entero,cero o mas,Codigos tematicos que aparecen por primera vez en esa entrevista,codigos
+saturacion_por_entrevista.csv,codigos_acumulados,entero,cero o mas,Total de codigos distintos hasta esa entrevista inclusive,codigos
+saturacion_por_entrevista.csv,saturado_segun_ultimas_3,booleano,True o False,Si el promedio de codigos nuevos de las ultimas tres cae bajo el umbral,-
+saturacion_por_entrevista.csv,umbral_5pct_total,decimal,cero o mas,Cinco por ciento del total de codigos usado como umbral de saturacion,codigos
+codificacion_tematica.csv,Fragmento,texto,libre,Cita literal tomada de la transcripcion,-
+codificacion_tematica.csv,Codigo,texto,libre,Codigo tematico asignado al fragmento,-
+codificacion_tematica.csv,Categoria,texto,libre,Categoria que agrupa el codigo,-
+codificacion_tematica.csv,Requisito_derivado,texto,RF-nn separados por punto y coma,Requisitos que se derivan del fragmento,-
+codificacion_tematica.csv,ID_evidencia,texto,EV-nn,Entrevista de la que procede el fragmento,-
+codificacion_tematica.csv,Analista_codificador,texto,libre,Integrante que asigno el codigo,-
+matriz_trazabilidad.csv,ID-EV,texto,EV-nn,Evidencia de campo que origina el requisito,-
+matriz_trazabilidad.csv,ID-RF,texto,RF-nn,Requisito funcional derivado,-
+matriz_trazabilidad.csv,ID-CU,texto,CU-nn separados por punto y coma,Casos de uso que realizan el requisito,-
+matriz_trazabilidad.csv,ID-HU,texto,HU-nn,Historia de usuario asociada al requisito,-
+matriz_trazabilidad.csv,ID-CA,texto,CA-nn,Criterio de aceptacion de la historia,-
+matriz_trazabilidad.csv,ID-Componente,texto,libre,Componente de diseno que implementa el requisito,-
+matriz_trazabilidad.csv,ID-Mockup,texto,MU-nn,Prototipo de interfaz que soporta el requisito,-
+respuestas_cuestionario.csv,perfil,texto,DOC COORD CONS,Perfil del respondiente,-
+respuestas_cuestionario.csv,respuesta_n,entero,1 a 5,Valor en escala Likert de cada item del cuestionario,puntos
