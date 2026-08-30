@@ -9,6 +9,15 @@
 # Ver 02_Evidencias/Video/00_LEEME.md
 # ============================================================
 
+# ---- Los archivos del manifiesto NUNCA se normalizan ----
+# Su hash SHA-256 consta en checksums.sha256. Si Git convirtiera sus finales
+# de linea al hacer checkout, el hash dejaria de coincidir y la comprobacion
+# fallaria sobre un clon limpio, que es como se verifica la entrega.
+*.csv     -text
+*.json    -text
+*.svg     -text
+*.drawio  -text
+
 # ---- El manifiesto de sumas NUNCA se normaliza ----
 # Git convierte a CRLF al hacer checkout en Windows, y sha256sum -c
 # interpretaria el retorno de carro como parte del nombre del archivo,
@@ -19,14 +28,10 @@ checksums.sha256  -text
 *.md       text
 *.tex      text
 *.bib      text
-*.csv      text
 *.py       text
 *.txt      text
 *.cff      text
-*.json     text
 *.js       text
-*.svg      text
-*.drawio   text
 Makefile   text
 
 # ---- Binarios: sin normalizacion ni diff textual ----
