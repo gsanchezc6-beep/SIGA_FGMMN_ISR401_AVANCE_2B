@@ -1,0 +1,95 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lastpage}
+
+\graphicspath{{figuras/}{../03_Modelado/01_Contexto/}{../03_Modelado/02_iStar_SD/}{../03_Modelado/03_iStar_SR/}{../03_Modelado/04_Casos_Uso/}{../03_Modelado/05_Clases/}{../03_Modelado/06_Secuencia/}{../03_Modelado/07_Actividad/}{../03_Modelado/08_Estados/}{../03_Modelado/09_DFD/}{../03_Modelado/10_Componentes/}{../03_Modelado/11_Despliegue/}{../03_Modelado/12_Prototipos_Interfaz/}}
+
+\definecolor{sigagreen}{HTML}{1D6B36}
+\definecolor{rotuloblue}{HTML}{0070C0}
+
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+\addto\captionsspanish{\renewcommand{\listtablename}{\'Indice de tablas}}
+\addto\captionsspanish{\renewcommand{\listfigurename}{\'Indice de figuras}}
+
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{3}
+\titleformat{\section}{\normalfont\bfseries\fontsize{14}{16}\selectfont}{}{0em}{}
+\titleformat{\subsection}{\normalfont\bfseries\fontsize{12}{14}\selectfont}{}{0em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries\fontsize{12}{14}\selectfont}{}{0em}{}
+\linespread{1.3}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{P\'agina \thepage\ de \pageref{LastPage}}
+
+\title{}
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\bfseries\Large UNIVERSIDAD T\'ECNICA ESTATAL DE QUEVEDO\par}
+\vspace{2mm}
+{\bfseries\large FACULTAD DE CIENCIAS DE LA COMPUTACI\'ON\par}
+\vspace{2mm}
+{\bfseries\large CARRERA DE SOFTWARE\par}
+\vspace{10mm}
+{\bfseries TEMA:\par}
+\vspace{2mm}
+Proyecto Fin de Curso: Entrega 3 (2A) -- Especificaci\'on de Requisitos de\\
+Software (ERS/SRS) Completa + Componente Emp\'irico.
+\vspace{8mm}
+
+{\bfseries ESTUDIANTES:\par}
+\vspace{2mm}
+Cede\~no Avila Winston Damian \textbar\ CI: 0942833492 \textbar\ wcedenoa2@uteq.edu.ec\\
+Gilces Carranza Jos\'e Ignacio \textbar\ CI: 1251059240 \textbar\ jgilcesc3@uteq.edu.ec\\
+Mendoza Palma Allan Jeremy \textbar\ CI: 0956082309 \textbar\ amendozap10@uteq.edu.ec\\
+Mu\~noz Qui\~nonez Yeranick Esther \textbar\ CI: 1207929645 \textbar\ ymunozq@uteq.edu.ec\\
+S\'anchez Cornejo Gary Alberto \textbar\ CI: 1208338291 \textbar\ gsanchezc6@uteq.edu.ec
+\vspace{8mm}
+
+{\bfseries CURSO:\par}
+4TO "B"
+\vspace{6mm}
+
+{\bfseries DOCENTE:\par}
+Ing. Guerrero Ulloa Gleiston Ciceron, PhD
+\vspace{6mm}
+
+{\bfseries MATERIA:\par}
+Ingenier\'ia de Requerimientos
+\vspace{6mm}
+
+{\bfseries REPOSITORIO GITHUB:\par}
+\url{https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2A}
+\vspace{10mm}
+
+{\bfseries QUEVEDO -- LOS R\'IOS -- ECUADOR\par}
+{\bfseries 2026 -- 2027 PPA\par}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+\newpage
+
+\input{secciones_generadas.tex}
+
+\end{document}
