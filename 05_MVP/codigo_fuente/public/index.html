@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SIGA</title>
+</head>
+<body>
+  <script src="/js/api.js"></script>
+  <script>
+    (async () => {
+      try {
+        const sesion = await api('/api/auth/me');
+        window.location.href = sesion.usuario ? '/panel.html' : '/login.html';
+      } catch (err) {
+        window.location.href = '/login.html';
+      }
+    })();
+  </script>
+</body>
+</html>

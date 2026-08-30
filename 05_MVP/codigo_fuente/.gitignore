@@ -1,0 +1,4 @@
+node_modules/
+data/siga.db
+.env
+npm-debug.log

@@ -1,0 +1,21 @@
+{
+  "name": "siga-mvp",
+  "version": "1.0.0",
+  "description": "SIGA - Sistema Inteligente de Gestion de Aulas (MVP academico, sensores IoT simulados)",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite src/server.js",
+    "seed": "node --experimental-sqlite src/db/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "socket.io": "^4.7.5"
+  }
+}
