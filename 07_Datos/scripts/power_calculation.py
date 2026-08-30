@@ -75,7 +75,7 @@ def main():
     print(f"\nResultado escrito en: {args.salida_csv}")
 
     columnas_es = {
-        "Cohen_d_objetivo": "Cohen d objetivo", "alpha": "α", "potencia_deseada": "Potencia deseada",
+        "Cohen_d_objetivo": "Cohen d objetivo", "alpha": r"$\alpha$", "potencia_deseada": "Potencia deseada",
         "n_necesario": "n necesario (exacto)", "n_necesario_redondeado": "n necesario (redondeado)",
         "n_actual": "n actual", "potencia_alcanzada_con_n_actual": "Potencia alcanzada con n actual",
     }
