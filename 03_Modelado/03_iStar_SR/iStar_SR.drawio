@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="nTemfr25gUFTaQxAzSTc">
+    <mxGraphModel dx="2715" dy="2662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jHyygXVqxVa-72n70Pyn-44" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;dashed=1;dashPattern=8 4;verticalAlign=top;fontStyle=1;fontSize=15;spacingTop=15;fontFamily=Tahoma;" value="Infrastructure and Maintenance Staff" vertex="1">
+          <mxGeometry height="650" width="800" x="10" y="-1100" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-45" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;fontStyle=1;fontFamily=Tahoma;" value="Reduce fault&#xa;response time" vertex="1">
+          <mxGeometry height="100" width="180" x="325" y="-1035" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-46" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;fontFamily=Tahoma;" value="Check control&#xa;panel&#xa;(RF-07)" vertex="1">
+          <mxGeometry height="110" width="180" x="85" y="-765" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-47" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;fontFamily=Tahoma;" value="Receive automatic&#xa;alerts&#xa;(RF-08)" vertex="1">
+          <mxGeometry height="110" width="180" x="325" y="-765" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-48" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;fontFamily=Tahoma;" value="Log maintenance&#xa;request&#xa;(RF-12)" vertex="1">
+          <mxGeometry height="110" width="180" x="565" y="-765" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-49" edge="1" parent="1" style="endArrow=none;startArrow=oval;startFill=1;startSize=6;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.355;exitY=0.841;entryX=0.5;entryY=0;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Tahoma;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="378.9000000000001" y="-950.9000000000001" as="sourcePoint" />
+            <mxPoint x="165" y="-765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-50" edge="1" parent="1" style="endArrow=none;startArrow=oval;startFill=1;startSize=6;html=1;strokeColor=#666666;strokeWidth=1.5;entryX=0.5;entryY=0;fontFamily=Tahoma;" target="jHyygXVqxVa-72n70Pyn-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="-940" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-51" edge="1" parent="1" source="jHyygXVqxVa-72n70Pyn-45" style="endArrow=none;startArrow=oval;startFill=1;startSize=6;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.711;exitY=0.899;entryX=0.5;entryY=0;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Tahoma;" target="jHyygXVqxVa-72n70Pyn-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-52" parent="1" style="text;html=1;fontSize=10;fontColor=#666666;fontStyle=2;fontFamily=Tahoma;" value="decomposition" vertex="1">
+          <mxGeometry height="20" width="100" x="375" y="-1055" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-53" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;fontFamily=Tahoma;" value="SIGA" vertex="1">
+          <mxGeometry height="90" width="140" x="345" y="-585" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-54" edge="1" parent="1" source="jHyygXVqxVa-72n70Pyn-46" style="endArrow=open;endFill=0;html=1;strokeColor=#82b366;dashed=1;exitX=0.5;exitY=1;entryX=0.068;entryY=0.22;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Tahoma;" target="jHyygXVqxVa-72n70Pyn-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-55" edge="1" parent="1" source="jHyygXVqxVa-72n70Pyn-47" style="endArrow=open;endFill=0;html=1;strokeColor=#82b366;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontFamily=Tahoma;" target="jHyygXVqxVa-72n70Pyn-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-56" edge="1" parent="1" source="jHyygXVqxVa-72n70Pyn-48" style="endArrow=open;endFill=0;html=1;strokeColor=#82b366;dashed=1;exitX=0.5;exitY=1;fontFamily=Tahoma;" target="jHyygXVqxVa-72n70Pyn-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-57" parent="1" style="text;html=1;fontSize=10;fontColor=#82b366;fontStyle=0;fontFamily=Tahoma;" value="supported by" vertex="1">
+          <mxGeometry height="20" width="100" x="169" y="-635" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-58" parent="1" style="ellipse;shape=cloud;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Tahoma;" value="" vertex="1">
+          <mxGeometry height="20" width="26" x="750" y="-470" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-59" parent="1" style="text;html=1;align=left;fontSize=11;fontFamily=Tahoma;" value="Softgoal" vertex="1">
+          <mxGeometry height="5" width="40" x="743" y="-450" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-60" parent="1" style="shape=hexagon;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Tahoma;" value="" vertex="1">
+          <mxGeometry height="20" width="26" x="750" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-61" parent="1" style="text;html=1;align=left;fontSize=11;fontFamily=Tahoma;" value="Task" vertex="1">
+          <mxGeometry height="20" width="40" x="750" y="-385" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-62" parent="1" style="text;html=1;fontStyle=1;fontSize=16;align=center;fontFamily=Tahoma;" value="i* Strategic Rationale (SR) Diagram — Infrastructure and Maintenance Staff" vertex="1">
+          <mxGeometry height="30" width="630" x="89" y="-1150" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-63" parent="1" style="text;html=1;fontSize=10;fontColor=#82b366;fontStyle=0;fontFamily=Tahoma;" value="supported by" vertex="1">
+          <mxGeometry height="20" width="100" x="415" y="-645" as="geometry" />
+        </mxCell>
+        <mxCell id="jHyygXVqxVa-72n70Pyn-64" parent="1" style="text;html=1;fontSize=10;fontColor=#82b366;fontStyle=0;fontFamily=Tahoma;" value="supported by" vertex="1">
+          <mxGeometry height="20" width="100" x="575" y="-625" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
