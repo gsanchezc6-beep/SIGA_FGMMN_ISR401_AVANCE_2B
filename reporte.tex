@@ -1,0 +1,381 @@
+% ============================================================================
+%  SIGA - Reporte del estudio - Entrega Final (2B)
+%  ISR-401 Ingenieria de Requerimientos - UTEQ - Equipo FGMMN
+%
+%  Compilacion (seccion exacta documentada en README.md, apartado 4):
+%     pdflatex -interaction=nonstopmode reporte.tex
+%     bibtex   reporte
+%     pdflatex -interaction=nonstopmode reporte.tex
+%     pdflatex -interaction=nonstopmode reporte.tex
+%
+%  El orden de las secciones es el que fija la seccion 10 de la guia y NO
+%  debe alterarse. Las notas dirigidas al equipo van siempre como comentario
+%  LaTeX: no se imprimen, de modo que el documento entregado nunca contiene
+%  instrucciones ni marcadores.
+% ============================================================================
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{csquotes}
+
+\definecolor{sigagreen}{HTML}{1D6B36}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small SIGA --- Reporte del estudio}
+\fancyhead[R]{\small ISR-401 \textbullet{} UTEQ 2026--2027}
+\fancyfoot[C]{\small P\'agina \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\linespread{1.15}
+\setlength{\parskip}{0.4em}
+
+\begin{document}
+
+% ---------------------------------------------------------------------------
+% CARATULA - la URL del repositorio debe aparecer en UNA SOLA LINEA (piso G1)
+% ---------------------------------------------------------------------------
+\begin{titlepage}
+\centering
+\vspace*{1.5cm}
+
+{\bfseries\Large UNIVERSIDAD T\'ECNICA ESTATAL DE QUEVEDO\par}
+\vspace{3mm}
+{\bfseries\large FACULTAD DE CIENCIAS DE LA COMPUTACI\'ON\par}
+\vspace{2mm}
+{\bfseries\large CARRERA DE SOFTWARE\par}
+
+\vspace{2cm}
+{\bfseries\Large Reporte del estudio\par}
+\vspace{5mm}
+{\Large SIGA --- Sistema Inteligente de Gesti\'on de Aulas\par}
+\vspace{3mm}
+{\large Calidad de los requisitos funcionales elicitados por analistas humanos\\
+frente a los generados por un modelo grande de lenguaje\par}
+
+\vspace{1.5cm}
+{\bfseries Proyecto Fin de Curso --- Entrega Final (2B)\par}
+{Ingenier\'ia de Requerimientos (ISR-401) --- 4.\textsuperscript{o} nivel\par}
+
+\vspace{1.5cm}
+{\bfseries Equipo FGMMN\par}
+\vspace{3mm}
+\begin{tabular}{ll}
+S\'anchez Cornejo, Gary Alberto      & Analista l\'ider \\
+Mu\~noz Qui\~n\'onez, Yeranick Esther & Documentaci\'on y gesti\'on de evidencias \\
+Cede\~no \'Avila, Winston Dami\'an    & Modelado y prototipo \\
+Mendoza Palma, Allan Jeremy          & Modelado UML e i* \\
+Gilces Carranza, Jos\'e Ignacio      & Verificaci\'on \\
+\end{tabular}
+
+\vspace{1cm}
+{Docente responsable: Ing. Gleiston Guerrero Ulloa\par}
+
+\vfill
+{\bfseries Repositorio del proyecto:}\\
+\href{https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B}{\texttt{https://github.com/gsanchezc6-beep/SIGA\_FGMMN\_ISR401\_AVANCE\_2B}}
+
+\vspace{8mm}
+{Quevedo, Los R\'ios, Ecuador --- Per\'iodo Acad\'emico Ordinario 2026--2027\par}
+\end{titlepage}
+
+% ---------------------------------------------------------------------------
+% RESUMEN BILINGUE - 200 palabras cada uno, con palabras clave
+% ---------------------------------------------------------------------------
+\section*{Resumen}
+\addcontentsline{toc}{section}{Resumen}
+
+Este reporte documenta la especificaci\'on de requisitos del Sistema Inteligente de
+Gesti\'on de Aulas (SIGA), una plataforma de Internet de las Cosas y aprendizaje
+autom\'atico para la Facultad de Ciencias de la Computaci\'on de la Universidad
+T\'ecnica Estatal de Quevedo, y el componente emp\'irico que la acompa\~na. El sistema
+cubre monitoreo ambiental de aulas, control remoto de equipamiento, generaci\'on de
+alertas, an\'alisis predictivo de fallos, gesti\'on de solicitudes de mantenimiento y
+reportes administrativos. La especificaci\'on se rige por ISO/IEC/IEEE 29148:2018 y sus
+requisitos no funcionales se cuantifican sobre el modelo de calidad de ISO/IEC
+25010:2023. El componente emp\'irico es un cuasi-experimento apareado que compara la
+calidad de los requisitos funcionales elicitados por analistas humanos frente a los
+generados por un modelo grande de lenguaje a partir del mismo corpus de entrevistas
+anonimizadas, evaluados a ciegas por tres jueces independientes en cinco dimensiones:
+completitud, ausencia de ambig\"uedad, verificabilidad, correcci\'on respecto de la
+fuente y consistencia interna. El estudio se registr\'o previamente y su an\'alisis es
+\'integramente reproducible desde los datos crudos con una sola orden. Los resultados
+no alcanzan significaci\'on tras la correcci\'on por comparaciones m\'ultiples, con una
+potencia estad\'istica que el propio reporte cuantifica y discute como limitaci\'on
+central del trabajo.
+
+\textbf{Palabras clave.} Ingenier\'ia de requisitos \textbullet{} Elicitaci\'on
+\textbullet{} Calidad de requisitos \textbullet{} Modelos grandes de lenguaje
+\textbullet{} Estudio emp\'irico \textbullet{} Aulas inteligentes
+
+\vspace{5mm}
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+This report documents the requirements specification of SIGA, an Internet of Things and
+machine learning platform for classroom management built for the Faculty of Computer
+Science at Universidad T\'ecnica Estatal de Quevedo, together with its accompanying
+empirical component. The system covers environmental monitoring of classrooms, remote
+equipment control, alert generation, predictive equipment failure analysis, maintenance
+request lifecycle management, and administrative reporting. The specification follows
+ISO/IEC/IEEE 29148:2018, and its non-functional requirements are quantified against the
+ISO/IEC 25010:2023 product quality model. The empirical component is a paired
+quasi-experiment comparing the quality of functional requirements elicited by human
+analysts against those generated by a large language model from the same anonymised
+interview corpus, blind-rated by three independent judges across five dimensions:
+completeness, absence of ambiguity, verifiability, correctness with respect to the
+source, and internal consistency. The study protocol was preregistered, and the analysis
+is fully reproducible from raw data with a single command. Results do not reach
+significance after correction for multiple comparisons, with a statistical power that
+this report quantifies and discusses as the central limitation of the work.
+
+\textbf{Keywords.} Requirements engineering \textbullet{} Elicitation \textbullet{}
+Requirements quality \textbullet{} Large language models \textbullet{} Empirical study
+\textbullet{} Smart classrooms
+
+\newpage
+
+% ---------------------------------------------------------------------------
+% INDICES: general, de tablas y de figuras
+% ---------------------------------------------------------------------------
+\tableofcontents
+\newpage
+\listoftables
+\listoffigures
+\newpage
+
+% ---------------------------------------------------------------------------
+\section{Introducci\'on}
+% Contenido propio del equipo. Debe cerrar con la pregunta de investigacion
+% textual, la misma que aparece en el protocolo registrado.
+% Evidencia que la sostiene (seccion 5.12 de la guia): documentos originales de
+% la organizacion en 02_Evidencias/Documentos_Organizacion/ y notas de campo.
+
+\subsection{Problema y contexto}
+
+\subsection{Brecha de conocimiento}
+% Exige cadena de busqueda literal, bases consultadas, criterios de inclusion y
+% exclusion, y conteo por etapa. Sin eso la seccion no tiene evidencia que la
+% sostenga.
+
+\subsection{Pregunta de investigaci\'on}
+
+% ---------------------------------------------------------------------------
+\section{Trabajo relacionado}
+% Exige cuadro comparativo de 10 a 15 trabajos y un .bib con cada campo
+% verificado. La lectura debe ser efectiva: el cuadro es la evidencia de ello.
+
+% ---------------------------------------------------------------------------
+\section{Metodolog\'ia}
+
+\subsection{Dise\~no del estudio}
+
+El estudio sigue un dise\~no cuasi-experimental apareado. La variable independiente es
+el origen del conjunto de requisitos funcionales, con dos niveles: elicitaci\'on por
+analistas humanos del equipo y generaci\'on por un modelo grande de lenguaje a partir
+del mismo material fuente. Las variables dependientes son las cinco dimensiones de
+calidad de la r\'ubrica de evaluaci\'on ciega.
+
+Las decisiones de dise\~no se tomaron antes de recolectar y quedaron registradas en el
+protocolo, cuyo comprobante de registro previo con marca temporal se conserva en
+\texttt{06\_Experimento/registro\_previo/}.
+
+\subsection{Participantes}
+
+El levantamiento de campo se cerr\'o en diez entrevistas v\'alidas, por autorizaci\'on
+expresa del docente responsable ante la restricci\'on de calendario. Los participantes
+corresponden a tres perfiles de la organizaci\'on cliente: docencia, coordinaci\'on
+acad\'emica y conserjer\'ia e infraestructura.
+
+Una entrevista adicional fue excluida por retiro del consentimiento informado del
+participante, y su material se suprimi\'o conforme a la pol\'itica de conservaci\'on y
+supresi\'on declarada en \texttt{08\_Etica/}.
+
+\subsection{Instrumentos}
+
+\subsection{Plan de an\'alisis}
+
+El plan de an\'alisis se declar\'o dentro del protocolo registrado, antes de observar
+los datos: prueba de supuestos de normalidad y homogeneidad de varianzas, prueba de
+hip\'otesis por dimensi\'on con correcci\'on de Holm-Bonferroni sobre las cinco
+comparaciones, y c\'alculo del tama\~no del efecto con intervalo de confianza al
+95\,\% por remuestreo bootstrap.
+
+% ---------------------------------------------------------------------------
+\section{Ejecuci\'on del estudio}
+
+\subsection{Procedimiento}
+% Exige bitacora de sesiones con fecha, duracion, participante y responsable.
+
+\subsection{Codificaci\'on tem\'atica}
+
+\subsection{Evaluaci\'on ciega}
+
+Tres jueces independientes evaluaron cincuenta y un requisitos presentados con
+identificador ciego, sin informaci\'on sobre su origen. Cada juez punt\'uo cada
+requisito en las cinco dimensiones con una escala de uno a cinco. Los juicios
+individuales se conservan sin agregar en \texttt{07\_Datos/datos\_crudos/}.
+
+% ---------------------------------------------------------------------------
+\section{Resultados}
+% REGLA: ninguna cifra se escribe a mano. Toda tabla y figura de esta seccion
+% se inserta desde tablas/ y figuras/, regeneradas por `make all`. La
+% correspondencia salida-script esta en 07_Datos/correspondencia_salidas.csv.
+
+\subsection{Acuerdo entre evaluadores}
+
+% \input{07_Datos/tablas/tabla_acuerdo}
+% \begin{figure}[H]\centering
+%   \includegraphics[width=.8\textwidth]{07_Datos/figuras/fig04_acuerdo_interevaluador}
+%   \caption{Acuerdo entre evaluadores por dimension.}
+% \end{figure}
+
+\subsection{Estad\'isticos descriptivos}
+
+% \input{07_Datos/tablas/tabla_descriptivos}
+
+\subsection{Pruebas de supuestos}
+
+% \input{07_Datos/tablas/tabla_supuestos}
+
+\subsection{Contraste de hip\'otesis}
+
+% \input{07_Datos/tablas/tabla_hipotesis}
+
+\subsection{Magnitud del efecto}
+
+% \begin{figure}[H]\centering
+%   \includegraphics[width=.8\textwidth]{07_Datos/figuras/fig03_tamanos_efecto}
+%   \caption{Tamanos del efecto con intervalo de confianza al 95 por ciento.}
+% \end{figure}
+
+\subsection{Saturaci\'on tem\'atica}
+
+% \begin{figure}[H]\centering
+%   \includegraphics[width=.8\textwidth]{07_Datos/figuras/curva_saturacion}
+%   \caption{Codigos tematicos nuevos por entrevista.}
+% \end{figure}
+
+\subsection{Potencia estad\'istica}
+
+% \input{07_Datos/tablas/tabla_power_calculation}
+
+% ---------------------------------------------------------------------------
+\section{Discusi\'on}
+% Produccion propia del equipo. Cada afirmacion de esta seccion debe tener su
+% fila en la tabla de correspondencia afirmacion-resultado del anexo, y remitir
+% a un resultado concreto o a una referencia. Una afirmacion sin fila se cuenta
+% como no respaldada.
+
+% ---------------------------------------------------------------------------
+\section{Amenazas a la validez}
+% Produccion propia. Cada amenaza va con su mitigacion aplicada y su limitacion
+% remanente; enunciarlas sin mitigacion baja el criterio a N2.
+
+\subsection{Validez de conclusi\'on}
+
+\subsection{Validez interna}
+
+\subsection{Validez de constructo}
+
+\subsection{Validez externa}
+
+% ---------------------------------------------------------------------------
+\section{Especificaci\'on final y trazabilidad}
+
+\subsection{S\'intesis de la especificaci\'on}
+
+\subsection{Auditor\'ia de calidad de la especificaci\'on}
+% Las seis metricas de la seccion 5.6, cada una con su formula aplicada, sus
+% conteos base publicados en anexo ANTES de calcular, la aritmetica visible, el
+% veredicto y la accion de mejora. Toda metrica bajo su valor de referencia se
+% corrige y se vuelve a medir, y aqui se muestra el par antes-despues.
+
+\subsection{Trazabilidad extremo a extremo}
+
+\subsection{Hu\'erfanos y cadenas rotas}
+
+\subsection{L\'inea base congelada}
+
+% ---------------------------------------------------------------------------
+\section{Requisitos de los componentes de inteligencia artificial}
+% Una ficha por componente. SIGA tiene al menos dos componentes basados en
+% aprendizaje automatico: prediccion de fallos de equipamiento y deteccion de
+% ocupacion de aulas. Por cada uno: descripcion, entradas, salidas y
+% comportamiento ante error; requisitos funcionales, de rendimiento, de equidad
+% y de explicabilidad, todos con umbral, unidad y metodo de comprobacion;
+% especificacion de los datos de entrenamiento; plan de monitoreo. Ademas, una
+% clasificacion de riesgo razonada sobre SIGA con su base legal, y el trazado
+% de cada requisito de IA a los requisitos preexistentes.
+
+% ---------------------------------------------------------------------------
+\section{Retrospectiva}
+
+% ---------------------------------------------------------------------------
+\section{Conclusiones}
+% Cada conclusion debe remitir a un dato del propio reporte.
+
+% ---------------------------------------------------------------------------
+\section{Disponibilidad de datos}
+
+Los datos, los scripts y las salidas que sostienen cada cifra de este reporte est\'an en
+el repositorio del proyecto, cuya direcci\'on figura en la car\'atula. El paquete de
+replicaci\'on reside en \texttt{07\_Datos/}, con los datos crudos en formato abierto,
+los datos procesados generados exclusivamente por script, el diccionario de datos y la
+correspondencia expl\'icita entre cada tabla y cada figura del reporte y el script que
+la produce. El manifiesto de sumas de verificaci\'on \texttt{checksums.sha256} comprueba
+sin error sobre un clon limpio.
+
+% ---------------------------------------------------------------------------
+\section{\'Etica y protecci\'on de datos}
+
+% ---------------------------------------------------------------------------
+\newpage
+% \nocite{*} incluye todas las entradas de referencias.bib para que la
+% secuencia de compilacion del README funcione desde el primer momento.
+% Retirarlo cuando cada referencia este citada en el cuerpo del texto: la
+% guia exige que todas las referencias esten citadas y sean verificables.
+\nocite{*}
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+\addcontentsline{toc}{section}{Referencias}
+
+% ---------------------------------------------------------------------------
+\newpage
+\appendix
+\section{Instrumento de auditor\'ia de calidad}
+% Conteos base publicados antes de calcular cada metrica de la seccion 5.6.
+
+\section{Banco de preguntas del tribunal}
+% Una respuesta por pregunta del temario. Cada respuesta senala el artefacto
+% que la respalda. Fuente: 09_Defensa/banco_preguntas.md
+
+\section{Aporte individual}
+% Fuente verificable: 04_Trazabilidad/aporte_individual.csv. Cada fila cita el
+% identificador del commit que la respalda; el docente lo resuelve con git show.
+
+\section{Retrospectiva del equipo}
+% Minimo tres elementos por categoria, cada uno con responsable y accion.
+
+\section{Declaraci\'on de uso de inteligencia artificial}
+% Fuente: 08_Etica/declaracion_uso_ia.md. Por seccion: herramienta, tipo de
+% asistencia y metodo de validacion efectivamente realizado.
+
+\section{Correspondencia entre afirmaci\'on y resultado}
+% Una fila por cada afirmacion de la discusion, con el resultado o la
+% referencia a la que remite.
+
+\end{document}
