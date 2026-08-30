@@ -1,0 +1,17 @@
+conteo,valor,fuente,fecha_medicion
+Requisitos funcionales especificados,25,01_ERS/secciones_generadas.tex,2026-08-29
+Requisitos no funcionales especificados,16,01_ERS/secciones_generadas.tex,2026-08-29
+Casos de uso identificados,16,01_ERS/secciones_generadas.tex,2026-08-29
+Casos de uso especificados textualmente,16,01_ERS/secciones_generadas.tex,2026-08-29
+Historias de usuario,17,01_ERS/secciones_generadas.tex,2026-08-29
+Restricciones de diseno,18,01_ERS/secciones_generadas.tex,2026-08-29
+Fichas de requisito funcional analizadas,25,01_ERS/secciones_generadas.tex,2026-08-29
+Filas de la matriz de trazabilidad,66,04_Trazabilidad/matriz_trazabilidad.csv,2026-08-29
+Pares de requisitos funcionales posibles,300,calculado 25*24/2,2026-08-29
+Requisitos con los ocho atributos completos,24,01_ERS/secciones_generadas.tex,2026-08-29
+Requisitos con criterio de aceptacion comprobable,24,01_ERS/secciones_generadas.tex,2026-08-29
+Requisitos con fuente de campo identificada,23,04_Trazabilidad/matriz_trazabilidad.csv,2026-08-29
+Requisitos con cadena adelante completa,12,04_Trazabilidad/matriz_trazabilidad.csv,2026-08-29
+Pares de requisitos en conflicto abierto,1,analisis manual documentado,2026-08-29
+Dependencias declaradas en Entradas/Salidas,2,01_ERS/secciones_generadas.tex,2026-08-29
+Defectos residuales tras re-inspeccion,no medible,inspeccion no realizada,2026-08-29
