@@ -1,0 +1,22 @@
+ID-RF,Objetivo,MoSCoW,Implementado,Modulo,Observacion
+RF-01,Monitorear el estado ambiental del aula,Must,Si,panel + simulator,Lecturas de temperatura y humedad por aula
+RF-02,Controlar remotamente los dispositivos del aula,Must,Si,control,Comando con registro en bitacora
+RF-03,Detectar automaticamente la ocupacion del aula,Must,Si,panel + simulator,Estado ocupada/vacia por sensor de presencia
+RF-04,Controlar remotamente los proyectores,Must,Si,control,Encendido y apagado con estado reflejado
+RF-05,Ajustar remotamente la climatizacion,Must,Si,control,Ajuste con confirmacion de estado
+RF-07,Consultar un panel de control centralizado,Must,Si,panel,Vista consolidada por aula
+RF-08,Generar y enviar alertas por anomalias,Must,Si,alertas,Umbral configurable por variable
+RF-10,Registrar el historial de fallas y mantenimientos,Must,Si,mantenimiento,Persistencia con los cinco campos minimos
+RF-11,Notificar de forma inmediata las fallas criticas,Must,Si,alertas,Notificacion diferenciada por severidad
+RF-12,Gestionar las solicitudes de mantenimiento,Must,Si,mantenimiento,Ciclo de vida completo del ticket
+RF-13,Controlar automaticamente el apagado energetico,Must,Si,reglas,Regla por ocupacion y horario
+RF-15,Programar horarios automatizados de encendido y apagado,Must,Si,reglas,Programacion por aula
+RF-16,Apagar automaticamente equipos de aulas desocupadas,Must,Si,reglas,Disparo por ocupacion nula fuera de horario
+RF-19,Gestionar acceso diferenciado por roles,Must,Si,auth + middleware,Tres roles con permisos distintos
+RF-21,Notificar equipos encendidos fuera de horario,Must,Si,alertas,Aviso por equipo fuera de franja
+RF-22,Monitorear la conectividad de la red IoT,Must,Si,panel,Estado de conexion por sensor
+RF-23,Registrar bitacora de acciones de usuario,Must,Si,bitacora,Registro de toda accion de control
+RF-20,Registrar el historial de ocupacion de aulas,Must,No,-,Pendiente para la siguiente iteracion
+RF-24,Exportar los datos personales del usuario a solicitud,Must,No,-,Derecho LOPDP no implementado en el prototipo
+RF-25,Rectificar los datos personales del usuario,Must,No,-,Derecho LOPDP no implementado en el prototipo
+RF-17,Generar reportes administrativos,Should,Si,reportes,Consolidado por rango de fechas
