@@ -1,0 +1,37 @@
+# ============================================================
+# SIGA - Entrega Final (2B) - atributos de Git
+#
+# NO se usa Git LFS. Todo el material audiovisual reside en el
+# repositorio como objeto normal de Git: los videos se recodificaron
+# para quedar por debajo del limite de 100 MB por archivo de GitHub,
+# conservando 1280x720 y audio a 128 kbps.
+#
+# Ver 02_Evidencias/Video/00_LEEME.md
+# ============================================================
+
+# ---- Normalizacion de fin de linea en texto ----
+*.md       text
+*.tex      text
+*.bib      text
+*.csv      text
+*.py       text
+*.txt      text
+*.cff      text
+*.json     text
+*.js       text
+*.svg      text
+*.drawio   text
+Makefile   text
+
+# ---- Binarios: sin normalizacion ni diff textual ----
+*.mp4   binary
+*.mp3   binary
+*.wav   binary
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.vpp   binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary

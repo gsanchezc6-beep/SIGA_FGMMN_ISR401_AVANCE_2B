@@ -1,0 +1,75 @@
+# ============================================================
+# SIGA - Entrega Final (2B) - .gitignore
+#
+# REGLA: ninguna carpeta de evidencia se excluye nunca. Toda evidencia
+# declarada reposa dentro del repositorio y supera la verificacion tecnica
+# de su tipo. Un archivo excluido y declarado se cuenta como inexistente.
+#
+# En particular NO se excluyen archivos comprimidos ni multimedia: los
+# registros de audio y video de las entrevistas se versionan aqui, con Git
+# LFS cuando superan el limite de tamano de GitHub.
+# ============================================================
+
+# ---- Credenciales y secretos ----
+.env
+.env.local
+*.key
+*.pem
+secrets.*
+credenciales*
+
+# ---- Correspondencia participante-codigo: nunca al repositorio ----
+registro_custodia*
+correspondencia_participantes*
+
+# ---- LaTeX: solo residuos de compilacion ----
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.spl
+*.xdv
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ---- Prototipo: dependencias y artefactos de build ----
+node_modules/
+dist/
+build/
+coverage/
+*.sqlite-journal
+npm-debug.log*
+
+# ---- Editores ----
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---- Temporales de oficina ----
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# ---- Sistema operativo ----
+.DS_Store
+Thumbs.db
+desktop.ini

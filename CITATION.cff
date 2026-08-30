@@ -1,0 +1,81 @@
+cff-version: 1.2.0
+message: "Si utiliza este trabajo, citelo de la siguiente manera."
+type: software
+
+title: "SIGA - Sistema Inteligente de Gestion de Aulas: especificacion de requisitos y paquete de replicacion"
+version: "2B-1.0.0"
+date-released: "2026-08-29"
+
+repository-code: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
+url: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
+
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+
+abstract: >-
+  Especificacion de Requisitos de Software y paquete de replicacion del proyecto
+  SIGA, una plataforma de Internet de las Cosas y aprendizaje automatico para el
+  monitoreo de temperatura, humedad y ocupacion de aulas, control remoto de
+  proyectores y climatizacion, generacion de alertas, analisis predictivo de
+  fallos, gestion de solicitudes de mantenimiento y reportes administrativos,
+  especificada para la Facultad de Ciencias de la Computacion de la Universidad
+  Tecnica Estatal de Quevedo. El paquete incluye la especificacion conforme a
+  ISO/IEC/IEEE 29148:2018 con requisitos no funcionales cuantificados sobre
+  ISO/IEC 25010:2023, las transcripciones anonimizadas de las entrevistas de
+  campo, la codificacion tematica con su curva de saturacion, la matriz de
+  trazabilidad, los instrumentos y datos crudos del componente empirico, y los
+  scripts que regeneran la totalidad de las tablas y figuras del reporte. El
+  estudio empirico compara la calidad de los requisitos funcionales elicitados
+  por analistas humanos frente a los generados por un modelo grande de lenguaje
+  a partir del mismo corpus de entrevistas, evaluados a ciegas por tres jueces
+  independientes en cinco dimensiones de calidad.
+
+keywords:
+  - "requirements engineering"
+  - "requirements elicitation"
+  - "requirements quality"
+  - "large language models"
+  - "empirical software engineering"
+  - "smart classrooms"
+  - "internet of things"
+  - "Ecuador"
+
+authors:
+  - family-names: "Sanchez Cornejo"
+    given-names: "Gary Alberto"
+    email: "gsanchezc6@uteq.edu.ec"
+    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
+  - family-names: "Munoz Quinonez"
+    given-names: "Yeranick Esther"
+    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
+  - family-names: "Cedeno Avila"
+    given-names: "Winston Damian"
+    email: "wcedenoa2@uteq.edu.ec"
+    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
+  - family-names: "Mendoza Palma"
+    given-names: "Allan Jeremy"
+    email: "amendozap10@uteq.edu.ec"
+    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
+  - family-names: "Gilces Carranza"
+    given-names: "Jose Ignacio"
+    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
+
+contact:
+  - family-names: "Sanchez Cornejo"
+    given-names: "Gary Alberto"
+    email: "gsanchezc6@uteq.edu.ec"
+
+references:
+  - type: standard
+    title: "ISO/IEC/IEEE 29148:2018 - Systems and software engineering - Life cycle processes - Requirements engineering"
+    year: 2018
+    institution:
+      name: "International Organization for Standardization"
+    notes: "Estandar base de la especificacion de requisitos del proyecto."
+  - type: standard
+    title: "ISO/IEC 25010:2023 - Systems and software engineering - Systems and software quality requirements and evaluation (SQuaRE) - Product quality model"
+    year: 2023
+    institution:
+      name: "International Organization for Standardization"
+    notes: "Modelo de calidad usado para cuantificar los requisitos no funcionales."
