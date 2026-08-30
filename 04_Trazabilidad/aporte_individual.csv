@@ -1,0 +1,35 @@
+integrante,rol,repositorio,commit,fecha,aporte_descrito
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,a939f6d,2026-08-30,Archivos raiz obligatorios y declaracion de licencia dual
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,4f85748,2026-08-30,Reporte del estudio con su estructura y bibliografia en formato IEEE
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,d713c55,2026-08-30,Especificacion de requisitos ERS/SRS v2.0 compilada con sus figuras
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,f3fa45d,2026-08-30,Auditoria de calidad de la especificacion con sus conteos base publicados
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,36cd4f3,2026-08-30,Ficha del componente de IA RF-09 y clasificacion de riesgo del sistema
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,eac1c93,2026-08-30,Matriz de trazabilidad y priorizacion MoSCoW y Kano
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,6928f8a,2026-08-30,Protocolo experimental y registro previo con la bitacora de desviaciones
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,c986ab8,2026-08-30,Instrumentos de evaluacion ciega y consignas del modelo de lenguaje
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,7e63cab,2026-08-30,Pipeline de analisis reproducible ejecutable con una sola orden
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,42b53db,2026-08-30,Salidas estadisticas del componente empirico
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,bc8426a,2026-08-30,Datos crudos y procesados del paquete de replicacion
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,698366a,2026-08-30,Diccionario de datos y correspondencia entre salidas y scripts
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,ffe701b,2026-08-30,Instrucciones de despliegue del prototipo y cobertura de requisitos
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,6803847,2026-08-30,Guion de la defensa individual y banco de preguntas del tribunal
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,aada199,2026-08-30,Integracion del diagrama de contexto y del modelado organizacional iStar
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,c1b4201,2026-08-30,Integracion de los diagramas de secuencia de los casos de uso obligatorios
+Sanchez Cornejo Gary Alberto,Analista lider,SIGA_FGMMN_ISR401_AVANCE_2B,bb4b3fd,2026-08-30,Integracion del codigo fuente del prototipo organizado por modulos
+Munoz Quinonez Yeranick Esther,Documentacion y gestion de evidencias,SIGA_FGMMN_ISR401_AVANCE_2A,3292ec7,2026-08-02,Registro de audio de la entrevista EV-01
+Munoz Quinonez Yeranick Esther,Documentacion y gestion de evidencias,SIGA_FGMMN_ISR401_AVANCE_2A,10aeca8,2026-08-02,Reorganizacion del directorio de audio de evidencias
+Munoz Quinonez Yeranick Esther,Documentacion y gestion de evidencias,SIGA_FGMMN_ISR401_AVANCE_2A,02efff9,2026-08-02,Carga de evidencia de campo
+Mendoza Palma Allan Jeremy,Modelado UML e iStar,SIGA_FGMMN_ISR401_AVANCE_2A,d789b8d,2026-08-02,Diagrama de actividad act_UC16
+Mendoza Palma Allan Jeremy,Modelado UML e iStar,SIGA_FGMMN_ISR401_AVANCE_2A,dbbb95e,2026-08-02,Diagrama de actividad act_UC15
+Mendoza Palma Allan Jeremy,Modelado UML e iStar,SIGA_FGMMN_ISR401_AVANCE_2A,d631a0e,2026-08-02,Diagrama de actividad act_UC14
+Mendoza Palma Allan Jeremy,Modelado UML e iStar,SIGA_FGMMN_ISR401_AVANCE_2A,b7d366c,2026-08-02,Diagrama de actividad act_UC13
+Mendoza Palma Allan Jeremy,Modelado UML e iStar,SIGA_FGMMN_ISR401_AVANCE_2A,955e07c,2026-08-02,Diagrama de actividad act_UC12
+Mendoza Palma Allan Jeremy,Modelado UML e iStar,SIGA_FGMMN_ISR401_AVANCE_2A,ceeda3e,2026-08-02,Transcripcion de la entrevista COORD-02 EV-10
+Mendoza Palma Allan Jeremy,Modelado UML e iStar,SIGA_FGMMN_ISR401_AVANCE_2A,510f1dd,2026-08-02,Transcripcion de la entrevista CONS-03 EV-09
+Cedeno Avila Winston Damian,Modelado y prototipo,SIGA_FGMMN_ISR401_AVANCE_2A,cb89e28,2026-08-02,Diagrama de despliegue en archivo fuente nativo vpp
+Cedeno Avila Winston Damian,Modelado y prototipo,SIGA_FGMMN_ISR401_AVANCE_2A,8ad7ce7,2026-08-02,Diagrama de componentes en archivo fuente nativo vpp
+Cedeno Avila Winston Damian,Modelado y prototipo,SIGA_FGMMN_ISR401_AVANCE_2A,f130450,2026-08-02,Registro de audio de la entrevista EV-13
+Cedeno Avila Winston Damian,Modelado y prototipo,SIGA_FGMMN_ISR401_AVANCE_2A,f0ca703,2026-08-02,Registro de audio de la entrevista EV-12
+Cedeno Avila Winston Damian,Modelado y prototipo,SIGA_FGMMN_ISR401_AVANCE_2A,c8ce4ac,2026-08-02,Registro de audio de la entrevista EV-11
+Cedeno Avila Winston Damian,Modelado y prototipo,SIGA_FGMMN_ISR401_AVANCE_2A,433f768,2026-08-02,Transcripcion de la entrevista EV-13
+Gilces Carranza Jose Ignacio,Verificacion,,,,Sin aporte registrado en el historial de ninguno de los dos repositorios del proyecto
