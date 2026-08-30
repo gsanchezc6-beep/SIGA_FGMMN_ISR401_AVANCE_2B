@@ -9,6 +9,12 @@
 # Ver 02_Evidencias/Video/00_LEEME.md
 # ============================================================
 
+# ---- El manifiesto de sumas NUNCA se normaliza ----
+# Git convierte a CRLF al hacer checkout en Windows, y sha256sum -c
+# interpretaria el retorno de carro como parte del nombre del archivo,
+# haciendo fallar la comprobacion sobre un clon limpio.
+checksums.sha256  -text
+
 # ---- Normalizacion de fin de linea en texto ----
 *.md       text
 *.tex      text
