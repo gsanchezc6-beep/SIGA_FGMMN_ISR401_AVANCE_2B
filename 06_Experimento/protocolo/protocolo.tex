@@ -1,0 +1,150 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noquoting]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Protocolo del componente empírico --- SIGA}
+\rhead{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\title{\textbf{Protocolo del componente empírico}\\[0.3em]
+\large Proyecto SIGA --- Sistema Inteligente de Gestión de Aulas}
+\author{Ingeniería de Requerimientos [20303] --- Equipo FGMMN\\
+Facultad de Ciencias de la Computación, UTEQ}
+\date{Versión 2.0 --- 3 de agosto de 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Enfoque}
+Comparación de calidad de requisitos funcionales elicitados por un equipo humano
+frente a los generados por un modelo de lenguaje grande (LLM) a partir del mismo
+material fuente.
+
+\section{Marco PICOC}
+\begin{longtable}{p{3.2cm}p{11cm}}
+\toprule
+\textbf{Elemento} & \textbf{Definición} \\
+\midrule
+\endhead
+Población & Requisitos funcionales del sistema SIGA (26 generados por LLM, 25 elicitados por el equipo humano). \\
+Intervención & Elicitación asistida por modelo de lenguaje grande, a partir del corpus completo de 11 entrevistas anonimizadas. \\
+Comparación & Elicitación tradicional por el equipo humano (entrevistas y análisis manual). \\
+Resultado & Puntuación de calidad en 5 dimensiones: completitud, ausencia de ambigüedad, verificabilidad, corrección respecto de la fuente y consistencia interna; evaluada por al menos 3 jueces ciegos. \\
+Contexto & Proyecto académico de Ingeniería de Requerimientos, dominio de gestión inteligente de aulas, FCCDD, UTEQ. \\
+\bottomrule
+\end{longtable}
+
+\section{Pregunta de investigación}
+¿En qué dimensiones de calidad los requisitos funcionales elicitados por un equipo
+humano difieren de los generados por un modelo de lenguaje grande a partir del mismo
+material fuente?
+
+\section{Hipótesis}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{H\textsubscript{0}:} No hay diferencia significativa en la puntuación
+        media de calidad entre el Conjunto A (LLM) y el Conjunto B (humano) en
+        ninguna de las 5 dimensiones evaluadas.
+  \item \textbf{H\textsubscript{1}:} Existe una diferencia significativa en la
+        puntuación media de calidad entre el Conjunto A y el Conjunto B en al menos
+        una dimensión.
+\end{itemize}
+
+\section{Variables}
+\begin{longtable}{p{3.2cm}p{11cm}}
+\toprule
+\textbf{Tipo} & \textbf{Variable} \\
+\midrule
+\endhead
+Independiente & Origen del requisito (Humano / LLM). \\
+Dependientes & Puntuación de 1 a 5 en cada una de las 5 dimensiones de la rúbrica. \\
+Control & Mismo material fuente para ambos conjuntos; los mismos jueces evalúan ambos conjuntos; orden aleatorizado y ciego. \\
+\bottomrule
+\end{longtable}
+
+\section{Participantes (jueces evaluadores)}
+\textbf{Requisito de independencia:} ninguno de los jueces puede ser una de las
+personas entrevistadas en las 11 transcripciones que sirvieron como material fuente
+(DOC-01 a DOC-04, COORD-01 a COORD-03, CONS-01 a CONS-04), para preservar la ceguera
+del diseño. Se exige un mínimo de 3 jueces; se recomiendan 5 cuando sea posible,
+conforme a la Sección 5.1 de la guía.
+
+Cada juez firmó un consentimiento informado específico, archivado en
+\texttt{06\_Experimento/instrumentos/}.
+
+\section{Diseño}
+Cuasi-experimento apareado. Cada juez evalúa los 51 ítems del paquete ciego
+(\texttt{Paquete\_Evaluacion\_Ciega\_Jueces.md}), sin conocer el origen de cada uno,
+usando la \texttt{Hoja\_Puntuacion\_JUEZ.csv}. El orden fue aleatorizado con semilla
+fija (20260802) para garantizar reproducibilidad.
+
+\section{Plan de análisis estadístico}
+\begin{enumerate}[leftmargin=*]
+  \item Consolidar las hojas de puntuación de los jueces.
+  \item Calcular el acuerdo inter-evaluador: $\kappa$ de Cohen por par de jueces y
+        $\kappa$ de Fleiss para el conjunto completo.
+  \item Prueba de normalidad de Shapiro-Wilk sobre las puntuaciones de cada conjunto,
+        por dimensión.
+  \item Si los datos son normales, prueba $t$ para muestras apareadas comparando la
+        media de cada juez en el Conjunto A frente al Conjunto B. Si no lo son,
+        prueba de Wilcoxon.
+  \item Tamaño del efecto: $d$ de Cohen en el caso paramétrico, $\delta$ de Cliff en
+        el no paramétrico.
+  \item Cálculo de potencia estadística previo, con $\alpha = 0{,}05$ y potencia
+        deseada $1-\beta = 0{,}80$.
+\end{enumerate}
+
+Los scripts que reproducen estas tablas a partir de los datos crudos se encuentran en
+\texttt{06\_Experimento/scripts\_analisis/}.
+
+\section{Amenazas a la validez}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Validez de constructo:} el modelo usado para generar el Conjunto A
+        tuvo exposición previa parcial al Conjunto B dentro de la misma cuenta de
+        chat. La limitación se documenta en detalle en
+        \texttt{prompt\_llm\_conjunto\_A.md}.
+  \item \textbf{Validez interna:} los jueces deben ser verificablemente independientes
+        de las 11 entrevistas fuente; su selección queda documentada.
+  \item \textbf{Validez externa:} los resultados son específicos del dominio SIGA y de
+        un modelo de LLM particular; no se generalizan automáticamente a otros
+        dominios ni a otros modelos.
+  \item \textbf{Validez de conclusión:} el tamaño de muestra (51 ítems, 3 jueces) es
+        modesto. Se recomienda ampliar el número de jueces hacia la Entrega 4 (2B) si
+        el tiempo lo permite.
+\end{itemize}
+
+\section{Registro previo del protocolo}
+El protocolo está registrado en el Marco de Ciencia Abierta (OSF):
+
+\begin{center}
+\url{https://osf.io/3nruf/}
+\end{center}
+
+\textbf{Estado actual:} \emph{Pending registration approval}. El registro fue
+enviado antes de la distribución del paquete ciego a los jueces, conforme al
+gatekeeper G6 de la guía. La aprobación por parte de OSF es un trámite administrativo
+posterior al envío y no altera la fecha de registro, que es la que otorga la
+precedencia temporal.
+
+\section{Disponibilidad de datos y materiales}
+El conjunto de datos anonimizado está depositado en Zenodo bajo licencia Creative
+Commons Atribución 4.0 Internacional (CC BY 4.0):
+
+\begin{center}
+\url{https://doi.org/10.5281/zenodo.21774351}
+\end{center}
+
+Los datos identificables (grabaciones de audio y video, consentimientos con cédula y
+firma visibles) permanecen en la zona restringida del repositorio, cifrada con
+AES-256, conforme a la Sección 4.1 de la guía y a la Ley Orgánica de Protección de
+Datos Personales del Ecuador.
+
+\end{document}
