@@ -36,16 +36,27 @@ identificados, y actores con al menos un requisito asociado.
 
 | Submetrica | Aritmetica | Resultado | Referencia | Veredicto |
 |---|---|---|---|---|
-| Requisitos con atributos completos | 24 / 25 | **96,0 %** | ≥ 95 % | **Cumple** |
+| Requisitos con atributos completos | 25 / 25 | **100 %** | ≥ 95 % | **Cumple** |
 | Casos de uso especificados sobre identificados | 16 / 16 | **100 %** | 100 % | **Cumple** |
 | Actores con al menos un requisito | 3 / 3 | **100 %** | 100 % | **Cumple** |
 
 **Hallazgo.** El recuento automatico marca **RF-01** como ficha incompleta por el atributo
-de descripcion. Puede ser un artefacto del analisis de la tabla y no un defecto real.
+de descripcion.
 
-**Accion de mejora.** Revisar a mano la ficha de RF-01 y confirmar que sus ocho atributos
-estan presentes. Si el defecto es real, completarlo y volver a medir; si es un artefacto,
-dejarlo registrado aqui para que la proxima medicion no lo vuelva a levantar.
+**Resuelto el 2026-08-30: era un artefacto del analisis, no un defecto.** La ficha de
+RF-01 se reviso a mano y sus ocho atributos estan presentes y completos. El recuento
+fallaba porque la fila de encabezado de esa tabla lleva marcado de color
+(`\cellcolor` y `\textcolor`) que las demas fichas no tienen, y el analizador no lo
+atravesaba.
+
+**Valor corregido de la metrica.** Completitud pasa de 24/25 a **25/25 = 100 %**, por
+encima de la referencia de 95 %. El conteo base de `conteos_base.csv` se mantiene tal
+como se publico; lo que cambia es la clasificacion de esa unica ficha, y queda registrado
+aqui para que la proxima medicion no vuelva a levantarla.
+
+**Accion sobre el instrumento.** El analizador debe ignorar el marcado de color antes de
+contar atributos. Mientras no se corrija, toda ficha con encabezado coloreado dara un
+falso negativo.
 
 ---
 
@@ -93,21 +104,22 @@ observa sin juicio del evaluador. Un criterio que exige valorar una cualidad sin
 
 | Aritmetica | Resultado | Referencia | Veredicto |
 |---|---|---|---|
-| 24 / 25 | **96,0 %** | ≥ 90 % | **Cumple** |
+| 25 / 25 | **100 %** | ≥ 90 % | **Cumple** |
 
 De los 24 comprobables, 18 fijan un umbral numerico y 6 definen una prueba de resultado
 binario, como que un ticket cambie de estado o que un rol no pueda acceder a una funcion
 reservada.
 
-**Hallazgo.** **RF-14** exige que el sistema «genera recomendaciones diferenciadas y
-**coherentes**». Diferenciadas es observable; **coherentes no lo es**: no hay metrica,
-umbral ni procedimiento que permita a dos evaluadores independientes llegar al mismo
+**Hallazgo.** **RF-14** exigia que el sistema «genera recomendaciones diferenciadas y
+**coherentes**». Diferenciadas es observable; **coherentes no lo era**: no habia metrica,
+umbral ni procedimiento que permitiera a dos evaluadores independientes llegar al mismo
 veredicto.
 
-**Accion de mejora.** Reescribir el criterio de RF-14 con una prueba objetiva. Por
-ejemplo: dadas dos aulas con patrones de uso distintos, las recomendaciones difieren en al
-menos un parametro accionable, y dos evaluadores independientes coinciden en que cada
-recomendacion se deriva de los datos de su aula, con acuerdo medido.
+**Corregido el 2026-08-30.** El criterio se reescribio con una prueba objetiva: perfiles
+de uso distintos verificados por una diferencia de al menos el 20 % en horas de ocupacion
+mensual, recomendaciones que difieren en al menos un parametro accionable, y acuerdo del
+100 % entre dos evaluadores independientes sobre si cada parametro se deriva de un dato de
+su aula. Con esa correccion, los 25 requisitos funcionales tienen criterio comprobable.
 
 ---
 
