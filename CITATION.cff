@@ -9,6 +9,16 @@ date-released: "2026-08-29"
 repository-code: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 url: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 
+doi: "10.17605/OSF.IO/7PQ3H"
+
+identifiers:
+  - type: doi
+    value: "10.17605/OSF.IO/7PQ3H"
+    description: "Registro previo del protocolo del componente empirico en OSF."
+  - type: url
+    value: "https://osf.io/7pq3h"
+    description: "Enlace directo al registro OSF."
+
 license:
   - Apache-2.0
   - CC-BY-4.0
