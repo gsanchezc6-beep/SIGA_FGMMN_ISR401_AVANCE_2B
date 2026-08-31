@@ -8,6 +8,32 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.3.0] - 2026-08-31
+
+Comprobante del registro previo y ampliacion del manifiesto de integridad.
+
+### Anadido
+
+- `06_Experimento/registro_previo/osf_registration.pdf` - exportacion de 15 paginas de la
+  pagina publica del registro, con DOI, fecha de registro, contribuyentes y formulario.
+- `06_Experimento/registro_previo/osf_internet_archive.pdf` - ficha del item archivado por
+  el Center for Open Science, con su fecha propia.
+- `06_Experimento/registro_previo/osf_registration_api.json`,
+  `osf_contributors_api.json`, `osf_internet_archive_bag.zip` y
+  `osf_internet_archive_meta.xml` - la misma evidencia en formato verificable con dos
+  ordenes `curl`, sin credenciales.
+
+### Cambiado
+
+- `06_Experimento/registro_previo/registro_osf.md` - se corrige el estado: el registro ya
+  constaba como retrospectivo en la propia OSF desde el 2026-08-27. G9 sigue incumplido,
+  pero la declaracion esta hecha en la fuente y con fecha.
+- `checksums.sha256` - de 248 a 253 entradas; el manifiesto cubre ahora los archivos zip.
+- `.gitattributes` - `*.zip binary`, para que el hash del paquete archivado cuadre sobre
+  un clon limpio.
+
+---
+
 ## [2B-1.2.0] — 2026-08-31
 
 Correcciones derivadas de la revision docente de la Entrega Final.
