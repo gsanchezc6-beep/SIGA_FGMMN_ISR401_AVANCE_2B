@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <identifier>osf-registrations-7pq3h-v1</identifier>
+  <collection>osf-registration-providers-osf-v1</collection>
+  <collection>osf-registrations</collection>
+  <collection>osf</collection>
+  <creator>Sánchez Gary</creator>
+  <creator>Winston Damian Cedeño Avila</creator>
+  <creator>ALLAN JEREMY MENDOZA PALMA</creator>
+  <date>2026-08-02</date>
+  <description>SIGA es un sistema de gestión inteligente de aulas basado en IoT e Inteligencia Artificial, desarrollado para la Facultad de Ciencias de la Computación y Diseño Digital de la UTEQ. El proyecto tiene un doble objetivo: especificar formalmente los requisitos del sistema mediante entrevistas, cuestionarios y observación con personal de coordinación, docentes, personal administrativo y estudiantes voluntarios; y ejecutar un componente empírico que compara la calidad de los requisitos funcionales elicitados por el equipo humano frente a los generados por un modelo de lenguaje grande (LLM) a partir del mismo material fuente. La población participante son adultos voluntarios de la propia comunidad UTEQ (caso de auto-observación institucional). El método combina entrevistas semiestructuradas, cuestionario digital, observación directa y validación por walkthrough, con un componente experimental cuasi-experimental apareado evaluado por jueces ciegos. El sistema incluye un módulo que consulta, de forma agregada y sin identificación de personas, el estado de ocupación mediante la cámara de videovigilancia existente, lo cual eleva el proyecto de categoría ética B a A. Se espera que este trabajo aporte evidencia empírica sobre el uso de LLM en elicitación de requisitos en un contexto universitario latinoamericano, y un manuscrito dirigido a una revista indexada en JCR/Scopus.</description>
+  <license>https://creativecommons.org/licenses/by-nc/4.0/legalcode</license>
+  <osf_category>project</osf_category>
+  <osf_project>https://api.osf.io/v2/nodes/3nruf/?version=2.20</osf_project>
+  <osf_registration_doi>10.17605/OSF.IO/7PQ3H</osf_registration_doi>
+  <osf_registration_schema>OSF Preregistration</osf_registration_schema>
+  <osf_registry>OSF Registries</osf_registry>
+  <osf_subjects>Engineering</osf_subjects>
+  <osf_subjects>Other Engineering</osf_subjects>
+  <osf_subjects>Education</osf_subjects>
+  <publisher>Center for Open Science</publisher>
+  <scanner>Internet Archive Python library 1.9.9</scanner>
+  <source>https://osf.io/7pq3h/</source>
+  <title>Calidad de requisitos funcionales elicitados por un equipo humano frente a los generados por un modelo de lenguaje grande: un estudio de caso en la gestión inteligente de aulas universitarias</title>
+  <uploader>ops-admin@cos.io</uploader>
+  <mediatype>data</mediatype>
+  <collection_added>osf-registrations</collection_added>
+  <collection_added>osf</collection_added>
+  <publicdate>2026-08-06 13:00:29</publicdate>
+  <addeddate>2026-08-06 13:00:29</addeddate>
+  <modified>2026-08-31 06:57:58.588228+00:00</modified>
+</metadata>
