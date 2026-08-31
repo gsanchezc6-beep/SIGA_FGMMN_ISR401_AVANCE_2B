@@ -70,7 +70,7 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 ├── LICENSE                       Apache-2.0 (codigo) + CC BY 4.0 (datos y documentos)
 ├── CITATION.cff                  Metadatos de citacion
 ├── CHANGELOG.md                  Historial de versiones
-├── checksums.sha256              Sumas SHA-256 de todos los archivos multimedia
+├── checksums.sha256              Sumas SHA-256 de la evidencia binaria y de datos
 ├── reporte.tex                   Documento entregado (se compila a reporte.pdf)
 ├── referencias.bib               Bibliografia del reporte, formato IEEE
 ├── 01_ERS/                       Especificacion de Requisitos de Software

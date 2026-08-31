@@ -46,3 +46,4 @@ Makefile   text
 *.docx  binary
 *.xlsx  binary
 *.pptx  binary
+*.zip   binary
