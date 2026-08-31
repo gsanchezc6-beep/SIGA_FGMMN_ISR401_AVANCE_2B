@@ -8,6 +8,32 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.2.0] — 2026-08-31
+
+Correcciones derivadas de la revision docente de la Entrega Final.
+
+### Anadido
+
+- `06_Experimento/registro_previo/desviacion_clave_desciego.md` — desviacion del
+  protocolo documentada: que es la tabla de desciego, por que debe ser publica para que el
+  paquete de replicacion funcione, y que amenaza a la validez queda declarada y pendiente
+  de verificar.
+- `01_ERS/` — subseccion 3.3.2, requisitos del componente de inteligencia artificial:
+  rendimiento, equidad con su regla de no despliegue, explicabilidad, datos de
+  entrenamiento con sus sesgos declarados, plan de monitoreo y clasificacion de riesgo.
+- `01_ERS/` — resumen bilingue, Resumen y Abstract con sus palabras clave.
+
+### Cambiado
+
+- La tabla de desciego pasa de `07_Datos/datos_crudos/CLAVE_RESPUESTAS_no_compartir_con_jueces.csv`
+  a `06_Experimento/clave_desciego_items.csv`. Es artefacto de diseno experimental, no dato
+  crudo de campo, y su nombre anterior afirmaba una restriccion que el repositorio no
+  cumplia. El contenido es identico y las diez salidas del pipeline no cambian.
+- `07_Datos/scripts/analizar_resultados.py` — ruta por defecto de la tabla de desciego.
+- `checksums.sha256` — regenerado.
+
+---
+
 ## [2B-1.1.0] — 2026-08-30
 
 Consolidacion de la especificacion y cierre de las declaraciones del repositorio.
