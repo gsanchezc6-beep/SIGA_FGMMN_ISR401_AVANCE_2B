@@ -3,14 +3,14 @@ RF-IA-01,Funcional,RF-09,RF-09,RF-09,Concreta el criterio de verificacion del re
 RF-IA-02,Funcional,RF-09,RF-09,RF-09;RF-12,Limita la carga de trabajo que el componente genera sobre mantenimiento,30,porcentaje de falsos positivos,Validacion sobre conjunto de prueba retenido
 RF-IA-03,Funcional,RF-09,RF-09,RF-07;RF-10,La cobertura se calcula sobre el parque registrado y se muestra en el panel,100,porcentaje de equipos elegibles,Conteo automatico en cada ciclo de inferencia
 RF-IA-04,Funcional,RF-09,RF-09,RF-07,La probabilidad mostrada en el panel debe estar calibrada,0.10,error de calibracion esperado,Curva de calibracion con diez particiones de probabilidad
-RP-IA-01,Rendimiento,RF-09,RF-09,NFR-02,Sostiene la disponibilidad mensual comprometida,120,segundos,Ejecucion cronometrada diez veces sobre el parque real
-RP-IA-02,Rendimiento,RF-09,RF-09,NFR-01;RF-07,Se alinea con el tiempo de respuesta del panel,2,segundos,Prueba de carga con cincuenta consultas concurrentes
+RP-IA-01,Rendimiento,RF-09,RF-09,RNF-02,Sostiene la disponibilidad mensual comprometida,120,segundos,Ejecucion cronometrada diez veces sobre el parque real
+RP-IA-02,Rendimiento,RF-09,RF-09,RNF-01;RF-07,Se alinea con el tiempo de respuesta del panel,2,segundos,Prueba de carga con cincuenta consultas concurrentes
 RP-IA-03,Rendimiento,RF-09,RF-09,RF-23,Cada ejecucion queda registrada en la bitacora de acciones,1,ejecucion cada 24 horas,Revision de bitacora durante treinta dias continuos
-RP-IA-04,Rendimiento,RF-09,RF-09,NFR-02,Acota el consumo de recursos del servicio de inferencia,512,MB de memoria residente,Medicion del proceso durante la inferencia completa
+RP-IA-04,Rendimiento,RF-09,RF-09,RNF-02,Acota el consumo de recursos del servicio de inferencia,512,MB de memoria residente,Medicion del proceso durante la inferencia completa
 EQ-IA-01,Equidad,RF-09,RF-09,RF-12;RD-08,La atencion de mantenimiento no debe depender del bloque edilicio,10,puntos porcentuales de diferencia de sensibilidad,Sensibilidad por grupo con intervalo de confianza al 95 por ciento por bootstrap
 EQ-IA-02,Equidad,RF-09,RF-09,RF-10;RF-12,Los equipos antiguos no deben quedar peor cubiertos por el modelo,10,puntos porcentuales de diferencia de falsos negativos,Tasa por grupo con intervalo de confianza al 95 por ciento
 EQ-IA-03,Equidad,RF-09,RF-09,RF-20,Las aulas menos usadas no deben quedar sin mantenimiento preventivo,5,puntos porcentuales de diferencia de cobertura,Conteo de cobertura por grupo en cada ciclo de inferencia
-EX-IA-01,Explicabilidad,RF-09,NFR-10,NFR-10;RF-07;RF-08,Concreta el requisito de explicabilidad del ERS y fija donde se muestra,2 segundos y 60 palabras,segundos y palabras,Percentil 95 sobre cincuenta consultas y prueba de comprension con cuatro de cinco participantes no tecnicos
+EX-IA-01,Explicabilidad,RF-09,RNF-10,RNF-10;RF-07;RF-08,Concreta el requisito de explicabilidad del ERS y fija donde se muestra,2 segundos y 60 palabras,segundos y palabras,Percentil 95 sobre cincuenta consultas y prueba de comprension con cuatro de cinco participantes no tecnicos
 DAT-IA-01,Datos de entrenamiento,RF-09,RF-09,RF-10;RF-12;RF-20;RD-09,Las fuentes son requisitos existentes y RD-09 fija el respeto a la normativa de datos,40,eventos de falla etiquetados,Conteo sobre el registro operativo antes de entrenar
 DAT-IA-02,Datos de entrenamiento,RF-09,RF-09,RD-09,El campo responsable se excluye del entrenamiento por ser dato personal,0,variables personales en el modelo,Revision del esquema de variables antes de entrenar
 MON-IA-01,Monitoreo,RF-09,RF-09,RF-23;RF-17,Los indicadores se registran en bitacora y se exponen en reportes,60,porcentaje de sensibilidad movil,Ventana movil de noventa dias con revision mensual

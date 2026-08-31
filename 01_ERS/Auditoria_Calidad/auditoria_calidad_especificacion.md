@@ -62,7 +62,7 @@ el mismo equipo.
 |---|---|---|
 | RF-13 y RF-16 | Ambos apagan equipos de un aula desocupada fuera de horario, ambos con umbral ≤ 2 minutos | **Conflicto: solapamiento funcional** |
 | RF-03 con RF-13 y RF-16 | La deteccion de ocupacion (≤ 15 s) alimenta a los dos apagados (≤ 2 min) | Consistente: el presupuesto de tiempo encaja |
-| RF-08 y NFR-01 | Alerta de anomalia ≤ 1 min frente a entrega de alertas ≤ 60 s | Consistente: es el mismo valor |
+| RF-08 y RNF-01 | Alerta de anomalia ≤ 1 min frente a entrega de alertas ≤ 60 s | Consistente: es el mismo valor |
 | RF-08 y RF-11 | Alerta general ≤ 1 min frente a notificacion critica ≤ 30 s | Consistente: la critica es mas estricta, como corresponde |
 | RF-21 y RF-16 | Notificar equipo encendido fuera de horario (≤ 60 s) frente a apagarlo (≤ 2 min) | Consistente: avisa antes de actuar |
 | RF-24 y RF-25 con RF-23 | Exportacion y rectificacion de datos personales, ambas con registro en bitacora | Consistente |

@@ -79,7 +79,7 @@ obligaciones, que son las que efectivamente se implementan y se verifican:
 | Declarar la procedencia, el volumen, el etiquetado y los sesgos conocidos de los datos | Ficha RF-09, seccion 6 | Revision documental |
 | Medir el desempeno con umbral, unidad y metodo declarados antes de desplegar | Ficha RF-09, secciones 2 y 3 | Ejecucion sobre conjunto de prueba retenido |
 | Medir brechas entre grupos y bloquear el despliegue si se superan | Ficha RF-09, seccion 4 | Metricas por grupo con intervalo de confianza |
-| Explicar cada prediccion a quien la usa, en su lenguaje | Ficha RF-09, seccion 5 · NFR-10 | Prueba de comprension con participantes no tecnicos |
+| Explicar cada prediccion a quien la usa, en su lenguaje | Ficha RF-09, seccion 5 · RNF-10 | Prueba de comprension con participantes no tecnicos |
 | Vigilar el modelo en operacion y declarar cuando se reentrena | Ficha RF-09, seccion 7 | Bitacora de indicadores (RF-23) |
 | Mantener supervision humana sobre la salida | RF-12 | El indicador **no dispara ninguna accion automatica**: abre una solicitud de mantenimiento que una persona decide atender o descartar |
 | Declarar la limitacion del metodo de explicacion | Ficha RF-09, seccion 5 | La leyenda consta en el propio panel |

@@ -76,7 +76,7 @@ es la razon por la que estos requisitos existen.
 
 ## 5. Requisito de explicabilidad
 
-Extiende y concreta el requisito NFR-10 ya declarado en el ERS.
+Extiende y concreta el requisito RNF-10 ya declarado en el ERS.
 
 | Campo | Definicion |
 |---|---|
@@ -141,12 +141,12 @@ Ningun requisito de este componente queda aislado.
 |---|---|---|
 | RF-IA-01, RF-IA-02, RF-IA-04 | RF-09 | Concretan el criterio de verificacion del requisito padre |
 | RF-IA-03 | RF-07, RF-10 | La cobertura se calcula sobre el parque registrado y se muestra en el panel |
-| RP-IA-01, RP-IA-04 | NFR-02 | Sostienen la disponibilidad mensual comprometida |
-| RP-IA-02 | NFR-01, RF-07 | Se alinea con el tiempo de respuesta del panel |
+| RP-IA-01, RP-IA-04 | RNF-02 | Sostienen la disponibilidad mensual comprometida |
+| RP-IA-02 | RNF-01, RF-07 | Se alinea con el tiempo de respuesta del panel |
 | RP-IA-03 | RF-23 | La bitacora de acciones registra cada ejecucion |
 | EQ-IA-01, EQ-IA-02 | RF-12, RD-08 | La equidad se define sobre la asignacion de mantenimiento y sobre el alcance piloto declarado |
 | EQ-IA-03 | RF-20 | Los grupos se construyen con el historico de ocupacion |
-| EX-IA-01 | NFR-10, RF-07, RF-08 | Concreta el requisito de explicabilidad ya declarado y define donde se muestra |
+| EX-IA-01 | RNF-10, RF-07, RF-08 | Concreta el requisito de explicabilidad ya declarado y define donde se muestra |
 | Datos de entrenamiento | RF-10, RF-12, RF-20, RD-09 | Las fuentes son requisitos existentes; RD-09 fija el respeto a la normativa de proteccion de datos |
 | Plan de monitoreo | RF-23, RF-17 | Los indicadores se registran en bitacora y se exponen en reportes |
 

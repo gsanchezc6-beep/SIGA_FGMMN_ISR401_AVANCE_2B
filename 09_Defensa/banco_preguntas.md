@@ -41,7 +41,7 @@ Estatuto de la UTEQ, codigo de etica, reglamento de vinculacion y horario academ
 → `01_ERS/ERS_SRS_2B_v2.0.pdf`; `01_ERS/Auditoria_Calidad/auditoria_calidad_especificacion.md`
 
 **B2. Deme un requisito no funcional y su forma de comprobarlo.**
-NFR-01: las alertas de anomalia se entregan en ≤ 60 s desde la deteccion. Se comprueba con
+RNF-01: las alertas de anomalia se entregan en ≤ 60 s desde la deteccion. Se comprueba con
 prueba de carga sobre 50 aulas simuladas midiendo el tiempo real de entrega.
 → `01_ERS/`, tabla de requisitos no funcionales
 
