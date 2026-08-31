@@ -8,6 +8,66 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.1.0] — 2026-08-30
+
+Consolidacion de la especificacion y cierre de las declaraciones del repositorio.
+
+### Anadido
+
+- `06_Experimento/replicar.py` — el pipeline completo en una sola orden, sin depender de
+  GNU Make. Ejecuta las nueve etapas con los mismos parametros y la misma semilla que el
+  Makefile, y produce las mismas tablas y figuras byte a byte. Incluye `--verificar`,
+  que sondea el codec y la duracion del material audiovisual y comprueba el manifiesto
+  de sumas sin necesidad de `sha256sum`.
+- `06_Experimento/resultados/entorno_python.txt` — version de Python y de cada
+  dependencia con la que se produjeron los resultados publicados.
+- `CITATION.cff` — identificador persistente del deposito: DOI `10.17605/OSF.IO/7PQ3H`,
+  con su bloque `identifiers`.
+- `README.md` — apartado «Elementos aun no depositados», que declara de forma explicita
+  los cinco elementos que el repositorio todavia no contiene y en que estado esta cada
+  uno.
+- `reporte.tex` — etiquetas de las tres tablas de anexo que no las tenian:
+  `tab:metricas`, `tab:retrospectiva` y `tab:correspondencia`.
+
+### Cambiado
+
+- `01_ERS/` — la especificacion pasa a version 4.0 y se identifica como Entrega Final
+  (2B) en la caratula, en el repositorio declarado y en el historial de versiones. Las
+  referencias a la Entrega 3 (2A) que describen hechos pasados se conservan intactas:
+  son historia del documento, no una identidad equivocada.
+- `01_ERS/secciones_generadas.tex` — las conclusiones dejan de anunciar como pendiente
+  lo que esta entrega ya cierra, y declaran lo que sigue abierto: los umbrales de RNF-07,
+  RNF-09, RNF-10, RNF-12, RNF-13 y RNF-15 sin verificacion de campo, y la cadena de
+  trazabilidad hacia clase, proceso y caso de prueba.
+- `reporte.tex` — cada figura y cada tabla se referencia ahora desde el cuerpo del texto.
+  Antes ninguna de las cinco tablas generadas por el pipeline se citaba en la prosa.
+- `README.md` — la orden unica de reproduccion se documenta por las dos vias, con GNU
+  Make declarado como opcional.
+- `checksums.sha256` — regenerado sobre las 248 entradas del manifiesto. Comprueba sin
+  error.
+
+### Corregido
+
+- **Identificadores de requisito no funcional duplicados.** El prefijo aparecia como
+  `NFR-` en las tablas del ERS y como `RNF-` en la prosa y en la matriz de trazabilidad,
+  lo que rompia la resolucion automatica de identificadores. Se unifica en `RNF-`, que
+  es el que ya usaban la matriz y la columna de tipo. 49 sustituciones en siete
+  archivos.
+- **Solapamiento funcional entre RF-13 y RF-16**, unico conflicto abierto que arrojaba
+  la auditoria de consistencia. Ambos se disparaban ante la misma condicion y con el
+  mismo umbral. Se delimitan por causa conforme a la solicitud de cambio SC-01: RF-13
+  actua por consumo sostenido sin actividad, con independencia del horario; RF-16 actua
+  al concluir la ultima franja asignada, con independencia del consumo. Se anade regla
+  de precedencia y registro en bitacora de que regla ordeno el apagado. Se alinean las
+  historias HU-11 y HU-13 y sus escenarios.
+- **Carpetas declaradas y vacias.** El arbol del README describia cinco carpetas sin
+  contenido en el repositorio. Se retiran del arbol y su ausencia se declara en el
+  apartado nuevo, de modo que el repositorio no nombra nada que no exista.
+- `README.md` — la descripcion de `04_Trazabilidad/` prometia tablas de huerfanos y un
+  tablero que la carpeta no contiene; se ajusta a lo que hay.
+
+---
+
 ## [2B-1.0.0] — 2026-08-29
 
 Reconstruccion del repositorio de la Entrega Final sobre la estructura de la seccion 9
