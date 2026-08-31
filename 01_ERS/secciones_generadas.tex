@@ -915,9 +915,85 @@ RNF-16 & Disponibilidad en modo degradado sin conectividad: el sistema debe noti
 El componente de análisis predictivo de fallas (RF-09) es el único módulo basado en IA/ML del sistema. Conforme al marco de Chazette y Schneider (2020) y Chazette et al. (2021, 2022), se identifica: (1) usuarios afectados que requieren explicación --- Personal de Infraestructura y Mantenimiento, Personal de TI; (2) tipo de explicación requerida --- explicación causal (qué variables de sensor motivaron la predicción); (3) momento de la explicación --- al generarse la alerta predictiva (CU-16). Este requisito queda formalizado como RNF-10 en la Tabla 39. El estudio de validación con $\geq$6 participantes descrito en el criterio de verificación no se ejecutó en esta entrega; RNF-10 se declara explícitamente como no verificado (ver Tabla 39).
 
 
-\subsubsection*{3.3.2 Método del cruce de RNF-07 a RNF-16 contra la evidencia de campo}
+\subsubsection*{3.3.2 Requisitos del componente de inteligencia artificial}
 
-\addcontentsline{toc}{subsubsection}{3.3.2 Método del cruce de RNF-07 a RNF-16 contra la evidencia de campo}
+\addcontentsline{toc}{subsubsection}{3.3.2 Requisitos del componente de inteligencia artificial}
+
+SIGA contiene un \textbf{unico componente basado en aprendizaje automatico}: RF-09,
+analisis predictivo de fallos de equipamiento. RF-03, la deteccion de ocupacion, no lo es
+con la especificacion vigente: es un umbral determinista sobre la senal de un sensor de
+presencia, sin parametros aprendidos.
+
+La ficha completa del componente, con la justificacion de cada umbral y su metodo de
+comprobacion, esta en \texttt{01\_ERS/Componentes\_IA/ficha\_RF-09\_analisis\_predictivo\_fallos.md},
+y la clasificacion de riesgo razonada en
+\texttt{01\_ERS/Componentes\_IA/clasificacion\_riesgo\_ia.md}. Lo que sigue es su resumen
+normativo, para que la especificacion no dependa de un anexo externo.
+
+\medskip
+\noindent\textbf{a) Rendimiento y correccion.} Cuatro requisitos funcionales del
+componente y cuatro de rendimiento, todos con umbral, unidad y metodo: sensibilidad
+$\geq$70 \%, falsos positivos $\leq$30 \%, cobertura de equipos elegibles del 100 \%,
+error de calibracion esperado $\leq$0,10; inferencia del parque completo $\leq$120 s,
+latencia de consulta $\leq$2 s, una ejecucion cada 24 h y $\leq$512 MB de memoria
+residente. Todos se comprueban sobre un conjunto de prueba separado \textbf{de forma
+temporal}, no aleatoria, para no filtrar informacion del futuro hacia el entrenamiento.
+
+\medskip
+\noindent\textbf{b) Equidad.} El componente no decide sobre personas, pero \textbf{si
+reparte un recurso escaso}: la atencion del personal de mantenimiento. Un modelo que
+prediga peor en un bloque haria que esas aulas reciban menos mantenimiento preventivo, y
+quien lo sufre es quien da clase alli. Se especifican tres requisitos: la sensibilidad no
+debe depender del bloque edilicio ni la tasa de falsos negativos de la antiguedad del
+equipo, con brecha maxima de \textbf{10 puntos porcentuales} en ambos casos; y la
+cobertura de prediccion debe ser pareja entre aulas de alta y baja ocupacion, con brecha
+maxima de \textbf{5 puntos}. Cada brecha se reporta con intervalo de confianza al 95 \%
+por bootstrap. \textbf{Si alguna se supera, el componente no se despliega}: se reentrena
+con muestreo balanceado y se vuelve a medir.
+
+\medskip
+\noindent\textbf{c) Explicabilidad.} Formalizada como RNF-10 y detallada en la
+Seccion 3.3.1: explicacion causal de las tres variables que mas contribuyeron, en lenguaje
+llano, \textbf{60 palabras como maximo} y en \textbf{$\leq$2 s}, con comprension validada
+por al menos 4 de cada 5 participantes no tecnicos. Se declara su limitacion en el propio
+panel: el metodo atribuye peso por variable, \textbf{no establece causalidad}.
+
+\medskip
+\noindent\textbf{d) Datos de entrenamiento.} Solo datos propios del despliegue; ningun
+conjunto externo ni preentrenado. Volumen minimo de 30 dias por equipo y 40 eventos de
+falla etiquetados; por debajo, el componente no se entrena y el sistema opera sin RF-09.
+El etiquetado es automatico y derivado del registro operativo. Se declaran cuatro sesgos
+conocidos --- de reporte, de cobertura, de mantenimiento previo y desbalance de clases ---
+con su mitigacion. El unico campo personal, el responsable del registro de mantenimiento,
+\textbf{se excluye del entrenamiento}.
+
+\medskip
+\noindent\textbf{e) Plan de monitoreo en operacion.} Seis indicadores con su frecuencia,
+umbral de alerta y accion: sensibilidad movil, tasa de falsos positivos, deriva de las
+entradas, cobertura, brechas de equidad y volumen de datos nuevos. El reentrenamiento se
+dispara al acumularse 40 eventos nuevos, al caer la sensibilidad por debajo del 60 \%, al
+detectarse deriva superior a 0,25 o a los 12 meses del ultimo entrenamiento. Todo
+reentrenamiento repite integramente las comprobaciones de rendimiento y equidad antes de
+sustituir al modelo; \textbf{el que no las supera no se despliega}, y sigue operando el
+anterior.
+
+\medskip
+\noindent\textbf{f) Clasificacion de riesgo y base legal.} El sistema se clasifica como
+de \textbf{riesgo minimo} conforme al Reglamento (UE) 2024/1689, tras descartar una a una
+las cuatro hipotesis de alto riesgo educativo de su Anexo III: el componente no evalua
+personas, no asigna calificaciones, no admite ni orienta admisiones y no vigila el
+comportamiento de estudiantes. El tratamiento de datos personales se rige por la Ley
+Organica de Proteccion de Datos Personales del Ecuador, con base legal en el cumplimiento
+de una mision de interes publico de la institucion.
+
+\medskip
+\noindent\textbf{g) Trazado.} Los requisitos del componente no quedan aislados:
+\texttt{01\_ERS/Componentes\_IA/trazado\_requisitos\_ia.csv} enlaza cada uno con los
+requisitos preexistentes del sistema y declara la naturaleza de la relacion.
+
+\subsubsection*{3.3.3 Método del cruce de RNF-07 a RNF-16 contra la evidencia de campo}
+
+\addcontentsline{toc}{subsubsection}{3.3.3 Método del cruce de RNF-07 a RNF-16 contra la evidencia de campo}
 
 Se revisaron las 10 transcripciones de campo válidas (EV-01, EV-02, EV-08 a EV-14, EV-16) en busca de confirmación directa de los nueve umbrales cuantitativos originalmente declarados en RNF-07 a RNF-15. Ninguno fue mencionado, discutido o confirmado explícitamente por algún participante, ya que el guion de entrevista aplicado no incluyó preguntas dirigidas a validar estos umbrales específicos. El estado resultante de cada RNF, sin excepción, queda declarado explícitamente en la columna ``Estado de validación'' de la Tabla 39: ningún RNF queda en un estado ambiguo o pendiente de definir. Dos hallazgos cualitativos reales sí permitieron acciones concretas en esta misma entrega: (1) la evidencia convergente de DOC-02 (EV-13) y COORD-03 (EV-14) sobre dificultades de conectividad se formalizó como el nuevo RNF-16; (2) la evidencia de COORD-02 (EV-10) sobre el proceso manual de cruce de horarios se incorporó como sustento parcial de RNF-08. Para la Entrega 4 (2B) se recomienda incorporar preguntas de validación dirigidas a los umbrales aún no verificados (RNF-07, 09, 10, 12, 13, 15).
 
