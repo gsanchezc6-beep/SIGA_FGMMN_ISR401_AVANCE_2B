@@ -705,7 +705,7 @@ Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-14 \\ 
 Entradas / Salidas & Entrada: histórico de consumo por aula y equipo. Salida: reporte de patrones y lista de recomendaciones. \\ \hline
 Precondición / Postcondición & Datos de consumo acumulados ($\geq$1 mes). / Recomendaciones disponibles para consulta por autoridades. \\ \hline
 Prioridad (MoSCoW) & Should \\ \hline
-Criterio de verificación & Con datos de 2 aulas con patrones distintos, el sistema genera recomendaciones diferenciadas y coherentes. \\ \hline
+Criterio de verificación & Dadas dos aulas con perfiles de uso distintos, verificados por diferencia $\geq$20\,\% en horas de ocupación mensual, el sistema produce para cada una una recomendación que difiere de la otra en al menos un parámetro accionable (equipo, franja horaria o umbral). Dos evaluadores independientes verifican, sobre el histórico de consumo de cada aula, que cada parámetro recomendado se deriva de un dato de esa aula; el criterio se cumple cuando ambos coinciden en el 100\,\% de los parámetros. \\ \hline
 \caption{RF-14 - Análisis de patrones de consumo energético}
 \end{longtable}
 \endgroup
