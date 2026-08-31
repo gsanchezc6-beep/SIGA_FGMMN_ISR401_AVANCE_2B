@@ -117,6 +117,7 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 ├── 06_Experimento/               Componente empirico
 │   ├── Makefile                  Pipeline completo con una sola orden
 │   ├── replicar.py               El mismo pipeline sin depender de make
+│   ├── clave_desciego_items.csv  Tabla que asigna origen a cada item ciego
 │   ├── protocolo/                Preguntas, hipotesis, variables y plan de analisis
 │   ├── registro_previo/          Comprobante OSF y bitacora de desviaciones
 │   ├── instrumentos/             Guiones, cuestionarios y rubricas en version final
