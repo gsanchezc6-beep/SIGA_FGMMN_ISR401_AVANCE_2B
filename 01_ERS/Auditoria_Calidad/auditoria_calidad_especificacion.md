@@ -133,20 +133,35 @@ aceptacion.
 | Submetrica | Aritmetica | Resultado | Referencia | Veredicto |
 |---|---|---|---|---|
 | Requisitos con fuente identificada | 23 / 25 | **92,0 %** | 100 % | **No cumple** |
-| Requisitos con cadena adelante completa | 12 / 25 | **48,0 %** | ≥ 90 % | **No cumple** |
+| Requisitos con cadena adelante completa | 23 / 25 | **92,0 %** | ≥ 90 % | **Cumple** |
 
-**Hallazgo.** Trece requisitos no tienen la cadena completa en la matriz: **RF-01, RF-02,
-RF-03, RF-06, RF-09, RF-13, RF-14, RF-15, RF-18, RF-20, RF-21, RF-22 y RF-23**. Y dos
-requisitos no tienen evidencia de campo identificada como fuente.
+**Corregido el 2026-08-31.** La medicion del 29 de agosto daba 48,0 % en la cadena
+adelante y contaba 308 celdas vacias. Al completar la matriz aparecio que el problema no
+era solo de huecos:
 
-Es la metrica peor situada de las seis, y explica por si sola las 310 celdas vacias de la
-matriz.
+- **Ocho identificadores de historia no resolvian.** La matriz declaraba `HU-24`, `HU-25`,
+  `HU-07b`, `HU-07e`, `HU-10b`, `HU-12b`, `HU-12c` y `HU-12d`, que no existen en el ERS. Y
+  numeraba las historias por el numero del requisito cuando el ERS las numera de forma
+  correlativa. Se realinearon contra el ERS.
+- **Ningun criterio de aceptacion resolvia.** El ERS no contenia **ni una sola mencion** de
+  `CA-`: los escenarios Gherkin estaban sin etiquetar. Se etiquetaron los diecisiete
+  existentes.
+- **Faltaban tres historias.** RF-20, RF-24 y RF-25 no tenian ninguna. Se redactaron como
+  HU-18, HU-19 y HU-20, con sus criterios CA-18, CA-19 y CA-20.
+- **Faltaban las cuatro columnas** que exige la guia: clase, proceso, caso de prueba y
+  estado de la traza. Anadidas; la matriz pasa de 13 a 18 columnas.
+- **Cero celdas vacias.** Toda celda declara ahora si el eslabon existe o por que no
+  aplica, porque una celda en blanco no distingue «no procede» de «falta por hacer».
 
-**Accion de mejora.** Completar la matriz para esos trece requisitos, y anadir las cuatro
-columnas que la guia exige y que hoy no existen: **clase, proceso, caso de prueba y estado
-de la traza**. Los dos requisitos sin fuente se resuelven enlazandolos a la evidencia que
-los origino o, si no la hay, declarandolos como huerfanos en la tabla de huerfanos con su
-causa y su accion.
+**Lo que sigue sin cumplir, y no se fuerza.** La submetrica de fuente se queda en 92,0 %:
+**RF-24 y RF-25 no proceden de campo**, sino del analisis normativo de los articulos 13 y
+14 de la LOPDP. Inventarles una entrevista de origen seria falsear la traza. Se declaran
+como derivados normativos en
+[`04_Trazabilidad/huerfanos_y_cadenas_rotas.md`](../../04_Trazabilidad/huerfanos_y_cadenas_rotas.md),
+con su causa y su accion, que es lo que la guia pide para los huerfanos.
+
+Los dos requisitos que siguen sin cadena completa, **RF-09 y RF-18**, son de prioridad
+Should: el ERS escribe una historia por requisito obligatorio, y estos no lo son.
 
 ---
 
