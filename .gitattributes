@@ -17,6 +17,7 @@
 *.json    -text
 *.svg     -text
 *.drawio  -text
+*.xml     -text
 
 # ---- El manifiesto de sumas NUNCA se normaliza ----
 # Git convierte a CRLF al hacer checkout en Windows, y sha256sum -c
