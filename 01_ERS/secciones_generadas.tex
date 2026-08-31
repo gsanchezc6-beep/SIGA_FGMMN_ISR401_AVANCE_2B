@@ -13,6 +13,7 @@
 4.0 & 30/08/2026 & Equipo FGMMN & Entrega Final (2B): consolidacion de la especificacion. Se unifican los identificadores de requisito no funcional en \texttt{RNF-}, se delimitan RF-13 y RF-16 conforme a la solicitud de cambio SC-01 aprobada por el comite de control de cambios, se incorpora la auditoria de calidad de la especificacion sobre las seis metricas de la guia, y se agregan las fichas de los componentes de inteligencia artificial. \\ \hline
 4.1 & 31/08/2026 & Equipo FGMMN & Correcciones de la revision docente de la Entrega Final: se anade el resumen bilingue exigido por el criterio C1, y la subseccion 3.3.2 incorpora al documento los requisitos del unico componente de inteligencia artificial del sistema --- rendimiento, equidad, explicabilidad, datos de entrenamiento, plan de monitoreo y clasificacion de riesgo ---, que hasta ahora solo constaban en la ficha anexa. \\ \hline
 4.2 & 31/08/2026 & Equipo FGMMN & Se etiquetan los criterios de aceptacion CA-01 a CA-17, que la matriz de trazabilidad referenciaba sin que existieran en el documento, y se anaden las historias HU-18, HU-19 y HU-20 con sus criterios para RF-20, RF-24 y RF-25, que no tenian ninguna. \\ \hline
+4.3 & 31/08/2026 & Equipo FGMMN & Se aplican las decisiones del comite de control de cambios CCB-01: RF-12 fija plazo de primera respuesta por prioridad y estados intermedios visibles (SC-02), y RF-24 y RF-25 pasan a Must por ser obligaciones legales (SC-04). RF-11 dirige la notificacion al tecnico asignado. Cada ficha declara ahora de que requisitos depende y a cuales alimenta. Esta version corresponde a la linea base \textbf{v2.1} acordada en CCB-01. SC-03 queda diferida a verificacion tecnica, de modo que RF-06 no se modifica. \\ \hline
 \caption{Historial de versiones}
 \end{longtable}
 \endgroup
@@ -51,7 +52,7 @@ Falta declaración de uso de Inteligencia Artificial Generativa. & Se agrega dec
 
 \addcontentsline{toc}{subsection}{1.1 Propósito del documento}
 
-El presente documento tiene como propósito especificar, de manera formal y conforme al estándar IEEE/ISO/IEC 29148:2018, los requisitos funcionales, no funcionales y de modelado del Sistema Inteligente de Gestión de Aulas (SIGA) basado en tecnologías de Internet de las Cosas (IoT) e Inteligencia Artificial (IA), dirigido a la Facultad de Ciencias de la Computación de la UTEQ. Este documento acumula y reemplaza a la Entrega 2 (1B), incorporando las correcciones señaladas por el docente y ampliando el alcance hacia una especificación completa con componente empírico, conforme a la guía de la Entrega 3 (2A).
+El presente documento tiene como propósito especificar, de manera formal y conforme al estándar IEEE/ISO/IEC 29148:2018, los requisitos funcionales, no funcionales y de modelado del Sistema Inteligente de Gestión de Aulas (SIGA) basado en tecnologías de Internet de las Cosas (IoT) e Inteligencia Artificial (IA), dirigido a la Facultad de Ciencias de la Computación de la UTEQ. Este documento acumula y reemplaza a la Entrega 2 (1B), incorporando las correcciones señaladas por el docente y ampliando el alcance hacia una especificación completa con componente empírico, conforme a la guía de la Entrega Final (2B).
 
 
 \subsection*{1.2 Alcance del producto}
@@ -508,7 +509,7 @@ Se presentan 25 Requisitos Funcionales (RF-01 a RF-25). Los 23 primeros fueron f
 \cellcolor{sigagreen}\textcolor{white}{\textbf{RF-01 - Recopilación de datos ambientales mediante sensores IoT}} & \cellcolor{sigagreen}\textcolor{white}{\textbf{RF-01 - Recopilación de datos ambientales mediante sensores IoT}} \\ \hline
 Descripción & El sistema debe capturar en tiempo real temperatura, humedad y ocupación de cada aula mediante sensores IoT distribuidos. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-01 \\ \hline
-Entradas / Salidas & Entrada: lecturas de sensores ($^{\circ}$C, \%, presencia). Salida: registro con timestamp y aula\_id almacenado. \\ \hline
+Entradas / Salidas & Entrada: lecturas de sensores ($^{\circ}$C, \%, presencia). Salida: registro con timestamp y aula\_id almacenado. \textbf{Depende de:} ninguno; es origen de datos del sistema. \textbf{Alimenta a:} RF-03, RF-05, RF-07, RF-08, RF-09, RF-14. \\ \hline
 Precondición / Postcondición & Sensor configurado y conectado a la red del aula. / Dato disponible en el panel en $\leq$10 s. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Prueba de inyección de lectura simulada $\rightarrow$ dato visible en panel en $\leq$10 s; margen de error $\leq$1 $^{\circ}$C / $\leq$5 \% humedad. \\ \hline
@@ -523,7 +524,7 @@ Criterio de verificación & Prueba de inyección de lectura simulada $\rightarro
 RF-02 - Monitoreo y control remoto de dispositivos de aula & RF-02 - Monitoreo y control remoto de dispositivos de aula \\ \hline
 Descripción & El usuario autorizado debe poder visualizar y enviar comandos (encender/apagar/ajustar) a los dispositivos de un aula sin desplazarse físicamente. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-02 \\ \hline
-Entradas / Salidas & Entrada: comando (ON/OFF/ajuste), aula\_id, usuario autenticado. Salida: confirmación de ejecución o mensaje de error. \\ \hline
+Entradas / Salidas & Entrada: comando (ON/OFF/ajuste), aula\_id, usuario autenticado. Salida: confirmación de ejecución o mensaje de error. \textbf{Depende de:} RF-13, RF-15, RF-16. \textbf{Alimenta a:} RF-04, RF-05, RF-07, RF-23. \\ \hline
 Precondición / Postcondición & Usuario autenticado con rol autorizado; dispositivo en línea. / Estado del dispositivo actualizado en el panel. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Comando enviado se ejecuta en el dispositivo en $\leq$5 s, con registro en bitácora. \\ \hline
@@ -538,7 +539,7 @@ Criterio de verificación & Comando enviado se ejecuta en el dispositivo en $\le
 RF-03 - Detección automática de ocupación de aula & RF-03 - Detección automática de ocupación de aula \\ \hline
 Descripción & El sistema debe determinar si un aula está ocupada o vacía usando sensores de presencia, sin depender de revisión manual por cámaras. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-03 \\ \hline
-Entradas / Salidas & Entrada: señal de sensor de presencia/movimiento. Salida: estado Ocupada/Vacía por aula en el panel. \\ \hline
+Entradas / Salidas & Entrada: señal de sensor de presencia/movimiento. Salida: estado Ocupada/Vacía por aula en el panel. \textbf{Depende de:} RF-01. \textbf{Alimenta a:} RF-07, RF-13, RF-16, RF-20, RF-21. \\ \hline
 Precondición / Postcondición & Sensor de presencia instalado y calibrado. / Cambio de estado reflejado en tiempo real. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Exactitud $\geq$95 \% y latencia $\leq$15 s en pruebas controladas de entrada/salida de personas. \\ \hline
@@ -553,7 +554,7 @@ Criterio de verificación & Exactitud $\geq$95 \% y latencia $\leq$15 s en prueb
 RF-04 - Monitoreo y control remoto de proyectores & RF-04 - Monitoreo y control remoto de proyectores \\ \hline
 Descripción & El sistema debe mostrar el estado del proyector (encendido, apagado, sin señal HDMI) y permitir su control remoto. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01) / Coordinadora de la Carrera-Docente (EV-02); deriva de RC-04 \\ \hline
-Entradas / Salidas & Entrada: estado reportado por módulo de control. Salida: estado actualizado en panel + ejecución de comando. \\ \hline
+Entradas / Salidas & Entrada: estado reportado por módulo de control. Salida: estado actualizado en panel + ejecución de comando. \textbf{Depende de:} RF-02. \textbf{Alimenta a:} RF-07, RF-23. \\ \hline
 Precondición / Postcondición & Proyector conectado al módulo de control IoT. / Estado coherente entre dispositivo físico y panel. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Cambio de estado del proyector reflejado en panel en $\leq$10 s. \\ \hline
@@ -568,7 +569,7 @@ Criterio de verificación & Cambio de estado del proyector reflejado en panel en
 RF-05 - Monitoreo y ajuste remoto de climatización & RF-05 - Monitoreo y ajuste remoto de climatización \\ \hline
 Descripción & El sistema debe mostrar la temperatura y humedad de cada aula y permitir el ajuste remoto del sistema de climatización. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-05 \\ \hline
-Entradas / Salidas & Entrada: lectura ambiental y valor objetivo de temperatura. Salida: confirmación de ajuste y estado actualizado. \\ \hline
+Entradas / Salidas & Entrada: lectura ambiental y valor objetivo de temperatura. Salida: confirmación de ajuste y estado actualizado. \textbf{Depende de:} RF-01, RF-02. \textbf{Alimenta a:} RF-07, RF-23. \\ \hline
 Precondición / Postcondición & Equipo de climatización conectado a controlador remoto compatible. / Temperatura se ajusta hacia el valor objetivo. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Ajuste remoto reflejado en equipo físico o controlador en $\leq$15 s. \\ \hline
@@ -583,7 +584,7 @@ Criterio de verificación & Ajuste remoto reflejado en equipo físico o controla
 RF-06 - Integración con el sistema de videovigilancia existente & RF-06 - Integración con el sistema de videovigilancia existente \\ \hline
 Descripción & El sistema debe permitir la integración con el sistema de videovigilancia existente para mostrar una vista complementaria del aula cuando la infraestructura lo permita. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-06 \\ \hline
-Entradas / Salidas & Entrada: flujo de video o enlace RTSP/HTTP de cámara asociada. Salida: vista embebida dentro del panel. \\ \hline
+Entradas / Salidas & Entrada: flujo de video o enlace RTSP/HTTP de cámara asociada. Salida: vista embebida dentro del panel. \textbf{Depende de:} ninguno; es origen de datos del sistema. \textbf{Alimenta a:} RF-07. \\ \hline
 Precondición / Postcondición & Cámara operativa, autorizada y accesible en la red institucional. / Flujo disponible sin reemplazar el sistema existente. \\ \hline
 Prioridad (MoSCoW) & Should \\ \hline
 Criterio de verificación & El sistema visualiza un flujo de prueba de cámara con latencia $\leq$3 s. \\ \hline
@@ -598,7 +599,7 @@ Criterio de verificación & El sistema visualiza un flujo de prueba de cámara c
 RF-07 - Panel de control centralizado & RF-07 - Panel de control centralizado \\ \hline
 Descripción & El sistema debe presentar en una sola vista el estado de ocupación, condiciones ambientales, conectividad y estado operativo de los equipos de todas las aulas monitoreadas. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01) / Coordinadora de la Carrera-Docente (EV-02); deriva de RC-07 \\ \hline
-Entradas / Salidas & Entrada: datos consolidados de sensores, proyectores, climatización y conectividad. Salida: panel de control actualizado. \\ \hline
+Entradas / Salidas & Entrada: datos consolidados de sensores, proyectores, climatización y conectividad. Salida: panel de control actualizado. \textbf{Depende de:} RF-01, RF-02, RF-03, RF-04, RF-05, RF-06, RF-09, RF-22. \textbf{Alimenta a:} ninguno; es punto de consumo final. \\ \hline
 Precondición / Postcondición & Usuario autenticado con permisos de visualización. / Panel muestra la información más reciente sin recarga manual. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Panel actualiza datos automáticamente cada $\leq$30 s para $\geq$1 aula de prueba. \\ \hline
@@ -613,7 +614,7 @@ Criterio de verificación & Panel actualiza datos automáticamente cada $\leq$30
 RF-08 - Generación y envío de alertas por anomalías & RF-08 - Generación y envío de alertas por anomalías \\ \hline
 Descripción & El sistema debe generar y enviar alertas automáticas cuando detecte anomalías técnicas o condiciones fuera de los parámetros configurados. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-08 \\ \hline
-Entradas / Salidas & Entrada: evento de falla o lectura anómala. Salida: alerta con tipo, aula, prioridad, fecha/hora y responsable. \\ \hline
+Entradas / Salidas & Entrada: evento de falla o lectura anómala. Salida: alerta con tipo, aula, prioridad, fecha/hora y responsable. \textbf{Depende de:} RF-01, RF-22. \textbf{Alimenta a:} RF-10, RF-11, RF-12. \\ \hline
 Precondición / Postcondición & Reglas de anomalía y destinatarios configurados. / Alerta enviada, registrada y visible en la vista de alertas. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Falla simulada genera alerta entregada al responsable en $\leq$1 minuto. \\ \hline
@@ -628,7 +629,7 @@ Criterio de verificación & Falla simulada genera alerta entregada al responsabl
 RF-09 - Análisis predictivo de fallos mediante IA & RF-09 - Análisis predictivo de fallos mediante IA \\ \hline
 Descripción & El sistema debe analizar el comportamiento histórico de los equipos para estimar la probabilidad de fallas futuras mediante Inteligencia Artificial. \\ \hline
 Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-09 \\ \hline
-Entradas / Salidas & Entrada: histórico de lecturas, fallas, uso y mantenimientos. Salida: indicador de riesgo (bajo/medio/alto) por equipo. \\ \hline
+Entradas / Salidas & Entrada: histórico de lecturas, fallas, uso y mantenimientos. Salida: indicador de riesgo (bajo/medio/alto) por equipo. \textbf{Depende de:} RF-01, RF-10. \textbf{Alimenta a:} RF-07, RF-12. \\ \hline
 Precondición / Postcondición & $\geq$30 días de datos históricos acumulados por equipo. / Indicador disponible en panel y exportable. \\ \hline
 Prioridad (MoSCoW) & Should \\ \hline
 Criterio de verificación & Con datos de prueba con fallas conocidas, el modelo identifica correctamente $\geq$70 \% de los casos. \\ \hline
@@ -643,7 +644,7 @@ Criterio de verificación & Con datos de prueba con fallas conocidas, el modelo 
 RF-10 - Registro histórico de fallas y mantenimientos & RF-10 - Registro histórico de fallas y mantenimientos \\ \hline
 Descripción & El sistema debe registrar cada falla y mantenimiento con fecha, hora, tipo de incidente, aula, equipo afectado y responsable. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-10 \\ \hline
-Entradas / Salidas & Entrada: datos del incidente, equipo afectado, responsable y acción realizada. Salida: registro persistente consultable. \\ \hline
+Entradas / Salidas & Entrada: datos del incidente, equipo afectado, responsable y acción realizada. Salida: registro persistente consultable. \textbf{Depende de:} RF-08, RF-12. \textbf{Alimenta a:} RF-09, RF-17. \\ \hline
 Precondición / Postcondición & Incidente generado por RF-08 o reportado vía RF-12. / Historial disponible para consulta y generación de reportes. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Todo incidente cerrado consultable con los 5 campos mínimos completos (fecha, hora, tipo, equipo, responsable). \\ \hline
@@ -656,12 +657,12 @@ Criterio de verificación & Todo incidente cerrado consultable con los 5 campos 
 \begin{longtable}{|p{7.8cm}|p{7.8cm}|}
 \hline
 RF-11 - Notificación inmediata al personal técnico ante fallas críticas & RF-11 - Notificación inmediata al personal técnico ante fallas críticas \\ \hline
-Descripción & El sistema debe notificar de forma inmediata al personal técnico cuando una falla afecte una clase en curso o comprometa la disponibilidad de equipos esenciales. \\ \hline
+Descripción & El sistema debe notificar de forma inmediata al \textbf{técnico asignado a la reparación}, y no solo al rol de mando, cuando una falla afecte una clase en curso o comprometa la disponibilidad de equipos esenciales. La notificación al rol de mando se mantiene como copia informativa; la que abre el plazo de atención es la dirigida al ejecutante. \\ \hline
 Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-11 \\ \hline
-Entradas / Salidas & Entrada: falla crítica, aula\_id, horario activo, equipo afectado. Salida: notificación al personal responsable. \\ \hline
+Entradas / Salidas & Entrada: falla crítica, aula\_id, horario activo, equipo afectado. Salida: notificación dirigida al técnico asignado, con copia al rol de mando. \textbf{Depende de:} RF-08, RF-12. \textbf{Alimenta a:} RF-12. \\ \hline
 Precondición / Postcondición & Horario académico cargado; falla detectada durante clase programada. / Notificación enviada y marcada como pendiente. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
-Criterio de verificación & Notificación generada en $\leq$30 s tras simulación de falla crítica durante horario activo. \\ \hline
+Criterio de verificación & Notificación generada en $\leq$30 s tras simulación de falla crítica durante horario activo, con el técnico asignado como destinatario principal verificable en el registro de envío. \\ \hline
 \caption{RF-11 - Notificación inmediata al personal técnico ante fallas críticas}
 \end{longtable}
 \endgroup
@@ -671,12 +672,12 @@ Criterio de verificación & Notificación generada en $\leq$30 s tras simulació
 \begin{longtable}{|p{7.8cm}|p{7.8cm}|}
 \hline
 RF-12 - Gestión de solicitudes de mantenimiento & RF-12 - Gestión de solicitudes de mantenimiento \\ \hline
-Descripción & El sistema debe permitir que docentes y personal administrativo reporten incidencias y den seguimiento al estado de atención mediante tickets de mantenimiento. \\ \hline
+Descripción & El sistema debe permitir que docentes y personal administrativo reporten incidencias y den seguimiento al estado de atención mediante tickets de mantenimiento. Cada ticket tiene asociado un \textbf{plazo máximo de primera respuesta según su prioridad}, parametrizable por la administración, y transita por \textbf{estados intermedios visibles para el solicitante}: recibido, en diagnóstico, en espera de repuesto, en espera de trámite externo, agendado, en proceso y cerrado. Los dos estados de espera exigen consignar la causa, y esa causa es visible para quien reportó. Vencido el plazo sin primera respuesta, el sistema escala el ticket al rol superior. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01) / Coordinadora de la Carrera-Docente (EV-02); deriva de RC-12 \\ \hline
-Entradas / Salidas & Entrada: formulario con aula, equipo, tipo de incidencia, prioridad y descripción. Salida: ticket con ID, estado y responsable. \\ \hline
+Entradas / Salidas & Entrada: formulario con aula, equipo, tipo de incidencia, prioridad y descripción; parámetros de plazo por prioridad configurados por la administración. Salida: ticket con ID, estado, causa de espera cuando corresponda, responsable y plazo comprometido; notificación al solicitante en cada cambio de estado, con el siguiente paso previsto. \textbf{Depende de:} RF-08, RF-09, RF-11. \textbf{Alimenta a:} RF-10, RF-11, RF-17, RF-23. \\ \hline
 Precondición / Postcondición & Usuario autenticado con rol docente, administrativo o técnico. / Ticket trazable desde creación hasta cierre. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
-Criterio de verificación & Ticket de prueba creado, consultado y con cambio de estado visible para roles autorizados. \\ \hline
+Criterio de verificación & Ticket de prueba creado, consultado y con cambio de estado visible para roles autorizados. Configurado un plazo de prioridad alta, un ticket sin primera respuesta al vencerlo queda escalado y notificado. Un ticket puesto en espera de trámite externo muestra al solicitante el estado y su causa. \\ \hline
 \caption{RF-12 - Gestión de solicitudes de mantenimiento}
 \end{longtable}
 \endgroup
@@ -688,7 +689,7 @@ Criterio de verificación & Ticket de prueba creado, consultado y con cambio de 
 RF-13 - Apagado automático por regla de eficiencia energética & RF-13 - Apagado automático por regla de eficiencia energética \\ \hline
 Descripción & El sistema debe apagar los equipos de un aula cuando registre consumo sostenido sin actividad detectada, con independencia del horario académico. La regla se evalúa de forma continua durante toda la jornada, incluidas las franjas que el horario asigna al aula. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-13. Delimitado frente a RF-16 por la solicitud de cambio SC-01 \\ \hline
-Entradas / Salidas & Entrada: medida de consumo energético (RF-14), ocupación (RF-03), estado del equipo, umbral de la regla de eficiencia. Salida: comando de apagado y registro en bitácora (RF-23) con la causa \emph{eficiencia energética}. \\ \hline
+Entradas / Salidas & Entrada: medida de consumo energético (RF-14), ocupación (RF-03), estado del equipo, umbral de la regla de eficiencia. Salida: comando de apagado y registro en bitácora (RF-23) con la causa \emph{eficiencia energética}. \textbf{Depende de:} RF-03. \textbf{Alimenta a:} RF-02, RF-14, RF-23. \\ \hline
 Precondición / Postcondición & Regla de eficiencia activa para el aula; umbral de consumo sin actividad configurado. / Equipo apagado y evento auditado con su causa. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Con el aula sin actividad detectada y consumo por encima del umbral durante 5 minutos continuos \textbf{dentro} del horario académico asignado, el sistema ordena el apagado en $\leq$2 minutos y la bitácora registra RF-13 como regla de origen. \\ \hline
@@ -704,7 +705,7 @@ Regla de precedencia & Si las condiciones de RF-13 y RF-16 concurren sobre la mi
 RF-14 - Análisis de patrones de consumo energético & RF-14 - Análisis de patrones de consumo energético \\ \hline
 Descripción & El sistema debe analizar el consumo energético por aula para identificar oportunidades de ahorro y generar recomendaciones. \\ \hline
 Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-14 \\ \hline
-Entradas / Salidas & Entrada: histórico de consumo por aula y equipo. Salida: reporte de patrones y lista de recomendaciones. \\ \hline
+Entradas / Salidas & Entrada: histórico de consumo por aula y equipo. Salida: reporte de patrones y lista de recomendaciones. \textbf{Depende de:} RF-01, RF-13. \textbf{Alimenta a:} RF-17. \\ \hline
 Precondición / Postcondición & Datos de consumo acumulados ($\geq$1 mes). / Recomendaciones disponibles para consulta por autoridades. \\ \hline
 Prioridad (MoSCoW) & Should \\ \hline
 Criterio de verificación & Dadas dos aulas con perfiles de uso distintos, verificados por diferencia $\geq$20\,\% en horas de ocupación mensual, el sistema produce para cada una una recomendación que difiere de la otra en al menos un parámetro accionable (equipo, franja horaria o umbral). Dos evaluadores independientes verifican, sobre el histórico de consumo de cada aula, que cada parámetro recomendado se deriva de un dato de esa aula; el criterio se cumple cuando ambos coinciden en el 100\,\% de los parámetros. \\ \hline
@@ -719,7 +720,7 @@ Criterio de verificación & Dadas dos aulas con perfiles de uso distintos, verif
 RF-15 - Programación de horarios automatizados & RF-15 - Programación de horarios automatizados \\ \hline
 Descripción & El sistema debe permitir programar el encendido/apagado automático de equipos sincronizado con el horario académico vigente. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-15 \\ \hline
-Entradas / Salidas & Entrada: horario académico, aula\_id, equipo\_id, reglas. Salida: ejecución automática de comandos según programación. \\ \hline
+Entradas / Salidas & Entrada: horario académico, aula\_id, equipo\_id, reglas. Salida: ejecución automática de comandos según programación. \textbf{Depende de:} ninguno; es origen de datos del sistema. \textbf{Alimenta a:} RF-02, RF-16, RF-17, RF-21. \\ \hline
 Precondición / Postcondición & Horario académico cargado, vigente y asociado a las aulas. / Equipos encendidos/apagados según las reglas programadas. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Regla programada ejecutada con tolerancia $\leq$±1 minuto respecto al horario definido. \\ \hline
@@ -734,7 +735,7 @@ Criterio de verificación & Regla programada ejecutada con tolerancia $\leq$±1 
 RF-16 - Apagado automático por fin de horario académico & RF-16 - Apagado automático por fin de horario académico \\ \hline
 Descripción & El sistema debe apagar todos los equipos compatibles de un aula al concluir la última franja que el horario académico le asigna en la jornada, con independencia del consumo registrado. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-16. Delimitado frente a RF-13 por la solicitud de cambio SC-01 \\ \hline
-Entradas / Salidas & Entrada: horario académico vigente (RF-15), ocupación (RF-03), estado de equipos, aula\_id. Salida: apagado total y registro en bitácora (RF-23) con la causa \emph{fin de horario}. \\ \hline
+Entradas / Salidas & Entrada: horario académico vigente (RF-15), ocupación (RF-03), estado de equipos, aula\_id. Salida: apagado total y registro en bitácora (RF-23) con la causa \emph{fin de horario}. \textbf{Depende de:} RF-03, RF-15. \textbf{Alimenta a:} RF-02, RF-23. \\ \hline
 Precondición / Postcondición & Horario vigente cargado; última franja asignada al aula concluida. / Todos los equipos compatibles apagados y evento auditado con su causa. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Transcurrida la última franja asignada y confirmada la desocupación por sensor, el sistema ordena el apagado total en $\leq$2 minutos y la bitácora registra RF-16 como regla de origen. \\ \hline
@@ -750,7 +751,7 @@ Regla de precedencia & Si las condiciones de RF-13 y RF-16 concurren sobre la mi
 RF-17 - Generación de reportes estadísticos periódicos & RF-17 - Generación de reportes estadísticos periódicos \\ \hline
 Descripción & El sistema debe generar reportes estadísticos sobre uso de aulas, ocupación, condiciones ambientales, consumo energético y estado de equipos. \\ \hline
 Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-17 \\ \hline
-Entradas / Salidas & Entrada: rango de fechas, aula, tipo de reporte, datos históricos. Salida: reporte estadístico generado en la plataforma. \\ \hline
+Entradas / Salidas & Entrada: rango de fechas, aula, tipo de reporte, datos históricos. Salida: reporte estadístico generado en la plataforma. \textbf{Depende de:} RF-10, RF-12, RF-14, RF-15, RF-20. \textbf{Alimenta a:} RF-18. \\ \hline
 Precondición / Postcondición & Datos históricos almacenados de ocupación, sensores, consumo o fallas. / Reporte disponible para usuarios autorizados. \\ \hline
 Prioridad (MoSCoW) & Should \\ \hline
 Criterio de verificación & Reporte generado con datos consolidados de $\geq$2 aulas para un rango de fechas válido. \\ \hline
@@ -765,7 +766,7 @@ Criterio de verificación & Reporte generado con datos consolidados de $\geq$2 a
 RF-18 - Exportación de reportes administrativos & RF-18 - Exportación de reportes administrativos \\ \hline
 Descripción & El sistema debe permitir exportar reportes administrativos en formatos PDF y Excel. \\ \hline
 Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-18 \\ \hline
-Entradas / Salidas & Entrada: reporte generado, formato seleccionado (PDF/Excel). Salida: archivo exportado disponible para descarga. \\ \hline
+Entradas / Salidas & Entrada: reporte generado, formato seleccionado (PDF/Excel). Salida: archivo exportado disponible para descarga. \textbf{Depende de:} RF-17. \textbf{Alimenta a:} RF-23. \\ \hline
 Precondición / Postcondición & Usuario autenticado con permisos de reportes. / Archivo disponible para descarga en el formato seleccionado. \\ \hline
 Prioridad (MoSCoW) & Should \\ \hline
 Criterio de verificación & Reporte de prueba exportado en PDF y Excel con encabezados, filtros y datos completos. \\ \hline
@@ -780,7 +781,7 @@ Criterio de verificación & Reporte de prueba exportado en PDF y Excel con encab
 RF-19 - Gestión de acceso diferenciado por roles & RF-19 - Gestión de acceso diferenciado por roles \\ \hline
 Descripción & El sistema debe permitir el acceso diferenciado por roles, habilitando únicamente las funciones autorizadas según el perfil del usuario. \\ \hline
 Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-19 \\ \hline
-Entradas / Salidas & Entrada: credenciales, rol asignado, solicitud de operación. Salida: acceso permitido o denegado según permisos. \\ \hline
+Entradas / Salidas & Entrada: credenciales, rol asignado, solicitud de operación. Salida: acceso permitido o denegado según permisos. \textbf{Dependencia transversal:} RF-19 condiciona el acceso a toda operaci\'on del sistema. Esa relaci\'on se declara en la precondici\'on de cada ficha y no como flujo de datos, para no contar dos veces el mismo acoplamiento. \\ \hline
 Precondición / Postcondición & Usuario registrado con rol asignado. / Sistema habilita únicamente las funciones del rol del usuario. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Usuario con rol Docente no puede acceder a funciones administrativas ni técnicas reservadas a otros roles. \\ \hline
@@ -795,7 +796,7 @@ Criterio de verificación & Usuario con rol Docente no puede acceder a funciones
 RF-20 - Registro del historial de ocupación de aulas & RF-20 - Registro del historial de ocupación de aulas \\ \hline
 Descripción & El sistema debe registrar el historial de ocupación de cada aula incluyendo fecha, hora de inicio, fin, duración y estado detectado. \\ \hline
 Actor / Origen & Coordinadora de la Carrera-Docente (EV-02); deriva de RC-20 \\ \hline
-Entradas / Salidas & Entrada: datos de sensores, aula\_id, horario vigente. Salida: historial de ocupación consultable por aula y periodo. \\ \hline
+Entradas / Salidas & Entrada: datos de sensores, aula\_id, horario vigente. Salida: historial de ocupación consultable por aula y periodo. \textbf{Depende de:} RF-03. \textbf{Alimenta a:} RF-17. \\ \hline
 Precondición / Postcondición & Sensor de ocupación instalado, configurado y conectado. / Evento de ocupación almacenado para consulta y reportes. \\ \hline
 Prioridad (MoSCoW) & Should \\ \hline
 Criterio de verificación & Cambios de ocupación simulados quedan registrados con fecha, hora, estado y duración en el historial. \\ \hline
@@ -810,7 +811,7 @@ Criterio de verificación & Cambios de ocupación simulados quedan registrados c
 RF-21 - Notificación de equipos encendidos fuera del horario académico & RF-21 - Notificación de equipos encendidos fuera del horario académico \\ \hline
 Descripción & El sistema debe enviar notificaciones automáticas cuando detecte proyectores o equipos de climatización encendidos fuera del horario académico vigente. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-21 \\ \hline
-Entradas / Salidas & Entrada: estado del equipo, horario, aula\_id. Salida: notificación enviada al responsable correspondiente. \\ \hline
+Entradas / Salidas & Entrada: estado del equipo, horario, aula\_id. Salida: notificación enviada al responsable correspondiente. \textbf{Depende de:} RF-03, RF-15. \textbf{Alimenta a:} RF-23. \\ \hline
 Precondición / Postcondición & Horario académico cargado; equipo reporta su estado operativo. / Notificación registrada en bitácora. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Equipo encendido fuera de horario por el tiempo configurado genera notificación en $\leq$60 s. \\ \hline
@@ -825,7 +826,7 @@ Criterio de verificación & Equipo encendido fuera de horario por el tiempo conf
 RF-22 - Monitoreo de conectividad de red del aula & RF-22 - Monitoreo de conectividad de red del aula \\ \hline
 Descripción & El sistema debe monitorear la conectividad de sensores, gateways y controladores IoT instalados en cada aula. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01); deriva de RC-24 \\ \hline
-Entradas / Salidas & Entrada: estado de conexión, tiempo de respuesta, ID de dispositivo. Salida: estado de conectividad y alerta si hay pérdida. \\ \hline
+Entradas / Salidas & Entrada: estado de conexión, tiempo de respuesta, ID de dispositivo. Salida: estado de conectividad y alerta si hay pérdida. \textbf{Depende de:} ninguno; es origen de datos del sistema. \textbf{Alimenta a:} RF-07, RF-08. \\ \hline
 Precondición / Postcondición & Dispositivo IoT registrado y asociado a un aula. / Estado de conectividad actualizado en panel. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Desconexión simulada de sensor muestra 'sin conexión' y genera alerta al responsable en $\leq$60 s. \\ \hline
@@ -840,7 +841,7 @@ Criterio de verificación & Desconexión simulada de sensor muestra 'sin conexi�
 RF-23 - Registro de bitácora de acciones de usuario & RF-23 - Registro de bitácora de acciones de usuario \\ \hline
 Descripción & El sistema debe registrar un historial de acciones realizadas por los usuarios para garantizar trazabilidad y auditabilidad de todas las operaciones. \\ \hline
 Actor / Origen & Personal de Infraestructura y Mantenimiento (EV-01) / Coordinadora de la Carrera-Docente (EV-02); deriva de RC-25 \\ \hline
-Entradas / Salidas & Entrada: usuario, rol, acción, fecha/hora, módulo, resultado. Salida: registro de bitácora consultable por usuarios autorizados. \\ \hline
+Entradas / Salidas & Entrada: usuario, rol, acción, fecha/hora, módulo, resultado. Salida: registro de bitácora consultable por usuarios autorizados. \textbf{Depende de:} RF-02, RF-04, RF-05, RF-12, RF-13, RF-16, RF-18, RF-21, RF-25. \textbf{Alimenta a:} RF-24. \\ \hline
 Precondición / Postcondición & Usuario autenticado ejecuta una acción en la plataforma. / Acción registrada con usuario, fecha, hora, módulo y resultado. \\ \hline
 Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Acciones de control, ticket y exportación de reporte quedan registradas con todos los campos mínimos. \\ \hline
@@ -855,9 +856,9 @@ Criterio de verificación & Acciones de control, ticket y exportación de report
 RF-24 - Exportación de datos personales del usuario a solicitud & RF-24 - Exportación de datos personales del usuario a solicitud \\ \hline
 Descripción & El sistema debe permitir que un usuario autenticado exporte sus propios datos personales almacenados (perfil, bitácora de acciones asociada), en cumplimiento del derecho de acceso. \\ \hline
 Actor / Origen & Análisis normativo LOPDP (Art. 13) \\ \hline
-Entradas / Salidas & Entrada: solicitud de exportación del usuario autenticado. Salida: archivo con los datos personales del usuario en formato legible. \\ \hline
+Entradas / Salidas & Entrada: solicitud de exportación del usuario autenticado. Salida: archivo con los datos personales del usuario en formato legible. \textbf{Depende de:} RF-23. \textbf{Alimenta a:} ninguno; es punto de consumo final. \\ \hline
 Precondición / Postcondición & Usuario autenticado. / Archivo generado y disponible para descarga en $\leq$15 días hábiles. \\ \hline
-Prioridad (MoSCoW) & Should \\ \hline
+Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Solicitud de exportación de prueba genera archivo descargable con los campos de perfil y bitácora del usuario. \\ \hline
 \caption{RF-24 - Exportación de datos personales del usuario a solicitud}
 \end{longtable}
@@ -870,9 +871,9 @@ Criterio de verificación & Solicitud de exportación de prueba genera archivo d
 RF-25 - Rectificación de datos personales del usuario & RF-25 - Rectificación de datos personales del usuario \\ \hline
 Descripción & El sistema debe permitir que un usuario autenticado solicite la corrección de sus datos personales inexactos, con registro de auditoría del cambio. \\ \hline
 Actor / Origen & Análisis normativo LOPDP (Art. 14) \\ \hline
-Entradas / Salidas & Entrada: solicitud de corrección con el campo y valor propuesto. Salida: dato actualizado y evento registrado en bitácora. \\ \hline
+Entradas / Salidas & Entrada: solicitud de corrección con el campo y valor propuesto. Salida: dato actualizado y evento registrado en bitácora. \textbf{Depende de:} ninguno; es origen de datos del sistema. \textbf{Alimenta a:} RF-23. \\ \hline
 Precondición / Postcondición & Usuario autenticado y dato identificado como propio. / Cambio reflejado y auditado en $\leq$15 días hábiles. \\ \hline
-Prioridad (MoSCoW) & Should \\ \hline
+Prioridad (MoSCoW) & Must \\ \hline
 Criterio de verificación & Solicitud de corrección de prueba sobre un campo de perfil se refleja en el sistema y queda registrada en bitácora. \\ \hline
 \caption{RF-25 - Rectificación de datos personales del usuario}
 \end{longtable}
@@ -1050,7 +1051,7 @@ RD-11 & Normativa & Las acciones realizadas por los usuarios deberán registrars
 RD-12 & Operativa & La instalación, configuración y mantenimiento físico de sensores, gateways y controladores dependerá del Departamento de Infraestructura y Mantenimiento, en coordinación con TI. & El sistema requiere intervención física en aulas y laboratorios, por lo que no puede desplegarse sin autorización y acompañamiento del personal responsable. & RF-01, RF-03, RF-04, RF-05, RF-22 \\ \hline
 RD-13 & Operativa & El sistema dependerá de la disponibilidad del horario académico en formato digital o estructurado para ejecutar reglas automáticas de encendido, apagado y detección fuera de horario. & Las funciones de automatización energética requieren conocer cuándo un aula debería estar ocupada o desocupada. & RF-13, RF-15, RF-16, RF-21 \\ \hline
 RD-14 & Temporal & Para la Entrega 3 (2A), el sistema documentará una ERS/SRS completa con requisitos ampliados, modelado UML completo, MVP funcional y componente empírico registrado. & La Entrega 2 (1B) definió la base documental parcial; esta entrega cierra los elementos pendientes identificados y agrega el instrumental empírico hacia la publicación. & Todos los RF, RNF y restricciones \\ \hline
-RD-15 & Temporal & Para la Entrega 4 (2B) se completará el manuscrito de publicación, el dataset FAIR en Zenodo y el cierre de la evidencia de campo hasta 24 participantes. & La entrega actual (2A) produce los datos empíricos que la Entrega 4 analizará y reportará en el manuscrito paralelo. & RF-01 a RF-25, RNF-01 a RNF-16 \\ \hline
+RD-15 & Temporal & Para la Entrega 4 (2B) se completará el manuscrito de publicación, el dataset FAIR en Zenodo y el cierre de la evidencia de campo hasta 24 participantes. & La Entrega 3 (2A) produjo los datos empíricos que esta entrega analiza y reportará en el manuscrito paralelo. & RF-01 a RF-25, RNF-01 a RNF-16 \\ \hline
 RD-16 & Alcance & El sistema no gestionará matrícula, asistencia, calificaciones ni asignación oficial de horarios académicos. & Estas funciones pertenecen a sistemas académicos institucionales y no forman parte del alcance operativo del Sistema Inteligente de Gestión de Aulas. & RF-13, RF-15, RF-16 \\ \hline
 RD-17 & Alcance & El sistema no realizará mantenimiento físico de equipos ni reparaciones directas; únicamente registrará, notificará y dará seguimiento a incidencias. & Las acciones correctivas físicas seguirán siendo responsabilidad del personal de Infraestructura, Mantenimiento o proveedores externos autorizados. & RF-08, RF-10, RF-11, RF-12 \\ \hline
 RD-18 & Alcance & El sistema no controlará la red eléctrica general del campus ni dispositivos no integrados técnicamente con la solución IoT. & El alcance se limita a aulas, sensores, gateways, controladores y equipos compatibles definidos para el proyecto. & RF-02, RF-04, RF-05, RF-13, RF-16 \\ \hline
@@ -1923,6 +1924,23 @@ Se presentan a continuación los diagramas de secuencia y de actividad individua
 \label{fig:state-alerta}
 \end{figure}
 
+\subsubsection*{HU-21 (RF-12)}
+
+\addcontentsline{toc}{subsubsection}{HU-21 (RF-12)}
+
+Como Coordinadora de la Carrera, quiero que cada solicitud de mantenimiento tenga un plazo
+de primera respuesta segun su prioridad y que se me informe del estado en que se encuentra
+y de la causa cuando esta detenida, para saber a que atenerme en lugar de suponer que se
+olvidaron de mi caso.
+
+
+\textbf{CA-21.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que la administracion
+ha configurado un plazo de primera respuesta para la prioridad alta, cuando se registra una
+solicitud con esa prioridad y el plazo vence sin primera respuesta, entonces el sistema
+escala la solicitud al rol superior y lo notifica; y dado que una solicitud queda en espera
+de tramite externo, cuando el solicitante la consulta, entonces ve el estado y la causa de
+la espera.}
+
 \section*{V. PRIORIZACIÓN Y TRAZABILIDAD EXTENDIDA}
 
 \addcontentsline{toc}{section}{V. PRIORIZACIÓN Y TRAZABILIDAD EXTENDIDA}
@@ -2197,7 +2215,7 @@ Conforme a indicación expresa del docente responsable, el protocolo del compone
 
 \addcontentsline{toc}{section}{VIII. CONCLUSIONES}
 
-La Entrega 3 (2A) del Proyecto Fin de Curso consolida y amplía la especificación parcial construida en la Entrega 2 (1B) del Sistema Inteligente de Gestión de Aulas (SIGA), siguiendo la estructura del estándar IEEE/ISO/IEC 29148:2018 y elevando el estándar de exigencia hacia una ERS/SRS completa con componente empírico.
+La Entrega Final (2B) del Proyecto Fin de Curso consolida y amplía la especificación construida en la Entrega 3 (2A) y, antes, en la Entrega 2 (1B) del Sistema Inteligente de Gestión de Aulas (SIGA), siguiendo la estructura del estándar IEEE/ISO/IEC 29148:2018 y elevando el estándar de exigencia hacia una ERS/SRS completa con componente empírico.
 
 
 Los principales logros de esta entrega son: la ampliación de 23 a 25 requisitos funcionales con plantilla de 8 atributos; la especificación de 16 requisitos no funcionales cuantificados sobre las nueve características de ISO/IEC 25010:2023, con estado de validación declarado explícitamente para cada uno (validado, parcialmente sustentado o no verificado, sin ambigüedad), incluido el requisito de explicabilidad obligatorio para RF-09; la incorporación de una sección de requisitos legales mapeados a la Ley Orgánica de Protección de Datos Personales del Ecuador; la redacción de historias de usuario en formato Connextra con criterios Gherkin para los RF Must; el modelado UML completo con ocho tipos de diagrama y el modelado organizacional i*; la priorización combinada MoSCoW, Kano y WSJF; la ampliación de la matriz de trazabilidad; y la definición del alcance del Producto Mínimo Viable y del protocolo del componente empírico.
@@ -2356,7 +2374,7 @@ Ver Sección 5.5 de este documento y el archivo 04\_Trazabilidad/matriz\_trazabi
 https://github.com/gsanchezc6-beep/SIGA\_FGMMN\_ISR401\_AVANCE\_2A.git
 
 
-El repositorio sigue la jerarquía de carpetas establecida para la Entrega 3 (2A): 01\_ERS/ a 08\_Etica/, con los archivos raíz obligatorios (README.md, LICENSE, CITATION.cff, CHANGELOG.md, .gitignore, checksums.sha256).
+El repositorio sigue la jerarquía de carpetas establecida desde la Entrega 3 (2A) y vigente en esta Entrega Final (2B): 01\_ERS/ a 08\_Etica/, con los archivos raíz obligatorios (README.md, LICENSE, CITATION.cff, CHANGELOG.md, .gitignore, checksums.sha256).
 
 \textbf{Zonas de evidencia [P]/[R] (actualización conforme a la guía vigente).} Toda la evidencia reside dentro del repositorio, organizada en dos zonas: \textbf{zona pública [P]} (transcripciones anonimizadas, copias de consentimientos con cédula y firma enmascaradas, fotografías sin rostros identificables y sin coordenadas GPS, documentos de la organización anonimizados, actas de validación enmascaradas, codificación temática, fichas técnicas de cada archivo multimedia) y \textbf{zona restringida [R]} (consentimientos originales, videos y audios sin anonimizar, actas con firma visible, documentos originales de la organización), almacenada en \texttt{02\_Evidencias/00\_Restringido/} como contenedor cifrado con AES-256, cuya contraseña se entrega únicamente al docente por el canal institucional (nunca dentro del repositorio ni del README). El hash SHA-256 de cada archivo se calcula antes del cifrado y se registra en \texttt{checksums.sha256} junto con la ficha técnica pública, permitiendo al docente verificar la integridad de la evidencia sin que esta quede expuesta públicamente.
 
