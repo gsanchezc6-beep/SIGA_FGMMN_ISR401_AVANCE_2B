@@ -77,20 +77,55 @@ Lo que consta:
 En **este** repositorio la clave se publico veintiocho dias despues de que los jueces
 puntuaran, de modo que su publicacion aqui no pudo afectar al cegado.
 
-**Lo que queda por verificar, y se declara pendiente.** La clave existia tambien en el
-repositorio de la Entrega 3 (2A). **El equipo no ha determinado en que fecha se publico
-alli respecto del 2026-08-02.** Mientras esa comprobacion no se haga, no puede afirmarse
-que el cegado estuvo garantizado, y por tanto:
+### Comprobacion realizada el 2026-08-31
 
-- Si la clave se publico en el 2A **despues** del 2026-08-02, el cegado se sostiene y esta
-  desviacion es unicamente de organizacion documental.
-- Si se publico **antes**, el cegado queda comprometido y ese hecho debe reportarse como
-  amenaza a la validez interna en la seccion de amenazas del reporte, con la consecuencia
-  correspondiente sobre la interpretacion de los resultados.
+El equipo se comprometio a verificar en el historial del repositorio 2A la fecha en que la
+clave se publico alli, y a declarar el resultado fuera cual fuera. Hecha la comprobacion,
+esta es la cronologia de ese dia, en UTC:
 
-El equipo se compromete a verificarlo en el historial del repositorio 2A y a declarar el
-resultado, sea cual sea, antes de la audiencia. **No se afirmara que el cegado se mantuvo
-mientras no haya evidencia de ello.**
+| Hora UTC | Commit | Que ocurrio |
+|---|---|---|
+| **19:20** | `dbba6b4` | Entran al repositorio, **en el mismo commit**, la clave de desciego, el paquete de evaluacion ciega y la rubrica |
+| **19:40** | `4d678bf` | Se commitean las puntuaciones de los tres jueces |
+| **20:00** | `59d1574` | Se arma el conjunto de datos anonimizado |
+| **20:25:07** | — | Se crea el registro en OSF |
+| **20:40** | `bb04d43` | Se completa el conjunto de datos anonimizado |
+
+Se reproduce con:
+
+```bash
+git clone https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2A
+cd SIGA_FGMMN_ISR401_AVANCE_2A
+TZ=UTC git log --diff-filter=A --date=iso-local \
+  --format='%ad  %h  %s' -- "*CLAVE*" "*juez*" "*Paquete_Evaluacion*"
+```
+
+### Lectura del resultado
+
+**La clave se publico 20 minutos antes de que se subieran las puntuaciones.** Tomado
+aisladamente, el dato es incomodo. Dos hechos lo resuelven.
+
+**Primero: la evaluacion no cabe en veinte minutos.** Tres jueces puntuaron 51 items en 5
+dimensiones cada uno, es decir **765 valoraciones**. Producirlas entre las 19:20 y las
+19:40 es materialmente imposible. La evaluacion ocurrio necesariamente antes de que la
+clave estuviera publicada.
+
+**Segundo: el repositorio no fue el canal de los jueces.** El paquete de evaluacion ciega
+entro al repositorio en ese mismo commit de las 19:20, es decir que hasta ese momento no
+estaba publicado alli. Si los jueces ya habian puntuado, recibieron el instrumento por otra
+via, y no por el repositorio. El commit que lo introduce se titula «restaurar carpetas
+obligatorias con su contenido real»: es una reorganizacion del arbol, no la creacion del
+material.
+
+**Conclusion que el equipo sostiene.** El cegado del experimento **se mantuvo**. La
+publicacion de la clave fue posterior a la evaluacion, y el repositorio no fue el medio por
+el que los jueces accedieron al instrumento. La desviacion es de organizacion documental:
+un artefacto de diseno quedo en una carpeta que no le correspondia, con un nombre que
+afirmaba una restriccion que el repositorio no cumplia.
+
+**Lo que sigue sin poder probarse.** No existe registro de la hora exacta en que cada juez
+emitio sus puntuaciones, porque se recogieron fuera del repositorio. El argumento anterior
+es de imposibilidad material y de canal, no un registro directo. Se declara asi.
 
 ## 6. Lo que si esta probado: el material que recibieron los jueces no filtra el origen
 

@@ -91,17 +91,23 @@ diferencia entre incumplir y ocultar es exactamente lo que separa una limitació
 de una falta de integridad. Esta declaración es verificable por cualquiera sin credenciales
 en <https://osf.io/7pq3h>.
 
-**Queda una comprobación pendiente**, la misma que la de `desviacion_clave_desciego.md`:
-determinar en el historial del repositorio de la Entrega 3 (2A) la fecha exacta en que se
-commitearon las puntuaciones de los jueces, y contrastarla con las 20:25:07 UTC del
-registro. Si son posteriores, el componente empírico sí está pre-registrado aunque el
-trabajo de campo no lo esté. Si son anteriores, tampoco lo está.
+**Comprobación realizada el 2026-08-31.** Se verificó en el historial del repositorio 2A
+la fecha en que se commitearon las puntuaciones de los jueces, para contrastarla con las
+20:25:07 UTC del registro:
 
-```bash
-git clone https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2A
-cd SIGA_FGMMN_ISR401_AVANCE_2A
-git log --diff-filter=A --format='%h %ad %s' --date=iso -- "*juez*"
-```
+| Hora UTC del 2026-08-02 | Hecho |
+|---|---|
+| 19:40 | Se commitean las puntuaciones de los tres jueces (`4d678bf`) |
+| **20:25:07** | **Se crea el registro en OSF** |
+
+Las puntuaciones son **anteriores** al registro, en 45 minutos. Por tanto el componente
+empírico **tampoco está pre-registrado**: ni el trabajo de campo, que precede en dos meses
+y medio, ni el análisis de los jueces, que precede en tres cuartos de hora.
+
+Esto es coherente con lo que la propia OSF declara desde el 2026-08-27, y no lo contradice:
+el registro es **retrospectivo**, y así consta en la fuente. La cronología completa de ese
+día, con el detalle de la publicación de la clave de desciego, está en
+[`desviacion_clave_desciego.md`](desviacion_clave_desciego.md).
 
 ## Lo que el paquete archivado sí demuestra
 
