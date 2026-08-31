@@ -12,6 +12,7 @@
 3.0 & 29/07/2026 & Equipo FGMMN & Entrega 3 (2A): ERS/SRS completo, modelado UML completo, priorización MoSCoW + Kano + WSJF, matriz de trazabilidad extendida, Producto Mínimo Viable (MVP), componente empírico registrado en OSF, y correcciones de las observaciones docentes de la Entrega 2 (1B). \\ \hline
 4.0 & 30/08/2026 & Equipo FGMMN & Entrega Final (2B): consolidacion de la especificacion. Se unifican los identificadores de requisito no funcional en \texttt{RNF-}, se delimitan RF-13 y RF-16 conforme a la solicitud de cambio SC-01 aprobada por el comite de control de cambios, se incorpora la auditoria de calidad de la especificacion sobre las seis metricas de la guia, y se agregan las fichas de los componentes de inteligencia artificial. \\ \hline
 4.1 & 31/08/2026 & Equipo FGMMN & Correcciones de la revision docente de la Entrega Final: se anade el resumen bilingue exigido por el criterio C1, y la subseccion 3.3.2 incorpora al documento los requisitos del unico componente de inteligencia artificial del sistema --- rendimiento, equidad, explicabilidad, datos de entrenamiento, plan de monitoreo y clasificacion de riesgo ---, que hasta ahora solo constaban en la ficha anexa. \\ \hline
+4.2 & 31/08/2026 & Equipo FGMMN & Se etiquetan los criterios de aceptacion CA-01 a CA-17, que la matriz de trazabilidad referenciaba sin que existieran en el documento, y se anaden las historias HU-18, HU-19 y HU-20 con sus criterios para RF-20, RF-24 y RF-25, que no tenian ninguna. \\ \hline
 \caption{Historial de versiones}
 \end{longtable}
 \endgroup
@@ -1071,7 +1072,7 @@ Nuevo en esta entrega. Se redacta una historia de usuario en formato Connextra (
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema recopilación de datos ambientales mediante sensores iot, para el sistema debe capturar en tiempo real temperatura, humedad y ocupación de cada aula mediante sensores iot distribuidos.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que sensor configurado y conectado a la red del aula, cuando se cumple la condición operativa de RF-01, entonces prueba de inyección de lectura simulada $\rightarrow$ dato visible en panel en $\leq$10 s; margen de error $\leq$1 }\textit{$^{\circ}$c}\textit{ / $\leq$5 \% humedad.}
+\textbf{CA-01.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que sensor configurado y conectado a la red del aula, cuando se cumple la condición operativa de RF-01, entonces prueba de inyección de lectura simulada $\rightarrow$ dato visible en panel en $\leq$10 s; margen de error $\leq$1 }\textit{$^{\circ}$c}\textit{ / $\leq$5 \% humedad.}
 
 
 \subsubsection*{HU-02 (RF-02)}
@@ -1081,7 +1082,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema recopila
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitoreo y control remoto de dispositivos de aula, para el usuario autorizado debe poder visualizar y enviar comandos (encender/apagar/ajustar) a los dispositivos de un aula sin desplazarse físicamente.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado con rol autorizado; dispositivo en línea, cuando se cumple la condición operativa de RF-02, entonces comando enviado se ejecuta en el dispositivo en $\leq$5 s, con registro en bitácora.}
+\textbf{CA-02.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado con rol autorizado; dispositivo en línea, cuando se cumple la condición operativa de RF-02, entonces comando enviado se ejecuta en el dispositivo en $\leq$5 s, con registro en bitácora.}
 
 
 \subsubsection*{HU-03 (RF-03)}
@@ -1091,7 +1092,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitore
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema detección automática de ocupación de aula, para el sistema debe determinar si un aula está ocupada o vacía usando sensores de presencia, sin depender de revisión manual por cámaras.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que sensor de presencia instalado y calibrado, cuando se cumple la condición operativa de RF-03, entonces exactitud $\geq$95 \% y latencia $\leq$15 s en pruebas controladas de entrada/salida de personas.}
+\textbf{CA-03.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que sensor de presencia instalado y calibrado, cuando se cumple la condición operativa de RF-03, entonces exactitud $\geq$95 \% y latencia $\leq$15 s en pruebas controladas de entrada/salida de personas.}
 
 
 \subsubsection*{HU-04 (RF-04)}
@@ -1101,7 +1102,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema detecci�
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitoreo y control remoto de proyectores, para el sistema debe mostrar el estado del proyector (encendido, apagado, sin señal hdmi) y permitir su control remoto.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que proyector conectado al módulo de control }\textit{iot}\textit{, cuando se cumple la condición operativa de RF-04, entonces cambio de estado del proyector reflejado en panel en $\leq$10 s.}
+\textbf{CA-04.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que proyector conectado al módulo de control }\textit{iot}\textit{, cuando se cumple la condición operativa de RF-04, entonces cambio de estado del proyector reflejado en panel en $\leq$10 s.}
 
 
 \subsubsection*{HU-05 (RF-05)}
@@ -1111,7 +1112,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitore
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitoreo y ajuste remoto de climatización, para el sistema debe mostrar la temperatura y humedad de cada aula y permitir el ajuste remoto del sistema de climatización.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que equipo de climatización conectado a controlador remoto compatible, cuando se cumple la condición operativa de RF-05, entonces ajuste remoto reflejado en equipo físico o controlador en $\leq$15 s.}
+\textbf{CA-05.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que equipo de climatización conectado a controlador remoto compatible, cuando se cumple la condición operativa de RF-05, entonces ajuste remoto reflejado en equipo físico o controlador en $\leq$15 s.}
 
 
 \subsubsection*{HU-06 (RF-07)}
@@ -1121,7 +1122,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitore
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema panel de control centralizado, para el sistema debe presentar en una sola vista el estado de ocupación, condiciones ambientales, conectividad y estado operativo de los equipos de todas las aulas monitoreadas.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado con permisos de visualización, cuando se cumple la condición operativa de RF-07, entonces panel actualiza datos automáticamente cada $\leq$30 s para $\geq$1 aula de prueba.}
+\textbf{CA-06.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado con permisos de visualización, cuando se cumple la condición operativa de RF-07, entonces panel actualiza datos automáticamente cada $\leq$30 s para $\geq$1 aula de prueba.}
 
 
 \subsubsection*{HU-07 (RF-08)}
@@ -1131,7 +1132,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema panel de
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema generación y envío de alertas por anomalías, para el sistema debe generar y enviar alertas automáticas cuando detecte anomalías técnicas o condiciones fuera de los parámetros configurados.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que reglas de anomalía y destinatarios configurados, cuando se cumple la condición operativa de RF-08, entonces falla simulada genera alerta entregada al responsable en $\leq$1 minuto.}
+\textbf{CA-07.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que reglas de anomalía y destinatarios configurados, cuando se cumple la condición operativa de RF-08, entonces falla simulada genera alerta entregada al responsable en $\leq$1 minuto.}
 
 
 \subsubsection*{HU-08 (RF-10)}
@@ -1141,7 +1142,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema generaci
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema registro histórico de fallas y mantenimientos, para el sistema debe registrar cada falla y mantenimiento con fecha, hora, tipo de incidente, aula, equipo afectado y responsable.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que incidente generado por rf-08 o reportado vía rf-12, cuando se cumple la condición operativa de RF-10, entonces todo incidente cerrado consultable con los 5 campos mínimos completos (fecha, hora, tipo, equipo, responsable).}
+\textbf{CA-08.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que incidente generado por rf-08 o reportado vía rf-12, cuando se cumple la condición operativa de RF-10, entonces todo incidente cerrado consultable con los 5 campos mínimos completos (fecha, hora, tipo, equipo, responsable).}
 
 
 \subsubsection*{HU-09 (RF-11)}
@@ -1151,7 +1152,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema registro
 Como Coordinadora de la Carrera-Docente, quiero que el sistema notificación inmediata al personal técnico ante fallas críticas, para el sistema debe notificar de forma inmediata al personal técnico cuando una falla afecte una clase en curso o comprometa la disponibilidad de equipos esenciales.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que horario académico cargado; falla detectada durante clase programada, cuando se cumple la condición operativa de RF-11, entonces notificación generada en $\leq$30 s tras simulación de falla crítica durante horario activo.}
+\textbf{CA-09.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que horario académico cargado; falla detectada durante clase programada, cuando se cumple la condición operativa de RF-11, entonces notificación generada en $\leq$30 s tras simulación de falla crítica durante horario activo.}
 
 
 \subsubsection*{HU-10 (RF-12)}
@@ -1161,7 +1162,7 @@ Como Coordinadora de la Carrera-Docente, quiero que el sistema notificación inm
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema gestión de solicitudes de mantenimiento, para el sistema debe permitir que docentes y personal administrativo reporten incidencias y den seguimiento al estado de atención mediante tickets de mantenimiento.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado con rol docente, administrativo o técnico, cuando se cumple la condición operativa de RF-12, entonces }\textit{ticket}\textit{ de prueba creado, consultado y con cambio de estado visible para roles autorizados.}
+\textbf{CA-10.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado con rol docente, administrativo o técnico, cuando se cumple la condición operativa de RF-12, entonces }\textit{ticket}\textit{ de prueba creado, consultado y con cambio de estado visible para roles autorizados.}
 
 
 \subsubsection*{HU-11 (RF-13)}
@@ -1171,7 +1172,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema gestión
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema apague los equipos de un aula cuando detecte consumo sostenido sin actividad, para no pagar energía de un aula que nadie está usando aunque el horario se la haya asignado.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que la regla de eficiencia está activa para el aula y el umbral de consumo sin actividad está configurado, cuando el aula registra consumo por encima del umbral durante 5 minutos continuos sin actividad detectada, entonces el sistema ordena el apagado en $\leq$2 minutos y la bitácora registra RF-13 como regla de origen.}
+\textbf{CA-11.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que la regla de eficiencia está activa para el aula y el umbral de consumo sin actividad está configurado, cuando el aula registra consumo por encima del umbral durante 5 minutos continuos sin actividad detectada, entonces el sistema ordena el apagado en $\leq$2 minutos y la bitácora registra RF-13 como regla de origen.}
 
 
 \subsubsection*{HU-12 (RF-15)}
@@ -1181,7 +1182,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema apague l
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema programación de horarios automatizados, para el sistema debe permitir programar el encendido/apagado automático de equipos sincronizado con el horario académico vigente.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que horario académico cargado, vigente y asociado a las aulas, cuando se cumple la condición operativa de RF-15, entonces regla programada ejecutada con tolerancia $\leq$±1 minuto respecto al horario definido.}
+\textbf{CA-12.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que horario académico cargado, vigente y asociado a las aulas, cuando se cumple la condición operativa de RF-15, entonces regla programada ejecutada con tolerancia $\leq$±1 minuto respecto al horario definido.}
 
 
 \subsubsection*{HU-13 (RF-16)}
@@ -1191,7 +1192,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema programa
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema apague todos los equipos del aula al terminar su última clase del día, para no tener que recorrer las aulas al cierre de la jornada comprobando qué quedó encendido.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que el horario vigente está cargado y la última franja asignada al aula ha concluido, cuando el sensor confirma que el aula está desocupada, entonces el sistema ordena el apagado total en $\leq$2 minutos y la bitácora registra RF-16 como regla de origen.}
+\textbf{CA-13.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que el horario vigente está cargado y la última franja asignada al aula ha concluido, cuando el sensor confirma que el aula está desocupada, entonces el sistema ordena el apagado total en $\leq$2 minutos y la bitácora registra RF-16 como regla de origen.}
 
 
 \subsubsection*{HU-14 (RF-19)}
@@ -1201,7 +1202,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema apague t
 Como Coordinadora de la Carrera-Docente, quiero que el sistema gestión de acceso diferenciado por roles, para el sistema debe permitir el acceso diferenciado por roles, habilitando únicamente las funciones autorizadas según el perfil del usuario.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario registrado con rol asignado, cuando se cumple la condición operativa de RF-19, entonces usuario con rol docente no puede acceder a funciones administrativas ni técnicas reservadas a otros roles.}
+\textbf{CA-14.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario registrado con rol asignado, cuando se cumple la condición operativa de RF-19, entonces usuario con rol docente no puede acceder a funciones administrativas ni técnicas reservadas a otros roles.}
 
 
 \subsubsection*{HU-15 (RF-21)}
@@ -1211,7 +1212,7 @@ Como Coordinadora de la Carrera-Docente, quiero que el sistema gestión de acces
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema notificación de equipos encendidos fuera del horario académico, para el sistema debe enviar notificaciones automáticas cuando detecte proyectores o equipos de climatización encendidos fuera del horario académico vigente.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que horario académico cargado; equipo reporta su estado operativo, cuando se cumple la condición operativa de RF-21, entonces equipo encendido fuera de horario por el tiempo configurado genera notificación en $\leq$60 s.}
+\textbf{CA-15.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que horario académico cargado; equipo reporta su estado operativo, cuando se cumple la condición operativa de RF-21, entonces equipo encendido fuera de horario por el tiempo configurado genera notificación en $\leq$60 s.}
 
 
 \subsubsection*{HU-16 (RF-22)}
@@ -1221,7 +1222,7 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema notifica
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitoreo de conectividad de red del aula, para el sistema debe monitorear la conectividad de sensores, gateways y controladores iot instalados en cada aula.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que dispositivo }\textit{iot}\textit{ registrado y asociado a un aula, cuando se cumple la condición operativa de RF-22, entonces desconexión simulada de sensor muestra 'sin conexión' y genera alerta al responsable en $\leq$60 s.}
+\textbf{CA-16.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que dispositivo }\textit{iot}\textit{ registrado y asociado a un aula, cuando se cumple la condición operativa de RF-22, entonces desconexión simulada de sensor muestra 'sin conexión' y genera alerta al responsable en $\leq$60 s.}
 
 
 \subsubsection*{HU-17 (RF-23)}
@@ -1231,12 +1232,40 @@ Como Personal de Infraestructura y Mantenimiento, quiero que el sistema monitore
 Como Personal de Infraestructura y Mantenimiento, quiero que el sistema registro de bitácora de acciones de usuario, para el sistema debe registrar un historial de acciones realizadas por los usuarios para garantizar trazabilidad y auditabilidad de todas las operaciones.
 
 
-\textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado ejecuta una acción en la plataforma, cuando se cumple la condición operativa de RF-23, entonces acciones de control, }\textit{ticket}\textit{ y exportación de reporte quedan registradas con todos los campos mínimos.}
+\textbf{CA-17.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que usuario autenticado ejecuta una acción en la plataforma, cuando se cumple la condición operativa de RF-23, entonces acciones de control, }\textit{ticket}\textit{ y exportación de reporte quedan registradas con todos los campos mínimos.}
 
 
 \section*{IV. MODELADO DEL SISTEMA (UML) COMPLETO}
 
 \addcontentsline{toc}{section}{IV. MODELADO DEL SISTEMA (UML) COMPLETO}
+
+\subsubsection*{HU-18 (RF-20)}
+
+\addcontentsline{toc}{subsubsection}{HU-18 (RF-20)}
+
+Como Coordinadora de la Carrera, quiero consultar el historial de ocupacion de cada aula con su fecha, hora de inicio, hora de fin y duracion, para saber que aulas se usan de verdad y cuales estan asignadas pero vacias.
+
+
+\textbf{CA-18.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que el sensor de ocupacion del aula esta instalado y conectado, cuando se producen cambios de ocupacion a lo largo de una jornada, entonces cada cambio queda registrado con fecha, hora, estado y duracion, y el historial resultante es consultable por aula y por periodo.}
+
+\subsubsection*{HU-19 (RF-24)}
+
+\addcontentsline{toc}{subsubsection}{HU-19 (RF-24)}
+
+Como usuario del sistema, quiero exportar los datos personales que el sistema guarda sobre mi, para ejercer el derecho de acceso que me reconoce el articulo 13 de la Ley Organica de Proteccion de Datos Personales.
+
+
+\textbf{CA-19.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que el usuario esta autenticado, cuando solicita la exportacion de sus datos personales, entonces el sistema genera un archivo descargable en formato legible con los campos de su perfil y las entradas de bitacora asociadas a el, y lo pone a disposicion en un plazo maximo de 15 dias habiles.}
+
+\subsubsection*{HU-20 (RF-25)}
+
+\addcontentsline{toc}{subsubsection}{HU-20 (RF-25)}
+
+Como usuario del sistema, quiero solicitar la correccion de un dato personal mio que sea inexacto, para ejercer el derecho de rectificacion que me reconoce el articulo 14 de la Ley Organica de Proteccion de Datos Personales.
+
+
+\textbf{CA-20.} \textit{Escenario }\textit{Gherkin}\textit{ --- Dado que el usuario esta autenticado y el dato esta identificado como propio, cuando solicita su correccion indicando el campo y el valor propuesto, entonces el sistema refleja el cambio en un plazo maximo de 15 dias habiles y registra el evento en la bitacora de acciones, con el valor anterior y el nuevo.}
+
 
 \subsection*{4.1 Diagrama de casos de uso general}
 
