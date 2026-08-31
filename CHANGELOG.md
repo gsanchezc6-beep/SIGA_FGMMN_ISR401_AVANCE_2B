@@ -8,6 +8,41 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.4.0] - 2026-08-31
+
+Cierre de la trazabilidad y acreditacion del aporte individual.
+
+### Anadido
+
+- `04_Trazabilidad/huerfanos_y_cadenas_rotas.md` - huerfanos y cadenas rotas listados con
+  causa y accion, como exige la guia.
+- `04_Trazabilidad/acreditacion_aporte.md` - responde a las dos observaciones del docente
+  sobre el historial: el trabajo anterior al 30 de agosto y el aporte de los integrantes
+  sin commits en este repositorio.
+- `01_ERS/` - historias HU-18, HU-19 y HU-20 para RF-20, RF-24 y RF-25, con sus criterios
+  CA-18, CA-19 y CA-20. Los diecisiete escenarios Gherkin existentes quedan etiquetados
+  como CA-01 a CA-17.
+- `04_Trazabilidad/matriz_trazabilidad.csv` - columnas de clase, proceso, caso de prueba y
+  estado de la traza.
+
+### Corregido
+
+- Ocho identificadores de historia de la matriz no resolvian contra el ERS, y ningun
+  criterio de aceptacion resolvia porque el ERS no los etiquetaba. Corregido en ambos
+  extremos.
+- La declaracion de aporte individual subestimaba el trabajo de tres integrantes. Rehecha
+  sobre el historial real de los dos repositorios: 183 commits, uno por fila.
+- Tres filas de la matriz arrastraban una coma de mas.
+
+### Medido
+
+- Trazabilidad, cadena adelante completa: de **48,0 % a 92,0 %**, por encima del 90 % de
+  referencia.
+- Celdas vacias en la matriz: de **308 a 0**.
+- `checksums.sha256`: 254 entradas, con los archivos xml ya cubiertos.
+
+---
+
 ## [2B-1.3.0] - 2026-08-31
 
 Comprobante del registro previo y ampliacion del manifiesto de integridad.
