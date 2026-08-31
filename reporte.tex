@@ -832,9 +832,9 @@ m\'etrica est\'a en \texttt{01\_ERS/Auditoria\_Calidad/}.
 \toprule
 \textbf{M\'etrica} & \textbf{Resultado} & \textbf{Referencia} & \textbf{Veredicto} \\
 \midrule
-Completitud      & 96,0\,\% & $\geq 95$\,\%            & Cumple \\
-Consistencia     & 0,9967 con 1 conflicto abierto & $\geq 0{,}98$ y cero conflictos & Parcial \\
-Verificabilidad  & 96,0\,\% & $\geq 90$\,\%            & Cumple \\
+Completitud      & 100\,\% & $\geq 95$\,\%            & Cumple \\
+Consistencia     & 1,0000 sin conflictos abiertos & $\geq 0{,}98$ y cero conflictos & Cumple \\
+Verificabilidad  & 100\,\% & $\geq 90$\,\%            & Cumple \\
 Trazabilidad     & 92,0\,\% y 48,0\,\% & 100\,\% y $\geq 90$\,\% & No cumple \\
 Modificabilidad  & 5,00     & $\leq 3{,}0$             & No cumple \\
 Correcci\'on     & no medible & $\leq 0{,}05$          & Pendiente \\
@@ -842,9 +842,20 @@ Correcci\'on     & no medible & $\leq 0{,}05$          & Pendiente \\
 \end{tabular}
 \end{table}
 
-La correcci\'on no se declara con un valor porque se calcula sobre los defectos
-residuales tras una re-inspecci\'on que a\'un no se ha ejecutado. Publicar una cifra
-aqu\'i ser\'ia inventarla.
+Tres de estos valores cambiaron el 30 de agosto respecto de la primera medici\'on, y
+conviene decir por qu\'e. La \textbf{completitud} sub\'io de 96,0\,\% a 100\,\% al comprobarse
+a mano que la \'unica ficha marcada como incompleta, la de RF-01, s\'i ten\'ia sus ocho
+atributos: el recuento autom\'atico no atravesaba el marcado de color de su fila de
+encabezado. La \textbf{verificabilidad} sub\'io al reescribirse el criterio de RF-14,
+que exig\'ia recomendaciones «coherentes» sin definir c\'omo comprobarlo. Y la
+\textbf{consistencia} cerr\'o su \'unico conflicto abierto al delimitarse RF-13 y RF-16
+por causa, conforme a la solicitud de cambio SC-01.
+
+La \textbf{correcci\'on} sigue sin declararse con un valor porque se calcula sobre los
+defectos residuales tras una re-inspecci\'on que a\'un no se ha ejecutado. Publicar una
+cifra aqu\'i ser\'ia inventarla. La \textbf{trazabilidad} y la \textbf{modificabilidad}
+siguen sin cumplir, y sus acciones correctivas est\'an definidas en
+\texttt{01\_ERS/Auditoria\_Calidad/}.
 
 \section{Banco de preguntas del tribunal}
 \label{anx:banco}
