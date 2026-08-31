@@ -17,109 +17,172 @@ de Zenodo.
 
 | Archivo | Qué contiene | Estado |
 |---|---|---|
-| `bitacora_desviaciones.pdf` | Cada desviación del análisis ejecutado respecto del plan pre-registrado, con la razón, el momento en que se detectó y la mitigación aplicada. | Presente en esta carpeta |
-| `osf_registration.pdf` | Exportación del registro OSF con su marca temporal, que acredite que el registro es anterior al inicio de la recolección de datos. | **No está en el repositorio.** Se descarga desde <https://osf.io/7pq3h> y se deposita aquí |
+| `bitacora_desviaciones.pdf` | Cada desviación del análisis ejecutado respecto del plan pre-registrado. | Presente |
+| `desviacion_clave_desciego.md` | Desviación por la publicación de la tabla de desciego. | Presente |
+| `osf_registration_api.json` | Respuesta íntegra de la API pública de OSF para este registro, descargada el 2026-08-31. Contiene la marca temporal, el estado del registro y el formulario completo. | **Presente** |
+| `osf_internet_archive_bag.zip` | Copia del registro depositada por el Center for Open Science en el Internet Archive, en formato BagIt con sus manifiestos SHA-256 y SHA-512. Incluye el protocolo, la rúbrica y el paquete de evaluación ciega tal como estaban al registrarse. | **Presente** |
+| `osf_internet_archive_meta.xml` | Metadatos del ítem del Internet Archive, con su propia fecha de archivo. | **Presente** |
+| `osf_contributors_api.json` | Lista de contribuyentes del registro tal como la devuelve la API pública, descargada el 2026-08-31. | **Presente** |
+| `osf_registration.pdf` | Exportación en PDF de la página pública del registro, 15 páginas, generada el 2026-08-31. Incluye el DOI, la fecha de registro, los contribuyentes, el enlace al Internet Archive y el formulario completo con sus actualizaciones. | **Presente** |
+| `osf_internet_archive.pdf` | Exportación en PDF de la ficha del ítem en el Internet Archive, 6 páginas, con su fecha de archivo. | **Presente** |
 
-El criterio de piso **G9** exige que el protocolo esté registrado con marca temporal
-anterior al inicio de la recolección. El registro existe y está aceptado; lo que falta es
-la constancia descargable dentro del repositorio, porque toda evidencia declarada tiene
-que reposar aquí y superar la verificación de su tipo.
+## Marca temporal externa — verificada el 2026-08-31
 
-## Desviaciones respecto del protocolo pre-registrado
+El docente observó en su revisión que no localizaba «comprobante de registro previo con
+marca temporal externa». Ahora está en esta carpeta, y no depende de la palabra del equipo:
 
-Encabezan la lista las tres desviaciones críticas del 13/08/2026; las numeradas 4 a 8
-se anticiparon antes de conocer los resultados, comparando el protocolo contra lo que
-exige la Sección 4.4 de la guía de 2B. Cada una necesita su entrada en
-`osf_deviations.pdf`, con la razón, el momento en que se detectó y la mitigación
-aplicada.
+| Hecho | Fuente | Marca temporal |
+|---|---|---|
+| Proyecto creado en OSF | `logs.json` del paquete BagIt | 2026-07-27T21:27:28 UTC |
+| Subida del protocolo, la rúbrica y el paquete de evaluación ciega | `logs.json`, tres eventos | 2026-08-02T19:59:21 a 19:59:54 UTC |
+| **Registro creado y aceptado** | `date_registered` de la API de OSF | **2026-08-02T20:25:07 UTC** |
+| **Copia archivada por un tercero** | Internet Archive, `addeddate` | **2026-08-06T13:00:29 UTC** |
+| Actualización con las 9 desviaciones | Página pública del registro | 2026-08-27 |
+| Re-archivado tras la actualización | Internet Archive, `modified` | 2026-08-28T04:13:35 UTC |
 
-> **Corrección (2026-08-28).** Al llenar la actualización real en OSF se verificó que
-> la corrección de Holm-Bonferroni **ya estaba en el registro pre-registrado**
-> (campo "Inference Criteria" del formulario OSF), no es una desviación. Se retiró de
-> esta lista y se renumeró; la lista original tenía 10 puntos, ahora tiene 9. Esto no
-> se detectó antes porque `protocolo.md`/`.tex` (la copia local) no incluye ese campo
-> con el mismo detalle que el formulario real de OSF — verificar siempre contra el
-> registro real, no solo contra la copia local, antes de declarar una desviación.
+El Internet Archive es un tercero independiente y el depósito lo hizo
+`ops-admin@cos.io`, no el equipo. Cualquiera puede comprobarlo en
+<https://archive.org/details/osf-registrations-7pq3h-v1> sin credenciales.
 
-1. **Exclusión de EV-15 (DOC-03) por retiro de consentimiento informado.** El
-   participante no firmó el consentimiento, ni para la entrevista ni para el
-   walkthrough asociado (WT-03, ya invalidado desde 2A por el mismo motivo). La
-   entrevista se excluyó íntegramente el 13/08/2026: se eliminó la transcripción,
-   se retiraron sus fragmentos de `codificacion_tematica.csv`, se re-fundamentaron
-   en EV-13 y EV-14 los requisitos que dependían de ella (RNF-16, RD-02) y se
-   eliminó de `matriz_trazabilidad.csv` la fila sin corroboración alternativa
-   (oposición a cámaras, antes ligada solo a EV-15). Ver el detalle completo en
-   `02_Evidencias/Transcripciones/00_LEEME_Transcripciones.txt` y en la fila EV-15
-   de la Tabla B.1 del ERS.
-2. **Contaminación parcial y tardía del corpus fuente del LLM.** El contenido de
-   EV-15 formaba parte de `material_fuente_LLM.txt` cuando se generó el Conjunto A
-   de RF (LLM) que **ya fue evaluado por los tres jueces ciegos**. La exclusión de
-   EV-15 ocurrió *después* de esa evaluación. Por restricción de tiempo de la
-   Entrega 4 (2B), **no se re-ejecutó el experimento completo** (no se regeneró el
-   Conjunto A ni se repitió la evaluación ciega). El contenido textual de EV-15 ya
-   fue redactado de `material_fuente_LLM.txt`; `Conjunto_A_RF_LLM.md` se conserva
-   sin alterar como registro histórico exacto de lo efectivamente juzgado, con una
-   nota de integridad al inicio del documento. Esta desviación debe declararse
-   también como amenaza a la **validez de constructo** en el manuscrito, junto a la
-   exposición previa parcial del modelo al Conjunto B (punto 7).
-3. **Cierre del levantamiento de campo en N = 10 en lugar de N ≥ 16.** El docente
-   responsable, Ing. Gleiston Guerrero Ulloa, autorizó verbalmente en clase el cierre
-   de la recolección de entrevistas en las 10 restantes tras la exclusión de EV-15,
-   por restricción del calendario (corte adelantado a la semana del 17/08/2026) y por
-   agotamiento de la población disponible para nuevas entrevistas.
+**Cómo verificarlo sin fiarse de este documento:**
 
-   **Constancia del equipo (autodeclarada, 2026-08-13).** No existe registro escrito
-   de esta autorización al momento de escribir esta nota: fue comunicada verbalmente
-   en clase, sin testigos externos ni respaldo documental por parte del docente. El
-   equipo intentó obtener confirmación por escrito el 13/08/2026 por WhatsApp, sin
-   respuesta al cierre de esa fecha. Se reintentará el 14/08/2026. Esta entrada deja
-   constancia de que la desviación es real y de que el equipo actuó de buena fe
-   conforme a la instrucción recibida, aun cuando el respaldo documental quede
-   pendiente. Si la confirmación escrita llega antes del corte, sustituir este párrafo
-   por la cita textual y la fecha del mensaje del docente.
-4. **Intervalos de confianza por *bootstrap*.** El protocolo declaraba tamaño del efecto
-   (*d* de Cohen / δ de Cliff) sin intervalos de confianza; la guía exige IC al 95 %
-   construidos por *bootstrap* de 10 000 réplicas.
-5. **Pruebas de supuestos.** El protocolo declaraba Shapiro-Wilk; la guía exige además
-   Levene para homogeneidad de varianzas.
-6. **Número de jueces.** El protocolo fijaba un mínimo de 3 y recomendaba 5. Se ejecutó
-   con 3. Si el panel se amplía en la ronda terminal, el cambio de *n* de jueces se declara;
-   si no se amplía, se declara como limitación asumida.
-7. **Exposición previa del modelo.** Amenaza a la validez de constructo ya declarada en
-   [`prompts_llm/prompt_llm_conjunto_A.md`](prompts_llm/prompt_llm_conjunto_A.md): el
-   modelo que generó el Conjunto A tuvo exposición previa parcial al Conjunto B dentro de
-   la misma cuenta de chat. Debe aparecer tanto aquí como en la sección de amenazas a la
-   validez del manuscrito.
-8. **Corpus fuente reducido, no ampliado.** El protocolo declaraba «11 entrevistas
-   anonimizadas» como material fuente del Conjunto A; el corpus final válido quedó en
-   10 por la exclusión del punto 1. El Conjunto A **no** se regeneró sobre el corpus
-   reducido (ver punto 2): la asimetría entre lo que vio el LLM (11, incluida EV-15) y
-   lo que finalmente respalda al equipo humano (10) es una desviación que afecta a la
-   validez interna y debe declararse de forma explícita.
-9. **C6 cerrado por *power calculation*, no por curva de saturación.** El
-    pipeline ejecutado el 13/08/2026 confirmó que la curva de saturación
-    (`07_Publicacion/figuras/curva_saturacion.png`) **no muestra inflexión**:
-    con 10 entrevistas válidas, el promedio de códigos nuevos en las últimas
-    3 entrevistas (3,667) supera ampliamente el umbral del 5% (1,8). La causa
-    no es falta de datos de campo, sino que `codificacion_tematica.csv` nunca
-    pasó por una fase de codificación axial: sus 36 códigos son todos
-    distintos entre sí, uno por fragmento, sin fusionar los que representan
-    el mismo tema en entrevistas distintas — con un codebook así, la curva
-    jamás puede aplanarse, sin importar cuántas entrevistas se agreguen. Dado
-    que el Enfoque 1 admite el *power calculation* como vía alterna (Sección
-    C6 de la guía), se cierra el criterio con
-    `scripts_analisis/power_calculation.py` (Cohen d=0,5, α=0,05,
-    potencia=0,80) en lugar de rehacer la codificación bajo la presión de
-    tiempo del corte. La curva se conserva y se publica de todas formas,
-    como evidencia exploratoria, con esta limitación declarada explícitamente
-    en el manuscrito (Amenazas a la validez → validez de conclusión) en vez
-    de omitirse.
+```bash
+curl -s https://api.osf.io/v2/registrations/7pq3h/ | grep -o '"date_registered":"[^"]*"'
+curl -s https://archive.org/metadata/osf-registrations-7pq3h-v1 | grep -o '"addeddate":"[^"]*"'
+```
 
-## Regla que gobierna esta carpeta
+## Lo que la marca temporal acredita, y lo que no
 
-> El plan de análisis registrado previamente en el OSF se contrasta con el análisis
-> efectivamente ejecutado; **toda desviación se reporta explícitamente** en la sección de
-> metodología del manuscrito. Formular hipótesis después de conocer los resultados
-> (*HARKing*) o ejecutar múltiples análisis hasta encontrar uno significativo
-> (*p-hacking*) son prácticas indebidas y las detectan automáticamente muchos editores del
-> área.
+**No cumple G9, y conviene decirlo antes que lo diga el tribunal.** El criterio exige que
+el protocolo esté registrado con marca temporal **anterior al inicio de la recolección de
+datos**. El trabajo de campo se ejecutó entre el **2026-05-14** y el **2026-07-30**, según
+las fechas de los diez consentimientos, videos y transcripciones. El registro es del
+**2026-08-02**. La recolección precedió al registro en dos meses y medio.
+
+### El registro ya está declarado como retrospectivo en la propia OSF
+
+Esto es lo más relevante del expediente y conviene no perderlo de vista.
+
+El **registro original**, del 2026-08-02, marcó el campo de existencia de datos como
+
+> «Data does not yet exist. No part of the data that will be used for this analysis plan
+> exists, and no part will be generated until after this plan is registered.»
+
+La **actualización del 2026-08-27**, anterior a la revisión docente, corrigió ese campo de
+forma expresa. Consta en la página pública y en `osf_registration.pdf`, página 3:
+
+> «**Foreknowledge of data or evidence** — *Updated*. Analyses in this plan have been
+> conducted already. At least some of the analyses described in this analysis plan have
+> been conducted by the authors **making this a retrospective registration**.»
+
+Y añade su justificación:
+
+> «Esta actualización del registro se presenta después de ejecutar el plan de análisis
+> pre-registrado y de conocer los resultados, con el único propósito de declarar
+> explícitamente las desviaciones detectadas durante esa ejecución. Ninguna de las
+> desviaciones al plan de análisis fue decidida después de ver qué resultado produciría
+> cada una: las tres hacen el análisis más conservador, no menos, y de hecho ninguna de las
+> 5 dimensiones evaluadas resultó significativa una vez aplicadas.»
+
+**Consecuencia.** El equipo no oculta la naturaleza retrospectiva del registro: la declaró
+en la fuente, en el propio repositorio de registros, con fecha del 27 de agosto y antes de
+entregar. G9 sigue incumplido —un registro retrospectivo no es un pre-registro—, pero la
+diferencia entre incumplir y ocultar es exactamente lo que separa una limitación declarada
+de una falta de integridad. Esta declaración es verificable por cualquiera sin credenciales
+en <https://osf.io/7pq3h>.
+
+**Queda una comprobación pendiente**, la misma que la de `desviacion_clave_desciego.md`:
+determinar en el historial del repositorio de la Entrega 3 (2A) la fecha exacta en que se
+commitearon las puntuaciones de los jueces, y contrastarla con las 20:25:07 UTC del
+registro. Si son posteriores, el componente empírico sí está pre-registrado aunque el
+trabajo de campo no lo esté. Si son anteriores, tampoco lo está.
+
+```bash
+git clone https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2A
+cd SIGA_FGMMN_ISR401_AVANCE_2A
+git log --diff-filter=A --format='%h %ad %s' --date=iso -- "*juez*"
+```
+
+## Lo que el paquete archivado sí demuestra
+
+**El instrumento ciego, con fecha de tercero.** `archived_files.zip` dentro del BagIt
+contiene `Paquete_Evaluacion_Ciega_Jueces.md` tal como estaba el 2026-08-02, archivado por
+el Internet Archive el 2026-08-06. Ese documento presenta 51 ítems sin una sola mención de
+`RF-`, `RFA-`, `Humano` ni `LLM`. Es evidencia externa y fechada de que **el material
+entregado a los jueces estaba correctamente cegado**, y sostiene lo declarado en
+`desviacion_clave_desciego.md`.
+
+**Participación de integrantes que el docente sitúa en factor cero.** Hay que distinguir
+dos fotografías, porque no tienen el mismo valor probatorio.
+
+**Lo que consta en el registro vivo**, comprobado el 2026-08-31 y guardado en
+`osf_contributors_api.json`:
+
+| Contribuyente | Permiso | Bibliográfico |
+|---|---|---|
+| Sánchez Gary | admin | sí |
+| Winston Damián Cedeño Ávila | read | sí |
+| Allan Jeremy Mendoza Palma | read | sí |
+| Yeranick Esther Muñoz Quiñónez | write | sí |
+
+**Lo que consta en la copia archivada por el Internet Archive**, cuyo paquete no se ha
+vuelto a subir desde el 2026-08-28 y por tanto lleva marca temporal de un tercero:
+
+| Contribuyente | Archivado |
+|---|---|
+| Sánchez Gary | sí |
+| Winston Damián Cedeño Ávila | sí |
+| Allan Jeremy Mendoza Palma | sí |
+| Yeranick Esther Muñoz Quiñónez | **no** |
+
+**La diferencia importa y se declara.** Cedeño y Mendoza figuran en una copia depositada
+por un tercero el 2026-08-06 y actualizada el 2026-08-28: su pertenencia al proyecto está
+acreditada con fecha anterior a la entrega. Muñoz se incorporó al registro el
+**2026-08-31**, y esa incorporación es pública y verificable, pero **no está respaldada por
+la copia archivada**. Se presenta como lo que es: contribución declarada en el registro
+vivo, no atestiguada retroactivamente.
+
+Añadir un contribuyente **no alteró la marca temporal del registro**: `date_registered`
+sigue en 2026-08-02T20:25:07 UTC. Solo cambió `date_modified`, a 2026-08-31T06:57:58 UTC.
+Eso se comprueba comparando los dos ficheros de esta carpeta.
+
+Ninguna de las dos tablas acredita commits. Acreditan pertenencia al proyecto, y conviene
+llevarlas a la audiencia junto a los commits del repositorio de la Entrega 3 (2A).
+
+### Pendiente: el nodo del proyecto declara un solo contribuyente
+
+El registro `7pq3h` deriva del proyecto `3nruf`, y **ese proyecto tiene a Sánchez como
+único contribuyente**. Si el tribunal abre el proyecto en lugar del registro, ve a una
+sola persona.
+
+Conviene añadir a los otros tres también al proyecto, para que ambos nodos digan lo mismo:
+<https://osf.io/3nruf> → *Contributors* → *Add*. Se comprueba después con:
+
+```bash
+curl -s "https://api.osf.io/v2/nodes/3nruf/contributors/?embed=users" | grep -o '"full_name":"[^"]*"'
+```
+
+## Cómo se generaron los PDF, y cómo rehacerlos
+
+OSF no ofrece un botón de exportación a PDF, y `Ctrl+P` sobre la página produce una sola
+página truncada: el maquetado de la aplicación encierra el contenido en un contenedor de
+altura fija, de modo que la impresión solo captura lo visible.
+
+Los dos PDF de esta carpeta se generaron con Chrome en modo sin ventana, hablando con el
+navegador por el protocolo DevTools, liberando esas alturas antes de imprimir. Es el mismo
+motor de impresión que `Ctrl+P`, con el maquetado desbloqueado.
+
+Si hay que rehacerlos, basta con volver a abrir las dos direcciones y comprobar que el PDF
+resultante contiene, como el actual:
+
+| Comprobación | `osf_registration.pdf` |
+|---|---|
+| Páginas | 15 |
+| DOI `10.17605/OSF.IO/7PQ3H` | sí |
+| Sección *Date Registered* | sí |
+| Sección *Contributors* | sí |
+| Enlace al Internet Archive | sí |
+| Declaración de registro retrospectivo | sí, página 3 |
+
+Direcciones: <https://osf.io/7pq3h> y
+<https://archive.org/details/osf-registrations-7pq3h-v1>.
