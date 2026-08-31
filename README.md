@@ -87,16 +87,12 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 │   ├── Transcripciones/          Una por entrevista, con marca de tiempo
 │   ├── Guiones_Entrevista/       Version final aplicada, con historial de cambios
 │   ├── Cuestionario/
-│   │   ├── Instrumento/          Formulario aplicado
 │   │   ├── Respuestas/           Exportacion directa con marca temporal
 │   │   └── Fotos_Aplicacion/     Evidencia fotografica de la aplicacion
 │   ├── Fotos_Entorno/            Fotografias del sitio del cliente
 │   ├── Documentos_Organizacion/  Documentos originales de la organizacion
-│   ├── Notas_Campo/              Una por sesion de observacion
 │   ├── Codificacion_Tematica/    Tabla de codificacion con cobertura declarada
 │   └── Validacion/
-│       ├── Inspeccion/           Registro de inspeccion, defectos y re-inspeccion
-│       ├── Solicitudes_Cambio/   Solicitudes tramitadas y actas del comite
 │       └── Sesiones_Validacion/  Sesiones con partes interesadas: video mas acta
 │
 ├── 03_Modelado/                  Cada diagrama con su archivo fuente nativo
@@ -108,12 +104,11 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 │   ├── 06_Secuencia/             Uno por caso de uso obligatorio
 │   ├── 07_Actividad/             Uno por flujo principal
 │   ├── 08_Estados/               Uno por entidad con ciclo de vida no trivial
-│   ├── 09_DFD/                   Flujo de datos de nivel 0 y nivel 1
 │   ├── 10_Componentes/           Diagrama de componentes
 │   ├── 11_Despliegue/            Diagrama de despliegue
 │   └── 12_Prototipos_Interfaz/   Uno por pantalla obligatoria
 │
-├── 04_Trazabilidad/              Matriz, huerfanos, tablero, linea base, aporte
+├── 04_Trazabilidad/              Matriz, priorizacion MoSCoW/Kano y aporte individual
 ├── 05_MVP/
 │   ├── codigo_fuente/            Codigo organizado por modulos
 │   ├── despliegue/               Instrucciones reproducibles desde cero
@@ -121,6 +116,7 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 │
 ├── 06_Experimento/               Componente empirico
 │   ├── Makefile                  Pipeline completo con una sola orden
+│   ├── replicar.py               El mismo pipeline sin depender de make
 │   ├── protocolo/                Preguntas, hipotesis, variables y plan de analisis
 │   ├── registro_previo/          Comprobante OSF y bitacora de desviaciones
 │   ├── instrumentos/             Guiones, cuestionarios y rubricas en version final
@@ -143,6 +139,22 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 seccion 9, pero las secciones 5.10 y 5.11 exigen artefactos que necesitan alojamiento
 propio y que no encajan en las siete carpetas nombradas. Se anaden sin desplazar a
 ninguna de ellas.
+
+---
+
+### Elementos aun no depositados
+
+Se declaran aqui, y no en el arbol de arriba, para que **nada de lo que este repositorio
+nombra deje de existir**. Cada uno tiene su artefacto redactado o disenado fuera del
+repositorio, a la espera de la firma o del trabajo de campo que lo respalda.
+
+| Elemento | Estado |
+|---|---|
+| `02_Evidencias/Cuestionario/Instrumento/` | El formulario aplicado no se ha depositado. Las respuestas y las fotografias de aplicacion si constan |
+| `02_Evidencias/Notas_Campo/` | Seis notas redactadas para las seis jornadas de observacion, pendientes de revision y firma del observador |
+| `02_Evidencias/Validacion/Inspeccion/` | Registros de inspeccion, defectos y re-inspeccion redactados; la sesion formal esta pendiente de celebrarse |
+| `02_Evidencias/Validacion/Solicitudes_Cambio/` | Tres solicitudes y el acta del comite redactadas, pendientes de la sesion del comite |
+| `03_Modelado/09_DFD/` | Diagramas de nivel 0 y nivel 1 disenados con sus flujos, entidades, procesos y almacenes; pendientes de dibujo en la herramienta |
 
 ---
 
@@ -182,7 +194,8 @@ pdflatex  -interaction=nonstopmode ERS_SRS_2B_v2.0.tex
 
 - Python >= 3.11
 - `pandas`, `numpy`, `scipy`, `scikit-learn`, `matplotlib`, `statsmodels`
-- GNU Make y `sha256sum` (en Windows, disponibles con Git Bash)
+- `sha256sum` (en Windows, disponible con Git Bash)
+- GNU Make es **opcional**: `replicar.py` ejecuta el mismo pipeline sin el
 
 ```bash
 python -m venv .venv
@@ -192,7 +205,12 @@ pip install pandas numpy scipy scikit-learn matplotlib statsmodels
 
 ### Ejecucion completa
 
-Una sola orden, partiendo unicamente de los datos crudos:
+Una sola orden, partiendo unicamente de los datos crudos. Las dos rutas son
+equivalentes y producen las mismas salidas byte a byte:
+
+```bash
+python 06_Experimento/replicar.py
+```
 
 ```bash
 cd 06_Experimento && make all
@@ -217,6 +235,12 @@ sha256sum -c checksums.sha256
 ```
 
 Debe terminar sin un solo error sobre un clon limpio.
+
+Sin `sha256sum`, y anadiendo el sondeo de codec y duracion del material audiovisual:
+
+```bash
+python 06_Experimento/replicar.py --verificar
+```
 
 ---
 
