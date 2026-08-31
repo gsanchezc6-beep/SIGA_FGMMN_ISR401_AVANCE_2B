@@ -37,7 +37,7 @@ DIMENSIONES = [
     "Correccion_fuente(1-5)", "Consistencia_interna(1-5)",
 ]
 
-CLAVE_DEFAULT = os.path.join(os.path.dirname(__file__), "..", "datos_crudos", "CLAVE_RESPUESTAS_no_compartir_con_jueces.csv")
+CLAVE_DEFAULT = os.path.join(os.path.dirname(__file__), "..", "..", "06_Experimento", "clave_desciego_items.csv")
 CONSOLIDADO_NOMBRE = "puntuaciones_consolidadas.csv"
 
 
@@ -355,7 +355,7 @@ def main():
     ap.add_argument("--etapa", required=True, choices=["consolidar", "acuerdo", "supuestos", "hipotesis", "efectos"])
     ap.add_argument("--entrada", required=True)
     ap.add_argument("--salida", required=True)
-    ap.add_argument("--clave", default=CLAVE_DEFAULT, help="Ruta a CLAVE_RESPUESTAS_no_compartir_con_jueces.csv")
+    ap.add_argument("--clave", default=CLAVE_DEFAULT, help="Ruta a la tabla de desciego de items (06_Experimento/clave_desciego_items.csv)")
     ap.add_argument("--correccion", default="holm", choices=["holm", "ninguna"])
     ap.add_argument("--bootstrap", type=int, default=10000)
     ap.add_argument("--semilla", type=int, default=20260802)
