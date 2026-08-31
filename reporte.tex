@@ -367,13 +367,13 @@ salida y el script que la produce est\'a en
 
 \input{07_Datos/tablas/tabla_acuerdo}
 
-El $\kappa$ de Fleiss se sit\'ua entre 0,294 y 0,340 seg\'un la dimensi\'on. En la
+La Tabla~\ref{tab:acuerdo} recoge los coeficientes de acuerdo por dimensi\'on. El $\kappa$ de Fleiss se sit\'ua entre 0,294 y 0,340 seg\'un la dimensi\'on. En la
 escala de Landis y Koch~\cite{landis1977measurement} ese rango corresponde a acuerdo
 \textbf{justo}, el segundo de seis niveles. Los $\kappa$ de Cohen por pares son
 superiores, entre 0,294 y 0,654, lo que indica que la discrepancia no se concentra en un
 juez aislado sino que se reparte entre los tres.
 
-Se reporta como acuerdo justo, no como acuerdo bueno. La consecuencia sobre la
+La Figura~\ref{fig:acuerdo} muestra el reparto del acuerdo entre las cinco dimensiones. Se reporta como acuerdo justo, no como acuerdo bueno. La consecuencia sobre la
 interpretaci\'on se trata en la Secci\'on~\ref{sec:amenazas}.
 
 \begin{figure}[H]\centering
@@ -386,11 +386,11 @@ interpretaci\'on se trata en la Secci\'on~\ref{sec:amenazas}.
 
 \input{07_Datos/tablas/tabla_descriptivos}
 
-El conjunto generado por el modelo obtiene una media superior en \textbf{las cinco
+La Tabla~\ref{tab:descriptivos} re\'une medias y desviaciones por dimensi\'on y origen. El conjunto generado por el modelo obtiene una media superior en \textbf{las cinco
 dimensiones}. La diferencia oscila entre 0,20 y 0,25 puntos sobre la escala de 1 a 5.
 Las dos dimensiones con puntuaci\'on m\'as alta en ambos brazos son correcci\'on
 respecto de la fuente y consistencia interna; la m\'as baja en ambos es ausencia de
-ambig\"uedad.
+ambig\"uedad. La Figura~\ref{fig:distribucion} deja ver que las distribuciones de ambos brazos se solapan ampliamente en todas las dimensiones.
 
 \begin{figure}[H]\centering
   \includegraphics[width=.85\textwidth]{07_Datos/figuras/fig02_distribucion_por_dimension}
@@ -402,7 +402,7 @@ ambig\"uedad.
 
 \input{07_Datos/tablas/tabla_supuestos}
 
-Shapiro-Wilk no rechaza la normalidad en nueve de las diez combinaciones de dimensi\'on
+La Tabla~\ref{tab:supuestos} resume ambos contrastes. Shapiro-Wilk no rechaza la normalidad en nueve de las diez combinaciones de dimensi\'on
 y origen. La excepci\'on es correcci\'on respecto de la fuente en el conjunto del
 modelo, y por eso esa \'unica dimensi\'on se contrast\'o con Wilcoxon de rangos con
 signo y su tama\~no del efecto se expres\'o como $\delta$ de Cliff. Levene no rechaza la
@@ -415,7 +415,7 @@ protocolo, no tras observar los resultados.
 
 \input{07_Datos/tablas/tabla_hipotesis}
 
-Antes de corregir por comparaciones m\'ultiples, una dimensi\'on queda por debajo de
+La Tabla~\ref{tab:hipotesis} recoge el estad\'istico, el valor $p$ sin ajustar y el ajustado de cada dimensi\'on. Antes de corregir por comparaciones m\'ultiples, una dimensi\'on queda por debajo de
 $\alpha = 0{,}05$: consistencia interna, con $p = 0{,}0118$. Tras aplicar
 Holm-Bonferroni sobre las cinco comparaciones, ese valor asciende a $p = 0{,}059$ y
 \textbf{ninguna dimensi\'on alcanza significaci\'on}. La segunda m\'as pr\'oxima,
@@ -464,7 +464,7 @@ Secci\'on~\ref{sec:amenazas}.
 
 \input{07_Datos/tablas/tabla_power_calculation}
 
-Para detectar un efecto de tama\~no $d = 0{,}50$ con $\alpha = 0{,}05$ y potencia
+El c\'alculo completo est\'a en la Tabla~\ref{tab:power_calculation}. Para detectar un efecto de tama\~no $d = 0{,}50$ con $\alpha = 0{,}05$ y potencia
 $0{,}80$ se requieren 34 unidades de an\'alisis. El estudio dispone de tres. La potencia
 efectivamente alcanzada es del \textbf{8,4\,\%}.
 
@@ -821,12 +821,13 @@ Anexo~\ref{anx:ia}.
 \section{Instrumento de auditor\'ia de calidad}
 \label{anx:auditoria}
 
-Conteos base publicados antes de calcular cada m\'etrica, y resultado obtenido. El
+La Tabla~\ref{tab:metricas} recoge las seis m\'etricas con su resultado y su veredicto. Conteos base publicados antes de calcular cada m\'etrica, y resultado obtenido. El
 detalle con la aritm\'etica visible, el veredicto y la acci\'on de mejora de cada
 m\'etrica est\'a en \texttt{01\_ERS/Auditoria\_Calidad/}.
 
 \begin{table}[H]\centering\small
 \caption{M\'etricas de calidad de la especificaci\'on.}
+\label{tab:metricas}
 \begin{tabular}{lllc}
 \toprule
 \textbf{M\'etrica} & \textbf{Resultado} & \textbf{Referencia} & \textbf{Veredicto} \\
@@ -866,8 +867,11 @@ declaran como tales.
 \section{Retrospectiva del equipo}
 \label{anx:retrospectiva}
 
+La Tabla~\ref{tab:retrospectiva} recoge lo que funcion\'o, lo que no y lo que se har\'a distinto, con un responsable y una acci\'on por cada entrada.
+
 \begin{table}[H]\centering\small
 \caption{Retrospectiva por categor\'ia, con responsable y acci\'on.}
+\label{tab:retrospectiva}
 \begin{tabular}{p{2.4cm}p{6.6cm}p{2.6cm}p{2.6cm}}
 \toprule
 \textbf{Categor\'ia} & \textbf{Elemento} & \textbf{Responsable} & \textbf{Acci\'on} \\
@@ -906,10 +910,11 @@ correspondencia declarada en \texttt{07\_Datos/correspondencia\_salidas.csv}.
 \label{anx:correspondencia}
 
 Cada afirmaci\'on de la discusi\'on remite a un resultado concreto o a una referencia
-verificable.
+verificable, seg\'un el trazado de la Tabla~\ref{tab:correspondencia}.
 
 \begin{table}[H]\centering\small
 \caption{Trazado de las afirmaciones de la discusi\'on.}
+\label{tab:correspondencia}
 \begin{tabular}{p{7.6cm}p{6.6cm}}
 \toprule
 \textbf{Afirmaci\'on} & \textbf{Resultado o referencia que la sostiene} \\
