@@ -25,14 +25,31 @@ por el equipo y no lo tenga que descubrir el tribunal.
 
 | Fecha | Hecho | Constancia |
 |---|---|---|
-| 2026-08-17, 17:22 | El docente autoriza verbalmente, en el area de TICS y ante el curso reunido, cerrar el levantamiento en diez entrevistas validas | Acta de constancia con firmas de testigos, **pendiente de deposito** hasta recoger las firmas |
+| 2026-08-17, 17:22 | El docente autoriza verbalmente, en el area de TICS y ante el curso reunido, cerrar el levantamiento en diez entrevistas validas | `acta_constancia_N10.pdf`, **depositada**: firmada por los dos integrantes y por **cuatro testigos del equipo AOPSS**, ajenos a esta entrega |
 | 2026-08-29 | Se solicita al docente confirmacion escrita por mensajeria | Sin respuesta |
-| 2026-08-31 | Se reitera la solicitud por correo institucional | Correo institucional enviado. **Comprobante pendiente de deposito.** Sin respuesta a la fecha de este documento |
+| 2026-08-31, 13:50 | Se reitera la solicitud por correo institucional | `solicitud_confirmacion_N10.pdf`, **depositado**: captura del mensaje enviado desde la cuenta institucional. Sin respuesta a la fecha de este documento |
 
 El acta de constancia recoge la declaracion de los integrantes presentes y la firma de
 testigos de otros equipos, que escucharon la autorizacion y **no tienen interes en esta
 entrega**. Es el respaldo mas fuerte disponible, y sigue sin ser una autorizacion escrita del
 docente.
+
+**Estado a 2026-09-01.** El acta ya esta firmada y depositada. La suscriben los dos
+integrantes y **cuatro testigos del equipo AOPSS**, identificados por nombre completo y
+equipo. Sus numeros de cedula estan tapados en la copia publicada: firmaron como testigos
+de un hecho, no otorgaron consentimiento para el tratamiento de sus datos, y el numero de
+cedula no es necesario para que la constancia cumpla su funcion. El original sin tapar lo
+conserva el equipo y esta a disposicion del docente si lo requiere.
+
+**Una precision sobre una ruta.** El apartado 2 del acta remite al comprobante del correo
+como `08_Etica/solicitud_confirmacion_N10.pdf`. La carpeta de etica de este repositorio es
+`02_Evidencias/Etica/`, que es donde el archivo esta realmente depositado. La referencia
+interna del acta no se corrige porque el documento ya esta firmado; se deja constancia
+aqui de la ruta correcta.
+
+**Lo que esto no cambia.** El acta no es una autorizacion escrita del docente y no se
+presenta como tal: su propio apartado 5 lo dice. La reduccion de la muestra sigue siendo
+una desviacion declarada, no un minimo cumplido.
 
 ## 3. Motivos expresados en su momento
 
