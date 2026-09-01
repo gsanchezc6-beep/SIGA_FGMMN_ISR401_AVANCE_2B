@@ -3,21 +3,30 @@ message: "Si utiliza este trabajo, citelo de la siguiente manera."
 type: software
 
 title: "SIGA - Sistema Inteligente de Gestion de Aulas: especificacion de requisitos y paquete de replicacion"
-version: "2B-1.0.0"
-date-released: "2026-08-29"
+version: "2B-1.5.0"
+date-released: "2026-08-31"
 
 repository-code: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 url: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 
-doi: "10.17605/OSF.IO/7PQ3H"
+doi: "10.5281/zenodo.22137679"
 
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22137679"
+    description: "Deposito FAIR del paquete de replicacion en Zenodo, bajo licencia CC BY 4.0."
   - type: doi
     value: "10.17605/OSF.IO/7PQ3H"
     description: "Registro previo del protocolo del componente empirico en OSF."
   - type: url
     value: "https://osf.io/7pq3h"
     description: "Enlace directo al registro OSF."
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.22137679"
+    description: "Enlace directo al deposito de datos en Zenodo."
+  - type: swh
+    value: "swh:1:snp:861295fead33417e3efc2753fd4a34897014a891"
+    description: "Identificador persistente del codigo fuente archivado en Software Heritage."
 
 license:
   - Apache-2.0
@@ -58,17 +67,7 @@ authors:
     affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
   - family-names: "Munoz Quinonez"
     given-names: "Yeranick Esther"
-    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
-  - family-names: "Cedeno Avila"
-    given-names: "Winston Damian"
-    email: "wcedenoa2@uteq.edu.ec"
-    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
-  - family-names: "Mendoza Palma"
-    given-names: "Allan Jeremy"
-    email: "amendozap10@uteq.edu.ec"
-    affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
-  - family-names: "Gilces Carranza"
-    given-names: "Jose Ignacio"
+    email: "ymunozq@uteq.edu.ec"
     affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
 
 contact:
