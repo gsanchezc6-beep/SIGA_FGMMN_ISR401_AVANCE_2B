@@ -8,6 +8,101 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.6.0] - 2026-09-01
+
+Analisis de sensibilidad, despliegue en contenedor y cierre de la verificacion documental.
+
+### Anadido
+
+- `06_Experimento/scripts_analisis/analisis_por_item.py` - analisis de sensibilidad que toma
+  el requisito como unidad en lugar del juez. La potencia para un efecto mediano sube de
+  **0,084 a 0,417**, y los tamanos de efecto pasan a tener intervalos interpretables. Las dos
+  aproximaciones coinciden: ninguna dimension resulta significativa tras Holm-Bonferroni.
+- `06_Experimento/registro_previo/desviacion_analisis_por_item.md` - la desviacion declarada,
+  con lo que decia el plan preregistrado, que problema aparecio y que se hizo.
+- `07_Publicacion/verificacion_referencias.md` - registro de la verificacion de las 40
+  referencias: 35 con DOI que resuelve al trabajo citado y 5 sin DOI por no tener uno
+  asignado, cada una con su motivo.
+- `05_MVP/docker-compose.yml` - despliegue del prototipo con una sola orden.
+- `02_Evidencias/Fotos_Entorno/` - once fotografias nuevas (ENT-16 a ENT-26) con su
+  inventario, entre ellas la camara Dahua identificable y un aula vacia con las luminarias
+  encendidas a plena luz de dia.
+- `02_Evidencias/Codificacion_Tematica/` - la curva de saturacion y la tabla por entrevista,
+  que la guia situa en esta carpeta.
+- `08_Defensa/README.md` - declara que la defensa fue individual y que no existe grabacion.
+
+### Cambiado
+
+- Las diez transcripciones pasan de texto plano a **Markdown estructurado**, con la cabecera
+  como tabla y cada intervencion marcada. El contenido se conserva literal.
+- `protocolo.pdf`, `osf_registration.pdf` y `osf_deviations.pdf` se ven ya al nivel de
+  `06_Experimento/`, como fija el arbol de la seccion 9.1.
+- `08_Defensa/guion.md` y `guion_reparto_exposicion.md` - reescritos para defensa individual.
+- El manuscrito incorpora la subseccion del analisis de sensibilidad y pasa a 13 paginas.
+
+### Corregido
+
+- Cuatro referencias cruzadas del manuscrito apuntaban a etiquetas inexistentes
+  (`tab:desc` y `tab:power`) e imprimian interrogantes en el PDF.
+- La respuesta G2 del banco de preguntas afirmaba que el historial estaba concentrado en una
+  persona; el recuento real es 47 y 40.
+
+---
+
+## [2B-1.5.0] - 2026-09-01
+
+Cierre del deposito FAIR, incorporacion del manuscrito y reorganizacion del arbol segun
+la seccion 9.1 de la guia.
+
+### Anadido
+
+- `07_Publicacion/manuscrito_final.tex` y su PDF - manuscrito en plantilla Springer LNCS
+  (`llncs.cls`), 12 paginas, compilado sin errores y sin citas sin resolver.
+- `07_Publicacion/referencias.bib` - 40 entradas, 35 con DOI verificado uno a uno
+  resolviendo al trabajo citado. Las cinco restantes son una norma ISO, el SWEBOK, un
+  libro, una ley y un informe tecnico: ninguno tiene DOI asignado.
+- `07_Publicacion/analisis_revistas.md` - eleccion de REFSQ 2027, track Research, como
+  objetivo primario, coherente con la plantilla empleada.
+- `07_Publicacion/dataset_zenodo/` - paquete efectivamente depositado en Zenodo.
+- `06_Experimento/osf_deviations.pdf` - desviaciones declaradas respecto del protocolo.
+- `fair_assessment.pdf` - autoevaluacion FAIR con F-UJI: 21 de 26 indicadores, 80,8 %.
+- `04_Trazabilidad/composicion_equipo.md` - integrantes del equipo con el recuento por
+  autor del historial que lo respalda.
+- `08_Defensa/folleto_una_hoja.pdf` y `presentacion.pdf`.
+
+### Cambiado
+
+- **Reorganizacion del arbol.** `07_Datos/` se disuelve: los datos crudos, los procesados
+  y los scripts pasan a `06_Experimento/`, y las figuras y tablas a `07_Publicacion/`.
+  `09_Defensa/` pasa a `08_Defensa/`, `08_Etica/` a `02_Evidencias/Etica/` y
+  `02_Evidencias/Validacion/` a `02_Evidencias/Validacion_Walkthrough/`. Los traslados se
+  hicieron con `git mv`, de modo que el historial sigue a cada archivo.
+- `06_Experimento/replicar.py` y `Makefile` - rutas actualizadas. El pipeline se ejecuto
+  completo despues del traslado y regenera todas las tablas y figuras.
+- `CITATION.cff` - el DOI principal pasa a ser el del deposito de datos en Zenodo; se
+  anaden el registro OSF y el identificador de Software Heritage como identificadores
+  relacionados.
+- `README.md` - nueva seccion con los identificadores persistentes y la cita recomendada;
+  arbol actualizado.
+- Equipo declarado en la caratula del ERS, el README, el reporte, el manuscrito y
+  `CITATION.cff`: dos integrantes, que son los dos autores del historial.
+- `04_Trazabilidad/aporte_individual.csv` - regenerado desde `git log`: 87 filas, una por
+  commit, todas con identificador que resuelve.
+- `checksums.sha256` - regenerado sobre el arbol reorganizado: 290 entradas, comprobadas
+  sin error.
+
+### Corregido
+
+- El manuscrito ya no contiene marcadores de plantilla: se sustituyeron el correo de
+  contacto, el DOI de Zenodo y el identificador de Software Heritage por sus valores
+  reales.
+- `07_Publicacion/tablas/tabla_power_calculation.tex` - un caracter griego sin escapar
+  impedia la compilacion.
+- Se retiro `04_Trazabilidad/acreditacion_aporte.md`, que acreditaba a personas ajenas al
+  equipo actual.
+
+---
+
 ## [2B-1.4.0] - 2026-08-31
 
 Cierre de la trazabilidad y acreditacion del aporte individual.
