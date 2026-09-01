@@ -18,7 +18,7 @@ RF-16,Apagar automaticamente equipos de aulas desocupadas,CU-03;CU-13,Must,Rendi
 RF-17,Generar reportes estadisticos periodicos,CU-09,Should,Rendimiento,6,Necesario para autoridades pero posterior a la operacion basica
 RF-18,Exportar reportes en PDF y Excel,CU-10,Should,Rendimiento,5,Extiende RF-17; util para presentar resultados fuera del sistema
 RF-19,Gestionar acceso diferenciado por roles,CU-11,Must,Basico,9,Prerrequisito de seguridad; sin roles no se puede operar en produccion
-RF-20,Registrar el historial de ocupacion de aulas,CU-01;CU-08,Must,Rendimiento,6,Base para analitica de uso y para justificar reasignacion de espacios
+RF-20,Registrar el historial de ocupacion de aulas,CU-01;CU-08,Should,Rendimiento,6,Base para analitica de uso y para justificar reasignacion de espacios
 RF-21,Notificar equipos encendidos fuera de horario,CU-04;CU-13,Must,Rendimiento,7,Detecta el desperdicio energetico que motivo el proyecto
 RF-22,Monitorear la conectividad de la red IoT,CU-12,Must,Basico,8,Sin conectividad verificable ningun dato del sistema es confiable
 RF-23,Registrar bitacora de acciones de usuario,CU-14,Must,Basico,7,Trazabilidad y auditoria; exigido para operacion institucional
