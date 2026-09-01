@@ -33,8 +33,8 @@ validez de constructo en el reporte.
 | `README.md` | Claude (Anthropic) | Redaccion a partir de datos que el equipo proporciono: integrantes, roles, dependencias y secuencia de compilacion | Cada ruta citada se comprobo contra el arbol real; la secuencia de compilacion se ejecuto sobre un clon limpio |
 | `CHANGELOG.md`, `CITATION.cff`, `LICENSE` | Claude (Anthropic) | Redaccion de los archivos raiz obligatorios | El equipo verifico que ningun campo quedara escrito como pendiente y que los alcances de licencia correspondan a las rutas reales |
 | `04_Trazabilidad/aporte_individual.csv` | Claude (Anthropic) | Extraccion de los identificadores de commit desde el historial de Git de ambos repositorios | Cada identificador se resolvio con `git show` contra el repositorio que la fila declara |
-| `07_Datos/diccionario_datos.csv` | Claude (Anthropic) | Redaccion de las definiciones a partir de las cabeceras reales de cada archivo de datos | El equipo contrasto cada fila con la cabecera del archivo que describe |
-| `07_Datos/correspondencia_salidas.csv` | Claude (Anthropic) | Emparejamiento de cada salida con el script que la produce, leido del Makefile | Se ejecuto `make all` y se comprobo que cada salida listada aparece regenerada |
+| `07_Publicacion/dataset_zenodo/diccionario_datos.csv` | Claude (Anthropic) | Redaccion de las definiciones a partir de las cabeceras reales de cada archivo de datos | El equipo contrasto cada fila con la cabecera del archivo que describe |
+| `07_Publicacion/dataset_zenodo/correspondencia_salidas.csv` | Claude (Anthropic) | Emparejamiento de cada salida con el script que la produce, leido del Makefile | Se ejecuto `make all` y se comprobo que cada salida listada aparece regenerada |
 | Auditoria del repositorio contra la rubrica | Claude (Anthropic) | Contraste sistematico del arbol y del historial contra los criterios de piso y las evidencias exigibles | El equipo verifico a mano cada hallazgo antes de actuar sobre el: conteos de archivos, ausencia de etiquetas y presencia de marcadores de plantilla |
 
 ---
@@ -49,7 +49,7 @@ tribunal por cualquiera de sus integrantes.
 Ninguna cifra, tabla, figura, resultado estadistico ni referencia bibliografica de este
 trabajo procede de un modelo de lenguaje. Las cifras se generan por script desde los
 datos crudos, con la correspondencia declarada en
-[`07_Datos/correspondencia_salidas.csv`](../07_Datos/correspondencia_salidas.csv). Las
+[`07_Publicacion/dataset_zenodo/correspondencia_salidas.csv`](../07_Publicacion/dataset_zenodo/correspondencia_salidas.csv). Las
 referencias de `referencias.bib` se verificaron individualmente y cada identificador
 digital se resolvio antes de citarlo.
 

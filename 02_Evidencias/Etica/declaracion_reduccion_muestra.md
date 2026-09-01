@@ -57,7 +57,7 @@ el que efectivamente se aplico, sin reconstruirlo a posteriori.
 | Metodo de seleccion | Muestreo por conveniencia con cuotas por perfil, condicionado por la accesibilidad del personal en jornada laboral |
 | Tamano alcanzado | 10 entrevistas validas sobre 11 realizadas; EV-15 excluida integramente por retiro del consentimiento |
 | Complemento cuantitativo | Cuestionario aplicado con **n = 60** respuestas, que cubre el perfil dominante con el minimo que la guia exige para ese instrumento |
-| Saturacion | Declarada y medida sobre las transcripciones disponibles; la curva figura en `07_Datos/figuras/curva_saturacion.png`, generada por `07_Datos/scripts/curva_saturacion.py` |
+| Saturacion | Declarada y medida sobre las transcripciones disponibles; la curva figura en `07_Publicacion/figuras/curva_saturacion.png`, generada por `06_Experimento/scripts_analisis/curva_saturacion.py` |
 
 **Sesgo reconocido.** El muestreo por conveniencia sobrerrepresenta a quien estaba disponible
 en jornada laboral y en el edificio de la facultad. Los perfiles de coordinacion y de

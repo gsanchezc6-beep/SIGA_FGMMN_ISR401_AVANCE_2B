@@ -102,4 +102,4 @@ material publicado, incluidos los nombres de archivo y esta ficha, de modo que n
 los dos constituye un dato identificable.
 
 El procedimiento completo de disociacion esta en
-[`../../07_Datos/anonimizacion.md`](../../07_Datos/anonimizacion.md).
+[`../../07_Publicacion/dataset_zenodo/anonimizacion.md`](../../07_Publicacion/dataset_zenodo/anonimizacion.md).
