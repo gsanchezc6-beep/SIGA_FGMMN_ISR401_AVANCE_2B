@@ -71,25 +71,31 @@ el mismo equipo.
 
 | Par analizado | Naturaleza | Resultado |
 |---|---|---|
-| RF-13 y RF-16 | Ambos apagan equipos de un aula desocupada fuera de horario, ambos con umbral ≤ 2 minutos | **Conflicto: solapamiento funcional** |
+| RF-13 y RF-16 | Ambos apagan equipos de un aula desocupada fuera de horario, ambos con umbral ≤ 2 minutos | **Conflicto en la medicion inicial. Resuelto el 2026-08-30** |
 | RF-03 con RF-13 y RF-16 | La deteccion de ocupacion (≤ 15 s) alimenta a los dos apagados (≤ 2 min) | Consistente: el presupuesto de tiempo encaja |
 | RF-08 y RNF-01 | Alerta de anomalia ≤ 1 min frente a entrega de alertas ≤ 60 s | Consistente: es el mismo valor |
 | RF-08 y RF-11 | Alerta general ≤ 1 min frente a notificacion critica ≤ 30 s | Consistente: la critica es mas estricta, como corresponde |
 | RF-21 y RF-16 | Notificar equipo encendido fuera de horario (≤ 60 s) frente a apagarlo (≤ 2 min) | Consistente: avisa antes de actuar |
 | RF-24 y RF-25 con RF-23 | Exportacion y rectificacion de datos personales, ambas con registro en bitacora | Consistente |
 
-**Aritmetica.** 1 − (1 / 300) = **0,9967**
+**Aritmetica de la medicion inicial.** 1 − (1 / 300) = **0,9967**, con un conflicto abierto.
 
-| Metrica | Resultado | Referencia | Veredicto |
-|---|---|---|---|
-| Indice de consistencia | **0,9967** | ≥ 0,98 | Cumple |
-| Conflictos abiertos | **1** | 0 | **No cumple** |
+**Correccion aplicada y nueva medicion.** El solapamiento se resolvio delimitando los dos
+requisitos por causa —RF-13 por consumo sostenido sin actividad, RF-16 por fin de la ultima
+franja asignada— con regla de precedencia a favor de RF-16 cuando ambas condiciones
+concurran. Se tramito como **SC-01** y se aplico en el commit `6603e61`.
 
-**Accion de mejora.** Resolver el solapamiento entre **RF-13** y **RF-16**. Las dos
-opciones son fusionarlos en un unico requisito con dos flujos, o delimitarlos de forma
-explicita: RF-13 como apagado por regla de eficiencia energetica y RF-16 como apagado por
-fin de horario academico. La decision se tramita como solicitud de cambio y se vuelve a
-medir esta metrica despues.
+Se resolvio ademas una segunda incoherencia que no era un conflicto entre requisitos sino
+entre fuentes: RF-20, RF-24 y RF-25 declaraban una prioridad MoSCoW en la ficha del ERS y
+otra distinta en la tabla de priorizacion. Se tramito como **SC-04** y hoy las 25 fichas
+coinciden con la tabla.
+
+**Aritmetica tras la correccion.** 1 − (0 / 300) = **1,0000**
+
+| Metrica | Antes (29/08) | Despues (31/08) | Referencia | Veredicto |
+|---|---|---|---|---|
+| Indice de consistencia | 0,9967 | **1,0000** | ≥ 0,98 | **Cumple** |
+| Conflictos abiertos | 1 | **0** | 0 | **Cumple** |
 
 ---
 
@@ -211,6 +217,48 @@ requisitos de los que depende y a los que alimenta, y despues volver a medir. Pa
 de 3,0 conviene ademas desacoplar RF-23 introduciendo un evento de bitacora generico, de
 modo que anadir una accion registrable no obligue a tocar el requisito de bitacora.
 
+### 6.3 Medicion despues de declarar las dependencias
+
+Las 25 fichas declaran ya de que requisitos dependen y a cuales alimentan. El grafo se
+escribio en un solo sentido y el inverso se derivo, de modo que **ninguna dependencia puede
+figurar en una ficha y faltar en la otra**. RF-19 no aparece como flujo de datos: condiciona
+el acceso a toda operacion y esa relacion ya consta en la precondicion de cada ficha;
+contarla dos veces inflaria la metrica sin describir nada nuevo.
+
+El grafo resultante tiene **50 dependencias declaradas** entre 25 requisitos, y su simetria se comprueba de forma automatica.
+
+| Requisito de la muestra | Afectados antes | Afectados ahora |
+|---|---|---|
+| RF-03 Deteccion de ocupacion | 4 | 6 |
+| RF-07 Panel centralizado | 6 | 8 |
+| RF-08 Alertas por anomalia | 4 | 5 |
+| RF-12 Solicitudes de mantenimiento | 4 | 7 |
+| RF-23 Bitacora de acciones | 7 | 10 |
+
+| Medicion | Valor | Referencia | Veredicto |
+|---|---|---|---|
+| Sobre la misma muestra de cinco | **7,20** | ≤ 3,0 | **No cumple** |
+| Sobre las 25 fichas | **4,00** | ≤ 3,0 | **No cumple** |
+| Automatica sobre el atributo *Entradas / Salidas* | **4,00** | — | Coincide con la manual |
+
+**La metrica empeora, y esa es la lectura correcta.** El valor automatico y el manual ya
+coinciden, que era el objetivo de la accion: el documento dejo de aparentar un acoplamiento
+que no tenia. Lo que antes daba 0,08 frente a 5,00 —la distancia entre lo declarado y lo
+real— hoy es un unico numero comprobable.
+
+Se publican **las dos mediciones** porque la muestra de la version 1.0 no era representativa:
+se eligieron los cinco requisitos mas acoplados, que es el peor caso. Medir sobre las 25
+fichas es una poblacion completa y no una seleccion, y por eso es la cifra que se propone
+como oficial. Aun asi, **4,00 no cumple**.
+
+**Por que no se fuerza el numero.** Bajar de 3,0 exige desacoplar de verdad, no declarar
+menos: un evento de bitacora generico que libere a RF-23 de nombrar nueve requisitos, y una
+vista de estado consolidado del aula que libere a RF-07 de nombrar ocho. Ambas medidas
+llevarian la metrica a **2,80**, y ambas son cambios de diseno de la especificacion, no
+correcciones de redaccion. Se tramitan como solicitud de cambio y no se improvisan al
+cierre de la entrega. Los dos nodos que concentran el problema siguen siendo **RF-23** y
+**RF-07**, por la misma razon que en la medicion inicial: son puntos de convergencia.
+
 ---
 
 ## 7. Correccion
@@ -241,24 +289,32 @@ inspeccion.
 
 ## 8. Resumen
 
-| Metrica | Resultado | Referencia | Veredicto |
-|---|---|---|---|
-| Completitud | 96,0 % · 100 % · 100 % | ≥ 95 % y 100 % | **Cumple** |
-| Consistencia | 0,9967 con 1 conflicto abierto | ≥ 0,98 y cero conflictos | **Parcial** |
-| Verificabilidad | 96,0 % | ≥ 90 % | **Cumple** |
-| Trazabilidad | 92,0 % y 48,0 % | 100 % y ≥ 90 % | **No cumple** |
-| Modificabilidad | 5,00 | ≤ 3,0 | **No cumple** |
-| Correccion | no medible | ≤ 0,05 | **Pendiente** |
+| Metrica | Antes (v1.0, 29/08) | Despues (v2.0, 31/08) | Referencia | Veredicto |
+|---|---|---|---|---|
+| Completitud | 96,0 % · 100 % · 100 % | **100 % · 100 % · 100 %** | ≥ 95 % y 100 % | **Cumple** |
+| Consistencia | 0,9967 con 1 conflicto | **1,0000 con 0 conflictos** | ≥ 0,98 y cero conflictos | **Cumple** |
+| Verificabilidad | 96,0 % | **100 %** | ≥ 90 % | **Cumple** |
+| Trazabilidad | 92,0 % y 48,0 % | 92,0 % y **92,0 %** | 100 % y ≥ 90 % | **No cumple** |
+| Modificabilidad | 5,00 declarado como 0,08 | **4,00**, declarada y comprobable | ≤ 3,0 | **No cumple** |
+| Correccion | no medible | pendiente de REINS-01 | ≤ 0,05 | **Pendiente** |
 
-Dos metricas cumplen, una cumple a medias, dos no cumplen y una no se puede medir hasta
-que exista la inspeccion.
+**Tres metricas pasan a cumplir**: consistencia cierra su unico conflicto, completitud sube
+al 100 % al descartarse el falso positivo de RF-01, y verificabilidad al reescribirse el
+criterio de RF-14.
+
+**Dos siguen sin cumplir, y ninguna de las dos se maquilla.** Trazabilidad se queda en el
+92 % de la submetrica de fuente porque dos requisitos —RF-24 y RF-25— derivan del analisis
+normativo y no de evidencia de campo; inventarles una fuente seria peor que declararlo.
+Modificabilidad queda en 4,00 medida sobre la poblacion completa, y la explicacion
+es que el acoplamiento dejo de estar oculto: hoy el valor automatico y el manual coinciden.
+
+**Una queda pendiente** hasta que se celebre la re-inspeccion REINS-01.
 
 La guia exige que **toda metrica por debajo de su valor de referencia se corrija en el
 documento y se vuelva a medir**, y que el reporte muestre el par de valores antes y
-despues. Esta version 1.0 es la medicion **antes**. La version 2.0 de este documento
-registrara la medicion **despues** de aplicar las acciones de mejora, y el reporte
-publicara ambas columnas.
+despues. La tabla de arriba publica ese par para las seis metricas.
 
 | Version | Fecha | Contenido |
 |---|---|---|
 | 1.0 | 2026-08-29 | Medicion inicial sobre el ERS/SRS v2.0, antes de correcciones |
+| 2.0 | 2026-08-31 | Medicion posterior a las correcciones y a las decisiones de CCB-01. Recalculadas consistencia y modificabilidad; el resumen publica el par antes/despues |
