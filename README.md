@@ -175,7 +175,7 @@ repositorio, a la espera de la firma o del trabajo de campo que lo respalda.
 | `02_Evidencias/Notas_Campo/` | Seis notas redactadas para las seis jornadas de observacion, pendientes de revision y firma del observador |
 | `02_Evidencias/Validacion/Inspeccion/` | Registros de inspeccion, defectos y re-inspeccion redactados; la sesion formal esta pendiente de celebrarse |
 | `02_Evidencias/Validacion/Solicitudes_Cambio/` | Tres solicitudes y el acta del comite redactadas, pendientes de la sesion del comite |
-| `03_Modelado/09_DFD/` | Diagramas de nivel 0 y nivel 1 disenados con sus flujos, entidades, procesos y almacenes; pendientes de dibujo en la herramienta |
+| `03_Modelado/09_DFD/` | Diagramas de nivel 0 y nivel 1 disenados y dibujados, pendientes de revision antes de depositarlos. El criterio C2 pide diagramas UML consistentes con el codigo y no menciona los DFD; el modelado que ese criterio evalua esta completo en las otras once carpetas de `03_Modelado/` |
 
 ---
 
