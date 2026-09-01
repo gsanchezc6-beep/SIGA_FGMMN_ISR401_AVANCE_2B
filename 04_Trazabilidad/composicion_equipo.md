@@ -17,12 +17,17 @@ esta declaracion.** El recuento por autor sobre la rama por defecto da:
 
 | Autor del historial | Commits | Correo de la firma |
 |---|---|---|
-| Gary Alberto Sanchez Cornejo | 47 | gsanchezc6@uteq.edu.ec |
-| Yeranick Esther Munoz Quinonez | 40 | ymunozq@uteq.edu.ec |
+| Gary Alberto Sanchez Cornejo | 53 | gsanchezc6@uteq.edu.ec |
+| Yeranick Esther Munoz Quinonez | 47 | ymunozq@uteq.edu.ec |
 
 No hay ningun otro autor en el historial, y los dos correos son institucionales. El detalle
 commit por commit esta en `aporte_individual.csv`, con una fila por confirmacion y su
 identificador, comprobado uno a uno contra el repositorio.
+
+**Una precision sobre el recuento.** Una declaracion de aporte no puede incluir el commit
+que la deposita: el identificador todavia no existe cuando se escribe el archivo. Por eso el
+recuento corresponde al historial hasta el commit inmediatamente anterior a este, y la
+diferencia es siempre de una sola confirmacion.
 
 ## 2. Coherencia con el registro previo
 
