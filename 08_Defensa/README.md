@@ -20,12 +20,30 @@ el tribunal. Ambos integrantes del equipo la rindieron.
 | `guion_reparto_exposicion.md` | Distribucion de los 25 minutos dentro de la exposicion |
 | `banco_preguntas.md` | Preguntas previsibles del tribunal, cada una con el artefacto que respalda la respuesta |
 | `folleto_una_hoja.pdf` | Folleto de una hoja con el resumen estructurado y los resultados principales |
+| `2026-09-01_Exposicion_Grabada.mp4` | Exposicion del proyecto grabada por los dos integrantes el 2026-09-01 |
 
-## Lo que no contiene, y por que
+## Sobre el video que si esta, y sobre el que no
 
-**No hay grabacion en video de la defensa.** La seccion 8.3 de la guia enumera el video de la
-defensa entre los materiales que se depositan. **La defensa no se grabo**, de modo que el
-archivo no existe y no se declara.
+**El archivo depositado no es la grabacion de la defensa.** Conviene que quede dicho antes de
+que alguien lo abra y saque su propia conclusion.
 
-Se hace constar aqui de forma expresa en lugar de dejar el hueco sin explicacion: una
-carpeta que declara un archivo inexistente es peor que una carpeta que declara su ausencia.
+**La defensa se rindio de forma individual**: cada integrante expuso el proyecto completo por
+separado, y **esa sesion no se grabo**. La seccion 8.3 de la guia enumera el video de la
+defensa entre los materiales que se depositan, y ese archivo no existe. Se declara su
+ausencia en lugar de dejar el hueco sin explicacion.
+
+Lo que si consta es `2026-09-01_Exposicion_Grabada.mp4`: una **exposicion del proyecto
+grabada por los dos integrantes** el 2026-09-01, posterior a la defensa y hecha porque el
+entregable pide un video y el video es uno solo. No sustituye a la defensa ni la documenta.
+
+| | |
+|---|---|
+| Duracion | 8 min 50 s (530,2 s) |
+| Formato | MP4 H.264, 1280 x 720, 30 fps, audio AAC a 128 kbps |
+| Origen | Grabacion a 1920 x 1080 y 120 fps, recodificada al estandar del repositorio sin recortar |
+
+**Una limitacion que se declara.** La seccion 8.1 de la guia describe una exposicion de 25
+minutos repartida en siete bloques, y esta grabacion dura menos de nueve. Cubre los siete
+bloques, pero con una profundidad menor que la que esos 25 minutos permitirian. El guion
+completo con los tiempos por bloque consta en `guion.md`, y la estructura de la presentacion
+en `presentacion.pdf`.
