@@ -37,7 +37,7 @@ Estatuto de la UTEQ, codigo de etica, reglamento de vinculacion y horario academ
 
 **B1. ¿Cuantos requisitos hay y como se garantiza que estan completos?**
 25 funcionales con ocho atributos y 16 no funcionales cuantificados sobre ISO/IEC
-25010:2023. Completitud medida: 96 %.
+25010:2023. Completitud medida: **100 %**, 25 de 25. Antes de la auditoria era 96 %; el requisito que faltaba se corrigio y la metrica esta recalculada.
 → `01_ERS/ERS_SRS_2B_v2.0.pdf`; `01_ERS/Auditoria_Calidad/auditoria_calidad_especificacion.md`
 
 **B2. Deme un requisito no funcional y su forma de comprobarlo.**
@@ -77,9 +77,16 @@ implementan los componentes SensorIoT y LecturaSensor.
 → `04_Trazabilidad/matriz_trazabilidad.csv`, fila 1
 
 **C3. ¿Su matriz esta completa?**
-No. 66 filas sobre el minimo de 40, pero solo 12 de 25 requisitos tienen la cadena adelante
-completa, y faltan cuatro columnas que la guia exige: clase, proceso, caso de prueba y
-estado de la traza. Esta medido y tiene accion.
+Completa en filas, no en cadenas, y conviene decirlo en ese orden. Son **66 filas** sobre
+las **60** que pide el criterio, con **cero celdas vacias** y las cuatro columnas que
+faltaban -clase, proceso, caso de prueba y estado de la traza- ya anadidas: la matriz paso
+de 13 a 18 columnas. El **92 %** de los requisitos, 23 de 25, tiene la cadena hacia
+adelante completa; antes era 12 de 25.
+
+Ahora la parte incomoda, por si la preguntan: de las 66 filas, **28 cierran la cadena
+entera**. Las otras 38 no se esconden, se clasifican: quince huerfanas -el requisito nace
+de la ley, no de una entrevista-, doce parciales y once restricciones de diseno, que se
+verifican por revision y no por caso de prueba. Cada una con su causa y su accion.
 → auditoria de calidad, seccion 5
 
 **C4. ¿Que pasa si cambia un requisito?**
@@ -119,8 +126,12 @@ fija. Los intervalos son muy anchos y cruzan el cero, que es lo esperable con es
 
 **D6. ¿Por que la muestra es tan pequena?**
 El calculo de potencia lo cuantifica: para detectar d = 0,50 con alfa 0,05 y potencia 0,80
-harian falta 34 unidades y hay 3. La potencia alcanzada es del **8,4 %**. Se declara como
-limitacion central, no se disimula.
+harian falta 34 unidades y hay 3. La potencia alcanzada es del **8,4 %** con el juez como
+unidad de analisis. El analisis de sensibilidad por item, declarado como exploratorio y
+posterior al registro, la sube a **41,7 %** con 25 y 26 observaciones. **Las dos
+aproximaciones coinciden en el resultado**: ninguna dimension es significativa tras Holm.
+Y 41,7 % sigue por debajo del 80 % convencional. Se declara como limitacion central, no se
+disimula.
 → `06_Experimento/resultados/power_calculation.csv`
 
 **D7. ¿Alcanzaron saturacion tematica?**
