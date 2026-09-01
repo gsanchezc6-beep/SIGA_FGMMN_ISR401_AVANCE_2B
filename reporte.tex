@@ -653,8 +653,13 @@ una correcci\'on de redacci\'on.
 
 \subsection{Trazabilidad extremo a extremo}
 
-La matriz de trazabilidad contiene \textbf{66 filas}, por encima del m\'inimo
-exigido de 40. Cada fila enlaza la evidencia de campo de la que procede el requisito
+La matriz de trazabilidad contiene \textbf{66 filas}, por encima de las
+\textbf{60} que exige el criterio, y sin una sola celda vac\'ia. De ellas,
+\textbf{28 cierran la cadena de extremo a extremo}; las 38 restantes se declaran una
+a una con su causa en \texttt{04\_Trazabilidad/huerfanos\_y\_cadenas\_rotas.md}:
+quince son hu\'erfanas porque el requisito nace de an\'alisis normativo y no de campo,
+doce est\'an parciales a falta de un eslab\'on hacia adelante, y once son restricciones
+de dise\~no, que no se verifican por caso de prueba sino por revisi\'on. Cada fila enlaza la evidencia de campo de la que procede el requisito
 con el requisito mismo, los casos de uso que lo realizan, la historia de usuario
 asociada, su criterio de aceptaci\'on, el componente de dise\~no que lo implementa y
 el prototipo de interfaz que lo soporta.
