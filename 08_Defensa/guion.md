@@ -1,36 +1,32 @@
 # Guion de la defensa oral — Proyecto SIGA
-Equipo FGMMN · Entrega 4 (2B) · 25 min presentación + 10 min preguntas
 
-> Cronómetro visible en las diapositivas durante toda la presentación. Excederse en
-> más de 2 minutos penaliza C11 a la mitad. Cada integrante que habla al menos 4 minutos
-> (criterio C12).
->
-> **Gilces Carranza, José no participa en el reparto de tiempos.** No ha aportado al
-> proyecto (0 commits en el historial verificable) y la defensa evalúa capacidad
-> individual: no tiene sentido asignarle exposición sobre trabajo que no hizo. Si asiste,
-> el gatekeeper **G7** ya cubre el caso — su ausencia o su silencio ante el tribunal fija
-> su nota individual en máximo 4,00/10, sin afectar la nota de los demás integrantes
-> (la defensa es individual). Los 25 minutos se reparten entre los 4 integrantes activos.
+**Sistema Inteligente de Gestion de Aulas · Equipo FGMMN**
+Universidad Tecnica Estatal de Quevedo · ISR-401 Ingenieria de Requerimientos · Entrega Final (2B)
 
-| # | Bloque | Minutos | Acumulado | Responsable sugerido |
-|---|---|---:|---:|---|
-| 1 | Problema y contribuciones | 3 | 0:00–3:00 | Sánchez Cornejo, Gary (Analista líder) |
-| 2 | El sistema y sus stakeholders | 3 | 3:00–6:00 | Mendoza Palma, Allan (construyó el diagrama de contexto y el modelo i*) |
-| 3 | Metodología del componente empírico | 4 | 6:00–10:00 | Sánchez Cornejo, Gary (ejecutó el pipeline estadístico) |
-| 4 | Resultados, con tablas y figuras del manuscrito | 6 | 10:00–16:00 | Sánchez Cornejo, Gary (4 min) + Cedeño Ávila, Winston (2 min: cobertura de RF *Must* en el MVP, como puente hacia la demo) |
-| 5 | Discusión y amenazas a la validez | 4 | 16:00–20:00 | Sánchez Cornejo, Gary (3 min) + Mendoza Palma, Allan (1 min: amenaza externa — un solo dominio institucional) |
-| 6 | Conclusiones y trabajo futuro | 3 | 20:00–23:00 | Muñoz Quiñónez, Yeranick (Documentación) |
-| 7 | Demostración corta del prototipo | 2 | 23:00–25:00 | Cedeño Ávila, Winston (MVP) |
+---
 
-Con este reparto: Sánchez 11 min, Mendoza 4 min, Muñoz 3 min, Cedeño 4 min. **Muñoz
-queda con 3 min, por debajo del mínimo de 4** — ampliar su bloque 6 con un minuto de
-las conclusiones (p. ej. detallar el trabajo futuro de recodificación temática, que es
-parte de su rol de gestión de evidencias) antes del simulacro. Sánchez concentra la
-mayor carga porque es quien ejecutó el componente empírico y es el único que puede
-defenderlo con solvencia ante preguntas del tribunal; repartir ese contenido a alguien
-que no lo trabajó arriesga un silencio individual peor (mismo problema que se está
-corrigiendo con Gilces). Ajustar y medir con cronómetro real en el simulacro de la
-semana 16 — los tiempos de esta tabla son un punto de partida, no el reparto final.
+## Modalidad: defensa individual
+
+**La defensa es individual.** Cada integrante expone el proyecto completo por separado ante
+el tribunal, y responde por la totalidad del trabajo: la especificacion, el diseno del
+estudio empirico, los resultados y sus amenazas a la validez.
+
+El equipo lo integran dos personas, y **ambas rindieron su defensa**:
+
+| Integrante | Rol en el proyecto |
+|---|---|
+| Sanchez Cornejo, Gary Alberto | Analista lider; especificacion, componente empirico e integracion |
+| Munoz Quinonez, Yeranick Esther | Documentacion, trazabilidad, auditoria de calidad y gestion de evidencias |
+
+Por ser individual, **no hay reparto de tiempos entre personas**. La estructura de bloques
+que sigue describe como se organiza la exposicion de cada integrante dentro de los 25
+minutos, seguidos de 10 minutos de preguntas.
+
+**Lo que el tribunal evalua en esta modalidad** no es que cada quien defienda su parte, sino
+lo contrario: que cada integrante sostenga el proyecto entero, incluidas las decisiones que
+no tomo. Quien preparo la trazabilidad tiene que poder explicar por que la prueba de
+hipotesis es apareada, y quien corrio el analisis tiene que poder explicar como se cierra
+una cadena de trazabilidad rota.
 
 ---
 
@@ -130,29 +126,23 @@ semana 16 — los tiempos de esta tabla son un punto de partida, no el reparto f
 
 ## Preguntas del tribunal (10 min) — preparación sugerida
 
-Cada integrante debe poder responder, sin ayuda de las diapositivas, sobre:
+Al ser individual, **cada integrante responde por el proyecto entero**. No hay temas
+asignados por persona. Los cinco que el tribunal suele tocar, y que conviene poder responder
+sin mirar las diapositivas, son:
 
-- **Sánchez (líder):** por qué se eligió REFSQ Posters & Tools en vez del journal
-  Requirements Engineering; cómo se gestionó el registro OSF y sus desviaciones.
-- **Mendoza (modelado):** consistencia entre los diagramas UML y el código real del
-  MVP; por qué el modelo i* se hizo así.
-- **Cedeño (MVP):** por qué el MVP cubre el porcentaje de RF Must que cubre y no más;
-  arquitectura del stack (Node.js + Express + Socket.io + SQLite).
-- **Muñoz (documentación/evidencias):** cómo se aplicó el modelo de zonas [P]/[R];
-  por qué se excluyó la entrevista EV-15 y qué se hizo con esa evidencia.
-- **Sánchez (además de lo anterior):** cómo se construyó la matriz de trazabilidad de
-  66 filas; por qué el panel de 3 jueces resulta en 8,4% de potencia y qué significa
-  eso en términos simples. Se agrega aquí porque Gilces, a quien correspondía
-  originalmente este tema por rol declarado, no aportó al trabajo real.
+- **Por que REFSQ y no el journal.** La plantilla del manuscrito es Springer LNCS, que es la
+  de REFSQ; el envio no exige cargo por procesamiento y el calendario cabe en el semestre.
+- **El registro previo y sus desviaciones.** Que se preregistro, cuando, y por que las diez
+  desviaciones se declaran en lugar de disimularse.
+- **La potencia del estudio.** Por que un panel de tres jueces da una potencia de 0,084, que
+  significa eso, y por que se reporta en lugar de omitirlo.
+- **La matriz de trazabilidad.** Como se cierra una cadena rota y por que las 66 filas no
+  tienen ninguna celda vacia.
+- **El cierre en diez entrevistas.** Que se declara, que respaldo hay, y cual es el efecto
+  reconocido sobre la validez externa.
 
-> **Advertencia de la guía.** La defensa se puede reprobar si el tribunal detecta que
-> algún integrante no puede explicar decisiones básicas del proyecto, o si aparecen en
-> las diapositivas resultados que no están en el manuscrito ni en los scripts de
-> análisis (fabricación de evidencia, gatekeeper G4). Todo número que se proyecte debe
-> poder señalarse en una tabla o figura ya generada por `make all`.
->
-> **Sobre Gilces Carranza, José:** si asiste a la defensa, el tribunal puede dirigirle
-> preguntas igual que a cualquier otro integrante registrado. No se le preparó
-> contenido porque no participó en el trabajo real; su desempeño ante esa situación es
-> su responsabilidad individual (gatekeeper G7), no un riesgo para la nota del resto
-> del equipo.
+> **Advertencia de la guia.** La defensa se puede reprobar si el tribunal detecta que un
+> integrante no puede explicar decisiones basicas del proyecto, o si aparecen en las
+> diapositivas resultados que no estan en el manuscrito ni en los scripts de analisis, lo
+> que activa el gatekeeper G4. **Todo numero que se proyecte tiene que poder senalarse en una
+> tabla o figura ya generada por el pipeline.**

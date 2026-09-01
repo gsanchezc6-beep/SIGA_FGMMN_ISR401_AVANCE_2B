@@ -126,13 +126,13 @@ limitacion central, no se disimula.
 **D7. ¿Alcanzaron saturacion tematica?**
 No. La ultima entrevista todavia aporta cuatro codigos nuevos sobre 36 acumulados. La curva
 no tiene inflexion y se declara asi.
-→ `07_Datos/tablas/saturacion_por_entrevista.csv`, `07_Datos/figuras/curva_saturacion.png`
+→ `07_Publicacion/tablas/saturacion_por_entrevista.csv`, `07_Publicacion/figuras/curva_saturacion.png`
 
 **D8. ¿Como se que las cifras del reporte no estan escritas a mano?**
 Porque se regeneran. `cd 06_Experimento && make all` reconstruye las cuatro figuras y las
 cinco tablas desde los datos crudos, y la correspondencia entre cada salida y su script
 esta declarada.
-→ `07_Datos/correspondencia_salidas.csv`
+→ `07_Publicacion/dataset_zenodo/correspondencia_salidas.csv`
 
 **D9. ¿Se desviaron del protocolo?**
 Si, y estan documentadas con fecha, desviacion y motivo.
@@ -146,7 +146,7 @@ Si, y estan documentadas con fecha, desviacion y motivo.
 Consentimiento informado firmado por cada uno, sustitucion de nombres por codigo, y
 material audiovisual fuera de la zona publica. Un participante retiro su consentimiento y
 su entrevista completa se elimino.
-→ `02_Evidencias/Consentimientos/`, `07_Datos/anonimizacion.md`
+→ `02_Evidencias/Consentimientos/`, `07_Publicacion/dataset_zenodo/anonimizacion.md`
 
 **E2. ¿Que hicieron con la entrevista retirada?**
 EV-15 (DOC-03) se excluyo integramente. Ningun fragmento suyo consta en el corpus, ni en
@@ -201,11 +201,19 @@ Cada fila de la declaracion de aporte cita el identificador del commit que la re
 el repositorio donde se resuelve.
 → `04_Trazabilidad/aporte_individual.csv`
 
-**G2. El historial esta concentrado en una persona. ¿Por que?**
-Es correcto y se declara asi. Los aportes de Munoz, Mendoza y Cedeno estan en el
-repositorio de la Entrega 2A y sus commits se resuelven ahi. Gilces figura sin aporte
-registrado, sin identificador, porque no lo tiene.
-→ mismo archivo
+**G2. Como se reparte el trabajo entre los dos integrantes?**
+De forma equilibrada, y el historial lo demuestra sin necesidad de creer en la declaracion:
+47 commits de Sanchez Cornejo y 40 de Munoz Quinonez, los dos con correo institucional. No
+hay ningun otro autor en el historial. La declaracion de aporte tiene una fila por commit,
+cada una con su identificador, y todas resuelven.
+-> `04_Trazabilidad/aporte_individual.csv` y `04_Trazabilidad/composicion_equipo.md`
+
+**G2b. El registro previo en OSF declara mas personas de las que firman. Por que?**
+Porque el protocolo se preregistro cuando el equipo era mayor. La lista de contribuyentes se
+actualizo despues a la composicion vigente, y ambas cosas se declaran en lugar de ocultarse.
+Lo que un registro OSF congela es el contenido registrado, que es lo que sostiene la marca
+temporal frente al p-hacking, no la lista de personas.
+-> `04_Trazabilidad/composicion_equipo.md`
 
 **G3. ¿Como reproduzco su documento?**
 Clonando el repositorio y ejecutando la secuencia de cuatro pasos del README: pdflatex,
