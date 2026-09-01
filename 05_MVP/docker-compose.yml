@@ -1,0 +1,48 @@
+# =============================================================================
+# SIGA - Sistema Inteligente de Gestion de Aulas
+# Despliegue del prototipo funcional en una sola orden:
+#
+#     cd 05_MVP && docker compose up
+#
+# Levanta el servidor en http://localhost:3000 con la base sembrada.
+# No requiere instalar Node ni SQLite en la maquina anfitriona.
+#
+# La persistencia usa el modulo SQLite incorporado en Node 22.5, que aun es
+# experimental y por eso se activa con la bandera correspondiente. No hay
+# servicio de base de datos separado: el archivo vive en un volumen nombrado
+# para que los datos sobrevivan entre reinicios del contenedor.
+# =============================================================================
+
+services:
+  siga-mvp:
+    image: node:22-alpine
+    container_name: siga_mvp
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      SESSION_SECRET: siga-mvp-secret-cambiar-en-produccion
+      SIMULATOR_INTERVAL_MS: 15000
+      UMBRAL_TEMPERATURA: 28
+      UMBRAL_HUMEDAD: 65
+      NODE_ENV: development
+    volumes:
+      - ./codigo_fuente:/app
+      - siga_datos:/app/data
+      - /app/node_modules
+    # Instala dependencias, siembra la base solo si esta vacia y arranca.
+    command: >
+      sh -c "npm ci --no-audit --no-fund &&
+             (test -s /app/data/siga.db || npm run seed) &&
+             npm start"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3000/login.html"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
+    restart: unless-stopped
+
+volumes:
+  siga_datos:

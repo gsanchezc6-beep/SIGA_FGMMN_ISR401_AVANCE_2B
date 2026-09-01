@@ -17,6 +17,38 @@ exige la guia.
 
 ---
 
+## Despliegue en una sola orden
+
+```
+cd 05_MVP
+docker compose up
+```
+
+Levanta el prototipo en `http://localhost:3000`, instala las dependencias, siembra la base
+la primera vez y arranca el servidor. No hace falta instalar Node ni SQLite en la maquina.
+
+**Que verifica cada parte del archivo de composicion**, contrastado contra el codigo:
+
+| Elemento | Se comprobo contra |
+|---|---|
+| Imagen `node:22-alpine` | `package.json` declara `"node": ">=22.5.0"` |
+| Ruta de la base `/app/data/siga.db` | `src/db/database.js` la construye como `../../data/siga.db` |
+| Ordenes `npm run seed` y `npm start` | ambas declaradas en `package.json` |
+| Comprobacion de salud sobre `/login.html` | el archivo existe en `codigo_fuente/public/` |
+| Puerto 3000 | `src/server.js` usa `process.env.PORT || 3000` |
+| Variables de entorno | las cinco de `.env.example` |
+
+**Lo que no se pudo comprobar.** El archivo de composicion **no se ejecuto**: la maquina
+donde se preparo esta entrega no tiene Docker instalado. Sus rutas y sus puntos de entrada
+se verificaron uno a uno contra el codigo fuente, pero **nadie ha visto todavia el
+contenedor arrancar**. Se declara asi en lugar de presentarlo como probado.
+
+La via de despliegue que si esta verificada es la de
+[`despliegue/instrucciones_despliegue.md`](despliegue/instrucciones_despliegue.md), con Node
+instalado en la maquina.
+
+---
+
 ## Alcance
 
 Seis modulos: autenticacion y roles, panel de control, alertas, mantenimiento, reportes y
