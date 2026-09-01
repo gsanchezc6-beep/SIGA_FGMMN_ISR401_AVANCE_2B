@@ -38,10 +38,7 @@ evaluados a ciegas por tres jueces independientes en cinco dimensiones de calida
 | Integrante | Rol | Correo institucional |
 |---|---|---|
 | Sanchez Cornejo, Gary Alberto | Analista lider · componente empirico · integracion | gsanchezc6@uteq.edu.ec |
-| Munoz Quinonez, Yeranick Esther | Documentacion y gestion de evidencias | — |
-| Cedeno Avila, Winston Damian | Modelado y desarrollo del prototipo | — |
-| Mendoza Palma, Allan Jeremy | Modelado UML e i* | — |
-| Gilces Carranza, Jose Ignacio | Verificacion — **sin aporte registrado en el historial** | — |
+| Munoz Quinonez, Yeranick Esther | Documentacion, trazabilidad y gestion de evidencias | ymunozq@uteq.edu.ec |
 
 Docente responsable: Ing. Gleiston Guerrero Ulloa.
 
@@ -50,7 +47,27 @@ declara en [`04_Trazabilidad/aporte_individual.csv`](04_Trazabilidad/aporte_indi
 
 ---
 
-## 3. Estructura del repositorio
+## 3. Identificadores persistentes y como citar
+
+| Que | Identificador |
+|---|---|
+| Paquete de datos en Zenodo | [`10.5281/zenodo.22137679`](https://doi.org/10.5281/zenodo.22137679) |
+| Registro previo del protocolo en OSF | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) |
+| Desviaciones respecto del protocolo | `06_Experimento/osf_deviations.pdf` |
+| Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
+| Autoevaluacion FAIR | `fair_assessment.pdf` --- 21 de 26 indicadores, **80,8 %** |
+| Manuscrito | `07_Publicacion/manuscrito_final.pdf` |
+
+**Cita recomendada del paquete de datos:**
+
+> Sanchez Cornejo, G. A. y Munoz Quinonez, Y. E. (2026). *Conjunto de datos del proceso de
+> Ingenieria de Requerimientos del proyecto SIGA*. Zenodo.
+> https://doi.org/10.5281/zenodo.22137679
+
+Los metadatos de citacion legibles por maquina estan en `CITATION.cff`, con los tres
+identificadores anteriores.
+
+## 4. Estructura del repositorio
 
 Nombres ASCII, sin acentos, sin espacios, palabras separadas con guion bajo.
 Los archivos multimedia siguen la convencion `AAAA-MM-DD_TipoParticipante_Codigo_Tecnica.ext`.
@@ -62,7 +79,7 @@ Los archivos multimedia siguen la convencion `AAAA-MM-DD_TipoParticipante_Codigo
 > Datos Personales prohibe publicar nombres propios en la evidencia. La correspondencia
 > codigo–participante existe unicamente en el registro de custodia que se entrega al
 > docente por el sistema de gestion academica. Sustitucion declarada en
-> [`07_Datos/anonimizacion.md`](07_Datos/anonimizacion.md).
+> [`07_Publicacion/dataset_zenodo/anonimizacion.md`](07_Publicacion/dataset_zenodo/anonimizacion.md).
 
 ```
 SIGA_FGMMN_ISR401_AVANCE_2B/
@@ -114,32 +131,35 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 │   ├── despliegue/               Instrucciones reproducibles desde cero
 │   └── demostracion/             Video del recorrido funcional
 │
-├── 06_Experimento/               Componente empirico
+├── 06_Experimento/               Componente empirico y paquete de replicacion
 │   ├── Makefile                  Pipeline completo con una sola orden
 │   ├── replicar.py               El mismo pipeline sin depender de make
-│   ├── clave_desciego_items.csv  Tabla que asigna origen a cada item ciego
 │   ├── protocolo/                Preguntas, hipotesis, variables y plan de analisis
+│   ├── osf_deviations.pdf        Desviaciones declaradas respecto del protocolo
 │   ├── registro_previo/          Comprobante OSF y bitacora de desviaciones
 │   ├── instrumentos/             Guiones, cuestionarios y rubricas en version final
-│   ├── consignas/                Consignas literales usadas con el modelo de lenguaje
-│   └── resultados/               Salidas estadisticas
-│
-├── 07_Datos/                     Paquete de replicacion ejecutable
+│   ├── prompts_llm/              Consignas literales usadas con el modelo de lenguaje
+│   ├── clave_desciego_items.csv  Tabla que asigna origen a cada item ciego
 │   ├── datos_crudos/             Formato abierto, sin edicion manual posterior
 │   ├── datos_procesados/         Generados exclusivamente por script
-│   ├── scripts/                  Analisis reproducible, con una sola orden
-│   ├── figuras/  tablas/         Salidas correspondidas con el reporte
-│   ├── diccionario_datos.csv     Significado, tipo y rango de cada variable
-│   └── anonimizacion.md          Procedimiento de disociacion aplicado
+│   ├── scripts_analisis/         Analisis reproducible, con una sola orden
+│   └── resultados/               Salidas estadisticas
 │
-├── 08_Etica/                     Consentimiento, base legal, conservacion, uso de IA
-└── 09_Defensa/                   Presentacion, banco de preguntas y guion de reparto
+├── 07_Publicacion/               Manuscrito y deposito de datos
+│   ├── manuscrito_final.tex      Manuscrito en plantilla Springer LNCS
+│   ├── manuscrito_final.pdf      Compilado, 12 paginas
+│   ├── referencias.bib           40 entradas, 35 con DOI verificado
+│   ├── analisis_revistas.md      Eleccion de la conferencia objetivo
+│   ├── figuras/  tablas/         Producidas por los scripts, no a mano
+│   └── dataset_zenodo/           Paquete depositado en Zenodo con DOI
+│
+└── 08_Defensa/                   Presentacion, guion, folleto y banco de preguntas
 ```
 
-`08_Etica/` y `09_Defensa/` no figuran en la lista de carpetas obligatorias de la
-seccion 9, pero las secciones 5.10 y 5.11 exigen artefactos que necesitan alojamiento
-propio y que no encajan en las siete carpetas nombradas. Se anaden sin desplazar a
-ninguna de ellas.
+La estructura sigue el arbol obligatorio de la seccion 9.1 de la guia. Las evidencias
+de etica quedan en `02_Evidencias/Etica/`, junto al resto de la evidencia primaria, y el
+resumen del proceso etico del paquete publicado esta en
+`07_Publicacion/dataset_zenodo/ETHICS.md`.
 
 ---
 
@@ -159,7 +179,7 @@ repositorio, a la espera de la firma o del trabajo de campo que lo respalda.
 
 ---
 
-## 4. Compilacion del documento entregado
+## 5. Compilacion del documento entregado
 
 Compilador: **pdfLaTeX** con **BibTeX**, distribucion TeX Live 2024 o MiKTeX 24.
 Paquetes requeridos: `babel`, `geometry`, `graphicx`, `float`, `longtable`, `booktabs`,
@@ -189,7 +209,7 @@ pdflatex  -interaction=nonstopmode ERS_SRS_2B_v2.0.tex
 
 ---
 
-## 5. Reproduccion del analisis
+## 6. Reproduccion del analisis
 
 ### Dependencias
 
@@ -227,7 +247,7 @@ todas las figuras del reporte en `tablas/` y `figuras/`.
 
 Ninguna cifra del reporte se escribe a mano. Cada tabla y cada figura se regenera con
 esa orden; la correspondencia entre cada salida y el script que la produce esta en
-[`07_Datos/correspondencia_salidas.csv`](07_Datos/correspondencia_salidas.csv).
+[`07_Publicacion/dataset_zenodo/correspondencia_salidas.csv`](07_Publicacion/dataset_zenodo/correspondencia_salidas.csv).
 
 ### Verificacion de integridad
 
@@ -245,11 +265,11 @@ python 06_Experimento/replicar.py --verificar
 
 ---
 
-## 6. Cierre de campo en diez entrevistas
+## 7. Cierre de campo en diez entrevistas
 
 El levantamiento de campo se cerro en **N = 10 entrevistas validas**, por autorizacion
 expresa del docente responsable ante la restriccion de calendario. La constancia escrita
-de esa autorizacion se deposita en `08_Etica/` y se cita desde la seccion de
+de esa autorizacion se deposita en `02_Evidencias/Etica/` y se cita desde la seccion de
 participantes del reporte.
 
 Un tamano menor al de referencia se sostiene con el calculo que lo justifica, conforme
@@ -267,11 +287,11 @@ declara como limitacion remanente, no como saturacion alcanzada.
 
 Una entrevista adicional (EV-15, participante DOC-03) fue excluida por retiro del
 consentimiento informado del participante, y su material fue suprimido conforme a la
-politica de conservacion y supresion declarada en `08_Etica/`.
+politica de conservacion y supresion declarada en `02_Evidencias/Etica/`.
 
 ---
 
-## 7. Licenciamiento
+## 8. Licenciamiento
 
 | Alcance | Licencia |
 |---|---|
@@ -282,11 +302,11 @@ El alcance exacto de cada una se declara en [`LICENSE`](LICENSE).
 
 ---
 
-## 8. Declaracion de uso de inteligencia artificial
+## 9. Declaracion de uso de inteligencia artificial
 
 La declaracion obligatoria, seccion por seccion, con herramienta empleada, tipo de
 asistencia y metodo concreto de validacion aplicado, esta en
-[`08_Etica/declaracion_uso_ia.md`](08_Etica/declaracion_uso_ia.md) y se reproduce como
+[`02_Evidencias/Etica/declaracion_uso_ia.md`](02_Evidencias/Etica/declaracion_uso_ia.md) y se reproduce como
 anexo del reporte.
 
 Los modelos de lenguaje intervienen en este trabajo en dos capacidades separadas: como
@@ -298,7 +318,7 @@ a la validez— son produccion propia verificada contra la evidencia primaria.
 
 ---
 
-## 9. Estado de la entrega
+## 10. Estado de la entrega
 
 El inventario de lo que existe y de lo que falta, contrastado item por item contra los
 minimos de la seccion 5 de la guia, se lleva en el control de trabajo del equipo, **fuera

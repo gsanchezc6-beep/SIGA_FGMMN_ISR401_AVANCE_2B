@@ -9,7 +9,7 @@
 %     pdflatex -interaction=nonstopmode reporte.tex
 %
 %  REGLA: ninguna cifra de este documento se escribe a mano. Toda tabla y
-%  toda figura se insertan desde 07_Datos/, regeneradas por `make all`.
+%  toda figura se insertan desde 07_Publicacion/, regeneradas por `make all`.
 %  El orden de las secciones es el que fija la seccion 10 de la guia.
 % ============================================================================
 \documentclass[11pt,letterpaper]{article}
@@ -75,9 +75,6 @@ frente a los generados por un modelo grande de lenguaje\par}
 \begin{tabular}{ll}
 S\'anchez Cornejo, Gary Alberto      & Analista l\'ider \\
 Mu\~noz Qui\~n\'onez, Yeranick Esther & Documentaci\'on y gesti\'on de evidencias \\
-Cede\~no \'Avila, Winston Dami\'an    & Modelado y prototipo \\
-Mendoza Palma, Allan Jeremy          & Modelado UML e i* \\
-Gilces Carranza, Jos\'e Ignacio      & Verificaci\'on \\
 \end{tabular}
 
 \vspace{1cm}
@@ -365,7 +362,7 @@ salida y el script que la produce est\'a en
 
 \subsection{Acuerdo entre evaluadores}
 
-\input{07_Datos/tablas/tabla_acuerdo}
+\input{07_Publicacion/tablas/tabla_acuerdo}
 
 La Tabla~\ref{tab:acuerdo} recoge los coeficientes de acuerdo por dimensi\'on. El $\kappa$ de Fleiss se sit\'ua entre 0,294 y 0,340 seg\'un la dimensi\'on. En la
 escala de Landis y Koch~\cite{landis1977measurement} ese rango corresponde a acuerdo
@@ -377,14 +374,14 @@ La Figura~\ref{fig:acuerdo} muestra el reparto del acuerdo entre las cinco dimen
 interpretaci\'on se trata en la Secci\'on~\ref{sec:amenazas}.
 
 \begin{figure}[H]\centering
-  \includegraphics[width=.78\textwidth]{07_Datos/figuras/fig04_acuerdo_interevaluador}
+  \includegraphics[width=.78\textwidth]{07_Publicacion/figuras/fig04_acuerdo_interevaluador}
   \caption{Acuerdo entre evaluadores por dimensi\'on.}
   \label{fig:acuerdo}
 \end{figure}
 
 \subsection{Estad\'isticos descriptivos}
 
-\input{07_Datos/tablas/tabla_descriptivos}
+\input{07_Publicacion/tablas/tabla_descriptivos}
 
 La Tabla~\ref{tab:descriptivos} re\'une medias y desviaciones por dimensi\'on y origen. El conjunto generado por el modelo obtiene una media superior en \textbf{las cinco
 dimensiones}. La diferencia oscila entre 0,20 y 0,25 puntos sobre la escala de 1 a 5.
@@ -393,14 +390,14 @@ respecto de la fuente y consistencia interna; la m\'as baja en ambos es ausencia
 ambig\"uedad. La Figura~\ref{fig:distribucion} deja ver que las distribuciones de ambos brazos se solapan ampliamente en todas las dimensiones.
 
 \begin{figure}[H]\centering
-  \includegraphics[width=.85\textwidth]{07_Datos/figuras/fig02_distribucion_por_dimension}
+  \includegraphics[width=.85\textwidth]{07_Publicacion/figuras/fig02_distribucion_por_dimension}
   \caption{Distribuci\'on de las puntuaciones por dimensi\'on y origen.}
   \label{fig:distribucion}
 \end{figure}
 
 \subsection{Pruebas de supuestos}
 
-\input{07_Datos/tablas/tabla_supuestos}
+\input{07_Publicacion/tablas/tabla_supuestos}
 
 La Tabla~\ref{tab:supuestos} resume ambos contrastes. Shapiro-Wilk no rechaza la normalidad en nueve de las diez combinaciones de dimensi\'on
 y origen. La excepci\'on es correcci\'on respecto de la fuente en el conjunto del
@@ -413,7 +410,7 @@ protocolo, no tras observar los resultados.
 
 \subsection{Contraste de hip\'otesis}
 
-\input{07_Datos/tablas/tabla_hipotesis}
+\input{07_Publicacion/tablas/tabla_hipotesis}
 
 La Tabla~\ref{tab:hipotesis} recoge el estad\'istico, el valor $p$ sin ajustar y el ajustado de cada dimensi\'on. Antes de corregir por comparaciones m\'ultiples, una dimensi\'on queda por debajo de
 $\alpha = 0{,}05$: consistencia interna, con $p = 0{,}0118$. Tras aplicar
@@ -437,7 +434,7 @@ sobre la direcci\'on del efecto. Se reporta como lo que es: una estimaci\'on sin
 precisi\'on suficiente.
 
 \begin{figure}[H]\centering
-  \includegraphics[width=.82\textwidth]{07_Datos/figuras/fig03_tamanos_efecto}
+  \includegraphics[width=.82\textwidth]{07_Publicacion/figuras/fig03_tamanos_efecto}
   \caption{Tama\~nos del efecto con intervalo de confianza al 95\,\%.}
   \label{fig:efectos}
 \end{figure}
@@ -446,7 +443,7 @@ precisi\'on suficiente.
 \label{sec:saturacion}
 
 \begin{figure}[H]\centering
-  \includegraphics[width=.78\textwidth]{07_Datos/figuras/curva_saturacion}
+  \includegraphics[width=.78\textwidth]{07_Publicacion/figuras/curva_saturacion}
   \caption{C\'odigos tem\'aticos nuevos por entrevista, en orden cronol\'ogico.}
   \label{fig:saturacion}
 \end{figure}
@@ -462,7 +459,7 @@ Secci\'on~\ref{sec:amenazas}.
 
 \subsection{Potencia estad\'istica}
 
-\input{07_Datos/tablas/tabla_power_calculation}
+\input{07_Publicacion/tablas/tabla_power_calculation}
 
 El c\'alculo completo est\'a en la Tabla~\ref{tab:power_calculation}. Para detectar un efecto de tama\~no $d = 0{,}50$ con $\alpha = 0{,}05$ y potencia
 $0{,}80$ se requieren 34 unidades de an\'alisis. El estudio dispone de tres. La potencia
@@ -640,10 +637,19 @@ evaluadores independientes coincidir.
 
 Un hallazgo merece menci\'on aparte. La m\'etrica autom\'atica de modificabilidad
 arrojaba 0,08 requisitos afectados por cambio, muy por debajo del umbral de 3,0. El
-an\'alisis manual sobre cinco requisitos representativos arroja \textbf{5,00}. La
-diferencia no es un error de c\'alculo: es el defecto. Las dependencias existen en el
-sistema pero no est\'an declaradas en la especificaci\'on, de modo que el documento
-aparenta un acoplamiento bajo que no tiene.
+an\'alisis manual sobre cinco requisitos representativos arrojaba \textbf{5,00}. La
+diferencia no era un error de c\'alculo: era el defecto. Las dependencias exist\'ian en el
+sistema pero no estaban declaradas en la especificaci\'on, de modo que el documento
+aparentaba un acoplamiento bajo que no ten\'ia.
+
+Corregido eso, las 25 fichas declaran hoy de qu\'e requisitos dependen y a cu\'ales
+alimentan, con un grafo de 50 dependencias cuyo sentido inverso se deriva, de modo que
+ninguna puede figurar en una ficha y faltar en la otra. La medida autom\'atica y la manual
+coinciden ya en \textbf{4,00} sobre las 25 fichas. El valor \emph{empeora} respecto del
+0,08 declarado, y esa es la lectura correcta: el acoplamiento dej\'o de estar oculto. Sigue
+sin cumplir el umbral de 3,0, y bajarlo exige desacoplar los dos puntos de convergencia
+--- la bit\'acora RF-23 y el panel RF-07 --- lo que constituye un cambio de dise\~no y no
+una correcci\'on de redacci\'on.
 
 \subsection{Trazabilidad extremo a extremo}
 
@@ -835,8 +841,8 @@ m\'etrica est\'a en \texttt{01\_ERS/Auditoria\_Calidad/}.
 Completitud      & 100\,\% & $\geq 95$\,\%            & Cumple \\
 Consistencia     & 1,0000 sin conflictos abiertos & $\geq 0{,}98$ y cero conflictos & Cumple \\
 Verificabilidad  & 100\,\% & $\geq 90$\,\%            & Cumple \\
-Trazabilidad     & 92,0\,\% y 48,0\,\% & 100\,\% y $\geq 90$\,\% & No cumple \\
-Modificabilidad  & 5,00     & $\leq 3{,}0$             & No cumple \\
+Trazabilidad     & 92,0\,\% y 92,0\,\% & 100\,\% y $\geq 90$\,\% & No cumple \\
+Modificabilidad  & 4,00 declarada y comprobable & $\leq 3{,}0$ & No cumple \\
 Correcci\'on     & no medible & $\leq 0{,}05$          & Pendiente \\
 \bottomrule
 \end{tabular}
@@ -939,7 +945,7 @@ La uniformidad de una generaci\'on en una sola pasada explicar\'ia esa se\~nal &
 El acuerdo entre evaluadores es justo & \texttt{acuerdo\_interevaluador.csv}; escala de~\cite{landis1977measurement} \\
 La saturaci\'on tem\'atica no se alcanz\'o & \texttt{saturacion\_por\_entrevista.csv}; Figura~\ref{fig:saturacion} \\
 El dise\~no de material fuente compartido es la contribuci\'on principal & Protocolo registrado, secci\'on de controles \\
-La modificabilidad medida a mano es 5,00 frente a 0,08 autom\'atica & \texttt{01\_ERS/Auditoria\_Calidad/} \\
+La modificabilidad declarada y la medida coinciden en 4,00 & \texttt{01\_ERS/Auditoria\_Calidad/} \\
 El prototipo cubre el 85\,\% de los requisitos obligatorios & \texttt{05\_MVP/cobertura\_requisitos.csv} \\
 \bottomrule
 \end{tabular}
