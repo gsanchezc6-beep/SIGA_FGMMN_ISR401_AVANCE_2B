@@ -9,6 +9,14 @@
 # Ver 02_Evidencias/Video/00_LEEME.md
 # ============================================================
 
+# ---- REGLA GENERAL: nada se normaliza ----
+# Todo archivo versionado de este repositorio consta en checksums.sha256. Si git
+# normalizara el fin de linea, entregaria en el checkout un contenido distinto
+# del que se hasheo y la comprobacion fallaria sobre un clon limpio. Esta regla
+# cubre tambien los archivos sin extension -LICENSE, .gitignore, el propio
+# .gitattributes- y cualquier tipo que se anada en el futuro.
+* -text
+
 # ---- Los archivos del manifiesto NUNCA se normalizan ----
 # Su hash SHA-256 consta en checksums.sha256. Si Git convirtiera sus finales
 # de linea al hacer checkout, el hash dejaria de coincidir y la comprobacion
