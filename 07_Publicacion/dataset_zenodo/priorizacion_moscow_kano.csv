@@ -1,0 +1,26 @@
+ID-RF,Objetivo,ID-CU,MoSCoW,Kano,Valor_negocio_WSJF,Justificacion
+RF-01,Monitorear el estado ambiental del aula,CU-01;CU-03,Must,Basico,9,Funcion nucleo del sistema; sin lectura ambiental no existe monitoreo ni alertas
+RF-02,Controlar remotamente los dispositivos del aula,CU-02,Must,Basico,9,Segunda funcion nucleo; es el valor directo percibido por docentes y personal de TI
+RF-03,Detectar automaticamente la ocupacion del aula,CU-03,Must,Basico,8,Habilita el apagado automatico y la deteccion de anomalias de ocupacion
+RF-04,Controlar remotamente los proyectores,CU-01;CU-02,Must,Basico,8,Caso concreto de RF-02 sobre el equipo mas usado en aula
+RF-05,Ajustar remotamente la climatizacion,CU-01;CU-02,Must,Rendimiento,7,Impacto directo en confort y en consumo energetico
+RF-06,Integrar el sistema con la videovigilancia existente,CU-15,Should,Entusiasmo,5,Aprovecha infraestructura instalada; no bloquea el nucleo si se posterga
+RF-07,Consultar un panel de control centralizado,CU-01,Must,Rendimiento,9,Punto unico de acceso; es la interfaz principal de todos los actores humanos
+RF-08,Generar y enviar alertas por anomalias,CU-04;CU-05,Must,Basico,9,Convierte el monitoreo pasivo en accion; nucleo de la propuesta de valor
+RF-09,Predecir fallos de equipos mediante IA,CU-16,Should,Entusiasmo,4,Diferenciador competitivo pero depende de historico que aun no existe
+RF-10,Registrar el historial de fallas y mantenimientos,CU-08,Must,Rendimiento,7,Insumo obligatorio para reportes y para el modelo predictivo
+RF-11,Notificar de forma inmediata las fallas criticas,CU-04;CU-05,Must,Basico,8,La utilidad de una alerta depende de su inmediatez
+RF-12,Gestionar las solicitudes de mantenimiento,CU-06;CU-07,Must,Basico,8,Cierra el ciclo entre deteccion de la anomalia y su resolucion fisica
+RF-13,Controlar automaticamente el apagado energetico,CU-13,Must,Rendimiento,8,Principal fuente de ahorro medible para la facultad
+RF-14,Analizar patrones de consumo energetico,CU-16,Should,Entusiasmo,5,Sustenta decisiones de inversion pero no es operativo del dia a dia
+RF-15,Programar horarios automatizados de encendido/apagado,CU-13,Must,Rendimiento,7,Automatiza el ahorro sin intervencion humana
+RF-16,Apagar automaticamente equipos de aulas desocupadas,CU-03;CU-13,Must,Rendimiento,8,Combina ocupacion y control; es el escenario de ahorro mas frecuente
+RF-17,Generar reportes estadisticos periodicos,CU-09,Should,Rendimiento,6,Necesario para autoridades pero posterior a la operacion basica
+RF-18,Exportar reportes en PDF y Excel,CU-10,Should,Rendimiento,5,Extiende RF-17; util para presentar resultados fuera del sistema
+RF-19,Gestionar acceso diferenciado por roles,CU-11,Must,Basico,9,Prerrequisito de seguridad; sin roles no se puede operar en produccion
+RF-20,Registrar el historial de ocupacion de aulas,CU-01;CU-08,Should,Rendimiento,6,Base para analitica de uso y para justificar reasignacion de espacios
+RF-21,Notificar equipos encendidos fuera de horario,CU-04;CU-13,Must,Rendimiento,7,Detecta el desperdicio energetico que motivo el proyecto
+RF-22,Monitorear la conectividad de la red IoT,CU-12,Must,Basico,8,Sin conectividad verificable ningun dato del sistema es confiable
+RF-23,Registrar bitacora de acciones de usuario,CU-14,Must,Basico,7,Trazabilidad y auditoria; exigido para operacion institucional
+RF-24,Exportar los datos personales del usuario a solicitud,CU-11,Must,Basico,8,Obligacion legal bajo la Ley Organica de Proteccion de Datos Personales del Ecuador
+RF-25,Rectificar los datos personales del usuario,CU-11,Must,Basico,8,Obligacion legal bajo la Ley Organica de Proteccion de Datos Personales del Ecuador

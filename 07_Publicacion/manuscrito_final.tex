@@ -1,0 +1,463 @@
+%% ======================================================================
+%% MANUSCRITO FINAL — Entrega 4 (2B) — Proyecto SIGA
+%% Equipo FGMMN · Universidad Tecnica Estatal de Quevedo · ISR-401 · 2026
+%% Destino: REFSQ 2027 — Posters & Tools track (8 paginas incl. referencias)
+%% Plantilla: llncs.cls (Springer LNCS)
+%%
+%% COMO COMPILAR: este archivo usa \documentclass{llncs}. No requiere
+%% instalar LaTeX localmente: abrir Overleaf (overleaf.com), crear un
+%% proyecto nuevo desde la plantilla "Springer LNCS", reemplazar main.tex
+%% por este archivo y referencias.bib por 07_Publicacion/referencias.bib.
+%% Compilar con pdfLaTeX + bibtex/biblatex segun lo que traiga la plantilla.
+%%
+%% ADVERTENCIA — todo dato numerico de este manuscrito proviene de:
+%%   06_Experimento/resultados/{hipotesis,efectos,supuestos,
+%%   acuerdo_interevaluador,power_calculation}.csv
+%%   07_Publicacion/tablas/saturacion_por_entrevista.csv
+%% generados por 06_Experimento/scripts_analisis/ (make all). Ninguna
+%% cifra fue escrita a mano. Si se vuelve a ejecutar el pipeline con datos
+%% distintos, estas tablas deben regenerarse y esta seccion actualizarse.
+%% ======================================================================
+
+\documentclass{llncs}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Human-Elicited vs.\ LLM-Generated Functional Requirements in a Smart Classroom System: A Paired Blind Study}
+
+\author{Gary Alberto S\'anchez Cornejo \and Yeranick Esther Mu\~noz Qui\~n\'onez}
+
+\institute{Facultad de Ciencias de la Computaci\'on, Universidad T\'ecnica Estatal de
+Quevedo, Quevedo, Los R\'ios, Ecuador\\
+\email{gsanchezc6@uteq.edu.ec}}
+
+\maketitle
+
+% ----------------------------------------------------------------------
+\begin{abstract}
+\textbf{Context.} Large Language Models (LLMs) are increasingly proposed as tools to
+support requirements elicitation, yet few studies compare their output against
+human-elicited requirements from the \emph{same} real-world source material.
+\textbf{Objective.} We report a paired, blind quasi-experiment comparing the quality
+of functional requirements (FR) elicited by a human analyst team against FR generated
+by an LLM from the same corpus of ten anonymized stakeholder interviews, collected for
+a real smart-classroom management system (SIGA) deployed at a university in Ecuador.
+\textbf{Method.} Three independent judges, blind to the origin of each item, scored 51
+requirements on five quality dimensions (completeness, absence of ambiguity,
+verifiability, source correctness, internal consistency) using a 1--5 Likert scale.
+Paired tests (t-test or Wilcoxon, chosen per dimension by Shapiro-Wilk normality) were
+applied with Holm-Bonferroni correction for the five comparisons; effect sizes (Cohen's
+$d$ or Cliff's $\delta$) were estimated with 95\% bootstrap confidence intervals
+(10{,}000 replicates).
+\textbf{Results.} LLM-generated requirements scored numerically higher than
+human-elicited ones on all five dimensions, but no difference survived the Holm-Bonferroni
+correction ($p_{\text{holm}} > 0.05$ for all dimensions). A post-hoc power calculation
+showed the three-judge panel reaches only 8.4\% power to detect a medium effect
+($d=0.5$, $\alpha=0.05$); at least 34 paired observations would be needed for 80\% power.
+\textbf{Conclusions.} With the present sample size, we cannot confirm or rule out a
+quality difference between human- and LLM-elicited requirements; the study is
+substantially underpowered, and we report this limitation explicitly rather than
+over-interpreting the numerically favorable trend toward the LLM.
+\keywords{Requirements elicitation \and Large Language Models \and Empirical study \and
+Smart classrooms \and Requirements quality \and Latin America}
+\end{abstract}
+
+% ======================================================================
+\section{Introduction}
+% ======================================================================
+
+Requirements elicitation is one of the costliest and most error-prone phases of
+software development, and errors introduced here propagate downstream at a
+multiplicative cost~\cite{sommerville2015software}. SIGA (Sistema Inteligente de
+Gesti\'on de Aulas) is a real, client-commissioned IoT and machine-learning platform for
+monitoring classroom occupancy, temperature, and equipment status at a public
+university in Ecuador; its requirements were elicited from ten stakeholder interviews
+(teaching staff, academic coordination, and facilities personnel) collected across two
+field rounds.
+
+Large Language Models are increasingly proposed as elicitation aids, but most existing
+evidence is either qualitative or compares LLM output against a gold standard rather
+than against requirements produced by human analysts working from identical source
+material~\cite{cheng2026genai,arora2024advancing}. Cheng et al.'s systematic review of
+238 studies found elicitation is one of the two most-studied RE phases for generative
+AI, yet identified reproducibility and hallucination as the two most frequently reported
+open challenges~\cite{cheng2026genai}. Closer to our design, Hymel and Johnson found
+LLM-generated requirements rated higher on alignment and completeness than
+human-expert output, with reviewers often misattributing the better output to the human
+expert~\cite{hymel2025analysis}; Almeida et al.\ compared two LLMs generating
+requirements from transcribed stakeholder interviews and found both models struggled
+with ambiguity and requirement categorization despite good precision on non-functional
+requirements~\cite{almeida2025elicitation}.
+
+This paper contributes: (1) a paired, blind comparison of FR quality using the same
+interview corpus for both human and LLM elicitation, in a real, currently deployed
+system rather than a toy or textbook case; (2) a transparent, fully reproducible
+analysis pipeline (Sect.~\ref{sec:results}) that discloses two methodological
+complications encountered mid-study --- the withdrawal of consent by one interview
+participant after the LLM had already processed their transcript, and a
+subsequently-detected lack of inflection in the qualitative saturation curve --- rather
+than silently absorbing them; (3) an explicit post-hoc power analysis that quantifies
+exactly how under-powered a small-panel blind evaluation is, as guidance for future
+replications.
+
+\textbf{RQ1.} In which quality dimensions do functional requirements elicited by a
+human analyst team differ from those generated by an LLM from the same source material,
+in a real-world smart classroom management system?
+
+% ======================================================================
+\section{Related Work}
+% ======================================================================
+
+We conducted an abbreviated search (Google Scholar, arXiv, ACM DL; August 2026) using
+the terms \emph{``LLM requirements elicitation''}, \emph{``generative AI functional
+requirements evaluation''} and \emph{``ChatGPT requirements quality''}, screening for
+peer-reviewed or preprint studies from 2023--2026 that generate or evaluate
+requirements-engineering artifacts with an LLM. Table~\ref{tab:relwork} summarizes the
+ten most directly comparable studies found.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparative summary of closely related work}
+\label{tab:relwork}
+\small
+\begin{tabular}{p{2.3cm}p{0.6cm}p{2.3cm}p{4.5cm}}
+\toprule
+Reference & Year & Design & Difference with our study \\
+\midrule
+Cheng et al.~\cite{cheng2026genai} & 2026 & Systematic review (238 studies) & Maps the field; does not itself run a paired human-vs-LLM comparison \\
+Arora et al.~\cite{arora2024advancing} & 2024 & Position/assessment paper & Discusses LLM roles in RE conceptually, no empirical panel evaluation \\
+Vogelsang \& Fischbach~\cite{vogelsang2024using} & 2024 & Guideline paper & Methodological guidance for using LLMs in RE, not a comparative study \\
+Lubos et al.~\cite{lubos2024leveraging} & 2024 & Case study & LLM assists QA of existing requirements; does not compare elicitation origin \\
+Ronanki et al.~\cite{ronanki2023investigating} & 2023 & Exploratory case study & Explores ChatGPT assistance in elicitation; no blind judge panel \\
+Ronanki et al.~\cite{ronanki2023chatgpt} & 2023 & Comparative study & Evaluates ChatGPT \emph{as an evaluator} of user stories, not as a generator compared against humans \\
+G\"orer \& Aydemir~\cite{gorer2023generating} & 2023 & Tool paper & Generates interview scripts with LLMs; upstream of our elicitation step \\
+Ray et al.~\cite{ray2023agile} & 2023 & Case study & LLM-assisted requirement standardization, single-origin corpus \\
+Hymel \& Johnson~\cite{hymel2025analysis} & 2025 & Blind rater comparison & Closest design match; different domain, no source-material identity guarantee, no pre-registration \\
+Almeida et al.~\cite{almeida2025elicitation} & 2025 & Two-model case study & Compares two LLMs on the same interviews; does not include a human-elicited comparison arm \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Research niche.} No study we found combines all three of: (a) a paired design in
+which the human and LLM arms are elicited from the identical interview corpus, (b) a
+blind judge panel with a pre-registered analysis plan, and (c) a real, currently
+deployed system rather than a course exercise or synthetic case. This is the gap our
+study addresses, while explicitly disclosing the statistical power limits of a
+three-judge panel.
+
+% ======================================================================
+\section{Methodology}
+% ======================================================================
+
+\subsection{Research question and PICOC}
+See RQ1 above. \textbf{Population:} functional requirements of the SIGA system (26
+LLM-generated, 25 human-elicited). \textbf{Intervention:} LLM-assisted elicitation
+(single query, controlled temperature) from the full anonymized interview corpus.
+\textbf{Comparison:} the human analyst team's own elicitation process (interviews plus
+manual analysis) over the same corpus. \textbf{Outcome:} blind quality score (1--5) on
+five dimensions. \textbf{Context:} an academic Requirements Engineering course project
+for a real client system at a public Ecuadorian university.
+
+\subsection{Hypotheses}
+$H_0$: no significant difference in mean quality score between the human-elicited
+(Set~B) and LLM-generated (Set~A) requirements, for each of the five dimensions.
+$H_1$: a significant difference exists in at least one dimension.
+
+\subsection{Variables}
+Independent: requirement origin (Human / LLM). Dependent: 1--5 Likert score per
+dimension per judge. Control: identical source corpus for both arms; the same three
+judges score both sets, blind to origin, in a randomized order (fixed seed
+20260802).
+
+\subsection{Design and participants}
+Paired quasi-experiment. Three judges, verifiably independent of the ten interviews
+that produced the source corpus, each scored all 51 blinded items using a
+standardized rubric. \textbf{Deviation from the pre-registered protocol:} the protocol
+recommended 3--5 judges; the study ran with the minimum of 3, which --- as
+Sect.~\ref{sec:results} quantifies --- yields very low statistical power.
+
+\subsection{Instruments and reproducibility}
+The blind item package, scoring sheet, and judge instructions are included in the
+replication package (\texttt{06\_Experimento/instrumentos/}). The full analysis
+pipeline (\texttt{06\_Experimento/scripts\_analisis/}, invoked via \texttt{make all})
+regenerates every table and figure in Sect.~\ref{sec:results} directly from the raw
+judge score sheets; no figure was produced manually.
+
+\subsection{Analysis plan and deviations from pre-registration}
+\label{sec:deviations}
+Per dimension: Shapiro-Wilk normality test on each arm's per-judge means; paired
+$t$-test if both arms are normal, Wilcoxon signed-rank test otherwise; Holm-Bonferroni
+correction across the five dimensions; effect size (Cohen's $d$ or Cliff's $\delta$)
+with a 95\% bootstrap confidence interval (10{,}000 resamples, seed 20260802). The
+study protocol was pre-registered on OSF (\url{https://osf.io/7pq3h}). Three deviations
+from that pre-registration are declared explicitly, in line with open-science
+reporting norms~\cite{nosek2018preregistration}: (1) the Holm-Bonferroni correction,
+the bootstrap confidence intervals, and the Levene homogeneity-of-variance test were
+added after registration, none of them were in the original analysis plan, and all
+three make the analysis \emph{more}, not less, conservative; (2) one source interview
+(coded EV-15) was excluded from the human-elicited evidence base after the participant
+withdrew informed consent --- this occurred \emph{after} the LLM had already processed
+that transcript to generate Set~A and after the blind judging had already taken place,
+so Set~A's source material and Set~B's evidentiary support are no longer perfectly
+symmetric; re-running the full experiment was not feasible within the project timeline,
+and this asymmetry is carried forward as a construct-validity threat
+(Sect.~\ref{sec:threats}); (3) the qualitative saturation curve for the underlying
+interview corpus did not show an inflection point (Sect.~\ref{sec:results}), so we
+report a power calculation as the alternative adequacy criterion, following standard
+practice for underpowered small-$N$ designs~\cite{molleri2020empirically}.
+
+% ======================================================================
+\section{Results}
+\label{sec:results}
+% ======================================================================
+
+\subsection{RQ1: Quality differences between human- and LLM-elicited requirements}
+
+Table~\ref{tab:descriptivos} reports descriptive statistics. On every one of the five
+dimensions, the LLM arm's median and mean score were equal to or higher than the human
+arm's (e.g.\ source correctness: median 5.000 vs.\ 4.000; mean 4.487 vs.\ 4.293).
+
+\input{tablas/tabla_descriptivos.tex}
+
+Table~\ref{tab:supuestos} reports the normality (Shapiro-Wilk) and
+homogeneity-of-variance (Levene) tests that determined which paired test was applied
+per dimension.
+
+\input{tablas/tabla_supuestos.tex}
+
+Table~\ref{tab:hipotesis} reports the paired hypothesis tests with Holm-Bonferroni
+correction and the corresponding effect sizes with 95\% bootstrap confidence intervals.
+Before correction, \emph{Consistencia\_interna} showed a nominally significant
+difference ($t=-9.123$, $p=0.012$); after Holm-Bonferroni correction across the five
+dimensions, this rises to $p_{\text{holm}}=0.059$ and is \textbf{no longer significant}
+at $\alpha=0.05$. \textbf{No dimension survives correction.}
+
+\input{tablas/tabla_hipotesis.tex}
+
+Effect sizes are large in magnitude (Cohen's $d$ up to $-5.267$ for
+\emph{Consistencia\_interna}, all favoring the LLM arm) but their 95\% bootstrap
+confidence intervals are extremely wide (e.g.\ $[-42.72, 0.00]$), a direct consequence
+of bootstrapping from only three paired observations. Figure~\ref{fig:efectos}
+visualizes this.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figuras/fig03_tamanos_efecto.png}
+\caption{Effect sizes by dimension with 95\% bootstrap confidence intervals ($n=3$
+judges). All point estimates favor the LLM arm, but every interval crosses zero.}
+\label{fig:efectos}
+\end{figure}
+
+\subsection{Inter-rater agreement}
+
+Table~\ref{tab:acuerdo} reports pairwise Cohen's $\kappa$ (linear weights) and Fleiss'
+$\kappa$ across the three judges. Agreement is \emph{fair} by conventional benchmarks
+(Fleiss' $\kappa$ between 0.294 and 0.340 across dimensions), consistent with the
+inherent subjectivity of requirements-quality judgments and a further reason for
+caution in interpreting the point estimates above.
+
+\input{tablas/tabla_acuerdo.tex}
+
+\subsection{Qualitative saturation and statistical power (alternative to C6)}
+
+Figure~\ref{fig:saturacion} shows the thematic-code saturation curve over the ten valid
+interviews: 36 distinct codes were identified, and the mean number of new codes in the
+last three interviews (3.667) is far above the 5\% saturation threshold (1.8),
+indicating \textbf{no inflection was reached}. Post-hoc inspection attributes this to
+the coding scheme itself: each of the 36 codes is unique to a single fragment, with no
+axial-coding pass merging codes that represent the same underlying theme across
+interviews --- with such a codebook, the curve structurally cannot flatten regardless of
+interview count. We report this as an honest limitation rather than re-coding under
+time pressure to force an apparent inflection.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{figuras/curva_saturacion.png}
+\caption{Thematic code saturation curve, ten valid interviews. No inflection point.}
+\label{fig:saturacion}
+\end{figure}
+
+As the alternative adequacy criterion, Table~\ref{tab:power_calculation} reports a post-hoc power
+calculation for the paired-judge design: to detect a medium effect ($d=0.5$) at
+$\alpha=0.05$ with 80\% power, \textbf{34} paired observations would be required; the
+present $n=3$ achieves only \textbf{8.4\%} power.
+
+\input{tablas/tabla_power_calculation.tex}
+
+\subsection{Sensitivity analysis: the requirement as the unit of analysis}
+\label{sec:sensitivity}
+
+The pre-registered plan treats \emph{the judge} as the unit of analysis, averaging each
+judge's scores across items within each origin and applying a paired test over $n=3$. That
+choice controls for judge severity, but it discards most of the information collected --- 765
+individual ratings reduced to three paired means --- and yields effect-size confidence
+intervals too wide to interpret.
+
+We therefore report an \textbf{exploratory, post-registration} sensitivity analysis that takes
+\emph{the requirement} as the unit: the three judges' scores are averaged within each item,
+giving 25 human-elicited and 26 LLM-generated observations per dimension. Because the two sets
+contain different requirements rather than the same requirement measured twice, the comparison
+is between independent samples. Normality is checked per group with Shapiro-Wilk; Welch's
+$t$-test is used when it is not rejected and the Mann-Whitney $U$ test otherwise, with
+Holm-Bonferroni correction over the five dimensions. Effect sizes are Hedges' $g$ or Cliff's
+$\delta$ as appropriate, with 95\% bootstrap confidence intervals (10{,}000 replicates, seed
+20260802). This analysis is declared in the deviation log; it \textbf{supplements and does not
+replace} the pre-registered analysis of Sect.~\ref{sec:results}.
+
+\input{tablas/tabla_por_item.tex}
+
+Three observations follow. First, the achieved power for a medium effect ($d=0.5$) rises from
+\textbf{8.4\%} to \textbf{41.7\%}; still below the conventional 80\% threshold, but a fivefold
+improvement obtained from data already collected. Second, the effect sizes become
+interpretable: Cliff's $\delta$ ranges from $-0.117$ to $-0.185$ and Hedges' $g$ is $-0.257$,
+all small, all favouring the LLM set slightly, and \textbf{all with confidence intervals
+crossing zero}. Third, and most importantly, \textbf{both analyses reach the same conclusion}:
+after correction for multiple comparisons, no dimension shows a statistically significant
+difference between human-elicited and LLM-generated functional requirements.
+
+That agreement is the point of a sensitivity analysis. The pre-registered result was not
+significant and neither is this one, so the conclusion does not depend on the analytical choice
+--- which is precisely what a reader should be able to check before trusting a null result
+obtained from a small panel.
+
+% ======================================================================
+\section{Discussion}
+% ======================================================================
+
+\subsection{Implications for research}
+Every point estimate in this study favors the LLM arm, echoing Hymel and Johnson's
+finding that LLM-generated requirements can be rated at least as favorably as
+human-expert output~\cite{hymel2025analysis}. However, our study demonstrates
+concretely \emph{how misleading} such a favorable trend can be without an accompanying
+power analysis: a $d=-5.267$ point estimate coexists with a 95\% CI of
+$[-42.72, 0.00]$ and a corrected $p$ of $0.059$. We recommend that future paired blind
+LLM-vs-human RE studies report power calculations alongside effect sizes as standard
+practice, not as an afterthought.
+
+\subsection{Implications for practice}
+For practitioners considering LLM-assisted elicitation, our descriptive results (higher
+LLM medians across all five dimensions) are consistent with LLMs being a
+\emph{usable first-pass generator} subject to human review, echoing Lubos et al.'s use
+of LLMs for requirements QA rather than autonomous generation~\cite{lubos2024leveraging}.
+We do not have statistical grounds to recommend replacing human elicitation.
+
+\subsection{Surprising or counterintuitive findings}
+The dimension with the strongest raw effect (\emph{Consistencia\_interna}) is also the
+one where the correction changes the substantive conclusion most (from ``significant''
+to ``not significant''). This is a useful illustration, for students and practitioners
+new to empirical SE research, of why multiple-comparison correction is not merely a
+formality.
+
+\subsection{Lessons learned}
+For undergraduate teams running similarly small empirical studies: (1) a
+pre-registered protocol should include the maximum feasible number of judges from the
+outset --- retrofitting a power calculation after data collection, as we did, can only
+diagnose the problem, not fix it; (2) any participant exclusion after data has already
+propagated downstream (here, into the LLM's source material) should be documented as a
+first-class deviation, not silently patched; (3) a codebook intended to demonstrate
+saturation must include an explicit axial-coding merge step from the start.
+
+% ======================================================================
+\section{Threats to Validity}
+\label{sec:threats}
+% ======================================================================
+
+\subsection{Internal validity}
+The three-judge panel is the dominant threat: with 8.4\% power (Table~\ref{tab:power_calculation}),
+a true medium effect would likely go undetected. Judges' fair inter-rater agreement
+(Fleiss' $\kappa \approx 0.3$) adds measurement noise on top of the small sample.
+
+\subsection{External validity}
+Findings are specific to one system, one institutional domain, one LLM configuration,
+and Spanish-language interview transcripts from Ecuador; they do not generalize to
+other domains, languages, or models without replication.
+
+\subsection{Construct validity}
+Two threats compound here. First, the LLM had partial prior exposure to Set~B
+(human-elicited requirements) within the same chat session used to generate Set~A,
+documented in \texttt{06\_Experimento/prompts\_llm/prompt\_llm\_conjunto\_A.md}.
+Second, the source corpus fed to the LLM (11 interviews) is not identical to the
+corpus that ultimately backs the human-elicited set after EV-15's exclusion (10
+interviews); the paired design's core assumption of a shared source material is
+therefore only approximately, not exactly, satisfied (Sect.~\ref{sec:deviations}).
+
+\subsection{Conclusion validity}
+The wide bootstrap confidence intervals and the failure to reach thematic saturation
+both stem from the same root cause: small $N$. We mitigate by reporting the explicit
+power calculation (Table~\ref{tab:power_calculation}) rather than either omitting the saturation
+failure or presenting the point estimates without their intervals.
+
+% ======================================================================
+\section{Conclusions and Future Work}
+% ======================================================================
+
+\textbf{RQ1.} Across all five quality dimensions, LLM-generated functional
+requirements scored numerically at or above human-elicited requirements, but after
+Holm-Bonferroni correction \textbf{no difference is statistically significant}, and a
+post-hoc power calculation shows the three-judge design is highly underpowered
+(8.4\% vs.\ a conventional 80\% target). We therefore conclude that this study cannot
+confirm a quality difference between the two elicitation approaches, and explicitly
+decline to over-interpret the favorable point estimates.
+
+\textbf{Contributions.} (1) A fully reproducible paired-blind comparison pipeline,
+released with the replication package; (2) transparent disclosure of a mid-study
+consent withdrawal and its downstream effect on corpus symmetry; (3) a concrete,
+quantified illustration of how multiple-comparison correction and power analysis
+change substantive conclusions in small-panel RE evaluations.
+
+\textbf{Future work.} We recommend, in order of priority for anyone extending this
+dataset: (1) expanding the judge panel to at least 34 to reach conventional power,
+using the anonymized replication package as source material; (2) re-running the LLM
+generation on the corrected 10-interview corpus to restore paired symmetry; (3)
+applying an explicit axial-coding merge pass to the thematic codebook and
+re-computing the saturation curve.
+
+% ======================================================================
+\section*{Data and materials availability}
+% ======================================================================
+The replication package supporting this study is openly available in Zenodo under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0):
+\url{https://doi.org/10.5281/zenodo.22137679}. The study
+protocol was pre-registered in the Open Science Framework:
+\url{https://doi.org/10.17605/OSF.IO/7PQ3H}, with deviations documented in
+\texttt{06\_Experimento/README\_OSF.md} and \texttt{osf\_deviations.pdf}. The source
+repository is permanently archived in Software Heritage under the identifier
+\texttt{swh:1:snp:861295fead33417e3efc2753fd4a34897014a891}. Analysis code is released under the Apache-2.0 licence.
+
+% ======================================================================
+\section*{Use of AI-assisted technologies}
+% ======================================================================
+A Large Language Model was used in two clearly separated capacities. First, as the
+\emph{object of study}: Set~A of functional requirements was generated under
+controlled conditions, with the exact model, version, temperature, top-$p$, seed and
+query timestamp recorded in the replication package
+(\texttt{06\_Experimento/prompts\_llm/}). Second, as \emph{writing support}: an AI
+coding assistant (Claude, Anthropic) was used to build and debug the reproducible
+analysis pipeline (\texttt{06\_Experimento/scripts\_analisis/}) under the direct
+supervision of the authors, who verified every statistical method against the
+methodology declared in the pre-registered protocol, and to polish the wording of
+paragraphs whose content and data interpretation were produced by the authors. No
+result, figure, table, conclusion or bibliographic reference in this manuscript was
+produced by a Large Language Model; every reference was individually verified against
+its publisher or preprint page and every DOI/arXiv identifier resolved before
+submission. The authors take full responsibility for the content of this work.
+
+% ======================================================================
+\section*{Acknowledgements}
+% ======================================================================
+We thank the teaching, coordination, and facilities staff of the Facultad de Ciencias
+de la Computaci\'on y Dise\~no Digital at Universidad T\'ecnica Estatal de Quevedo for
+their participation in the interviews that made this study possible.
+
+% ======================================================================
+\bibliographystyle{splncs04}
+\bibliography{referencias}
+
+\end{document}
