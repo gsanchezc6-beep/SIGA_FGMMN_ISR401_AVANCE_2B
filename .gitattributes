@@ -25,15 +25,24 @@
 # haciendo fallar la comprobacion sobre un clon limpio.
 checksums.sha256  -text
 
-# ---- Normalizacion de fin de linea en texto ----
-*.md       text
-*.tex      text
-*.bib      text
-*.py       text
-*.txt      text
-*.cff      text
-*.js       text
-Makefile   text
+# ---- Los archivos de texto TAMPOCO se normalizan ----
+# Todos estos constan en checksums.sha256. Con normalizacion activa, git guarda
+# un contenido y entrega otro al hacer checkout, de modo que el manifiesto
+# verifica en la maquina donde se genero pero falla sobre un clon limpio, que es
+# justamente como el README pide comprobar la entrega. Se entregan byte a byte
+# como se guardaron.
+*.md      -text
+*.tex     -text
+*.bib     -text
+*.py      -text
+*.txt     -text
+*.cff     -text
+*.js      -text
+*.sql     -text
+*.html    -text
+*.css     -text
+*.yml     -text
+Makefile  -text
 
 # ---- Binarios: sin normalizacion ni diff textual ----
 *.mp4   binary
