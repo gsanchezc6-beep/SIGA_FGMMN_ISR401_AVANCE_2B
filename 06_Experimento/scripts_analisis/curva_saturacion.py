@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 FECHAS_JSON_DEFAULT = os.path.join(
-    os.path.dirname(__file__), "..", "..", "07_Datos", "datos_crudos",
+    os.path.dirname(__file__), "..", "datos_crudos",
     "transcripciones_anonimizadas.json",
 )
 

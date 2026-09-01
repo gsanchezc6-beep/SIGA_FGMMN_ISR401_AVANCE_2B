@@ -24,11 +24,11 @@ import sys
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 
-SCRIPTS = os.path.join(RAIZ, "07_Datos", "scripts")
-CRUDOS = os.path.join(RAIZ, "07_Datos", "datos_crudos")
-PROC = os.path.join(RAIZ, "07_Datos", "datos_procesados")
-FIGS = os.path.join(RAIZ, "07_Datos", "figuras")
-TABS = os.path.join(RAIZ, "07_Datos", "tablas")
+SCRIPTS = os.path.join(RAIZ, "06_Experimento", "scripts_analisis")
+CRUDOS = os.path.join(RAIZ, "06_Experimento", "datos_crudos")
+PROC = os.path.join(RAIZ, "06_Experimento", "datos_procesados")
+FIGS = os.path.join(RAIZ, "07_Publicacion", "figuras")
+TABS = os.path.join(RAIZ, "07_Publicacion", "tablas")
 RES = os.path.join(AQUI, "resultados")
 
 ANALIZAR = os.path.join(SCRIPTS, "analizar_resultados.py")
@@ -46,6 +46,8 @@ ETAPAS = [
                                               "codificacion_tematica.csv"),
                     "--salida", os.path.join(FIGS, "curva_saturacion.png"),
                     "--tabla", os.path.join(TABS, "saturacion_por_entrevista.csv")]),
+    ("por_item", [os.path.join(SCRIPTS, "analisis_por_item.py"),
+                  "--entrada", PROC, "--salida", RES, "--tabla", TABS]),
     ("potencia", [os.path.join(SCRIPTS, "power_calculation.py"),
                   "--n-actual", "3",
                   "--salida-csv", os.path.join(RES, "power_calculation.csv"),

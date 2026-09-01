@@ -10,12 +10,12 @@
 # ============================================================
 
 PY      := python
-SCRIPTS := ../07_Datos/scripts
-CRUDOS  := ../07_Datos/datos_crudos
-PROC    := ../07_Datos/datos_procesados
+SCRIPTS := ./scripts_analisis
+CRUDOS  := ./datos_crudos
+PROC    := ./datos_procesados
 RES     := resultados
-FIGS    := ../07_Datos/figuras
-TABS    := ../07_Datos/tablas
+FIGS    := ../07_Publicacion/figuras
+TABS    := ../07_Publicacion/tablas
 
 .PHONY: all clean deps verificar entorno consolidar acuerdo supuestos \
         hipotesis efectos saturacion potencia figuras tablas

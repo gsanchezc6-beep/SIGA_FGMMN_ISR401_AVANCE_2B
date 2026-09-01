@@ -121,41 +121,30 @@ entregado a los jueces estaba correctamente cegado**, y sostiene lo declarado en
 **Participación de integrantes que el docente sitúa en factor cero.** Hay que distinguir
 dos fotografías, porque no tienen el mismo valor probatorio.
 
-**Lo que consta en el registro vivo**, comprobado el 2026-08-31 y guardado en
+**Lo que consta en el registro vivo**, comprobado el 2026-09-01 y guardado literalmente en
 `osf_contributors_api.json`:
 
-| Contribuyente | Permiso | Bibliográfico |
+| Contribuyente | Permiso | Bibliografico |
 |---|---|---|
-| Sánchez Gary | admin | sí |
-| Winston Damián Cedeño Ávila | read | sí |
-| Allan Jeremy Mendoza Palma | read | sí |
-| Yeranick Esther Muñoz Quiñónez | write | sí |
+| Sanchez Gary | admin | si |
+| Yeranick Esther Munoz Quinonez | write | si |
 
-**Lo que consta en la copia archivada por el Internet Archive**, cuyo paquete no se ha
-vuelto a subir desde el 2026-08-28 y por tanto lleva marca temporal de un tercero:
+**Son los dos integrantes del equipo, y coinciden con el historial del repositorio.** La
+declaracion de composicion, con el recuento por autor que la respalda, esta en
+`04_Trazabilidad/composicion_equipo.md`.
 
-| Contribuyente | Archivado |
-|---|---|
-| Sánchez Gary | sí |
-| Winston Damián Cedeño Ávila | sí |
-| Allan Jeremy Mendoza Palma | sí |
-| Yeranick Esther Muñoz Quiñónez | **no** |
+**Lo que hay que precisar sobre el historial de esta lista.** El protocolo se preregistro
+cuando el equipo tenia mas integrantes, y la lista de contribuyentes se actualizo despues
+para reflejar la composicion vigente. Lo que el registro congela es **el contenido
+registrado** --- preguntas, hipotesis, variables y plan de analisis ---, que es lo que
+sostiene la marca temporal frente al p-hacking y al HARKing. La lista de personas asociadas
+al registro si admite mantenimiento, y mantenerla al dia es lo correcto.
 
-**La diferencia importa y se declara.** Cedeño y Mendoza figuran en una copia depositada
-por un tercero el 2026-08-06 y actualizada el 2026-08-28: su pertenencia al proyecto está
-acreditada con fecha anterior a la entrega. Muñoz se incorporó al registro el
-**2026-08-31**, y esa incorporación es pública y verificable, pero **no está respaldada por
-la copia archivada**. Se presenta como lo que es: contribución declarada en el registro
-vivo, no atestiguada retroactivamente.
+La copia archivada por el Internet Archive el 2026-08-06, actualizada el 2026-08-28, refleja
+la composicion anterior por ser anterior a esa actualizacion. Se conserva sin retocar: es un
+deposito de un tercero y su valor esta justamente en que nadie del equipo puede modificarlo.
 
-Añadir un contribuyente **no alteró la marca temporal del registro**: `date_registered`
-sigue en 2026-08-02T20:25:07 UTC. Solo cambió `date_modified`, a 2026-08-31T06:57:58 UTC.
-Eso se comprueba comparando los dos ficheros de esta carpeta.
-
-Ninguna de las dos tablas acredita commits. Acreditan pertenencia al proyecto, y conviene
-llevarlas a la audiencia junto a los commits del repositorio de la Entrega 3 (2A).
-
-### Pendiente: el nodo del proyecto declara un solo contribuyente
+## Pendiente: el nodo del proyecto declara un solo contribuyente
 
 El registro `7pq3h` deriva del proyecto `3nruf`, y **ese proyecto tiene a Sánchez como
 único contribuyente**. Si el tribunal abre el proyecto en lugar del registro, ve a una
