@@ -1,7 +1,7 @@
 # Declaracion de uso de inteligencia artificial
 
 Proyecto SIGA — Entrega Final (2B) — ISR-401 — Equipo FGMMN
-Ultima actualizacion: 2026-08-29
+Ultima actualizacion: 2026-09-02
 
 Esta declaracion cubre, seccion por seccion, la herramienta empleada, el tipo de
 asistencia recibida y el metodo concreto con el que el equipo valido el contenido
@@ -38,6 +38,21 @@ validez de constructo en el reporte.
 | Auditoria del repositorio contra la rubrica | Claude (Anthropic) | Contraste sistematico del arbol y del historial contra los criterios de piso y las evidencias exigibles | El equipo verifico a mano cada hallazgo antes de actuar sobre el: conteos de archivos, ausencia de etiquetas y presencia de marcadores de plantilla |
 
 ---
+
+### Trabajo del 1 y 2 de septiembre de 2026
+
+Posterior a la primera version de esta declaracion, y anadido aqui para que la
+declaracion cubra el entregable completo y no solo su estado a finales de agosto.
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| Modelado UML e i* --- 41 diagramas | Claude (Anthropic) | Reconstruccion de los diagramas en PlantUML a partir de los modelos existentes, leidos de los `.vpp` y los `.drawio` originales | El equipo comprobo por script que los 41 diagramas conservan los elementos y relaciones del modelo original, y a ojo cada figura renderizada. La numeracion de mensajes de las 16 secuencias se verifico sin repeticiones |
+| `03_Modelado/09_DFD/` | Claude (Anthropic) | Alineacion de los DFD de nivel 0 y 1 con el diagrama de contexto: traduccion al idioma del modelo y correspondencia de entidades y flujos | Los dibujo el equipo en draw.io. Se comprobo por script que se cumplen las tres reglas de la notacion: ningun flujo sin nombre, ninguno entre dos entidades externas y ninguno entre dos almacenes |
+| Amenazas a la validez del manuscrito | Claude (Anthropic) | Redaccion de las ocho amenazas, dos por categoria, con su mitigacion y la limitacion remanente, a partir de los resultados y las desviaciones ya declaradas | Cada cifra citada se contrasto contra la tabla o figura que la produce; el manuscrito compila sin referencias sin resolver |
+| `02_Evidencias/Member_Checking/` | Claude (Anthropic) | Redaccion del acta de la sesion, del guion y del consentimiento; censura de los datos identificables de los consentimientos firmados | La sesion la condujo el equipo. El acta consigna lo que ocurrio, incluida su duracion real tomada de la cabecera del video. La censura se verifico pagina por pagina sobre el archivo depositado |
+| `02_Evidencias/Etica/acta_constancia_N10.pdf` | Claude (Anthropic) | Composicion del documento y censura de las cedulas de los testigos | Las firmas las recogio el equipo. El documento declara de forma expresa que no es una autorizacion escrita del docente |
+| Integridad del repositorio | Claude (Anthropic) | Deteccion de que el manifiesto de sumas verificaba en la maquina local pero habria fallado sobre un clon limpio, y correccion de la normalizacion de fin de linea | Se clono el repositorio desde el remoto y se ejecuto la comprobacion completa: 440 de 440 sumas correctas |
+| Recodificacion de video | Claude (Anthropic) | Ajuste de los videos de la sesion de verificacion y de la exposicion al formato declarado del repositorio | Se comprobo que la duracion del archivo depositado coincide con la del original y que decodifica de principio a fin sin errores |
 
 ## 3. Limites que el equipo se impuso
 

@@ -369,32 +369,90 @@ saturation must include an explicit axial-coding merge step from the start.
 \label{sec:threats}
 % ======================================================================
 
+We report two threats per category following Wohlin et al.'s classification. For
+each we state the mitigation actually applied and the limitation that remains
+after mitigating, rather than closing the discussion at the mitigation.
+
 \subsection{Internal validity}
-The three-judge panel is the dominant threat: with 8.4\% power (Table~\ref{tab:power_calculation}),
-a true medium effect would likely go undetected. Judges' fair inter-rater agreement
-(Fleiss' $\kappa \approx 0.3$) adds measurement noise on top of the small sample.
+
+\textbf{T1. Three-judge panel.} With three judges the design reaches 8.4\% power
+to detect a medium effect (Table~\ref{tab:power_calculation}); a true difference
+would most likely go undetected. \emph{Mitigation:} we compute and report the
+power explicitly, and we add a pre-specified-deviation sensitivity analysis that
+takes the requirement rather than the judge as the unit of analysis, raising
+power to 41.7\% (Sect.~\ref{sec:sensitivity}). \emph{Remaining limitation:}
+41.7\% is still half the conventional 80\% threshold, so a negative result here
+cannot be read as evidence of equivalence.
+
+\textbf{T2. Fair inter-rater agreement.} Fleiss' $\kappa \approx 0.3$
+(Table~\ref{tab:acuerdo}) indicates the judges applied the rubric with only fair
+consistency, adding measurement noise on top of the small sample.
+\emph{Mitigation:} evaluation was blind, the de-blinding key is deposited with
+the replication package, and the agreement statistic is reported rather than
+omitted. \emph{Remaining limitation:} agreement was not improved by training or
+by a reconciliation round, so part of the observed variance is rater variance
+that this design cannot separate from item variance.
 
 \subsection{External validity}
-Findings are specific to one system, one institutional domain, one LLM configuration,
-and Spanish-language interview transcripts from Ecuador; they do not generalize to
-other domains, languages, or models without replication.
+
+\textbf{T3. Single setting.} Findings come from one system, one institutional
+domain, one LLM configuration and Spanish-language transcripts from Ecuador.
+\emph{Mitigation:} the instrument, the prompts, the labelled corpus and the
+anonymised transcripts are deposited under CC BY 4.0, so the study can be
+repeated in another setting without contacting the authors.
+\emph{Remaining limitation:} no replication has been carried out, so
+transferability is an argument about available materials and not an empirical
+claim.
+
+\textbf{T4. Field work closed below target.} Elicitation closed at ten valid
+interviews, short of the target for the study, which narrows the base from which
+the human-elicited set was produced. \emph{Mitigation:} the shortfall is declared
+in writing with its date and circumstances, together with a signed record of the
+instruction under which the field was closed. \emph{Remaining limitation:} the
+three participant profiles are represented, but thinly; a requirement that only a
+non-sampled role would have raised cannot appear in either set, and this affects
+both arms equally rather than favouring one.
 
 \subsection{Construct validity}
-Two threats compound here. First, the LLM had partial prior exposure to Set~B
-(human-elicited requirements) within the same chat session used to generate Set~A,
-documented in \texttt{06\_Experimento/prompts\_llm/prompt\_llm\_conjunto\_A.md}.
-Second, the source corpus fed to the LLM (11 interviews) is not identical to the
-corpus that ultimately backs the human-elicited set after EV-15's exclusion (10
-interviews); the paired design's core assumption of a shared source material is
-therefore only approximately, not exactly, satisfied (Sect.~\ref{sec:deviations}).
+
+\textbf{T5. Prior exposure of the model.} The LLM had partial prior exposure to
+Set~B within the same session used to generate Set~A, documented in
+\texttt{06\_Experimento/prompts\_llm/prompt\_llm\_conjunto\_A.md}.
+\emph{Mitigation:} the exposure is recorded verbatim in the prompt file and
+declared as a deviation from the registered protocol rather than being described
+after the fact. \emph{Remaining limitation:} the contamination cannot be undone
+without regenerating Set~A in a clean session, which is listed as future work;
+until then, any advantage measured for the LLM may be partly an artefact of
+having seen the comparison set.
+
+\textbf{T6. Non-identical source corpora.} The corpus fed to the LLM comprises
+eleven interviews, while the corpus backing the human-elicited set comprises ten
+after EV-15 was excluded for withdrawal of consent (Sect.~\ref{sec:deviations}).
+\emph{Mitigation:} the mismatch is quantified and declared, and the excluded
+material was removed from the deposited package rather than silently retained.
+\emph{Remaining limitation:} the paired design assumes a shared source, and that
+assumption is therefore satisfied only approximately; the pairing remains valid
+at the item level but not at the corpus level.
 
 \subsection{Conclusion validity}
-The wide bootstrap confidence intervals and the failure to reach thematic saturation
-both stem from the same root cause: small $N$. We mitigate by reporting the explicit
-power calculation (Table~\ref{tab:power_calculation}) rather than either omitting the saturation
-failure or presenting the point estimates without their intervals.
 
-% ======================================================================
+\textbf{T7. Wide interval estimates.} Bootstrap confidence intervals for every
+effect size cross zero, so the direction of the effect is not established.
+\emph{Mitigation:} we report intervals alongside point estimates and refuse to
+interpret the numerically favourable trend as a finding.
+\emph{Remaining limitation:} with this sample the study cannot distinguish
+absence of an effect from an effect it lacks the power to detect, and we state
+the result as inconclusive rather than negative.
+
+\textbf{T8. Multiple comparisons.} Testing five quality dimensions inflates the
+family-wise error rate; before correction, internal consistency reached
+$p = 0.012$ and would have been reported as significant. \emph{Mitigation:}
+Holm--Bonferroni correction is applied and both the uncorrected and the corrected
+$p$ values are reported, so the reader can see what the correction changed.
+\emph{Remaining limitation:} the correction lowers power further, compounding T1;
+with five dimensions and this sample size, only a large effect could have
+survived it.
+
 \section{Conclusions and Future Work}
 % ======================================================================
 

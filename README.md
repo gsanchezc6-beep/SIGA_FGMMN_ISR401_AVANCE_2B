@@ -35,15 +35,36 @@ evaluados a ciegas por tres jueces independientes en cinco dimensiones de calida
 
 ## 2. Integrantes y roles
 
-| Integrante | Rol | Correo institucional |
-|---|---|---|
-| Sanchez Cornejo, Gary Alberto | Analista lider · componente empirico · integracion | gsanchezc6@uteq.edu.ec |
-| Munoz Quinonez, Yeranick Esther | Documentacion, trazabilidad y gestion de evidencias | ymunozq@uteq.edu.ec |
+| Integrante | Rol | Correo institucional | ORCID |
+|---|---|---|---|
+| Sanchez Cornejo, Gary Alberto | Analista lider · componente empirico · integracion | gsanchezc6@uteq.edu.ec | pendiente de registro |
+| Munoz Quinonez, Yeranick Esther | Documentacion, trazabilidad y gestion de evidencias | ymunozq@uteq.edu.ec | pendiente de registro |
+
+> **Sobre los ORCID.** El apartado 9.2 de la guia los exige. Ninguno de los dos integrantes
+> tiene identificador ORCID a la fecha de esta entrega. Se declara el hueco en lugar de
+> dejar la columna fuera de la tabla; el registro es gratuito y queda como tarea previa al
+> examen final.
 
 Docente responsable: Ing. Gleiston Guerrero Ulloa.
 
 El aporte de cada integrante, con el identificador del commit que lo respalda, se
 declara en [`04_Trazabilidad/aporte_individual.csv`](04_Trazabilidad/aporte_individual.csv).
+
+### Entregas anteriores del proyecto
+
+El historial de **este** repositorio comienza el 2026-08-30, cuando se reorganizo el arbol
+para la Entrega Final. La trazabilidad acumulada del proyecto no vive aqui: se reparte entre
+los repositorios de cada entrega, que se enlazan para que la cadena 1A a 2B pueda auditarse
+sin depender de la memoria de nadie.
+
+| Entrega | Repositorio |
+|---|---|
+| Entrega 3 (2A) --- Especificacion y modelado | <https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2A> |
+| Entrega Final (2B) --- esta | <https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B> |
+
+Los artefactos de las entregas anteriores que siguen vigentes se incorporaron a este
+repositorio y su evolucion consta en `CHANGELOG.md`. Los que quedaron superados permanecen
+solo en el repositorio de su entrega.
 
 ---
 
@@ -57,6 +78,9 @@ declara en [`04_Trazabilidad/aporte_individual.csv`](04_Trazabilidad/aporte_indi
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
 | Autoevaluacion FAIR | `fair_assessment.pdf` --- 21 de 26 indicadores, **80,8 %** |
 | Manuscrito | `07_Publicacion/manuscrito_final.pdf` |
+| Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 130 paginas |
+| **Curva de saturacion tematica** | [`02_Evidencias/Codificacion_Tematica/curva_saturacion.png`](02_Evidencias/Codificacion_Tematica/curva_saturacion.png) · datos en `saturacion_por_entrevista.csv` · insertada en el manuscrito, Fig. 4 |
+| **Calculo de potencia** | [`06_Experimento/resultados/power_calculation.csv`](06_Experimento/resultados/power_calculation.csv) · script `scripts_analisis/power_calculation.py` · tabla en el manuscrito, `tabla_power_calculation.tex` |
 
 **Cita recomendada del paquete de datos:**
 
