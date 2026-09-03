@@ -23,7 +23,7 @@ sección del repositorio principal).
   ID_evidencia (código de entrevista), Analista_codificador.
 - `corpus_rf_rnf_etiquetado.json` — Corpus de RF/RNF etiquetado (`proyecto`,
   `n_requisitos`, `requisitos`) usado como insumo del componente empírico.
-- `matriz_trazabilidad.csv` — **66 filas**. Columnas: Ley, Articulo, Objetivo,
+- `matriz_trazabilidad.csv` — **74 filas**. Columnas: Ley, Articulo, Objetivo,
   Stakeholder, ID-EV, ID-RF, Tipo, ID-CU, ID-HU, ID-CA, ID-Componente,
   ID-Mockup.
 - `priorizacion_moscow_kano.csv` — Prioridad MoSCoW, resultados WSJF (17 filas

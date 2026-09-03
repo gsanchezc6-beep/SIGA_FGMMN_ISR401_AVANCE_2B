@@ -12,12 +12,12 @@
 %  toda figura se insertan desde 07_Publicacion/, regeneradas por `make all`.
 %  El orden de las secciones es el que fija la seccion 10 de la guia.
 % ============================================================================
-\documentclass[11pt,letterpaper]{article}
+\documentclass[11pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish,es-tabla]{babel}
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[a4paper,margin=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{longtable}
@@ -653,13 +653,17 @@ una correcci\'on de redacci\'on.
 
 \subsection{Trazabilidad extremo a extremo}
 
-La matriz de trazabilidad contiene \textbf{66 filas}, por encima de las
+La matriz de trazabilidad contiene \textbf{74 filas}, por encima de las
 \textbf{60} que exige el criterio, y sin una sola celda vac\'ia. De ellas,
-\textbf{28 cierran la cadena de extremo a extremo}; las 38 restantes se declaran una
+\textbf{34 cierran la cadena de extremo a extremo}; las 40 restantes se declaran una
 a una con su causa en \texttt{04\_Trazabilidad/huerfanos\_y\_cadenas\_rotas.md}:
 quince son hu\'erfanas porque el requisito nace de an\'alisis normativo y no de campo,
-doce est\'an parciales a falta de un eslab\'on hacia adelante, y once son restricciones
-de dise\~no, que no se verifican por caso de prueba sino por revisi\'on. Cada fila enlaza la evidencia de campo de la que procede el requisito
+catorce est\'an parciales a falta de un eslab\'on hacia adelante, y once son restricciones
+de dise\~no, que no se verifican por caso de prueba sino por revisi\'on.
+Las ocho filas m\'as recientes corresponden a los requisitos no funcionales del
+componente inteligente (RNF-IA-01 a RNF-IA-08), cada uno con su m\'etrica, unidad,
+umbral, m\'etodo de verificaci\'on, responsable y frecuencia de medici\'on, seg\'un
+exige la secci\'on 8 de la gu\'ia de desarrollo; seis de ellas cierran la cadena. Cada fila enlaza la evidencia de campo de la que procede el requisito
 con el requisito mismo, los casos de uso que lo realizan, la historia de usuario
 asociada, su criterio de aceptaci\'on, el componente de dise\~no que lo implementa y
 el prototipo de interfaz que lo soporta.

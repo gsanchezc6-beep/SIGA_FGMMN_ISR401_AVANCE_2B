@@ -1,7 +1,9 @@
 # Huerfanos y cadenas rotas de la matriz de trazabilidad
 
 **Proyecto SIGA - Equipo FGMMN - ISR-401 - Universidad Tecnica Estatal de Quevedo**
-Generado el 2026-08-31 sobre `matriz_trazabilidad.csv`, 66 filas y 18 columnas.
+Generado el 2026-08-31 sobre `matriz_trazabilidad.csv`, y actualizado el 2026-09-03
+al anadirse los ocho requisitos no funcionales del componente inteligente: **74 filas**
+y 18 columnas. De ellas, 34 cierran la cadena de extremo a extremo.
 
 La guia exige que los huerfanos y las cadenas rotas se listen **con su causa y su
 accion**, no que no existan. Este documento los enumera uno a uno.

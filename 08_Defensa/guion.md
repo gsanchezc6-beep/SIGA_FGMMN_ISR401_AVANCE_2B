@@ -137,7 +137,7 @@ sin mirar las diapositivas, son:
   desviaciones se declaran en lugar de disimularse.
 - **La potencia del estudio.** Por que un panel de tres jueces da una potencia de 0,084, que
   significa eso, y por que se reporta en lugar de omitirlo.
-- **La matriz de trazabilidad.** Como se cierra una cadena rota y por que las 66 filas no
+- **La matriz de trazabilidad.** Como se cierra una cadena rota y por que las 74 filas no
   tienen ninguna celda vacia.
 - **El cierre en diez entrevistas.** Que se declara, que respaldo hay, y cual es el efecto
   reconocido sobre la validez externa.

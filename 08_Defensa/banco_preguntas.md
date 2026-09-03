@@ -77,16 +77,23 @@ implementan los componentes SensorIoT y LecturaSensor.
 → `04_Trazabilidad/matriz_trazabilidad.csv`, fila 1
 
 **C3. ¿Su matriz esta completa?**
-Completa en filas, no en cadenas, y conviene decirlo en ese orden. Son **66 filas** sobre
+Completa en filas, no en cadenas, y conviene decirlo en ese orden. Son **74 filas** sobre
 las **60** que pide el criterio, con **cero celdas vacias** y las cuatro columnas que
 faltaban -clase, proceso, caso de prueba y estado de la traza- ya anadidas: la matriz paso
 de 13 a 18 columnas. El **92 %** de los requisitos, 23 de 25, tiene la cadena hacia
 adelante completa; antes era 12 de 25.
 
-Ahora la parte incomoda, por si la preguntan: de las 66 filas, **28 cierran la cadena
-entera**. Las otras 38 no se esconden, se clasifican: quince huerfanas -el requisito nace
-de la ley, no de una entrevista-, doce parciales y once restricciones de diseno, que se
+Ahora la parte incomoda, por si la preguntan: de las 74 filas, **34 cierran la cadena
+entera**. Las otras 40 no se esconden, se clasifican: quince huerfanas -el requisito nace
+de la ley, no de una entrevista-, catorce parciales y once restricciones de diseno, que se
 verifican por revision y no por caso de prueba. Cada una con su causa y su accion.
+
+Las ocho ultimas filas son los requisitos no funcionales del componente inteligente,
+RNF-IA-01 a RNF-IA-08. Antes el componente de IA estaba descrito en el texto pero no
+especificado como requisito: la palabra monitoreo aparecia 41 veces en el ERS y no habia
+un solo umbral asociado. Ahora cada uno tiene metrica, unidad, umbral, metodo de
+verificacion, responsable y frecuencia, y esta en la matriz con su elemento de diseno y su
+caso de prueba.
 → auditoria de calidad, seccion 5
 
 **C4. ¿Que pasa si cambia un requisito?**
