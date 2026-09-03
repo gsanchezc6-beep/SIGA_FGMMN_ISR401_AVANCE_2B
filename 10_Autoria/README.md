@@ -15,7 +15,7 @@ Este README declara el estado real de cada elemento. Lo que falta figura como fa
 
 | Cod. | Elemento | Estado | Nota |
 |---|---|---|---|
-| A1 | `bitacora_sesiones.csv` | **Depositado** | Derivado del historial por `generar_bitacora.py`. 8 sesiones sobre los 5 dias con commits |
+| A1 | `bitacora_sesiones.csv` | **Depositado** | Derivado del historial por `generar_bitacora.py`. Una fila por persona y dia con commits |
 | A2 | `capturas/` | **Pendiente** | Minimo tres por integrante. No se pueden producir a posteriori de forma creible |
 | A3 | Fuentes editables | **Depositado** | En el propio arbol, junto a cada imagen exportada. Inventario en `fuentes_editables.md` |
 | A4 | `grabaciones/` | **Pendiente** | Dos sesiones de trabajo del equipo, de 10 a 15 minutos, con pantalla compartida |
@@ -24,7 +24,7 @@ Este README declara el estado real de cada elemento. Lo que falta figura como fa
 | A7 | `doble_codificacion/` | **Pendiente** | Hasta el 2026-09-02 el equipo eran dos personas y una de ellas hizo toda la codificacion; con la reincorporacion vuelve a ser posible que la hagan dos integrantes distintos |
 | A8 | `correspondencia/` | **Pendiente** | Solicitudes, autorizaciones y confirmaciones de cita, fechadas |
 | A9 | `declaracion_uso_ia.md` | **Depositado** | Por seccion, incluidas las secciones en las que no se empleo ninguna herramienta |
-| A10 | `aporte_individual.md` | **Parcial** | Los datos estan en `04_Trazabilidad/aporte_individual.csv`, con una fila por commit. Falta la version firmada |
+| A10 | `aporte_individual.md` | **Depositado, sin firmar** | Generado desde el historial por `04_Trazabilidad/generar_aporte_individual.py`. Lleva el bloque de firmas; falta imprimirlo y firmarlo |
 | A11 | `exif_inventario.csv` | **Pendiente** | Depende de A6: solo se puede generar si las fotografias conservan sus metadatos |
 | A12 | `.mailmap` | **Depositado** | En la raiz del repositorio, que es donde Git lo lee |
 

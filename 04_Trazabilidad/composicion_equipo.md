@@ -26,7 +26,7 @@ comprobable con `git shortlog -sne main`:
 
 | Autor del historial | Commits | Correo de la firma | Situacion |
 |---|---|---|---|
-| Gary Alberto Sanchez Cornejo | 65 | gsanchezc6@uteq.edu.ec | Acreditado |
+| Gary Alberto Sanchez Cornejo | 68 | gsanchezc6@uteq.edu.ec | Acreditado |
 | Yeranick Esther Munoz Quinonez | 55 | ymunozq@uteq.edu.ec | Acreditado |
 | Winston Damian Cedeno Avila | 0 | wcedenoa2@uteq.edu.ec | **Incorporado el 2026-09-02; sus confirmaciones empiezan con la ronda terminal** |
 
