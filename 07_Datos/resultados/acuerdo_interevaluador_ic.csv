@@ -1,0 +1,21 @@
+criterio,medida,jueces,n_items,valor,IC95_inferior,IC95_superior,n_bootstrap,semilla
+Completitud(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez2,51,0.4738,0.3114,0.6098,10000,20260802
+Completitud(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez3,51,0.6457,0.5241,0.7511,10000,20260802
+Completitud(1-5),Kappa de Cohen con ponderacion lineal,juez2-juez3,51,0.4205,0.2307,0.5894,10000,20260802
+Completitud(1-5),Kappa de Fleiss,los tres,51,0.3382,0.1968,0.4671,10000,20260802
+Ausencia_ambiguedad(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez2,51,0.6538,0.5092,0.7696,10000,20260802
+Ausencia_ambiguedad(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez3,51,0.5487,0.3962,0.6788,10000,20260802
+Ausencia_ambiguedad(1-5),Kappa de Cohen con ponderacion lineal,juez2-juez3,51,0.4944,0.3195,0.6348,10000,20260802
+Ausencia_ambiguedad(1-5),Kappa de Fleiss,los tres,51,0.3403,0.2054,0.4603,10000,20260802
+Verificabilidad(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez2,51,0.6457,0.5167,0.7553,10000,20260802
+Verificabilidad(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez3,51,0.5499,0.4044,0.6732,10000,20260802
+Verificabilidad(1-5),Kappa de Cohen con ponderacion lineal,juez2-juez3,51,0.4192,0.2574,0.5572,10000,20260802
+Verificabilidad(1-5),Kappa de Fleiss,los tres,51,0.2958,0.171,0.407,10000,20260802
+Correccion_fuente(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez2,51,0.4436,0.2585,0.6151,10000,20260802
+Correccion_fuente(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez3,51,0.3959,0.2277,0.5565,10000,20260802
+Correccion_fuente(1-5),Kappa de Cohen con ponderacion lineal,juez2-juez3,51,0.3159,0.0842,0.5248,10000,20260802
+Correccion_fuente(1-5),Kappa de Fleiss,los tres,51,0.2942,0.1431,0.4377,10000,20260802
+Consistencia_interna(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez2,51,0.5768,0.4,0.736,10000,20260802
+Consistencia_interna(1-5),Kappa de Cohen con ponderacion lineal,juez1-juez3,51,0.4667,0.2714,0.6284,10000,20260802
+Consistencia_interna(1-5),Kappa de Cohen con ponderacion lineal,juez2-juez3,51,0.2943,0.0852,0.491,10000,20260802
+Consistencia_interna(1-5),Kappa de Fleiss,los tres,51,0.3329,0.1706,0.4799,10000,20260802

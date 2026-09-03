@@ -1,0 +1,73 @@
+================================================================================
+LICENCIA DE LOS DATOS - Paquete 07_Datos del Proyecto SIGA
+Equipo FGMMN . Universidad Tecnica Estatal de Quevedo (UTEQ)
+Ingenieria de Requisitos (ISR-401)
+================================================================================
+
+Esta licencia se aplica a TODO el contenido de la carpeta 07_Datos: los datos
+crudos, los datos procesados, los resultados, el diccionario de datos y la
+documentacion del paquete.
+
+Es DISTINTA de la licencia del codigo del proyecto. El codigo se distribuye bajo
+Apache-2.0; los datos, bajo la licencia que consta aqui. El alcance de cada una
+se declara en el archivo LICENSE de la raiz del repositorio.
+
+--------------------------------------------------------------------------------
+1. LICENCIA APLICABLE
+--------------------------------------------------------------------------------
+
+Creative Commons Atribucion 4.0 Internacional (CC BY 4.0)
+
+Texto completo:  https://creativecommons.org/licenses/by/4.0/legalcode.es
+Resumen:         https://creativecommons.org/licenses/by/4.0/deed.es
+
+Usted es libre de compartir y adaptar este material para cualquier finalidad,
+incluso comercial, siempre que reconozca la autoria.
+
+--------------------------------------------------------------------------------
+2. COMO ATRIBUIR
+--------------------------------------------------------------------------------
+
+Cita recomendada:
+
+  Sanchez Cornejo, G. A., Munoz Quinonez, Y. E. y Cedeno Avila, W. D. (2026).
+  Paquete de datos del componente empirico del proyecto SIGA: evaluacion ciega
+  de requisitos de procedencia humana y generada por modelo de lenguaje.
+  Universidad Tecnica Estatal de Quevedo. https://doi.org/10.5281/zenodo.22137679
+
+--------------------------------------------------------------------------------
+3. LO QUE ESTA LICENCIA NO CUBRE
+--------------------------------------------------------------------------------
+
+No cubre el material que contiene datos personales y que, por esa razon, no se
+publica: consentimientos firmados con datos identificables, originales de camara
+sin enmascarar, el registro de custodia codigo-participante y la tabla de
+desciego. Ese material se conserva en el contenedor cifrado descrito en
+02_Evidencias/00_Restringido/README_Restringido.md y su acceso esta restringido
+al equipo de investigacion y al docente responsable.
+
+No cubre el codigo fuente del prototipo ni los scripts de analisis, sujetos a
+Apache-2.0.
+
+--------------------------------------------------------------------------------
+4. BASE DE LICITUD DEL TRATAMIENTO
+--------------------------------------------------------------------------------
+
+El tratamiento de los datos personales que dieron origen a este paquete se
+ajusta a la Ley Organica de Proteccion de Datos Personales del Ecuador
+(Registro Oficial Suplemento No. 459 de 26 de mayo de 2021).
+
+  Base de licitud    Consentimiento informado, expreso y por escrito de cada
+                     participante, con codigo de sesion que lo vincula a su
+                     evidencia.
+  Finalidad          Identificar y justificar los requisitos de un sistema de
+                     gestion de aulas, en el marco de la asignatura ISR-401.
+  Plazo              Los datos identificables se conservan hasta el cierre del
+                     periodo academico 2026-2027 PPA y luego se destruyen. La
+                     capa anonimizada, publicada bajo esta licencia, no tiene
+                     plazo de conservacion por no contener datos personales.
+  Responsables       Sanchez Cornejo, Gary Alberto  gsanchezc6@uteq.edu.ec
+                     Munoz Quinonez, Yeranick Esther  ymunozq@uteq.edu.ec
+                     Cedeno Avila, Winston Damian  wcedenoa2@uteq.edu.ec
+  Derechos           Acceso, rectificacion, supresion y oposicion, ejercitables
+                     por escrito ante la direccion de correo del responsable.

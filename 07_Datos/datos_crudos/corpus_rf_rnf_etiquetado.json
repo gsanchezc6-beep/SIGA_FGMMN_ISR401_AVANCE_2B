@@ -1,0 +1,660 @@
+{
+    "proyecto":  "SIGA",
+    "n_requisitos":  26,
+    "requisitos":  [
+                       {
+                           "id":  "RD-02",
+                           "tipo":  "RD",
+                           "objetivo":  "Detectar ausencia de conectividad como riesgo critico del sistema",
+                           "stakeholder":  "Docente",
+                           "casos_uso":  [
+                                             "CU-01"
+                                         ],
+                           "evidencias":  [
+                                              "EV-13",
+                                              "EV-14"
+                                          ],
+                           "componentes":  [
+                                               "GatewayIoT"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  null
+                       },
+                       {
+                           "id":  "RF-01",
+                           "tipo":  "RF",
+                           "objetivo":  "Monitorear el estado ambiental del aula",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-01",
+                                             "CU-03"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "SensorIoT",
+                                               "LecturaSensor"
+                                           ],
+                           "mockups":  [
+                                           "MU-01"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "9",
+                                                "justificacion":  "Funcion nucleo del sistema; sin lectura ambiental no existe monitoreo ni alertas"
+                                            }
+                       },
+                       {
+                           "id":  "RF-02",
+                           "tipo":  "RF",
+                           "objetivo":  "Controlar remotamente los dispositivos del aula",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-02"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "GatewayIoT",
+                                               "Equipo"
+                                           ],
+                           "mockups":  [
+                                           "MU-01"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "9",
+                                                "justificacion":  "Segunda funcion nucleo; es el valor directo percibido por docentes y personal de TI"
+                                            }
+                       },
+                       {
+                           "id":  "RF-03",
+                           "tipo":  "RF",
+                           "objetivo":  "Detectar automaticamente la ocupacion del aula",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-03"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "SensorIoT",
+                                               "Aula"
+                                           ],
+                           "mockups":  [
+                                           "MU-01"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Habilita el apagado automatico y la deteccion de anomalias de ocupacion"
+                                            }
+                       },
+                       {
+                           "id":  "RF-04",
+                           "tipo":  "RF",
+                           "objetivo":  "Controlar remotamente los proyectores",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento;Docente;Estudiantes",
+                           "casos_uso":  [
+                                             "CU-01",
+                                             "CU-02"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01",
+                                              "EV-02",
+                                              "EV-03"
+                                          ],
+                           "componentes":  [
+                                               "Proyector"
+                                           ],
+                           "mockups":  [
+                                           "MU-01"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Caso concreto de RF-02 sobre el equipo mas usado en aula"
+                                            }
+                       },
+                       {
+                           "id":  "RF-05",
+                           "tipo":  "RF",
+                           "objetivo":  "Ajustar remotamente la climatizacion",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento;Estudiantes",
+                           "casos_uso":  [
+                                             "CU-01",
+                                             "CU-02"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01",
+                                              "EV-03"
+                                          ],
+                           "componentes":  [
+                                               "Climatizador"
+                                           ],
+                           "mockups":  [
+                                           "MU-01"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "7",
+                                                "justificacion":  "Impacto directo en confort y en consumo energetico"
+                                            }
+                       },
+                       {
+                           "id":  "RF-06",
+                           "tipo":  "RF",
+                           "objetivo":  "Integrar el sistema con la videovigilancia existente",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-15"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01",
+                                              "EV-08"
+                                          ],
+                           "componentes":  [
+                                               "CamaraVigilancia"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Should",
+                                                "kano":  "Entusiasmo",
+                                                "wsjf":  "5",
+                                                "justificacion":  "Aprovecha infraestructura instalada; no bloquea el nucleo si se posterga"
+                                            }
+                       },
+                       {
+                           "id":  "RF-07",
+                           "tipo":  "RF",
+                           "objetivo":  "Consultar un panel de control centralizado",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento;Docente;Estudiantes",
+                           "casos_uso":  [
+                                             "CU-01"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01",
+                                              "EV-02",
+                                              "EV-03",
+                                              "EV-08",
+                                              "EV-10",
+                                              "EV-16"
+                                          ],
+                           "componentes":  [
+                                               "Aula",
+                                               "Equipo"
+                                           ],
+                           "mockups":  [
+                                           "MU-01"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "9",
+                                                "justificacion":  "Punto unico de acceso; es la interfaz principal de todos los actores humanos"
+                                            }
+                       },
+                       {
+                           "id":  "RF-08",
+                           "tipo":  "RF",
+                           "objetivo":  "Generar y enviar alertas por anomalias",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento;Estudiantes",
+                           "casos_uso":  [
+                                             "CU-04",
+                                             "CU-05"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01",
+                                              "EV-03"
+                                          ],
+                           "componentes":  [
+                                               "Alerta"
+                                           ],
+                           "mockups":  [
+                                           "MU-02"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "9",
+                                                "justificacion":  "Convierte el monitoreo pasivo en accion; nucleo de la propuesta de valor"
+                                            }
+                       },
+                       {
+                           "id":  "RF-09",
+                           "tipo":  "RF",
+                           "objetivo":  "Predecir fallos de equipos mediante IA",
+                           "stakeholder":  "Docente",
+                           "casos_uso":  [
+                                             "CU-16"
+                                         ],
+                           "evidencias":  [
+                                              "EV-02"
+                                          ],
+                           "componentes":  [
+                                               "Equipo"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Should",
+                                                "kano":  "Entusiasmo",
+                                                "wsjf":  "4",
+                                                "justificacion":  "Diferenciador competitivo pero depende de historico que aun no existe"
+                                            }
+                       },
+                       {
+                           "id":  "RF-10",
+                           "tipo":  "RF",
+                           "objetivo":  "Registrar el historial de fallas y mantenimientos",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-08"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "SolicitudMantenimiento"
+                                           ],
+                           "mockups":  [
+                                           "MU-03"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "7",
+                                                "justificacion":  "Insumo obligatorio para reportes y para el modelo predictivo"
+                                            }
+                       },
+                       {
+                           "id":  "RF-11",
+                           "tipo":  "RF",
+                           "objetivo":  "Notificar de forma inmediata las fallas criticas",
+                           "stakeholder":  "Docente;Estudiantes",
+                           "casos_uso":  [
+                                             "CU-04",
+                                             "CU-05"
+                                         ],
+                           "evidencias":  [
+                                              "EV-02",
+                                              "EV-03"
+                                          ],
+                           "componentes":  [
+                                               "Alerta"
+                                           ],
+                           "mockups":  [
+                                           "MU-02"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "8",
+                                                "justificacion":  "La utilidad de una alerta depende de su inmediatez"
+                                            }
+                       },
+                       {
+                           "id":  "RF-12",
+                           "tipo":  "RF",
+                           "objetivo":  "Gestionar las solicitudes de mantenimiento",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento;Docente;Estudiantes",
+                           "casos_uso":  [
+                                             "CU-06",
+                                             "CU-07"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01",
+                                              "EV-02",
+                                              "EV-03",
+                                              "EV-11",
+                                              "EV-14",
+                                              "EV-16"
+                                          ],
+                           "componentes":  [
+                                               "SolicitudMantenimiento"
+                                           ],
+                           "mockups":  [
+                                           "MU-03"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Cierra el ciclo entre deteccion de la anomalia y su resolucion fisica"
+                                            }
+                       },
+                       {
+                           "id":  "RF-13",
+                           "tipo":  "RF",
+                           "objetivo":  "Controlar automaticamente el apagado energetico",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-13"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "Equipo"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Principal fuente de ahorro medible para la facultad"
+                                            }
+                       },
+                       {
+                           "id":  "RF-14",
+                           "tipo":  "RF",
+                           "objetivo":  "Analizar patrones de consumo energetico",
+                           "stakeholder":  "Docente",
+                           "casos_uso":  [
+                                             "CU-16"
+                                         ],
+                           "evidencias":  [
+                                              "EV-02"
+                                          ],
+                           "componentes":  [
+                                               "ConsumoEnergetico"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Should",
+                                                "kano":  "Entusiasmo",
+                                                "wsjf":  "5",
+                                                "justificacion":  "Sustenta decisiones de inversion pero no es operativo del dia a dia"
+                                            }
+                       },
+                       {
+                           "id":  "RF-15",
+                           "tipo":  "RF",
+                           "objetivo":  "Programar horarios automatizados de encendido/apagado",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-13"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "HorarioAcademico"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "7",
+                                                "justificacion":  "Automatiza el ahorro sin intervencion humana"
+                                            }
+                       },
+                       {
+                           "id":  "RF-16",
+                           "tipo":  "RF",
+                           "objetivo":  "Apagar automaticamente equipos de aulas desocupadas",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-03",
+                                             "CU-13"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "Aula",
+                                               "Equipo"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Combina ocupacion y control; es el escenario de ahorro mas frecuente"
+                                            }
+                       },
+                       {
+                           "id":  "RF-17",
+                           "tipo":  "RF",
+                           "objetivo":  "Generar reportes estadisticos periodicos",
+                           "stakeholder":  "Docente",
+                           "casos_uso":  [
+                                             "CU-09"
+                                         ],
+                           "evidencias":  [
+                                              "EV-02"
+                                          ],
+                           "componentes":  [
+                                               "ReporteAdministrativo"
+                                           ],
+                           "mockups":  [
+                                           "MU-04"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Should",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "6",
+                                                "justificacion":  "Necesario para autoridades pero posterior a la operacion basica"
+                                            }
+                       },
+                       {
+                           "id":  "RF-18",
+                           "tipo":  "RF",
+                           "objetivo":  "Exportar reportes en PDF y Excel",
+                           "stakeholder":  "Docente",
+                           "casos_uso":  [
+                                             "CU-10"
+                                         ],
+                           "evidencias":  [
+                                              "EV-02"
+                                          ],
+                           "componentes":  [
+                                               "ReporteAdministrativo"
+                                           ],
+                           "mockups":  [
+                                           "MU-04"
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Should",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "5",
+                                                "justificacion":  "Extiende RF-17; util para presentar resultados fuera del sistema"
+                                            }
+                       },
+                       {
+                           "id":  "RF-19",
+                           "tipo":  "RF",
+                           "objetivo":  "Gestionar acceso diferenciado por roles",
+                           "stakeholder":  "Docente",
+                           "casos_uso":  [
+                                             "CU-11"
+                                         ],
+                           "evidencias":  [
+                                              "EV-02"
+                                          ],
+                           "componentes":  [
+                                               "Usuario",
+                                               "Rol"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "9",
+                                                "justificacion":  "Prerrequisito de seguridad; sin roles no se puede operar en produccion"
+                                            }
+                       },
+                       {
+                           "id":  "RF-20",
+                           "tipo":  "RF",
+                           "objetivo":  "Registrar el historial de ocupacion de aulas",
+                           "stakeholder":  "Docente",
+                           "casos_uso":  [
+                                             "CU-01",
+                                             "CU-08"
+                                         ],
+                           "evidencias":  [
+                                              "EV-02"
+                                          ],
+                           "componentes":  [
+                                               "Aula",
+                                               "LecturaSensor"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "6",
+                                                "justificacion":  "Base para analitica de uso y para justificar reasignacion de espacios"
+                                            }
+                       },
+                       {
+                           "id":  "RF-21",
+                           "tipo":  "RF",
+                           "objetivo":  "Notificar equipos encendidos fuera de horario",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-04",
+                                             "CU-13"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "Alerta",
+                                               "Equipo"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Rendimiento",
+                                                "wsjf":  "7",
+                                                "justificacion":  "Detecta el desperdicio energetico que motivo el proyecto"
+                                            }
+                       },
+                       {
+                           "id":  "RF-22",
+                           "tipo":  "RF",
+                           "objetivo":  "Monitorear la conectividad de la red IoT",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento",
+                           "casos_uso":  [
+                                             "CU-12"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01"
+                                          ],
+                           "componentes":  [
+                                               "GatewayIoT"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Sin conectividad verificable ningun dato del sistema es confiable"
+                                            }
+                       },
+                       {
+                           "id":  "RF-23",
+                           "tipo":  "RF",
+                           "objetivo":  "Registrar bitacora de acciones de usuario",
+                           "stakeholder":  "Personal de Infraestructura y Mantenimiento;Docente",
+                           "casos_uso":  [
+                                             "CU-14"
+                                         ],
+                           "evidencias":  [
+                                              "EV-01",
+                                              "EV-02"
+                                          ],
+                           "componentes":  [
+                                               "BitacoraAccion"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "7",
+                                                "justificacion":  "Trazabilidad y auditoria; exigido para operacion institucional"
+                                            }
+                       },
+                       {
+                           "id":  "RF-24",
+                           "tipo":  "RF",
+                           "objetivo":  "Exportar los datos personales del usuario a solicitud",
+                           "stakeholder":  "Docente;Coordinacion",
+                           "casos_uso":  [
+                                             "CU-11"
+                                         ],
+                           "evidencias":  [
+
+                                          ],
+                           "componentes":  [
+                                               "Usuario"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Obligacion legal bajo la Ley Organica de Proteccion de Datos Personales del Ecuador"
+                                            }
+                       },
+                       {
+                           "id":  "RF-25",
+                           "tipo":  "RF",
+                           "objetivo":  "Rectificar los datos personales del usuario",
+                           "stakeholder":  "Docente;Coordinacion",
+                           "casos_uso":  [
+                                             "CU-11"
+                                         ],
+                           "evidencias":  [
+
+                                          ],
+                           "componentes":  [
+                                               "Usuario"
+                                           ],
+                           "mockups":  [
+
+                                       ],
+                           "priorizacion":  {
+                                                "moscow":  "Must",
+                                                "kano":  "Basico",
+                                                "wsjf":  "8",
+                                                "justificacion":  "Obligacion legal bajo la Ley Organica de Proteccion de Datos Personales del Ecuador"
+                                            }
+                       }
+                   ]
+}
