@@ -1,0 +1,64 @@
+# Evidencia de autoria y de trabajo propio
+
+**Proyecto SIGA · Equipo FGMMN · ISR-401 · Universidad Tecnica Estatal de Quevedo**
+
+Carpeta exigida por la seccion 6 de la guia de desarrollo emitida el 2026-09-02. Su
+finalidad es que quede acreditado, de forma verificable, que los artefactos entregados
+fueron producidos por las personas que los firman. La guia lo dice sin rodeos: **la ausencia
+de esta evidencia no se suple con una declaracion.**
+
+Este README declara el estado real de cada elemento. Lo que falta figura como faltante.
+
+---
+
+## Estado de los doce elementos
+
+| Cod. | Elemento | Estado | Nota |
+|---|---|---|---|
+| A1 | `bitacora_sesiones.csv` | **Depositado** | Derivado del historial por `generar_bitacora.py`. 8 sesiones sobre los 5 dias con commits |
+| A2 | `capturas/` | **Pendiente** | Minimo tres por integrante. No se pueden producir a posteriori de forma creible |
+| A3 | Fuentes editables | **Depositado** | En el propio arbol, junto a cada imagen exportada. Inventario en `fuentes_editables.md` |
+| A4 | `grabaciones/` | **Pendiente** | Dos sesiones de trabajo del equipo, de 10 a 15 minutos, con pantalla compartida |
+| A5 | `notas_campo/` | **Pendiente** | Notas manuscritas de cada sesion de elicitacion, con la fecha visible. Se capturan en la ronda terminal |
+| A6 | `fotos_equipo/` | **Pendiente** | Con dos integrantes identificables y la fecha en los metadatos |
+| A7 | `doble_codificacion/` | **Pendiente** | Hasta el 2026-09-02 el equipo eran dos personas y una de ellas hizo toda la codificacion; con la reincorporacion vuelve a ser posible que la hagan dos integrantes distintos |
+| A8 | `correspondencia/` | **Pendiente** | Solicitudes, autorizaciones y confirmaciones de cita, fechadas |
+| A9 | `declaracion_uso_ia.md` | **Depositado** | Por seccion, incluidas las secciones en las que no se empleo ninguna herramienta |
+| A10 | `aporte_individual.md` | **Parcial** | Los datos estan en `04_Trazabilidad/aporte_individual.csv`, con una fila por commit. Falta la version firmada |
+| A11 | `exif_inventario.csv` | **Pendiente** | Depende de A6: solo se puede generar si las fotografias conservan sus metadatos |
+| A12 | `.mailmap` | **Depositado** | En la raiz del repositorio, que es donde Git lo lee |
+
+## Las carpetas pendientes y por que no contienen evidencia falsa
+
+`capturas/`, `grabaciones/`, `notas_campo/`, `fotos_equipo/`, `doble_codificacion/` y
+`correspondencia/` estan creadas y **cada una contiene solo un `00_LEEME.md`** que explica
+que material va dentro, con que nombre y con que precauciones.
+
+Conviene decir por que no hay nada mas. El criterio de piso P3 sanciona con cero cualquier
+archivo que anuncie una pieza de evidencia y no la contenga. **Aqui no hay ningun archivo
+de ese tipo.** Un `00_LEEME.md` no anuncia una evidencia: anuncia una instruccion, y la
+contiene. Un archivo llamado `2026-09-03_CONS-05_NotasCampo.pdf` de cero bytes si afirmaria
+que existe una nota de campo que no existe, y eso es lo que el criterio persigue.
+
+Ninguna carpeta se rellena con marcadores de posicion. Cuando el material exista, se
+deposita; mientras no exista, la tabla de arriba lo dice.
+
+## Sobre el ritmo del historial
+
+La guia advierte que un repositorio cuyo trabajo aparece concentrado en uno o dos dias no
+acredita trabajo distribuido en el tiempo, con independencia de la calidad del resultado.
+El equipo lo asume: este repositorio se creo el 2026-08-29 por cambio de rubrica, y el
+motivo, las fechas y el repositorio de origen constan en `CHANGELOG.md`, version `2B-1.7.0`.
+
+A partir de la recepcion de la guia, el trabajo se registra el mismo dia en que se realiza.
+La bitacora de sesiones permite comprobarlo sin leer el historial completo.
+
+## Como se regenera la bitacora
+
+```
+python 10_Autoria/generar_bitacora.py
+```
+
+Ningun campo se escribe a mano. La hora de inicio de cada sesion es la del primer commit de
+esa persona ese dia, y la de fin la del ultimo; el tiempo trabajado antes del primer commit
+no se puede reconstruir desde el historial y por eso no se declara.
