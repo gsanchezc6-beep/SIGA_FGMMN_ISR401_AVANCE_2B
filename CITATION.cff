@@ -64,14 +64,17 @@ authors:
   - family-names: "Sanchez Cornejo"
     given-names: "Gary Alberto"
     email: "gsanchezc6@uteq.edu.ec"
+    orcid: "https://orcid.org/0009-0009-9599-8806"
     affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
   - family-names: "Munoz Quinonez"
     given-names: "Yeranick Esther"
     email: "ymunozq@uteq.edu.ec"
+    orcid: "https://orcid.org/0009-0005-7711-8730"
     affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
   - family-names: "Cedeno Avila"
     given-names: "Winston Damian"
     email: "wcedenoa2@uteq.edu.ec"
+    orcid: "https://orcid.org/0009-0000-6086-6269"
     affiliation: "Facultad de Ciencias de la Computacion, Universidad Tecnica Estatal de Quevedo, Quevedo, Los Rios, Ecuador"
 
 contact:

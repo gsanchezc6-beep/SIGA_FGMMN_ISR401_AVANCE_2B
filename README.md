@@ -37,9 +37,9 @@ evaluados a ciegas por tres jueces independientes en cinco dimensiones de calida
 
 | Integrante | Rol | Correo institucional | ORCID |
 |---|---|---|---|
-| Sanchez Cornejo, Gary Alberto | Analista lider · componente empirico · integracion | gsanchezc6@uteq.edu.ec | pendiente de registro |
-| Munoz Quinonez, Yeranick Esther | Documentacion, trazabilidad y gestion de evidencias | ymunozq@uteq.edu.ec | pendiente de registro |
-| Cedeno Avila, Winston Damian | Transcripcion y anonimizacion del corpus de entrevistas | wcedenoa2@uteq.edu.ec | pendiente de registro |
+| Sanchez Cornejo, Gary Alberto | Analista lider · componente empirico · integracion | gsanchezc6@uteq.edu.ec | [`0009-0009-9599-8806`](https://orcid.org/0009-0009-9599-8806) |
+| Munoz Quinonez, Yeranick Esther | Documentacion, trazabilidad y gestion de evidencias | ymunozq@uteq.edu.ec | [`0009-0005-7711-8730`](https://orcid.org/0009-0005-7711-8730) |
+| Cedeno Avila, Winston Damian | Transcripcion y anonimizacion del corpus de entrevistas | wcedenoa2@uteq.edu.ec | [`0009-0000-6086-6269`](https://orcid.org/0009-0000-6086-6269) |
 
 > **Sobre la composicion.** Cedeno Avila se reincorpora el 2026-09-02 para la ronda terminal
 > de campo. Mendoza Palma, Allan Jeremy, que figuraba en la caratula del SGA, se retiro del
@@ -47,10 +47,10 @@ evaluados a ciegas por tres jueces independientes en cinco dimensiones de calida
 > se declara en
 > [`04_Trazabilidad/composicion_equipo.md`](04_Trazabilidad/composicion_equipo.md).
 
-> **Sobre los ORCID.** El apartado 9.2 de la guia los exige. Ninguno de los tres integrantes
-> tiene identificador ORCID a la fecha de esta entrega. Se declara el hueco en lugar de
-> dejar la columna fuera de la tabla; el registro es gratuito y queda como tarea previa al
-> examen final.
+> **Sobre los ORCID.** El apartado 9.2 de la guia los exige. Los tres integrantes se
+> registraron el 2026-09-03 y sus identificadores constan arriba, cada uno enlazado a su
+> registro publico. Hasta esa fecha el repositorio declaraba el hueco en lugar de omitir la
+> columna.
 
 Docente responsable: Ing. Gleiston Guerrero Ulloa.
 

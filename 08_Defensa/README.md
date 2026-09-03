@@ -7,8 +7,14 @@ Universidad Tecnica Estatal de Quevedo · ISR-401 · Entrega Final (2B)
 
 ## Modalidad
 
-**La defensa fue individual.** Cada integrante expuso el proyecto completo por separado ante
-el tribunal. Ambos integrantes del equipo la rindieron.
+**La defensa fue individual, y la rindieron dos personas.** En la fecha de la defensa el
+equipo lo integraban Sanchez Cornejo y Munoz Quinonez, y cada uno expuso el proyecto completo
+por separado ante el tribunal.
+
+Cedeno Avila se reincorpora al equipo el **2026-09-02**, con posterioridad a la defensa, de
+modo que no la rindio ni figura en el material de esta carpeta. La composicion vigente y la
+fecha de cada alta constan en
+[`../04_Trazabilidad/composicion_equipo.md`](../04_Trazabilidad/composicion_equipo.md).
 
 ## Lo que contiene esta carpeta
 

@@ -8,7 +8,8 @@
 
 La guia contempla dos modalidades de defensa. En la modalidad de equipo, los integrantes se
 reparten los 25 minutos y cada uno habla un minimo de tiempo. **La defensa de esta entrega
-fue individual:** cada integrante expuso el proyecto completo por separado.
+fue individual:** cada uno de los dos integrantes que entonces formaban el equipo expuso el
+proyecto completo por separado.
 
 En consecuencia no existe reparto de tiempos entre personas, y este documento describe la
 distribucion de los 25 minutos **dentro de la exposicion de cada integrante**.

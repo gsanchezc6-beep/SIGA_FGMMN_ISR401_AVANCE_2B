@@ -204,7 +204,7 @@ def _autores(raiz):
     # Cedulas de los integrantes, declaradas por ellos mismos en la caratula
     # y en la composicion del equipo. No son un dato filtrado de un
     # participante, que es lo que este criterio persigue.
-    PROPIAS = {"1208338291", "1207929645"}
+    PROPIAS = {"1208338291", "1207929645", "0942833492"}
     sospechas, propias_vistas = [], 0
     # Las guardas (?<![\\d.]) y (?![\\d.]) descartan fragmentos decimales:
     # una marca de tiempo de Excel como 46231.7374829051 contiene diez
