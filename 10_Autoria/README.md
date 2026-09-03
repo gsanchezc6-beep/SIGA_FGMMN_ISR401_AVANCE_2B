@@ -25,7 +25,7 @@ Este README declara el estado real de cada elemento. Lo que falta figura como fa
 | A8 | `correspondencia/` | **Pendiente** | Solicitudes, autorizaciones y confirmaciones de cita, fechadas |
 | A9 | `declaracion_uso_ia.md` | **Depositado** | Por seccion, incluidas las secciones en las que no se empleo ninguna herramienta |
 | A10 | `aporte_individual.md` | **Depositado, sin firmar** | Generado desde el historial por `04_Trazabilidad/generar_aporte_individual.py`. Lleva el bloque de firmas; falta imprimirlo y firmarlo |
-| A11 | `exif_inventario.csv` | **Pendiente** | Depende de A6: solo se puede generar si las fotografias conservan sus metadatos |
+| A11 | `exif_inventario.csv` | **Pendiente** | Depende de A6. Se genera con `python 10_Autoria/generar_exif.py` |
 | A12 | `.mailmap` | **Depositado** | En la raiz del repositorio, que es donde Git lo lee |
 
 ## Las carpetas pendientes y por que no contienen evidencia falsa
@@ -52,6 +52,32 @@ motivo, las fechas y el repositorio de origen constan en `CHANGELOG.md`, version
 
 A partir de la recepcion de la guia, el trabajo se registra el mismo dia en que se realiza.
 La bitacora de sesiones permite comprobarlo sin leer el historial completo.
+
+## La lista de verificacion previa
+
+La seccion 11 de la guia exige una lista de doce comprobaciones, firmada por una persona
+distinta de quien produjo cada artefacto, depositada como `verificacion_previa.pdf`.
+
+**Las doce se ejecutan, no se marcan a mano:**
+
+```
+python 10_Autoria/verificacion_previa.py --clonar
+```
+
+Con `--clonar`, el script clona el remoto en una carpeta temporal y comprueba alli, que es
+como lo hara el docente. Es la unica forma de detectar lo que solo falla en un clon: fue
+asi como aparecieron, en su dia, tres fallos de integridad que la copia de trabajo no
+mostraba.
+
+El resultado se escribe en `verificacion_previa.md` y de ahi sale el PDF firmable.
+
+**Estado a 2026-09-03: once de doce.** La que falla es la octava, que exige los doce
+elementos A1 a A12 completos, y falla por lo que esta tabla ya declara. Hay que volver a
+ejecutarla, y volver a firmarla, cuando se deposite la evidencia pendiente.
+
+Tres comprobaciones quedan como manuales a proposito, y el documento dice por que: que todo
+numero proceda de un script exige leer los documentos; que la URL abra sin sesion exige un
+navegador sin credenciales; y la busqueda de datos personales da indicios, no pruebas.
 
 ## Como se regenera la bitacora
 
