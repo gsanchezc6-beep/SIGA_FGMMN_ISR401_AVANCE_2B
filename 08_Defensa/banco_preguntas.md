@@ -96,6 +96,22 @@ verificacion, responsable y frecuencia, y esta en la matriz con su elemento de d
 caso de prueba.
 → auditoria de calidad, seccion 5
 
+**C3b. Su matriz cita casos de prueba. ¿Donde estan?**
+Definidos, y hasta el 3 de septiembre no lo estaban: la columna citaba cuarenta y nueve
+identificadores que no correspondian a ningun documento. Lo encontramos nosotros al auditar
+la matriz contra el arbol, y esta corregido en `04_Trazabilidad/casos_prueba.csv`.
+
+Cada caso lleva objetivo, precondicion, procedimiento, resultado esperado y el criterio de
+aceptacion Gherkin que decide si pasa. El catalogo se genera con un script que **falla** si
+la correspondencia con la matriz se rompe en cualquiera de los dos sentidos, de modo que no
+puede volver a desincronizarse sin que alguien lo note.
+
+Y una precision que conviene decir antes de que la pregunten: **ninguno se presenta como
+ejecutado**. Dieciocho son ejecutables hoy sobre el prototipo, porque el MVP implementa el
+requisito; los otros treinta y uno exigen un sistema desplegado. Un catalogo de casos de
+prueba es especificacion, no informe de ejecucion.
+→ `04_Trazabilidad/README_casos_prueba.md`
+
 **C4. ¿Que pasa si cambia un requisito?**
 Afecta en promedio a 5 requisitos, medido sobre cinco casos representativos. El nodo mas
 acoplado es RF-23, la bitacora, porque registra las acciones de siete requisitos.
