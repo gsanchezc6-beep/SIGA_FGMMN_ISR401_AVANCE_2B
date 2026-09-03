@@ -40,8 +40,8 @@ SOLO_CURSO = "Solo ambito del curso"
 # Ronda terminal: seis entrevistas del 2026-09-03. El propio entrevistador
 # confirma que los seis marcaron la primera casilla.
 RONDA_TERMINAL = {
-    "CONS-05": "EV-20", "CONS-06": "EV-21", "DOC-05": "EV-22",
-    "DOC-06": "EV-23", "COORD-04": "EV-24", "COORD-05": "EV-25",
+    "DOC-05": "EV-20", "DOC-06": "EV-21", "DOC-07": "EV-22",
+    "DOC-08": "EV-23", "DOC-09": "EV-24", "DOC-10": "EV-25",
 }
 
 # Entrevistas anteriores: seudonimo -> evidencia, leido de las transcripciones.
