@@ -39,8 +39,15 @@ evaluados a ciegas por tres jueces independientes en cinco dimensiones de calida
 |---|---|---|---|
 | Sanchez Cornejo, Gary Alberto | Analista lider · componente empirico · integracion | gsanchezc6@uteq.edu.ec | pendiente de registro |
 | Munoz Quinonez, Yeranick Esther | Documentacion, trazabilidad y gestion de evidencias | ymunozq@uteq.edu.ec | pendiente de registro |
+| Cedeno Avila, Winston Damian | Transcripcion y anonimizacion del corpus de entrevistas | wcedenoa2@uteq.edu.ec | pendiente de registro |
 
-> **Sobre los ORCID.** El apartado 9.2 de la guia los exige. Ninguno de los dos integrantes
+> **Sobre la composicion.** Cedeno Avila se reincorpora el 2026-09-02 para la ronda terminal
+> de campo. Mendoza Palma, Allan Jeremy, que figuraba en la caratula del SGA, se retiro del
+> equipo sin producir artefactos ni confirmaciones. Quien responde por que, y desde cuando,
+> se declara en
+> [`04_Trazabilidad/composicion_equipo.md`](04_Trazabilidad/composicion_equipo.md).
+
+> **Sobre los ORCID.** El apartado 9.2 de la guia los exige. Ninguno de los tres integrantes
 > tiene identificador ORCID a la fecha de esta entrega. Se declara el hueco en lugar de
 > dejar la columna fuera de la tabla; el registro es gratuito y queda como tarea previa al
 > examen final.
@@ -66,6 +73,15 @@ Los artefactos de las entregas anteriores que siguen vigentes se incorporaron a 
 repositorio y su evolucion consta en `CHANGELOG.md`. Los que quedaron superados permanecen
 solo en el repositorio de su entrega.
 
+> **Por que hay un repositorio nuevo.** La Entrega Final se rigio por una rubrica distinta
+> de la que goberno la Entrega 2A, con otra estructura de carpetas y otro conjunto de
+> entregables. El equipo abrio este repositorio el 2026-08-29 para que el arbol
+> correspondiera exactamente a la estructura exigida, en lugar de reorganizar el anterior y
+> arrastrar carpetas de una entrega ya evaluada. Por eso el historial de aqui empieza el
+> 2026-08-30 aunque la evidencia de campo este fechada meses antes: el trabajo anterior
+> consta en el repositorio de la 2A, enlazado arriba. El motivo, las fechas y lo que el
+> equipo asume por esa decision estan en `CHANGELOG.md`, version `2B-1.7.0`.
+
 ---
 
 ## 3. Identificadores persistentes y como citar
@@ -74,6 +90,7 @@ solo en el repositorio de su entrega.
 |---|---|
 | Paquete de datos en Zenodo | [`10.5281/zenodo.22137679`](https://doi.org/10.5281/zenodo.22137679) |
 | Registro previo del protocolo en OSF | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) |
+| **Linea base vigente** | Etiqueta anotada **`2B-final-v2.1`**, sobre el commit `0e69071`. `2B-final` apunta al mismo commit y se conserva como referencia historica |
 | Desviaciones respecto del protocolo | `06_Experimento/osf_deviations.pdf` |
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
 | Autoevaluacion FAIR | `fair_assessment.pdf` --- 21 de 26 indicadores, **80,8 %** |

@@ -1,0 +1,30 @@
+# Unificacion de identidades de Git - Proyecto SIGA, equipo FGMMN
+#
+# Cada linea asocia una identidad historica del historial con el nombre y el
+# correo institucional del integrante. Sirve para que `git shortlog -sne` y
+# cualquier recuento por autor den un unico registro por persona, aunque en
+# algun momento se haya firmado con otra grafia o con otro correo.
+#
+# Formato:  Nombre canonico <correo canonico> <correo historico>
+#
+# Comprobacion:  git shortlog -sne main
+#
+# A 2026-09-03 el historial tiene dos autores y ninguna identidad duplicada.
+# Las lineas de Cedeno Avila se dejan preparadas para sus primeras
+# confirmaciones, de modo que una grafia con tilde o una eñe no creen un
+# tercer autor por error.
+
+Gary Alberto Sanchez Cornejo <gsanchezc6@uteq.edu.ec>
+Gary Alberto Sanchez Cornejo <gsanchezc6@uteq.edu.ec> <gsanchezc6@uteq.edu.ec>
+Gary Alberto Sanchez Cornejo <gsanchezc6@uteq.edu.ec> Gary Sanchez <gsanchezc6@uteq.edu.ec>
+Gary Alberto Sanchez Cornejo <gsanchezc6@uteq.edu.ec> Gary Alberto Sánchez Cornejo <gsanchezc6@uteq.edu.ec>
+
+Yeranick Esther Munoz Quinonez <ymunozq@uteq.edu.ec>
+Yeranick Esther Munoz Quinonez <ymunozq@uteq.edu.ec> <ymunozq@uteq.edu.ec>
+Yeranick Esther Munoz Quinonez <ymunozq@uteq.edu.ec> Yeranick Munoz <ymunozq@uteq.edu.ec>
+Yeranick Esther Munoz Quinonez <ymunozq@uteq.edu.ec> Yeranick Esther Muñoz Quiñónez <ymunozq@uteq.edu.ec>
+
+Winston Damian Cedeno Avila <wcedenoa2@uteq.edu.ec>
+Winston Damian Cedeno Avila <wcedenoa2@uteq.edu.ec> <wcedenoa2@uteq.edu.ec>
+Winston Damian Cedeno Avila <wcedenoa2@uteq.edu.ec> Winston Cedeno Avila <wcedenoa2@uteq.edu.ec>
+Winston Damian Cedeno Avila <wcedenoa2@uteq.edu.ec> Winston Damián Cedeño Ávila <wcedenoa2@uteq.edu.ec>

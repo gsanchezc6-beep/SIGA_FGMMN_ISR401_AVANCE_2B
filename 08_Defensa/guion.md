@@ -11,7 +11,8 @@ Universidad Tecnica Estatal de Quevedo Â· ISR-401 Ingenieria de Requerimientos Â
 el tribunal, y responde por la totalidad del trabajo: la especificacion, el diseno del
 estudio empirico, los resultados y sus amenazas a la validez.
 
-El equipo lo integran dos personas, y **ambas rindieron su defensa**:
+En la fecha de la defensa el equipo lo integraban dos personas, y **ambas rindieron
+la suya**:
 
 | Integrante | Rol en el proyecto |
 |---|---|

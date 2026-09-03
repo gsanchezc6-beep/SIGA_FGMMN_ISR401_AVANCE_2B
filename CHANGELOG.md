@@ -8,6 +8,100 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.7.0] - 2026-09-03
+
+Restitucion del paquete de datos, retirada de la clave de desciego, composicion del equipo
+al dia y declaracion del origen del historial. Atiende la guia de desarrollo individualizada
+emitida por el docente el 2026-09-02 tras verificar el repositorio sobre un clon completo.
+
+### Origen de este repositorio, y por que el historial empieza el 30/08
+
+La guia observa que todo el historial se concentra entre el 30/08 y el 01/09 mientras la
+evidencia de campo esta fechada meses antes, y pide documentar la migracion indicando
+origen, fecha y motivo. Se documenta aqui.
+
+| | |
+|---|---|
+| **Origen** | `https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2A` |
+| **Fecha de creacion de este repositorio** | 2026-08-29 |
+| **Primer commit** | 2026-08-30, 01:16 |
+| **Motivo** | **Cambio de rubrica.** La Entrega Final se rigio por una rubrica distinta de la que goberno la Entrega 2A, con una estructura de carpetas y un conjunto de entregables diferentes. El equipo decidio abrir un repositorio nuevo en lugar de reorganizar el anterior, para que el arbol correspondiera exactamente a la estructura exigida y no arrastrara carpetas de una entrega ya evaluada. |
+
+**Donde consta el trabajo anterior al 30/08.** En el repositorio de la Entrega 2A, enlazado
+arriba, cuyo historial cubre la elicitacion, las diez entrevistas, el cuasi-experimento y el
+registro previo del protocolo. Las fechas de ese historial son las de los artefactos que este
+repositorio hereda. La cronologia del dia del cuasi-experimento, reconstruida commit a
+commit desde ese repositorio, esta en
+`06_Experimento/registro_previo/desviacion_clave_desciego.md`, con la orden de git que la
+reproduce.
+
+**Lo que el equipo asume.** Abrir un repositorio nuevo tuvo un coste: la trazabilidad
+acumulada del proyecto quedo repartida entre dos repositorios en lugar de leerse en uno solo.
+Se enlazan mutuamente y se declara la relacion, pero no se presenta el historial de este
+repositorio como si fuera el del proyecto entero.
+
+### Linea base vigente
+
+Existen dos etiquetas anotadas sobre el mismo commit `0e69071`, y la guia advierte con razon
+que dos lineas base simultaneas equivalen a ninguna. Se declara:
+
+| Etiqueta | Estado | Que identifica |
+|---|---|---|
+| **`2B-final-v2.1`** | **VIGENTE** | La version de la Entrega Final que el docente califico, sobre el commit `0e69071` |
+| `2B-final` | Historica | Apunta al mismo commit. Se conserva porque pudo citarse externamente, pero no es la referencia |
+
+El trabajo del examen final es posterior a esa linea base y se etiquetara por separado al
+cierre.
+
+### Anadido
+
+- `07_Datos/` - paquete de datos restituido con la estructura exigida: datos crudos, datos
+  procesados, scripts, resultados, diccionario de datos, licencia de datos, manifiesto de
+  sumas, desviaciones y registro de deposito. Se reconstruye entero con una sola orden,
+  `python 07_Datos/scripts/ejecutar.py`, sin instalar ninguna dependencia.
+- `07_Datos/datos_procesados/evaluacion_ciega_formato_largo.csv` - la hoja de evaluacion a
+  ciegas en formato largo, con evaluador, requisito, orden de presentacion, brazo, criterio
+  y puntuacion. 765 filas.
+- `07_Datos/resultados/acuerdo_interevaluador_ic.csv` - los veinte coeficientes de acuerdo,
+  cada uno con su intervalo de confianza del 95 % por bootstrap de items, que hasta ahora se
+  publicaban desnudos.
+- `06_Experimento/clave_desciego_UBICACION.md` - donde esta la tabla de desciego, quien la
+  custodia y su suma SHA-256.
+- `07_Datos/datos_crudos/asignacion_brazo_items.csv` - el brazo de cada item, que es lo que
+  el analisis necesita, sin la correspondencia con el codigo real del requisito.
+
+### Cambiado
+
+- **Composicion del equipo: pasa a tres.** Cedeno Avila, Winston Damian se reincorpora el
+  2026-09-02 y asume la transcripcion y anonimizacion del corpus de la ronda terminal.
+  Mendoza Palma, Allan Jeremy, que figuraba en la caratula del SGA, se retira sin producir
+  artefactos ni confirmaciones. Actualizados `04_Trazabilidad/composicion_equipo.md`,
+  `CITATION.cff`, `README.md`, `01_ERS/secciones_generadas.tex`,
+  `07_Publicacion/manuscrito_final.tex`, `08_Defensa/guion.md` y
+  `08_Defensa/banco_preguntas.md`. La declaracion muestra el recuento de commits de Cedeno
+  Avila **en cero** mientras lo sea, en lugar de atribuirle trabajo que el historial no
+  respalda.
+- `06_Experimento/scripts_analisis/analizar_resultados.py` - su etapa de consolidacion
+  apunta ahora a `asignacion_brazo_items.csv`. Solo leia `Item_ciego` y `Origen`, nunca
+  `Codigo_real`, de modo que la cadena corre igual sin la tabla de desciego. Ejecutado
+  `replicar.py` completo tras el cambio, las 16 salidas resultan identicas byte a byte.
+
+### Retirado
+
+- `06_Experimento/clave_desciego_items.csv` - la tabla de desciego sale del repositorio
+  publico al contenedor cifrado AES-256, por instruccion expresa de la guia. La anotacion de
+  la desviacion se mantiene sin editar en
+  `06_Experimento/registro_previo/desviacion_clave_desciego.md`.
+
+### Lo que no se reescribe
+
+El acta de constancia del cierre de campo en N=10 y los consentimientos de la sesion de
+validacion comunicativa estan firmados por dos personas porque en esa fecha el equipo eran
+dos. Se declara que la composicion se amplio despues, con su fecha, en lugar de rehacer un
+documento firmado.
+
+---
+
 ## [2B-1.6.0] - 2026-09-01
 
 Analisis de sensibilidad, despliegue en contenedor y cierre de la verificacion documental.
