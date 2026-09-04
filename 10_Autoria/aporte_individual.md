@@ -14,9 +14,9 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **68** | 2026-08-30 | 2026-09-03 |
-| Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **55** | 2026-08-30 | 2026-09-01 |
-| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **0** | — | — |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **81** | 2026-08-30 | 2026-09-04 |
+| Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **69** | 2026-08-30 | 2026-09-04 |
+| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **4** | 2026-09-04 | 2026-09-04 |
 
 Comprobable con `git shortlog -sne main`. El total de esta tabla es una confirmacion
 menor que el historial completo, porque la declaracion no puede incluir el commit que la deposita.
@@ -27,23 +27,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 68**, de 2026-08-30 a 2026-09-03.
+**Confirmaciones: 81**, de 2026-08-30 a 2026-09-04.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
 | Modelado UML e i* | 132 |
-| Componente empirico | 58 |
+| Manuscrito y deposito | 66 |
+| Documentos de raiz | 63 |
+| Componente empirico | 63 |
 | Paquete de datos | 55 |
-| Manuscrito y deposito | 55 |
 | Producto minimo viable | 53 |
-| Documentos de raiz | 44 |
 | Especificacion de requisitos | 40 |
-| Defensa | 18 |
-| Evidencia de campo y etica | 13 |
-| Evidencia de autoria | 12 |
-| Trazabilidad | 11 |
+| Evidencia de campo y etica | 26 |
+| Evidencia de autoria | 24 |
+| Defensa | 21 |
+| Trazabilidad | 17 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -118,6 +118,19 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `69b3008` | 2026-09-03 | docs(equipo): declara la composicion de tres y el origen del historial |
 | `e7c7b7e` | 2026-09-03 | feat(autoria): crea 10_Autoria con la evidencia que no depende de terceros |
 | `2f9ef3d` | 2026-09-03 | feat(ers): especifica el componente inteligente como requisitos verificables |
+| `930b580` | 2026-09-03 | feat(trazabilidad): define los casos de prueba que la matriz citaba sin respaldo |
+| `4ae79d4` | 2026-09-03 | docs(autoria): pone al dia el aporte individual y deposita el elemento A10 |
+| `6fc1216` | 2026-09-03 | feat(autoria): ejecuta la lista de verificacion previa de la seccion 11 |
+| `fdb1c2c` | 2026-09-03 | feat(etica): registra el alcance del consentimiento de cada participante |
+| `4dd22aa` | 2026-09-03 | fix(etica): corrige la asignacion de la ronda terminal a seis docentes |
+| `81cc69e` | 2026-09-03 | docs(autoria): incorpora los ORCID y precisa quien rindio la defensa |
+| `adfc44f` | 2026-09-04 | fix(publicacion): las tablas del manuscrito caben y estan en ingles |
+| `898c973` | 2026-09-04 | fix(experimento): orden determinista de la curva e incorporacion del corpus |
+| `5a47632` | 2026-09-04 | docs: el corpus son dieciseis entrevistas, y la documentacion lo dice |
+| `bc8f312` | 2026-09-04 | feat(autoria): A6 y A11 completos, y el perfil tecnico declarado |
+| `d6c1615` | 2026-09-04 | fix(evidencias): la causa del perfil tecnico es de calendario, no de plantilla |
+| `e630d8c` | 2026-09-04 | fix(evidencias): el cargo de TIC-01 se toma del consentimiento firmado |
+| `d1a02a1` | 2026-09-04 | feat(evidencias): sesion de validacion WT-08 con usuario tecnico |
 
 ---
 
@@ -125,20 +138,21 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Documentacion, trazabilidad, auditoria de calidad y gestion de evidencias
 
-**Confirmaciones: 55**, de 2026-08-30 a 2026-09-01.
+**Confirmaciones: 69**, de 2026-08-30 a 2026-09-04.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 145 |
+| Evidencia de campo y etica | 189 |
+| Evidencia de autoria | 54 |
 | Producto minimo viable | 43 |
-| Documentos de raiz | 28 |
+| Documentos de raiz | 42 |
 | Otros | 25 |
 | Componente empirico | 19 |
-| Trazabilidad | 13 |
+| Trazabilidad | 14 |
+| Manuscrito y deposito | 11 |
 | Especificacion de requisitos | 10 |
-| Manuscrito y deposito | 10 |
 | Modelado UML e i* | 7 |
 | Paquete de datos | 1 |
 
@@ -201,6 +215,20 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `c76db09` | 2026-09-01 | chore(integridad): regenera el manifiesto sobre el arbol completo |
 | `bbe5c87` | 2026-09-01 | fix(integridad): extiende la regla de no normalizar a todo el arbol |
 | `84921aa` | 2026-09-01 | docs(trazabilidad): actualiza la declaracion de aporte al historial vigente |
+| `998ab45` | 2026-09-03 | feat(evidencias): sustituye las fotografias de entorno sin metadato verificable |
+| `88bb1fd` | 2026-09-03 | feat(evidencias): deposita los seis consentimientos de la ronda terminal |
+| `076b392` | 2026-09-03 | feat(autoria): deposita la correspondencia de coordinacion, elemento A8 |
+| `f889afc` | 2026-09-04 | feat(autoria): deposita las dos grabaciones de sesion, elemento A4 |
+| `328499a` | 2026-09-04 | feat(autoria): deposita las notas de campo y la primera tanda de capturas |
+| `f3fa233` | 2026-09-04 | feat(autoria): manifiesto por script, acuerdo de A7 y declaracion al dia |
+| `14436bc` | 2026-09-04 | docs(trazabilidad): el recuento por autor deja de declarar cero para el tercero |
+| `b92bc5d` | 2026-09-04 | docs(evidencias): declara las doce grabaciones de la ronda terminal |
+| `be0dc83` | 2026-09-04 | fix(autoria): el instructivo de A2 pedia usuarios de Git que no existen |
+| `4010c12` | 2026-09-04 | feat(autoria): A7 completo, con las dos codificaciones y su acuerdo |
+| `c4c695a` | 2026-09-04 | feat(autoria): A2 completo, tres capturas por cada integrante |
+| `17ceb08` | 2026-09-04 | feat(evidencias): dos documentos mas de la organizacion; se pasa de cuatro a seis |
+| `c13ac7f` | 2026-09-04 | feat(evidencias): las dos actas que faltaban, firmadas; ocho sesiones en total |
+| `2fded58` | 2026-09-04 | docs(autoria): la lista de verificacion previa, reejecutada sobre clon limpio |
 
 ---
 
@@ -208,11 +236,24 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Transcripcion y anonimizacion del corpus de entrevistas
 
-**Confirmaciones a la fecha de esta declaracion: ninguna.**
+**Confirmaciones: 4**, de 2026-09-04 a 2026-09-04.
 
-Se incorporo al equipo el 2026-09-02 y su trabajo comienza con la ronda terminal de
-campo. Se declara el cero en lugar de atribuirle una contribucion que el historial
-todavia no respalda; la declaracion se regenera en cuanto exista su primera confirmacion.
+### Areas sobre las que trabajo
+
+| Area | Archivos tocados |
+|---|---|
+| Evidencia de campo y etica | 15 |
+| Evidencia de autoria | 4 |
+| Documentos de raiz | 3 |
+
+### Confirmaciones
+
+| Commit | Fecha | Aporte |
+|---|---|---|
+| `ea08aba` | 2026-09-04 | feat(evidencias): transcribe y anonimiza EV-20 y EV-21 con control de calidad |
+| `d79c879` | 2026-09-04 | feat(evidencias): completa las seis transcripciones de la ronda terminal |
+| `d0a3138` | 2026-09-04 | feat(evidencias): validacion e incorporacion de la codificacion tematica |
+| `cf79792` | 2026-09-04 | feat(autoria): cuatro capturas mas de A2; dos integrantes llegan al minimo |
 
 ---
 
@@ -238,4 +279,4 @@ Firma: ______________________________    Fecha: ______________
 
 ---
 
-Generado el 2026-09-03 desde el historial del repositorio.
+Generado el 2026-09-04 desde el historial del repositorio.
