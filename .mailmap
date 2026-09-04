@@ -9,10 +9,11 @@
 #
 # Comprobacion:  git shortlog -sne main
 #
-# A 2026-09-03 el historial tiene dos autores y ninguna identidad duplicada.
-# Las lineas de Cedeno Avila se dejan preparadas para sus primeras
-# confirmaciones, de modo que una grafia con tilde o una eñe no creen un
-# tercer autor por error.
+# A 2026-09-04 el historial tiene los tres autores y ninguna identidad
+# duplicada. La linea de Cedeno Avila que asocia el correo consigo mismo hace
+# el trabajo: una de sus confirmaciones se creo desde la web de GitHub y quedo
+# firmada como `WinstonCD`, y el mapeo por correo la unifica sin necesidad de
+# tocar el historial.
 
 Gary Alberto Sanchez Cornejo <gsanchezc6@uteq.edu.ec>
 Gary Alberto Sanchez Cornejo <gsanchezc6@uteq.edu.ec> <gsanchezc6@uteq.edu.ec>

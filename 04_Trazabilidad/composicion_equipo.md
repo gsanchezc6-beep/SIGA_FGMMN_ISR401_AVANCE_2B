@@ -26,14 +26,23 @@ comprobable con `git shortlog -sne main`:
 
 | Autor del historial | Commits | Correo de la firma | Situacion |
 |---|---|---|---|
-| Gary Alberto Sanchez Cornejo | 68 | gsanchezc6@uteq.edu.ec | Acreditado |
-| Yeranick Esther Munoz Quinonez | 55 | ymunozq@uteq.edu.ec | Acreditado |
-| Winston Damian Cedeno Avila | 0 | wcedenoa2@uteq.edu.ec | **Incorporado el 2026-09-02; sus confirmaciones empiezan con la ronda terminal** |
+| Gary Alberto Sanchez Cornejo | 76 | gsanchezc6@uteq.edu.ec | Acreditado |
+| Yeranick Esther Munoz Quinonez | 61 | ymunozq@uteq.edu.ec | Acreditado |
+| Winston Damian Cedeno Avila | 3 | wcedenoa2@uteq.edu.ec | Acreditado. **Incorporado el 2026-09-02**; sus confirmaciones empiezan con la ronda terminal |
 
-Se declara asi, con el cero a la vista, porque la alternativa seria afirmar una contribucion
-que el historial todavia no respalda. El detalle commit por commit de los dos primeros esta
-en [`aporte_individual.csv`](aporte_individual.csv), con una fila por confirmacion y su
+Hasta el 2026-09-03 esta tabla declaraba **cero** confirmaciones para el tercer integrante, y
+se dejaba el cero a la vista porque la alternativa habria sido afirmar una contribucion que el
+historial no respaldaba. Ya la respalda. El detalle commit por commit esta en
+[`aporte_individual.csv`](aporte_individual.csv), con una fila por confirmacion y su
 identificador, comprobado uno a uno contra el repositorio.
+
+**Sobre el committer de una de esas tres confirmaciones.** Una se creo desde la interfaz web
+de GitHub, de modo que su *committer* figura como `GitHub <noreply@github.com>` mientras que
+su *autor* es el integrante con su correo institucional. Git distingue las dos cosas: el autor
+es quien escribe el cambio y es lo que acredita la contribucion; el committer registra por
+que medio se aplico. No hay ningun agente automatizado en la autoria del historial --los tres
+correos de autor son los tres institucionales, comprobable con `git log --format=%ae | sort -u`--
+y GitHub firma esas confirmaciones con su clave, por lo que aparecen como verificadas.
 
 **Una precision sobre el recuento.** Una declaracion de aporte no puede incluir el commit
 que la deposita: el identificador todavia no existe cuando se escribe el archivo. Por eso el
