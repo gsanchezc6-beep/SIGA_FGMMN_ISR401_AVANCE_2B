@@ -3,8 +3,12 @@
 **Proyecto SIGA — Sistema Inteligente de Gestion de Aulas · Equipo FGMMN**
 Universidad Tecnica Estatal de Quevedo · ISR-401 · Entrega Final (2B)
 
-Veintiseis fotografias del sitio del cliente, en dos rondas. Cada una se describe por lo
+Veintinueve fotografias del sitio del cliente, en tres rondas. Cada una se describe por lo
 que muestra y por el requisito que sostiene.
+
+**Actualizado el 2026-09-03.** Las once fotografias de la segunda ronda se retiraron y se
+sustituyeron por catorce del laboratorio de computo. El motivo, y lo que se pierde con el
+cambio, estan explicados mas abajo.
 
 ---
 
@@ -14,46 +18,77 @@ Quince fotografias tomadas durante las jornadas de observacion documentadas en l
 campo NC-01 a NC-06, que estan en `02_Evidencias/Notas_Campo/` cuando se depositen. Su
 descripcion detallada figura en esas notas.
 
-## Segunda ronda, 2026-09-01 — ENT-16 a ENT-26
+## Segunda ronda, 2026-09-01 — ENT-16 a ENT-26: **retiradas**
 
-Once fotografias tomadas en aulas de la Facultad de Ciencias de la Computacion.
+Once fotografias de aulas, depositadas en la Entrega Final y **retiradas del
+repositorio el 2026-09-03**.
 
-| Id | Que muestra | Requisito que sostiene |
-|---|---|---|
-| ENT-16 | Pupitres individuales de tablero laminado con estructura metalica, en el rincon de un aula. Mobiliario movil, sin instalacion fija asociada | Delimita el alcance: la deteccion de ocupacion no puede apoyarse en el puesto del estudiante. RF-03 |
-| ENT-17 | Aula vacia con filas de pupitres y luz natural por ventanas altas. Una botella plastica en el suelo | RF-03 deteccion de ocupacion; RF-16 apagado de aulas desocupadas |
-| ENT-18 | Pupitres vistos desde el pasillo central del aula, con reflejo de la luz natural en el piso | RF-03 |
-| ENT-19 | Vista general del aula vacia, con toda la disposicion de pupitres y las ventanas altas al fondo | RF-03; RF-20 historial de ocupacion |
-| ENT-20 | **Techo completo de un aula:** proyector Epson montado, detector de techo, luminarias encendidas, aire acondicionado de pared marca RCA y camara de vigilancia en la esquina | Es el conjunto entero de equipamiento que el sistema monitorea. RF-01, RF-02, RF-04, RF-05, RF-06 |
-| ENT-21 | Proyector Epson montado en el techo, junto a una luminaria encendida | RF-04 control remoto de proyectores |
-| ENT-22 | **Camara de videovigilancia de marca Dahua**, tipo domo, montada en la esquina de un aula. La marca es legible | RF-06 integracion con el sistema de videovigilancia existente; sostiene la condicion de viabilidad de SC-03 |
-| ENT-23 | **Aula vacia con todas las luminarias encendidas a plena luz de dia**, con el proyector, el aire acondicionado y la camara en el mismo encuadre | RF-13 apagado por eficiencia energetica; RF-16 apagado por fin de horario |
-| ENT-24 | Tomacorrientes de pared: uno normal, uno regulado de color rojo y un punto de red, con cargadores conectados | Infraestructura electrica y de datos disponible para el despliegue de sensores. RF-01, RF-22 |
-| ENT-25 | Pupitre en primer plano, con el detalle del tablero y la estructura | RF-03 |
-| ENT-26 | Aula vacia con residuos en el piso y bajo los pupitres: una botella y papel | RF-16; documenta el ciclo de limpieza y la ventana ciega descrita en NC-03 |
+**Por que.** Ninguna de las once conservaba su fecha de captura en los metadatos: se
+transfirieron por una via que borra el EXIF, y una fotografia sin ese dato no acredita
+cuando se tomo. Solo declaraba su fecha el nombre del archivo, que lo escribe quien lo
+nombra.
+
+**Que se pierde, y se dice.** Documentaban **aulas** --- pupitres, luminarias,
+tomacorrientes ---, y las que las sustituyen documentan **el laboratorio de computo**.
+No son el mismo espacio. El repositorio pierde por tanto la evidencia fotografica de las
+aulas de la segunda ronda, y conserva la de la primera (ENT-01 a ENT-15) y la del
+laboratorio.
+
+**Que no se pierde.** Los hallazgos que esas fotografias sostenian estan sostenidos
+ademas por las entrevistas y por la codificacion tematica, que son la fuente principal.
+La fotografia era evidencia de contexto, no la unica base de ningun requisito.
+
+Su registro en `CHANGELOG.md` se conserva sin editar: documenta que existieron y cuando
+entraron.
 
 ---
 
-## Procedencia y limites de esta ronda
+## Tercera ronda, 2026-09-03 — ENT-27 a ENT-40
 
-**Fecha de captura:** 2026-09-01, declarada por el observador.
+Catorce fotografias del **laboratorio de computo** de la Facultad de Ciencias de la
+Computacion, tomadas en una sola sesion entre las 17:26:42 y las 17:28:15. **Las catorce
+conservan su fecha de captura, su dispositivo y su hash**, comprobable con:
 
-**Las once fotografias no conservan metadatos EXIF.** Se transfirieron desde el telefono por
-mensajeria, y ese transito elimina los metadatos de origen. Se declara aqui en lugar de
-presentar la fecha del archivo como si fuera la de la toma: la fecha de modificacion del
-archivo corresponde al momento de la transferencia, no al de la captura.
+```
+python 10_Autoria/generar_exif.py 02_Evidencias/Fotos_Entorno
+```
 
-**Observador:** Sanchez Cornejo, Gary Alberto.
+| Id | Que muestra | Requisito que sostiene |
+|---|---|---|
+| ENT-27 | Dos puestos de trabajo con monitor, teclado y raton sobre mesa corrida, contra pared de ladrillo visto. Al fondo, la mesa del docente con regleta y perifericos | Parque de equipos que el sistema debe monitorear. RF-01, RF-02 |
+| ENT-28 | Fila de puestos con dos monitores apagados y sillas giratorias, junto a un tomacorriente de pared | Puesto tipo y punto electrico disponible para instrumentar. RF-01, RF-22 |
+| ENT-29 | Puestos alineados contra la pared de ladrillo, con cable de red azul recorriendo la mesa entre equipos | Cableado de datos existente, base del despliegue IoT. RF-22 |
+| ENT-30 | Puesto con monitor de formato grande y sillas de distinto modelo; al fondo, otra fila de equipos | Heterogeneidad del parque: el inventario no es uniforme. RF-01, RF-10 |
+| ENT-31 | Puesto con monitor sobre brazo articulado y un segundo monitor en la mesa contigua, contra pared de ladrillo | Variedad de montaje del equipamiento en un mismo espacio. RF-01 |
+| ENT-32 | Puestos y sillas junto a una pared con humedad y pintura levantada en la parte baja | Condicion ambiental del recinto, relevante para la vida util del equipo. RF-09 |
+| ENT-33 | Puestos contra la pared de ladrillo con una botella de agua sobre la mesa, junto al teclado | Uso real del espacio, con riesgo fisico para el equipamiento. RF-09, RF-10 |
+| ENT-34 | Vista cenital de dos filas de puestos, con cable de red azul y perifericos conectados | Densidad de equipos por aula, que condiciona el volumen de telemetria. RF-01, RF-22 |
+| ENT-35 | Puesto en esquina y pared con humedad y desprendimiento visible a la altura del zocalo | Deterioro del recinto documentado como contexto de mantenimiento. RF-10 |
+| ENT-36 | Mesa corrida con dos puestos completos, monitores apagados y sillas de dos modelos distintos | Estado de reposo del equipamiento fuera de clase. RF-16, RF-21 |
+| ENT-37 | Equipo de climatizacion tipo split montado sobre ventana con reja, con su tuberia de drenaje a la vista | Climatizacion existente sobre la que actuan el control remoto y el apagado automatico. RF-05, RF-13, RF-16 |
+| ENT-38 | Techo del laboratorio: proyector suspendido, dos luminarias fluorescentes y canalizacion electrica superficial; al fondo, el split y las ventanas con reja | Equipamiento fijo del aula y canalizacion disponible para sensores. RF-13, RF-15, RF-21, RF-22 |
+| ENT-39 | Vista general del laboratorio vacio: filas de puestos, proyector, luminarias encendidas y ventanas con reja | Aula desocupada con iluminacion encendida, escenario central del sistema. RF-03, RF-16, RF-21 |
+| ENT-40 | Vista general hacia la pizarra: pantalla de proyeccion, proyector, extintor y filas de puestos. **Un monitor permanece encendido en el aula vacia** | Evidencia directa del desperdicio que el sistema busca eliminar: equipo encendido sin ocupacion. RF-03, RF-16, RF-21 |
 
-## Un matiz que conviene registrar
+### Lo que esta ronda aporta y las anteriores no
 
-La nota de campo NC-05 dejo asentado que, en la jornada del 2026-07-13, **la mayoria de las
-aulas sin estudiantes tenia las luces apagadas**, y por eso el hallazgo central del proyecto
-se enuncia sobre la climatizacion y no sobre la iluminacion.
+**El equipamiento fijo del aula, documentado.** ENT-37 y ENT-38 muestran el split de
+climatizacion y el proyector con las luminarias y la canalizacion superficial. Son los
+tres equipos sobre los que actuan RF-05, RF-13, RF-15 y RF-16, y hasta ahora ninguna
+fotografia los mostraba juntos en su montaje real.
 
-**ENT-23 muestra lo contrario en un aula concreta:** vacia, con todas las luminarias
-encendidas y con luz natural abundante. No invalida la observacion de julio ni la sustituye:
-son aulas distintas en dias distintos. Se registra porque el patron real es
-**heterogeneo** --- unas aulas se apagan al salir y otras no --- y esa heterogeneidad es
-precisamente el argumento del sistema: el control manual depende de que alguien se acuerde,
-y no siempre ocurre.
+**Y el hallazgo central, fotografiado.** ENT-39 y ENT-40 muestran el laboratorio
+**vacio**, con las luminarias encendidas y **un monitor todavia encendido**. Es
+exactamente el desperdicio que el sistema busca eliminar, y es la unica evidencia
+fotografica directa de el que tiene el proyecto.
+
+### Personas en el encuadre
+
+En **ENT-27** y **ENT-40** aparece una persona. En la primera la cabeza queda fuera de
+cuadro y en la segunda la figura es pequena y esta de espaldas, pero el original tiene
+4064 px de ancho y en una facultad pequena cualquiera de las dos podria reconocerse.
+
+**Ambas estan difuminadas sobre el mapa de bits**, no con un rectangulo superpuesto: los
+pixeles estan destruidos y el dato no existe en el archivo. El difuminado se aplico por
+script conservando el EXIF; hacerlo en el telefono habria borrado los metadatos, que es
+justo lo que da valor a estas fotografias.
