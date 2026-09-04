@@ -75,7 +75,8 @@ Razones:
 1. **Coherencia con lo que ya esta escrito.** El manuscrito esta redactado en la plantilla
    oficial `llncs.cls` de Springer LNCS, que es exactamente la que REFSQ exige. La extension
    del track Research es de 15 paginas incluidas las referencias, y el manuscrito ocupa
-   **12**, de modo que cumple sin recortes.
+   **15**, de modo que cumple, aunque **sin margen**: cualquier ampliacion futura obliga a
+   recortar en otro sitio.
 2. **Viabilidad economica.** El envio a REFSQ no exige cargo por procesamiento de articulo.
    El equipo no dispone de financiamiento para un APC de entre USD 2 160 y 3 350, y esa
    restriccion es real, no retorica.
@@ -87,7 +88,7 @@ Razones:
    semestre, con notificacion el 14 de enero de 2027.
 
 **Segunda opcion, mas accesible: REFSQ 2027 --- track _Research Previews_**, con envio el 12
-de noviembre de 2026 y extension de 8 paginas. Requiere condensar el manuscrito en cuatro
+de noviembre de 2026 y extension de 8 paginas. Requiere condensar el manuscrito en siete
 paginas, lo que es factible reduciendo el trabajo relacionado y fusionando las subsecciones
 de discusion. Se mantiene como alternativa si el comite recomienda un formato mas breve.
 
