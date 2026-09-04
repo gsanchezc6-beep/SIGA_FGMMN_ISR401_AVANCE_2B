@@ -54,11 +54,24 @@ misma entrega.
 |---|---|
 | Codigo de participante | `TIC-01` |
 | Identificador de evidencia | `EV-26` |
-| Codigo de sesion | `WT-____` |
+| Codigo de sesion | `WT-08` |
 | Fecha | 2026-09-04 |
 | Cargo declarado | **Asistente de Tecnologias TIC**, tal como consta escrito de su puno y letra en el consentimiento firmado |
 | Por que califica | Pertenece al area de Tecnologias de la Informacion y Comunicacion y administra el equipamiento y los sistemas de los laboratorios de la facultad |
-| Funcion literal | *(pendiente: se transcribe del acta, apartado 1, con las palabras que uso en la sesion)* |
+| Funcion literal | Ver abajo, transcrita del apartado 1 del acta |
+
+**Funcion que declaro en la sesion**, recogida en el acta `WT-08`:
+
+> Asistente de Tecnologias de la Informacion del area de TIC, responsable de la asistencia
+> tecnica de los cuatro laboratorios de informatica de la planta baja de la facultad. Atiende
+> a docentes, estudiantes y usuarios externos con convenio; sustituye perifericos, diagnostica
+> equipos, retira y formatea maquinas con falla mayor y lleva el registro de control de clases
+> donde se anotan las novedades. Declara 30 anios de labor en la universidad y alrededor de 25
+> anios en laboratorios de informatica.
+
+Diagnosticar, sustituir perifericos y formatear equipos **es administrar equipamiento**, no
+operarlo y reportarlo. Es exactamente la frontera que separa este perfil del de servicios
+generales, y por eso esta sesion cuenta como tecnica y las de conserjeria no.
 
 > **El cargo se toma del documento firmado, no de lo que se recordo despues.** La primera
 > version de esta declaracion decia «Administradora de tecnologias de la informacion de

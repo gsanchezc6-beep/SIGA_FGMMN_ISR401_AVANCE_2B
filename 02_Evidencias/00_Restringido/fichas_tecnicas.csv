@@ -29,3 +29,5 @@ nombre_archivo,tipo,fecha,codigo_participante,id_evidencia,duracion,resolucion,c
 2026-09-03_Docente_DOC-09_Audio.mp3,Audio,2026-09-03,DOC-09,EV-24,00:11:45,N/A,mp3,128,11285523,N/A - no se publica,80548b34c782b09a3ea4d5e09624d254f8d33b128ae87188a7cf85abc888f6dc,Restringida
 2026-09-03_Docente_DOC-10_Entrevista.mp4,Video,2026-09-03,DOC-10,EV-25,00:16:22,1280x720,h264/aac,99,49650302,N/A - no se publica,6b89dabafe8fcb3ed2519e324682f410e1c33cbc96897f2db71e2bfbc870a8ee,Restringida
 2026-09-03_Docente_DOC-10_Audio.mp3,Audio,2026-09-03,DOC-10,EV-25,00:16:22,N/A,mp3,128,15711123,N/A - no se publica,6d1314c8bba446bc286a0124532777ce5c481fc3e3eeaf1d35e72bacc3a69364,Restringida
+2026-09-04_Tecnico_TIC-01_Sesion.mp4,Video,2026-09-04,TIC-01,EV-26,00:16:35,1280x720,h264/aac,97,89137754,N/A - no se publica,be33bdab7ea79846d0fd6c7f251147b0cc43a6d8e1f6895644f948c3b0e9a1a6,Restringida
+2026-09-04_Tecnico_TIC-01_Audio.mp3,Audio,2026-09-04,TIC-01,EV-26,00:16:35,N/A,mp3,128,15918600,N/A - no se publica,b4216b897b6f49dc757921fadf1b324fee40371b527d7bab8e144a71447f8926,Restringida
