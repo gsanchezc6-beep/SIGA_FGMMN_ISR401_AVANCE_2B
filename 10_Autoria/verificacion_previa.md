@@ -9,7 +9,7 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 | | |
 |---|---|
 | Comprobado sobre | un clon limpio del remoto |
-| Version | `2fded58` |
+| Version | `77c0916` |
 
 ---
 
@@ -20,9 +20,9 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 | 1 | Se clono en carpeta limpia y se compilo el documento principal desde el .tex siguiendo unicamente el README | **Si** | Compilado sobre el clon con pdfLaTeX + BibTeX, sin errores |
 | 2 | El PDF resultante coincide con el entregado y no presenta referencias sin resolver | **Si** | 26 paginas regeneradas, 0 referencias sin resolver. La comparacion es por contenido y no por suma: pdfLaTeX incrusta la fecha de compilacion, de modo que dos PDF del mismo fuente nunca son byte a byte iguales |
 | 3 | No existe ningun archivo de cero o un byte cuyo nombre anuncie contenido de evidencia | **Si** | Cero archivos de 0 o 1 byte en todo el arbol |
-| 4 | La comprobacion de sumas termina sin error sobre el clon limpio | **Si** | 564 de 564 sumas correctas |
+| 4 | La comprobacion de sumas termina sin error sobre el clon limpio | **Si** | 565 de 565 sumas correctas |
 | 5 | Todos los autores del historial son integrantes declarados con correo institucional | **Si** | 3 autor(es): gsanchezc6@uteq.edu.ec, wcedenoa2@uteq.edu.ec, ymunozq@uteq.edu.ec |
-| 6 | Existe etiqueta anotada de linea base, publicada y alcanzable desde la rama por defecto | **Si** | 2 etiqueta(s) anotada(s) y alcanzable(s) desde main: 2B-final, 2B-final-v2.1 |
+| 6 | Existe etiqueta anotada de linea base, publicada y alcanzable desde la rama por defecto | **Si** | 3 etiqueta(s) anotada(s) y alcanzable(s) desde main: 2B-final, 2B-final-v2.1, 2B-final-v3.0 |
 | 7 | La carpeta 07_Datos existe y la orden unica de analisis se ejecuta sin error | **Si** | python 07_Datos/scripts/ejecutar.py termino con codigo 0 |
 | 8 | La carpeta 10_Autoria contiene los elementos A1 a A12 | **Si** | Los doce elementos existen y tienen contenido |
 | 9 | Todo numero que aparece en los documentos procede de la salida de un script | Manual | La correspondencia salida-script esta declarada en 07_Publicacion/dataset_zenodo/correspondencia_salidas.csv. Requiere revision humana |
@@ -55,6 +55,26 @@ quien lo ejecuta tiene credenciales guardadas.
 La numero 10 se ejecuta, pero su resultado es un indicio: busca secuencias de diez
 digitos fuera de la zona restringida. Que no encuentre ninguna no prueba que no haya
 datos personales de otra forma.
+
+---
+
+## Sobre la version que se verifica
+
+La version que consta arriba es la del commit **anterior** al que deposita este
+documento firmado. No puede ser otra: cuando se imprime y se firma, el commit que
+lo deposita todavia no existe, y su identificador tampoco. **La diferencia es
+siempre de una sola confirmacion**, y esa confirmacion es la del propio deposito.
+
+Es la misma regla que declara `aporte_individual.md` para el recuento por autor, y
+por el mismo motivo. La guia pide la lista firmada *antes de dar por cerrada la
+entrega*; el identificador lo anade este script por rigor propio, no porque se
+exija.
+
+Cualquiera puede rehacer la comprobacion sobre la version entregada:
+
+```bash
+python 10_Autoria/verificacion_previa.py --clonar
+```
 
 ---
 
