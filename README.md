@@ -306,12 +306,22 @@ python 06_Experimento/replicar.py --verificar
 
 ---
 
-## 7. Cierre de campo en diez entrevistas
+## 7. Cierre de campo en dieciseis entrevistas
 
-El levantamiento de campo se cerro en **N = 10 entrevistas validas**, por autorizacion
-expresa del docente responsable ante la restriccion de calendario. La constancia escrita
-de esa autorizacion se deposita en `02_Evidencias/Etica/` y se cita desde la seccion de
-participantes del reporte.
+El corpus son **N = 16 entrevistas validas**. El levantamiento se habia cerrado en diez el
+2026-08-17, por autorizacion verbal del docente ante la restriccion de calendario; esa
+decision y sus limites estan documentados en
+[`02_Evidencias/Etica/declaracion_reduccion_muestra.md`](02_Evidencias/Etica/declaracion_reduccion_muestra.md).
+La **ronda terminal del 2026-09-03** anadio seis entrevistas a docentes (`EV-20` a `EV-25`)
+y llevo el corpus al minimo terminal aplicable, con lo que aquella reduccion queda superada.
+El documento de etica se conserva sin reescribir, con una nota de estado al inicio: registra
+lo que ocurrio y cuando, que es justamente lo que lo hace util.
+
+**Las seis de la ronda terminal estan transcritas pero todavia no codificadas**, de modo que
+la codificacion tematica y la curva de saturacion que se citan mas abajo siguen cubriendo las
+diez primeras. Las grabaciones de esas seis no se publican, por lo que dice su
+consentimiento: su ficha tecnica y su ubicacion constan en
+[`02_Evidencias/00_Restringido/`](02_Evidencias/00_Restringido/).
 
 Un tamano menor al de referencia se sostiene con el calculo que lo justifica, conforme
 a la seccion 6 de la guia. Ese calculo esta en
@@ -321,8 +331,8 @@ unidades; con las disponibles la potencia alcanzada es del 8,4 %. La consecuenci
 la interpretacion de los resultados se declara en la seccion de amenazas a la validez
 del reporte.
 
-La curva de saturacion tematica **no alcanza inflexion**: la ultima entrevista todavia
-aporta cuatro codigos nuevos sobre 36 acumulados
+La curva de saturacion tematica **no alcanza inflexion** sobre las diez codificadas: la
+ultima entrevista todavia aporta cuatro codigos nuevos sobre 36 acumulados
 ([`tablas/saturacion_por_entrevista.csv`](tablas/saturacion_por_entrevista.csv)). Se
 declara como limitacion remanente, no como saturacion alcanzada.
 

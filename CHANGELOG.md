@@ -8,6 +8,55 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.8.0] - 2026-09-04
+
+Cierre de la ronda terminal de campo: el corpus pasa de diez a dieciseis entrevistas, y la
+documentacion deja de declarar una muestra que ya no es la que hay.
+
+### Anadido
+
+- `06_Experimento/scripts_analisis/extender_corpus_json.py` — incorpora al corpus JSON las
+  transcripciones depositadas que aun no figuran en el. No reescribe ningun registro
+  anterior y lo comprueba campo por campo antes de escribir. El corpus pasa de 10 a 16.
+- `02_Evidencias/Codificacion_Tematica/incorporar_codificacion.py` — valida una hoja de
+  codificacion rellenada y la incorpora. Rechaza el fragmento que no aparece literal en la
+  transcripcion, el tomado del entrevistador en lugar del participante, el que no lleva
+  categoria o requisito, y el duplicado.
+- `10_Autoria/generar_manifiesto.py` — regenera `checksums.sha256` desde `git ls-files`.
+- `10_Autoria/doble_codificacion/calcular_acuerdo.py` — acuerdo entre las dos
+  codificaciones tematicas del elemento A7, con kappa sin ponderar e intervalo por bootstrap.
+- Ficha tecnica de los doce registros de la ronda terminal en
+  `02_Evidencias/00_Restringido/fichas_tecnicas.csv`, con duracion, codec y hash del
+  original de camara. Pasa de 18 a 30 filas.
+
+### Cambiado
+
+- **El corpus son dieciseis entrevistas.** La ronda terminal del 2026-09-03 anadio `EV-20` a
+  `EV-25`, todas a docentes. `README.md` y la declaracion de reduccion de muestra se
+  actualizan: la reduccion a diez queda **superada**, no borrada. El documento de etica
+  conserva su texto y lleva una nota de estado al inicio.
+- `02_Evidencias/00_Restringido/README_Restringido.md` — declara los **dos regimenes de
+  publicacion**. Las diez primeras entrevistas se consintieron con un formulario que
+  autoriza publicar el registro anonimizado; las seis de la ronda terminal, con uno que dice
+  que las grabaciones originales no se publican. De estas ultimas, a la zona publica va solo
+  la transcripcion y el consentimiento enmascarado.
+- `CITATION.cff` — la version declarada estaba en `2B-1.5.0`, dos por detras del CHANGELOG.
+
+### Corregido
+
+- **La curva de saturacion no era reproducible.** `sort_values` de pandas usa quicksort, que
+  no es estable, y las seis entrevistas de la ronda terminal comparten fecha: el orden entre
+  ellas podia variar entre ejecuciones. Se desempata por identificador de evidencia.
+  Reejecutada sobre la codificacion vigente, la tabla sale identica byte a byte a la
+  publicada.
+- La copia de `curva_saturacion.py` del deposito Zenodo tomaba el corpus de una carpeta que
+  no existe dentro del propio deposito.
+- El manifiesto se regeneraba a mano, y la comprobacion no delataba el hueco: un archivo
+  nuevo que nadie anadiera no aparecia en ninguna linea y por tanto no fallaba nada.
+- `04_Trazabilidad/composicion_equipo.md` declaraba cero commits para el tercer integrante.
+
+---
+
 ## [2B-1.7.0] - 2026-09-03
 
 Restitucion del paquete de datos, retirada de la clave de desciego, composicion del equipo
