@@ -1,7 +1,21 @@
 # A8 — Correspondencia con la organizacion
 
-Comunicaciones **fechadas** con la organizacion cliente: solicitudes de acceso o de cita,
-autorizaciones recibidas y confirmaciones de cita.
+Comunicaciones **fechadas**: con la organizacion cliente --solicitudes de acceso o de cita,
+autorizaciones recibidas y confirmaciones de cita-- y con el docente responsable, cuando de
+su respuesta depende como se construye un entregable.
+
+## Consultas al docente
+
+`2026-09-04_Consulta_firmas_aporte_individual.png` recoge la consulta sobre el elemento A10
+y su respuesta. El elemento pide el documento «firmado por los cinco» y el equipo son tres;
+el docente respondio **«No debe aparecer nadie mas en el documento»**, y asi se deposito.
+
+Sin esta captura, el repositorio afirmaria que A10 se firma con tres por indicacion del
+docente sin poder probarlo.
+
+De la captura se retiro el panel de chats de la izquierda y la linea de participantes del
+grupo, que son nombres y numeros de telefono de terceros ajenos al estudio. Queda lo que
+importa: **las partes, la fecha, la hora y el contenido**.
 
 ## Que sirve
 
