@@ -18,8 +18,10 @@ aula y avise. SIGA monitorea, alerta y gestiona el ticket.
 → `02_Evidencias/Transcripciones/`, EV-01 (CONS-01); `02_Evidencias/Documentos_Organizacion/`
 
 **A2. ¿Como saben que el problema existe y no lo supusieron?**
-De diez entrevistas con tres perfiles distintos, codificadas en 36 fragmentos con su
-categoria y el requisito que derivan.
+De **dieciseis entrevistas** con tres perfiles distintos. **Diez estan codificadas**, en
+36 fragmentos con su categoria y el requisito que derivan; las seis de la ronda terminal
+del 2026-09-03 estan transcritas y su codificacion queda pendiente. Si insisten con la
+cifra, la respuesta exacta es: dieciseis recogidas, diez analizadas.
 → `02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv`
 
 **A3. ¿Quienes son los usuarios y como se eligieron?**

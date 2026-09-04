@@ -180,6 +180,10 @@ repositorio. Cada fila cita el commit que la respalda.
 | Enmascarado de las cinco actas de sesión de validación | 2026-08-26 | `cadc567` |
 | Supresión del material de la entrevista EV-15 por retiro del consentimiento | 2026-08-25 | `639bea4` |
 | Sustitución de nombres propios por código de participante en los nombres de archivo | 2026-08-29 | `152c064` |
+| Enmascarado de cédula y firma en los consentimientos de la ronda terminal | 2026-09-03 | `d79c879` |
+| Enmascarado de cédula y firma en el consentimiento de `TIC-01` | 2026-09-04 | `d1a02a1` |
+| Enmascarado del nombre y la firma del participante en el acta `WT-08` | 2026-09-04 | `1e67a87` |
+| Depósito de las actas `WT-03` y `WT-07`, cuyas hojas de firma identifican al participante solo por su código | 2026-09-04 | `c13ac7f` |
 
 Las verificaciones que aún no se han ejecutado no se listan en esta tabla: se
 llevan en el control de trabajo del equipo y se incorporan aquí cuando existan,
