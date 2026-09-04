@@ -1,0 +1,3 @@
+nivel,n_fragmentos,sin_codificar_en_alguna,acuerdo_observado,kappa_cohen,IC95_inferior,IC95_superior,n_bootstrap,semilla
+Codigo,28,11,57.1,0.5478,0.3695,0.7204,10000,20260904
+Categoria,14,25,92.9,0.9114,0.7162,1.0,10000,20260904
