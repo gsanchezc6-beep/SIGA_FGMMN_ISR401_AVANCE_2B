@@ -26,7 +26,7 @@ de requisitos).
   biométricos con fines identificativos, orientación sexual).
 - **Riesgo residual identificado.** Reidentificación por inferencia contextual, dada
   la población reducida. Se mitiga según el procedimiento de
-  [`07_Publicacion/dataset_zenodo/anonimizacion.md`](../07_Publicacion/dataset_zenodo/anonimizacion.md).
+  [`07_Publicacion/dataset_zenodo/anonimizacion.md`](../../07_Publicacion/dataset_zenodo/anonimizacion.md).
 - **Menores de edad.** El estudio **no** incluye participantes menores de edad. La
   política aplicable en caso de contacto incidental está documentada en el anexo
   `CB5_Politica_Datos_Menores` del expediente ético de la Entrega 2A.

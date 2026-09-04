@@ -16,8 +16,11 @@ sección del repositorio principal).
   a entrevistas, consentimientos y actas antes de su publicación.
 - `ETHICS.md` — Declaración ética y proceso de consentimiento informado.
 - `codificacion_tematica.csv` — Codificación abierta de **36 fragmentos**
-  extraídos de las **10 entrevistas válidas** (EV-01, EV-02, EV-08 a EV-14,
-  EV-16; EV-15 excluida por retiro de consentimiento informado). Columnas:
+  extraídos de las **10 entrevistas codificadas** (EV-01, EV-02, EV-08 a EV-14,
+  EV-16; EV-15 excluida por retiro de consentimiento informado). El corpus del
+  proyecto son **16 entrevistas**: las seis de la ronda terminal (EV-20 a EV-25)
+  estan transcritas y depositadas, pero todavia no codificadas, de modo que no
+  entran en este archivo ni en la curva de saturacion. Columnas:
   Fragmento (cita textual), Codigo (etiqueta de codificación abierta),
   Categoria (categoría axial), Requisito_derivado (RF/RNF relacionado),
   ID_evidencia (código de entrevista), Analista_codificador.
@@ -87,7 +90,8 @@ sección del repositorio principal).
    `resultados_jueces/hipotesis.csv`).
 5. **Saturación temática no alcanzada:** la curva de códigos únicos
    acumulados (`06_Experimento/scripts_analisis/curva_saturacion.py`) no
-   llega a inflexión visible con las 10 entrevistas válidas.
+   llega a inflexión visible con las 10 entrevistas codificadas. Las seis de la
+   ronda terminal no estan codificadas y por tanto no modifican esta curva.
 
 ## Licencia
 CC BY 4.0.

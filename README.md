@@ -333,7 +333,7 @@ del reporte.
 
 La curva de saturacion tematica **no alcanza inflexion** sobre las diez codificadas: la
 ultima entrevista todavia aporta cuatro codigos nuevos sobre 36 acumulados
-([`tablas/saturacion_por_entrevista.csv`](tablas/saturacion_por_entrevista.csv)). Se
+([`tablas/saturacion_por_entrevista.csv`](07_Publicacion/tablas/saturacion_por_entrevista.csv)). Se
 declara como limitacion remanente, no como saturacion alcanzada.
 
 Una entrevista adicional (EV-15, participante DOC-03) fue excluida por retiro del
@@ -362,7 +362,7 @@ anexo del reporte.
 
 Los modelos de lenguaje intervienen en este trabajo en dos capacidades separadas: como
 **objeto de estudio**, generando el Conjunto A de Requisitos Funcionales bajo condiciones
-registradas en [`06_Experimento/consignas/`](06_Experimento/consignas/); y como **apoyo
+registradas en [`06_Experimento/prompts_llm/`](06_Experimento/prompts_llm/); y como **apoyo
 de redaccion** sobre contenido escrito por el equipo. Las secciones evaluativas
 —analisis, discusion, conclusiones, justificacion de decisiones de ingenieria y amenazas
 a la validez— son produccion propia verificada contra la evidencia primaria.

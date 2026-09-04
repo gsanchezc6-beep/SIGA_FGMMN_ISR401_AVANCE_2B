@@ -129,8 +129,13 @@ dos fotografías, porque no tienen el mismo valor probatorio.
 | Sanchez Gary | admin | si |
 | Yeranick Esther Munoz Quinonez | write | si |
 
-**Son los dos integrantes del equipo, y coinciden con el historial del repositorio.** La
-declaracion de composicion, con el recuento por autor que la respalda, esta en
+**Eran los dos integrantes del equipo cuando se registro el protocolo.** Desde el
+2026-09-02 el equipo son tres: Cedeno Avila, Winston Damian se reincorporo y Mendoza Palma,
+Allan Jeremy se retiro. El registro del protocolo **no se modifica** --alterar un
+pre-registro despues de recoger datos es justamente lo que el pre-registro existe para
+impedir--; la incorporacion posterior se documenta en `osf_deviations.pdf`.
+
+La declaracion de composicion, con el recuento por autor que la respalda, esta en
 `04_Trazabilidad/composicion_equipo.md`.
 
 **Lo que hay que precisar sobre el historial de esta lista.** El protocolo se preregistro

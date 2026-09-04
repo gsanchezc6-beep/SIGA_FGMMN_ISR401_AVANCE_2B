@@ -56,8 +56,10 @@ una cadena de trazabilidad rota.
 - Los tres perfiles de usuario reales entrevistados: docentes, coordinación
   académica, conserjería/infraestructura — con foto o diagrama de contexto en
   pantalla (`03_Modelado/Diagramas_UML/01_Context/`).
-- Mencionar brevemente el volumen real de campo: 10 entrevistas válidas, con al
-  menos 3 perfiles bien representados.
+- Mencionar brevemente el volumen real de campo: **16 entrevistas**, con tres perfiles
+  bien representados. **Diez de ellas estan codificadas**; las seis de la ronda terminal
+  del 2026-09-03 estan transcritas y su codificacion queda pendiente. Si preguntan, esa es
+  la respuesta exacta: dieciseis recogidas, diez analizadas.
 
 ## Bloque 3 — Metodología del componente empírico (4 min)
 

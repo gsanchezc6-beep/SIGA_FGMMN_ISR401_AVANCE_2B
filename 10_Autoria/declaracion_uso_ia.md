@@ -21,10 +21,10 @@ modelo grande de lenguaje**, deliberadamente y como variable independiente del
 cuasi-experimento. No es asistencia de redaccion: es el material que el estudio compara.
 
 La consigna literal, el modelo, sus parametros y el material fuente estan en
-[`06_Experimento/consignas/`](../06_Experimento/consignas/). Las limitaciones
+[`06_Experimento/prompts_llm/`](../06_Experimento/prompts_llm/). Las limitaciones
 metodologicas de esa generacion —incluida la exposicion previa parcial del modelo al
 Conjunto B en la misma sesion de chat— se declaran en
-`06_Experimento/consignas/prompt_llm_conjunto_A.md` y se recogen como amenaza a la
+`06_Experimento/prompts_llm/prompt_llm_conjunto_A.md` y se recogen como amenaza a la
 validez de constructo en el reporte.
 
 ---
