@@ -17,13 +17,13 @@ Existe porque **no todos autorizaron lo mismo**, y sin una tabla que lo diga es 
 en el manuscrito a alguien que no lo permitio. La columna `citable_en_manuscrito` responde
 esa pregunta de un vistazo.
 
-## Diecinueve consentimientos de dieciseis personas
+## Veinte consentimientos de diecisiete personas
 
 | | |
 |---|---|
-| Personas participantes | **16** |
-| Consentimientos firmados | **19** |
-| Citables en el manuscrito | **16** |
+| Personas participantes | **17** |
+| Consentimientos firmados | **20** |
+| Citables en el manuscrito | **17** |
 
 La diferencia no es un error. **Tres personas participaron en dos sesiones distintas y
 firmaron un consentimiento para cada una**: primero su entrevista, meses despues la sesion
@@ -48,6 +48,7 @@ lo que dijo en la sesion de validacion, no.
 | Las diez entrevistas de las rondas 1 y 2 | Curso y publicacion | Adenda de segunda ronda del expediente etico de la Entrega 2A |
 | La sesion de validacion comunicativa | **Solo curso** | Los tres marcaron la segunda casilla, visible en cada PDF sobre la banda de censura |
 | Las seis entrevistas de la ronda terminal | Curso y publicacion | Los seis marcaron la primera casilla del formulario LOPDP de la ronda terminal |
+| La sesion de validacion con usuario tecnico (`TIC-01`, `EV-26`) | Curso y publicacion | Marco la primera casilla. El ejemplar que firmo primero llevaba las dos marcadas, que son excluyentes; se le pidio que corrigiera y firmara de nuevo, y solo el corregido se deposito |
 
 ## Sobre la censura de los archivos
 
@@ -81,5 +82,5 @@ la fecha y la casilla marcada no se tocaron: eso lo declaro el participante.
 
 ## Estado a 2026-09-03
 
-Los diecinueve consentimientos estan depositados y censurados. Ninguno figura como
+Los veinte consentimientos estan depositados y censurados. Ninguno figura como
 pendiente.
