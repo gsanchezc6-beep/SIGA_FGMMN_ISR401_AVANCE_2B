@@ -16,9 +16,9 @@ Este README declara el estado real de cada elemento. Lo que falta figura como fa
 | Cod. | Elemento | Estado | Nota |
 |---|---|---|---|
 | A1 | `bitacora_sesiones.csv` | **Depositado** | Derivado del historial por `generar_bitacora.py`. Una fila por persona y dia con commits |
-| A2 | `capturas/` | **Pendiente** | Minimo tres por integrante. No se pueden producir a posteriori de forma creible |
+| A2 | `capturas/` | **Pendiente** | Minimo tres por integrante, **cada uno en su propia maquina**, con el reloj y el nombre de sesion de usuario visibles. Las 18 de las sesiones no cuentan: salen de una sola maquina |
 | A3 | Fuentes editables | **Depositado** | En el propio arbol, junto a cada imagen exportada. Inventario en `fuentes_editables.md` |
-| A4 | `grabaciones/` | **Pendiente** | Dos sesiones de trabajo del equipo, de 10 a 15 minutos, con pantalla compartida |
+| A4 | `grabaciones/` | **Depositado** | Dos sesiones de 15:18 y 15:43 con pantalla compartida y discusion audible, mas 18 capturas tomadas durante ellas |
 | A5 | `notas_campo/` | **Pendiente** | Notas manuscritas de cada sesion de elicitacion, con la fecha visible. Se capturan en la ronda terminal |
 | A6 | `fotos_equipo/` | **Pendiente** | Con dos integrantes identificables y la fecha en los metadatos |
 | A7 | `doble_codificacion/` | **Pendiente** | Hasta el 2026-09-02 el equipo eran dos personas y una de ellas hizo toda la codificacion; con la reincorporacion vuelve a ser posible que la hagan dos integrantes distintos |
