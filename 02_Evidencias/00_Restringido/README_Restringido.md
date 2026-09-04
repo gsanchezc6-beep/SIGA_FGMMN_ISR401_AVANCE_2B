@@ -5,16 +5,29 @@ documenta que se publica y que se conserva fuera del repositorio.
 
 ---
 
-## 1. Toda la evidencia audiovisual esta en el repositorio
+## 1. Dos regimenes de publicacion, segun el consentimiento firmado
 
-A diferencia de la Entrega 2A, **el material audiovisual no se sustituye por referencias**.
-Los nueve registros de entrevista residen aqui como archivos reales, reproducibles y
-verificables:
+El corpus son **dieciseis entrevistas**, y no todas se publican igual. La diferencia no es
+de criterio nuestro: es lo que dice el formulario que cada participante firmo.
+
+Las **diez primeras** (mayo a julio de 2026) se consintieron con un formulario que autoriza
+publicar el registro anonimizado. Su material reside aqui como archivos reales,
+reproducibles y verificables:
 
 | | Cantidad | Ubicacion | Volumen |
 |---|---|---|---|
 | Entrevistas en video | 8 | [`../Video/`](../Video/) | 458 MB |
 | Entrevistas en audio | 10 | [`../Audio/`](../Audio/) | 158 MB |
+
+Las **seis de la ronda terminal** (2026-09-03, `EV-20` a `EV-25`) se consintieron con el
+formulario de esa ronda, que dice literalmente que *las grabaciones originales no se
+publican*. De ellas, a la zona publica va unicamente la transcripcion anonimizada y el
+consentimiento enmascarado; el video y el audio quedan en la zona restringida. Estan
+declaradas en la ficha tecnica con `zona = Restringida`, con su duracion, su codec y su
+hash, para que se pueda comprobar que existen y cuales son sin publicarlas.
+
+**Ninguna de las dieciseis entrevistas carece de registro sonoro.** Hay dieciseis audios y
+catorce videos; las ausencias de video estan explicadas una a una en el apartado 4.
 
 Todos superan el sondeo de codec y duracion que exige la guia: MP4 H.264 a 1280 × 720 con
 audio AAC, y MP3 a 128 kbps.
@@ -35,6 +48,8 @@ Solo lo que contiene datos personales que el consentimiento no autoriza a public
 | Consentimientos originales con cedula y firma visibles | Datos identificables. En el repositorio estan las copias **enmascaradas** |
 | Actas de sesion de validacion con firma visible | Idem: en el repositorio estan enmascaradas |
 | Registro de custodia codigo–participante | Es la unica pieza que permite reidentificar. Se entrega solo al docente |
+| **Video y audio de las seis entrevistas de la ronda terminal** (`EV-20` a `EV-25`) | El consentimiento de esa ronda dice que las grabaciones originales no se publican. No es una decision de conveniencia: publicarlas seria usarlas fuera de lo consentido |
+| Clave de desciego del cuasi-experimento | Su ubicacion y custodia constan en [`../../06_Experimento/clave_desciego_UBICACION.md`](../../06_Experimento/clave_desciego_UBICACION.md) |
 
 Ese material se conserva en un contenedor cifrado con **AES-256** y nombres de archivo
 ocultos, alojado en el OneDrive institucional de la UTEQ:
@@ -62,6 +77,16 @@ transmite por ningun otro medio y no consta en este repositorio.
 Las dos columnas de hash permiten dos verificaciones distintas: que el archivo del
 repositorio no fue alterado, y que el original conservado fuera es el que se declaro.
 
+**En las filas con `zona = Restringida` la primera columna dice `N/A - no se publica`**,
+porque no existe archivo publicado que verificar. La segunda si lleva hash: el del original
+de camara, calculado antes de recodificar. Con el se comprueba, cuando se abra el
+contenedor, que lo depositado es lo que aqui se declara.
+
+El emparejamiento entre cada original de camara --cuyo nombre es una marca de tiempo-- y su
+recodificado no se establecio por orden de archivo sino **comparando duraciones sondeadas
+con `ffprobe`**, y se comprobo que ninguna pareja quedara a menos de tres segundos de otra,
+que habria hecho ambiguo el emparejamiento.
+
 ### Comprobar
 
 ```bash
@@ -77,9 +102,10 @@ En Windows, para un archivo suelto: `certutil -hashfile ARCHIVO SHA256`.
 
 ---
 
-## 4. Inventario y sus dos ausencias declaradas
+## 4. Inventario y sus ausencias declaradas
 
-Diez entrevistas validas. Dos ausencias, ninguna de ellas una omision:
+Dieciseis entrevistas validas: diez de mayo a julio y seis del 2026-09-03. Las ausencias de
+video son dos, y ninguna es una omision:
 
 1. **No hay video del 2026-07-28 (COORD-03, EV-14).** Esa sesion se registro solo en
    audio, por peticion expresa del participante. De ahi que haya 8 videos y 10 audios.
@@ -89,9 +115,23 @@ Diez entrevistas validas. Dos ausencias, ninguna de ellas una omision:
    repositorio, ni en el contenedor, ni en la codificacion tematica, ni en el material
    fuente del componente empirico.
 
-Ademas, **el video del 2026-07-30 (DOC-04, EV-16) no esta en el repositorio**: existe y su
-hash consta en el historial del proyecto, pero el archivo no se pudo recuperar de los
-medios disponibles. Su audio si esta publicado.
+3. **El video del 2026-07-30 (DOC-04, EV-16) no esta en el repositorio.** Existe y su
+   hash consta en el historial del proyecto, pero el archivo no se pudo recuperar de los
+   medios disponibles. Su audio si esta publicado.
+
+Las seis de la ronda terminal **no son una ausencia**: existen las doce piezas --seis videos
+y seis audios--, estan declaradas en la ficha tecnica con su duracion y su hash, y residen
+en la zona restringida por lo que dice su consentimiento. Sus duraciones se pueden
+contrastar contra la cabecera de cada transcripcion, donde consta la misma cifra:
+
+| Evidencia | Participante | Duracion | Video | Audio |
+|---|---|---|---|---|
+| `EV-20` | DOC-05 | 19:28 | Restringida | Restringida |
+| `EV-21` | DOC-06 | 14:20 | Restringida | Restringida |
+| `EV-22` | DOC-07 | 21:16 | Restringida | Restringida |
+| `EV-23` | DOC-08 | 13:44 | Restringida | Restringida |
+| `EV-24` | DOC-09 | 11:45 | Restringida | Restringida |
+| `EV-25` | DOC-10 | 16:22 | Restringida | Restringida |
 
 ---
 

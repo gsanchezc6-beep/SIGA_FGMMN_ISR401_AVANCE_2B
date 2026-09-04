@@ -5,6 +5,26 @@ Universidad Tecnica Estatal de Quevedo Â· ISR-401 Ingenieria de Requerimientos Â
 
 ---
 
+> ## Estado de esta declaracion a 2026-09-04
+>
+> **Superada por los hechos.** La **ronda terminal del 2026-09-03** anadio seis entrevistas
+> a docentes (`EV-20` a `EV-25`) y llevo el corpus de diez a **dieciseis**. El informe
+> escrito de calificacion de la Entrega 2B fija el minimo terminal en dieciseis, de modo que
+> ya no hay reduccion que declarar respecto del minimo aplicable.
+>
+> **Este documento no se reescribe.** Registra una decision real, su fecha, su fundamento y
+> el hecho de que no se obtuvo autorizacion escrita para ella. Borrarlo o reescribirlo en
+> pasado dejaria sin rastro un periodo en el que el equipo trabajo con una muestra reducida y
+> lo declaro abiertamente. Lo que sigue vale como historia del proceso, no como estado actual.
+>
+> **Lo que sigue vigente sin cambios:** la exclusion integra de `EV-15` por retiro del
+> consentimiento, el calculo de potencia --que se refiere al numero de evaluadores del
+> cuasi-experimento, no al de entrevistas--, y las amenazas a la validez externa derivadas
+> de la composicion de la muestra, que la ronda terminal no corrige: nueve de los dieciseis
+> participantes son docentes, y conserjeria y coordinacion siguen infrarrepresentadas.
+
+---
+
 ## 1. Que se declara
 
 La seccion 5.1 de la guia de la Entrega Final fija un minimo de **24 participantes** con
