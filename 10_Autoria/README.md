@@ -22,7 +22,7 @@ Este README declara el estado real de cada elemento. Lo que falta figura como fa
 | A5 | `notas_campo/` | **Pendiente** | Notas manuscritas de cada sesion de elicitacion, con la fecha visible. Se capturan en la ronda terminal |
 | A6 | `fotos_equipo/` | **Pendiente** | Con dos integrantes identificables y la fecha en los metadatos |
 | A7 | `doble_codificacion/` | **Pendiente** | Hasta el 2026-09-02 el equipo eran dos personas y una de ellas hizo toda la codificacion; con la reincorporacion vuelve a ser posible que la hagan dos integrantes distintos |
-| A8 | `correspondencia/` | **Pendiente** | Solicitudes, autorizaciones y confirmaciones de cita, fechadas |
+| A8 | `correspondencia/` | **Depositado** | Tres capturas de la coordinacion de la ronda terminal, con la fecha del sistema visible y los datos de terceros censurados |
 | A9 | `declaracion_uso_ia.md` | **Depositado** | Por seccion, incluidas las secciones en las que no se empleo ninguna herramienta |
 | A10 | `aporte_individual.md` | **Depositado, sin firmar** | Generado desde el historial por `04_Trazabilidad/generar_aporte_individual.py`. Lleva el bloque de firmas; falta imprimirlo y firmarlo |
 | A11 | `exif_inventario.csv` | **Pendiente** | Depende de A6. Se genera con `python 10_Autoria/generar_exif.py` |

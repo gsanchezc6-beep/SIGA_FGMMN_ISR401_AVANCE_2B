@@ -30,3 +30,37 @@ estudio.
 La autorizacion del docente para cerrar el levantamiento en N=10 esta en
 `02_Evidencias/Etica/`, con su acta y las firmas de los testigos. No hay que duplicarla
 aqui: basta con enlazarla desde el inventario cuando se deposite el resto.
+
+---
+
+## Lo depositado el 2026-09-03
+
+Tres capturas de la coordinacion de las entrevistas de la ronda terminal, tomadas desde
+WhatsApp Web.
+
+| Archivo | Que muestra |
+|---|---|
+| `2026-09-03_Confirmacion_disponibilidad_01.png` | Aviso de disponibilidad y confirmacion de que el participante esta en el sitio |
+| `2026-09-03_Solicitud_y_reprogramacion_02.png` | Solicitud de la entrevista, respuesta de que no esta en la oficina, reprogramacion a quince minutos y confirmacion |
+| `2026-09-03_Solicitud_y_confirmacion_hora_03.png` | Presentacion del entrevistador, solicitud de la entrevista mencionada el dia anterior, pregunta por el lugar y confirmacion de la hora |
+
+### Por que se capturo la pantalla completa
+
+Porque **la conversacion sola no acredita la fecha**. WhatsApp muestra «Hoy» sobre los
+mensajes del dia, y un «Hoy» no fecha nada: dentro de un mes ese pantallazo seguira diciendo
+lo mismo. La captura de pantalla completa incluye **la barra de tareas con la fecha del
+sistema**, y eso ancla el «Hoy» a un dia concreto.
+
+### Que se censuro, y por que asi
+
+| Zona | Motivo |
+|---|---|
+| **La columna izquierda entera** | Contiene nombres, numeros de telefono, fotografias de perfil y previsualizaciones de conversaciones ajenas al proyecto. Ninguna aporta nada a la evidencia |
+| **El nombre del contacto en la cabecera** | Tercera persona identificable |
+| **El nombre dentro del mensaje citado** | En la captura 02 el nombre vuelve a aparecer dentro de la conversacion. Recortar la cabecera no habria bastado |
+
+La censura se aplico sobre el mapa de bits y el archivo se guardo de nuevo desde la imagen
+censurada: no hay una capa debajo de la que recuperar el dato.
+
+**Queda visible** la conversacion completa con sus horas, porque es el contenido que acredita
+la coordinacion, y la fecha del sistema.
