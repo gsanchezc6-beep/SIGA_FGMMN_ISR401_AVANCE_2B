@@ -14,17 +14,16 @@ Aulas — Equipo FGMMN — UTEQ · Entrevista EV-21*
 | Duracion | 14:20 |
 | Zona de evidencia | [P] Publica (material anonimizado) |
 | Anonimizacion | sin nombres propios; los cargos unicos y los terceros mencionados se sustituyen por marcadores genericos entre corchetes. |
-| Control de calidad | Transcrita de forma independiente por dos integrantes. Ver [`control_calidad/`](control_calidad/) |
+| Transcripcion | Cedeno Avila, Winston Damian |
+| Control de calidad | Transcrita tambien de forma independiente por Munoz Quinonez. Ver [`control_calidad/`](control_calidad/) |
 
 ---
 
-**Entrevistador:**
-Bueno, buenos días. Este, mi nombre es [ENTREVISTADOR]. Venimos de la Facultad de Ciencias de la de la Computación y bueno, estamos desarrollando lo que viene siendo la documentación eh de un proyecto titulado como SIGA. Es para la materia de ingeniería de requerimientos y bueno, la entrevista será para conocer sus experiencias dentro de las aulas relacionado a incidencias. Bueno, ahora para conocer eh la parte de rol, ¿cuánto tiempo lleva dictando clases en la facultad?
+**Entrevistador:** Bueno, buenos días. Este, mi nombre es [ENTREVISTADOR]. Venimos de la Facultad de Ciencias de la de la Computación y bueno, estamos desarrollando lo que viene siendo la documentación eh de un proyecto titulado como SIGA. Es para la materia de ingeniería de requerimientos y bueno, la entrevista será para conocer sus experiencias dentro de las aulas relacionado a incidencias. Bueno, ahora para conocer eh la parte de rol, ¿cuánto tiempo lleva dictando clases en la facultad?
 
 **DOC-06:** Dos años.
 
-**Entrevistador:**
-Listo. Dos años. Eh, ¿cuántas aulas o laboratorios tiene encargada como tal?
+**Entrevistador:** Listo. Dos años. Eh, ¿cuántas aulas o laboratorios tiene encargada como tal?
 
 **DOC-06:** Aulas a cargo
 
@@ -54,7 +53,7 @@ Listo. Dos años. Eh, ¿cuántas aulas o laboratorios tiene encargada como tal?
 
 **Entrevistador:** Y lo hace mediante que mensajería texto o hablarlo.
 
- **DOC-06:** de manera personal o a través de mensajes de WhatsApp.
+**DOC-06:** de manera personal o a través de mensajes de WhatsApp.
 
 **Entrevistador:** Okay. Eso lo hace porque no hay un formato, un documento. Eh...
 
