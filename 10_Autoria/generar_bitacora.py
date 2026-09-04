@@ -34,10 +34,12 @@ SALIDA = os.path.join(AQUI, "bitacora_sesiones.csv")
 SEP = "\x1f"
 FIN = "\x1e"
 
+# Usuario de GitHub de cada integrante. El de Gary consta en la URL del
+# repositorio y el de Winston lo confirmo el equipo el 2026-09-03.
 USUARIO_GIT = {
     "gsanchezc6@uteq.edu.ec": "gsanchezc6-beep",
-    "ymunozq@uteq.edu.ec": "yeranick-munoz",
-    "wcedenoa2@uteq.edu.ec": "wcedenoa2",
+    "ymunozq@uteq.edu.ec": "por confirmar",
+    "wcedenoa2@uteq.edu.ec": "WinstonCD",
 }
 
 # Prefijo de ruta -> area de trabajo, para describir que se toco.

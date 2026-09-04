@@ -63,8 +63,23 @@ herramienta; aqui los pixeles estan destruidos y el dato no existe en el archivo
 conservan en el contenedor cifrado descrito en
 [`../00_Restringido/README_Restringido.md`](../00_Restringido/README_Restringido.md).
 
+## Una correccion de codigos que conviene conocer
+
+Los seis formularios de la ronda terminal se numeraron en campo **desde `DOC-03`**, sin
+contrastar el corpus. Esos codigos estaban tomados: `DOC-04` es un docente entrevistado el
+2026-07-30, y `DOC-03` es el participante que **no firmo** el consentimiento y cuya
+entrevista quedo invalidada por eso. Un consentimiento firmado bajo ese codigo habria
+contradicho lo que declara el expediente.
+
+**La correccion se hizo sobre el papel, antes de escanear**, y los formularios depositados
+llevan ya el codigo correcto, de `DOC-05` a `DOC-10`. No se corrigio el escaneo ni se parcheo
+el PDF: alterar la imagen de un documento firmado es otra cosa.
+
+Lo unico que se corrigio fue el campo **«Codigo de participante asignado en el estudio»**,
+que el propio formulario declara como asignado por el equipo. El nombre, la cedula, la firma,
+la fecha y la casilla marcada no se tocaron: eso lo declaro el participante.
+
 ## Estado a 2026-09-03
 
-Los seis consentimientos de la ronda terminal **estan firmados pero no depositados**: hay
-que escanearlos, censurarlos y depositarlos. Hasta entonces el registro los muestra como
-`PENDIENTE DE DEPOSITO`, y el script lo avisa al ejecutarse.
+Los diecinueve consentimientos estan depositados y censurados. Ninguno figura como
+pendiente.

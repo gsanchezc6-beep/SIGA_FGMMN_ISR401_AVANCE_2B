@@ -68,6 +68,11 @@ def main():
         if not m:
             continue
         fecha, perfil, cod = m.group(1), m.group(2), m.group(3)
+        # Los de la ronda terminal se registran mas abajo, con su alcance y su
+        # estado de deposito. Si se anadieran tambien aqui saldrian por
+        # duplicado en cuanto se depositara el PDF.
+        if cod in RONDA_TERMINAL:
+            continue
         filas.append({
             "codigo_participante": cod,
             "perfil": perfil,
