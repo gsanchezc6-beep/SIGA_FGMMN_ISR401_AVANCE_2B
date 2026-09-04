@@ -1,10 +1,12 @@
 \begin{table}[htbp]
 \centering
-\caption{Estadísticos descriptivos por dimensión y origen}
+\footnotesize
+\caption{Descriptive statistics by quality dimension and requirement source}
 \label{tab:descriptivos}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llllllll}
 \toprule
-Dimensión & Origen & Mediana & Media & DE & Mín & Máx & RIC \\
+Dimension & Source & Median & Mean & SD & Min & Max & IQR \\
 \midrule
 Completitud & Humano & 4.000 & 3.907 & 1.016 & 2.000 & 5.000 & 2.000 \\
 Completitud & LLM & 4.000 & 4.115 & 0.868 & 2.000 & 5.000 & 1.000 \\
@@ -17,5 +19,6 @@ Correccion\_fuente & LLM & 5.000 & 4.487 & 0.597 & 3.000 & 5.000 & 1.000 \\
 Consistencia\_interna & Humano & 4.000 & 4.147 & 0.817 & 2.000 & 5.000 & 1.000 \\
 Consistencia\_interna & LLM & 4.000 & 4.385 & 0.669 & 3.000 & 5.000 & 1.000 \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}

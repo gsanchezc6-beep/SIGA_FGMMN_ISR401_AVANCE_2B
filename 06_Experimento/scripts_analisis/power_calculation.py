@@ -74,12 +74,17 @@ def main():
     resultado.to_csv(args.salida_csv, index=False, encoding="utf-8")
     print(f"\nResultado escrito en: {args.salida_csv}")
 
-    columnas_es = {
-        "Cohen_d_objetivo": "Cohen d objetivo", "alpha": r"$\alpha$", "potencia_deseada": "Potencia deseada",
-        "n_necesario": "n necesario (exacto)", "n_necesario_redondeado": "n necesario (redondeado)",
-        "n_actual": "n actual", "potencia_alcanzada_con_n_actual": "Potencia alcanzada con n actual",
+    # Rotulos de la tabla impresa. El manuscrito esta en ingles, de modo que
+    # las cabeceras tambien. Los nombres de columna del CSV no se tocan: son
+    # los que leen los demas scripts.
+    columnas_en = {
+        "Cohen_d_objetivo": r"Target $d$", "alpha": r"$\alpha$",
+        "potencia_deseada": "Target power",
+        "n_necesario": r"$n$ needed", "n_necesario_redondeado": r"$n$ needed (int.)",
+        "n_actual": r"$n$ actual",
+        "potencia_alcanzada_con_n_actual": "Power achieved",
     }
-    tabla = resultado.rename(columns=columnas_es)
+    tabla = resultado.rename(columns=columnas_en)
     alineacion = "l" * len(tabla.columns)
     # Se formatea columna por columna segun el dtype ORIGINAL del DataFrame:
     # tabla.iloc[0] convertiria toda la fila a float si se mezclan int y
@@ -96,8 +101,8 @@ def main():
             valores_formateados.append(str(v))
 
     lineas = [
-        r"\begin{table}[htbp]", r"\centering",
-        r"\caption{Cálculo de potencia estadística (prueba t apareada) — vía alterna al criterio C6}",
+        r"\begin{table}[htbp]", r"\centering", r"\footnotesize",
+        r"\caption{Statistical power calculation for the paired t-test}",
         r"\label{tab:power_calculation}",
         f"\\begin{{tabular}}{{{alineacion}}}", r"\toprule",
         " & ".join(tabla.columns) + r" \\", r"\midrule",

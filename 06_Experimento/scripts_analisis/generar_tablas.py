@@ -46,27 +46,89 @@ def _formatear_celda(valor):
     return _escapar_latex(valor)
 
 
+# Cabeceras cortas para el manuscrito. Los nombres de columna de los CSV son
+# descriptivos a proposito --- Shapiro_p_Humano, Varianzas_homogeneas --- pero
+# nueve de ellos no caben en el ancho de pagina de LNCS. El CSV no se toca: solo
+# cambia como se rotulan en la tabla impresa.
+CABECERAS = {
+    "Dimension": "Dimension",
+    "n_jueces": "$n$",
+    "Shapiro_p_Humano": "SW $p$ (Human)",
+    "Shapiro_p_LLM": "SW $p$ (LLM)",
+    "Normal_Humano": "Normal (H)",
+    "Normal_LLM": "Normal (L)",
+    "Levene_estadistico": "Levene $W$",
+    "Levene_p": "Levene $p$",
+    "Varianzas_homogeneas": "Equal var.",
+    "Prueba": "Test",
+    "Estadistico_nombre": "Stat.",
+    "Estadistico_valor": "Value",
+    "p_valor": "$p$",
+    "p_valor_ajustado": "$p_{\\mathrm{holm}}$",
+    "Significativo_holm": "Sig.",
+    "Tamano_efecto_nombre": "Effect size",
+    "Tamano_efecto_valor": "Value",
+    "IC95_inferior": "CI low",
+    "IC95_superior": "CI high",
+    # tabla_hipotesis
+    "p_valor_ajustado_holm": "$p_{\\mathrm{holm}}$",
+    "Tipo_efecto": "Effect size",
+    "Valor": "Value",
+    "IC 95%": "95\\% CI",
+    # tabla_descriptivos
+    "Dimensión": "Dimension",
+    "Origen": "Source",
+    "Mediana": "Median",
+    "Media": "Mean",
+    "DE": "SD",
+    "Mín": "Min",
+    "Máx": "Max",
+    "RIC": "IQR",
+    # tabla_acuerdo
+    "Cohen_kappa_juez1_juez2": "$\\kappa$ J1--J2",
+    "Cohen_kappa_juez1_juez3": "$\\kappa$ J1--J3",
+    "Cohen_kappa_juez2_juez3": "$\\kappa$ J2--J3",
+    "Fleiss_kappa_3jueces": "Fleiss $\\kappa$",
+    # tabla_power_calculation
+    "Cohen d objetivo": "Target Cohen's $d$",
+    "Potencia deseada": "Target power",
+    "n necesario (exacto)": "$n$ needed",
+    "n necesario (redondeado)": "$n$ needed (rounded)",
+    "n actual": "$n$ actual",
+    "Potencia alcanzada con n actual": "Power achieved",
+}
+
+
+def _rotulo(columna):
+    return CABECERAS.get(columna, _escapar_latex(columna))
+
+
 def _df_a_latex(df, caption, label):
     """
     Genera una tabla LaTeX equivalente a df.to_latex(), sin depender de
     jinja2 (pandas >= 2.1 enruta DataFrame.to_latex por el Styler, que
     exige jinja2 como dependencia opcional no listada en el README).
+
+    La tabla se envuelve en \\resizebox para que quepa en el ancho de la caja
+    de texto: varias tienen nueve columnas y se salian del margen derecho.
     """
     columnas = list(df.columns)
     alineacion = "l" * len(columnas)
     lineas = [
         r"\begin{table}[htbp]",
         r"\centering",
+        r"\footnotesize",
         f"\\caption{{{_escapar_latex(caption)}}}",
         f"\\label{{{label}}}",
+        r"\resizebox{\textwidth}{!}{%",
         f"\\begin{{tabular}}{{{alineacion}}}",
         r"\toprule",
-        " & ".join(_escapar_latex(c) for c in columnas) + r" \\",
+        " & ".join(_rotulo(c) for c in columnas) + r" \\",
         r"\midrule",
     ]
     for _, fila in df.iterrows():
         lineas.append(" & ".join(_formatear_celda(fila[c]) for c in columnas) + r" \\")
-    lineas += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
+    lineas += [r"\bottomrule", r"\end{tabular}%", r"}", r"\end{table}", ""]
     return "\n".join(lineas)
 
 
@@ -104,7 +166,7 @@ def tabla_descriptivos(procesados_dir, salida_dir):
             })
     resultado = pd.DataFrame(filas)
     _escribir_tex(resultado, os.path.join(salida_dir, "tabla_descriptivos.tex"),
-                  "Estadísticos descriptivos por dimensión y origen", "tab:descriptivos")
+                  "Descriptive statistics by quality dimension and requirement source", "tab:descriptivos")
 
 
 def tabla_supuestos(resultados_dir, salida_dir):
@@ -115,7 +177,7 @@ def tabla_supuestos(resultados_dir, salida_dir):
     df = pd.read_csv(ruta, encoding="utf-8-sig")
     df["Dimension"] = df["Dimension"].str.replace(r"\(1-5\)", "", regex=True)
     _escribir_tex(df, os.path.join(salida_dir, "tabla_supuestos.tex"),
-                  "Pruebas de supuestos: normalidad (Shapiro-Wilk) y homogeneidad de varianzas (Levene)",
+                  "Assumption checks: normality (Shapiro-Wilk) and homogeneity of variances (Levene)",
                   "tab:supuestos")
 
 
@@ -136,7 +198,7 @@ def tabla_hipotesis(resultados_dir, salida_dir):
                 "p_valor", "p_valor_ajustado_holm", "Tipo_efecto", "Valor", "IC 95%"]
     resultado = fusion[columnas]
     _escribir_tex(resultado, os.path.join(salida_dir, "tabla_hipotesis.tex"),
-                  "Pruebas de hipótesis por dimensión, con corrección de Holm-Bonferroni y tamaño del efecto",
+                  "Paired hypothesis tests by dimension, with Holm-Bonferroni correction and effect sizes",
                   "tab:hipotesis")
 
 
@@ -148,7 +210,7 @@ def tabla_acuerdo(resultados_dir, salida_dir):
     df = pd.read_csv(ruta, encoding="utf-8-sig")
     df["Dimension"] = df["Dimension"].str.replace(r"\(1-5\)", "", regex=True)
     _escribir_tex(df, os.path.join(salida_dir, "tabla_acuerdo.tex"),
-                  "Acuerdo inter-evaluador: kappa de Cohen por par de jueces y kappa de Fleiss del conjunto",
+                  "Inter-rater agreement: pairwise Cohen kappa and overall Fleiss kappa",
                   "tab:acuerdo")
 
 
