@@ -1,7 +1,7 @@
 # Declaracion de uso de inteligencia artificial
 
 Proyecto SIGA — Entrega Final (2B) — ISR-401 — Equipo FGMMN
-Ultima actualizacion: 2026-09-03
+Ultima actualizacion: 2026-09-04
 
 Elemento **A9** de la evidencia de autoria. Cubre, seccion por seccion, la herramienta
 empleada, el tipo de asistencia recibida y el metodo concreto con el que el equipo valido
@@ -72,6 +72,23 @@ declaracion cubra el entregable completo y no solo su estado a finales de agosto
 | `.mailmap` | Claude (Anthropic) | Unificacion de identidades historicas de Git | Comprobado con `git shortlog -sne main`: dos autores, ninguna identidad duplicada, ningun autor ajeno al equipo |
 | Recompilacion del ERS en A4 | Claude (Anthropic) | Cambio de geometria y recompilacion | Verificado sobre el registro de compilacion: cero desbordes horizontales, cero verticales, cero referencias sin resolver, cero errores |
 
+### Trabajo del 4 de septiembre de 2026
+
+Herramienta de apoyo a la codificacion tematica de la ronda terminal. **La
+codificacion en si no se automatizo y sigue declarada en el apartado 4**: lo que
+estas filas cubren es la preparacion mecanica del material y la correccion de dos
+defectos de los scripts de analisis.
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| `06_Experimento/scripts_analisis/extender_corpus_json.py` | Claude (Anthropic) | Script que incorpora al corpus JSON las transcripciones depositadas que aun no figuran en el | No reescribe ningun registro anterior: empalma los nuevos y comprueba campo por campo que los diez originales quedan identicos antes de escribir. Los recuentos de turnos de las seis --64, 89, 105, 43, 37 y 91-- coinciden con los verificados al depositarlas |
+| `curva_saturacion.py` --- orden determinista | Claude (Anthropic) | Deteccion de que `sort_values` de pandas no es estable y de que las seis entrevistas de la ronda terminal comparten fecha, con lo que el orden entre ellas podia variar entre ejecuciones; desempate por identificador de evidencia | Se reejecuto sobre la codificacion vigente y la tabla resultante es **identica byte a byte** a `saturacion_por_entrevista.csv` ya publicada. La correccion no altera ningun resultado anterior |
+| `curva_saturacion.py` del deposito Zenodo | Claude (Anthropic) | Correccion de la ruta por omision del corpus, que apuntaba a una carpeta inexistente dentro del propio deposito | Se comprobo contra el arbol real del deposito: el archivo esta en la raiz, un nivel por encima de `scripts_analisis/` |
+| `02_Evidencias/Codificacion_Tematica/incorporar_codificacion.py` | Claude (Anthropic) | Script que valida una hoja de codificacion rellenada y la incorpora al archivo | Probado con filas deliberadamente invalidas: rechaza el fragmento tomado del entrevistador, el retocado al copiar, el que no lleva categoria y el duplicado, y en ninguno de esos casos escribe nada |
+| Hoja de turnos y busqueda de umbrales (material de trabajo, fuera del repositorio) | Claude (Anthropic) | Separacion de los turnos del participante, descarte de los que no llegan a 18 palabras y de las formulas de cortesia, y busqueda por termino de los turnos que mencionan cada requisito huerfano | Van **todos** los turnos que superan el umbral, sin seleccion previa, para que la eleccion de que es codificable la haga quien codifica. Las columnas de codigo y de juicio se entregan vacias |
+
+---
+
 ## 4. Secciones en las que no se empleo ninguna herramienta
 
 Se enumeran para que la declaracion sea completa y no solo positiva.
@@ -84,7 +101,7 @@ Se enumeran para que la declaracion sea completa y no solo positiva.
 | Las decisiones de priorizacion MoSCoW, Kano y WSJF | El equipo |
 | Los diagramas originales en Visual Paradigm (`.vpp`) y en draw.io | El equipo |
 | El analisis, la discusion, las conclusiones y las amenazas a la validez | El equipo |
-| La codificacion tematica del corpus y la curva de saturacion | El equipo |
+| La codificacion tematica del corpus y la curva de saturacion | El equipo. Incluida la de las seis entrevistas de la ronda terminal: la asistencia recibida se limito a separar los turnos y a buscar terminos, y las columnas de codigo, categoria y juicio se entregaron vacias |
 | La sesion de validacion comunicativa y su conduccion | El equipo |
 | La defensa oral y la exposicion grabada | El equipo |
 | La obtencion de los consentimientos informados y de las firmas de testigos | El equipo |
