@@ -12,10 +12,15 @@ La guia de la Entrega Final pide **seis sesiones de validacion grabadas con acta
 con usuarios tecnicos y tres con usuarios no tecnicos**.
 
 El equipo deposita las sesiones no tecnicas completas y **una sola sesion con usuario
-tecnico**. No se alcanzan las tres, y no por falta de gestion: **en la institucion no hay tres
-personas que cumplan el perfil**.
+tecnico**. No se alcanzan las tres.
 
-Este documento deja constancia de a quien se busco, por que no califica, y que se hizo en su
+**La institucion si cuenta con mas personal que cumple el perfil.** El area de Tecnologias de
+la Informacion y Comunicacion tiene mas personal tecnico, pero el 2026-09-04 esa area estaba
+en remodelacion y su personal no se encontraba en la institucion. La causa es de calendario,
+no de plantilla, y se declara asi para no atribuir a la organizacion una carencia que no
+tiene.
+
+Este documento deja constancia de a quien se busco, por que califica o no, y que se hizo en su
 lugar. No sustituye al requisito ni pretende equivaler a el.
 
 ## 2. Como se decidio quien es usuario tecnico
@@ -47,7 +52,7 @@ misma entrega.
 
 | Campo | Valor |
 |---|---|
-| Codigo de participante | `TI-01` |
+| Codigo de participante | `TIC-01` |
 | Identificador de evidencia | `EV-26` |
 | Codigo de sesion | `WT-____` |
 | Fecha | 2026-09-04 |
@@ -71,28 +76,20 @@ funcion de administracion de sistemas, cuentas, equipamiento o red.
 La sesion que si se realizo se hizo con la unica persona localizada que cumple el perfil sin
 ambiguedad.
 
-## 6. Lo que este hallazgo significa para la especificacion
-
-Que la institucion cuente con **una sola persona** en funcion de administracion tecnica no es
-solo una limitacion del muestreo: **es un dato sobre la organizacion cliente**, y afecta a
-requisitos que el equipo escribio suponiendo lo contrario.
+## 6. Que sigue faltando en la matriz, y por que importa
 
 Diez requisitos de la matriz declaran a `Personal de TI` como destinatario y **ocho no tenian
-ninguna evidencia de campo** antes de esta sesion: `RNF-03`, `RNF-06`, `RNF-09`, `RNF-10`,
-`RNF-12`, `RD-03`, `RD-10` y `RD-11`. La razon de ese vacio queda ahora explicada: no habia a
-quien preguntarle.
+ninguna evidencia de campo**: `RNF-03`, `RNF-06`, `RNF-09`, `RNF-10`, `RNF-12`, `RD-03`,
+`RD-10` y `RD-11`. Sus umbrales se escribieron sin consultar al perfil que tendria que
+cumplirlos.
 
-Tres de ellos presuponen un equipo tecnico que no existe con ese tamano:
+La sesion con `TIC-01` cubre los que se alcanzaron a consultar en quince minutos. Los que
+queden sin cubrir **siguen declarandose huerfanos**, no se dan por sostenidos.
 
-| Requisito | Umbral escrito | Supuesto que no se sostiene |
-|---|---|---|
-| `RNF-06` | Cobertura de pruebas unitarias `>= 70 %` en modulos criticos | Que exista una funcion de aseguramiento de calidad que la exija y la verifique |
-| `RNF-09` | Incorporar un sensor IoT nuevo en `<= 8 horas-persona` | Que haya personal disponible para dedicar esas horas |
-| `RNF-14` | Diagnostico de una falla reportada `<= 15 min` | Que haya alguien de guardia para diagnosticar en ese plazo |
-
-Se traslada a la seccion de amenazas a la validez del manuscrito, y al apartado de hallazgos
-contraintuitivos: **un sistema disenado para una organizacion se especifico suponiendo una
-estructura de soporte que la organizacion no tiene.**
+La limitacion que se traslada al manuscrito es de muestreo, no de estructura: el perfil que
+menos se consulto es precisamente el destinatario de los requisitos mas exigentes en umbral
+--`RNF-06`, `RNF-09` y `RNF-14`--, de modo que esos tres son los que menos respaldo empirico
+tienen de toda la especificacion. Se declara como amenaza a la validez de constructo.
 
 ## 7. Efecto sobre la evaluacion
 
