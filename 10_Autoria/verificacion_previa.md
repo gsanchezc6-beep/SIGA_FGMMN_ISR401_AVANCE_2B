@@ -9,7 +9,7 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 | | |
 |---|---|
 | Comprobado sobre | un clon limpio del remoto |
-| Version | `c13ac7f` |
+| Version | `2fded58` |
 
 ---
 
@@ -58,18 +58,42 @@ datos personales de otra forma.
 
 ---
 
-## Firma
+## Firmas
 
 La guia exige que quien comprueba sea **una persona distinta de quien produjo cada
-artefacto**. Quien firma declara haber revisado el resultado de arriba y las tres
-comprobaciones manuales.
+artefacto**. Con un solo firmante eso no se puede cumplir sobre el arbol entero:
+los tres integrantes tienen confirmaciones, y quien mas produjo no puede verificarse
+a si mismo. Se reparte en dos firmas que **entre las dos cubren todo el arbol sin
+que nadie compruebe lo suyo**.
 
-Nombre: ______________________________________________
+El reparto no es una declaracion de intenciones: sale del historial. Y se comprueba
+**por archivo**, no por carpeta: los dos firmantes tienen confirmaciones dentro de
+`02_Evidencias` y de `10_Autoria`, pero ninguno sobre los archivos que verifica el
+otro.
 
-Correo institucional: _________________________________
+### Primera firma
 
-Artefactos que NO produjo, y que por tanto puede verificar:
-
-_______________________________________________________
+| | |
+|---|---|
+| Nombre | Cedeno Avila, Winston Damian |
+| Correo institucional | wcedenoa2@uteq.edu.ec |
+| Artefactos que **no** produjo, y que por tanto verifica | `01_ERS`, `03_Modelado`, `04_Trazabilidad`, `05_MVP`, `06_Experimento`, `07_Datos`, `07_Publicacion` y `08_Defensa` |
+| Como se comprueba | Cero confirmaciones suyas en esas ocho carpetas, con `git log --format=%ae -- <carpeta>` |
 
 Firma: ____________________________    Fecha: ______________
+
+### Segunda firma
+
+Cubre lo que produjo el primer firmante, y que por eso el no puede verificar.
+
+| | |
+|---|---|
+| Nombre | Munoz Quinonez, Yeranick Esther |
+| Correo institucional | ymunozq@uteq.edu.ec |
+| Artefactos que **no** produjo, y que por tanto verifica | Los archivos depositados por Cedeno Avila: las seis transcripciones de la ronda terminal (`EV-20` a `EV-25`), la carpeta `control_calidad/` completa, `incorporar_codificacion.py` y sus dos capturas de A2 |
+| Como se comprueba | Cero confirmaciones suyas **sobre esos archivos**. El reparto es por archivo y no por carpeta: los dos tienen confirmaciones en `02_Evidencias` y en `10_Autoria`, pero no sobre los mismos archivos. Se comprueba con `git log --format=%ae -- <archivo>` |
+
+Firma: ____________________________    Fecha: ______________
+
+> Ambos firmantes declaran haber revisado el resultado de arriba y las tres
+> comprobaciones marcadas como manuales, cada uno sobre las rutas que le corresponden.
