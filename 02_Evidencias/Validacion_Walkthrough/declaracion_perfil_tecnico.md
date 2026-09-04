@@ -56,8 +56,15 @@ misma entrega.
 | Identificador de evidencia | `EV-26` |
 | Codigo de sesion | `WT-____` |
 | Fecha | 2026-09-04 |
-| Cargo declarado | Administradora de tecnologias de la informacion de laboratorios |
-| Por que califica | Administra el equipamiento y los sistemas de los laboratorios de la facultad. El cargo y la funcion declarada coinciden |
+| Cargo declarado | **Asistente de Tecnologias TIC**, tal como consta escrito de su puno y letra en el consentimiento firmado |
+| Por que califica | Pertenece al area de Tecnologias de la Informacion y Comunicacion y administra el equipamiento y los sistemas de los laboratorios de la facultad |
+| Funcion literal | *(pendiente: se transcribe del acta, apartado 1, con las palabras que uso en la sesion)* |
+
+> **El cargo se toma del documento firmado, no de lo que se recordo despues.** La primera
+> version de esta declaracion decia «Administradora de tecnologias de la informacion de
+> laboratorios», que es como se describio la sesion de memoria. El consentimiento dice
+> «Asistente de Tecnologias TIC». Manda el papel: una declaracion que no coincide con su
+> propia evidencia se cae al contrastarlas.
 
 ## 5. Por que no hubo mas
 
