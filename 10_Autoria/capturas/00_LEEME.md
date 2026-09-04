@@ -18,9 +18,9 @@ AAAA-MM-DD_usuario_artefacto.png
 ```
 
 Donde `usuario` es el usuario de Git, el mismo que consta en `bitacora_sesiones.csv`:
-`gsanchezc6-beep`, `yeranick-munoz`, `wcedenoa2`.
+`gsanchezc6-beep`, `ymunozq`, `WinstonCD`.
 
-Ejemplo: `2026-09-03_wcedenoa2_transcripcion_EV-20.png`
+Ejemplo: `2026-09-04_WinstonCD_transcripcion_EV-20.png`
 
 ## Que no sirve
 
