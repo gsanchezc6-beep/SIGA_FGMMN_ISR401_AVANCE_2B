@@ -8,6 +8,44 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.9.0] - 2026-09-04
+
+Cierre del examen final. Etiqueta `2B-final-v3.0`.
+
+### Anadido
+
+- **A2 completo**: tres capturas por cada integrante, todas con la barra de tareas y el
+  reloj visibles.
+- **A6 y A11**: dos fotografias del equipo en la facultad, depositadas tal como salieron
+  del telefono, y su inventario EXIF con fecha de captura, dispositivo y hash.
+- **A7**: las dos codificaciones tematicas independientes y su acuerdo. Kappa de Cohen sin
+  ponderar de 0,548 para el codigo y 0,911 para la categoria, con intervalo por bootstrap.
+- **A10 firmado** por los tres integrantes acreditados, previa consulta escrita al docente.
+- Sesion de validacion `WT-08` con usuario tecnico, y las dos actas que faltaban por
+  depositar: las sesiones de walkthrough pasan de cinco a **ocho**.
+- Dos documentos mas de la organizacion: el horario de laboratorios --el artefacto con el
+  que `RNF-08` exige integrarse-- y la ficha de registro de practicas. De cuatro a **seis**.
+- Declaracion del perfil tecnico en las sesiones de validacion: se realizo una de las tres
+  que pide la guia, y se declara la causa en lugar de reclasificar a nadie para cuadrar.
+
+### Cambiado
+
+- **El corpus son dieciseis entrevistas.** La documentacion declaraba diez.
+- Las doce grabaciones de la ronda terminal y las dos de `TIC-01` constan en la ficha
+  tecnica como zona restringida, con duracion, codec y hash.
+- **Lista de verificacion previa firmada por dos integrantes**, repartida de modo que
+  ninguno comprueba lo que produjo. Diez de doce comprobaciones en OK sobre clon limpio.
+
+### Corregido
+
+- La curva de saturacion no era reproducible: `sort_values` no es estable y las seis
+  entrevistas de la ronda terminal comparten fecha.
+- El manifiesto se regeneraba a mano, y un archivo nuevo sin anadir no lo delataba ninguna
+  comprobacion. Ahora sale de `git ls-files`.
+- El recuento por autor declaraba cero confirmaciones para el tercer integrante.
+
+---
+
 ## [2B-1.8.0] - 2026-09-04
 
 Cierre de la ronda terminal de campo: el corpus pasa de diez a dieciseis entrevistas, y la

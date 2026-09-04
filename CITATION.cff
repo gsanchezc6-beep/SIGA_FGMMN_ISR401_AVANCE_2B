@@ -3,7 +3,7 @@ message: "Si utiliza este trabajo, citelo de la siguiente manera."
 type: software
 
 title: "SIGA - Sistema Inteligente de Gestion de Aulas: especificacion de requisitos y paquete de replicacion"
-version: "2B-1.8.0"
+version: "2B-1.9.0"
 date-released: "2026-08-31"
 
 repository-code: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
