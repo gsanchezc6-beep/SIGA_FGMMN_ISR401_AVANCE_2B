@@ -38,7 +38,7 @@ FIN = "\x1e"
 # repositorio y el de Winston lo confirmo el equipo el 2026-09-03.
 USUARIO_GIT = {
     "gsanchezc6@uteq.edu.ec": "gsanchezc6-beep",
-    "ymunozq@uteq.edu.ec": "por confirmar",
+    "ymunozq@uteq.edu.ec": "ymunozq",
     "wcedenoa2@uteq.edu.ec": "WinstonCD",
 }
 

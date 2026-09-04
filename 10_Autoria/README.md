@@ -16,10 +16,10 @@ Este README declara el estado real de cada elemento. Lo que falta figura como fa
 | Cod. | Elemento | Estado | Nota |
 |---|---|---|---|
 | A1 | `bitacora_sesiones.csv` | **Depositado** | Derivado del historial por `generar_bitacora.py`. Una fila por persona y dia con commits |
-| A2 | `capturas/` | **Pendiente** | Minimo tres por integrante, **cada uno en su propia maquina**, con el reloj y el nombre de sesion de usuario visibles. Las 18 de las sesiones no cuentan: salen de una sola maquina |
+| A2 | `capturas/` | **Parcial: 1 de 3 por integrante** | Hay una por persona, tomada cada uno en su maquina, con archivo del proyecto, reloj y nombre de sesion visibles. **Faltan dos mas de cada uno** |
 | A3 | Fuentes editables | **Depositado** | En el propio arbol, junto a cada imagen exportada. Inventario en `fuentes_editables.md` |
 | A4 | `grabaciones/` | **Depositado** | Dos sesiones de 15:18 y 15:43 con pantalla compartida y discusion audible, mas 18 capturas tomadas durante ellas |
-| A5 | `notas_campo/` | **Pendiente** | Notas manuscritas de cada sesion de elicitacion, con la fecha visible. Se capturan en la ronda terminal |
+| A5 | `notas_campo/` | **Depositado** | Las seis de la ronda terminal, manuscritas, con fecha, hora de inicio y fin, duracion y codigo de participante. Sin nombres propios |
 | A6 | `fotos_equipo/` | **Pendiente** | Con dos integrantes identificables y la fecha en los metadatos |
 | A7 | `doble_codificacion/` | **Pendiente** | Hasta el 2026-09-02 el equipo eran dos personas y una de ellas hizo toda la codificacion; con la reincorporacion vuelve a ser posible que la hagan dos integrantes distintos |
 | A8 | `correspondencia/` | **Depositado** | Tres capturas de la coordinacion de la ronda terminal, con la fecha del sistema visible y los datos de terceros censurados |
