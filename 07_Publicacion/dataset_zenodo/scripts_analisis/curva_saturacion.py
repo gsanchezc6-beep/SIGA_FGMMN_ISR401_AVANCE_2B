@@ -28,8 +28,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 FECHAS_JSON_DEFAULT = os.path.join(
-    os.path.dirname(__file__), "..", "..", "07_Publicacion", "dataset_zenodo",
-    "transcripciones_anonimizadas.json",
+    os.path.dirname(__file__), "..", "transcripciones_anonimizadas.json",
 )
 
 
@@ -75,10 +74,16 @@ def main():
         df = df[~df["ID_evidencia"].isin(evs_sin_fecha)]
 
     df["fecha"] = df["ID_evidencia"].map(fechas)
+    # Orden cronologico, desempatando por identificador de evidencia. El
+    # desempate no es cosmetico: las seis entrevistas de la ronda terminal
+    # comparten fecha, y `sort_values` usa quicksort, que no es estable. Sin
+    # segunda clave el orden de esas seis --y con el, cuantos codigos nuevos
+    # se le atribuyen a cada una-- podria variar entre ejecuciones. Los
+    # identificadores se asignaron en el orden en que se condujeron.
     orden_evs = (
         df[["ID_evidencia", "fecha"]]
         .drop_duplicates()
-        .sort_values("fecha")
+        .sort_values(["fecha", "ID_evidencia"], kind="mergesort")
         .reset_index(drop=True)
     )
 
