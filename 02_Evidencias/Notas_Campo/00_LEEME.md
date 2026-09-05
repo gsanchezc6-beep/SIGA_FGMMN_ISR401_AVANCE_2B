@@ -55,9 +55,39 @@ La notacion que aparece en el margen izquierdo:
 | `[A]` | Hallazgo fuera de lo previsto |
 | `X` | Fuera de alcance |
 
-## Lo que falta en esta carpeta
+## El segundo conjunto: NC-01 a NC-06
 
-Las notas **NC-01 a NC-06**, correspondientes a las jornadas de observacion de entorno de
-junio y julio, estan redactadas pero **sin firmar y sin depositar**. Son un conjunto distinto
-del de estas seis: aquellas documentan dias de observacion del entorno, estas documentan
-sesiones de entrevista.
+Las jornadas de **observacion de entorno** de junio y julio. Son un conjunto distinto del
+anterior --aquellas documentan sesiones de entrevista, estas documentan dias de observacion--
+y se depositan firmadas el 2026-09-05.
+
+| Archivo | Jornada | Lugar |
+|---|---|---|
+| `2026-06-13_Entorno_NC-01_NotaCampo.pdf` | NC-01 | Coordinacion de carrera, FCC |
+| `2026-06-27_Entorno_NC-02_NotaCampo.pdf` | NC-02 | Cuarto de videovigilancia, FCC |
+| `2026-06-30_Entorno_NC-03_NotaCampo.pdf` | NC-03 | Aulas, FCC |
+| `2026-07-10_Entorno_NC-04_NotaCampo.pdf` | NC-04 | Cuarto de comunicaciones, FCC |
+| `2026-07-13_Entorno_NC-05_NotaCampo.pdf` | NC-05 | Aula 103, FCC |
+| `2026-07-22_Entorno_NC-06_NotaCampo.pdf` | NC-06 | Aulas, FCC |
+
+### Estas seis NO son contemporaneas, y lo dicen ellas mismas
+
+Cada una lleva en cabecera una **declaracion de procedencia**: fueron **redactadas el
+2026-08-30** a partir de las fotografias fechadas de cada jornada y de los documentos
+recogidos ese dia, y **no se escribieron en el sitio**. Se firman el 2026-09-05.
+
+Las tres fechas --observacion, redaccion y firma-- son distintas y constan por separado en
+cada documento. **Esa separacion es deliberada**: una reconstruccion documentada y etiquetada
+como tal es evidencia valida; la misma reconstruccion presentada como toma directa no lo
+seria. Por eso tampoco se escribieron a mano: hacerlo las haria parecer contemporaneas
+cuando no lo son.
+
+### Procedencia reforzada de NC-01
+
+NC-01 se apoyaba en una sola fotografia sin metadatos EXIF y era la mas debil de las seis.
+Ya no: el horario academico que documenta esa jornada **se recibio por mensajeria el
+2026-06-13 a las 12:29**, remitido por la persona que consta como `TIC-01`, y el original
+digital esta depositado en `02_Evidencias/Documentos_Organizacion/Horario_Academico.pdf`.
+El archivo del repositorio tiene **una pagina y 3,4 kB**, coincidente con lo que declara el
+envio recibido. La procedencia queda fechada y contrastable, y no depende de la memoria del
+observador.
