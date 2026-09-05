@@ -130,7 +130,7 @@ una cadena de trazabilidad rota.
 ## Preguntas del tribunal (10 min) — preparación sugerida
 
 Al ser individual, **cada integrante responde por el proyecto entero**. No hay temas
-asignados por persona. Los cinco que el tribunal suele tocar, y que conviene poder responder
+asignados por persona. Los que el tribunal suele tocar, y que conviene poder responder
 sin mirar las diapositivas, son:
 
 - **Por que REFSQ y no el journal.** La plantilla del manuscrito es Springer LNCS, que es la
@@ -141,8 +141,17 @@ sin mirar las diapositivas, son:
   significa eso, y por que se reporta en lugar de omitirlo.
 - **La matriz de trazabilidad.** Como se cierra una cadena rota y por que las 74 filas no
   tienen ninguna celda vacia.
-- **El cierre en diez entrevistas.** Que se declara, que respaldo hay, y cual es el efecto
-  reconocido sobre la validez externa.
+- **El cierre en diez entrevistas, y su reapertura.** Que se declaro entonces, y por que el
+  corpus son ahora dieciseis mientras el analisis sigue sobre las diez codificadas.
+- **Los dos umbrales corregidos.** `RNF-04` paso de dos a cinco minutos y `RNF-14` dejo de
+  tener una cifra unica, los dos **contra evidencia de campo**. Es la respuesta mas fuerte que
+  tienen: corrigieron la especificacion porque preguntaron, no porque les convenia.
+- **La sesion tecnica que falto.** Una de las tres, con la causa declarada: el area de TICS
+  estaba en remodelacion. Y por que los conserjes no cuentan como perfil tecnico, que lo dicen
+  ellos mismos en sus transcripciones.
+
+**El banco de preguntas cubre estas y ocho mas** en su seccion G, cada una con el artefacto
+que la respalda: `08_Defensa/banco_preguntas.md`.
 
 > **Advertencia de la guia.** La defensa se puede reprobar si el tribunal detecta que un
 > integrante no puede explicar decisiones basicas del proyecto, o si aparecen en las

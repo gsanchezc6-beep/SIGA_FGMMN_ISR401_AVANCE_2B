@@ -1,7 +1,7 @@
 # Banco de preguntas del tribunal
 
 Proyecto SIGA · ISR-401 · Equipo FGMMN · Universidad Tecnica Estatal de Quevedo
-Version 1.0 · 2026-08-29
+Version 1.1 · 2026-09-04
 
 Una respuesta por pregunta del temario. **Cada respuesta senala el artefacto que la
 respalda**, porque la guia evalua que las respuestas se anclen en artefactos concretos y no
@@ -30,7 +30,10 @@ los tres perfiles que intervienen en el ciclo de vida de una falla de aula.
 → `03_Modelado/02_iStar_SD/`, `01_ERS/` seccion de actores
 
 **A4. ¿Que documentos de la organizacion consultaron?**
-Estatuto de la UTEQ, codigo de etica, reglamento de vinculacion y horario academico.
+Seis: estatuto de la UTEQ, codigo de etica, reglamento de vinculacion, horario academico,
+horario de laboratorios --el artefacto con el que RNF-08 exige integrarse-- y la ficha de
+registro de practicas de laboratorio, que acredita por escrito que el control de uso se
+lleva en papel y con firma manuscrita.
 → `02_Evidencias/Documentos_Organizacion/`
 
 ---
@@ -294,3 +297,102 @@ Tres cosas: llevar la unidad de analisis al item en lugar del juez, que multipli
 potencia sin recolectar mas datos; registrar el protocolo antes de tocar ningun dato; y
 documentar las dependencias entre requisitos desde la primera version, porque su ausencia
 hizo que la especificacion aparentara un acoplamiento bajo que no tiene.
+
+---
+
+## G. La ronda terminal y lo que corrigio
+
+Seccion anadida el 2026-09-04. Cubre lo que cambio entre la Entrega 2B y el examen final,
+que es donde un tribunal suele preguntar: los cambios visibles entre una version y la
+siguiente.
+
+**G1. Corrigieron RNF-04 de dos a cinco minutos. ¿No es rebajar el requisito para poder
+cumplirlo?**
+Al reves: el umbral de dos minutos se habia fijado **sin preguntarle a ningun usuario**. En
+la ronda terminal se le pregunto a un docente cuanto tardaria en entender la pantalla sin
+capacitacion previa y respondio «maximo unos cinco minutos». Es la unica medicion de campo
+que existe sobre ese umbral, y contradice la cifra escrita. Un umbral corregido con
+evidencia vale mas que uno inventado que nadie comprobo. La cita esta en la transcripcion.
+→ `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-09_EV-24_Transcripcion.md`
+
+**G2. ¿Por que RNF-14 dejo de tener una sola cifra?**
+Porque medir un tiempo medio sobre dos poblaciones distintas no mide el servicio, mide la
+mezcla. La asistente de TIC describio que la falla menor --periferico, cable o conexion-- se
+atiende en el acto, y que la mayor exige retirar el equipo y se resuelve en veinticuatro
+horas. Un umbral unico de quince minutos no es medible sobre esas dos cosas juntas. Ahora se
+mide por clase de falla. Quedo registrado como defecto **D-04** en el acta de la sesion.
+→ `02_Evidencias/Validacion_Walkthrough/Sesiones_Validacion/2026-09-04_Tecnico_TIC-01_Walkthrough_Acta.pdf`
+
+**G3. La guia pide tres sesiones de validacion con usuarios tecnicos y ustedes hicieron una.**
+Cierto, y esta declarado con su causa. El area de Tecnologias de la Informacion y
+Comunicacion estaba **en remodelacion el 4 de septiembre** y su personal no se encontraba en
+la institucion. La institucion **si tiene** mas personal que cumple el perfil: la causa es de
+calendario, no de plantilla, y se declara asi para no atribuirle a la organizacion cliente
+una carencia que no tiene. Se consulto ademas en biblioteca y en el area administrativa.
+→ `02_Evidencias/Validacion_Walkthrough/declaracion_perfil_tecnico.md`
+
+**G4. ¿Por que los conserjes no cuentan como usuarios tecnicos, si manejan las camaras y los
+proyectores?**
+Porque ellos mismos se distinguen del tecnico, y esta grabado. `CONS-03` describe que
+comunica la falla a la autoridad de la facultad y que «ella realiza el escrito y ella manda
+para el tecnico»; `CONS-02`, que se avisa a los jefes «para que manden a los responsables a
+dar un mantenimiento». Operan y reportan; no administran. El criterio aplicado fue lo que
+cada persona declara que hace, no el nombre de su cargo ni la conveniencia del recuento.
+→ `02_Evidencias/Transcripciones/`, EV-08 y EV-09
+
+**G5. Tienen dieciseis entrevistas y analizan diez. ¿Por que no codificaron las seis nuevas?**
+Porque la codificacion tematica es lectura interpretativa y se hace con el corpus completo
+delante, no a ultima hora. Las seis estan transcritas, anonimizadas y depositadas; su
+codificacion queda pendiente y **asi se declara en todos los documentos**, incluido el
+manuscrito. Decir dieciseis sin esa precision haria pasar por analizado lo que solo esta
+transcrito.
+→ `07_Publicacion/manuscrito_final.pdf`, amenaza **T4**
+
+**G6. ¿Que es RQ2 y por que aparece si el estudio comparaba humano contra LLM?**
+El estudio siempre respondio dos preguntas y solo enunciaba una. RQ2 es **cuanta potencia
+estadistica alcanza un panel ciego de tres jueces y que tamano necesitaria una replicacion**:
+8,4 % frente al 80 % convencional, y harian falta 34 observaciones apareadas. La respuesta ya
+estaba calculada por script antes de enunciarla.
+→ `06_Experimento/resultados/power_calculation.csv`
+
+**G7. La matriz tiene 41 filas con cadena completa de 74. ¿Y las otras 33?**
+Las setenta y cuatro tienen **todos sus eslabones declarados**: ninguna celda dice nada
+ambiguo. Las que no cierran no estan a medio hacer, **no pueden** cerrar: nueve nacen del
+analisis normativo de la Ley Organica de Proteccion de Datos y no de entrevista --inventarles
+evidencia de campo seria fabricarla--, once son restricciones de diseno que se verifican por
+revision y no por caso de prueba, y `RF-09` y `RF-18` no llevan historia de usuario porque
+**no son Must**, y el ERS escribe una historia por requisito obligatorio: escribirlas
+contradiria su propia regla. La columna se comprueba por script.
+→ `04_Trazabilidad/huerfanos_y_cadenas_rotas.md`, `python 04_Trazabilidad/verificar_matriz.py`
+
+**G8. Hay dieciseis entrevistas y solo catorce videos. ¿Donde estan los otros?**
+Dos ausencias, declaradas desde agosto. `EV-14` se registro **solo en audio por peticion
+expresa del participante**, y el video de `EV-16` existe pero no se pudo recuperar de los
+medios disponibles; su audio si esta publicado. Ademas, el video y el audio de las seis de la
+ronda terminal **no se publican**: su consentimiento dice literalmente que las grabaciones
+originales no se publican, de modo que a la zona publica va solo la transcripcion anonimizada.
+→ `02_Evidencias/00_Restringido/README_Restringido.md`, apartados 1 y 4
+
+**G9. ¿Como sabemos que ese material restringido existe, si no lo podemos ver?**
+Por la ficha tecnica: registra las treinta y dos piezas con su duracion, su codec, su tamano
+y su **SHA-256**, de modo que cualquiera puede contrastar un archivo contra su hash sin
+abrirlo. El contenedor esta cifrado con AES-256 y con los nombres de archivo ocultos, alojado
+en el OneDrive institucional, y la contrasena se entrega al docente por el Sistema de Gestion
+Academica y por ningun otro medio.
+→ `02_Evidencias/00_Restringido/fichas_tecnicas.csv`
+
+**G10. ¿Usaron inteligencia artificial? ¿En que exactamente?**
+Si, y esta declarado seccion por seccion, incluidas aquellas en las que **no** se uso ninguna
+herramienta. Hay dos usos separados: el Conjunto A de requisitos funcionales fue **generado
+por un modelo de lenguaje a proposito**, como variable independiente del cuasi-experimento
+--es el objeto de estudio, no asistencia--; y como apoyo de redaccion y de tooling, con el
+metodo de validacion anotado en cada fila. La codificacion tematica del corpus y la curva de
+saturacion las produjo el equipo sin herramienta, y asi consta.
+→ `10_Autoria/declaracion_uso_ia.md`
+
+**G11. ¿Que aprendieron que no esperaban?**
+Que dos de los seis docentes respondieron que conocer el estado del aula antes de entrar les
+resulta **indiferente**, lo que discute la premisa del sistema; y que la unica persona con
+perfil tecnico localizada partio en dos una falla que la especificacion trataba como una
+sola. Los dos hallazgos estan en el corpus y ninguno se omitio por incomodo.
+→ `02_Evidencias/Transcripciones/`, EV-22 y EV-24

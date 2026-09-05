@@ -36,6 +36,28 @@ Cierre del examen final. Etiqueta `2B-final-v3.0`.
 - **Lista de verificacion previa firmada por dos integrantes**, repartida de modo que
   ninguno comprueba lo que produjo. Diez de doce comprobaciones en OK sobre clon limpio.
 
+### Corregido tras la revision del expediente
+
+- **`10_Autoria/README.md` declaraba A6 y A7 como pendientes**, A2 como parcial y A10 sin
+  firmar. Es el indice del criterio de piso P7: quien lo leyera concluiria que la evidencia
+  de autoria esta incompleta.
+- **Cinco enlaces relativos rotos**, dos de ellos en el README y en la declaracion de uso de
+  IA. Los 74 enlaces del repositorio resuelven.
+- **El reporte, el ERS y el manuscrito** decian que el campo se cerro en diez entrevistas.
+  Ahora declaran dieciseis y precisan que el analisis va sobre las diez codificadas.
+- **La Tabla 68 del ERS** marcaba como pendientes el modelado UML, el dataset con DOI y el
+  manuscrito, que estan hechos.
+- **El registro de anonimizacion** se detenia el 29 de agosto y no recogia la censura de los
+  consentimientos de la ronda terminal ni del acta `WT-08`.
+- **`RNF-04` y `RNF-14`**, corregidos contra evidencia de campo.
+- **La columna `Estado-Traza`** estaba escrita a mano y se habia desincronizado de las celdas.
+  Ahora se comprueba con `04_Trazabilidad/verificar_matriz.py`. La cadena completa pasa de 34
+  a 41 filas de 74.
+- **El manuscrito enuncia RQ2**, que ya respondia sin declararla, y retira del titulo de un
+  apartado una referencia a un criterio de la rubrica de la asignatura.
+- **El banco de preguntas de la defensa** no cubria nada de la ronda terminal. Seccion G, con
+  once preguntas ancladas a su artefacto.
+
 ### Corregido
 
 - La curva de saturacion no era reproducible: `sort_values` no es estable y las seis
