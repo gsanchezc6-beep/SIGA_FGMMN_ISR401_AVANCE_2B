@@ -51,10 +51,10 @@ Solo lo que contiene datos personales que el consentimiento no autoriza a public
 | **Video y audio de las seis entrevistas de la ronda terminal** (`EV-20` a `EV-25`) | El consentimiento de esa ronda dice que las grabaciones originales no se publican. No es una decision de conveniencia: publicarlas seria usarlas fuera de lo consentido |
 | Clave de desciego del cuasi-experimento | Su ubicacion y custodia constan en [`../../06_Experimento/clave_desciego_UBICACION.md`](../../06_Experimento/clave_desciego_UBICACION.md) |
 
-Ese material se conserva en un contenedor cifrado con **AES-256** y nombres de archivo
+Ese material se conserva en **`SIGA_zona_restringida.7z`**, un contenedor cifrado con **AES-256** y nombres de archivo
 ocultos, alojado en el OneDrive institucional de la UTEQ:
 
-<https://uteqeduec-my.sharepoint.com/:f:/g/personal/gsanchezc6_msuteq_edu_ec/IgAIbQP1scbLQoCrcCWgqMbNAQrzV6V3SQg8yhuu2D1TZEc?e=3JJvgX>
+<https://uteqeduec-my.sharepoint.com/:u:/g/personal/gsanchezc6_msuteq_edu_ec/IQAHZ7FrestzSICGfFoaJfzWAX9gkf9XQpZj5JTi_zYuNhA?e=SJHr4N>
 
 La contrasena se entrega al docente responsable por el Sistema de Gestion Academica. No se
 transmite por ningun otro medio y no consta en este repositorio.

@@ -90,6 +90,7 @@ solo en el repositorio de su entrega.
 |---|---|
 | Paquete de datos en Zenodo | [`10.5281/zenodo.22137679`](https://doi.org/10.5281/zenodo.22137679) |
 | Registro previo del protocolo en OSF | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) |
+| **Caratula de identificacion** | [`caratula_identificacion_SGA.pdf`](caratula_identificacion_SGA.pdf), con la URL del repositorio, el identificador del ultimo commit y la etiqueta de linea base. Se deposita aqui ademas de subirse al Sistema de Gestion Academica |
 | **Linea base vigente** | Etiqueta anotada **`2B-final-v3.0`**, la version entregada para el examen final de la semana 19. `2B-final` y `2B-final-v2.1` apuntan al commit `0e69071`, el de la Entrega 2B ya calificada, y se conservan como referencia historica |
 | Desviaciones respecto del protocolo | `06_Experimento/osf_deviations.pdf` |
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
