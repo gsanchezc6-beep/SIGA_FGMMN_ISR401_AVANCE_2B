@@ -1,0 +1,469 @@
+﻿Clave de incidencia,Resumen,Tipo de Incidencia,Estado,Etiquetas,Creada,Descripción
+SIGA-1,RF-01 Monitorear el estado ambiental del aula,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Monitorear el estado ambiental del aula
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-04, EV-09, EV-18
+Historia de usuario: HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07
+Criterio de aceptacion: CA-01, CA-02, CA-03, CA-04, CA-05, CA-06, CA-07
+Caso de prueba: CP-RF-01, CP-RF-02, CP-RF-03, CP-RF-04, CP-RF-05, CP-RF-06, CP-RF-07, CP-RF-08
+Marco legal: LOPDP Art. 26; Art. 4, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 4"
+SIGA-2,RF-02 Controlar remotamente los dispositivos del aula,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Controlar remotamente los dispositivos del aula
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-04
+Historia de usuario: HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07
+Criterio de aceptacion: CA-01, CA-02, CA-03, CA-04, CA-05, CA-06, CA-07
+Caso de prueba: CP-RF-01, CP-RF-02, CP-RF-03, CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08
+Marco legal: LOPDP Art. 26; Art. 4, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 2"
+SIGA-3,RF-03 Detectar automaticamente la ocupacion del aula,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Detectar automaticamente la ocupacion del aula
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-04, EV-09
+Historia de usuario: HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07
+Criterio de aceptacion: CA-01, CA-02, CA-03, CA-04, CA-05, CA-06, CA-07
+Caso de prueba: CP-RF-01, CP-RF-02, CP-RF-03, CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08
+Marco legal: LOPDP Art. 26; Art. 4
+Estado de traza: Completa
+Filas de la matriz: 3"
+SIGA-4,RF-04 Controlar remotamente los proyectores,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Controlar remotamente los proyectores
+Stakeholder: Personal de Infraestructura y Mantenimiento;Docente;Estudiantes
+Evidencia de origen: EV-01, EV-02, EV-03, EV-04, EV-12, EV-17, EV-18, EV-19
+Historia de usuario: HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07, HU-09, HU-10, HU-11, HU-13, HU-16
+Criterio de aceptacion: CA-01, CA-02, CA-03, CA-04, CA-05, CA-06, CA-07, CA-09, CA-10, CA-11, CA-13, CA-16
+Caso de prueba: CP-RF-01, CP-RF-02, CP-RF-03, CP-RF-04, CP-RF-05, CP-RF-06, CP-RF-07, CP-RF-08, CP-RF-11, CP-RF-12, CP-RF-13, CP-RF-14, CP-RF-16, CP-RF-22
+Marco legal: LOPDP Art. 26; Art. 4, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 6"
+SIGA-5,RF-05 Ajustar remotamente la climatizacion,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Ajustar remotamente la climatizacion
+Stakeholder: Personal de Infraestructura y Mantenimiento;Estudiantes
+Evidencia de origen: EV-01, EV-03, EV-04, EV-12, EV-17, EV-18, EV-19
+Historia de usuario: HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07, HU-09, HU-10, HU-11, HU-13, HU-16
+Criterio de aceptacion: CA-01, CA-02, CA-03, CA-04, CA-05, CA-06, CA-07, CA-09, CA-10, CA-11, CA-13, CA-16
+Caso de prueba: CP-RF-01, CP-RF-02, CP-RF-03, CP-RF-04, CP-RF-05, CP-RF-06, CP-RF-07, CP-RF-08, CP-RF-11, CP-RF-12, CP-RF-13, CP-RF-14, CP-RF-16, CP-RF-22
+Marco legal: LOPDP Art. 26; Art. 4, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 6"
+SIGA-6,RF-06 Integrar el sistema con la videovigilancia existente,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Integrar el sistema con la videovigilancia existente
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-07, EV-08, EV-18
+Historia de usuario: HU-01, HU-04, HU-05, HU-06, HU-16
+Criterio de aceptacion: CA-01, CA-04, CA-05, CA-06, CA-16
+Caso de prueba: CP-RF-01, CP-RF-04, CP-RF-05, CP-RF-06, CP-RF-07, CP-RF-22
+Marco legal: LOPDP Art. 26; Art. 4
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 4"
+SIGA-7,RF-07 Consultar un panel de control centralizado,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Consultar un panel de control centralizado
+Stakeholder: Personal de Infraestructura y Mantenimiento;Docente;Estudiantes
+Evidencia de origen: EV-01, EV-02, EV-03, EV-04, EV-07, EV-08, EV-09, EV-10, EV-12, EV-16, EV-17, EV-19
+Historia de usuario: HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07, HU-09, HU-10, HU-11, HU-13, HU-16
+Criterio de aceptacion: CA-01, CA-02, CA-03, CA-04, CA-05, CA-06, CA-07, CA-09, CA-10, CA-11, CA-13, CA-16
+Caso de prueba: CP-RF-01, CP-RF-02, CP-RF-03, CP-RF-04, CP-RF-05, CP-RF-06, CP-RF-07, CP-RF-08, CP-RF-11, CP-RF-12, CP-RF-13, CP-RF-14, CP-RF-16, CP-RF-22
+Marco legal: LOPDP Art. 26; Art. 4, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 10"
+SIGA-8,RF-08 Generar y enviar alertas por anomalias,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Generar y enviar alertas por anomalias
+Stakeholder: Personal de Infraestructura y Mantenimiento;Estudiantes
+Evidencia de origen: EV-01, EV-03, EV-04, EV-06, EV-12, EV-17, EV-19
+Historia de usuario: HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07, HU-08, HU-09, HU-10, HU-11, HU-13, HU-16
+Criterio de aceptacion: CA-01, CA-02, CA-03, CA-04, CA-05, CA-06, CA-07, CA-08, CA-09, CA-10, CA-11, CA-13, CA-16
+Caso de prueba: CP-RF-01, CP-RF-02, CP-RF-03, CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08, CP-RF-10, CP-RF-11, CP-RF-12, CP-RF-13, CP-RF-14, CP-RF-16, CP-RF-17, CP-RF-22
+Marco legal: LOPDP Art. 26; Art. 4, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 6"
+SIGA-9,RF-09 Predecir fallos de equipos mediante IA,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Predecir fallos de equipos mediante IA
+Stakeholder: Docente
+Evidencia de origen: EV-02
+Caso de prueba: CP-RF-09
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-10,RF-10 Registrar el historial de fallas y mantenimientos,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Registrar el historial de fallas y mantenimientos
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-06, EV-13
+Historia de usuario: HU-07, HU-08, HU-09, HU-10, HU-14
+Criterio de aceptacion: CA-07, CA-08, CA-09, CA-10, CA-14
+Caso de prueba: CP-RF-08, CP-RF-10, CP-RF-11, CP-RF-12, CP-RF-17, CP-RF-19
+Marco legal: LOPDP Art. 7, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 3"
+SIGA-11,RF-11 Notificar de forma inmediata las fallas criticas,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Notificar de forma inmediata las fallas criticas
+Stakeholder: Docente;Estudiantes
+Evidencia de origen: EV-02, EV-03, EV-06, EV-12, EV-17
+Historia de usuario: HU-04, HU-05, HU-06, HU-07, HU-08, HU-09, HU-10, HU-11, HU-13, HU-16
+Criterio de aceptacion: CA-04, CA-05, CA-06, CA-07, CA-08, CA-09, CA-10, CA-11, CA-13, CA-16
+Caso de prueba: CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08, CP-RF-10, CP-RF-11, CP-RF-12, CP-RF-13, CP-RF-14, CP-RF-16, CP-RF-17, CP-RF-22
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 4"
+SIGA-12,RF-12 Gestionar las solicitudes de mantenimiento,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Gestionar las solicitudes de mantenimiento
+Stakeholder: Personal de Infraestructura y Mantenimiento;Docente;Estudiantes
+Evidencia de origen: EV-01, EV-02, EV-03, EV-06, EV-11, EV-14, EV-16, EV-17
+Historia de usuario: HU-04, HU-05, HU-06, HU-07, HU-08, HU-09, HU-10, HU-16, HU-21
+Criterio de aceptacion: CA-04, CA-05, CA-06, CA-07, CA-08, CA-09, CA-10, CA-16, CA-21
+Caso de prueba: CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08, CP-RF-10, CP-RF-11, CP-RF-12, CP-RF-17, CP-RF-22
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 6"
+SIGA-13,RF-13 Controlar automaticamente el apagado energetico,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Controlar automaticamente el apagado energetico
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-05, EV-12
+Historia de usuario: HU-04, HU-05, HU-06, HU-07, HU-09, HU-11, HU-12, HU-13, HU-15, HU-18
+Criterio de aceptacion: CA-04, CA-05, CA-06, CA-07, CA-09, CA-11, CA-12, CA-13, CA-15, CA-18
+Caso de prueba: CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08, CP-RF-11, CP-RF-13, CP-RF-14, CP-RF-15, CP-RF-16, CP-RF-20, CP-RF-21
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 3"
+SIGA-14,RF-14 Analizar patrones de consumo energetico,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Analizar patrones de consumo energetico
+Stakeholder: Docente
+Evidencia de origen: EV-02, EV-12
+Historia de usuario: HU-04, HU-05, HU-06, HU-07, HU-09, HU-11, HU-13
+Criterio de aceptacion: CA-04, CA-05, CA-06, CA-07, CA-09, CA-11, CA-13
+Caso de prueba: CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08, CP-RF-11, CP-RF-13, CP-RF-14, CP-RF-16
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 2"
+SIGA-15,RF-15 Programar horarios automatizados de encendido/apagado,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Programar horarios automatizados de encendido/apagado
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-05
+Historia de usuario: HU-11, HU-12, HU-13, HU-15, HU-18
+Criterio de aceptacion: CA-11, CA-12, CA-13, CA-15, CA-18
+Caso de prueba: CP-RF-13, CP-RF-15, CP-RF-16, CP-RF-20, CP-RF-21
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 2"
+SIGA-16,RF-16 Apagar automaticamente equipos de aulas desocupadas,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Apagar automaticamente equipos de aulas desocupadas
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-05, EV-12
+Historia de usuario: HU-04, HU-05, HU-06, HU-07, HU-09, HU-11, HU-12, HU-13, HU-15, HU-18
+Criterio de aceptacion: CA-04, CA-05, CA-06, CA-07, CA-09, CA-11, CA-12, CA-13, CA-15, CA-18
+Caso de prueba: CP-RF-04, CP-RF-05, CP-RF-07, CP-RF-08, CP-RF-11, CP-RF-13, CP-RF-14, CP-RF-15, CP-RF-16, CP-RF-20, CP-RF-21
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 3"
+SIGA-17,RF-17 Generar reportes estadisticos periodicos,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Generar reportes estadisticos periodicos
+Stakeholder: Docente
+Evidencia de origen: EV-02, EV-06, EV-13
+Historia de usuario: HU-07, HU-08, HU-09, HU-10, HU-14
+Criterio de aceptacion: CA-07, CA-08, CA-09, CA-10, CA-14
+Caso de prueba: CP-RF-08, CP-RF-10, CP-RF-11, CP-RF-12, CP-RF-17, CP-RF-19
+Marco legal: LOPDP Art. 7, No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 3"
+SIGA-18,RF-18 Exportar reportes en PDF y Excel,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Exportar reportes en PDF y Excel
+Stakeholder: Docente
+Evidencia de origen: EV-02
+Caso de prueba: CP-RF-18
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-19,RF-19 Gestionar acceso diferenciado por roles,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Gestionar acceso diferenciado por roles
+Stakeholder: Docente
+Evidencia de origen: EV-02, EV-13
+Historia de usuario: HU-08, HU-14
+Criterio de aceptacion: CA-08, CA-14
+Caso de prueba: CP-RF-10, CP-RF-17, CP-RF-19
+Marco legal: LOPDP Art. 7
+Estado de traza: Completa
+Filas de la matriz: 2"
+SIGA-20,RF-20 Registrar el historial de ocupacion de aulas,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Registrar el historial de ocupacion de aulas
+Stakeholder: Docente
+Evidencia de origen: EV-02, EV-05
+Historia de usuario: HU-11, HU-12, HU-13, HU-15, HU-18
+Criterio de aceptacion: CA-11, CA-12, CA-13, CA-15, CA-18
+Caso de prueba: CP-RF-13, CP-RF-15, CP-RF-16, CP-RF-20, CP-RF-21
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 2"
+SIGA-21,RF-21 Notificar equipos encendidos fuera de horario,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Notificar equipos encendidos fuera de horario
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-05
+Historia de usuario: HU-11, HU-12, HU-13, HU-15, HU-18
+Criterio de aceptacion: CA-11, CA-12, CA-13, CA-15, CA-18
+Caso de prueba: CP-RF-13, CP-RF-15, CP-RF-16, CP-RF-20, CP-RF-21
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 2"
+SIGA-22,RF-22 Monitorear la conectividad de la red IoT,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Monitorear la conectividad de la red IoT
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-01, EV-07, EV-17
+Historia de usuario: HU-04, HU-05, HU-06, HU-07, HU-09, HU-10, HU-16
+Criterio de aceptacion: CA-04, CA-05, CA-06, CA-07, CA-09, CA-10, CA-16
+Caso de prueba: CP-RF-04, CP-RF-05, CP-RF-06, CP-RF-07, CP-RF-08, CP-RF-11, CP-RF-12, CP-RF-22
+Marco legal: LOPDP Art. 26; Art. 4, No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 3"
+SIGA-23,RF-23 Registrar bitacora de acciones de usuario,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Registrar bitacora de acciones de usuario
+Stakeholder: Personal de Infraestructura y Mantenimiento;Docente
+Evidencia de origen: EV-01, EV-02
+Historia de usuario: HU-17
+Criterio de aceptacion: CA-17
+Caso de prueba: CP-RF-23
+Marco legal: LOPDP Art. 10 lit. k; Art. 47 num. 2
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-24,RF-24 Exportar los datos personales del usuario a solicitud,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Exportar los datos personales del usuario a solicitud
+Stakeholder: Docente;Coordinacion
+Evidencia de origen: EV-21
+Historia de usuario: HU-19
+Criterio de aceptacion: CA-19
+Caso de prueba: CP-RF-24
+Marco legal: LOPDP Art. 13
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-25,RF-25 Rectificar los datos personales del usuario,Item,Por hacer,RF,05/sep/26 3:18 PM,"Objetivo: Rectificar los datos personales del usuario
+Stakeholder: Docente;Coordinacion
+Historia de usuario: HU-20
+Criterio de aceptacion: CA-20
+Caso de prueba: CP-RF-25
+Marco legal: LOPDP Art. 14
+Estado de traza: Huerfana - sin fuente
+Filas de la matriz: 1"
+SIGA-26,RNF-01 El sistema debe entregar alertas de anomalia en <=60s desde la deteccion,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: El sistema debe entregar alertas de anomalia en <=60s desde la deteccion
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-26
+Caso de prueba: CP-RNF-01
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-27,RNF-02 Disponibilidad >=99% mensual (downtime <=7.3 h/mes),Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Disponibilidad >=99% mensual (downtime <=7.3 h/mes)
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Caso de prueba: CP-RNF-02
+Marco legal: No aplica No aplica
+Estado de traza: Huerfana - sin fuente, caso de uso, clase, historia, criterio
+Filas de la matriz: 1"
+SIGA-28,RNF-03 Datos en transito y reposo cifrados con AES-256; acceso sin credenciales rechazado,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Datos en transito y reposo cifrados con AES-256; acceso sin credenciales rechazado
+Stakeholder: Personal de TI
+Caso de prueba: CP-RNF-03
+Marco legal: No aplica No aplica
+Estado de traza: Huerfana - sin fuente, historia, criterio
+Filas de la matriz: 1"
+SIGA-29,RNF-04 Usuario sin capacitacion previa completa consultar estado de un aula en <=5 min,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Usuario sin capacitacion previa completa consultar estado de un aula en <=5 min
+Stakeholder: Docente;Estudiantes
+Evidencia de origen: EV-24
+Caso de prueba: CP-RNF-04
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-30,RNF-05 La interfaz debe funcionar sin instalacion adicional en Chrome Firefox y Edge,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: La interfaz debe funcionar sin instalacion adicional en Chrome Firefox y Edge
+Stakeholder: Docente;Estudiantes;Personal de Infraestructura y Mantenimiento
+Caso de prueba: CP-RNF-05
+Marco legal: No aplica No aplica
+Estado de traza: Huerfana - sin fuente, clase, historia, criterio
+Filas de la matriz: 1"
+SIGA-31,RNF-06 Cobertura de pruebas unitarias >=70% en modulos criticos,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Cobertura de pruebas unitarias >=70% en modulos criticos
+Stakeholder: Personal de TI
+Caso de prueba: CP-RNF-06
+Marco legal: No aplica No aplica
+Estado de traza: Huerfana - sin fuente, caso de uso, clase, historia, criterio
+Filas de la matriz: 1"
+SIGA-32,RNF-07 Tasa de acierto >=95% del modulo de deteccion de ocupacion frente al estado real,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Tasa de acierto >=95% del modulo de deteccion de ocupacion frente al estado real
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Caso de prueba: CP-RNF-07
+Marco legal: No aplica No aplica
+Estado de traza: Huerfana - sin fuente, historia, criterio
+Filas de la matriz: 1"
+SIGA-33,RNF-08 Integracion con el Sistema de Horario Academico sin perdida de datos,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Integracion con el Sistema de Horario Academico sin perdida de datos
+Stakeholder: Coordinacion
+Evidencia de origen: EV-10
+Caso de prueba: CP-RNF-08
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-34,RNF-09 Incorporar un nuevo tipo de sensor IoT en <=8 horas-persona sin modificar el nucleo,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Incorporar un nuevo tipo de sensor IoT en <=8 horas-persona sin modificar el nucleo
+Stakeholder: Personal de TI
+Caso de prueba: CP-RNF-09
+Marco legal: No aplica No aplica
+Estado de traza: Huerfana - sin fuente, caso de uso, historia, criterio
+Filas de la matriz: 1"
+SIGA-35,RNF-10 Explicacion de cada prediccion de falla en <=2s y <=60 palabras comprensible para el usuario,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Explicacion de cada prediccion de falla en <=2s y <=60 palabras comprensible para el usuario
+Stakeholder: Personal de Infraestructura y Mantenimiento;Personal de TI
+Caso de prueba: CP-RNF-10
+Marco legal: No aplica No aplica
+Estado de traza: Huerfana - sin fuente, historia, criterio
+Filas de la matriz: 1"
+SIGA-36,RNF-11 Exportar los datos personales del usuario en <=15 dias habiles desde la solicitud,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Exportar los datos personales del usuario en <=15 dias habiles desde la solicitud
+Stakeholder: Docente;Coordinacion
+Evidencia de origen: EV-21
+Caso de prueba: CP-RNF-11
+Marco legal: LOPDP Art. 13
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-37,RNF-12 Alerta automatica al administrador ante intento de acceso no autorizado en <=5 min,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Alerta automatica al administrador ante intento de acceso no autorizado en <=5 min
+Stakeholder: Personal de TI
+Caso de prueba: CP-RNF-12
+Marco legal: LOPDP Art. 43; Art. 46
+Estado de traza: Huerfana - sin fuente, historia, criterio
+Filas de la matriz: 1"
+SIGA-38,RNF-13 Reanudar recepcion de datos en <=5 min tras restablecimiento de conexion del Gateway IoT,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Reanudar recepcion de datos en <=5 min tras restablecimiento de conexion del Gateway IoT
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-21
+Caso de prueba: CP-RNF-13
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-39,"RNF-14 Tiempo de diagnostico por clase de falla: <=15 min la menor in situ, <=24 h la mayor con retirada de equipo",Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Tiempo de diagnostico por clase de falla: <=15 min la menor in situ, <=24 h la mayor con retirada de equipo
+Stakeholder: Personal de Infraestructura y Mantenimiento;Docente
+Evidencia de origen: EV-12
+Caso de prueba: CP-RNF-14
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-40,RNF-15 Interfaz web operativa sin perdida de funciones criticas con ancho de banda >=1 Mbps,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Interfaz web operativa sin perdida de funciones criticas con ancho de banda >=1 Mbps
+Stakeholder: Docente;Estudiantes
+Evidencia de origen: EV-20
+Caso de prueba: CP-RNF-15
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin clase, historia, criterio
+Filas de la matriz: 1"
+SIGA-41,RNF-16 Notificar explicitamente al usuario cuando un aula no tiene conectividad de red disponible,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Notificar explicitamente al usuario cuando un aula no tiene conectividad de red disponible
+Stakeholder: Docente;Coordinacion
+Evidencia de origen: EV-13, EV-14
+Caso de prueba: CP-RNF-16
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-42,"RNF-IA-01 El modulo de deteccion de ocupacion debe coincidir con el estado real del aula, comprobado por verificacion presencial, en al menos 95 de cada 100 com",Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: El modulo de deteccion de ocupacion debe coincidir con el estado real del aula, comprobado por verificacion presencial, en al menos 95 de cada 100 com
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-08, EV-09, EV-11
+Historia de usuario: HU-01
+Criterio de aceptacion: CA-01
+Caso de prueba: CP-RNF-IA-01
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-43,"RNF-IA-02 La prediccion de ocupacion de un aula para una franja horaria futura no debe desviarse del uso realmente observado en mas de diez puntos porcentuales,",Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: La prediccion de ocupacion de un aula para una franja horaria futura no debe desviarse del uso realmente observado en mas de diez puntos porcentuales,
+Stakeholder: Coordinacion
+Evidencia de origen: EV-10, EV-14
+Historia de usuario: HU-01
+Criterio de aceptacion: CA-01
+Caso de prueba: CP-RNF-IA-02
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-44,RNF-IA-03 Toda prediccion de falla mostrada al usuario debe ir acompanada de una explicacion que nombre las tres senales que mas pesaron en ella y el sentido en,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Toda prediccion de falla mostrada al usuario debe ir acompanada de una explicacion que nombre las tres senales que mas pesaron en ella y el sentido en
+Stakeholder: Docente;Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-12, EV-13, EV-16
+Historia de usuario: HU-06, HU-07
+Criterio de aceptacion: CA-06, CA-07
+Caso de prueba: CP-RNF-IA-03
+Marco legal: LOPDP Art. 4; Art. 12
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-45,RNF-IA-04 La cobertura del mantenimiento preventivo que dispara el componente no debe diferir en mas de cinco puntos porcentuales entre las carreras que compart,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: La cobertura del mantenimiento preventivo que dispara el componente no debe diferir en mas de cinco puntos porcentuales entre las carreras que compart
+Stakeholder: Coordinacion
+Evidencia de origen: EV-10, EV-14
+Historia de usuario: HU-16
+Criterio de aceptacion: CA-16
+Caso de prueba: CP-RNF-IA-04
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-46,RNF-IA-05 La probabilidad de que una solicitud de mantenimiento sea atendida dentro del plazo comprometido no debe depender de que docente la origino: la difere,Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: La probabilidad de que una solicitud de mantenimiento sea atendida dentro del plazo comprometido no debe depender de que docente la origino: la difere
+Stakeholder: Docente;Coordinacion
+Evidencia de origen: EV-12, EV-13
+Historia de usuario: HU-16
+Criterio de aceptacion: CA-16
+Caso de prueba: CP-RNF-IA-05
+Marco legal: LOPDP Art. 4; Art. 26
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-47,"RNF-IA-06 Toda accion que el sistema ejecute sobre el equipamiento de un aula sin intervencion humana debe quedar registrada con el criterio que la disparo, ser",Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: Toda accion que el sistema ejecute sobre el equipamiento de un aula sin intervencion humana debe quedar registrada con el criterio que la disparo, ser
+Stakeholder: Personal de TI;Coordinacion
+Evidencia de origen: EV-11, EV-14
+Historia de usuario: HU-05
+Criterio de aceptacion: CA-05
+Caso de prueba: CP-RNF-IA-06
+Marco legal: No aplica No aplica
+Estado de traza: Completa
+Filas de la matriz: 1"
+SIGA-48,"RNF-IA-07 El sistema debe mantener en operacion el plan de monitoreo del componente inteligente, de modo que cada uno de sus indicadores se calcule con la perio",Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: El sistema debe mantener en operacion el plan de monitoreo del componente inteligente, de modo que cada uno de sus indicadores se calcule con la perio
+Stakeholder: Personal de TI;Coordinacion
+Evidencia de origen: No aplica
+Caso de prueba: CP-RNF-IA-07
+Marco legal: No aplica No aplica
+Estado de traza: Parcial - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-49,"RNF-IA-08 La clasificacion del nivel de riesgo del componente inteligente debe estar documentada con su justificacion, revisarse al menos una vez al ano y adema",Tarea,Por hacer,RNF,05/sep/26 3:18 PM,"Objetivo: La clasificacion del nivel de riesgo del componente inteligente debe estar documentada con su justificacion, revisarse al menos una vez al ano y adema
+Stakeholder: Coordinacion
+Evidencia de origen: No aplica
+Caso de prueba: CP-RNF-IA-08
+Marco legal: LOPDP Art. 4; Art. 26
+Estado de traza: Parcial - sin caso de uso, historia, criterio
+Filas de la matriz: 1"
+SIGA-50,RD-02 Detectar ausencia de conectividad como riesgo critico del sistema,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: Detectar ausencia de conectividad como riesgo critico del sistema
+Stakeholder: Docente;Coordinacion
+Evidencia de origen: EV-13, EV-14
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno - sin historia, criterio
+Filas de la matriz: 1"
+SIGA-51,RD-03 La plataforma debera utilizar una base de datos aprobada por la institucion o el equipo de TI,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: La plataforma debera utilizar una base de datos aprobada por la institucion o el equipo de TI
+Stakeholder: Personal de TI
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno - sin fuente, caso de uso, clase, historia, criterio
+Filas de la matriz: 1"
+SIGA-52,RD-04 El sistema solo podra controlar proyectores climatizacion y dispositivos tecnicamente compatibles,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: El sistema solo podra controlar proyectores climatizacion y dispositivos tecnicamente compatibles
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno - sin fuente, historia, criterio
+Filas de la matriz: 1"
+SIGA-53,RD-05 Evidencia del sistema de camaras existente,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: Evidencia del sistema de camaras existente
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-07
+Historia de usuario: HU-06, HU-16
+Criterio de aceptacion: CA-06, CA-16
+Caso de prueba: CP-RF-06, CP-RF-07, CP-RF-22
+Marco legal: LOPDP Art. 26; Art. 4
+Estado de traza: Restriccion de diseno
+Filas de la matriz: 1"
+SIGA-54,RD-06 La interfaz de usuario debera ejecutarse en navegadores modernos sin instalacion adicional,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: La interfaz de usuario debera ejecutarse en navegadores modernos sin instalacion adicional
+Stakeholder: Docente;Estudiantes;Personal de Infraestructura y Mantenimiento
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno - sin fuente, clase, historia, criterio
+Filas de la matriz: 1"
+SIGA-55,RD-08 Se priorizara la integracion de aulas piloto antes de una cobertura total de la facultad,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: Se priorizara la integracion de aulas piloto antes de una cobertura total de la facultad
+Stakeholder: Coordinacion
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno - sin fuente, caso de uso, clase, historia, criterio
+Filas de la matriz: 1"
+SIGA-56,RD-09 El sistema debera respetar las politicas institucionales y la normativa de proteccion de datos,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: El sistema debera respetar las politicas institucionales y la normativa de proteccion de datos
+Stakeholder: Docente;Coordinacion
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: LOPDP Art. 7
+Estado de traza: Restriccion de diseno - sin fuente, caso de uso, historia, criterio
+Filas de la matriz: 1"
+SIGA-57,RD-10 El acceso a funciones administrativas tecnicas y de control remoto debera estar restringido por roles,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: El acceso a funciones administrativas tecnicas y de control remoto debera estar restringido por roles
+Stakeholder: Personal de TI
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno - sin fuente, historia, criterio
+Filas de la matriz: 1"
+SIGA-58,RD-11 Las acciones de los usuarios deberan registrarse en bitacora para trazabilidad y auditoria,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: Las acciones de los usuarios deberan registrarse en bitacora para trazabilidad y auditoria
+Stakeholder: Personal de TI
+Caso de prueba: No aplica (restriccion de diseno)
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno - sin fuente, historia, criterio
+Filas de la matriz: 1"
+SIGA-59,RD-13 Dependencia del horario academico vigente,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: Dependencia del horario academico vigente
+Stakeholder: Coordinacion
+Evidencia de origen: EV-05
+Historia de usuario: HU-11, HU-12, HU-13, HU-15, HU-18
+Criterio de aceptacion: CA-11, CA-12, CA-13, CA-15, CA-18
+Caso de prueba: CP-RF-13, CP-RF-15, CP-RF-16, CP-RF-20, CP-RF-21
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno
+Filas de la matriz: 1"
+SIGA-60,RD-17 Registro del proceso de mantenimiento fisico,Tarea,Por hacer,RD,05/sep/26 3:18 PM,"Objetivo: Registro del proceso de mantenimiento fisico
+Stakeholder: Personal de Infraestructura y Mantenimiento
+Evidencia de origen: EV-06
+Historia de usuario: HU-07, HU-08, HU-09, HU-10
+Criterio de aceptacion: CA-07, CA-08, CA-09, CA-10
+Caso de prueba: CP-RF-08, CP-RF-10, CP-RF-11, CP-RF-12, CP-RF-17
+Marco legal: No aplica No aplica
+Estado de traza: Restriccion de diseno
+Filas de la matriz: 1"
