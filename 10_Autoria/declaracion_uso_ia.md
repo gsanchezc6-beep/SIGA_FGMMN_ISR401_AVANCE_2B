@@ -105,6 +105,8 @@ defectos de los scripts de analisis.
 | Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
 |---|---|---|---|
 | `06_Experimento/declaracion_enfoque.md` | Claude (Anthropic) | Redaccion de la declaracion de desviacion respecto del enfoque empirico asignado por la rubrica. **Documento de constancia, no de resultados**: no introduce ninguna cifra, tabla ni conclusion nueva | Cada dato citado se comprobo contra su fuente en el repositorio: la fecha de aceptacion del registro en OSF contra `registro_previo/osf_registration_api.json`, el enunciado del enfoque contra la cabecera de `protocolo/protocolo.md`, y las cifras de potencia contra `resultados/power_calculation.csv`. La decision de no cambiar el enfoque es del equipo |
+| `04_Trazabilidad/sincronizacion_tablero.py` | Claude (Anthropic) | Script que compara los identificadores de requisito del tablero de gestion contra los de la matriz de trazabilidad y calcula el porcentaje de sincronizacion | Probado con un export al que se le retiraron dos requisitos y se le anadio uno inexistente: el script senala exactamente esos tres y ninguno mas. El tablero lo poblo el equipo desde su propia cuenta |
+| Backlog del tablero de gestion | Claude (Anthropic) | Volcado de los 60 requisitos de la matriz al formato de importacion, y correccion del estado con el que entraron | **Las 60 actividades entraron con estado Listo**, lo que las ocultaba del backlog y ademas declaraba terminado lo que no lo esta; se corrigieron a Por hacer. Comprobado despues: el backlog muestra las 60 |
 
 ---
 
