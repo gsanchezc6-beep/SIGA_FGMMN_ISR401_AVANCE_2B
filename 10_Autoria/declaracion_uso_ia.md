@@ -89,6 +89,17 @@ defectos de los scripts de analisis.
 
 ---
 
+### Trabajo del 4 de septiembre de 2026, tarde
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| Consistencia entre documentos | Claude (Anthropic) | Contraste de lo que cada documento afirma contra lo que hay en el arbol: enlaces relativos, recuentos declarados y afirmaciones sobre el corpus | Los 74 enlaces relativos del repositorio resuelven; cada recuento corregido se comprobo contra el archivo o la carpeta que describe |
+| `manuscrito_final.tex` --- enunciado de RQ2 | Claude (Anthropic) | **Reestructuracion, no produccion.** El manuscrito respondia dos preguntas y solo enunciaba una. Se nombra la segunda sobre analisis que el equipo ya habia ejecutado --el calculo de potencia y el analisis de sensibilidad--, y se retira del titulo del apartado 4.3 una referencia a un criterio de la rubrica de la asignatura, que no tiene sentido en un manuscrito dirigido a REFSQ | **Ninguna cifra es nueva.** El 8,4 % de potencia y las 34 observaciones necesarias proceden de `06_Experimento/resultados/power_calculation.csv`, generado por script antes de esta edicion. El equipo contrasto cada cifra del parrafo anadido contra esa salida |
+| `04_Trazabilidad/vaciado_umbrales.csv` | Claude (Anthropic) | Localizacion de la frase, la cifra y la evidencia de cada umbral huerfano en las transcripciones | **No se deposita en el repositorio.** Queda como material de trabajo del equipo. Cada cita se comprobo literal contra su transcripcion antes de escribirla |
+| `RNF-04` y `RNF-14` --- correccion de umbrales | Claude (Anthropic) | Redaccion del enunciado corregido y propagacion a la matriz, los casos de prueba y la copia del deposito | **La decision es del equipo**, que confirmo por separado los dos hechos de campo antes de autorizar el cambio. Las dos citas que los sostienen se comprobaron literales contra `EV-24` y contra el acta `WT-08` |
+
+---
+
 ## 4. Secciones en las que no se empleo ninguna herramienta
 
 Se enumeran para que la declaracion sea completa y no solo positiva.
