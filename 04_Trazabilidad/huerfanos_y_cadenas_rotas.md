@@ -14,9 +14,9 @@ accion**, no que no existan. Este documento los enumera uno a uno.
 
 | Estado | Filas | Que significa |
 |---|---|---|
-| Completa | **34** | La fila enlaza fuente, caso de uso, clase, proceso, caso de prueba, historia y criterio |
-| Huerfana | 15 | No procede de evidencia de campo: nace de analisis normativo o de decision tecnica |
-| Parcial | **14** | Tiene fuente de campo, pero le falta algun eslabon hacia adelante |
+| Completa | **38** | La fila enlaza fuente, caso de uso, clase, proceso, caso de prueba, historia y criterio |
+| Huerfana | 9 | No procede de evidencia de campo: nace de analisis normativo o de decision tecnica |
+| Parcial | **16** | Tiene fuente de campo, pero le falta algun eslabon hacia adelante |
 | Restriccion de diseno | 11 | Restriccion RD: no se verifica por caso de prueba sino por revision de diseno |
 
 **Cero celdas vacias.** Toda celda que antes estaba en blanco declara ahora si el
@@ -30,7 +30,7 @@ cuenta como cerrada en esta matriz, porque hay dos lecturas y las dos cifras son
 | Lectura | Cifra |
 |---|---|
 | Filas **sin ningun eslabon sin declarar** --- cada celda dice que enlace existe o por que no aplica | **74 de 74** |
-| Filas con la cadena **completa de extremo a extremo**, de la fuente al mockup | **34 de 74** |
+| Filas con la cadena **completa**: fuente, caso de uso, clase, proceso, caso de prueba, historia y criterio | **41 de 74** --- 38 clasificadas «Completa» y 3 que la tienen entera pero son restricciones de diseno |
 
 La diferencia no son filas a medio hacer: son filas que **no pueden** tener todos los
 eslabones, y el motivo esta declarado fila a fila en los apartados que siguen.
@@ -53,6 +53,19 @@ con la cadena hacia adelante completa. Ahi la referencia es 90 % y el proyecto e
 
 El equipo prefiere declarar las dos cifras a elegir la que le favorece. La segunda es la
 exigente, y es la que figura tambien en el README.
+
+**La columna se comprueba por script.** Estaba escrita a mano, y una columna a mano sobre
+setenta y cuatro filas se desincroniza sin que nadie lo note: seis filas declaraban menos
+eslabones de los que les faltaban y tres estaban marcadas como incompletas teniendolos todos.
+Ahora se contrasta contra las celdas:
+
+```bash
+python 04_Trazabilidad/verificar_matriz.py
+```
+
+Avisa de cada discrepancia y no escribe nada salvo que se le pida con `--escribir`. La
+familia «restriccion de diseno» se respeta tal como la declaro el equipo: que una fila lo sea
+es un juicio sobre su naturaleza, no algo que se deduzca de las celdas.
 
 ## 2. Requisitos funcionales sin fuente de campo
 
