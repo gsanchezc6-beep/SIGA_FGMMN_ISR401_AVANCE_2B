@@ -31,6 +31,11 @@ Requisitos Funcionales elicitados por analistas humanos frente a los generados p
 Modelo Grande de Lenguaje a partir del mismo corpus de entrevistas anonimizadas,
 evaluados a ciegas por tres jueces independientes en cinco dimensiones de calidad.
 
+Ese es el **Enfoque 1** de la asignatura, y **no coincide con el que la rubrica asigna al
+codigo de equipo bajo el que el docente registra este proyecto**. La desviacion, su causa y
+la razon por la que no se revirtio estan declaradas en
+[`06_Experimento/declaracion_enfoque.md`](06_Experimento/declaracion_enfoque.md).
+
 ---
 
 ## 2. Integrantes y roles

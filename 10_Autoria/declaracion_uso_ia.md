@@ -100,6 +100,14 @@ defectos de los scripts de analisis.
 
 ---
 
+### Trabajo del 5 de septiembre de 2026
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| `06_Experimento/declaracion_enfoque.md` | Claude (Anthropic) | Redaccion de la declaracion de desviacion respecto del enfoque empirico asignado por la rubrica. **Documento de constancia, no de resultados**: no introduce ninguna cifra, tabla ni conclusion nueva | Cada dato citado se comprobo contra su fuente en el repositorio: la fecha de aceptacion del registro en OSF contra `registro_previo/osf_registration_api.json`, el enunciado del enfoque contra la cabecera de `protocolo/protocolo.md`, y las cifras de potencia contra `resultados/power_calculation.csv`. La decision de no cambiar el enfoque es del equipo |
+
+---
+
 ## 4. Secciones en las que no se empleo ninguna herramienta
 
 Se enumeran para que la declaracion sea completa y no solo positiva.

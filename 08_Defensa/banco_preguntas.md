@@ -396,3 +396,18 @@ resulta **indiferente**, lo que discute la premisa del sistema; y que la unica p
 perfil tecnico localizada partio en dos una falla que la especificacion trataba como una
 sola. Los dos hallazgos estan en el corpus y ninguno se omitio por incomodo.
 → `02_Evidencias/Transcripciones/`, EV-22 y EV-24
+
+**G12. La rubrica les asignaba el Enfoque 3, de explicabilidad, y ustedes hicieron el
+Enfoque 1. ¿Por que?**
+Porque el equipo se identifico como FGMMN durante todo el proyecto --el nombre del
+repositorio, el `CITATION.cff`, los metadatos de Zenodo y de OSF-- y bajo esa
+identificacion leyo la tabla de asignacion. El mapa del docente asigna a este proyecto el
+codigo AOPSS; la discrepancia se le comunico por el canal del curso. **La confusion explica
+la desviacion pero no la justifica**, y por eso esta declarada por escrito.
+Lo que si justifica no haberla revertido es el registro previo: el protocolo esta en OSF con
+DOI `10.17605/OSF.IO/7PQ3H`, aceptado el 2 de agosto a las 20:25 UTC y archivado por el
+Center for Open Science en el Internet Archive. Esa marca temporal es externa y anterior a
+la recoleccion. Un registro previo existe para impedir que la pregunta se reescriba despues
+de ver los resultados; cambiar de enfoque ahora lo convertiria en un adorno. Se declara la
+desviacion y se respeta el registro.
+→ `06_Experimento/declaracion_enfoque.md`
