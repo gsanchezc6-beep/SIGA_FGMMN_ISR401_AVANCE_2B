@@ -3,7 +3,7 @@
 **Proyecto SIGA - Equipo FGMMN - ISR-401 - Universidad Tecnica Estatal de Quevedo**
 Generado el 2026-08-31 sobre `matriz_trazabilidad.csv`, y actualizado el 2026-09-03
 al anadirse los ocho requisitos no funcionales del componente inteligente: **74 filas**
-y 18 columnas. De ellas, 34 cierran la cadena de extremo a extremo.
+y 18 columnas. De ellas, **34 cierran la cadena de extremo a extremo** y las 74 tienen todos sus eslabones declarados.
 
 La guia exige que los huerfanos y las cadenas rotas se listen **con su causa y su
 accion**, no que no existan. Este documento los enumera uno a uno.
@@ -14,13 +14,45 @@ accion**, no que no existan. Este documento los enumera uno a uno.
 
 | Estado | Filas | Que significa |
 |---|---|---|
-| Completa | 28 | La fila enlaza fuente, caso de uso, clase, proceso, caso de prueba, historia y criterio |
+| Completa | **34** | La fila enlaza fuente, caso de uso, clase, proceso, caso de prueba, historia y criterio |
 | Huerfana | 15 | No procede de evidencia de campo: nace de analisis normativo o de decision tecnica |
-| Parcial | 12 | Tiene fuente de campo, pero le falta algun eslabon hacia adelante |
+| Parcial | **14** | Tiene fuente de campo, pero le falta algun eslabon hacia adelante |
 | Restriccion de diseno | 11 | Restriccion RD: no se verifica por caso de prueba sino por revision de diseno |
 
 **Cero celdas vacias.** Toda celda que antes estaba en blanco declara ahora si el
 eslabon existe o por que no aplica.
+
+## 1.1 Que significa aqui que una fila este cerrada
+
+La rubrica pide una matriz **con las filas cerradas**. Conviene decir con precision que
+cuenta como cerrada en esta matriz, porque hay dos lecturas y las dos cifras son publicas:
+
+| Lectura | Cifra |
+|---|---|
+| Filas **sin ningun eslabon sin declarar** --- cada celda dice que enlace existe o por que no aplica | **74 de 74** |
+| Filas con la cadena **completa de extremo a extremo**, de la fuente al mockup | **34 de 74** |
+
+La diferencia no son filas a medio hacer: son filas que **no pueden** tener todos los
+eslabones, y el motivo esta declarado fila a fila en los apartados que siguen.
+
+- **Quince huerfanas** no proceden de entrevista porque nacen del analisis normativo de la
+  Ley Organica de Proteccion de Datos Personales o de decision tecnica. Inventarles una
+  evidencia de campo seria fabricarla.
+- **Once restricciones de diseno** no se verifican por caso de prueba sino por revision de
+  diseno. Es lo que son.
+- Varias filas **no las realiza ninguna pantalla**: «Evidencia fotografica del trabajo de
+  campo», «Dependencia del horario academico vigente» o «Evidencia del sistema de camaras
+  existente» son filas de evidencia y de restriccion, no requisitos que un mockup pueda
+  realizar. Exigirles un mockup es un error de categoria, no un eslabon roto.
+- Dos requisitos, **RF-09 y RF-18**, no llevan historia ni criterio porque **no son Must** en
+  la priorizacion MoSCoW, y el ERS escribe una historia por requisito obligatorio. Escribirlas
+  contradiria la regla que el propio ERS declara.
+
+**La metrica que mide lo que se puede exigir** es la del apartado 4: requisitos funcionales
+con la cadena hacia adelante completa. Ahi la referencia es 90 % y el proyecto esta en 92 %.
+
+El equipo prefiere declarar las dos cifras a elegir la que le favorece. La segunda es la
+exigente, y es la que figura tambien en el README.
 
 ## 2. Requisitos funcionales sin fuente de campo
 
