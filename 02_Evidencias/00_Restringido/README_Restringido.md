@@ -26,8 +26,13 @@ consentimiento enmascarado; el video y el audio quedan en la zona restringida. E
 declaradas en la ficha tecnica con `zona = Restringida`, con su duracion, su codec y su
 hash, para que se pueda comprobar que existen y cuales son sin publicarlas.
 
-**Ninguna de las dieciseis entrevistas carece de registro sonoro.** Hay dieciseis audios y
-catorce videos; las ausencias de video estan explicadas una a una en el apartado 4.
+**Ninguna de las dieciseis entrevistas carece de registro sonoro.** De las entrevistas hay
+**dieciseis audios y catorce videos**; las dos ausencias de video estan explicadas una a una
+en el apartado 4.
+
+Contando toda la evidencia audiovisual del estudio --las entrevistas mas la sesion de
+validacion comunicativa `MC-01` y la sesion de validacion tecnica `EV-26`--, la ficha
+inventaria **33 piezas: dieciseis videos y diecisiete audios**.
 
 Todos superan el sondeo de codec y duracion que exige la guia: MP4 H.264 a 1280 × 720 con
 audio AAC, y MP3 a 128 kbps.
