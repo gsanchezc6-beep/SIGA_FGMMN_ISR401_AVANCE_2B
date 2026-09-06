@@ -12,14 +12,16 @@ es donde sirven para trabajar. Este inventario dice donde esta cada una.
 |---|---|---|
 | `.vpp` | 39 | Visual Paradigm |
 | `.drawio` | 4 | draw.io |
-| `.fig` | **0 de 1** | Figma — **pendiente** |
+| `.fig` | 1 | Figma |
 
-**Falta una fuente, y se dice.** Los cuatro prototipos de interfaz de
-`03_Modelado/12_Prototipos_Interfaz/` se construyeron en Figma y solo estan depositadas
-sus exportaciones en `.png`. Es la unica carpeta de `03_Modelado/` sin fuente nativa, y
-explica por que hay 54 imagenes `.png` frente a 43 fuentes: cuatro de esas imagenes son
-los prototipos y las diez restantes son dobles exportaciones de diagramas que si tienen
-su fuente. Al depositar el `.fig` el inventario pasa a 44 fuentes.
+**Las doce carpetas de `03_Modelado/` tienen su fuente nativa.** La ultima que
+faltaba era la de prototipos de interfaz: los cuatro `.png` de
+`03_Modelado/12_Prototipos_Interfaz/` son exportaciones de Figma, y el archivo
+`Mockups_SIGA_Entrega2.fig` se deposito junto a ellas el 2026-09-06.
+
+Quedan 54 imagenes `.png` frente a 44 fuentes porque diez de esas imagenes son dobles
+exportaciones de diagramas que si tienen la suya, y las cuatro de los prototipos salen
+todas del mismo archivo de Figma.
 
 | Imagen exportada | Cantidad |
 |---|---|
@@ -73,11 +75,12 @@ su fuente. Al depositar el `.fig` el inventario pasa a 44 fuentes.
 | `dfd_nivel_1.drawio` | `03_Modelado/09_DFD` |
 | `component_diagram.vpp` | `03_Modelado/10_Componentes` |
 | `deployment_diagram.vpp` | `03_Modelado/11_Despliegue` |
+| `Mockups_SIGA_Entrega2.fig` | `03_Modelado/12_Prototipos_Interfaz` |
 
 ## Comprobacion
 
 ```
-git ls-files '*.vpp' '*.drawio' | wc -l
+git ls-files '*.vpp' '*.drawio' '*.fig' | wc -l
 ```
 
-Debe dar **43**.
+Debe dar **44**.

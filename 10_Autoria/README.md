@@ -17,7 +17,7 @@ Este README declara el estado real de cada elemento. **Los doce estan depositado
 |---|---|---|---|
 | A1 | `bitacora_sesiones.csv` | **Depositado** | 11 filas. Derivado del historial por `generar_bitacora.py`: una por persona y dia con confirmaciones. Ningun campo se escribe a mano |
 | A2 | `capturas/` | **Depositado. 3 de 3 por integrante** | Nueve capturas, tres por persona, cada una en su propia maquina. En todas se ven el archivo del proyecto abierto, el reloj del sistema y la sesion de usuario |
-| A3 | Fuentes editables | **Depositado** | En el propio arbol, junto a cada imagen exportada. Inventario de 43 fuentes en `fuentes_editables.md` |
+| A3 | Fuentes editables | **Depositado** | En el propio arbol, junto a cada imagen exportada. Inventario de 44 fuentes en `fuentes_editables.md` |
 | A4 | `grabaciones/` | **Depositado** | Dos sesiones de trabajo de 15:18 y 15:43 con pantalla compartida y discusion audible, mas 18 capturas tomadas durante ellas |
 | A5 | `notas_campo/` | **Depositado** | Las seis de la ronda terminal, manuscritas y escaneadas, con fecha, hora de inicio y fin, duracion y codigo de participante. Sin nombres propios |
 | A6 | `fotos_equipo/` | **Depositado** | Dos fotografias en la facultad, con dos integrantes identificables. Se depositan tal como salieron del telefono: los metadatos son la evidencia y cualquier reedicion los altera |

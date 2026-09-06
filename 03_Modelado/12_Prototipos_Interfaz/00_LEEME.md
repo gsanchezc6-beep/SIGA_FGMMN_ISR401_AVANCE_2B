@@ -23,22 +23,22 @@ de `02_Evidencias/Validacion_Walkthrough/Sesiones_Validacion/` los nombran por e
 
 ## 2. Herramienta y archivo fuente
 
-Los cuatro prototipos se construyeron en **Figma**.
+Los cuatro prototipos se construyeron en **Figma**, en un unico archivo del que salen las
+cuatro pantallas. El fuente editable esta depositado aqui:
 
-> **El archivo fuente `.fig` no esta depositado todavia.** Se declara aqui en vez de dejar el
-> hueco callado: la guia exige el fuente editable de todo artefacto grafico, con el argumento
-> de que sin el no hay prueba de que se construyo y no se descargo. Los cuatro `.png` son
-> exportaciones, no originales.
+| | |
+|---|---|
+| Archivo | `Mockups_SIGA_Entrega2.fig` |
+| Nombre en Figma | `Mockups SIGA - Entrega 2 (1B)` |
+| Exportado | 2026-09-06, desde el menu del archivo, *Guardar copia local* |
+| Contenido | `canvas.fig`, `meta.json`, `thumbnail.png` y las dos imagenes incrustadas |
 
-Es la **unica** carpeta de `03_Modelado/` sin fuente nativa. Las otras once llevan su `.vpp`
-de Visual Paradigm o su `.drawio` junto a cada imagen.
+Los cuatro `.png` de esta carpeta son exportaciones de ese archivo, no originales. Con el
+`.fig` depositado, las doce carpetas de `03_Modelado/` tienen su fuente nativa y el
+inventario del elemento **A3** queda en 44 fuentes.
 
-## 3. Que falta y como se cierra
-
-Exportar el archivo desde Figma --menu del archivo, *Guardar copia local*, que produce un
-`.fig`-- y depositarlo en esta carpeta. Con eso el inventario de fuentes editables del
-elemento **A3** pasa de 43 a 44 fuentes y `03_Modelado/` queda completo.
-
-Si el `.fig` no se pudiera obtener, la alternativa es el enlace compartido de Figma con
-permiso de lectura, **pero es peor**: un enlace puede cambiar o dejar de responder, y quien
-revise sin conexion no lo puede comprobar. El `.fig` se basta a si mismo.
+**Los prototipos son de la Entrega 2 (1B) y no se rehicieron para la 2B.** El nombre del
+archivo lo dice y conviene no disimularlo: las cuatro pantallas son las mismas que se
+recorrieron en las nueve sesiones de validacion, incluidas las dos con usuario tecnico de
+septiembre. Que no hayan cambiado es lo que permite comparar lo que dijeron los
+participantes de julio con lo que dijeron los de septiembre sobre la misma interfaz.
