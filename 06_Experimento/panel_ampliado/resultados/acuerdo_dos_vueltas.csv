@@ -1,0 +1,13 @@
+vuelta,dimension,fleiss_kappa,acuerdo_esperado_por_azar,techo_de_kappa,interpretacion
+primera,Completitud,0.0058,0.2778,0.7222,nulo
+primera,Ausencia_ambiguedad,-0.0044,0.2786,0.7214,peor que el azar
+primera,Verificabilidad,-0.0054,0.2682,0.7318,peor que el azar
+primera,Consistencia_interna,-0.0288,0.283,0.717,peor que el azar
+primera,MEDIA DE LAS 4,-0.0082,0.2769,,peor que el azar
+primera,ACUERDO CRUDO ENTRE PAREJAS,,0.271,0.6634,columnas: acuerdo exacto observado y acuerdo dentro de un punto
+segunda,Completitud,-0.0284,0.3157,0.6843,peor que el azar
+segunda,Ausencia_ambiguedad,0.0002,0.3967,0.6033,nulo
+segunda,Verificabilidad,-0.053,0.3518,0.6482,peor que el azar
+segunda,Consistencia_interna,-0.023,0.5,0.5,peor que el azar
+segunda,MEDIA DE LAS 4,-0.026,0.3911,,peor que el azar
+segunda,ACUERDO CRUDO ENTRE PAREJAS,,0.3748,0.8342,columnas: acuerdo exacto observado y acuerdo dentro de un punto

@@ -1,0 +1,5 @@
+dimension,n_humano,n_llm,media_humano,media_llm,diferencia,d_de_cohen
+Completitud,12,12,3.833,3.857,0.024,0.027
+Ausencia_ambiguedad,12,12,4.274,4.214,-0.06,-0.087
+Verificabilidad,12,12,4.238,4.155,-0.083,-0.094
+Consistencia_interna,12,12,4.571,4.595,0.024,0.042
