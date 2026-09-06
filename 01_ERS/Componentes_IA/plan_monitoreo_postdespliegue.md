@@ -52,12 +52,17 @@ una cifra.**
 
 ## 2. Como se registra cada medicion
 
-Cada ciclo de medicion deja una fila en `06_Experimento/resultados/monitoreo_operacion.csv`
-—que se crea con el primer ciclo real— con estos campos:
+Cada ciclo de medicion dejara una fila en `06_Experimento/resultados/monitoreo_operacion.csv`
+con estos campos:
 
 ```
 fecha, indicador, valor, unidad, umbral, supera_umbral, quien_midio, observaciones
 ```
+
+> **Ese archivo no existe todavia en el repositorio, y es correcto que no exista.** El
+> monitoreo empieza con el despliegue en operacion, que esta fuera del alcance de esta
+> entrega. Se nombra aqui con su ruta y sus campos para que el primer ciclo no tenga que
+> inventarse el formato. Crearlo vacio ahora seria declarar una medicion que nadie hizo.
 
 **Ningun valor se escribe a mano.** Los indicadores MP-01 a MP-05, MP-08 y MP-10 se calculan
 por script sobre la bitacora de acciones y el registro de predicciones. MP-06 y MP-07

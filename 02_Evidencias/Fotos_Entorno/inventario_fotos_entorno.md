@@ -3,8 +3,14 @@
 **Proyecto SIGA — Sistema Inteligente de Gestion de Aulas · Equipo FGMMN**
 Universidad Tecnica Estatal de Quevedo · ISR-401 · Entrega Final (2B)
 
-Veintinueve fotografias del sitio del cliente, en tres rondas. Cada una se describe por lo
+Veintiocho fotografias del sitio del cliente, en tres rondas. Cada una se describe por lo
 que muestra y por el requisito que sostiene.
+
+> **Falta `ENT-07` en la numeracion, y no es un descuido.** El archivo depositado con ese
+> codigo era **identico byte a byte** a `ENT-05`: la misma fotografia contada dos veces.
+> Se retiro el 2026-09-06 al detectarlo por comparacion de hashes. Se deja el hueco en la
+> numeracion en vez de renumerar las demas, porque renumerar romperia cualquier
+> referencia anterior y borraria el rastro de lo ocurrido.
 
 **Actualizado el 2026-09-03.** Las once fotografias de la segunda ronda se retiraron y se
 sustituyeron por catorce del laboratorio de computo. El motivo, y lo que se pierde con el
@@ -15,7 +21,7 @@ cambio, estan explicados mas abajo.
 ## Ronda de campo, junio y julio de 2026 — ENT-01 a ENT-15
 
 Quince fotografias tomadas durante las jornadas de observacion documentadas en las notas de
-campo NC-01 a NC-06, que estan en `02_Evidencias/Notas_Campo/` cuando se depositen. Su
+campo NC-01 a NC-06, depositadas en `02_Evidencias/Notas_Campo/`. Su
 descripcion detallada figura en esas notas.
 
 ## Segunda ronda, 2026-09-01 — ENT-16 a ENT-26: **retiradas**

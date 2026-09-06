@@ -118,7 +118,7 @@ Si una persona retira su consentimiento:
    la persona, en el propio formulario de consentimiento, que las copias ya
    descargadas por terceros no son recuperables.
 5. El retiro se documenta como **desviación respecto del protocolo pre-registrado** en
-   `06_Experimento/osf_deviations.pdf`, indicando el impacto sobre el tamaño muestral
+   `06_Experimento/registro_previo/bitacora_desviaciones.pdf`, indicando el impacto sobre el tamaño muestral
    sin revelar la identidad de quien se retiró.
 
 ---

@@ -8,6 +8,69 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.10.0] - 2026-09-06
+
+Sesiones formales de verificacion y control de cambios, segundo usuario tecnico y una
+revision de consistencia de todo el arbol.
+
+### Anadido
+
+- **Inspeccion formal `INS-01` y re-inspeccion `REINS-01`**, celebradas el 2026-09-05 y
+  firmadas por los tres integrantes. Los cinco roles de Fagan repartidos entre tres
+  personas, con autor y moderador siempre en personas distintas.
+- **Acta del comite de control de cambios `CCB-01`** y las cuatro solicitudes `SC-01` a
+  `SC-04`. Tres aprobadas; `SC-03` queda diferida de forma expresa.
+- **Retrospectiva del equipo**, con tres elementos en cada una de las tres categorias.
+- **Sesion de validacion `WT-09`** con el segundo usuario tecnico, `TIC-02`: acta con la
+  hoja de firmas censurada y el video registrado en la ficha de la zona restringida como
+  `EV-27`. Las sesiones pasan de ocho a **nueve**, y los usuarios tecnicos de uno a **dos**.
+- **Las doce notas de campo**: las seis manuscritas de la ronda terminal y las seis de
+  observacion de entorno, `NC-01` a `NC-06`, firmadas el 2026-09-05.
+- **Tablero de gestion en Jira** con sesenta actividades y su medicion de sincronizacion
+  contra la matriz, reproducible por script: 60 de 60, **100 %**.
+- **Declaracion del enfoque empirico**: la rubrica asignaba el Enfoque 3 al codigo de equipo
+  con el que el docente registra el proyecto, y se ejecuto el Enfoque 1. Se declara la
+  desviacion y por que no se revierte, con el registro previo de OSF como argumento.
+- **Libreto de grabacion de la defensa**, con el texto literal, el reparto a tres y las
+  rutas de lo que hay que abrir.
+- Tres diapositivas nuevas en el mazo de la defensa: verificacion y control de cambios,
+  trazabilidad y gestion, y evidencia de campo. De doce a **quince**, dentro del minimo.
+- `00_LEEME.md` en `03_Modelado/12_Prototipos_Interfaz/`, que fija la correspondencia entre
+  `MU-01` a `MU-04` y sus archivos: la matriz los referenciaba en veintidos filas y esa
+  correspondencia no estaba escrita en ningun sitio.
+
+### Cambiado
+
+- **La metrica de Correccion deja de estar pendiente**: la re-inspeccion cierra quince de
+  los dieciseis defectos y deja `DEF-06` como unico residual. Correccion = 1/25 = **0,04**,
+  por debajo del 0,05 de referencia. Es la ultima de las seis metricas de la seccion 5.6 que
+  quedaba sin medir.
+- `DEF-09` pasa a cerrado: los diagramas de flujo de datos existen en el arbol desde el
+  2026-09-04 y el registro seguia declarandolos ausentes.
+- La declaracion de perfil tecnico pasa de una sesion a dos, con la tabla de las dos y el
+  perfil que cada participante declaro.
+- Los artefactos del registro previo de OSF se consolidan bajo `registro_previo/`.
+
+### Corregido
+
+- **Cuatro identificadores repetidos en el banco de preguntas**: la seccion anadida el
+  2026-09-04 volvia a empezar en `G1` cuando ya existia una seccion G. Pasa a ser la
+  seccion **I**, y las cincuenta preguntas quedan sin ningun identificador duplicado.
+- **Nueve referencias a rutas que ya no existen**, casi todas a `08_Etica/`, que es el
+  nombre que la carpeta tenia en el repositorio de la Entrega 2A.
+- **Cinco archivos duplicados**: dos dentro de `Etica/Anexos/` que rompian la numeracion
+  `A01` a `A13`, y tres copias en la raiz de `06_Experimento` que nadie citaba.
+- **Una fotografia de entorno duplicada**: `ENT-05` y `ENT-07` eran el mismo archivo byte a
+  byte. Se retira `ENT-07` y el inventario pasa de veintinueve a **veintiocho**.
+- La doble codificacion estaba depositada dos veces, en `10_Autoria/doble_codificacion/`
+  --el elemento A7-- y en `02_Evidencias`, con dos coeficientes distintos publicados sobre
+  los mismos datos. Se conserva A7, que es la ubicacion del indice de autoria.
+- Cifras desfasadas: «diecisiete entrevistas» donde son dieciseis, la ficha tecnica sin
+  contar `EV-27` en su enumeracion, y el banco declarando una sola sesion tecnica.
+- `presentacion.pdf` se habia quedado en doce paginas mientras el `.pptx` tenia quince.
+
+---
+
 ## [2B-1.9.0] - 2026-09-04
 
 Cierre del examen final. Etiqueta `2B-final-v3.0`.
