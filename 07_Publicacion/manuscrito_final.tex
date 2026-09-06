@@ -103,9 +103,9 @@ interview corpus for both human and LLM elicitation, in a real, currently deploy
 system rather than a toy or textbook case; (2) a transparent, fully reproducible
 analysis pipeline (Sect.~\ref{sec:results}) that discloses two methodological
 complications encountered mid-study --- the withdrawal of consent by one interview
-participant after the LLM had already processed their transcript, and a
-subsequently-detected lack of inflection in the qualitative saturation curve --- rather
-than silently absorbing them; (3) an explicit post-hoc power analysis that quantifies
+participant after the LLM had already processed their transcript, and an initial lack of
+inflection in the qualitative saturation curve, later traced to a one-to-one codebook and
+resolved by coding the remaining interviews --- rather than silently absorbing them; (3) an explicit post-hoc power analysis that quantifies
 exactly how under-powered a small-panel blind evaluation is, as guidance for future
 replications.
 
@@ -216,10 +216,13 @@ that transcript to generate Set~A and after the blind judging had already taken 
 so Set~A's source material and Set~B's evidentiary support are no longer perfectly
 symmetric; re-running the full experiment was not feasible within the project timeline,
 and this asymmetry is carried forward as a construct-validity threat
-(Sect.~\ref{sec:threats}); (3) the qualitative saturation curve for the underlying
-interview corpus did not show an inflection point (Sect.~\ref{sec:results}), so we
-report a power calculation as the alternative adequacy criterion, following standard
-practice for underpowered small-$N$ designs~\cite{molleri2020empirically}.
+(Sect.~\ref{sec:threats}); (3) the qualitative saturation curve did not show an inflection
+point while only ten interviews were coded, which is why a post-hoc power calculation was
+introduced as the alternative adequacy criterion, following standard practice for
+underpowered small-$N$ designs~\cite{molleri2020empirically}; completing the coding of all
+sixteen interviews later satisfied the saturation criterion directly
+(Sect.~\ref{sec:results}), and the power calculation is retained because it answers RQ2
+rather than because it is needed as a substitute.
 
 % ======================================================================
 \section{Results}
@@ -275,20 +278,36 @@ caution in interpreting the point estimates above.
 
 \subsection{RQ2: Statistical power of a three-judge blind panel}
 
-Figure~\ref{fig:saturacion} shows the thematic-code saturation curve over the ten valid
-interviews: 36 distinct codes were identified, and the mean number of new codes in the
-last three interviews (3.667) is far above the 5\% saturation threshold (1.8),
-indicating \textbf{no inflection was reached}. Post-hoc inspection attributes this to
-the coding scheme itself: each of the 36 codes is unique to a single fragment, with no
-axial-coding pass merging codes that represent the same underlying theme across
-interviews --- with such a codebook, the curve structurally cannot flatten regardless of
-interview count. We report this as an honest limitation rather than re-coding under
-time pressure to force an apparent inflection.
+Figure~\ref{fig:saturacion} shows the thematic-code saturation curve. An earlier version
+of this analysis, over the ten interviews coded at the time, reached \textbf{no
+inflection}: 36 distinct codes, and a mean of 3.667 new codes in the last three
+interviews against a 5\% threshold of 1.8. Post-hoc inspection attributed this to the
+codebook rather than to the corpus --- each of the 36 codes applied to exactly one
+fragment, with no axial pass merging codes standing for the same underlying theme, and
+with a strictly one-to-one codebook the curve cannot flatten at any interview count.
+
+That diagnosis was acted upon rather than left standing. The six interviews of the
+terminal round were coded on 6 September 2026 by the three authors, splitting whole
+interviews and working against the existing codebook, and the structural obstacle
+disappears: the corpus now holds \textbf{136 coded fragments under 50 codes}, 2.72
+fragments per code against the previous 1.00, and singleton codes fall from 100\% to
+44\%. The mean number of new codes in the last three interviews is \textbf{1.333}
+against a threshold of 2.50, so the criterion is met, first at the fourteenth interview
+and then at the fifteenth and sixteenth.
+
+Two caveats. The result does not depend on ordering: the six closing interviews ran on a
+single day, so their position is set by evidence number rather than clock time, and the
+criterion holds across \textbf{all 720 permutations} of that block (worst case 2.333
+against the 2.50 threshold). Against us, the coding instructions explicitly asked coders
+to reuse an existing code wherever one fitted --- methodologically right, since
+proliferating synonyms distorts the curve the other way, but it pushes toward the outcome
+obtained, and the coders' reuse rates (59\%, 63\%, 64\%) show only that the tendency was
+evenly spread, not absent.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.75\textwidth]{figuras/curva_saturacion.png}
-\caption{Thematic code saturation curve, ten valid interviews. No inflection point.}
+\caption{Thematic code saturation curve over the sixteen coded interviews. The criterion is met from the fourteenth onward.}
 \label{fig:saturacion}
 \end{figure}
 
@@ -370,7 +389,9 @@ outset --- retrofitting a power calculation after data collection, as we did, ca
 diagnose the problem, not fix it; (2) any participant exclusion after data has already
 propagated downstream (here, into the LLM's source material) should be documented as a
 first-class deviation, not silently patched; (3) a codebook intended to demonstrate
-saturation must include an explicit axial-coding merge step from the start.
+saturation must include an explicit axial-coding merge step from the start --- a codebook
+in which every code applies to exactly one fragment cannot produce an inflection at any
+sample size, and no amount of further interviewing will fix it.
 
 % ======================================================================
 \section{Threats to Validity}
@@ -433,20 +454,23 @@ repeated in another setting without contacting the authors.
 transferability is an argument about available materials and not an empirical
 claim.
 
-\textbf{T4. The analysed corpus is narrower than the collected one.} Elicitation for
-the compared sets closed at ten valid interviews. Field work later reopened: a
+\textbf{T4. The compared sets rest on a narrower corpus than the coded one.} Elicitation
+for the compared sets closed at ten valid interviews. Field work later reopened: a
 terminal round conducted on 3 September 2026 added six teacher interviews (EV-20 to
-EV-25), bringing the project corpus to sixteen. Those six are transcribed,
-anonymized and deposited, but they are \emph{not} thematically coded, so they do not
-enter the codebook, the saturation curve, or either of the requirement sets compared
-here. The base from which the human-elicited set was produced therefore remains ten
-interviews. \emph{Mitigation:} both figures are stated wherever the corpus is
-described, so that collected and analysed are never conflated; the original closure
-at ten is declared in writing with its date and circumstances, together with a signed
-record of the instruction under which the field was closed. \emph{Remaining limitation:} the
-three participant profiles are represented, but thinly; a requirement that only a
-non-sampled role would have raised cannot appear in either set, and this affects
-both arms equally rather than favouring one.
+EV-25), bringing the project corpus to sixteen, and those six were thematically coded on
+6 September 2026. The codebook and the saturation curve therefore now cover all sixteen.
+\emph{The two compared requirement sets do not.} Both were generated from the ten-interview
+material and were not regenerated, so the quasi-experiment's unit of comparison is still
+anchored to ten interviews while the qualitative analysis around it is anchored to sixteen.
+\emph{Mitigation:} the two figures are kept distinct wherever the corpus is described, and
+the source material handed to the model is deposited verbatim, so a reader can check which
+interviews fed each set; the closure at ten is declared in writing with its date and a
+signed record of the instruction under which the field was closed.
+\emph{Remaining limitation:} regenerating both sets from the sixteen-interview corpus
+would change what is compared and would need re-registering, so it is future work rather
+than a deadline fix. The six added interviews are all of the teaching profile, so the
+corpus grew in depth for one role rather than in breadth: a requirement only a non-sampled
+role would have raised still cannot appear in either set, affecting both arms equally.
 
 \subsection{Construct validity}
 
@@ -514,10 +538,12 @@ change substantive conclusions in small-panel RE evaluations.
 
 \textbf{Future work.} We recommend, in order of priority for anyone extending this
 dataset: (1) expanding the judge panel to at least 34 to reach conventional power,
-using the anonymized replication package as source material; (2) re-running the LLM
-generation on the corrected 10-interview corpus to restore paired symmetry; (3)
-applying an explicit axial-coding merge pass to the thematic codebook and
-re-computing the saturation curve.
+using the anonymized replication package as source material; (2) re-generating both
+requirement sets from the full sixteen-interview corpus, which would restore paired
+symmetry and align the compared sets with the coded corpus, and which needs to be
+re-registered because it changes what is compared; (3) widening the terminal round beyond
+the teaching profile, since saturation was reached with a final stretch drawn from a
+single role.
 
 % ======================================================================
 \section*{Data and materials availability}

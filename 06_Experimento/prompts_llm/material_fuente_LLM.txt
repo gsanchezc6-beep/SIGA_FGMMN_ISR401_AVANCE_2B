@@ -1286,7 +1286,7 @@ Los requisitos que originalmente citaban EV-15 como evidencia (RNF-16 y
 RD-02 en 01_ERS/secciones_generadas.tex y 07_Publicacion/dataset_zenodo/
 corpus_rf_rnf_etiquetado.json) fueron re-fundamentados en EV-13 y EV-14,
 que corroboran de forma independiente la misma necesidad de negocio.
-Ver 06_Experimento/README_OSF.md para el detalle de esta desviacion
+Ver 02_Evidencias/Etica/declaracion_reduccion_muestra.md para el detalle
 respecto del protocolo pre-registrado.]
 
 ======================================================================

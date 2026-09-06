@@ -156,11 +156,11 @@ La Facultad de Ciencias de la Computaci\'on de la Universidad T\'ecnica Estatal 
 Quevedo gestiona sus aulas sin ning\'un sistema de monitoreo. La detecci\'on de una
 falla depende de que una persona pase por el aula y la reporte, y el reporte viaja por
 canales informales sin registro. El trabajo de campo de este proyecto document\'o ese
-circuito en diez entrevistas con tres perfiles: docencia, coordinaci\'on acad\'emica y
-conserjer\'ia e infraestructura.
+circuito en \textbf{diecis\'eis} entrevistas con tres perfiles: docencia, coordinaci\'on
+acad\'emica y conserjer\'ia e infraestructura.
 
-La codificaci\'on tem\'atica de esas entrevistas produjo 36 fragmentos codificados en
-12 categor\'ias. Las cuatro con mayor densidad son control remoto de equipos, gesti\'on
+La codificaci\'on tem\'atica de esas entrevistas produjo \textbf{136 fragmentos}
+codificados en 12 categor\'ias. Las cuatro con mayor densidad son control remoto de equipos, gesti\'on
 de mantenimiento y tickets, monitoreo y visibilidad, y adopci\'on y confianza. Esa
 distribuci\'on no es casual: describe un problema operativo con un componente humano de
 confianza que ninguna soluci\'on puramente t\'ecnica resuelve.
@@ -266,10 +266,12 @@ se cerr\'o inicialmente en diez, por autorizaci\'on expresa del docente responsa
 la restricci\'on de calendario; una \textbf{ronda terminal} realizada el 3 de septiembre
 de 2026 a\~nadi\'o seis entrevistas a docentes, identificadas como EV-20 a EV-25.
 
-\textbf{El an\'alisis de este reporte se sostiene sobre las diez entrevistas
-codificadas.} Las seis de la ronda terminal est\'an transcritas, anonimizadas y
-depositadas en el repositorio, pero su codificaci\'on tem\'atica no se ha realizado, de
-modo que no intervienen ni en la tabla de c\'odigos ni en la curva de saturaci\'on.
+\textbf{El an\'alisis cualitativo de este reporte se sostiene sobre las diecis\'eis
+entrevistas.} Las seis de la ronda terminal se codificaron el 6 de septiembre de 2026 y
+entran ya en la tabla de c\'odigos y en la curva de saturaci\'on. El componente
+emp\'irico del cuasi-experimento es harina de otro costal: sus dos conjuntos de
+requisitos se generaron a partir de las diez primeras y no se rehicieron, de modo que
+\emph{esa} comparaci\'on sigue apoyada en diez.
 Los participantes corresponden a tres perfiles de la organizaci\'on cliente: docencia
 (DOC), coordinaci\'on acad\'emica (COORD) y conserjer\'ia e infraestructura (CONS).
 
@@ -339,10 +341,16 @@ depositados en el repositorio y verificables por sondeo de c\'odec y duraci\'on.
 
 \subsection{Codificaci\'on tem\'atica}
 
-Las diez transcripciones se codificaron \'integramente. El resultado son 36 fragmentos
-con su c\'odigo, su categor\'ia, el requisito que derivan y la evidencia de la que
-proceden, en 12 categor\'ias. La cobertura es del 100\,\% de las transcripciones: las
-diez entrevistas aportan al menos un fragmento codificado.
+Las diecis\'eis transcripciones se codificaron \'integramente. El resultado son
+\textbf{136 fragmentos} con su c\'odigo, su categor\'ia, el requisito que derivan y la
+evidencia de la que proceden, repartidos en \textbf{50 c\'odigos} y 12 categor\'ias. La
+cobertura es del 100\,\% de las transcripciones: las diecis\'eis aportan al menos un
+fragmento codificado.
+
+La codificaci\'on se reparti\'o entre los tres integrantes por entrevista completa, y la
+columna \texttt{Analista\_codificador} registra qui\'en codific\'o cada fragmento. Cada
+cita se comprob\'o \textbf{literal} contra su transcripci\'on y dentro de un turno del
+participante, no del entrevistador, antes de incorporarse.
 
 La curva de c\'odigos nuevos por entrevista (Figura~\ref{fig:saturacion}) es la
 evidencia de saturaci\'on exigida, y su lectura se discute en la
@@ -455,14 +463,37 @@ precisi\'on suficiente.
   \label{fig:saturacion}
 \end{figure}
 
-La curva acumula 36 c\'odigos a lo largo de las diez entrevistas. La d\'ecima y \'ultima
-entrevista todav\'ia aporta \textbf{cuatro c\'odigos nuevos}, y el criterio de
-saturaci\'on declarado --- promedio de c\'odigos nuevos de las tres \'ultimas entrevistas
-por debajo del 5\,\% del total --- no se cumple en ninguna posici\'on de la serie.
+La curva acumula \textbf{50 c\'odigos} a lo largo de las \textbf{diecis\'eis} entrevistas.
+El criterio de saturaci\'on declarado --- promedio de c\'odigos nuevos de las tres
+\'ultimas entrevistas por debajo del 5\,\% del total acumulado --- se cumple a partir de
+\texttt{EV-23}, la decimocuarta: 2,333 frente a un umbral de 2,35, y con las diecis\'eis
+el promedio baja a \textbf{1,333} frente a un umbral de \textbf{2,50}.
 
-\textbf{La saturaci\'on tem\'atica no se alcanz\'o.} No se presenta como alcanzada ni se
-elige un punto de corte a conveniencia. La consecuencia se trata en la
-Secci\'on~\ref{sec:amenazas}.
+\textbf{La saturaci\'on tem\'atica se alcanz\'o}, y conviene decir con qu\'e reservas,
+porque un resultado que cambia justo cuando conviene hay que sostenerlo mejor que uno que
+no cambia nada.
+
+\textbf{Primera comprobaci\'on: no depende del orden.} El criterio mira las tres
+\'ultimas entrevistas, y las seis que cerraron el corpus se hicieron \emph{el mismo d\'ia},
+de modo que su posici\'on en la serie la fija el n\'umero de evidencia y no la hora. Si la
+saturaci\'on dependiera de cu\'al qued\'o \'ultima ser\'ia un accidente de la numeraci\'on.
+Se probaron las \textbf{720 ordenaciones posibles} de ese bloque y satura en las 720; el
+peor caso da 2,333 frente al umbral de 2,50. El script que lo reproduce es
+\texttt{02\_Evidencias/Codificacion\_Tematica/robustez\_saturacion.py}.
+
+\textbf{Tres reservas que se declaran.} La primera: las instrucciones de codificaci\'on
+ped\'ian expresamente reutilizar c\'odigos antes que inventarlos, lo que es correcto
+--- multiplicar sin\'onimos falsea la curva en la otra direcci\'on --- pero empuja hacia el
+resultado obtenido. Las tasas de reuso de los tres codificadores caen en cinco puntos
+(59\,\%, 63\,\% y 64\,\%), de modo que el sesgo, si lo hay, est\'a repartido y no
+concentrado en una persona. La segunda: las seis entrevistas que cierran la serie son
+todas del perfil docente, y saturar dentro de un perfil no es saturar el dominio. La
+tercera: siete de los catorce c\'odigos nuevos aparecen en una sola entrevista; seis de
+esos siete refuerzan requisitos que ya ten\'ian otra fuente, pero \texttt{RNF-15} descansa
+entero sobre \texttt{EV-20}.
+
+Las tres constan en
+\texttt{02\_Evidencias/Codificacion\_Tematica/00\_LEEME\_SATURACION.md}.
 
 \subsection{Potencia estad\'istica}
 
@@ -609,17 +640,23 @@ observar los resultados, y como exploratorio en todo lo dem\'as.
 
 \textbf{Cierre de campo en diez entrevistas, y su reapertura.} El cierre lo autoriz\'o el
 docente responsable ante la restricci\'on de calendario. La ronda terminal del 3 de
-septiembre de 2026 lo super\'o al elevar el corpus a diecis\'eis, si bien la codificaci\'on
-tem\'atica y la curva de saturaci\'on siguen calculadas sobre las diez codificadas. El
-efecto sobre la saturaci\'on y sobre la potencia se cuantifica en las
-Secciones~\ref{sec:saturacion} y siguientes.
+septiembre de 2026 lo super\'o al elevar el corpus a diecis\'eis, y su codificaci\'on, hecha
+el 6 de septiembre, incorpor\'o esas seis a la tabla de c\'odigos y a la curva de
+saturaci\'on. La desviaci\'on respecto del protocolo se mantiene --- el cierre se decidi\'o
+cuando se decidi\'o --- pero ya no arrastra un corpus analizado m\'as estrecho que el
+recogido. El efecto sobre la saturaci\'on se cuantifica en la
+Secci\'on~\ref{sec:saturacion}.
 
 \textbf{Exclusi\'on de EV-15.} Retiro del consentimiento por parte del participante. El
 material se elimin\'o \'integramente. Es una desviaci\'on obligada por la protecci\'on de
 datos, no una decisi\'on metodol\'ogica.
 
-\textbf{Saturaci\'on no alcanzada.} El protocolo prev\'ia continuar hasta saturaci\'on.
-El cierre autorizado interrumpi\'o esa condici\'on y la curva lo muestra.
+\textbf{Saturaci\'on alcanzada despu\'es del cierre autorizado.} El protocolo prev\'ia
+continuar hasta saturaci\'on, y el cierre en N=10 interrumpi\'o esa condici\'on: con diez
+entrevistas la curva no saturaba. La ronda terminal del 3 de septiembre a\~nadi\'o seis
+entrevistas m\'as, codificadas el 6 de septiembre, y con las diecis\'eis el criterio se
+cumple. La desviaci\'on respecto del protocolo no desaparece --- el cierre se decidi\'o
+antes de saber esto --- pero su consecuencia s\'i.
 
 % ===========================================================================
 \section{Especificaci\'on final y trazabilidad}
@@ -775,9 +812,11 @@ evaluadores, justo en la escala de Landis y Koch, con $\kappa$ de Fleiss entre 0
 0,340. Refinar la r\'ubrica y calibrar a los jueces es condici\'on previa a ampliar la
 muestra.
 
-\textbf{Cuarta.} La saturaci\'on tem\'atica \textbf{no se alcanz\'o}: la d\'ecima
-entrevista a\'un aporta cuatro c\'odigos nuevos sobre 36 acumulados. El corpus describe
-el dominio pero no agota su espacio tem\'atico.
+\textbf{Cuarta.} La saturaci\'on tem\'atica \textbf{se alcanz\'o} al completar la
+codificaci\'on de las diecis\'eis entrevistas: el promedio de c\'odigos nuevos de las tres
+\'ultimas baja a 1,333 sobre 50 acumulados, por debajo del umbral de 2,50, y el resultado
+resiste las 720 ordenaciones posibles del bloque de entrevistas del mismo d\'ia. Se
+alcanza, eso s\'i, con un tramo final de un solo perfil, y esa limitaci\'on se declara.
 
 \textbf{Quinta.} La especificaci\'on resultante cumple tres de las seis m\'etricas de
 calidad auditadas, y las tres que no cumplen tienen su defecto identificado y su
@@ -970,7 +1009,7 @@ La potencia alcanzada es del 8,4\,\% & \texttt{power\_calculation.csv} \\
 Consistencia interna fue la dimensi\'on m\'as pr\'oxima a significaci\'on & \texttt{hipotesis.csv}, $p = 0{,}059$ ajustado \\
 La uniformidad de una generaci\'on en una sola pasada explicar\'ia esa se\~nal & Hip\'otesis a contrastar; literatura~\cite{ronanki2023investigating,gorer2023generating} \\
 El acuerdo entre evaluadores es justo & \texttt{acuerdo\_interevaluador.csv}; escala de~\cite{landis1977measurement} \\
-La saturaci\'on tem\'atica no se alcanz\'o & \texttt{saturacion\_por\_entrevista.csv}; Figura~\ref{fig:saturacion} \\
+La saturaci\'on tem\'atica se alcanz\'o con las 16 entrevistas & \texttt{saturacion\_por\_entrevista.csv}; \texttt{robustez\_saturacion.py}; Figura~\ref{fig:saturacion} \\
 El dise\~no de material fuente compartido es la contribuci\'on principal & Protocolo registrado, secci\'on de controles \\
 La modificabilidad declarada y la medida coinciden en 4,00 & \texttt{01\_ERS/Auditoria\_Calidad/} \\
 El prototipo cubre el 85\,\% de los requisitos obligatorios & \texttt{05\_MVP/cobertura\_requisitos.csv} \\

@@ -101,14 +101,14 @@ solo en el repositorio de su entrega.
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
 | Autoevaluacion FAIR | `fair_assessment.pdf` --- 21 de 26 indicadores, **80,8 %** |
 | Manuscrito | `07_Publicacion/manuscrito_final.pdf` |
-| Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 130 paginas |
+| Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 124 paginas |
 | **Curva de saturacion tematica** | [`02_Evidencias/Codificacion_Tematica/curva_saturacion.png`](02_Evidencias/Codificacion_Tematica/curva_saturacion.png) · datos en `saturacion_por_entrevista.csv` · insertada en el manuscrito, Fig. 4 |
 | **Calculo de potencia** | [`06_Experimento/resultados/power_calculation.csv`](06_Experimento/resultados/power_calculation.csv) · script `scripts_analisis/power_calculation.py` · tabla en el manuscrito, `tabla_power_calculation.tex` |
 
 **Cita recomendada del paquete de datos:**
 
-> Sanchez Cornejo, G. A. y Munoz Quinonez, Y. E. (2026). *Conjunto de datos del proceso de
-> Ingenieria de Requerimientos del proyecto SIGA*. Zenodo.
+> Sanchez Cornejo, G. A., Munoz Quinonez, Y. E. y Cedeno Avila, W. D. (2026). *Conjunto de
+> datos del proceso de Ingenieria de Requerimientos del proyecto SIGA*. Zenodo.
 > https://doi.org/10.5281/zenodo.22137679
 
 Los metadatos de citacion legibles por maquina estan en `CITATION.cff`, con los tres
@@ -182,15 +182,18 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 │   ├── Makefile                  Pipeline completo con una sola orden
 │   ├── replicar.py               El mismo pipeline sin depender de make
 │   ├── protocolo/                Preguntas, hipotesis, variables y plan de analisis
-│   ├── osf_deviations.pdf        Desviaciones declaradas respecto del protocolo
 │   ├── registro_previo/          Comprobante OSF y bitacora de desviaciones
+│   ├── declaracion_enfoque.md    Por que se ejecuto el Enfoque 1 y no el 3
+│   ├── clave_desciego_UBICACION.md  Donde esta la tabla de desciego, retirada del
+│   │                             repositorio el 2026-09-03, y quien la custodia
 │   ├── instrumentos/             Guiones, cuestionarios y rubricas en version final
 │   ├── prompts_llm/              Consignas literales usadas con el modelo de lenguaje
-│   ├── clave_desciego_items.csv  Tabla que asigna origen a cada item ciego
 │   ├── datos_crudos/             Formato abierto, sin edicion manual posterior
 │   ├── datos_procesados/         Generados exclusivamente por script
 │   ├── scripts_analisis/         Analisis reproducible, con una sola orden
-│   └── resultados/               Salidas estadisticas
+│   ├── resultados/               Salidas estadisticas del analisis de tres jueces
+│   └── panel_ampliado/           Las dos vueltas del panel de siete, que no se pudo
+│                                 usar, con sus datos crudos y su diagnostico
 │
 ├── 07_Publicacion/               Manuscrito y deposito de datos
 │   ├── manuscrito_final.tex      Manuscrito en plantilla Springer LNCS
