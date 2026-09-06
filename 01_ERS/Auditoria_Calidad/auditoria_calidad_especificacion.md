@@ -296,7 +296,7 @@ inspeccion.
 | Verificabilidad | 96,0 % | **100 %** | ≥ 90 % | **Cumple** |
 | Trazabilidad | 92,0 % y 48,0 % | 92,0 % y **92,0 %** | 100 % y ≥ 90 % | **No cumple** |
 | Modificabilidad | 5,00 declarado como 0,08 | **4,00**, declarada y comprobable | ≤ 3,0 | **No cumple** |
-| Correccion | no medible | pendiente de REINS-01 | ≤ 0,05 | **Pendiente** |
+| Correccion | no medible | **0,04** (1 residual / 25 RF) | ≤ 0,05 | **Cumple** |
 
 **Tres metricas pasan a cumplir**: consistencia cierra su unico conflicto, completitud sube
 al 100 % al descartarse el falso positivo de RF-01, y verificabilidad al reescribirse el
@@ -308,7 +308,14 @@ normativo y no de evidencia de campo; inventarles una fuente seria peor que decl
 Modificabilidad queda en 4,00 medida sobre la poblacion completa, y la explicacion
 es que el acoplamiento dejo de estar oculto: hoy el valor automatico y el manual coinciden.
 
-**Una queda pendiente** hasta que se celebre la re-inspeccion REINS-01.
+**La sexta ya esta medida.** La re-inspeccion **REINS-01** se celebro el 2026-09-05 y
+verifico los dieciseis defectos uno por uno: quince quedan cerrados y **uno residual**,
+`DEF-06`, la apertura individual de camara, que el comite difiere de forma expresa en
+`SC-03`. De ahi sale Correccion = 1 / 25 = **0,04**, por debajo del 0,05 de referencia.
+
+El margen es de **un solo defecto**: con dos residuales el valor seria 0,08 y no cumpliria.
+Se dice para que se lea con la prudencia que merece, no como una holgura que no existe.
+→ `02_Evidencias/Validacion_Walkthrough/Inspeccion/2026-09-05_REINS-01_Registro_Reinspeccion.pdf`
 
 La guia exige que **toda metrica por debajo de su valor de referencia se corrija en el
 documento y se vuelva a medir**, y que el reporte muestre el par de valores antes y
@@ -318,3 +325,4 @@ despues. La tabla de arriba publica ese par para las seis metricas.
 |---|---|---|
 | 1.0 | 2026-08-29 | Medicion inicial sobre el ERS/SRS v2.0, antes de correcciones |
 | 2.0 | 2026-08-31 | Medicion posterior a las correcciones y a las decisiones de CCB-01. Recalculadas consistencia y modificabilidad; el resumen publica el par antes/despues |
+| 3.0 | 2026-09-05 | Se cierra **Correccion** tras celebrarse INS-01 y REINS-01: 0,04 con un unico defecto residual. Es la ultima de las seis metricas que quedaba sin medir |

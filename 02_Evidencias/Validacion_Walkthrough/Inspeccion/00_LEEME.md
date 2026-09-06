@@ -16,13 +16,26 @@ ERS con metodo, y no solo si esta escrito.
 
 ## Estado
 
-Los tres documentos estan **redactados**: `registro_inspeccion`, `registro_defectos`
-y `registro_reinspeccion`, en Markdown, Word y PDF.
+Los tres estan **celebrados, firmados y depositados**:
 
-**Falta celebrar la sesion formal y firmarla.**
+| Archivo | Sesion | Cuando |
+|---|---|---|
+| `2026-09-05_INS-01_Registro_Inspeccion.pdf` | INS-01, inspeccion de Fagan | 2026-09-05, 16:30 a 17:00 |
+| `2026-09-05_REINS-01_Registro_Reinspeccion.pdf` | REINS-01, verificacion cruzada | 2026-09-05, 17:00 a 17:30 |
+| `registro_defectos.csv` | Los 16 defectos con su estado | Vivo |
 
-## Consecuencia mientras no se celebre
+Firman los tres integrantes. Los cinco roles de Fagan se reparten entre ellos: Munoz
+Quinonez modera y anota, Sanchez Cornejo lee y responde como autor, y Cedeno Avila
+inspecciona. En la re-inspeccion verifica quien no corrigio.
 
-La metrica de **Correccion** de la auditoria de calidad queda sin medir, y asi se
-declara en `01_ERS/Auditoria_Calidad/auditoria_calidad_especificacion.md`. No se
-estima ni se rellena con un valor plausible: se deja pendiente y se dice.
+## Lo que la re-inspeccion resolvio
+
+De los 16 defectos, **quince quedan cerrados y uno residual**: `DEF-06`, la apertura
+individual de camara, que el comite de control de cambios difiere de forma expresa en
+`SC-03`. Con eso la metrica de **Correccion** deja de estar pendiente:
+
+```
+Correccion = 1 residual / 25 requisitos funcionales = 0,04     (referencia <= 0,05)
+```
+
+**El margen es de un solo defecto.** Con dos residuales saldria 0,08 y no cumpliria.

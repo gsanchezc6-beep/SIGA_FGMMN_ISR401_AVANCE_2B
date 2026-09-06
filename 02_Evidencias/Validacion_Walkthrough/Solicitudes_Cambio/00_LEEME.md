@@ -16,9 +16,14 @@ paso cuando el cliente pidio algo distinto de lo especificado.
 
 ## Estado
 
-Las cuatro solicitudes y el acta estan **redactadas**, en Markdown, Word y PDF.
+Las cuatro solicitudes y el acta estan **resueltas, firmadas y depositadas**. El comite
+se reunio el **2026-08-31** y sus decisiones se aplicaron sobre la linea base ese mismo
+dia: constan en el historial de versiones del ERS --version 4.3, linea base v2.1--, en la
+revision 2.0 de la auditoria de calidad y en el commit `0bc376d`.
 
-**Falta celebrar la sesion del comite y firmar el acta.**
+Asistieron los **dos integrantes activos en esa fecha**. Cedeno Avila se reincorporo
+despues y no figura entre los firmantes: si participa en INS-01 y en REINS-01, ambas
+posteriores.
 
 ## Que decide el acta
 
