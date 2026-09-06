@@ -34,6 +34,22 @@ transfirieron por una via que borra el EXIF, y una fotografia sin ese dato no ac
 cuando se tomo. Solo declaraba su fecha el nombre del archivo, que lo escribe quien lo
 nombra.
 
+### El criterio, dicho entero
+
+Cinco de las fotografias que **si** se conservan tampoco llevan fecha EXIF: `ENT-01`,
+`ENT-02`, `ENT-03`, `ENT-04` y `ENT-06`. Aplicar el mismo motivo a unas y no a otras
+seria arbitrario, asi que conviene decir cual es la diferencia.
+
+**No se retira una fotografia por carecer de EXIF, sino por carecer de EXIF _y_ de
+cualquier otro artefacto que acredite su fecha.** Las cinco que se conservan fueron
+tomadas el 2026-06-13, el 2026-06-27, el 2026-06-30 y el 2026-07-10, y **cada una de esas
+cuatro jornadas tiene su nota de campo firmada** --`NC-01` a `NC-04`-- que la documenta
+con lugar y hora. La fecha se sostiene sobre un documento firmado, no sobre el nombre del
+archivo.
+
+Las once retiradas eran del **2026-09-01**, jornada sin nota de campo. Ahi no habia nada
+que respaldara la fecha salvo el propio nombre, y por eso se fueron.
+
 **Que se pierde, y se dice.** Documentaban **aulas** --- pupitres, luminarias,
 tomacorrientes ---, y las que las sustituyen documentan **el laboratorio de computo**.
 No son el mismo espacio. El repositorio pierde por tanto la evidencia fotografica de las
