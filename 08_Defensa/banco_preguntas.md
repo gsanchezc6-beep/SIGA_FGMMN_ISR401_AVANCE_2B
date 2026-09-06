@@ -374,7 +374,7 @@ originales no se publican, de modo que a la zona publica va solo la transcripcio
 → `02_Evidencias/00_Restringido/README_Restringido.md`, apartados 1 y 4
 
 **G9. ¿Como sabemos que ese material restringido existe, si no lo podemos ver?**
-Por la ficha tecnica: registra las treinta y dos piezas con su duracion, su codec, su tamano
+Por la ficha tecnica: registra las treinta y cuatro piezas con su duracion, su codec, su tamano
 y su **SHA-256**, de modo que cualquiera puede contrastar un archivo contra su hash sin
 abrirlo. El contenedor esta cifrado con AES-256 y con los nombres de archivo ocultos, alojado
 en el OneDrive institucional, y la contrasena se entrega al docente por el Sistema de Gestion

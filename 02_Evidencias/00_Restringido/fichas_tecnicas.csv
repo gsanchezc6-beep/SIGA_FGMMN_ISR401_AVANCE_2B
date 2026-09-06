@@ -1,4 +1,4 @@
-nombre_archivo,tipo,fecha,codigo_participante,id_evidencia,duracion,resolucion,codec,audio_kbps,tamano_bytes,sha256_publicado,sha256_original_camara,zona
+﻿nombre_archivo,tipo,fecha,codigo_participante,id_evidencia,duracion,resolucion,codec,audio_kbps,tamano_bytes,sha256_publicado,sha256_original_camara,zona
 2026-05-14_Conserje_CONS-01_Entrevista.mp4,Video,2026-05-14,CONS-01,EV-01,00:06:16,1280x720,h264/aac,128,23425813,8b7919cb09437bda34a744775164fe5842bc6cde4fea2d3f2461aa6961f08f86,38f7b53ea2a2bcc78878cc0482a6db7698498e7d45a9b590018f8ba3eb296d0a,Publica
 2026-06-30_Coordinacion_COORD-01_Entrevista.mp4,Video,2026-06-30,COORD-01,EV-02,00:12:16,1280x720,h264/aac,128,37080803,11e1ef8f6445bfbc904487d8119132726ce4cb6ea0017e96d36bdd518cac4b8d,7b59944c3d80924f680645230e4549a853bbd56cf7d814d99f0949dc8ef186e8,Publica
 2026-07-13_Conserje_CONS-02_Entrevista.mp4,Video,2026-07-13,CONS-02,EV-08,00:08:30,1280x720,h264/aac,128,52904299,a55329349352021aa905e25e5869b7fd2368ebef8b879660c1da421b09141028,a950753992d924b92b8eb7302454914fd1897f70419fba1b6abe444dedf71843,Publica
@@ -32,3 +32,4 @@ nombre_archivo,tipo,fecha,codigo_participante,id_evidencia,duracion,resolucion,c
 2026-09-04_Tecnico_TIC-01_Sesion.mp4,Video,2026-09-04,TIC-01,EV-26,00:16:35,1280x720,h264/aac,97,89137754,N/A - no se publica,be33bdab7ea79846d0fd6c7f251147b0cc43a6d8e1f6895644f948c3b0e9a1a6,Restringida
 2026-09-04_Tecnico_TIC-01_Audio.mp3,Audio,2026-09-04,TIC-01,EV-26,00:16:35,N/A,mp3,128,15918600,N/A - no se publica,b4216b897b6f49dc757921fadf1b324fee40371b527d7bab8e144a71447f8926,Restringida
 2026-09-01_MemberChecking_MC-01_Video.mp4,Video,2026-09-01,MC-01,MC-01,00:06:42,1280x720,h264/aac,129,42030257,6e46bb004c68f28b3987f3d91943436f566fadfd1efc853e728318632604f2b0,6e46bb004c68f28b3987f3d91943436f566fadfd1efc853e728318632604f2b0,Publica
+2026-09-05_Tecnico_TIC-02_Sesion.mp4,Video,2026-09-05,TIC-02,EV-27,00:10:12,1920x1080,h264/aac,128,539267922,N/A - no se publica,329ef8f1f3ac4d967ae96783836331730b254b57072c8bfa80c788b179602df4,Restringida
