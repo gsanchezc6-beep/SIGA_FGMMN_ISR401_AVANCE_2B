@@ -44,6 +44,16 @@ RONDA_TERMINAL = {
     "DOC-08": "EV-23", "DOC-09": "EV-24", "DOC-10": "EV-25",
 }
 
+# Sesiones de validacion con usuario tecnico. No son entrevistas: son
+# walkthroughs sobre el prototipo, y su evidencia es el codigo `WT-xx` del acta,
+# no un `EV-xx` de transcripcion. Se listan aparte porque el nombre del archivo
+# de consentimiento no distingue un tipo de sesion del otro.
+SESIONES_TECNICAS = {
+    "TIC-01": "WT-08",
+    "TIC-02": "WT-09",
+}
+VALIDACION_TECNICA = "Sesion de validacion sobre prototipo (usuario tecnico)"
+
 # Entrevistas anteriores: seudonimo -> evidencia, leido de las transcripciones.
 def evidencias_de_transcripciones():
     d = {}
@@ -73,19 +83,26 @@ def main():
         # duplicado en cuanto se depositara el PDF.
         if cod in RONDA_TERMINAL:
             continue
+        tecnica = cod in SESIONES_TECNICAS
         filas.append({
             "codigo_participante": cod,
             "perfil": perfil,
-            "evidencia": ev_por_codigo.get(cod, "sin transcripcion asociada"),
+            "evidencia": (SESIONES_TECNICAS[cod] if tecnica
+                          else ev_por_codigo.get(cod, "sin transcripcion asociada")),
             "fecha_sesion": fecha,
-            "sesion": "Entrevista semiestructurada",
+            "sesion": VALIDACION_TECNICA if tecnica else "Entrevista semiestructurada",
             "archivo_consentimiento": "02_Evidencias/Consentimientos/" + nombre,
             "deposito": "Depositado, con los datos identificables censurados",
             "alcance_autorizado": CURSO_Y_PUBLICACION,
             "citable_en_manuscrito": "Si",
-            "como_consta": ("Cubierto por la adenda de segunda ronda del expediente "
-                            "etico de la Entrega 2A, segun 02_Evidencias/Etica/"
-                            "resumen_proceso_etico.md, apartado 2"),
+            "como_consta": (
+                ("Marco la primera casilla del formulario, visible en el PDF por "
+                 "encima de la banda de censura. El acta de la sesion es "
+                 "02_Evidencias/Validacion_Walkthrough/Sesiones_Validacion/, "
+                 "codigo " + SESIONES_TECNICAS[cod]) if tecnica else
+                ("Cubierto por la adenda de segunda ronda del expediente "
+                 "etico de la Entrega 2A, segun 02_Evidencias/Etica/"
+                 "resumen_proceso_etico.md, apartado 2")),
         })
 
     # --- sesion de validacion comunicativa --------------------------------
