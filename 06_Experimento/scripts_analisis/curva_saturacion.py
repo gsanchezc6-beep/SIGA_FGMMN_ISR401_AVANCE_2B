@@ -114,9 +114,18 @@ def main():
     umbral_5pct = 0.05 * total_final if total_final else float("nan")
     saturado = bool(promedio_ultimas3 <= umbral_5pct) if total_final else False
 
-    tabla["saturado_segun_ultimas_3"] = saturado
-    tabla["promedio_nuevos_ultimas_3"] = round(promedio_ultimas3, 3)
-    tabla["umbral_5pct_total"] = round(umbral_5pct, 3)
+    # Las tres columnas se calculan **entrevista por entrevista**, no como el
+    # valor final repetido en todas las filas. Un veredicto global copiado en la
+    # primera fila diria que el corpus estaba saturado con una sola entrevista,
+    # que es imposible; asi la tabla muestra cuando se alcanza y la ultima fila
+    # coincide con el veredicto global que se imprime abajo.
+    tabla["promedio_nuevos_ultimas_3"] = (
+        tabla["codigos_nuevos"].rolling(3, min_periods=3).mean().round(3))
+    tabla["umbral_5pct_hasta_aqui"] = (0.05 * tabla["codigos_acumulados"]).round(3)
+    tabla["saturado_hasta_aqui"] = [
+        "" if pd.isna(m) else str(bool(m <= u))
+        for m, u in zip(tabla["promedio_nuevos_ultimas_3"],
+                        tabla["umbral_5pct_hasta_aqui"])]
 
     os.makedirs(os.path.dirname(args.tabla), exist_ok=True)
     tabla.to_csv(args.tabla, index=False, encoding="utf-8")
