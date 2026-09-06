@@ -22,7 +22,7 @@ metodológica declarada.
 > redactado tras la exclusión). Esta contaminación parcial y tardía del
 > corpus fuente se documenta como desviación respecto del protocolo
 > pre-registrado y como amenaza a la validez de constructo en
-> `06_Experimento/README_OSF.md` y en la sección correspondiente del
+> `06_Experimento/registro_previo/registro_osf.md` y en la sección correspondiente del
 > manuscrito; no se re-ejecutó el experimento completo por restricción de
 > tiempo de la Entrega 4 (2B).
 

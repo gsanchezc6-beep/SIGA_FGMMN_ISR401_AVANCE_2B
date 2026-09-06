@@ -31,8 +31,8 @@ hash, para que se pueda comprobar que existen y cuales son sin publicarlas.
 en el apartado 4.
 
 Contando toda la evidencia audiovisual del estudio --las entrevistas mas la sesion de
-validacion comunicativa `MC-01` y la sesion de validacion tecnica `EV-26`--, la ficha
-inventaria **34 piezas: diecisiete videos y diecisiete audios**.
+validacion comunicativa `MC-01` y las dos sesiones de validacion tecnica, `EV-26` y
+`EV-27`--, la ficha inventaria **34 piezas: diecisiete videos y diecisiete audios**.
 
 Todos superan el sondeo de codec y duracion que exige la guia: MP4 H.264 a 1280 × 720 con
 audio AAC, y MP3 a 128 kbps.

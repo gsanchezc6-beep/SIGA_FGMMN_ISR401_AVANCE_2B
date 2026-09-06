@@ -116,7 +116,7 @@ Se enumeran para que la declaracion sea completa y no solo positiva.
 
 | Seccion o artefacto | Quien lo produjo |
 |---|---|
-| Las diecisiete entrevistas de campo y su conduccion | El equipo, en persona |
+| Las dieciseis entrevistas de campo y su conduccion | El equipo, en persona |
 | Las puntuaciones de los tres jueces del cuasi-experimento | Tres evaluadores externos, de forma independiente y ciega |
 | El diseno del cuasi-experimento y su protocolo registrado en OSF | El equipo |
 | Las decisiones de priorizacion MoSCoW, Kano y WSJF | El equipo |

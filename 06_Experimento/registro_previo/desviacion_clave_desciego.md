@@ -30,7 +30,7 @@ restriccion que el repositorio no cumplia.**
 
 ## 3. Por que el archivo no se puede simplemente retirar
 
-El script `07_Datos/scripts/analizar_resultados.py` lo lee en su etapa `consolidar`
+El script `06_Experimento/scripts_analisis/analizar_resultados.py` lo lee en su etapa `consolidar`
 (linea 94) para asignar el campo `origen` a cada puntuacion. **Sin esta tabla, el paquete
 de replicacion no corre de principio a fin**, y eso incumple el contenido minimo exigible
 del paquete de replicacion ejecutable y el criterio de piso sobre regeneracion de tablas y

@@ -203,4 +203,4 @@ Facultad de Ciencias de la Computación, Universidad Técnica Estatal de Quevedo
 Las solicitudes se canalizan a través del corresponsal del equipo:
 Gary Alberto Sánchez Cornejo, <gsanchezc6@uteq.edu.ec>.
 
-Ver también [`08_Etica/resumen_proceso_etico.md`](../../02_Evidencias/Etica/resumen_proceso_etico.md).
+Ver también [`02_Evidencias/Etica/resumen_proceso_etico.md`](../../02_Evidencias/Etica/resumen_proceso_etico.md).

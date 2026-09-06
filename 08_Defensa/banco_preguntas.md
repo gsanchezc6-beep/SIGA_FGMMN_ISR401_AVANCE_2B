@@ -196,13 +196,13 @@ la codificacion, ni en el material fuente del componente empirico.
 Consentimiento informado para los datos de campo. Para los datos operativos del sistema,
 mision de interes publico de la institucion educativa, conforme a la Ley Organica de
 Proteccion de Datos Personales.
-→ `08_Etica/`, `01_ERS/Componentes_IA/ficha_RF-09_analisis_predictivo_fallos.md` seccion 6
+→ `02_Evidencias/Etica/`, `01_ERS/Componentes_IA/ficha_RF-09_analisis_predictivo_fallos.md` seccion 6
 
 **E4. ¿Usaron inteligencia artificial? ¿Para que?**
 En dos capacidades separadas: como **objeto de estudio**, generando el Conjunto A; y como
 **apoyo de redaccion** sobre contenido del equipo. Las secciones evaluativas son produccion
 propia. Declarado seccion por seccion.
-→ `08_Etica/declaracion_uso_ia.md`
+→ `10_Autoria/declaracion_uso_ia.md`
 
 ---
 
@@ -300,13 +300,13 @@ hizo que la especificacion aparentara un acoplamiento bajo que no tiene.
 
 ---
 
-## G. La ronda terminal y lo que corrigio
+## I. La ronda terminal y lo que corrigio
 
 Seccion anadida el 2026-09-04. Cubre lo que cambio entre la Entrega 2B y el examen final,
 que es donde un tribunal suele preguntar: los cambios visibles entre una version y la
 siguiente.
 
-**G1. Corrigieron RNF-04 de dos a cinco minutos. ¿No es rebajar el requisito para poder
+**I1. Corrigieron RNF-04 de dos a cinco minutos. ¿No es rebajar el requisito para poder
 cumplirlo?**
 Al reves: el umbral de dos minutos se habia fijado **sin preguntarle a ningun usuario**. En
 la ronda terminal se le pregunto a un docente cuanto tardaria en entender la pantalla sin
@@ -315,7 +315,7 @@ que existe sobre ese umbral, y contradice la cifra escrita. Un umbral corregido 
 evidencia vale mas que uno inventado que nadie comprobo. La cita esta en la transcripcion.
 → `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-09_EV-24_Transcripcion.md`
 
-**G2. ¿Por que RNF-14 dejo de tener una sola cifra?**
+**I2. ¿Por que RNF-14 dejo de tener una sola cifra?**
 Porque medir un tiempo medio sobre dos poblaciones distintas no mide el servicio, mide la
 mezcla. La asistente de TIC describio que la falla menor --periferico, cable o conexion-- se
 atiende en el acto, y que la mayor exige retirar el equipo y se resuelve en veinticuatro
@@ -323,15 +323,17 @@ horas. Un umbral unico de quince minutos no es medible sobre esas dos cosas junt
 mide por clase de falla. Quedo registrado como defecto **D-04** en el acta de la sesion.
 → `02_Evidencias/Validacion_Walkthrough/Sesiones_Validacion/2026-09-04_Tecnico_TIC-01_Walkthrough_Acta.pdf`
 
-**G3. La guia pide tres sesiones de validacion con usuarios tecnicos y ustedes hicieron una.**
-Cierto, y esta declarado con su causa. El area de Tecnologias de la Informacion y
-Comunicacion estaba **en remodelacion el 4 de septiembre** y su personal no se encontraba en
-la institucion. La institucion **si tiene** mas personal que cumple el perfil: la causa es de
+**I3. La guia pide tres sesiones de validacion con usuarios tecnicos. ¿Cuantas hicieron?**
+Dos, y estan depositadas: `TIC-01` el 2026-09-04 --administradora de tecnologias de la
+informacion y de laboratorios-- y `TIC-02` el 2026-09-05 --responsable de redes y soporte
+tecnico--. La tercera no se alcanzo en el plazo, y la causa esta declarada: el area de
+Tecnologias de la Informacion y Comunicacion estaba **en remodelacion el 4 de septiembre** y
+su personal no se encontraba en la institucion. La institucion **si tiene** mas personal que cumple el perfil: la causa es de
 calendario, no de plantilla, y se declara asi para no atribuirle a la organizacion cliente
 una carencia que no tiene. Se consulto ademas en biblioteca y en el area administrativa.
 → `02_Evidencias/Validacion_Walkthrough/declaracion_perfil_tecnico.md`
 
-**G4. ¿Por que los conserjes no cuentan como usuarios tecnicos, si manejan las camaras y los
+**I4. ¿Por que los conserjes no cuentan como usuarios tecnicos, si manejan las camaras y los
 proyectores?**
 Porque ellos mismos se distinguen del tecnico, y esta grabado. `CONS-03` describe que
 comunica la falla a la autoridad de la facultad y que «ella realiza el escrito y ella manda
@@ -340,7 +342,7 @@ dar un mantenimiento». Operan y reportan; no administran. El criterio aplicado 
 cada persona declara que hace, no el nombre de su cargo ni la conveniencia del recuento.
 → `02_Evidencias/Transcripciones/`, EV-08 y EV-09
 
-**G5. Tienen dieciseis entrevistas y analizan diez. ¿Por que no codificaron las seis nuevas?**
+**I5. Tienen dieciseis entrevistas y analizan diez. ¿Por que no codificaron las seis nuevas?**
 Porque la codificacion tematica es lectura interpretativa y se hace con el corpus completo
 delante, no a ultima hora. Las seis estan transcritas, anonimizadas y depositadas; su
 codificacion queda pendiente y **asi se declara en todos los documentos**, incluido el
@@ -348,14 +350,14 @@ manuscrito. Decir dieciseis sin esa precision haria pasar por analizado lo que s
 transcrito.
 → `07_Publicacion/manuscrito_final.pdf`, amenaza **T4**
 
-**G6. ¿Que es RQ2 y por que aparece si el estudio comparaba humano contra LLM?**
+**I6. ¿Que es RQ2 y por que aparece si el estudio comparaba humano contra LLM?**
 El estudio siempre respondio dos preguntas y solo enunciaba una. RQ2 es **cuanta potencia
 estadistica alcanza un panel ciego de tres jueces y que tamano necesitaria una replicacion**:
 8,4 % frente al 80 % convencional, y harian falta 34 observaciones apareadas. La respuesta ya
 estaba calculada por script antes de enunciarla.
 → `06_Experimento/resultados/power_calculation.csv`
 
-**G7. La matriz tiene 41 filas con cadena completa de 74. ¿Y las otras 33?**
+**I7. La matriz tiene 41 filas con cadena completa de 74. ¿Y las otras 33?**
 Las setenta y cuatro tienen **todos sus eslabones declarados**: ninguna celda dice nada
 ambiguo. Las que no cierran no estan a medio hacer, **no pueden** cerrar: nueve nacen del
 analisis normativo de la Ley Organica de Proteccion de Datos y no de entrevista --inventarles
@@ -365,7 +367,7 @@ revision y no por caso de prueba, y `RF-09` y `RF-18` no llevan historia de usua
 contradiria su propia regla. La columna se comprueba por script.
 → `04_Trazabilidad/huerfanos_y_cadenas_rotas.md`, `python 04_Trazabilidad/verificar_matriz.py`
 
-**G8. Hay dieciseis entrevistas y solo catorce videos. ¿Donde estan los otros?**
+**I8. Hay dieciseis entrevistas y solo catorce videos. ¿Donde estan los otros?**
 Dos ausencias, declaradas desde agosto. `EV-14` se registro **solo en audio por peticion
 expresa del participante**, y el video de `EV-16` existe pero no se pudo recuperar de los
 medios disponibles; su audio si esta publicado. Ademas, el video y el audio de las seis de la
@@ -373,7 +375,7 @@ ronda terminal **no se publican**: su consentimiento dice literalmente que las g
 originales no se publican, de modo que a la zona publica va solo la transcripcion anonimizada.
 → `02_Evidencias/00_Restringido/README_Restringido.md`, apartados 1 y 4
 
-**G9. ¿Como sabemos que ese material restringido existe, si no lo podemos ver?**
+**I9. ¿Como sabemos que ese material restringido existe, si no lo podemos ver?**
 Por la ficha tecnica: registra las treinta y cuatro piezas con su duracion, su codec, su tamano
 y su **SHA-256**, de modo que cualquiera puede contrastar un archivo contra su hash sin
 abrirlo. El contenedor esta cifrado con AES-256 y con los nombres de archivo ocultos, alojado
@@ -381,7 +383,7 @@ en el OneDrive institucional, y la contrasena se entrega al docente por el Siste
 Academica y por ningun otro medio.
 → `02_Evidencias/00_Restringido/fichas_tecnicas.csv`
 
-**G10. ¿Usaron inteligencia artificial? ¿En que exactamente?**
+**I10. ¿Usaron inteligencia artificial? ¿En que exactamente?**
 Si, y esta declarado seccion por seccion, incluidas aquellas en las que **no** se uso ninguna
 herramienta. Hay dos usos separados: el Conjunto A de requisitos funcionales fue **generado
 por un modelo de lenguaje a proposito**, como variable independiente del cuasi-experimento
@@ -390,14 +392,14 @@ metodo de validacion anotado en cada fila. La codificacion tematica del corpus y
 saturacion las produjo el equipo sin herramienta, y asi consta.
 → `10_Autoria/declaracion_uso_ia.md`
 
-**G11. ¿Que aprendieron que no esperaban?**
+**I11. ¿Que aprendieron que no esperaban?**
 Que dos de los seis docentes respondieron que conocer el estado del aula antes de entrar les
 resulta **indiferente**, lo que discute la premisa del sistema; y que la unica persona con
 perfil tecnico localizada partio en dos una falla que la especificacion trataba como una
 sola. Los dos hallazgos estan en el corpus y ninguno se omitio por incomodo.
 → `02_Evidencias/Transcripciones/`, EV-22 y EV-24
 
-**G12. La rubrica les asignaba el Enfoque 3, de explicabilidad, y ustedes hicieron el
+**I12. La rubrica les asignaba el Enfoque 3, de explicabilidad, y ustedes hicieron el
 Enfoque 1. ¿Por que?**
 Porque el equipo se identifico como FGMMN durante todo el proyecto --el nombre del
 repositorio, el `CITATION.cff`, los metadatos de Zenodo y de OSF-- y bajo esa

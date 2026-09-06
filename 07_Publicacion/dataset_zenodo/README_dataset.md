@@ -99,7 +99,7 @@ CC BY 4.0.
 ## Preregistro
 Protocolo registrado en OSF — DOI [10.17605/OSF.IO/7PQ3H](https://doi.org/10.17605/OSF.IO/7PQ3H).
 Las desviaciones respecto del registro se documentan explícitamente en
-`06_Experimento/README_OSF.md`.
+`06_Experimento/registro_previo/registro_osf.md`.
 
 ## Contacto
 Gary Alberto Sánchez Cornejo, analista líder, equipo FGMMN — Facultad de

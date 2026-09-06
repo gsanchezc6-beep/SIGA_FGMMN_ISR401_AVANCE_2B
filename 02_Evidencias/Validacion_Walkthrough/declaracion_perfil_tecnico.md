@@ -11,14 +11,26 @@ Fecha: 2026-09-04
 La guia de la Entrega Final pide **seis sesiones de validacion grabadas con acta firmada, tres
 con usuarios tecnicos y tres con usuarios no tecnicos**.
 
-El equipo deposita las sesiones no tecnicas completas y **una sola sesion con usuario
+El equipo deposita las sesiones no tecnicas completas y **dos sesiones con usuario
 tecnico**. No se alcanzan las tres.
+
+| Sesion | Fecha | Perfil declarado por el participante |
+|---|---|---|
+| `WT-08` · `TIC-01` | 2026-09-04 | Administradora de tecnologias de la informacion y de laboratorios |
+| `WT-09` · `TIC-02` | 2026-09-05 | Responsable de redes y soporte tecnico; atiende y diagnostica averias |
+
+A los dos se les aplico el mismo criterio que al resto: **lo que la persona declara que
+hace**, preguntado antes de clasificarla.
 
 **La institucion si cuenta con mas personal que cumple el perfil.** El area de Tecnologias de
 la Informacion y Comunicacion tiene mas personal tecnico, pero el 2026-09-04 esa area estaba
 en remodelacion y su personal no se encontraba en la institucion. La causa es de calendario,
 no de plantilla, y se declara asi para no atribuir a la organizacion una carencia que no
 tiene.
+
+**Actualizacion del 2026-09-05.** La busqueda continuo y dio con un segundo perfil, `TIC-02`.
+Queda una sesion por debajo del minimo. Si se consigue la tercera, esta declaracion deja de
+hacer falta y se retira del deposito.
 
 Este documento deja constancia de a quien se busco, por que califica o no, y que se hizo en su
 lugar. No sustituye al requisito ni pretende equivaler a el.

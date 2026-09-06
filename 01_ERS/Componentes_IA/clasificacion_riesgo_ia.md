@@ -125,7 +125,7 @@ produccion, no procesa datos de la organizacion en operacion y no produce ningun
 que llegue a un usuario del sistema.
 
 Queda fuera de esta clasificacion, y su uso, sus consignas y sus limitaciones se declaran
-en `06_Experimento/consignas/` y en `08_Etica/declaracion_uso_ia.md`.
+en `06_Experimento/prompts_llm/` y en `10_Autoria/declaracion_uso_ia.md`.
 
 ---
 
