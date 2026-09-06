@@ -15,12 +15,26 @@ sección del repositorio principal).
 - `ANONYMIZATION.md` — Procedimiento de seudonimización y anonimización aplicado
   a entrevistas, consentimientos y actas antes de su publicación.
 - `ETHICS.md` — Declaración ética y proceso de consentimiento informado.
-- `codificacion_tematica.csv` — Codificación abierta de **36 fragmentos**
-  extraídos de las **10 entrevistas codificadas** (EV-01, EV-02, EV-08 a EV-14,
-  EV-16; EV-15 excluida por retiro de consentimiento informado). El corpus del
-  proyecto son **16 entrevistas**: las seis de la ronda terminal (EV-20 a EV-25)
-  estan transcritas y depositadas, pero todavia no codificadas, de modo que no
-  entran en este archivo ni en la curva de saturacion. Columnas:
+- `panel_ampliado/` — **Las dos vueltas del panel ampliado de evaluadores, que
+  no se pudo usar.** Datos crudos de siete evaluadores el 2026-09-05 y de los
+  mismos siete con un instrumento corregido el 2026-09-06, el mapa de posiciones
+  de la segunda vuelta y el script que reproduce las cuatro tablas de análisis.
+  No es el análisis del estudio --- ese sigue siendo el de los tres jueces del
+  registro previo, en `resultados_jueces/` --- sino la comprobación de robustez
+  que falló las dos veces, con el diagnóstico de por qué. Se publica porque un
+  intento fallido que se calla es lo que hace irreproducible un estudio.
+  Ejecutar con `python panel_ampliado/analizar_panel_ampliado.py`.
+- `scripts_analisis/robustez_saturacion.py` — Comprueba que la saturación
+  temática no depende del orden de las entrevistas, probando las 720
+  ordenaciones posibles del bloque de seis realizadas el mismo día.
+- `codificacion_tematica.csv` — Codificación abierta de **136 fragmentos** bajo
+  **50 códigos**, extraídos de las **16 entrevistas** del corpus (EV-01, EV-02,
+  EV-08 a EV-14, EV-16 y EV-20 a EV-25; EV-15 excluida por retiro de
+  consentimiento informado). Las seis de la ronda terminal se codificaron el
+  2026-09-06 y entran ya en este archivo y en la curva de saturación. Aviso para
+  quien replique: **los dos conjuntos de requisitos que compara el
+  cuasi-experimento se generaron a partir de las diez primeras** y no se
+  regeneraron. Columnas:
   Fragmento (cita textual), Codigo (etiqueta de codificación abierta),
   Categoria (categoría axial), Requisito_derivado (RF/RNF relacionado),
   ID_evidencia (código de entrevista), Analista_codificador.
@@ -72,11 +86,15 @@ sección del repositorio principal).
 ## Limitaciones metodológicas declaradas (transparencia obligatoria)
 1. **Asimetría de corpus entre Conjunto A y Conjunto B:** el Conjunto A (LLM)
    se generó sobre el corpus completo de las 11 entrevistas recolectadas
-   (`material_fuente_LLM.txt`); el Conjunto B (humano) y todo el análisis
-   cualitativo posterior (`codificacion_tematica.csv`,
-   `transcripciones_anonimizadas.json`) usan las 10 entrevistas que
+   (`material_fuente_LLM.txt`); el Conjunto B (humano) usa las 10 que
    permanecen válidas tras excluir EV-15 por retiro de consentimiento
    informado. Se declara como amenaza a la validez de constructo.
+   **Y una asimetría más, posterior:** el análisis cualitativo
+   (`codificacion_tematica.csv`, `transcripciones_anonimizadas.json`) pasó a
+   cubrir las 16 entrevistas del corpus el 2026-09-06, mientras que los dos
+   conjuntos comparados siguen anclados a las 10 primeras porque no se
+   regeneraron. Quien replique debe tener presente que el corpus codificado y
+   el corpus del que salieron los requisitos comparados **no son el mismo**.
 2. **Validez de constructo (exposición previa del LLM):** el modelo que
    generó los 26 RF del Conjunto A tuvo exposición previa parcial al
    Conjunto B humano en la misma cuenta de chat. Ver detalle en
@@ -88,10 +106,14 @@ sección del repositorio principal).
 4. **Corrección por comparaciones múltiples:** tras Holm-Bonferroni, ninguna
    de las 5 dimensiones evaluadas mantiene significancia estadística (ver
    `resultados_jueces/hipotesis.csv`).
-5. **Saturación temática no alcanzada:** la curva de códigos únicos
-   acumulados (`06_Experimento/scripts_analisis/curva_saturacion.py`) no
-   llega a inflexión visible con las 10 entrevistas codificadas. Las seis de la
-   ronda terminal no estan codificadas y por tanto no modifican esta curva.
+5. **Saturación temática alcanzada, y con qué reservas:** con las 16
+   entrevistas codificadas el promedio de códigos nuevos de las tres últimas es
+   1,333 frente a un umbral de 2,50. Con solo 10 no saturaba, por un libro de
+   códigos de 36 códigos para 36 fragmentos que estructuralmente no podía
+   aplanarse. El resultado resiste las 720 ordenaciones posibles del bloque de
+   entrevistas del mismo día. Dos reservas declaradas: las instrucciones de
+   codificación pedían reutilizar códigos, lo que empuja hacia este resultado, y
+   las seis entrevistas añadidas son todas del perfil docente.
 
 ## Licencia
 CC BY 4.0.

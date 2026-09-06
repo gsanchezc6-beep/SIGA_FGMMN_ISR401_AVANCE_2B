@@ -163,8 +163,15 @@ disimula.
 → `06_Experimento/resultados/power_calculation.csv`
 
 **D7. ¿Alcanzaron saturacion tematica?**
-No. La ultima entrevista todavia aporta cuatro codigos nuevos sobre 36 acumulados. La curva
-no tiene inflexion y se declara asi.
+Si, con las dieciseis entrevistas codificadas: el promedio de codigos nuevos de las tres
+ultimas es 1,333 frente a un umbral de 2,50. Con solo diez no saturaba, y la causa no era el
+corpus sino el libro de codigos --- 36 codigos para 36 fragmentos, uno por uno, con lo que la
+curva no puede aplanarse a ningun tamano. Al codificar las seis restantes contra el libro
+existente pasa a 2,72 fragmentos por codigo.
+Se comprobo que no depende del orden: las seis ultimas son del mismo dia, y el criterio
+aguanta las 720 ordenaciones posibles (`robustez_saturacion.py`).
+Las dos reservas se declaran: las instrucciones pedian reutilizar codigos, lo que empuja
+hacia este resultado, y las seis nuevas son todas de docentes.
 → `07_Publicacion/tablas/saturacion_por_entrevista.csv`, `07_Publicacion/figuras/curva_saturacion.png`
 
 **D8. ¿Como se que las cifras del reporte no estan escritas a mano?**

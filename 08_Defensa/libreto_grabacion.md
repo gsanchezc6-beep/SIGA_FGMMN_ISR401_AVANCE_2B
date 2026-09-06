@@ -32,6 +32,14 @@ una al hablar, deja de estar respaldada.
 Es el único reparto que no parte ningún bloque por la mitad, y sigue el aporte real que
 declara `04_Trazabilidad/aporte_individual.csv`.
 
+> **Aviso de tiempo.** Los bloques 4 y 5 crecieron al incorporar el panel ampliado y la
+> saturación, y entre los dos se van cerca de **un minuto y medio por encima** de sus tres y
+> seis minutos. **Crónometren un ensayo antes de grabar.** Si se pasan, lo primero que se
+> recorta es el bloque 1: la frase de las tres aportaciones se puede decir en una y no
+> sostiene ninguna cifra. Lo último que se toca son las reservas del bloque 5 --- son
+> justamente lo que distingue este trabajo, y quitarlas para ganar treinta segundos sale
+> caro.
+
 ---
 
 # GARY — Diapositiva 1 · portada · 30 s
@@ -72,10 +80,10 @@ declara `04_Trazabilidad/aporte_individual.csv`.
 > El corpus son **dieciséis entrevistas** transcritas y anonimizadas, más **nueve sesiones de
 > validación** sobre prototipos, dos de ellas con usuario técnico. Y doce notas de campo.
 >
-> De esas dieciséis entrevistas, **diez están codificadas temáticamente**. Las seis de la
-> ronda terminal del tres de septiembre están transcritas y depositadas, y su codificación
-> queda declarada como pendiente en el manuscrito, en la amenaza T4. Lo decimos aquí porque
-> preferimos decirlo nosotros.»
+> **Las dieciséis están codificadas temáticamente**: ciento treinta y seis fragmentos bajo
+> cincuenta códigos. Las seis últimas se codificaron el seis de septiembre, repartidas entre
+> los tres por entrevista completa, y cada cita se comprobó literal contra su transcripción
+> antes de entrar.»
 
 *Avanza.*
 
@@ -120,6 +128,8 @@ declara `04_Trazabilidad/aporte_individual.csv`.
 > «Y por eso el análisis de sensibilidad toma el requisito, y no el juez, como unidad de
 > análisis. Está declarado como desviación del protocolo en la bitácora del registro previo.»
 
+*Antes de avanzar, añade el párrafo del panel ampliado que está al final de este libreto.*
+
 *Avanza y cede a Yeranick.*
 
 ---
@@ -131,11 +141,21 @@ declara `04_Trazabilidad/aporte_individual.csv`.
 >
 > La primera es el tamaño del panel, que acaban de ver.
 >
-> La segunda es la saturación temática: **no se alcanzó**, y la curva no se dobla. No la
-> forzamos ni la maquillamos; se publica como está y se declara.
+> La segunda es la saturación temática. **Sí se alcanzó**, y precisamente por eso hay que
+> contar cómo. Con diez entrevistas la curva no se doblaba, y el motivo no era el corpus: era
+> nuestro libro de códigos, que tenía treinta y seis códigos para treinta y seis fragmentos,
+> uno por uno. Con un libro así la curva **no puede** aplanarse, por muchas entrevistas que se
+> hagan. Al codificar las seis restantes contra el libro que ya existía, pasamos a dos coma
+> siete fragmentos por código y la curva se dobla.
 >
-> Y la tercera es la codificación pendiente de las seis últimas entrevistas. Decir dieciséis
-> sin esa precisión haría pasar por analizado lo que solo está transcrito.»
+> Dos cosas contra nosotros, y las decimos. Las instrucciones que repartimos pedían reutilizar
+> códigos antes que inventarlos: es lo correcto, pero empuja hacia el resultado que salió. Y
+> las seis últimas entrevistas son todas de docentes, así que saturamos dentro de un perfil,
+> no en todo el dominio.
+>
+> Y la tercera amenaza: los dos conjuntos de requisitos que compara el experimento salieron
+> del material de las diez primeras y **no se regeneraron**. El análisis cualitativo va por
+> dieciséis y la comparación por diez. No es lo mismo y no lo mezclamos.»
 
 *Avanza y cede a Cedeño.*
 
@@ -253,7 +273,8 @@ que es lo que ese documento ya decía que se haría en este caso.
 Todo está depositado en `06_Experimento/panel_ampliado/`, con los datos crudos de las dos
 vueltas y el script que los analiza.
 
-**Yeranick añade esto al final del bloque 5**, después de las tres amenazas:
+**Gary lo dice al cerrar el bloque 4**, que es donde se habla del panel. Va después de
+la frase sobre la potencia del ocho coma cuatro por ciento, en la diapositiva 6:
 
 > «Y una cuarta que preferimos contar aunque no nos favorezca. Intentamos ampliar el panel de
 > tres a diez evaluadores, dos veces, para ganar potencia. Las dos veces el acuerdo entre

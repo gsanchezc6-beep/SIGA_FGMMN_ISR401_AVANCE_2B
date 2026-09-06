@@ -16,3 +16,7 @@ tablas/tabla_power_calculation.tex,tabla,scripts/power_calculation.py,potencia,r
 figuras/fig02_distribucion_por_dimension.png,figura,scripts/generar_figuras.py,figuras,datos_procesados/puntuaciones_consolidadas.csv
 figuras/fig03_tamanos_efecto.png,figura,scripts/generar_figuras.py,figuras,resultados/efectos.csv
 figuras/fig04_acuerdo_interevaluador.png,figura,scripts/generar_figuras.py,figuras,resultados/acuerdo_interevaluador.csv
+panel_ampliado/resultados/acuerdo_dos_vueltas.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/
+panel_ampliado/resultados/consistencia_intrajuez.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/segunda_vuelta/
+panel_ampliado/resultados/efecto_segunda_vuelta.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/segunda_vuelta/
+panel_ampliado/resultados/reparto_de_la_escala.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/
