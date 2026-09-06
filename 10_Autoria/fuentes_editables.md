@@ -12,6 +12,14 @@ es donde sirven para trabajar. Este inventario dice donde esta cada una.
 |---|---|---|
 | `.vpp` | 39 | Visual Paradigm |
 | `.drawio` | 4 | draw.io |
+| `.fig` | **0 de 1** | Figma — **pendiente** |
+
+**Falta una fuente, y se dice.** Los cuatro prototipos de interfaz de
+`03_Modelado/12_Prototipos_Interfaz/` se construyeron en Figma y solo estan depositadas
+sus exportaciones en `.png`. Es la unica carpeta de `03_Modelado/` sin fuente nativa, y
+explica por que hay 54 imagenes `.png` frente a 43 fuentes: cuatro de esas imagenes son
+los prototipos y las diez restantes son dobles exportaciones de diagramas que si tienen
+su fuente. Al depositar el `.fig` el inventario pasa a 44 fuentes.
 
 | Imagen exportada | Cantidad |
 |---|---|
