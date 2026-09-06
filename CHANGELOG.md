@@ -8,6 +8,54 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.11.0] - 2026-09-06
+
+Cierre de las tres fuentes que faltaban --- el archivo de Figma, el consentimiento del
+segundo usuario tecnico y el panel ampliado --- y el diagnostico de por que el panel
+ampliado no se pudo usar.
+
+### Anadido
+
+- **Archivo fuente de Figma de los cuatro prototipos**, en
+  `03_Modelado/12_Prototipos_Interfaz/`. Era la unica carpeta de `03_Modelado/` sin fuente
+  nativa; el inventario del elemento **A3** pasa de 43 a **44 fuentes** y las doce carpetas
+  quedan completas.
+- **Consentimiento de `TIC-02`**. El acta de la sesion `WT-09` estaba depositada desde el
+  2026-09-05 y su consentimiento no, y el participante no tenia fila en el registro. Marco
+  la primera casilla: autoriza el uso de sus datos anonimizados en publicaciones revisadas
+  por pares. El registro pasa de veinte a **veintiun participantes**, dieciocho citables.
+- **`06_Experimento/panel_ampliado/`**: los datos crudos de las **dos vueltas** del panel de
+  siete evaluadores, el mapa de posiciones de la segunda y el script que reproduce las
+  cuatro tablas de analisis. No es el analisis del estudio y lo dice en su primera linea.
+
+### Cambiado
+
+- **Se cierra la decision sobre el panel de diez jueces**, pendiente desde el 2026-09-05.
+  Se mantienen los **tres jueces del registro previo** como analisis primario. El liston
+  para sustituirlos --- Fleiss kappa >= 0,41 --- se fijo por escrito antes de convocar la
+  segunda sesion y se obtuvo **-0,026**. `06_Experimento/resultados/` no se toca.
+- **Amenaza `T2` del manuscrito, reescrita.** Decia que el acuerdo entre evaluadores «no se
+  intento mejorar con entrenamiento ni con una ronda de reconciliacion». Se intento dos
+  veces, con dos instrumentos distintos, y ahora se reporta con sus cifras: por que fallo,
+  por que no es un artefacto de la escala, y donde esta el ruido.
+- El generador del registro de consentimientos etiquetaba a `TIC-01` y `TIC-02` como
+  entrevistas semiestructuradas y les dejaba la evidencia en blanco. Son sesiones de
+  validacion sobre prototipo, y su evidencia es el codigo del acta: `WT-08` y `WT-09`.
+- El libreto de la defensa incorpora la decision: se retira el aviso del bloque 4 y se anade
+  al bloque 5 el parrafo que cuenta el intento fallido, con la respuesta preparada para la
+  pregunta previsible.
+
+### Corregido
+
+- **La censura del consentimiento de `TIC-02` era reversible.** Los cuatro recuadros negros
+  eran dibujos vectoriales superpuestos a la imagen: el nombre, la cedula y la firma seguian
+  intactos debajo y bastaba con borrarlos en cualquier editor de PDF. Se rehizo quemando las
+  bandas en el mapa de bits sobre la envolvente de la tinta, y el archivo depositado ya no
+  tiene dibujos vectoriales ni texto extraible. **Se comprobaron los otros diecisiete
+  consentimientos del repositorio: ninguno tenia este defecto.**
+
+---
+
 ## [2B-1.10.0] - 2026-09-06
 
 Sesiones formales de verificacion y control de cambios, segundo usuario tecnico y una

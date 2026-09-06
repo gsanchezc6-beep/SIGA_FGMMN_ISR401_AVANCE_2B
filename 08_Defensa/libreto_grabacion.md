@@ -100,9 +100,6 @@ declara `04_Trazabilidad/aporte_individual.csv`.
 
 # GARY — Diapositivas 5, 6 y 7 · Bloque 4 · 6 min
 
-> ⚠️ **Este bloque depende de una decisión pendiente.** Ver la nota al final del libreto
-> antes de grabarlo.
-
 > «Los resultados, con el panel de tres jueces que fija el registro previo.
 >
 > En las cinco dimensiones las cifras crudas favorecen al modelo. Pero esa frase, sola, sería
@@ -244,23 +241,42 @@ preguntas del tribunal duran diez minutos y no respetan el reparto.
 
 ---
 
-# ⚠️ Nota sobre el Bloque 4, antes de grabarlo
+# El panel ampliado: qué se decidió y cómo se cuenta
 
-El texto de arriba corresponde al análisis con **tres jueces**, que es el que fija el registro
-previo de OSF y el que está publicado en el repositorio.
+**Decidido el 2026-09-06. El bloque 4 se graba tal como está escrito arriba.**
 
-El 5 de septiembre se incorporaron siete jueces más. Con los diez, **los efectos desaparecen y
-el acuerdo entre evaluadores cae a prácticamente cero**. Ese análisis está calculado pero **no
-depositado**, y la decisión de qué hacer con él está pendiente del equipo. El informe completo
-está en `Escritorio\DECISIONES CLAUDE\2026-09-05_panel_de_10_jueces.md`.
+Se intentó ampliar el panel de tres a diez evaluadores, dos veces, y las dos fallaron. El
+listón se había fijado por escrito antes de convocar la segunda sesión —Fleiss ≥ 0,41— y se
+obtuvo **−0,026**. Se mantienen los tres jueces del registro previo como análisis primario,
+que es lo que ese documento ya decía que se haría en este caso.
 
-**Si el equipo decide mantener los tres jueces como análisis primario** —la opción
-recomendada— este libreto vale tal como está, y conviene añadir una frase al final del
-bloque 5:
+Todo está depositado en `06_Experimento/panel_ampliado/`, con los datos crudos de las dos
+vueltas y el script que los analiza.
 
-> «Ampliamos el panel a diez evaluadores como comprobación. El efecto no se replica y el
-> acuerdo entre ellos cae, lo que sugiere que la rúbrica necesita entrenamiento previo. Lo
-> reportamos porque un resultado que no sobrevive a un panel mayor hay que decirlo.»
+**Yeranick añade esto al final del bloque 5**, después de las tres amenazas:
 
-**Si el equipo decide adoptar los diez**, hay que reescribir el bloque 4 entero, y también las
-conclusiones del bloque 6. No grabar hasta haberlo decidido.
+> «Y una cuarta que preferimos contar aunque no nos favorezca. Intentamos ampliar el panel de
+> tres a diez evaluadores, dos veces, para ganar potencia. Las dos veces el acuerdo entre
+> ellos salió **por debajo del azar**.
+>
+> La segunda vuelta la rehicimos entera: menos enunciados, quitamos la dimensión que no se
+> podía responder sin las transcripciones, imprimimos las anclas en la propia hoja y
+> calibramos en grupo antes de empezar. No se movió.
+>
+> Lo que sí encontramos fue de dónde venía el ruido. Habíamos escondido tres enunciados
+> repetidos en la hoja, sin decirlo. **Tres de los siete evaluadores se contradijeron a sí
+> mismos hasta en tres puntos** sobre el mismo enunciado, en la misma sesión. Uno no repitió
+> ninguna de sus doce puntuaciones.
+>
+> Si alguien no coincide consigo mismo, no puede coincidir con otro. El ruido está dentro de
+> cada evaluador, y por eso añadir evaluadores no arregla nada: esta rúbrica necesita gente
+> entrenada. Lo publicamos para que quien replique el estudio no reclute un panel de
+> estudiantes creyendo que gana potencia, porque lo que gana es ruido.»
+
+**Si en las preguntas les aprietan con «entonces su resultado depende de elegir tres jueces»,**
+la respuesta es esta y conviene tenerla preparada:
+
+> «Depende del registro previo, que fija tres y es anterior a los datos. Y los tres concuerdan
+> entre sí: coinciden exactamente en el 53 % de sus puntuaciones, frente al 37 % de los
+> siete, que es justo lo que da el azar. El criterio para sustituirlos lo escribimos antes de
+> mirar los datos y no se cumplió. Cambiarlo después habría sido elegir el resultado.»
