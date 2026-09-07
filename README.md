@@ -100,7 +100,7 @@ solo en el repositorio de su entrega.
 | **Linea base vigente** | Etiqueta anotada **`2B-final-v3.0`**, la version entregada para el examen final de la semana 19. `2B-final` y `2B-final-v2.1` apuntan al commit `0e69071`, el de la Entrega 2B ya calificada, y se conservan como referencia historica |
 | Desviaciones respecto del protocolo | `06_Experimento/registro_previo/bitacora_desviaciones.pdf` |
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
-| Autoevaluacion FAIR | `fair_assessment.pdf` --- 21 de 26 indicadores, **80,8 %** |
+| Autoevaluacion FAIR | [`fair_assessment.pdf`](fair_assessment.pdf) --- **22 de 26 indicadores, 84,62 %**, nivel *moderate*. Salida real de F-UJI 4.0.0; el volcado crudo esta en `fair_assessment.json` y el informe lo genera `generar_fair_assessment.py` |
 | Manuscrito | `07_Publicacion/manuscrito_final.pdf` |
 | Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 121 paginas, regeneradas desde el `.tex` el 2026-09-07 |
 | **Curva de saturacion tematica** | [`02_Evidencias/Codificacion_Tematica/curva_saturacion.png`](02_Evidencias/Codificacion_Tematica/curva_saturacion.png) · datos en `saturacion_por_entrevista.csv` · insertada en el manuscrito, Fig. 4 |
