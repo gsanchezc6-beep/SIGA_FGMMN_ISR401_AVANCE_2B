@@ -15,6 +15,13 @@ sección del repositorio principal).
 - `ANONYMIZATION.md` — Procedimiento de seudonimización y anonimización aplicado
   a entrevistas, consentimientos y actas antes de su publicación.
 - `ETHICS.md` — Declaración ética y proceso de consentimiento informado.
+- `correspondencia_salidas.csv` — Qué script produce cada salida y de qué
+  entrada. **Sus rutas están escritas desde la raíz del repositorio de GitHub,
+  no desde este paquete**, porque describen el pipeline completo del proyecto.
+  La columna `ubicacion_en_el_paquete` traduce cada una: dice dónde está el
+  archivo aquí dentro, o que no viaja porque se genera al ejecutar. Las tablas
+  `.tex` y las figuras del manuscrito están en el repositorio y no en este
+  paquete; se reconstruyen corriendo los scripts.
 - `panel_ampliado/` — **Las dos vueltas del panel ampliado de evaluadores, que
   no se pudo usar.** Datos crudos de siete evaluadores el 2026-09-05 y de los
   mismos siete con un instrumento corregido el 2026-09-06, el mapa de posiciones

@@ -1,22 +1,22 @@
-salida,tipo,script_que_la_produce,etapa_del_makefile,entrada
-datos_procesados/puntuaciones_consolidadas.csv,datos,scripts/analizar_resultados.py,consolidar,datos_crudos/juez1.csv juez2.csv juez3.csv
-resultados/acuerdo_interevaluador.csv,tabla,scripts/analizar_resultados.py,acuerdo,datos_procesados/puntuaciones_consolidadas.csv
-resultados/supuestos.csv,tabla,scripts/analizar_resultados.py,supuestos,datos_procesados/puntuaciones_consolidadas.csv
-resultados/hipotesis.csv,tabla,scripts/analizar_resultados.py,hipotesis,datos_procesados/puntuaciones_consolidadas.csv
-resultados/efectos.csv,tabla,scripts/analizar_resultados.py,efectos,datos_procesados/puntuaciones_consolidadas.csv
-resultados/resumen_resultados.csv,tabla,scripts/analizar_resultados.py,efectos,datos_procesados/puntuaciones_consolidadas.csv
-resultados/power_calculation.csv,tabla,scripts/power_calculation.py,potencia,parametros declarados en el protocolo registrado
-tablas/saturacion_por_entrevista.csv,tabla,scripts/curva_saturacion.py,saturacion,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv
-figuras/curva_saturacion.png,figura,scripts/curva_saturacion.py,saturacion,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv
-tablas/tabla_descriptivos.tex,tabla,scripts/generar_tablas.py,tablas,resultados/resumen_resultados.csv
-tablas/tabla_hipotesis.tex,tabla,scripts/generar_tablas.py,tablas,resultados/hipotesis.csv
-tablas/tabla_acuerdo.tex,tabla,scripts/generar_tablas.py,tablas,resultados/acuerdo_interevaluador.csv
-tablas/tabla_supuestos.tex,tabla,scripts/generar_tablas.py,tablas,resultados/supuestos.csv
-tablas/tabla_power_calculation.tex,tabla,scripts/power_calculation.py,potencia,resultados/power_calculation.csv
-figuras/fig02_distribucion_por_dimension.png,figura,scripts/generar_figuras.py,figuras,datos_procesados/puntuaciones_consolidadas.csv
-figuras/fig03_tamanos_efecto.png,figura,scripts/generar_figuras.py,figuras,resultados/efectos.csv
-figuras/fig04_acuerdo_interevaluador.png,figura,scripts/generar_figuras.py,figuras,resultados/acuerdo_interevaluador.csv
-panel_ampliado/resultados/acuerdo_dos_vueltas.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/
-panel_ampliado/resultados/consistencia_intrajuez.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/segunda_vuelta/
-panel_ampliado/resultados/efecto_segunda_vuelta.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/segunda_vuelta/
-panel_ampliado/resultados/reparto_de_la_escala.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/
+salida,tipo,script_que_la_produce,etapa_del_makefile,entrada,ubicacion_en_el_paquete
+datos_procesados/puntuaciones_consolidadas.csv,datos,scripts/analizar_resultados.py,consolidar,datos_crudos/juez1.csv juez2.csv juez3.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/analizar_resultados.py; entradas en resultados_jueces/juez1.csv resultados_jueces/juez2.csv resultados_jueces/juez3.csv
+resultados/acuerdo_interevaluador.csv,tabla,scripts/analizar_resultados.py,acuerdo,datos_procesados/puntuaciones_consolidadas.csv,la salida esta en resultados_jueces/acuerdo_interevaluador.csv; el script esta en scripts_analisis/analizar_resultados.py
+resultados/supuestos.csv,tabla,scripts/analizar_resultados.py,supuestos,datos_procesados/puntuaciones_consolidadas.csv,la salida esta en resultados_jueces/supuestos.csv; el script esta en scripts_analisis/analizar_resultados.py
+resultados/hipotesis.csv,tabla,scripts/analizar_resultados.py,hipotesis,datos_procesados/puntuaciones_consolidadas.csv,la salida esta en resultados_jueces/hipotesis.csv; el script esta en scripts_analisis/analizar_resultados.py
+resultados/efectos.csv,tabla,scripts/analizar_resultados.py,efectos,datos_procesados/puntuaciones_consolidadas.csv,la salida esta en resultados_jueces/efectos.csv; el script esta en scripts_analisis/analizar_resultados.py
+resultados/resumen_resultados.csv,tabla,scripts/analizar_resultados.py,efectos,datos_procesados/puntuaciones_consolidadas.csv,la salida esta en resultados_jueces/resumen_resultados.csv; el script esta en scripts_analisis/analizar_resultados.py
+resultados/power_calculation.csv,tabla,scripts/power_calculation.py,potencia,parametros declarados en el protocolo registrado,la salida esta en resultados_jueces/power_calculation.csv; el script esta en scripts_analisis/power_calculation.py
+tablas/saturacion_por_entrevista.csv,tabla,scripts/curva_saturacion.py,saturacion,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/curva_saturacion.py; entradas en codificacion_tematica.csv
+figuras/curva_saturacion.png,figura,scripts/curva_saturacion.py,saturacion,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/curva_saturacion.py; entradas en codificacion_tematica.csv
+tablas/tabla_descriptivos.tex,tabla,scripts/generar_tablas.py,tablas,resultados/resumen_resultados.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/generar_tablas.py; entradas en resultados_jueces/resumen_resultados.csv
+tablas/tabla_hipotesis.tex,tabla,scripts/generar_tablas.py,tablas,resultados/hipotesis.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/generar_tablas.py; entradas en resultados_jueces/hipotesis.csv
+tablas/tabla_acuerdo.tex,tabla,scripts/generar_tablas.py,tablas,resultados/acuerdo_interevaluador.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/generar_tablas.py; entradas en resultados_jueces/acuerdo_interevaluador.csv
+tablas/tabla_supuestos.tex,tabla,scripts/generar_tablas.py,tablas,resultados/supuestos.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/generar_tablas.py; entradas en resultados_jueces/supuestos.csv
+tablas/tabla_power_calculation.tex,tabla,scripts/power_calculation.py,potencia,resultados/power_calculation.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/power_calculation.py; entradas en resultados_jueces/power_calculation.csv
+figuras/fig02_distribucion_por_dimension.png,figura,scripts/generar_figuras.py,figuras,datos_procesados/puntuaciones_consolidadas.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/generar_figuras.py
+figuras/fig03_tamanos_efecto.png,figura,scripts/generar_figuras.py,figuras,resultados/efectos.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/generar_figuras.py; entradas en resultados_jueces/efectos.csv
+figuras/fig04_acuerdo_interevaluador.png,figura,scripts/generar_figuras.py,figuras,resultados/acuerdo_interevaluador.csv,la salida no viaja en el paquete: se genera al ejecutar; el script esta en scripts_analisis/generar_figuras.py; entradas en resultados_jueces/acuerdo_interevaluador.csv
+panel_ampliado/resultados/acuerdo_dos_vueltas.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/,igual que la ruta indicada
+panel_ampliado/resultados/consistencia_intrajuez.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/segunda_vuelta/,igual que la ruta indicada
+panel_ampliado/resultados/efecto_segunda_vuelta.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/segunda_vuelta/,igual que la ruta indicada
+panel_ampliado/resultados/reparto_de_la_escala.csv,tabla,panel_ampliado/analizar_panel_ampliado.py,-,panel_ampliado/datos_crudos/,igual que la ruta indicada
