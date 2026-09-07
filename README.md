@@ -102,7 +102,7 @@ solo en el repositorio de su entrega.
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
 | Autoevaluacion FAIR | `fair_assessment.pdf` --- 21 de 26 indicadores, **80,8 %** |
 | Manuscrito | `07_Publicacion/manuscrito_final.pdf` |
-| Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 124 paginas |
+| Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 121 paginas, regeneradas desde el `.tex` el 2026-09-07 |
 | **Curva de saturacion tematica** | [`02_Evidencias/Codificacion_Tematica/curva_saturacion.png`](02_Evidencias/Codificacion_Tematica/curva_saturacion.png) · datos en `saturacion_por_entrevista.csv` · insertada en el manuscrito, Fig. 4 |
 | **Calculo de potencia** | [`06_Experimento/resultados/power_calculation.csv`](06_Experimento/resultados/power_calculation.csv) · script `scripts_analisis/power_calculation.py` · tabla en el manuscrito, `tabla_power_calculation.tex` |
 
