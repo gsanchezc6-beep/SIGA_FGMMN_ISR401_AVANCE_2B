@@ -217,16 +217,25 @@ resumen del proceso etico del paquete publicado esta en
 ### Elementos aun no depositados
 
 Se declaran aqui, y no en el arbol de arriba, para que **nada de lo que este repositorio
-nombra deje de existir**. Cada uno tiene su artefacto redactado o disenado fuera del
-repositorio, a la espera de la firma o del trabajo de campo que lo respalda.
+nombra deje de existir**.
 
 | Elemento | Estado |
 |---|---|
-| `02_Evidencias/Cuestionario/Instrumento/` | El formulario aplicado no se ha depositado. Las respuestas y las fotografias de aplicacion si constan |
-| `02_Evidencias/Notas_Campo/` | Seis notas redactadas para las seis jornadas de observacion, pendientes de revision y firma del observador |
-| `02_Evidencias/Validacion/Inspeccion/` | Registros de inspeccion, defectos y re-inspeccion redactados; la sesion formal esta pendiente de celebrarse |
-| `02_Evidencias/Validacion/Solicitudes_Cambio/` | Tres solicitudes y el acta del comite redactadas, pendientes de la sesion del comite |
-| `03_Modelado/09_DFD/` | Diagramas de nivel 0 y nivel 1 disenados y dibujados, pendientes de revision antes de depositarlos. El criterio C2 pide diagramas UML consistentes con el codigo y no menciona los DFD; el modelado que ese criterio evalua esta completo en las otras once carpetas de `03_Modelado/` |
+| Tercera sesion de validacion con usuario tecnico | Concertada. Las dos primeras, `WT-08` y `WT-09`, estan depositadas |
+| Regrabacion de la defensa a tres voces | El libreto esta cerrado en `08_Defensa/libreto_grabacion.md`. La grabacion del 2026-09-01, con dos integrantes, sigue depositada |
+
+**Lo que estuvo en esta tabla y ya no.** Se retira lo que se cumplio, con la fecha, porque
+una tabla de ausencias que no se actualiza acaba declarando huecos que no existen ---
+justo lo contrario de lo que persigue:
+
+| Elemento | Se cerro |
+|---|---|
+| `02_Evidencias/Cuestionario/Instrumento/` | 2026-09-07. El formulario seguia publicado y se exporto de ahi; sus 30 preguntas coinciden una a una con las columnas del export de respuestas |
+| `02_Evidencias/Notas_Campo/` | 2026-09-05. Las **doce** notas estan firmadas y depositadas: seis manuscritas de la ronda terminal y seis de observacion de entorno |
+| `02_Evidencias/Validacion_Walkthrough/Inspeccion/` | 2026-09-05. La inspeccion `INS-01` y la re-inspeccion `REINS-01` se celebraron y estan firmadas |
+| `02_Evidencias/Validacion_Walkthrough/Solicitudes_Cambio/` | 2026-09-05. El comite `CCB-01` se reunio; cuatro solicitudes, tres aprobadas y una diferida |
+| `03_Modelado/09_DFD/` | 2026-09-04. Los diagramas de nivel 0 y 1 estan depositados con su fuente `.drawio` |
+| `03_Modelado/12_Prototipos_Interfaz/` | 2026-09-06. El archivo de Figma se deposito y las doce carpetas de `03_Modelado/` tienen fuente nativa |
 
 ---
 
