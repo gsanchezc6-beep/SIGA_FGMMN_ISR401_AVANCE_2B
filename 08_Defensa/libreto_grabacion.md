@@ -214,15 +214,16 @@ grabar. No se abre nada en directo.*
 
 *Avanza.*
 
-> «**Trazabilidad.** La matriz tiene setenta y cuatro filas; cuarenta y una con la cadena
-> completa desde la fuente hasta el criterio de aceptación, y las setenta y cuatro con todos
+> «**Trazabilidad.** La matriz tiene setenta y cinco filas; cuarenta y una con la cadena
+> completa desde la fuente hasta el criterio de aceptación, y las setenta y cinco con todos
 > sus eslabones declarados: ninguna celda ambigua.
 >
-> Y el tablero de gestión tiene sesenta actividades, una por requisito. La sincronización con
-> la matriz es del **cien por cien**, sesenta de sesenta, y se recalcula con un script.
+> Y el tablero de gestión tiene sesenta y una actividades, una por requisito. La sincronización con
+> la matriz es del **cien por cien**, sesenta y una de sesenta y una, y se recalcula con un
+> script.
 >
-> Ese cien por cien mide correspondencia entre dos listas, **no avance**: las sesenta están en
-> "por hacer", que es su estado real.»
+> Ese cien por cien mide correspondencia entre dos listas, **no avance**: las sesenta y una
+> están en "por hacer", que es su estado real.»
 
 *Avanza.*
 

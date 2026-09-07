@@ -108,6 +108,18 @@ defectos de los scripts de analisis.
 | `04_Trazabilidad/sincronizacion_tablero.py` | Claude (Anthropic) | Script que compara los identificadores de requisito del tablero de gestion contra los de la matriz de trazabilidad y calcula el porcentaje de sincronizacion | Probado con un export al que se le retiraron dos requisitos y se le anadio uno inexistente: el script senala exactamente esos tres y ninguno mas. El tablero lo poblo el equipo desde su propia cuenta |
 | Backlog del tablero de gestion | Claude (Anthropic) | Volcado de los 60 requisitos de la matriz al formato de importacion, y correccion del estado con el que entraron | **Las 60 actividades entraron con estado Listo**, lo que las ocultaba del backlog y ademas declaraba terminado lo que no lo esta; se corrigieron a Por hacer. Comprobado despues: el backlog muestra las 60 |
 
+
+### Trabajo del 6 de septiembre de 2026
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| Codificacion tematica de `EV-20` a `EV-25` | Ninguna | **La codificacion la hicieron las tres personas**, una entrevista completa cada una, y la columna `Analista_codificador` registra quien codifico cada fragmento | La asistencia se limito a repartir los turnos, verificar cada cita contra su transcripcion e incorporarlas con `incorporar_codificacion.py`. **Los codigos, las categorias y los requisitos derivados son juicio del equipo** |
+| `Requisito_derivado` de 38 filas que quedaron vacias | Claude (Anthropic) | 21 se completaron **por consistencia**, copiando el requisito que ese mismo codigo ya tenia asignado en la codificacion depositada. Las 17 restantes fueron **ocho decisiones** sobre codigos nuevos sin precedente | Cada una de las ocho lleva su justificacion escrita en el script que las aplico, y el criterio se tomo de la convencion que los propios codificadores usaron en los otros codigos nuevos. El equipo puede revertir cualquiera |
+| `02_Evidencias/Codificacion_Tematica/robustez_saturacion.py` | Claude (Anthropic) | Script que prueba las 720 ordenaciones posibles del bloque de entrevistas del mismo dia, para comprobar que la saturacion no depende del orden | Solo biblioteca estandar; se ejecuta y reproduce la cifra publicada. La saturacion se alcanza en las 720 |
+| `06_Experimento/panel_ampliado/` | Claude (Anthropic) | Digitalizacion de las siete hojas de la segunda vuelta desde los PDF, y el script que calcula acuerdo, consistencia intrajuez y efecto | Las 189 puntuaciones se extrajeron del texto del PDF, no a mano. **La decision de mantener los tres jueces del registro previo la fijo el equipo por escrito antes de la sesion**, con su umbral; aqui solo se aplico |
+| Actividad `SIGA-61` del tablero de Jira | Claude (Anthropic) | **Creacion de una actividad en la herramienta**, a peticion expresa del equipo: la restriccion `RD-01` estaba en la ERS y no tenia ni actividad ni fila en la matriz | Se creo desde la cuenta del equipo con el mismo formato que las demas actividades `RD`. El export se **regenero desde Jira**, no se edito el CSV: se comparo fila a fila contra el anterior y `SIGA-61` es la unica diferencia |
+| Censura del consentimiento de `TIC-02` | Claude (Anthropic) | El PDF entregado traia la censura como rectangulos vectoriales superpuestos, con el nombre, la cedula y la firma intactos debajo. Se rehizo quemandola en el mapa de bits | Comprobado despues sobre el archivo resultante: cero dibujos vectoriales, cero texto extraible y cero tinta bajo las bandas. Se revisaron ademas los otros diecisiete consentimientos del repositorio, que no tenian el defecto |
+
 ---
 
 ## 4. Secciones en las que no se empleo ninguna herramienta

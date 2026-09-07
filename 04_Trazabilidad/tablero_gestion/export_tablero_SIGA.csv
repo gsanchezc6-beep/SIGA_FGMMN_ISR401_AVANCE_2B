@@ -467,3 +467,16 @@ Caso de prueba: CP-RF-08, CP-RF-10, CP-RF-11, CP-RF-12, CP-RF-17
 Marco legal: No aplica No aplica
 Estado de traza: Restriccion de diseno
 Filas de la matriz: 1"
+SIGA-61,RD-01 Utilizar protocolos de comunicacion compatibles con entornos IoT,Tarea,Por hacer,RD,06/sep/26 8:26 PM,"Objetivo: Utilizar protocolos de comunicacion compatibles con entornos IoT, tales como MQTT, HTTP o API REST, segun la validacion tecnica del Personal de Tecnologias de la Informacion
+
+Stakeholder: Personal de Tecnologias de la Informacion
+
+Evidencia de origen: No aplica (decision tecnica)
+
+Caso de prueba: No aplica (restriccion de diseno)
+
+Marco legal: No aplica No aplica
+
+Estado de traza: Restriccion de diseno - sin historia, criterio
+
+Filas de la matriz: 1"

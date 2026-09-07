@@ -2,7 +2,8 @@
 
 **Proyecto SIGA - Equipo FGMMN - ISR-401 - Universidad Tecnica Estatal de Quevedo**
 Generado el 2026-08-31 sobre `matriz_trazabilidad.csv`, y actualizado el 2026-09-03
-al anadirse los ocho requisitos no funcionales del componente inteligente: **74 filas**
+al anadirse los ocho requisitos no funcionales del componente inteligente y, el 2026-09-06,
+la restriccion `RD-01`: **75 filas**
 y 18 columnas. De ellas, **34 cierran la cadena de extremo a extremo** y las 74 tienen todos sus eslabones declarados.
 
 La guia exige que los huerfanos y las cadenas rotas se listen **con su causa y su
@@ -38,8 +39,8 @@ eslabones, y el motivo esta declarado fila a fila en los apartados que siguen.
 - **Quince huerfanas** no proceden de entrevista porque nacen del analisis normativo de la
   Ley Organica de Proteccion de Datos Personales o de decision tecnica. Inventarles una
   evidencia de campo seria fabricarla.
-- **Once restricciones de diseno** no se verifican por caso de prueba sino por revision de
-  diseno. Es lo que son. **La ERS define dieciocho, y siete no tienen fila en la matriz**:
+- **Doce restricciones de diseno** no se verifican por caso de prueba sino por revision de
+  diseno. Es lo que son. **La ERS define dieciocho, y seis no tienen fila en la matriz**:
   el motivo de cada una esta en el apartado 7.
 - Varias filas **no las realiza ninguna pantalla**: «Evidencia fotografica del trabajo de
   campo», «Dependencia del horario academico vigente» o «Evidencia del sistema de camaras
@@ -56,7 +57,7 @@ El equipo prefiere declarar las dos cifras a elegir la que le favorece. La segun
 exigente, y es la que figura tambien en el README.
 
 **La columna se comprueba por script.** Estaba escrita a mano, y una columna a mano sobre
-setenta y cuatro filas se desincroniza sin que nadie lo note: seis filas declaraban menos
+setenta y cinco filas se desincroniza sin que nadie lo note: seis filas declaraban menos
 eslabones de los que les faltaban y tres estaban marcadas como incompletas teniendolos todos.
 Ahora se contrasta contra las celdas:
 
@@ -137,10 +138,10 @@ opcional.
 
 ---
 
-## 7. Las siete restricciones de diseno que no estan en la matriz
+## 7. Las seis restricciones de diseno que no estan en la matriz
 
 La ERS especifica **dieciocho** restricciones de diseno, `RD-01` a `RD-18`. La matriz y el
-tablero de gestion recogen **once**. Las otras siete no aparecen, y aqui se dice cuales son
+tablero de gestion recogen **doce**. Las otras seis no aparecen, y aqui se dice cuales son
 y por que --- una ausencia que no se declara es indistinguible de un descuido.
 
 | | Tipo | Por que no tiene fila |
@@ -149,24 +150,26 @@ y por que --- una ausencia que no se declara es indistinguible de un descuido.
 | `RD-15` | Temporal | Igual, para la Entrega 4. Su cumplimiento se comprueba mirando este repositorio, no el sistema |
 | `RD-16` | Alcance | Excluye del sistema la matricula, la asistencia y las calificaciones. Una exclusion de dominio no genera actividad: lo que declara es que no se hara nada |
 | `RD-18` | Alcance | Excluye la red electrica del campus y los dispositivos sin integracion IoT. Mismo caso |
-| `RD-01` | Tecnologica | **Deberia tener fila y no la tiene.** Fija los protocolos --- MQTT, HTTP, API REST --- y eso si condiciona la construccion. Su efecto llega a la matriz de forma indirecta, a traves de `RF-01`, `RF-02`, `RF-07` y `RF-22`, que si estan trazados, pero la restriccion en si no se rastrea |
 | `RD-07` | Economica | Ata la seleccion de hardware al presupuesto aprobado. Condiciona una compra, no una linea de codigo, y el proyecto no llego a la fase de adquisicion |
 | `RD-12` | Operativa | La instalacion fisica depende del Departamento de Infraestructura. Obliga a un tercero, no al equipo |
 
-### El criterio no es uniforme, y conviene decirlo
+Las dos temporales y las dos exclusiones de alcance **no pueden trazarse**: no hay actividad
+posible para algo que por definicion no se hace. `RD-07` y `RD-12` vinculan a terceros y
+tampoco generan trabajo del equipo.
 
-Cuatro de las siete --- las dos temporales y las dos exclusiones de alcance --- no pueden
-trazarse: no hay actividad posible para algo que por definicion no se hace. `RD-07` y
-`RD-12` vinculan a terceros y tampoco generan trabajo del equipo.
+### `RD-01`, que si faltaba, se anadio
 
-**`RD-01` es la excepcion incomoda.** Es tecnologica, como `RD-02` a `RD-06`, que si estan
-las cinco en la matriz, y condiciona el diseno igual que ellas. No hay razon de fondo para
-que falte; falta. Y `RD-17`, que es de alcance como `RD-16` y `RD-18`, si tiene fila, de
-modo que tampoco el tipo explica la seleccion por si solo.
+Hasta el 2026-09-06 tambien faltaba `RD-01`, y esa ausencia **no tenia justificacion**: es
+tecnologica igual que `RD-02` a `RD-06`, que si estaban las cinco, y condiciona el diseno
+igual que ellas. Su efecto llegaba a la matriz solo de forma indirecta, a traves de `RF-01`,
+`RF-02`, `RF-07` y `RF-22`.
 
-Se deja escrito en vez de inventar una regla que los datos no sostienen. **Cerrar el hueco
-es anadir `RD-01` a la matriz y su actividad al tablero**, con lo que las dos listas pasarian
-de 60 a 61 y la sincronizacion seguiria en el 100 %. No se hace aqui porque el tablero es un
-export de Jira y la actividad tiene que crearla una persona en la herramienta, no un script
-sobre el CSV exportado: escribirla a mano en el export dejaria el tablero real y su copia
-diciendo cosas distintas, que es peor que el hueco.
+Se cerro creando su actividad en Jira --- `SIGA-61` --- y anadiendo su fila a la matriz. Las
+dos listas pasan de 60 a **61** y la sincronizacion sigue en el **100 %**. El export
+`tablero_gestion/export_tablero_SIGA.csv` se regenero desde Jira, no se edito a mano: se
+comprobo fila a fila contra el anterior y **`SIGA-61` es la unica diferencia**.
+
+Queda dicho tambien que `RD-17` es de alcance como `RD-16` y `RD-18` y si tiene fila. La
+diferencia esta en lo que excluyen: `RD-17` acota una responsabilidad dentro del dominio del
+sistema --- no hacer mantenimiento fisico de los equipos que si gestiona --- mientras que
+`RD-16` y `RD-18` sacan del alcance dominios enteros que el sistema no toca en absoluto.
