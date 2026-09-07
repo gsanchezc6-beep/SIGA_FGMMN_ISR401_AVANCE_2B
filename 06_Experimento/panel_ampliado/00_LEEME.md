@@ -175,11 +175,15 @@ ruido.
 
 ## 8. Consentimiento de los evaluadores
 
-Los siete firmaron el consentimiento especifico del panel, en
-`Recursos 2B/05_G8/JUECES/consentimiento_juez.pdf`. Sus datos se manejan solo por el codigo
-`JUEZ-04` a `JUEZ-10`; las hojas depositadas aqui no llevan nombre, y las firmas quedan
-fuera del repositorio, en la zona restringida descrita en
-[`../../02_Evidencias/00_Restringido/README_Restringido.md`](../../02_Evidencias/00_Restringido/README_Restringido.md).
+Los siete firmaron un consentimiento especifico para el panel antes de puntuar. Sus datos
+se manejan solo por el codigo `JUEZ-04` a `JUEZ-10`: **las hojas depositadas en esta carpeta
+no llevan nombre, ni firma, ni ningun dato que permita llegar a la persona**, solo el codigo
+y las puntuaciones.
+
+Los consentimientos firmados, que si llevan nombre y firma manuscrita, **quedan fuera del
+repositorio** y estan declarados como tales en
+[`../../02_Evidencias/00_Restringido/README_Restringido.md`](../../02_Evidencias/00_Restringido/README_Restringido.md),
+apartado 2, junto con el resto del material que el consentimiento no autoriza a publicar.
 
 ## 9. Como reproducirlo
 

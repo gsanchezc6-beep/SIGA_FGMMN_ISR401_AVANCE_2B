@@ -55,6 +55,7 @@ Solo lo que contiene datos personales que el consentimiento no autoriza a public
 | Registro de custodia codigo–participante | Es la unica pieza que permite reidentificar. Se entrega solo al docente |
 | **Video y audio de las seis entrevistas de la ronda terminal** (`EV-20` a `EV-25`) | El consentimiento de esa ronda dice que las grabaciones originales no se publican. No es una decision de conveniencia: publicarlas seria usarlas fuera de lo consentido |
 | Clave de desciego del cuasi-experimento | Su ubicacion y custodia constan en [`../../06_Experimento/clave_desciego_UBICACION.md`](../../06_Experimento/clave_desciego_UBICACION.md) |
+| **Consentimientos firmados de los siete evaluadores del panel ampliado** (`JUEZ-04` a `JUEZ-10`) | Llevan nombre y firma manuscrita. Las puntuaciones si se publican, en `06_Experimento/panel_ampliado/`, identificadas solo por el codigo de juez: de las hojas depositadas no se puede llegar a la persona |
 
 Ese material se conserva en **`SIGA_zona_restringida.7z`**, un contenedor cifrado con **AES-256** y nombres de archivo
 ocultos, alojado en el OneDrive institucional de la UTEQ:
