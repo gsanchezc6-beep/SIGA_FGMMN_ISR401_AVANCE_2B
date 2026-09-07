@@ -57,10 +57,27 @@ Solo lo que contiene datos personales que el consentimiento no autoriza a public
 | Clave de desciego del cuasi-experimento | Su ubicacion y custodia constan en [`../../06_Experimento/clave_desciego_UBICACION.md`](../../06_Experimento/clave_desciego_UBICACION.md) |
 | **Consentimientos firmados de los siete evaluadores del panel ampliado** (`JUEZ-04` a `JUEZ-10`) | Llevan nombre y firma manuscrita. Las puntuaciones si se publican, en `06_Experimento/panel_ampliado/`, identificadas solo por el codigo de juez: de las hojas depositadas no se puede llegar a la persona |
 
-Ese material se conserva en **`SIGA_zona_restringida.7z`**, un contenedor cifrado con **AES-256** y nombres de archivo
-ocultos, alojado en el OneDrive institucional de la UTEQ:
+Ese material se conserva en **`SIGA_zona_restringida.7z`**, un contenedor cifrado con
+**AES-256** y nombres de archivo ocultos. Esta **en este mismo repositorio**, partido en 272
+fragmentos de 24 MiB porque GitHub no admite archivos de mas de 100 MB sin Git LFS, que aqui
+no se usa:
+
+[`contenedor/SIGA_zona_restringida.7z.001`](contenedor/SIGA_zona_restringida.7z.001) ---
+abrir ese primero y 7-Zip reune el resto. Las instrucciones y la suma de comprobacion estan
+en [`contenedor/00_LEEME.md`](contenedor/00_LEEME.md).
+
+**Por que dentro y no solo en un enlace.** Hasta el 2026-09-06 el contenedor vivia unicamente
+en el OneDrive institucional. Un enlace es un punto unico de fallo: si caduca, si la cuenta
+institucional cambia o si quien evalua no puede abrirlo, la evidencia restringida deja de
+existir a efectos practicos. Depositado aqui, viaja con el repositorio, se clona con el y se
+archiva con el.
+
+El enlace de OneDrive **se conserva como copia redundante**, no como unica via:
 
 <https://uteqeduec-my.sharepoint.com/:u:/g/personal/gsanchezc6_msuteq_edu_ec/IQAHZ7FrestzSICGfFoaJfzWAX9gkf9XQpZj5JTi_zYuNhA?e=SJHr4N>
+
+Las dos rutas llevan al mismo archivo, y su suma SHA-256 lo demuestra:
+`d225b1929f89d1cfd7079e91d37445674bdc593a10bc39a528ac205649f05f8a`.
 
 La contrasena se entrega al docente responsable por el Sistema de Gestion Academica. No se
 transmite por ningun otro medio y no consta en este repositorio.

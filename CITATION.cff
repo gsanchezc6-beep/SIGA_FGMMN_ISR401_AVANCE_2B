@@ -9,12 +9,15 @@ date-released: "2026-09-06"
 repository-code: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 url: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 
-doi: "10.5281/zenodo.22557171"
+doi: "10.5281/zenodo.21774350"
 
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.21774350"
+    description: "Deposito FAIR del paquete de replicacion en Zenodo, bajo licencia CC BY 4.0. DOI de concepto: agrupa todas las versiones y resuelve siempre a la mas reciente."
+  - type: doi
     value: "10.5281/zenodo.22557171"
-    description: "Deposito FAIR del paquete de replicacion en Zenodo, bajo licencia CC BY 4.0."
+    description: "DOI de la version 2B-1.11.0, la que corresponde al contenido de este arbol. Es el que fija el manuscrito, porque una cita necesita saber que version se cito."
   - type: doi
     value: "10.17605/OSF.IO/7PQ3H"
     description: "Registro previo del protocolo del componente empirico en OSF."
@@ -22,7 +25,7 @@ identifiers:
     value: "https://osf.io/7pq3h"
     description: "Enlace directo al registro OSF."
   - type: url
-    value: "https://doi.org/10.5281/zenodo.22557171"
+    value: "https://doi.org/10.5281/zenodo.21774350"
     description: "Enlace directo al deposito de datos en Zenodo."
   - type: swh
     value: "swh:1:snp:861295fead33417e3efc2753fd4a34897014a891"

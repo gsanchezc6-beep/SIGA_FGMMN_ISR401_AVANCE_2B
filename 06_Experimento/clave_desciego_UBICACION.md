@@ -27,10 +27,16 @@ Esta nota es esa nota. La anotacion de la desviacion se mantiene, sin editar, en
 
 ## 3. Donde esta ahora
 
-En el **contenedor cifrado con AES-256 y nombres de archivo ocultos**, alojado en el OneDrive
-institucional de la UTEQ, que es la zona restringida del proyecto. Su descripcion completa,
-incluida la direccion del contenedor, esta en
+En el **contenedor cifrado con AES-256 y nombres de archivo ocultos** que es la zona
+restringida del proyecto. Desde el 2026-09-06 ese contenedor esta **en este mismo
+repositorio**, partido en 272 fragmentos: se abre desde
+[`../02_Evidencias/00_Restringido/contenedor/SIGA_zona_restringida.7z.001`](../02_Evidencias/00_Restringido/contenedor/SIGA_zona_restringida.7z.001)
+y su descripcion completa esta en
 [`../02_Evidencias/00_Restringido/README_Restringido.md`](../02_Evidencias/00_Restringido/README_Restringido.md).
+
+Que este dentro del repositorio **no lo hace publico**: sigue cifrado y sin la contrasena no
+se lee nada, ni siquiera los nombres de los archivos. Lo que cambia es que ya no depende de
+que un enlace externo siga vivo el dia que alguien quiera comprobarlo.
 
 La contrasena se entrega al docente responsable por el Sistema de Gestion Academica. No se
 transmite por ningun otro medio y no consta en este repositorio.

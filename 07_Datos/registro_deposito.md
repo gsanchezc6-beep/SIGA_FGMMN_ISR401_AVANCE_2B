@@ -10,7 +10,8 @@ Identificadores persistentes bajo los que este material esta depositado, con sus
 
 | Que | Identificador persistente | Fecha |
 |---|---|---|
-| **Paquete de datos, version vigente** `2B-1.11.0` | [`10.5281/zenodo.22557171`](https://doi.org/10.5281/zenodo.22557171) | 2026-09-06 |
+| **Paquete de datos --- DOI de concepto** | [`10.5281/zenodo.21774350`](https://doi.org/10.5281/zenodo.21774350) | resuelve siempre a la version mas reciente |
+| **Version vigente** `2B-1.11.0` | [`10.5281/zenodo.22557171`](https://doi.org/10.5281/zenodo.22557171) | 2026-09-06 |
 | Registro previo del protocolo | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) | 2026-08-02, 20:25:07 UTC |
 | Instantanea del codigo | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` | 2026-08-31 |
 
@@ -26,10 +27,14 @@ tal como estaba cuando se cito. Lo que este repositorio declara en `CITATION.cff
 manuscrito es el DOI de la **version vigente**, porque es la que corresponde al contenido
 actual del arbol.
 
-> **Pendiente.** Zenodo emite ademas un DOI de concepto, que agrupa todas las versiones y
-> siempre lleva a la ultima. Aparece en la pagina del registro como «Cite all versions». No
-> consta aqui todavia; cuando se recoja, es el que conviene usar en textos de divulgacion,
-> mientras que el de version se queda donde hace falta fijar el contenido exacto.
+**Cual usar, y donde.** Zenodo emite dos identificadores y no son intercambiables:
+
+| | Se usa en | Por que |
+|---|---|---|
+| **Concepto** `10.5281/zenodo.21774350` | README, `CITATION.cff`, divulgacion | Lleva siempre a la ultima version. Quien lo siga dentro de un ano encontrara el paquete al dia, no el de hoy |
+| **Version** `10.5281/zenodo.22557171` | Manuscrito, protocolo, analisis de revistas | Fija el contenido exacto que se cito. Una cita que apunta a «la ultima version» no es verificable: lo que se leyo pudo cambiar despues |
+
+Es la distincion que separa «donde vive esto» de «que fue exactamente lo que cite».
 
 ## 2. Por que importa la fecha del registro previo
 
