@@ -14,9 +14,9 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **81** | 2026-08-30 | 2026-09-04 |
-| Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **69** | 2026-08-30 | 2026-09-04 |
-| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **4** | 2026-09-04 | 2026-09-04 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **125** | 2026-08-30 | 2026-09-07 |
+| Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **82** | 2026-08-30 | 2026-09-06 |
+| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **9** | 2026-09-04 | 2026-09-06 |
 
 Comprobable con `git shortlog -sne main`. El total de esta tabla es una confirmacion
 menor que el historial completo, porque la declaracion no puede incluir el commit que la deposita.
@@ -27,23 +27,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 81**, de 2026-08-30 a 2026-09-04.
+**Confirmaciones: 125**, de 2026-08-30 a 2026-09-07.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Modelado UML e i* | 132 |
-| Manuscrito y deposito | 66 |
-| Documentos de raiz | 63 |
-| Componente empirico | 63 |
-| Paquete de datos | 55 |
+| Evidencia de campo y etica | 334 |
+| Modelado UML e i* | 135 |
+| Documentos de raiz | 121 |
+| Manuscrito y deposito | 115 |
+| Componente empirico | 94 |
+| Paquete de datos | 57 |
 | Producto minimo viable | 53 |
-| Especificacion de requisitos | 40 |
-| Evidencia de campo y etica | 26 |
-| Evidencia de autoria | 24 |
-| Defensa | 21 |
-| Trazabilidad | 17 |
+| Especificacion de requisitos | 46 |
+| Defensa | 37 |
+| Evidencia de autoria | 37 |
+| Trazabilidad | 28 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -131,6 +131,50 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `d6c1615` | 2026-09-04 | fix(evidencias): la causa del perfil tecnico es de calendario, no de plantilla |
 | `e630d8c` | 2026-09-04 | fix(evidencias): el cargo de TIC-01 se toma del consentimiento firmado |
 | `d1a02a1` | 2026-09-04 | feat(evidencias): sesion de validacion WT-08 con usuario tecnico |
+| `d9c0af7` | 2026-09-04 | feat(autoria): A10 firmado por los tres integrantes acreditados |
+| `1d402fe` | 2026-09-04 | docs: cierre del examen final, version 2B-1.9.0 |
+| `808b74f` | 2026-09-04 | feat(autoria): deposita la respuesta del docente sobre las firmas de A10 |
+| `e1798b4` | 2026-09-04 | fix: corrige lo que los documentos afirmaban y ya no era cierto |
+| `7924138` | 2026-09-04 | fix(publicacion): la amenaza T4 del manuscrito declaraba una carencia que ya no existe |
+| `102f6aa` | 2026-09-04 | fix(ers): corrige RNF-04 y RNF-14 contra la evidencia de campo |
+| `b115c5d` | 2026-09-04 | feat: deposita la caratula de identificacion y actualiza el enlace del contenedor |
+| `883f3dc` | 2026-09-04 | feat(publicacion): enuncia RQ2, que el manuscrito ya respondia sin declararla |
+| `6159a82` | 2026-09-04 | docs: la caratula cita el commit de la linea base |
+| `1cf77f2` | 2026-09-04 | fix: la caratula cita la etiqueta y no un identificador de commit |
+| `e19cab6` | 2026-09-04 | fix(ers): el cronograma declaraba pendiente lo que ya esta entregado |
+| `0456ca4` | 2026-09-05 | docs(experimento): declara la desviacion del enfoque asignado y por que no se revierte |
+| `24ca9a4` | 2026-09-05 | feat(evidencias): deposita las seis notas de campo manuscritas de la ronda terminal |
+| `df6b687` | 2026-09-05 | feat(evidencias): deposita las seis notas de campo de entorno firmadas |
+| `6ea0af3` | 2026-09-05 | feat(trazabilidad): mide la sincronizacion entre el tablero de gestion y la matriz |
+| `216af76` | 2026-09-05 | docs(autoria): declara la asistencia recibida en el tablero de gestion |
+| `4641739` | 2026-09-05 | feat(trazabilidad): deposita el tablero de gestion y su medicion de sincronizacion |
+| `a5f9bad` | 2026-09-06 | feat(validacion): deposita la sesion WT-09 con el segundo usuario tecnico |
+| `c1d4eab` | 2026-09-06 | feat(defensa): anade el bloque de verificacion, trazabilidad y campo, y pasa el mazo a tres integrantes |
+| `0b6ff3f` | 2026-09-06 | docs(defensa): libreto de grabacion con el texto literal y el reparto a tres |
+| `5ca9da4` | 2026-09-06 | feat(evidencias): registra el material de WT-09 y enlaza EV-27 con los requisitos que contrasto |
+| `e52dfc2` | 2026-09-06 | fix(evidencias): retira la doble codificacion duplicada y sincroniza el PDF de la presentacion |
+| `f302a61` | 2026-09-06 | docs(modelado): fija la correspondencia MU-01 a MU-04 y declara la fuente de Figma pendiente |
+| `ff6c137` | 2026-09-06 | docs(evidencias): explicita el criterio de EXIF aplicado a las fotografias de entorno |
+| `b52f462` | 2026-09-06 | feat(modelado): deposita el archivo fuente de Figma de los cuatro prototipos |
+| `555b954` | 2026-09-06 | feat(etica): deposita el consentimiento de TIC-02 y corrige el tipo de sesion de los usuarios tecnicos |
+| `a10787f` | 2026-09-06 | feat(experimento): deposita el panel ampliado y su diagnostico como hallazgo metodologico |
+| `23d5354` | 2026-09-06 | docs(publicacion): reescribe la amenaza T2 con la evidencia de las dos vueltas del panel |
+| `cb649b9` | 2026-09-06 | chore: actualiza el manifiesto de sumas de verificacion |
+| `673a018` | 2026-09-06 | fix(etica): pone al dia las cifras del registro de consentimientos |
+| `ec77bb8` | 2026-09-06 | feat(codificacion): codifica EV-20 y EV-21 de la ronda terminal |
+| `75100d7` | 2026-09-06 | feat(saturacion): la curva satura con las dieciseis entrevistas, con su comprobacion de robustez |
+| `fcb6b0f` | 2026-09-06 | docs: propaga la saturacion alcanzada al reporte, al manuscrito y al README |
+| `d3b4fce` | 2026-09-06 | feat(datos): incorpora el panel ampliado al paquete de Zenodo y corrige el diccionario de datos |
+| `0d12e89` | 2026-09-06 | chore(datos): apunta al DOI de la version publicada hoy en Zenodo |
+| `b2fd799` | 2026-09-06 | fix(defensa): las diapositivas afirmaban lo que ya no es cierto |
+| `17cf5a0` | 2026-09-06 | feat(trazabilidad): cierra el hueco de RD-01 en el tablero y en la matriz |
+| `73df2c8` | 2026-09-06 | feat(publicacion): comprueba cada cifra afirmada contra la salida que la sostiene |
+| `2223240` | 2026-09-07 | data(restringido): contenedor cifrado, fragmentos 1 a 55 de 272 |
+| `c011d87` | 2026-09-07 | data(restringido): contenedor cifrado, fragmentos 56 a 110 de 272 |
+| `b31d53b` | 2026-09-07 | data(restringido): contenedor cifrado, fragmentos 111 a 165 de 272 |
+| `e612dbf` | 2026-09-07 | data(restringido): contenedor cifrado, fragmentos 166 a 220 de 272 |
+| `5854089` | 2026-09-07 | data(restringido): contenedor cifrado, fragmentos 221 a 272 de 272 |
+| `827f6f9` | 2026-09-07 | docs(datos): separa el DOI de concepto del DOI de version, y cierra la verificacion del contenedor |
 
 ---
 
@@ -138,22 +182,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Documentacion, trazabilidad, auditoria de calidad y gestion de evidencias
 
-**Confirmaciones: 69**, de 2026-08-30 a 2026-09-04.
+**Confirmaciones: 82**, de 2026-08-30 a 2026-09-06.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 189 |
-| Evidencia de autoria | 54 |
+| Evidencia de campo y etica | 201 |
+| Documentos de raiz | 58 |
+| Evidencia de autoria | 57 |
 | Producto minimo viable | 43 |
-| Documentos de raiz | 42 |
 | Otros | 25 |
-| Componente empirico | 19 |
-| Trazabilidad | 14 |
-| Manuscrito y deposito | 11 |
-| Especificacion de requisitos | 10 |
+| Componente empirico | 25 |
+| Trazabilidad | 20 |
+| Manuscrito y deposito | 19 |
+| Especificacion de requisitos | 13 |
 | Modelado UML e i* | 7 |
+| Defensa | 4 |
 | Paquete de datos | 1 |
 
 ### Confirmaciones
@@ -229,6 +274,19 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `17ceb08` | 2026-09-04 | feat(evidencias): dos documentos mas de la organizacion; se pasa de cuatro a seis |
 | `c13ac7f` | 2026-09-04 | feat(evidencias): las dos actas que faltaban, firmadas; ocho sesiones en total |
 | `2fded58` | 2026-09-04 | docs(autoria): la lista de verificacion previa, reejecutada sobre clon limpio |
+| `1e67a87` | 2026-09-04 | fix(evidencias): enmascara el nombre y la firma de TIC-01 en el acta WT-08 |
+| `928dded` | 2026-09-04 | fix(evidencias): el registro de anonimizacion no recogia el trabajo del 3 y 4 de septiembre |
+| `66d717f` | 2026-09-04 | fix(evidencias): el recuento de consentimientos iba uno por detras |
+| `77c0916` | 2026-09-04 | docs(autoria): la lista de verificacion declara que version comprueba |
+| `c5ac738` | 2026-09-04 | docs(trazabilidad): declara que cuenta como fila cerrada, y con que cifra |
+| `707db7a` | 2026-09-04 | feat(trazabilidad): la columna de estado se comprueba por script, y sube a 41 |
+| `ec057fc` | 2026-09-04 | docs(defensa): el banco de preguntas cubre la ronda terminal |
+| `4e8d2c2` | 2026-09-04 | fix(evidencias): la ficha tecnica omitia el video de la sesion de member checking |
+| `fd16b5e` | 2026-09-06 | fix(consistencia): corrige rutas movidas, identificadores repetidos y cifras desfasadas |
+| `cea459e` | 2026-09-06 | fix(consistencia): retira duplicados, consolida el registro previo y pone al dia el CHANGELOG |
+| `6e8ea63` | 2026-09-06 | feat(codificacion): codifica EV-22 y EV-23 de la ronda terminal |
+| `0f8338f` | 2026-09-06 | fix(datos): traduce las rutas de correspondencia_salidas.csv a la estructura del paquete |
+| `1bb3761` | 2026-09-06 | docs(trazabilidad): declara las siete restricciones de diseno que no estan en la matriz |
 
 ---
 
@@ -236,15 +294,17 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Transcripcion y anonimizacion del corpus de entrevistas
 
-**Confirmaciones: 4**, de 2026-09-04 a 2026-09-04.
+**Confirmaciones: 9**, de 2026-09-04 a 2026-09-06.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 15 |
-| Evidencia de autoria | 4 |
-| Documentos de raiz | 3 |
+| Evidencia de campo y etica | 30 |
+| Evidencia de autoria | 9 |
+| Documentos de raiz | 7 |
+| Especificacion de requisitos | 1 |
+| Trazabilidad | 1 |
 
 ### Confirmaciones
 
@@ -254,6 +314,11 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `d79c879` | 2026-09-04 | feat(evidencias): completa las seis transcripciones de la ronda terminal |
 | `d0a3138` | 2026-09-04 | feat(evidencias): validacion e incorporacion de la codificacion tematica |
 | `cf79792` | 2026-09-04 | feat(autoria): cuatro capturas mas de A2; dos integrantes llegan al minimo |
+| `dd6fa4d` | 2026-09-04 | docs(autoria): lista de verificacion previa firmada por dos integrantes |
+| `8fcdc7f` | 2026-09-04 | docs(autoria): lista de verificacion firmada sobre la version entregada |
+| `9e549a6` | 2026-09-05 | feat(evidencias): deposita la doble codificacion A7 y su coeficiente de acuerdo |
+| `8a1429e` | 2026-09-06 | feat(validacion): deposita INS-01, REINS-01, el comite CCB-01 y la retrospectiva |
+| `f3334b8` | 2026-09-06 | feat(codificacion): codifica EV-24 y EV-25 y cierra el corpus al 100 por ciento |
 
 ---
 
@@ -279,4 +344,4 @@ Firma: ______________________________    Fecha: ______________
 
 ---
 
-Generado el 2026-09-04 desde el historial del repositorio.
+Generado el 2026-09-07 desde el historial del repositorio.

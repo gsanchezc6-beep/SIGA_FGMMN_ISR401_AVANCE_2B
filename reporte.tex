@@ -995,6 +995,13 @@ correspondencia declarada en \texttt{07\_Datos/correspondencia\_salidas.csv}.
 Cada afirmaci\'on de la discusi\'on remite a un resultado concreto o a una referencia
 verificable, seg\'un el trazado de la Tabla~\ref{tab:correspondencia}.
 
+Esa tabla se lee, pero no se comprueba sola. Para que tampoco dependa de que alguien la
+revise a mano, las afirmaciones que llevan cifra se **recalculan desde su fuente** con
+\texttt{07\_Publicacion/verificar\_afirmaciones.py}, que avisa si alguna dejo de coincidir y
+nombra los documentos que habria que corregir. Cubre un fallo que ninguna otra verificacion
+del repositorio detecta: que un numero escrito en prosa se quede atras cuando el analisis se
+vuelve a ejecutar.
+
 \begin{table}[H]\centering\small
 \caption{Trazado de las afirmaciones de la discusi\'on.}
 \label{tab:correspondencia}

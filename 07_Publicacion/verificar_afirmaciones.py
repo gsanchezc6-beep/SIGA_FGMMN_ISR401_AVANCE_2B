@@ -8,10 +8,15 @@ cifra afirmada ya no coincide con su fuente.
 
 Por que existe.
 
-El repositorio ya tiene `dataset_zenodo/correspondencia_salidas.csv`, que ata
-cada salida con el script que la produce. Eso responde «de donde sale este
-archivo». No responde la pregunta que hace quien evalua, que es la contraria:
-**«usted afirma esto, ¿donde esta el numero?»**.
+El reporte ya trae esa correspondencia en un anexo --- «Correspondencia entre
+afirmacion y resultado», tabla `tab:correspondencia` --- y el paquete de datos
+trae `correspondencia_salidas.csv`, que ata cada salida con el script que la
+produce. Lo que faltaba no era la tabla: era **comprobarla**. Una tabla de
+correspondencias se lee, pero no se verifica sola, y basta con que alguien
+reejecute el analisis para que las cifras de la prosa y las de los CSV dejen de
+coincidir sin que nada lo delate.
+
+Este script es el respaldo comprobable de ese anexo.
 
 Y hay un fallo que ninguna otra comprobacion del repositorio detecta: que una
 cifra escrita en prosa se quede atras cuando el analisis se vuelve a correr. El
