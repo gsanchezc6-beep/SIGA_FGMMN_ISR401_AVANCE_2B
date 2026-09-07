@@ -29,7 +29,7 @@ all: entorno consolidar acuerdo supuestos hipotesis efectos saturacion \
 
 # ---- Preparacion --------------------------------------------------------
 deps:
-	$(PY) -m pip install --upgrade pandas scipy numpy scikit-learn matplotlib statsmodels
+	$(PY) -m pip install -r requirements.txt
 
 entorno:
 	@mkdir -p $(PROC) $(RES) $(FIGS) $(TABS)
@@ -115,6 +115,9 @@ verificar:
 	@echo ""
 	@echo "== Verificacion del manifiesto de sumas sobre todo el arbol =="
 	@cd .. && sha256sum -c checksums.sha256 --quiet && echo "Manifiesto correcto."
+	@echo ""
+	@echo "== Cada cifra afirmada en prosa, contra la salida que la sostiene =="
+	@cd .. && $(PY) 07_Publicacion/verificar_afirmaciones.py
 
 # ---- Limpieza -----------------------------------------------------------
 # No borra datos_crudos/: son evidencia primaria irremplazable.

@@ -1,0 +1,16 @@
+ID_afirmacion,Afirmacion,Valor_publicado,Valor_recalculado,Coincide,Archivo_fuente,Documentos_que_lo_afirman
+AFI-01,"La potencia del panel de tres jueces es del 8,4 % frente al 80 % convencional",0.0841,0.0841,Si,06_Experimento/resultados/power_calculation.csv,manuscrito_final.tex; reporte.tex; presentacion.pptx; libreto_grabacion.md
+AFI-02,Detectar un efecto medio exigiria 34 observaciones apareadas; se dispone de 3,34,34,Si,06_Experimento/resultados/power_calculation.csv,manuscrito_final.tex; reporte.tex; libreto_grabacion.md
+AFI-03,Ninguna de las cinco dimensiones es significativa tras el ajuste de Holm,0,0,Si,06_Experimento/resultados/hipotesis.csv,manuscrito_final.tex; reporte.tex; presentacion.pptx
+AFI-04,"El tamano del efecto en Completitud es d = -1,0419",-1.0419,-1.0419,Si,06_Experimento/resultados/efectos.csv,manuscrito_final.tex; reporte.tex
+AFI-05,"El efecto mas extremo es Consistencia interna, d = -5,2669",-5.2669,-5.2669,Si,06_Experimento/resultados/efectos.csv,manuscrito_final.tex; reporte.tex; libreto_grabacion.md
+AFI-06,"El acuerdo entre los tres jueces del registro previo es Fleiss 0,296 a 0,340",0.296 y 0.34,0.296 y 0.34,Si,06_Experimento/resultados/acuerdo_interevaluador.csv,manuscrito_final.tex; reporte.tex; panel_ampliado/00_LEEME.md
+AFI-07,El corpus tiene 16 entrevistas codificadas,16,16,Si,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv,reporte.tex; manuscrito_final.tex; presentacion.pptx; libreto_grabacion.md
+AFI-08,La codificacion tematica tiene 136 fragmentos bajo 50 codigos,136 y 50,136 y 50,Si,02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv,reporte.tex; manuscrito_final.tex; presentacion.pptx
+AFI-09,"La saturacion se alcanza: 1,333 codigos nuevos en las tres ultimas frente a un umbral de 2,50",1.333 y 2.5,1.333 y 2.5,Si,07_Publicacion/tablas/saturacion_por_entrevista.csv,reporte.tex; manuscrito_final.tex; presentacion.pptx; libreto_grabacion.md
+AFI-10,La curva satura a partir de la entrevista 14,True,True,Si,07_Publicacion/tablas/saturacion_por_entrevista.csv,reporte.tex; 00_LEEME_SATURACION.md
+AFI-11,La matriz de trazabilidad tiene 75 filas,75,75,Si,04_Trazabilidad/matriz_trazabilidad.csv,reporte.tex; banco_preguntas.md; presentacion.pptx; libreto_grabacion.md
+AFI-12,"El tablero de gestion tiene 61 actividades, una por requisito",61,61,Si,04_Trazabilidad/tablero_gestion/export_tablero_SIGA.csv,reporte.tex; presentacion.pptx; libreto_grabacion.md
+AFI-13,"El registro de consentimientos tiene 21 participantes, 18 citables en el manuscrito",21 y 18,21 y 18,Si,02_Evidencias/Consentimientos/registro_consentimientos.csv,00_LEEME.md de Consentimientos; CHANGELOG.md
+AFI-14,"El panel ampliado no alcanza acuerdo: Fleiss medio -0,026 en la segunda vuelta",-0.026,-0.026,Si,06_Experimento/panel_ampliado/resultados/acuerdo_dos_vueltas.csv,manuscrito_final.tex; panel_ampliado/00_LEEME.md; libreto_grabacion.md
+AFI-15,En la segunda vuelta un evaluador no repite ninguna de sus doce puntuaciones,0,0,Si,06_Experimento/panel_ampliado/resultados/consistencia_intrajuez.csv,manuscrito_final.tex; panel_ampliado/00_LEEME.md; libreto_grabacion.md

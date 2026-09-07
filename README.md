@@ -264,15 +264,23 @@ pdflatex  -interaction=nonstopmode ERS_SRS_2B_v2.0.tex
 ### Dependencias
 
 - Python >= 3.11
-- `pandas`, `numpy`, `scipy`, `scikit-learn`, `matplotlib`, `statsmodels`
+- Las seis dependencias del analisis, **con version fijada**, en
+  [`06_Experimento/requirements.txt`](06_Experimento/requirements.txt)
 - `sha256sum` (en Windows, disponible con Git Bash)
 - GNU Make es **opcional**: `replicar.py` ejecuta el mismo pipeline sin el
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install pandas numpy scipy scikit-learn matplotlib statsmodels
+pip install -r 06_Experimento/requirements.txt
 ```
+
+Las versiones estan fijadas a proposito: son las que generaron las tablas y figuras
+depositadas, y proceden de `06_Experimento/resultados/entorno_python.txt`, el volcado
+completo del entorno. **Los scripts de verificacion del repositorio ---`04_Trazabilidad/`,
+`02_Evidencias/Codificacion_Tematica/` y `10_Autoria/`--- no necesitan ninguna de las seis**:
+usan solo la biblioteca estandar, de modo que la cadena de comprobacion corre en un clon
+limpio sin instalar nada.
 
 ### Ejecucion completa
 
@@ -298,6 +306,28 @@ todas las figuras del reporte en `tablas/` y `figuras/`.
 Ninguna cifra del reporte se escribe a mano. Cada tabla y cada figura se regenera con
 esa orden; la correspondencia entre cada salida y el script que la produce esta en
 [`07_Publicacion/dataset_zenodo/correspondencia_salidas.csv`](07_Publicacion/dataset_zenodo/correspondencia_salidas.csv).
+
+### De la afirmacion al numero
+
+Ese archivo responde «de donde sale esta salida». La pregunta contraria --- **«usted afirma
+esto, donde esta el numero»** --- la responde:
+
+```bash
+python 07_Publicacion/verificar_afirmaciones.py
+```
+
+Recorre las quince afirmaciones con cifra que hacen el manuscrito, el reporte, las
+diapositivas y el libreto de la defensa; **recalcula cada una desde su salida** y avisa si
+alguna dejo de coincidir, nombrando los documentos que habria que corregir. Escribe
+[`07_Publicacion/correspondencia_afirmacion_resultado.csv`](07_Publicacion/correspondencia_afirmacion_resultado.csv)
+y termina con codigo distinto de cero si algo no cuadra, de modo que sirve en una
+comprobacion automatica.
+
+Cubre un fallo que ninguna otra verificacion del repositorio detecta: que una cifra escrita
+en prosa se quede atras cuando el analisis se vuelve a correr. El manifiesto de sumas dice
+que los archivos no cambiaron y el comprobador de enlaces dice que las rutas existen;
+ninguno de los dos mira si el 0,338 del manuscrito sigue siendo el de
+`acuerdo_interevaluador.csv`.
 
 ### Verificacion de integridad
 

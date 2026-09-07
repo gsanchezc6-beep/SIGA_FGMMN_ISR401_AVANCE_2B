@@ -1,0 +1,24 @@
+# Dependencias del analisis empirico --- Proyecto SIGA, equipo FGMMN
+#
+#     pip install -r 06_Experimento/requirements.txt
+#
+# Las versiones estan **fijadas**, no abiertas. Un `pip install pandas` en 2028
+# no instala lo mismo que en 2026, y un resultado que solo se reproduce con la
+# version de su dia no es reproducible: es una coincidencia. Estas seis son las
+# que se usaron para generar las tablas y figuras depositadas, y proceden de
+# `resultados/entorno_python.txt`, que es el volcado completo del entorno.
+#
+# Solo se listan las dependencias **directas**. El entorno real tiene 45
+# paquetes; los otros 39 son dependencias de estas seis y las resuelve pip.
+#
+# Python 3.14 o superior. Los scripts de `04_Trazabilidad/`,
+# `02_Evidencias/Codificacion_Tematica/` y `10_Autoria/` no necesitan nada de
+# esto: usan solo la biblioteca estandar, a proposito, para que la cadena de
+# verificacion del repositorio corra sin instalar nada.
+
+matplotlib==3.11.1
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.0
+scipy==1.18.1
+statsmodels==0.14.6
