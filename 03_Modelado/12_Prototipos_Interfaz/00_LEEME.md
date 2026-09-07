@@ -39,6 +39,6 @@ inventario del elemento **A3** queda en 44 fuentes.
 
 **Los prototipos son de la Entrega 2 (1B) y no se rehicieron para la 2B.** El nombre del
 archivo lo dice y conviene no disimularlo: las cuatro pantallas son las mismas que se
-recorrieron en las nueve sesiones de validacion, incluidas las dos con usuario tecnico de
+recorrieron en las diez sesiones de validacion, incluidas las tres con usuario tecnico de
 septiembre. Que no hayan cambiado es lo que permite comparar lo que dijeron los
 participantes de julio con lo que dijeron los de septiembre sobre la misma interfaz.

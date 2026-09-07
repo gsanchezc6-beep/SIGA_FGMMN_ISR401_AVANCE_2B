@@ -51,6 +51,7 @@ RONDA_TERMINAL = {
 SESIONES_TECNICAS = {
     "TIC-01": "WT-08",
     "TIC-02": "WT-09",
+    "TIC-03": "WT-10",
 }
 VALIDACION_TECNICA = "Sesion de validacion sobre prototipo (usuario tecnico)"
 

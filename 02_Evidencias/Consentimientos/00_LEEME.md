@@ -17,13 +17,13 @@ Existe porque **no todos autorizaron lo mismo**, y sin una tabla que lo diga es 
 en el manuscrito a alguien que no lo permitio. La columna `citable_en_manuscrito` responde
 esa pregunta de un vistazo.
 
-## Veintiun consentimientos de dieciocho personas
+## Veintidos consentimientos de diecinueve personas
 
 | | |
 |---|---|
-| Personas participantes | **18** |
-| Consentimientos firmados | **21** |
-| Citables en el manuscrito | **18** |
+| Personas participantes | **19** |
+| Consentimientos firmados | **22** |
+| Citables en el manuscrito | **19** |
 
 La diferencia no es un error. **Tres personas participaron en dos sesiones distintas y
 firmaron un consentimiento para cada una**: primero su entrevista, meses despues la sesion
@@ -80,17 +80,22 @@ Lo unico que se corrigio fue el campo **«Codigo de participante asignado en el 
 que el propio formulario declara como asignado por el equipo. El nombre, la cedula, la firma,
 la fecha y la casilla marcada no se tocaron: eso lo declaro el participante.
 
-## Estado a 2026-09-06
+## Estado a 2026-09-07
 
-Los veintiun consentimientos estan depositados y censurados. Ninguno figura como
+Los veintidos consentimientos estan depositados y censurados. Ninguno figura como
 pendiente.
 
-El ultimo en depositarse fue el de `TIC-02`, el 2026-09-06, un dia despues de su sesion. El
+El ultimo es el de `TIC-03`, depositado el **2026-09-07**, el mismo dia de su sesion `WT-10`.
+Se censuro nombre, cedula y firma quemando las bandas en el mapa de bits, y se conserva a la
+vista el cargo que escribio de su puno y letra --«Laboratorista, Ciencias de la
+Computacion»--, porque es el dato que sostiene su clasificacion como usuario tecnico.
+
+El de `TIC-02` se deposito el 2026-09-06, un dia despues de su sesion. El
 archivo que se recibio traia la censura como **rectangulos vectoriales superpuestos**: el
 nombre, la cedula y la firma seguian intactos debajo y bastaba con borrar cuatro objetos en
 cualquier editor de PDF para recuperarlos. Se rehizo quemando las bandas en el mapa de bits.
 
-**Los otros veinte se comprobaron uno por uno y ninguno tenia ese defecto**: en todos, la
+**Los otros veintiuno se comprobaron uno por uno y ninguno tenia ese defecto**: en todos, la
 censura es supresion real y no queda texto ni dibujo que retirar. La comprobacion se hace
 buscando dibujos vectoriales con relleno en cada pagina; si aparece alguno, la tinta sigue
 debajo.

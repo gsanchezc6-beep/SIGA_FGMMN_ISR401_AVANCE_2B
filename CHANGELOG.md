@@ -8,6 +8,43 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.12.0] - 2026-09-07
+
+La tercera sesion de validacion con usuario tecnico, `WT-10`, que cierra el reparto de
+perfiles que la guia exige.
+
+### Anadido
+
+- **Sesion `WT-10` con `TIC-03`**, evidencia `EV-28`, del 2026-09-07: laboratorista de
+  Ciencias de la Computacion, responsable del control operativo de las aulas y los
+  laboratorios de la carrera, con dieciocho anios en el cargo. Acta de siete paginas con su
+  hoja de firmas y consentimiento, ambos censurados en el mapa de bits.
+- **El video de la sesion en la ficha tecnica**, que pasa de 34 a **35 piezas**: dieciocho
+  videos y diecisiete audios. 00:15:32, 1280x720, h264/aac a 192 kbps, con su SHA-256.
+
+### Cambiado
+
+- **`declaracion_perfil_tecnico.md` ya no declara un incumplimiento.** Declaraba dos sesiones
+  tecnicas de las tres exigidas y asumia la consecuencia en la calificacion. Se reescribe: el
+  reparto se cumple. Se conserva el documento porque lo que sostiene la clasificacion de un
+  participante como tecnico es su criterio, no el recuento, y ese criterio hay que poder
+  auditarlo.
+- **`EV-28` refuerza cuatro requisitos** en la matriz: `RD-10` y `RD-11` pasan de una fuente a
+  dos, y `RNF-01` y `RNF-14` de dos a tres. No cierra ninguna fila nueva --- 41 de 75, como
+  antes ---; anade triangulacion donde el respaldo era de un solo testigo.
+- Recuento de sesiones de validacion, de nueve a **diez**, en el libreto de grabacion, el
+  banco de preguntas, el LEEME de prototipos y el README.
+- Consentimientos: de 21 a **22**, de 18 a **19** personas.
+
+### Pendiente declarado
+
+- **El video de `WT-10` no esta dentro del contenedor cifrado.** Se inventaria con su
+  duracion, su codec y su SHA-256, y la columna `zona` de su fila lo dice: regenerar el
+  contenedor exige la contrasena, que custodia el equipo. Se declara en lugar de dejar que el
+  inventario prometa un archivo que el clon no trae.
+
+---
+
 ## [2B-1.11.0] - 2026-09-06
 
 Cierre de las tres fuentes que faltaban --- el archivo de Figma, el consentimiento del

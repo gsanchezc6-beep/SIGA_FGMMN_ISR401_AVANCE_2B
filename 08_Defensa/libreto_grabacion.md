@@ -77,8 +77,8 @@ declara `04_Trazabilidad/aporte_individual.csv`.
 > «El sistema atiende a cuatro perfiles: docentes, personal de servicios generales,
 > coordinación de carrera y personal técnico de tecnologías de la información.
 >
-> El corpus son **dieciséis entrevistas** transcritas y anonimizadas, más **nueve sesiones de
-> validación** sobre prototipos, dos de ellas con usuario técnico. Y doce notas de campo.
+> El corpus son **dieciséis entrevistas** transcritas y anonimizadas, más **diez sesiones de
+> validación** sobre prototipos, tres de ellas con usuario técnico. Y doce notas de campo.
 >
 > **Las dieciséis están codificadas temáticamente**: ciento treinta y seis fragmentos bajo
 > cincuenta códigos. Las seis últimas se codificaron el seis de septiembre, repartidas entre
@@ -227,7 +227,7 @@ grabar. No se abre nada en directo.*
 
 *Avanza.*
 
-> «**Evidencia de campo.** Dieciséis entrevistas, nueve sesiones de validación y doce notas de
+> «**Evidencia de campo.** Dieciséis entrevistas, diez sesiones de validación y doce notas de
 > campo. Seis de esas notas son manuscritas y contemporáneas, escritas durante la sesión; las
 > otras seis son reconstrucción documentada y **lo dicen ellas mismas en su cabecera**.
 >

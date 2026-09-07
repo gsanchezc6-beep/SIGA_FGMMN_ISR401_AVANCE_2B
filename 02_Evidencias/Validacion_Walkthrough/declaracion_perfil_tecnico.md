@@ -2,7 +2,7 @@
 
 **Proyecto SIGA — Sistema Inteligente de Gestion de Aulas · Equipo FGMMN**
 Universidad Tecnica Estatal de Quevedo · ISR-401 Ingenieria de Requerimientos · Entrega Final (2B)
-Fecha: 2026-09-04
+Fecha: 2026-09-04 · **Actualizada el 2026-09-07**
 
 ---
 
@@ -11,29 +11,23 @@ Fecha: 2026-09-04
 La guia de la Entrega Final pide **seis sesiones de validacion grabadas con acta firmada, tres
 con usuarios tecnicos y tres con usuarios no tecnicos**.
 
-El equipo deposita las sesiones no tecnicas completas y **dos sesiones con usuario
-tecnico**. No se alcanzan las tres.
+**El reparto se cumple.** Las tres sesiones tecnicas estan depositadas:
 
-| Sesion | Fecha | Perfil declarado por el participante |
-|---|---|---|
-| `WT-08` · `TIC-01` | 2026-09-04 | Administradora de tecnologias de la informacion y de laboratorios |
-| `WT-09` · `TIC-02` | 2026-09-05 | Responsable de redes y soporte tecnico; atiende y diagnostica averias |
+| Sesion | Evidencia | Fecha | Perfil declarado por el participante |
+|---|---|---|---|
+| `WT-08` · `TIC-01` | `EV-26` | 2026-09-04 | Asistente de Tecnologias TIC; administra equipamiento y laboratorios |
+| `WT-09` · `TIC-02` | `EV-27` | 2026-09-05 | Responsable de redes y soporte tecnico; atiende y diagnostica averias |
+| `WT-10` · `TIC-03` | `EV-28` | 2026-09-07 | Laboratorista de Ciencias de la Computacion; control operativo de aulas y laboratorios |
 
-A los dos se les aplico el mismo criterio que al resto: **lo que la persona declara que
-hace**, preguntado antes de clasificarla.
+A los tres se les aplico el mismo criterio: **lo que la persona declara que hace**, preguntado
+antes de clasificarla, y contrastado con el cargo que escribio de su puno y letra en el
+consentimiento firmado.
 
-**La institucion si cuenta con mas personal que cumple el perfil.** El area de Tecnologias de
-la Informacion y Comunicacion tiene mas personal tecnico, pero el 2026-09-04 esa area estaba
-en remodelacion y su personal no se encontraba en la institucion. La causa es de calendario,
-no de plantilla, y se declara asi para no atribuir a la organizacion una carencia que no
-tiene.
-
-**Actualizacion del 2026-09-05.** La busqueda continuo y dio con un segundo perfil, `TIC-02`.
-Queda una sesion por debajo del minimo. Si se consigue la tercera, esta declaracion deja de
-hacer falta y se retira del deposito.
-
-Este documento deja constancia de a quien se busco, por que califica o no, y que se hizo en su
-lugar. No sustituye al requisito ni pretende equivaler a el.
+> **Este documento ya no declara un incumplimiento.** Hasta el 2026-09-06 declaraba dos
+> sesiones tecnicas de las tres exigidas y asumia la consecuencia en la calificacion. Se
+> conserva --en vez de retirarse-- porque lo que sostiene la clasificacion de un participante
+> como tecnico no es el recuento, sino el criterio de los apartados 2 y 3, y ese criterio hay
+> que poder auditarlo.
 
 ## 2. Como se decidio quien es usuario tecnico
 
@@ -60,53 +54,42 @@ las detecte a diario.
 habria contradicho sus propias palabras, recogidas en transcripciones que forman parte de esta
 misma entrega.
 
-## 4. La sesion tecnica que si se realizo
+## 4. Por que las tres califican
 
-| Campo | Valor |
-|---|---|
-| Codigo de participante | `TIC-01` |
-| Identificador de evidencia | `EV-26` |
-| Codigo de sesion | `WT-08` |
-| Fecha | 2026-09-04 |
-| Cargo declarado | **Asistente de Tecnologias TIC**, tal como consta escrito de su puno y letra en el consentimiento firmado |
-| Por que califica | Pertenece al area de Tecnologias de la Informacion y Comunicacion y administra el equipamiento y los sistemas de los laboratorios de la facultad |
-| Funcion literal | Ver abajo, transcrita del apartado 1 del acta |
+**`TIC-01`.** Pertenece al area de Tecnologias de la Informacion y Comunicacion. Diagnostica
+equipos, sustituye perifericos, retira y formatea maquinas con falla mayor y lleva el registro
+de control de clases. Diagnosticar, sustituir perifericos y formatear equipos **es administrar
+equipamiento**, no operarlo y reportarlo: es exactamente la frontera que la separa del perfil
+de servicios generales.
 
-**Funcion que declaro en la sesion**, recogida en el acta `WT-08`:
+**`TIC-02`.** Identifica fallos de red y realiza las pruebas necesarias para determinar la
+causa cuando fallan los proyectores. Administra la infraestructura de red del aula.
 
-> Asistente de Tecnologias de la Informacion del area de TIC, responsable de la asistencia
-> tecnica de los cuatro laboratorios de informatica de la planta baja de la facultad. Atiende
-> a docentes, estudiantes y usuarios externos con convenio; sustituye perifericos, diagnostica
-> equipos, retira y formatea maquinas con falla mayor y lleva el registro de control de clases
-> donde se anotan las novedades. Declara 30 anios de labor en la universidad y alrededor de 25
-> anios en laboratorios de informatica.
-
-Diagnosticar, sustituir perifericos y formatear equipos **es administrar equipamiento**, no
-operarlo y reportarlo. Es exactamente la frontera que separa este perfil del de servicios
-generales, y por eso esta sesion cuenta como tecnica y las de conserjeria no.
+**`TIC-03`.** Responsable del control operativo de las aulas de computacion y de los
+laboratorios: revision y mantenimiento de equipos, formateo, instalacion de software,
+verificacion de la infraestructura informatica y soporte durante las clases. Declara
+aproximadamente dieciocho anios en el cargo.
 
 > **El cargo se toma del documento firmado, no de lo que se recordo despues.** La primera
-> version de esta declaracion decia «Administradora de tecnologias de la informacion de
-> laboratorios», que es como se describio la sesion de memoria. El consentimiento dice
-> «Asistente de Tecnologias TIC». Manda el papel: una declaracion que no coincide con su
-> propia evidencia se cae al contrastarlas.
+> version de esta declaracion llamaba a `TIC-01` «Administradora de tecnologias de la
+> informacion de laboratorios», que es como se describio la sesion de memoria; el
+> consentimiento dice «Asistente de Tecnologias TIC». Manda el papel. Por la misma razon
+> `TIC-03` consta como «Laboratorista, Ciencias de la Computacion»: es lo que escribio de su
+> puno y letra, y no la formula mas vistosa que llego a figurar en un borrador del acta.
 
-## 5. Por que no hubo mas
+## 5. Como se llego a las tres
 
-La busqueda se realizo el **2026-09-04**, recorriendo la facultad y las areas de servicio de
-la universidad.
+La busqueda empezo el **2026-09-04** recorriendo la facultad y las areas de servicio de la
+universidad. Ese dia **el area de Tecnologias de la Informacion y Comunicacion estaba en
+remodelacion y su personal no se encontraba en la institucion**, que es donde estaria el resto
+del personal con el perfil. Se consulto ademas en biblioteca y en el area administrativa;
+ninguna de las personas disponibles ese dia administraba sistemas, cuentas, equipamiento o
+red. Solo se localizo a `TIC-01`.
 
-**El area de Tecnologias de la Informacion y Comunicacion (TICS) estaba en remodelacion ese
-dia y su personal no se encontraba en la institucion.** Es el area donde estaria el resto del
-personal que cumple el perfil, y es la razon concreta por la que no se pudieron realizar las
-otras dos sesiones.
+La busqueda continuo el **2026-09-05** y dio con `TIC-02`, y el **2026-09-07** con `TIC-03`.
 
-Se consulto ademas en biblioteca por personal que administrara los computadores y las cuentas
-de usuario, y en el area administrativa. Ninguna de las personas disponibles ese dia ejercia
-funcion de administracion de sistemas, cuentas, equipamiento o red.
-
-La sesion que si se realizo se hizo con la unica persona localizada que cumple el perfil sin
-ambiguedad.
+**La causa del retraso fue de calendario, no de plantilla.** Se deja escrito para no atribuir
+a la organizacion una carencia de personal tecnico que no tiene.
 
 ## 6. Que sigue faltando en la matriz, y por que importa
 
@@ -115,17 +98,28 @@ ninguna evidencia de campo**: `RNF-03`, `RNF-06`, `RNF-09`, `RNF-10`, `RNF-12`, 
 `RD-10` y `RD-11`. Sus umbrales se escribieron sin consultar al perfil que tendria que
 cumplirlos.
 
-La sesion con `TIC-01` cubre los que se alcanzaron a consultar en quince minutos. Los que
-queden sin cubrir **siguen declarandose huerfanos**, no se dan por sostenidos.
+Las tres sesiones cubren lo que se alcanzo a consultar en quince minutos cada una:
 
-La limitacion que se traslada al manuscrito es de muestreo, no de estructura: el perfil que
-menos se consulto es precisamente el destinatario de los requisitos mas exigentes en umbral
---`RNF-06`, `RNF-09` y `RNF-14`--, de modo que esos tres son los que menos respaldo empirico
-tienen de toda la especificacion. Se declara como amenaza a la validez de constructo.
+| Requisito | Evidencia de campo hoy |
+|---|---|
+| `RD-10` — control remoto restringido por roles | `EV-27`, `EV-28` |
+| `RD-11` — bitacora de acciones para auditoria | `EV-27`, `EV-28` |
+| `RNF-01` — alerta de anomalia <= 60 s | `EV-26`, `EV-27`, `EV-28` |
+| `RNF-14` — diagnostico de una falla <= 15 min | `EV-12`, `EV-27`, `EV-28` |
+
+**Seis siguen huerfanos**: `RNF-03`, `RNF-06`, `RNF-09`, `RNF-10`, `RNF-12` y `RD-03`. En
+`RNF-03` y `RD-03` los tres participantes constan como **«No responde»** en el apartado 4 de
+sus actas; no se dan por sostenidos por haber preguntado.
+
+La limitacion que se traslada al manuscrito sigue siendo de muestreo: el perfil que menos se
+consulto es el destinatario de los requisitos mas exigentes en umbral --`RNF-06`, `RNF-09` y
+`RNF-14`--, de modo que son los que menos respaldo empirico tienen de toda la especificacion.
+Se declara como amenaza a la validez de constructo.
 
 ## 7. Efecto sobre la evaluacion
 
-El equipo asume que el sub-criterio de reparto de perfiles **no se cumple** y que eso tiene
-consecuencia en la calificacion. Se prefiere declararlo a clasificar mal a un participante:
-las actas y las transcripciones se leen juntas, y una contradiccion entre lo que una persona
-dice que hace y el perfil que se le asigna es visible de inmediato.
+El sub-criterio de reparto de perfiles **se cumple**: tres sesiones con usuario tecnico y tres
+con usuario no tecnico, cada una con su acta firmada y su grabacion inventariada.
+
+Lo que no se ha subsanado es el **alcance** de esas sesiones: quince minutos por participante
+dejan seis umbrales sin consultar, y eso consta arriba en lugar de disolverse en el recuento.

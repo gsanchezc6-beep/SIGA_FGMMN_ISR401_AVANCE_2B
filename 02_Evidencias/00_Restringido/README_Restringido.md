@@ -31,8 +31,15 @@ hash, para que se pueda comprobar que existen y cuales son sin publicarlas.
 en el apartado 4.
 
 Contando toda la evidencia audiovisual del estudio --las entrevistas mas la sesion de
-validacion comunicativa `MC-01` y las dos sesiones de validacion tecnica, `EV-26` y
-`EV-27`--, la ficha inventaria **34 piezas: diecisiete videos y diecisiete audios**.
+validacion comunicativa `MC-01` y las tres sesiones de validacion tecnica, `EV-26`,
+`EV-27` y `EV-28`--, la ficha inventaria **35 piezas: dieciocho videos y diecisiete audios**.
+
+> **Una de las treinta y cinco todavia no esta dentro del contenedor.** El video de la
+> sesion `WT-10` con `TIC-03`, del 2026-09-07, se inventaria con su duracion, su codec y su
+> SHA-256, pero el contenedor cifrado no se ha vuelto a generar para incluirlo: hacerlo exige
+> la contrasena, que custodia el equipo. La columna `zona` de su fila lo dice, y esta nota
+> queda hasta que se rehaga el contenedor. Se declara en lugar de dejar que el inventario
+> prometa un archivo que el clon no trae.
 
 Todos superan el sondeo de codec y duracion que exige la guia: MP4 H.264 a 1280 × 720 con
 audio AAC, y MP3 a 128 kbps.

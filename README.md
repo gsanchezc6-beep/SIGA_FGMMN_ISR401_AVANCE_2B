@@ -221,7 +221,7 @@ nombra deje de existir**.
 
 | Elemento | Estado |
 |---|---|
-| Tercera sesion de validacion con usuario tecnico | Concertada. Las dos primeras, `WT-08` y `WT-09`, estan depositadas |
+| Tercera sesion de validacion con usuario tecnico | **Realizada el 2026-09-07.** `WT-08`, `WT-09` y `WT-10` estan depositadas |
 | Regrabacion de la defensa a tres voces | El libreto esta cerrado en `08_Defensa/libreto_grabacion.md`. La grabacion del 2026-09-01, con dos integrantes, sigue depositada |
 
 **Lo que estuvo en esta tabla y ya no.** Se retira lo que se cumplio, con la fecha, porque

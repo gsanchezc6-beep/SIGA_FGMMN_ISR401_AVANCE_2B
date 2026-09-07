@@ -14,8 +14,8 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **125** | 2026-08-30 | 2026-09-07 |
-| Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **82** | 2026-08-30 | 2026-09-06 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **129** | 2026-08-30 | 2026-09-07 |
+| Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **83** | 2026-08-30 | 2026-09-07 |
 | Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **9** | 2026-09-04 | 2026-09-06 |
 
 Comprobable con `git shortlog -sne main`. El total de esta tabla es una confirmacion
@@ -27,20 +27,20 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 125**, de 2026-08-30 a 2026-09-07.
+**Confirmaciones: 129**, de 2026-08-30 a 2026-09-07.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 334 |
+| Evidencia de campo y etica | 336 |
 | Modelado UML e i* | 135 |
-| Documentos de raiz | 121 |
+| Documentos de raiz | 132 |
 | Manuscrito y deposito | 115 |
 | Componente empirico | 94 |
 | Paquete de datos | 57 |
 | Producto minimo viable | 53 |
-| Especificacion de requisitos | 46 |
+| Especificacion de requisitos | 48 |
 | Defensa | 37 |
 | Evidencia de autoria | 37 |
 | Trazabilidad | 28 |
@@ -175,6 +175,10 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `e612dbf` | 2026-09-07 | data(restringido): contenedor cifrado, fragmentos 166 a 220 de 272 |
 | `5854089` | 2026-09-07 | data(restringido): contenedor cifrado, fragmentos 221 a 272 de 272 |
 | `827f6f9` | 2026-09-07 | docs(datos): separa el DOI de concepto del DOI de version, y cierra la verificacion del contenedor |
+| `eb74ac4` | 2026-09-07 | feat(evidencias): deposita el instrumento del cuestionario y pone al dia la tabla de ausencias |
+| `4dc5f38` | 2026-09-07 | fix(ers): anade a Cedeno Avila a la caratula y regenera el PDF desde su fuente |
+| `d927745` | 2026-09-07 | feat(fair): sustituye la autoevaluacion redactada a mano por la salida real de F-UJI |
+| `b4b1375` | 2026-09-07 | chore(integridad): incorpora al manifiesto los tres archivos de la autoevaluacion FAIR |
 
 ---
 
@@ -182,20 +186,20 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Documentacion, trazabilidad, auditoria de calidad y gestion de evidencias
 
-**Confirmaciones: 82**, de 2026-08-30 a 2026-09-06.
+**Confirmaciones: 83**, de 2026-08-30 a 2026-09-07.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
 | Evidencia de campo y etica | 201 |
-| Documentos de raiz | 58 |
-| Evidencia de autoria | 57 |
+| Documentos de raiz | 61 |
+| Evidencia de autoria | 58 |
 | Producto minimo viable | 43 |
 | Otros | 25 |
 | Componente empirico | 25 |
-| Trazabilidad | 20 |
-| Manuscrito y deposito | 19 |
+| Trazabilidad | 21 |
+| Manuscrito y deposito | 20 |
 | Especificacion de requisitos | 13 |
 | Modelado UML e i* | 7 |
 | Defensa | 4 |
@@ -287,6 +291,7 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `6e8ea63` | 2026-09-06 | feat(codificacion): codifica EV-22 y EV-23 de la ronda terminal |
 | `0f8338f` | 2026-09-06 | fix(datos): traduce las rutas de correspondencia_salidas.csv a la estructura del paquete |
 | `1bb3761` | 2026-09-06 | docs(trazabilidad): declara las siete restricciones de diseno que no estan en la matriz |
+| `4650019` | 2026-09-07 | docs(trazabilidad): regenera el aporte individual y ata el anexo de correspondencia a su verificador |
 
 ---
 

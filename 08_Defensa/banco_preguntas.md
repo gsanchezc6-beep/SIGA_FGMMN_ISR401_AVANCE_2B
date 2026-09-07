@@ -331,13 +331,20 @@ mide por clase de falla. Quedo registrado como defecto **D-04** en el acta de la
 → `02_Evidencias/Validacion_Walkthrough/Sesiones_Validacion/2026-09-04_Tecnico_TIC-01_Walkthrough_Acta.pdf`
 
 **I3. La guia pide tres sesiones de validacion con usuarios tecnicos. ¿Cuantas hicieron?**
-Dos, y estan depositadas: `TIC-01` el 2026-09-04 --administradora de tecnologias de la
-informacion y de laboratorios-- y `TIC-02` el 2026-09-05 --responsable de redes y soporte
-tecnico--. La tercera no se alcanzo en el plazo, y la causa esta declarada: el area de
-Tecnologias de la Informacion y Comunicacion estaba **en remodelacion el 4 de septiembre** y
-su personal no se encontraba en la institucion. La institucion **si tiene** mas personal que cumple el perfil: la causa es de
-calendario, no de plantilla, y se declara asi para no atribuirle a la organizacion cliente
-una carencia que no tiene. Se consulto ademas en biblioteca y en el area administrativa.
+**Las tres**, y estan depositadas: `TIC-01` el 2026-09-04 --asistente de Tecnologias TIC--,
+`TIC-02` el 2026-09-05 --responsable de redes y soporte-- y `TIC-03` el 2026-09-07
+--laboratorista de Ciencias de la Computacion, con dieciocho anios en el cargo--.
+
+Costo tres dias y conviene decir por que: el area de Tecnologias de la Informacion y
+Comunicacion estaba **en remodelacion el 4 de septiembre** y su personal no se encontraba en
+la institucion. La institucion **si tiene** ese personal; la causa fue de calendario, no de
+plantilla, y se declara asi para no atribuirle a la organizacion cliente una carencia que no
+tiene.
+
+Lo que si sigue corto es el **alcance**: quince minutos por sesion dejan seis de los ocho
+requisitos dirigidos a Personal de TI sin consultar --`RNF-03`, `RNF-06`, `RNF-09`, `RNF-10`,
+`RNF-12` y `RD-03`--, y esos siguen declarados huerfanos. Las tres sesiones respaldan `RD-10`,
+`RD-11`, `RNF-01` y `RNF-14`.
 → `02_Evidencias/Validacion_Walkthrough/declaracion_perfil_tecnico.md`
 
 **I4. ¿Por que los conserjes no cuentan como usuarios tecnicos, si manejan las camaras y los
