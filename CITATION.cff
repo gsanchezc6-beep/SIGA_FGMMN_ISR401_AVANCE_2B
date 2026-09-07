@@ -9,11 +9,11 @@ date-released: "2026-09-06"
 repository-code: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 url: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 
-doi: "10.5281/zenodo.22137679"
+doi: "10.5281/zenodo.22557171"
 
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22137679"
+    value: "10.5281/zenodo.22557171"
     description: "Deposito FAIR del paquete de replicacion en Zenodo, bajo licencia CC BY 4.0."
   - type: doi
     value: "10.17605/OSF.IO/7PQ3H"
@@ -22,7 +22,7 @@ identifiers:
     value: "https://osf.io/7pq3h"
     description: "Enlace directo al registro OSF."
   - type: url
-    value: "https://doi.org/10.5281/zenodo.22137679"
+    value: "https://doi.org/10.5281/zenodo.22557171"
     description: "Enlace directo al deposito de datos en Zenodo."
   - type: swh
     value: "swh:1:snp:861295fead33417e3efc2753fd4a34897014a891"

@@ -111,7 +111,7 @@ por cumplida.
 El conjunto de datos anonimizado que acompaña al manuscrito está depositado en
 Zenodo con licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0):
 
-**DOI:** https://doi.org/10.5281/zenodo.22137679
+**DOI:** https://doi.org/10.5281/zenodo.22557171
 
 El registro previo del protocolo experimental se encuentra en OSF. Se cita el
 **registro**, que es inmutable y tiene DOI, y no el nodo de proyecto del que cuelga:
