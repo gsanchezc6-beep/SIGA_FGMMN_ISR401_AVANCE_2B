@@ -39,7 +39,8 @@ eslabones, y el motivo esta declarado fila a fila en los apartados que siguen.
   Ley Organica de Proteccion de Datos Personales o de decision tecnica. Inventarles una
   evidencia de campo seria fabricarla.
 - **Once restricciones de diseno** no se verifican por caso de prueba sino por revision de
-  diseno. Es lo que son.
+  diseno. Es lo que son. **La ERS define dieciocho, y siete no tienen fila en la matriz**:
+  el motivo de cada una esta en el apartado 7.
 - Varias filas **no las realiza ninguna pantalla**: «Evidencia fotografica del trabajo de
   campo», «Dependencia del horario academico vigente» o «Evidencia del sistema de camaras
   existente» son filas de evidencia y de restriccion, no requisitos que un mockup pueda
@@ -133,3 +134,39 @@ Hay un argumento a favor de **Must** que conviene tener presente al decidirlo: R
 RF-25 no son funciones deseables sino **obligaciones legales** bajo los articulos 13 y 14
 de la Ley Organica de Proteccion de Datos Personales. Una obligacion legal dificilmente es
 opcional.
+
+---
+
+## 7. Las siete restricciones de diseno que no estan en la matriz
+
+La ERS especifica **dieciocho** restricciones de diseno, `RD-01` a `RD-18`. La matriz y el
+tablero de gestion recogen **once**. Las otras siete no aparecen, y aqui se dice cuales son
+y por que --- una ausencia que no se declara es indistinguible de un descuido.
+
+| | Tipo | Por que no tiene fila |
+|---|---|---|
+| `RD-14` | Temporal | Fija que la Entrega 3 documentaria la ERS completa. Es un compromiso de calendario del proyecto, no una propiedad del sistema: no hay nada que construir ni que verificar en el producto |
+| `RD-15` | Temporal | Igual, para la Entrega 4. Su cumplimiento se comprueba mirando este repositorio, no el sistema |
+| `RD-16` | Alcance | Excluye del sistema la matricula, la asistencia y las calificaciones. Una exclusion de dominio no genera actividad: lo que declara es que no se hara nada |
+| `RD-18` | Alcance | Excluye la red electrica del campus y los dispositivos sin integracion IoT. Mismo caso |
+| `RD-01` | Tecnologica | **Deberia tener fila y no la tiene.** Fija los protocolos --- MQTT, HTTP, API REST --- y eso si condiciona la construccion. Su efecto llega a la matriz de forma indirecta, a traves de `RF-01`, `RF-02`, `RF-07` y `RF-22`, que si estan trazados, pero la restriccion en si no se rastrea |
+| `RD-07` | Economica | Ata la seleccion de hardware al presupuesto aprobado. Condiciona una compra, no una linea de codigo, y el proyecto no llego a la fase de adquisicion |
+| `RD-12` | Operativa | La instalacion fisica depende del Departamento de Infraestructura. Obliga a un tercero, no al equipo |
+
+### El criterio no es uniforme, y conviene decirlo
+
+Cuatro de las siete --- las dos temporales y las dos exclusiones de alcance --- no pueden
+trazarse: no hay actividad posible para algo que por definicion no se hace. `RD-07` y
+`RD-12` vinculan a terceros y tampoco generan trabajo del equipo.
+
+**`RD-01` es la excepcion incomoda.** Es tecnologica, como `RD-02` a `RD-06`, que si estan
+las cinco en la matriz, y condiciona el diseno igual que ellas. No hay razon de fondo para
+que falte; falta. Y `RD-17`, que es de alcance como `RD-16` y `RD-18`, si tiene fila, de
+modo que tampoco el tipo explica la seleccion por si solo.
+
+Se deja escrito en vez de inventar una regla que los datos no sostienen. **Cerrar el hueco
+es anadir `RD-01` a la matriz y su actividad al tablero**, con lo que las dos listas pasarian
+de 60 a 61 y la sincronizacion seguiria en el 100 %. No se hace aqui porque el tablero es un
+export de Jira y la actividad tiene que crearla una persona en la herramienta, no un script
+sobre el CSV exportado: escribirla a mano en el export dejaria el tablero real y su copia
+diciendo cosas distintas, que es peor que el hueco.

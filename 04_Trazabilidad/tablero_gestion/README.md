@@ -13,7 +13,8 @@ Medicion: 2026-09-05
 | Herramienta | Jira Cloud (Atlassian), espacio de software gestionado por el equipo |
 | Espacio | `SIGA` — SIGA - Sistema Inteligente de Gestion de Aulas |
 | Actividades | **60**, `SIGA-1` a `SIGA-60` |
-| Composicion | 25 requisitos funcionales, 24 no funcionales, 11 restricciones de diseno |
+| Composicion | 25 requisitos funcionales, 24 no funcionales --- 16 `RNF` y 8 `RNF-IA` --- y 11 restricciones de diseno |
+| | La ERS especifica **dieciocho** restricciones. Las siete que no tienen actividad aqui estan declaradas una a una en [`../huerfanos_y_cadenas_rotas.md`](../huerfanos_y_cadenas_rotas.md), apartado 7 |
 | Estado | Las 60 en **Por hacer** |
 
 Cada actividad lleva en su descripcion el objetivo del requisito, el stakeholder, la
