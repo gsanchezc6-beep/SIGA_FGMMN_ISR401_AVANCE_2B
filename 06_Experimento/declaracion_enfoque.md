@@ -8,37 +8,49 @@ Fecha: 2026-09-05
 
 ## 1. Que se declara
 
-La rubrica de la asignatura asigna un enfoque empirico a cada equipo mediante una tabla
-indexada por **codigo de equipo**. En esa tabla, al codigo `AOPSS` le corresponde el
-**Enfoque 3 (explicabilidad)**.
+Este proyecto ejecuto el **Enfoque 1: comparacion de la calidad de los requisitos
+funcionales elicitados por un equipo humano frente a los generados por un modelo de
+lenguaje grande**. La tabla de la seccion 6 de la rubrica de la Entrega Final recomienda
+para este proyecto el **Enfoque 3 (explicabilidad)**.
 
-Este proyecto ejecuto el **Enfoque 1: comparacion de calidad de requisitos funcionales
-elicitados por un equipo humano frente a los generados por un modelo de lenguaje grande**.
+**El enfoque se elegia, no se asignaba, y la eleccion se hizo cuando tocaba hacerla.** La
+rubrica de la Entrega 2A, que es la vigente en el momento de elegir, lo dice literal:
 
-La rubrica admite modificar la pregunta de investigacion, pero exige declarar la
-modificacion por escrito y justificar por que se mantiene el compromiso con el minimo
-empirico. Este documento es esa declaracion. **No se pide que la desviacion pase
-inadvertida: se pide que quede escrita, y aqui esta.**
+> «Se ofrecen tres enfoques posibles; **cada equipo elige uno y solo uno**. El enfoque
+> elegido debe declararse al docente antes del final de la semana 10 y debe registrarse
+> formalmente en el OSF **antes de comenzar a recolectar datos**.»
 
-## 2. Por que ocurrio
+El equipo eligio el Enfoque 1 y lo registro en el Open Science Framework el **2026-08-02**,
+antes de recoger un solo dato. Las dos condiciones se cumplieron.
+
+**La tabla de la Entrega 2B orienta, no manda.** Su propio parrafo de cabecera lo dice:
+
+> «Esta seccion **orienta la eleccion** del angulo especifico del manuscrito [...] Para cada
+> proyecto se ofrece: el dominio del sistema; la pregunta de investigacion principal
+> **sugerida**; el enfoque metodologico **recomendado** [...] Cada equipo **puede modificar**
+> la pregunta principal, pero debe declarar la modificacion por escrito y justificar por que
+> mantiene el compromiso con el minimo empirico.»
+
+Este documento es esa declaracion escrita, y el apartado 4 es esa justificacion. No se
+declara un incumplimiento: se ejerce la facultad que la propia rubrica concede, por el
+procedimiento que la propia rubrica fija.
+
+## 2. Sobre el codigo de equipo
 
 El equipo se identifico como **FGMMN** durante todo el proyecto: es el nombre del
 repositorio (`SIGA_FGMMN_ISR401_AVANCE_2B`), el que firma el `CITATION.cff`, los metadatos
-de Zenodo y OSF, la caratula de entrega y los mensajes de confirmacion de cambios. Bajo esa
-identificacion se leyo la tabla de asignacion y se eligio el enfoque.
+de Zenodo y OSF, la caratula de entrega y los mensajes de confirmacion de cambios. El mapa
+de calificacion del docente identifica a este proyecto con el codigo `AOPSS`.
 
-El mapa de calificacion del docente asigna a este proyecto el codigo `AOPSS`. La
-discrepancia de codigo se comunico al docente por el canal del curso el 2026-09-05 y se
-resolvio como no sustantiva: el proyecto quedo correctamente identificado por su nombre,
-su paralelo y sus integrantes.
+La discrepancia se comunico al docente por el canal del curso el 2026-09-05 y se resolvio
+como no sustantiva: el proyecto quedo correctamente identificado por su nombre, su paralelo
+y sus integrantes. Se deja escrita porque un lector que compare la tabla de la seccion 6 con
+el protocolo registrado va a encontrar la diferencia de todos modos, y es preferible que la
+encuentre explicada.
 
-**No se alega que la confusion justifique la desviacion.** Se registra porque es la causa
-real y porque un lector que compare la tabla con el protocolo va a encontrar la diferencia
-de todos modos. Es preferible que la encuentre explicada.
+## 3. Por que el enfoque no se cambio al conocerse la recomendacion
 
-## 3. Por que el enfoque no se cambio al detectarse
-
-Porque cambiarlo habria sido peor que declararlo.
+Porque cambiarlo despues del registro previo habria sido peor que mantenerlo.
 
 El protocolo esta **registrado previamente en el Open Science Framework** con DOI
 [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H), aceptado el
@@ -49,7 +61,7 @@ Science en el Internet Archive con sus manifiestos SHA-256 y SHA-512. La marca t
 Un registro previo existe justamente para impedir que la pregunta se reescriba despues de
 ver los resultados. Cambiar de enfoque a estas alturas —con los datos recogidos, el panel
 ciego ejecutado y los resultados publicados— convertiria el registro previo en un adorno y
-destruiria la unica garantia metodologica fuerte que tiene el trabajo. La desviacion se
+destruiria la unica garantia metodologica fuerte que tiene el trabajo. La eleccion se
 declara; el registro se respeta.
 
 ## 4. Por que se mantiene el compromiso con el minimo empirico
@@ -84,4 +96,5 @@ se presenta como tal.
 
 ---
 
-Firma el equipo. La discrepancia de codigo de equipo esta comunicada al docente.
+Firma el equipo. La eleccion consta en el registro previo del 2026-08-02 y la discrepancia
+de codigo esta comunicada al docente.

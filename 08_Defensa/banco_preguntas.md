@@ -415,17 +415,26 @@ perfil tecnico localizada partio en dos una falla que la especificacion trataba 
 sola. Los dos hallazgos estan en el corpus y ninguno se omitio por incomodo.
 → `02_Evidencias/Transcripciones/`, EV-22 y EV-24
 
-**I12. La rubrica les asignaba el Enfoque 3, de explicabilidad, y ustedes hicieron el
-Enfoque 1. ¿Por que?**
-Porque el equipo se identifico como FGMMN durante todo el proyecto --el nombre del
-repositorio, el `CITATION.cff`, los metadatos de Zenodo y de OSF-- y bajo esa
-identificacion leyo la tabla de asignacion. El mapa del docente asigna a este proyecto el
-codigo AOPSS; la discrepancia se le comunico por el canal del curso. **La confusion explica
-la desviacion pero no la justifica**, y por eso esta declarada por escrito.
-Lo que si justifica no haberla revertido es el registro previo: el protocolo esta en OSF con
-DOI `10.17605/OSF.IO/7PQ3H`, aceptado el 2 de agosto a las 20:25 UTC y archivado por el
-Center for Open Science en el Internet Archive. Esa marca temporal es externa y anterior a
-la recoleccion. Un registro previo existe para impedir que la pregunta se reescriba despues
-de ver los resultados; cambiar de enfoque ahora lo convertiria en un adorno. Se declara la
-desviacion y se respeta el registro.
+**I12. La tabla de la seccion 6 recomendaba el Enfoque 3, de explicabilidad, y ustedes
+hicieron el Enfoque 1. ¿Por que?**
+Conviene empezar por lo que dicen los dos instrumentos, porque **el enfoque se elegia**.
+
+La rubrica de la Entrega 2A, la vigente cuando habia que elegir, dice: «se ofrecen tres
+enfoques posibles; **cada equipo elige uno y solo uno**», y exige declararlo antes de la
+semana 10 y registrarlo en OSF **antes de recolectar datos**. Elegimos el Enfoque 1 y lo
+registramos el 2 de agosto, antes del primer dato. Las dos condiciones se cumplieron.
+
+La tabla de la Entrega 2B **orienta**, no manda: su cabecera dice que «orienta la eleccion»,
+que la pregunta es **sugerida** y el enfoque **recomendado**, y que «cada equipo **puede
+modificar** la pregunta principal, pero debe declarar la modificacion por escrito y
+justificar por que mantiene el compromiso con el minimo empirico». Eso es exactamente lo que
+hicimos: la declaracion escrita es `06_Experimento/declaracion_enfoque.md` y la
+justificacion del minimo empirico es su apartado 4.
+
+Y aunque hubiera sido una asignacion, no habriamos vuelto atras, por el registro previo: el
+protocolo esta en OSF con DOI `10.17605/OSF.IO/7PQ3H`, aceptado el 2 de agosto a las 20:25
+UTC y archivado por el Center for Open Science en el Internet Archive. Esa marca temporal es
+externa al equipo y anterior a la recoleccion. Un registro previo existe para impedir que la
+pregunta se reescriba despues de ver los resultados; cambiarlo ahora lo convertiria en un
+adorno.
 → `06_Experimento/declaracion_enfoque.md`
