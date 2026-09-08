@@ -35,18 +35,23 @@ Este documento es esa declaracion escrita, y el apartado 4 es esa justificacion.
 declara un incumplimiento: se ejerce la facultad que la propia rubrica concede, por el
 procedimiento que la propia rubrica fija.
 
-## 2. Sobre el codigo de equipo
+## 2. Sobre la fila de la tabla
 
-El equipo se identifico como **FGMMN** durante todo el proyecto: es el nombre del
-repositorio (`SIGA_FGMMN_ISR401_AVANCE_2B`), el que firma el `CITATION.cff`, los metadatos
-de Zenodo y OSF, la caratula de entrega y los mensajes de confirmacion de cambios. El mapa
-de calificacion del docente identifica a este proyecto con el codigo `AOPSS`.
+El equipo es **FGMMN** y el sistema se llama **SIGA**: asi consta en el nombre del
+repositorio (`SIGA_FGMMN_ISR401_AVANCE_2B`), en el `CITATION.cff`, en los metadatos de
+Zenodo y de OSF, en la caratula de identificacion y en el grupo del Sistema de Gestion
+Academica.
 
-La discrepancia se comunico al docente por el canal del curso el 2026-09-05 y se resolvio
-como no sustantiva: el proyecto quedo correctamente identificado por su nombre, su paralelo
-y sus integrantes. Se deja escrita porque un lector que compare la tabla de la seccion 6 con
-el protocolo registrado va a encontrar la diferencia de todos modos, y es preferible que la
-encuentre explicada.
+**La tabla de la seccion 6 no nombra a ningun equipo `FGMMN` ni a ningun sistema `SIGA`**:
+las dos cadenas aparecen cero veces en el documento. Identifica los proyectos por otras
+etiquetas, y la unica de sus ocho filas que trata de aulas es la rotulada «Aulas IoT». El
+codigo que acompana a esa fila corresponde, segun consta al equipo, a otro proyecto de la
+cohorte.
+
+Se deja escrito porque un lector que compare la tabla con el protocolo registrado va a
+encontrar la diferencia de todos modos, y es preferible que la encuentre explicada. **No
+altera lo del apartado 1**: la tabla orienta y el enfoque se elegia, de modo que la eleccion
+del Enfoque 1 esta bien tomada con independencia de a quien rotule cada fila.
 
 ## 3. Por que el enfoque no se cambio al conocerse la recomendacion
 

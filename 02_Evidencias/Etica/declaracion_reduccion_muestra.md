@@ -45,7 +45,7 @@ por el equipo y no lo tenga que descubrir el tribunal.
 
 | Fecha | Hecho | Constancia |
 |---|---|---|
-| 2026-08-17, 17:22 | El docente autoriza verbalmente, en el area de TICS y ante el curso reunido, cerrar el levantamiento en diez entrevistas validas | `acta_constancia_N10.pdf`, **depositada**: firmada por los dos integrantes y por **cuatro testigos del equipo AOPSS**, ajenos a esta entrega |
+| 2026-08-17, 17:22 | El docente autoriza verbalmente, en el area de TICS y ante el curso reunido, cerrar el levantamiento en diez entrevistas validas | `acta_constancia_N10.pdf`, **depositada**: firmada por los dos integrantes y por **cuatro testigos del equipo MundiPets**, ajenos a esta entrega |
 | 2026-08-29 | Se solicita al docente confirmacion escrita por mensajeria | Sin respuesta |
 | 2026-08-31, 13:50 | Se reitera la solicitud por correo institucional | `solicitud_confirmacion_N10.pdf`, **depositado**: captura del mensaje enviado desde la cuenta institucional. Sin respuesta a la fecha de este documento |
 
@@ -55,7 +55,7 @@ entrega**. Es el respaldo mas fuerte disponible, y sigue sin ser una autorizacio
 docente.
 
 **Estado a 2026-09-01.** El acta ya esta firmada y depositada. La suscriben los dos
-integrantes y **cuatro testigos del equipo AOPSS**, identificados por nombre completo y
+integrantes y **cuatro testigos del equipo MundiPets**, identificados por nombre completo y
 equipo. Sus numeros de cedula estan tapados en la copia publicada: firmaron como testigos
 de un hecho, no otorgaron consentimiento para el tratamiento de sus datos, y el numero de
 cedula no es necesario para que la constancia cumpla su funcion. El original sin tapar lo

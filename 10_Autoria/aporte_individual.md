@@ -14,7 +14,7 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **132** | 2026-08-30 | 2026-09-07 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **136** | 2026-08-30 | 2026-09-07 |
 | Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **83** | 2026-08-30 | 2026-09-07 |
 | Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **9** | 2026-09-04 | 2026-09-06 |
 
@@ -27,23 +27,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 132**, de 2026-08-30 a 2026-09-07.
+**Confirmaciones: 136**, de 2026-08-30 a 2026-09-07.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
 | Evidencia de campo y etica | 345 |
-| Documentos de raiz | 139 |
+| Documentos de raiz | 151 |
 | Modelado UML e i* | 136 |
 | Manuscrito y deposito | 118 |
 | Componente empirico | 94 |
-| Paquete de datos | 57 |
+| Paquete de datos | 58 |
 | Producto minimo viable | 53 |
-| Especificacion de requisitos | 48 |
+| Especificacion de requisitos | 50 |
+| Evidencia de autoria | 42 |
 | Defensa | 41 |
-| Evidencia de autoria | 39 |
-| Trazabilidad | 32 |
+| Trazabilidad | 34 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -182,6 +182,10 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `66af0b2` | 2026-09-07 | feat(validacion): deposita la sesion WT-10 con el tercer usuario tecnico |
 | `9ad7b68` | 2026-09-07 | fix(cifras): pone de acuerdo la matriz, el corpus y la censura con lo que dicen los scripts |
 | `ef42d97` | 2026-09-07 | fix(publicacion): actualiza AFI-13 y regenera el manuscrito desde su fuente |
+| `d0a8cda` | 2026-09-07 | docs(autoria): reejecuta la verificacion previa sobre un clon limpio de ef42d97 |
+| `beec5b0` | 2026-09-07 | fix(raiz): retira un residuo y pone al dia las dos caratulas |
+| `9e2dda3` | 2026-09-07 | chore(caratula): regenera la caratula sobre la linea base etiquetada |
+| `d702848` | 2026-09-07 | fix(deposito): el DOI de version ya no dice corresponder al arbol actual |
 
 ---
 

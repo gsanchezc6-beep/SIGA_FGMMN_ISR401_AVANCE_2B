@@ -51,14 +51,24 @@ diferencia es siempre de una sola confirmacion.
 
 ## 3. Quien se retiro, y cuando
 
-El documento de identificacion subido al Sistema de Gestion Academica declaraba cuatro
-integrantes. La guia de desarrollo del 2026-09-02 observo, correctamente, que dos de esos
-cuatro no tenian ninguna confirmacion en el historial. Se resuelve asi:
+El grupo `FGMMN` del Sistema de Gestion Academica declara **cinco** integrantes. La guia
+de desarrollo del 2026-09-02 los conto sobre la caratula entonces subida, que recogia
+cuatro, y observo --correctamente-- que dos de ellos no tenian ninguna confirmacion en el
+historial. Sobre el listado completo del SGA **son dos los que no aparecen en el historial**,
+y este apartado resuelve a los dos:
 
-| Integrante declarado en el SGA | Situacion a 2026-09-03 |
+| Integrante declarado en el SGA | Situacion a 2026-09-07 |
 |---|---|
+| Sanchez Cornejo, Gary Alberto | Activo. Analista lider |
+| Munoz Quinonez, Yeranick Esther | Activa. Documentacion, trazabilidad y auditoria |
 | Cedeno Avila, Winston Damian | **Reincorporado** el 2026-09-02. Asume la transcripcion y anonimizacion del corpus de entrevistas de la ronda terminal |
 | Mendoza Palma, Allan Jeremy | **Retirado del equipo.** No produjo artefactos ni confirmaciones en este repositorio y no participa en el examen final |
+| Gilces Carranza, Jose Ignacio | **No participo en ningun momento.** Consta en el grupo del SGA y no produjo artefactos ni confirmaciones. No se le atribuye ninguna parte del trabajo |
+
+**Se declara de mas, no de menos.** El recuento anterior de este documento decia cuatro
+porque seguia a la caratula; el listado del SGA dice cinco. Se corrige al alza aunque el
+segundo nombre anada un integrante sin contribucion, porque el evaluador va a comparar
+contra el SGA y no contra la caratula.
 
 No se reclama trabajo de quien se retiro, ni se le atribuye responsabilidad sobre lo
 entregado. La caratula del SGA se corrige para reflejar la composicion vigente.
