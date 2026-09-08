@@ -87,10 +87,22 @@ sigue siendo rapido y se declara como tal.
 | Consistencia interna | --0,023 |
 | **Media** | **--0,026** |
 
-**El liston estaba acordado por escrito antes de la sesion: Fleiss ≥ 0,41.** Consta en
-`Recursos 2B/05_G8/JUECES/00_COMO_DIRIGIR_LA_SEGUNDA_VUELTA.md`, redactado el 2026-09-06
-antes de convocar a nadie, junto con la decision de que hacer en cada caso. Se aplica lo
-que ese documento ya decia.
+**Lo que estaba acordado por escrito antes de la sesion es la regla de decision, no una
+cifra.** El protocolo de la segunda vuelta ---
+[`protocolo_segunda_vuelta.md`](protocolo_segunda_vuelta.md), redactado el 2026-09-06 antes
+de convocar a nadie --- dice literalmente:
+
+> «**Si el acuerdo vuelve a salir cerca de cero**, la decision es mantener los tres jueces
+> del registro previo como analisis primario y reportar las dos vueltas como lo que son: la
+> prueba de que esta rubrica necesita evaluadores entrenados.»
+
+Es lo que se ha aplicado, sin cambiar el criterio despues de ver el resultado.
+
+**El 0,41 no procede de ese documento y no se presenta como umbral pactado.** Es la frontera
+de Landis y Koch para acuerdo moderado, el convencionalismo con el que se lee cualquier kappa
+en la literatura, y se usa aqui como referencia de lectura. La media obtenida, --0,026, no
+queda por debajo de un liston que el equipo se hubiera fijado: queda por debajo de cualquier
+lectura posible de la escala, porque es indistinguible del azar.
 
 ## 5. Por que no es un artefacto de kappa
 
@@ -144,8 +156,9 @@ jueces no mide desacuerdo, mide inestabilidad de la medicion.
 
 **El analisis primario del estudio sigue siendo el de los tres jueces del registro previo.**
 No por conveniencia --- son los que dan efecto --- sino porque es lo que fija el registro
-previo, porque son los unicos que concuerdan entre si, y porque el liston para
-sustituirlos se fijo por escrito antes de mirar los datos y no se alcanzo, dos veces.
+previo, porque son los unicos que concuerdan entre si, y porque la regla para sustituirlos
+se escribio antes de mirar los datos y la condicion que la activaba no se cumplio, dos
+veces.
 
 El contraste es directo, y se mide sobre las mismas cuatro dimensiones en los tres casos:
 
@@ -175,11 +188,15 @@ ruido.
 
 ## 8. Consentimiento de los evaluadores
 
-Los siete firmaron el consentimiento especifico del panel, en
-`Recursos 2B/05_G8/JUECES/consentimiento_juez.pdf`. Sus datos se manejan solo por el codigo
-`JUEZ-04` a `JUEZ-10`; las hojas depositadas aqui no llevan nombre, y las firmas quedan
-fuera del repositorio, en la zona restringida descrita en
-[`../../02_Evidencias/00_Restringido/README_Restringido.md`](../../02_Evidencias/00_Restringido/README_Restringido.md).
+Los siete firmaron un consentimiento especifico para el panel antes de puntuar. Sus datos
+se manejan solo por el codigo `JUEZ-04` a `JUEZ-10`: **las hojas depositadas en esta carpeta
+no llevan nombre, ni firma, ni ningun dato que permita llegar a la persona**, solo el codigo
+y las puntuaciones.
+
+Los consentimientos firmados, que si llevan nombre y firma manuscrita, **quedan fuera del
+repositorio** y estan declarados como tales en
+[`../../02_Evidencias/00_Restringido/README_Restringido.md`](../../02_Evidencias/00_Restringido/README_Restringido.md),
+apartado 2, junto con el resto del material que el consentimiento no autoriza a publicar.
 
 ## 9. Como reproducirlo
 

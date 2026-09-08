@@ -266,10 +266,12 @@ preguntas del tribunal duran diez minutos y no respetan el reparto.
 
 **Decidido el 2026-09-06. El bloque 4 se graba tal como está escrito arriba.**
 
-Se intentó ampliar el panel de tres a diez evaluadores, dos veces, y las dos fallaron. El
-listón se había fijado por escrito antes de convocar la segunda sesión —Fleiss ≥ 0,41— y se
-obtuvo **−0,026**. Se mantienen los tres jueces del registro previo como análisis primario,
-que es lo que ese documento ya decía que se haría en este caso.
+Se intentó ampliar el panel de tres a diez evaluadores, dos veces, y las dos fallaron. Se
+obtuvo un Fleiss medio de **−0,026**: indistinguible del azar en cualquier lectura de la
+escala. Lo que estaba escrito antes de convocar la segunda sesión, en
+`06_Experimento/panel_ampliado/protocolo_segunda_vuelta.md`, es **la regla de decisión**: si
+el acuerdo volvía a salir cerca de cero, se mantendrían los tres jueces del registro previo
+como análisis primario y se reportarían las dos vueltas. Es exactamente lo que se hizo.
 
 Todo está depositado en `06_Experimento/panel_ampliado/`, con los datos crudos de las dos
 vueltas y el script que los analiza.

@@ -68,9 +68,16 @@ ampliado no se pudo usar.
 ### Cambiado
 
 - **Se cierra la decision sobre el panel de diez jueces**, pendiente desde el 2026-09-05.
-  Se mantienen los **tres jueces del registro previo** como analisis primario. El liston
-  para sustituirlos --- Fleiss kappa >= 0,41 --- se fijo por escrito antes de convocar la
-  segunda sesion y se obtuvo **-0,026**. `06_Experimento/resultados/` no se toca.
+  Se mantienen los **tres jueces del registro previo** como analisis primario. La regla de
+  decision se escribio antes de convocar la segunda sesion y se obtuvo un Fleiss medio de
+  **-0,026**. `06_Experimento/resultados/` no se toca.
+
+  > **Corregido el 2026-09-08.** Esta entrada decia que el liston para sustituirlos era
+  > «Fleiss kappa >= 0,41» y que se habia fijado por escrito. La cifra no consta en el
+  > protocolo de la segunda vuelta ni en ninguna otra parte: es la frontera de Landis y Koch
+  > para acuerdo moderado, un convencionalismo de lectura, no un umbral pactado. Lo que si
+  > se escribio de antemano es la regla de decision, y ese documento se deposita ahora como
+  > `06_Experimento/panel_ampliado/protocolo_segunda_vuelta.md`.
 - **Amenaza `T2` del manuscrito, reescrita.** Decia que el acuerdo entre evaluadores «no se
   intento mejorar con entrenamiento ni con una ronda de reconciliacion». Se intento dos
   veces, con dos instrumentos distintos, y ahora se reporta con sus cifras: por que fallo,
