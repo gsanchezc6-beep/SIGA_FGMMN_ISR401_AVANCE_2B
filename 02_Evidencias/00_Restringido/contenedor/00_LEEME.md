@@ -7,20 +7,32 @@ Universidad Tecnica Estatal de Quevedo · ISR-401 · Entrega Final (2B)
 
 ## 1. Que hay aqui
 
-**272 fragmentos** de un unico archivo `SIGA_zona_restringida.7z`, cifrado con **AES-256** y
+**316 fragmentos** de un unico archivo `SIGA_zona_restringida.7z`, cifrado con **AES-256** y
 con los nombres de archivo tambien cifrados. Contiene el material que el consentimiento
 firmado **no autoriza a publicar**, y que esta enumerado en
 [`../README_Restringido.md`](../README_Restringido.md), apartado 2.
 
-Los fragmentos **no se pueden abrir por separado**. Solo sirven los 272 juntos y en orden.
+Los fragmentos **no se pueden abrir por separado**. Solo sirven los 316 juntos y en orden.
 
 | | |
 |---|---|
-| Archivo original | `SIGA_zona_restringida.7z`, 6 822 192 770 bytes |
-| SHA-256 del original | `d225b1929f89d1cfd7079e91d37445674bdc593a10bc39a528ac205649f05f8a` |
-| Fragmentos | 272, de 24 MiB cada uno salvo el ultimo |
+| Archivo original | `SIGA_zona_restringida.7z`, 7 935 839 986 bytes |
+| SHA-256 del original | `76a78d6b6be140effff3f9e3d42cbe13e6da68fa36ae49dec4b8fbb089df4f00` |
+| Fragmentos | 316, de 24 MiB cada uno salvo el ultimo |
 | Cifrado | AES-256, con cabecera de nombres cifrada |
-| Fecha del contenedor | 2026-09-04 |
+| Fecha del contenedor | 2026-09-08 |
+
+> **Rehecho el 2026-09-08.** El contenedor anterior --- 6 822 192 770 bytes en 272
+> fragmentos, SHA-256 `d225b192...49f05f8a` --- se regenero para incorporar los dos videos
+> que faltaban: el de la sesion `WT-10` con `TIC-03`, del 2026-09-07, y el de `EV-16`, que
+> estuvo declarado como no recuperable hasta que aparecio en el almacen Git LFS del
+> repositorio de la Entrega 2A. Pasa de **49 a 51 archivos**.
+>
+> **Se cifro con una contrasena distinta de la anterior.** La previa habia dejado de ser
+> secreta, y un contenedor que viaja dentro de un repositorio publico se puede descargar
+> entero y atacar sin limite de intentos. Cambiarla no es una precaucion de mas: es lo unico
+> que sigue protegiendo consentimientos con nombre y cedula, y entrevistas de diecinueve
+> personas.
 
 ## 2. Por que esta partido, y por que esta aqui dentro
 
@@ -62,7 +74,7 @@ cat SIGA_zona_restringida.7z.* > SIGA_zona_restringida.7z
 
 ## 4. Como comprobar que llegaron completos
 
-Antes de pedir la contrasena a nadie, conviene comprobar que el clon trajo los 272
+Antes de pedir la contrasena a nadie, conviene comprobar que el clon trajo los 316
 fragmentos intactos. Esto no necesita contrasena:
 
 ```bash
@@ -72,19 +84,19 @@ cat SIGA_zona_restringida.7z.* | sha256sum
 Debe dar exactamente:
 
 ```
-d225b1929f89d1cfd7079e91d37445674bdc593a10bc39a528ac205649f05f8a
+76a78d6b6be140effff3f9e3d42cbe13e6da68fa36ae49dec4b8fbb089df4f00
 ```
 
 Si coincide, el contenedor esta completo y sin alterar. Si no coincide, falta algun
 fragmento o el clon se trunco: repetir el `git clone` antes de sospechar del cifrado.
 
 La suma de cada fragmento por separado esta ademas en el manifiesto general del
-repositorio, `checksums.sha256`, de modo que `sha256sum -c` localiza **cual** de los 272
+repositorio, `checksums.sha256`, de modo que `sha256sum -c` localiza **cual** de los 316
 vino mal.
 
 ## 5. Lo que esta comprobado y lo que no
 
-**Comprobado:** que los 272 fragmentos reconstruyen el archivo original byte a byte. Se
+**Comprobado:** que los 316 fragmentos reconstruyen el archivo original byte a byte. Se
 calculo la suma SHA-256 del original y la de la concatenacion de los fragmentos, y
 coinciden. Tambien que 7-Zip reconoce el conjunto como archivo cifrado desde el primer
 fragmento.

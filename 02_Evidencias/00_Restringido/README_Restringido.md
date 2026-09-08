@@ -34,12 +34,11 @@ Contando toda la evidencia audiovisual del estudio --las entrevistas mas la sesi
 validacion comunicativa `MC-01` y las tres sesiones de validacion tecnica, `EV-26`,
 `EV-27` y `EV-28`--, la ficha inventaria **36 piezas: diecinueve videos y diecisiete audios**.
 
-> **Una de las treinta y cinco todavia no esta dentro del contenedor.** El video de la
-> sesion `WT-10` con `TIC-03`, del 2026-09-07, se inventaria con su duracion, su codec y su
-> SHA-256, pero el contenedor cifrado no se ha vuelto a generar para incluirlo: hacerlo exige
-> la contrasena, que custodia el equipo. La columna `zona` de su fila lo dice, y esta nota
-> queda hasta que se rehaga el contenedor. Se declara en lugar de dejar que el inventario
-> prometa un archivo que el clon no trae.
+> **Las treinta y seis estan dentro del contenedor.** Se rehizo el 2026-09-08 para
+> incorporar los dos que faltaban --- el video de `WT-10` con `TIC-03` y el de `EV-16` ---,
+> y en la misma operacion se cifro con una contrasena distinta de la anterior. Pasa de
+> 6 822 192 770 a **7 935 839 986 bytes** y de 272 a **316 fragmentos**. Comprobado: los 316
+> reconstruyen el archivo byte a byte.
 
 Todos superan el sondeo de codec y duracion que exige la guia: MP4 H.264 a 1280 × 720 con
 audio AAC, y MP3 a 128 kbps.
@@ -154,8 +153,8 @@ video son dos, y ninguna es una omision:
 
    **Identidad comprobada, no supuesta.** Su SHA-256 coincide con el `oid` que declara el
    propio puntero LFS, y su duracion --- 19 min 36 s --- es la misma que la del audio de
-   `EV-16`, que ya estaba inventariado. Consta en la ficha tecnica y queda **pendiente de
-   incorporar al contenedor cifrado**, igual que el video de `WT-10`.
+   `EV-16`, que ya estaba inventariado. Consta en la ficha tecnica y **esta dentro del
+   contenedor**, que se rehizo el 2026-09-08 para incorporarlo junto con el video de `WT-10`.
 
 Las seis de la ronda terminal **no son una ausencia**: existen las doce piezas --seis videos
 y seis audios--, estan declaradas en la ficha tecnica con su duracion y su hash, y residen
