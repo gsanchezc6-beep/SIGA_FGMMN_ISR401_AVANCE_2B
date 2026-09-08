@@ -44,9 +44,10 @@ una cadena de trazabilidad rota.
      orígenes — no un corpus distinto por brazo, que es lo que hacen la mayoría de los
      estudios previos.
   2. Un pipeline de análisis 100% reproducible, publicado con el paquete de datos.
-  3. Divulgación explícita de dos complicaciones metodológicas reales ocurridas durante
-     el estudio (retiro de consentimiento de un participante, y saturación temática no
-     alcanzada) en vez de ocultarlas.
+  3. Divulgación explícita de las complicaciones metodológicas reales del estudio ---
+     el retiro de consentimiento de un participante, el cierre de campo en N=10 y su
+     reapertura, y el fracaso de las dos vueltas del panel ampliado --- en vez de
+     ocultarlas.
 - Pregunta de investigación (RQ1): decirla textual, tal como aparece en el manuscrito.
 
 ## Bloque 2 — El sistema y sus stakeholders (3 min)
@@ -87,8 +88,10 @@ una cadena de trazabilidad rota.
 - Mostrar el cálculo de potencia: con 3 jueces, potencia real = 8,4%; se necesitarían
   34 pares para el 80% convencional. Esto explica por qué los intervalos son tan
   anchos.
-- Mencionar brevemente la curva de saturación temática: no llegó a inflexión, y por
-  qué (código sin consolidar) — un párrafo, no más de 30 segundos.
+- Mencionar brevemente la curva de saturación temática: **alcanza inflexión en `EV-23`**
+  y cierra en 1,333 frente a un umbral de 2,500. Con las diez primeras no saturaba; la
+  ronda terminal del 3 de septiembre la cerró. Decir también que se comprobó sobre las
+  720 ordenaciones del bloque del mismo día — un párrafo, no más de 30 segundos.
 
 ## Bloque 5 — Discusión y amenazas a la validez (4 min)
 
@@ -111,8 +114,9 @@ una cadena de trazabilidad rota.
   el tamaño de muestra actual; se declara así explícitamente, sin sobre-interpretar
   la tendencia numérica favorable al LLM.
 - Trabajo futuro concreto (citar los 3 del manuscrito): ampliar el panel a 34 jueces,
-  re-generar el Conjunto A sobre el corpus corregido de 10 entrevistas, aplicar
-  codificación axial y recalcular la curva de saturación.
+  re-generar los dos conjuntos sobre el corpus completo de 16 entrevistas, y ampliar la
+  ronda terminal más allá del perfil docente, que es la reserva que queda declarada sobre
+  la saturación.
 - Cerrar reafirmando las 3 contribuciones del bloque 1 con la evidencia ya mostrada.
 
 ## Bloque 7 — Demostración del prototipo (2 min)

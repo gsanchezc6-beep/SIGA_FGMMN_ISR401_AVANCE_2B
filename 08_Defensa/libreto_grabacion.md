@@ -231,8 +231,11 @@ grabar. No se abre nada en directo.*
 > campo. Seis de esas notas son manuscritas y contemporáneas, escritas durante la sesión; las
 > otras seis son reconstrucción documentada y **lo dicen ellas mismas en su cabecera**.
 >
-> Y la codificación la hicimos dos personas por separado sobre el mismo subconjunto: kappa de
-> Cohen de cero coma seiscientos treinta y cinco, acuerdo sustancial.»
+> Y la codificación la hicimos dos personas por separado sobre el mismo subconjunto. El kappa
+> de Cohen es de cero coma cinco cuatro ocho a nivel de código, que es acuerdo **moderado**, y
+> de cero coma nueve uno uno a nivel de categoría. Damos las dos porque la diferencia entre
+> ellas es el hallazgo: coincidimos casi siempre en de qué trata el fragmento, y discrepamos
+> en qué código exacto asignarle.»
 
 *Avanza y cede a Gary.*
 
