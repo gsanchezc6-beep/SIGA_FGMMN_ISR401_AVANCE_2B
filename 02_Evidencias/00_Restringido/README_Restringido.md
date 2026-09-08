@@ -27,12 +27,12 @@ declaradas en la ficha tecnica con `zona = Restringida`, con su duracion, su cod
 hash, para que se pueda comprobar que existen y cuales son sin publicarlas.
 
 **Ninguna de las dieciseis entrevistas carece de registro sonoro.** De las entrevistas hay
-**dieciseis audios y catorce videos**; las dos ausencias de video estan explicadas una a una
+**dieciseis audios y quince videos**; la unica ausencia de video esta explicada
 en el apartado 4.
 
 Contando toda la evidencia audiovisual del estudio --las entrevistas mas la sesion de
 validacion comunicativa `MC-01` y las tres sesiones de validacion tecnica, `EV-26`,
-`EV-27` y `EV-28`--, la ficha inventaria **35 piezas: dieciocho videos y diecisiete audios**.
+`EV-27` y `EV-28`--, la ficha inventaria **36 piezas: diecinueve videos y diecisiete audios**.
 
 > **Una de las treinta y cinco todavia no esta dentro del contenedor.** El video de la
 > sesion `WT-10` con `TIC-03`, del 2026-09-07, se inventaria con su duracion, su codec y su
@@ -145,9 +145,17 @@ video son dos, y ninguna es una omision:
    repositorio, ni en el contenedor, ni en la codificacion tematica, ni en el material
    fuente del componente empirico.
 
-3. **El video del 2026-07-30 (DOC-04, EV-16) no esta en el repositorio.** Existe y su
-   hash consta en el historial del proyecto, pero el archivo no se pudo recuperar de los
-   medios disponibles. Su audio si esta publicado.
+3. **El video del 2026-07-30 (DOC-04, EV-16) se recupero el 2026-09-08.** Estuvo
+   declarado como no recuperable hasta esa fecha. Estaba donde la propia declaracion decia
+   --- en el historial del proyecto ---, concretamente en el almacen **Git LFS del
+   repositorio de la Entrega 2A**: la copia que el equipo manejaba era un ZIP descargado y
+   no un clon, de modo que los punteros LFS nunca se resolvieron y el archivo figuraba como
+   134 bytes. Se recupero con `git lfs pull` sobre un clon de ese repositorio.
+
+   **Identidad comprobada, no supuesta.** Su SHA-256 coincide con el `oid` que declara el
+   propio puntero LFS, y su duracion --- 19 min 36 s --- es la misma que la del audio de
+   `EV-16`, que ya estaba inventariado. Consta en la ficha tecnica y queda **pendiente de
+   incorporar al contenedor cifrado**, igual que el video de `WT-10`.
 
 Las seis de la ronda terminal **no son una ausencia**: existen las doce piezas --seis videos
 y seis audios--, estan declaradas en la ficha tecnica con su duracion y su hash, y residen

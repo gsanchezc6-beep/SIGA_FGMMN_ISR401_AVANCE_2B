@@ -1,0 +1,13 @@
+﻿item,respuesta,n,porcentaje_sobre_validos
+importancia_explicacion,1,7,11.9
+importancia_explicacion,2,10,16.9
+importancia_explicacion,3,15,25.4
+importancia_explicacion,4,9,15.3
+importancia_explicacion,5,18,30.5
+tipo_de_explicacion,Un detalle técnico,22,37.3
+tipo_de_explicacion,Una frase simple,16,27.1
+tipo_de_explicacion,Un ejemplo de un caso anterior,13,22.0
+tipo_de_explicacion,"Ninguna, solo la alerta",8,13.6
+importancia_explicacion,media,3.356,
+importancia_explicacion,IC95_inferior,3.0,
+importancia_explicacion,IC95_superior,3.695,

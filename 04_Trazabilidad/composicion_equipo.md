@@ -73,6 +73,18 @@ contra el SGA y no contra la caratula.
 No se reclama trabajo de quien se retiro, ni se le atribuye responsabilidad sobre lo
 entregado. La caratula del SGA se corrige para reflejar la composicion vigente.
 
+**La solicitud esta presentada y firmada.**
+[`2026-09-08_Solicitud_Cambio_Composicion.pdf`](2026-09-08_Solicitud_Cambio_Composicion.pdf),
+tres paginas, suscrita por los tres integrantes el 2026-09-08. Expone el cambio con sus
+fechas, resuelve por su nombre a los dos declarados que no tienen confirmaciones, y pide tres
+cosas: que se autorice la composicion de tres, que se indique si debe corregirse la caratula
+del Sistema de Gestion Academica, y que **se deje constancia de que la solicitud se presenta
+fuera de plazo** y de la consecuencia que ello tenga sobre la calificacion.
+
+**Lo que el escrito no puede darse a si mismo es la autorizacion.** Subsana la omision de no
+haberla pedido antes; concederla o no es del docente, y hasta que resuelva se declara
+pendiente. Se prefiere que conste a que se pase por alto.
+
 ## 4. Que no se reescribe
 
 Hay evidencia firmada que no admite actualizacion retroactiva, y no se toca:

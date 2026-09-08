@@ -383,10 +383,15 @@ revision y no por caso de prueba, y `RF-09` y `RF-18` no llevan historia de usua
 contradiria su propia regla. La columna se comprueba por script.
 → `04_Trazabilidad/huerfanos_y_cadenas_rotas.md`, `python 04_Trazabilidad/verificar_matriz.py`
 
-**I8. Hay dieciseis entrevistas y solo catorce videos. ¿Donde estan los otros?**
-Dos ausencias, declaradas desde agosto. `EV-14` se registro **solo en audio por peticion
-expresa del participante**, y el video de `EV-16` existe pero no se pudo recuperar de los
-medios disponibles; su audio si esta publicado. Ademas, el video y el audio de las seis de la
+**I8. Hay dieciseis entrevistas y quince videos. ¿Donde esta el que falta?**
+Una sola ausencia: `EV-14` se registro **solo en audio por peticion expresa del
+participante**. No es una omision, es un limite del consentimiento.
+
+Hubo una segunda hasta el 2026-09-08. El video de `EV-16` estaba declarado como no
+recuperable, y aparecio donde la propia declaracion decia que estaba: en el **Git LFS del
+repositorio de la Entrega 2A**. La copia que maneja el equipo es un ZIP descargado, no un
+clon, y por eso los punteros LFS figuraban como archivos de 134 bytes. Su SHA-256 coincide
+con el `oid` del puntero y su duracion con la del audio ya inventariado. Ademas, el video y el audio de las seis de la
 ronda terminal **no se publican**: su consentimiento dice literalmente que las grabaciones
 originales no se publican, de modo que a la zona publica va solo la transcripcion anonimizada.
 → `02_Evidencias/00_Restringido/README_Restringido.md`, apartados 1 y 4
