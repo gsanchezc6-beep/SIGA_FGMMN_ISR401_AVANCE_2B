@@ -88,10 +88,12 @@ faltaban -clase, proceso, caso de prueba y estado de la traza- ya anadidas: la m
 de 13 a 18 columnas. El **92 %** de los requisitos, 23 de 25, tiene la cadena hacia
 adelante completa; antes era 12 de 25.
 
-Ahora la parte incomoda, por si la preguntan: de las 75 filas, **34 cierran la cadena
-entera**. Las otras 40 no se esconden, se clasifican: quince huerfanas -el requisito nace
-de la ley, no de una entrevista-, catorce parciales y doce restricciones de diseno, que se
-verifican por revision y no por caso de prueba. Cada una con su causa y su accion.
+Ahora la parte incomoda, por si la preguntan: de las 75 filas, **41 cierran la cadena
+entera**. Las otras 34 no se esconden, se clasifican: **nueve huerfanas** -el requisito nace
+de la ley, no de una entrevista-, **dieciseis parciales** y **nueve restricciones de diseno**
+con algun eslabon que no aplica, porque se verifican por revision y no por caso de prueba.
+Cada una con su causa y su accion, y la cifra se recalcula con
+`python 04_Trazabilidad/verificar_matriz.py`.
 
 Las ocho ultimas filas son los requisitos no funcionales del componente inteligente,
 RNF-IA-01 a RNF-IA-08. Antes el componente de IA estaba descrito en el texto pero no
@@ -371,7 +373,7 @@ estadistica alcanza un panel ciego de tres jueces y que tamano necesitaria una r
 estaba calculada por script antes de enunciarla.
 → `06_Experimento/resultados/power_calculation.csv`
 
-**I7. La matriz tiene 41 filas con cadena completa de 74. ¿Y las otras 33?**
+**I7. La matriz tiene 41 filas con cadena completa de 75. ¿Y las otras 34?**
 Las setenta y cinco tienen **todos sus eslabones declarados**: ninguna celda dice nada
 ambiguo. Las que no cierran no estan a medio hacer, **no pueden** cerrar: nueve nacen del
 analisis normativo de la Ley Organica de Proteccion de Datos y no de entrevista --inventarles

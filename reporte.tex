@@ -702,11 +702,13 @@ una correcci\'on de redacci\'on.
 
 La matriz de trazabilidad contiene \textbf{75 filas}, por encima de las
 \textbf{60} que exige el criterio, y sin una sola celda vac\'ia. De ellas,
-\textbf{34 cierran la cadena de extremo a extremo}; las 40 restantes se declaran una
+\textbf{41 cierran la cadena de extremo a extremo}; las 34 restantes se declaran una
 a una con su causa en \texttt{04\_Trazabilidad/huerfanos\_y\_cadenas\_rotas.md}:
-quince son hu\'erfanas porque el requisito nace de an\'alisis normativo y no de campo,
-catorce est\'an parciales a falta de un eslab\'on hacia adelante, y once son restricciones
-de dise\~no, que no se verifican por caso de prueba sino por revisi\'on.
+nueve son hu\'erfanas porque el requisito nace de an\'alisis normativo y no de campo,
+diecis\'eis est\'an parciales a falta de un eslab\'on hacia adelante, y nueve son
+restricciones de dise\~no con alg\'un eslab\'on que no aplica, porque no se verifican por
+caso de prueba sino por revisi\'on. La cifra se recalcula con
+\texttt{python 04\_Trazabilidad/verificar\_matriz.py}.
 Las ocho filas m\'as recientes corresponden a los requisitos no funcionales del
 componente inteligente (RNF-IA-01 a RNF-IA-08), cada uno con su m\'etrica, unidad,
 umbral, m\'etodo de verificaci\'on, responsable y frecuencia de medici\'on, seg\'un

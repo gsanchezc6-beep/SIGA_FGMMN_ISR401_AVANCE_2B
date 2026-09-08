@@ -142,12 +142,15 @@ sin mirar las diapositivas, son:
 - **La matriz de trazabilidad.** Como se cierra una cadena rota y por que las 75 filas no
   tienen ninguna celda vacia.
 - **El cierre en diez entrevistas, y su reapertura.** Que se declaro entonces, y por que el
-  corpus son ahora dieciseis mientras el analisis sigue sobre las diez codificadas.
+  corpus son ahora dieciseis, **las dieciseis codificadas**, con la saturacion alcanzada en
+  `EV-23` y comprobada sobre las 720 ordenaciones del bloque del mismo dia.
 - **Los dos umbrales corregidos.** `RNF-04` paso de dos a cinco minutos y `RNF-14` dejo de
   tener una cifra unica, los dos **contra evidencia de campo**. Es la respuesta mas fuerte que
   tienen: corrigieron la especificacion porque preguntaron, no porque les convenia.
-- **La sesion tecnica que falto.** Una de las tres, con la causa declarada: el area de TICS
-  estaba en remodelacion. Y por que los conserjes no cuentan como perfil tecnico, que lo dicen
+- **Las tres sesiones tecnicas, y lo que costo reunirlas.** `TIC-01`, `TIC-02` y `TIC-03`,
+  del 4, 5 y 7 de septiembre: el area de TICS estaba en remodelacion el primer dia. Lo que
+  sigue corto es el alcance, quince minutos por sesion. Y por que los conserjes no cuentan
+  como perfil tecnico, que lo dicen
   ellos mismos en sus transcripciones.
 
 **El banco de preguntas cubre estas y ocho mas** en su seccion G, cada una con el artefacto

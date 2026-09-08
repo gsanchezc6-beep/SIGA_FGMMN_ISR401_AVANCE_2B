@@ -97,7 +97,7 @@ solo en el repositorio de su entrega.
 | Version citada por el manuscrito | [`10.5281/zenodo.22557171`](https://doi.org/10.5281/zenodo.22557171) --- version `2B-1.11.0`, la que corresponde a este arbol |
 | Registro previo del protocolo en OSF | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) |
 | **Caratula de identificacion** | [`caratula_identificacion_SGA.pdf`](caratula_identificacion_SGA.pdf), con la URL del repositorio, el identificador del ultimo commit y la etiqueta de linea base. Se deposita aqui ademas de subirse al Sistema de Gestion Academica |
-| **Linea base vigente** | Etiqueta anotada **`2B-final-v3.0`**, la version entregada para el examen final de la semana 19. `2B-final` y `2B-final-v2.1` apuntan al commit `0e69071`, el de la Entrega 2B ya calificada, y se conservan como referencia historica |
+| **Linea base vigente** | Etiqueta anotada **`2B-final-v4.0`**, la version entregada para el examen final de la semana 19. Sustituye a `2B-final-v3.0`, que se quedo en el estado del 2026-09-04 y no incluye ni el corpus codificado, ni el panel ampliado, ni la tercera sesion tecnica. `2B-final`, `2B-final-v2.1` y `2B-final-v3.0` se conservan como referencia historica |
 | Desviaciones respecto del protocolo | `06_Experimento/registro_previo/bitacora_desviaciones.pdf` |
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
 | Autoevaluacion FAIR | [`fair_assessment.pdf`](fair_assessment.pdf) --- **22 de 26 indicadores, 84,62 %**, nivel *moderate*. Salida real de F-UJI 4.0.0; el volcado crudo esta en `fair_assessment.json` y el informe lo genera `generar_fair_assessment.py` |
@@ -366,9 +366,9 @@ y llevo el corpus al minimo terminal aplicable, con lo que aquella reduccion que
 El documento de etica se conserva sin reescribir, con una nota de estado al inicio: registra
 lo que ocurrio y cuando, que es justamente lo que lo hace util.
 
-**Las seis de la ronda terminal estan transcritas pero todavia no codificadas**, de modo que
-la codificacion tematica y la curva de saturacion que se citan mas abajo siguen cubriendo las
-diez primeras. Las grabaciones de esas seis no se publican, por lo que dice su
+**Las dieciseis estan transcritas y codificadas.** Las seis de la ronda terminal se
+codificaron el 2026-09-06, repartidas entre los tres integrantes por entrevista completa: 136
+fragmentos bajo 50 codigos. Las grabaciones de esas seis no se publican, por lo que dice su
 consentimiento: su ficha tecnica y su ubicacion constan en
 [`02_Evidencias/00_Restringido/`](02_Evidencias/00_Restringido/).
 
@@ -380,10 +380,17 @@ unidades; con las disponibles la potencia alcanzada es del 8,4 %. La consecuenci
 la interpretacion de los resultados se declara en la seccion de amenazas a la validez
 del reporte.
 
-La curva de saturacion tematica **no alcanza inflexion** sobre las diez codificadas: la
-ultima entrevista todavia aporta cuatro codigos nuevos sobre 36 acumulados
-([`tablas/saturacion_por_entrevista.csv`](07_Publicacion/tablas/saturacion_por_entrevista.csv)). Se
-declara como limitacion remanente, no como saturacion alcanzada.
+La curva de saturacion tematica **alcanza inflexion en `EV-23`**, la decimocuarta: a partir
+de ahi el promedio de codigos nuevos de las tres ultimas entrevistas queda por debajo del 5 %
+de los acumulados. Cierra en **1,333 frente a un umbral de 2,500**, sobre 50 codigos
+([`tablas/saturacion_por_entrevista.csv`](07_Publicacion/tablas/saturacion_por_entrevista.csv)).
+
+Como el resultado cambio justo cuando convenia, se probaron **las 720 ordenaciones posibles**
+del bloque de seis entrevistas del mismo dia: satura en las 720, y el peor caso --- 2,333 ---
+sigue por debajo del umbral. Se reproduce con
+`python 02_Evidencias/Codificacion_Tematica/robustez_saturacion.py`. Las tres reservas que
+matizan el resultado, incluida una que va en contra, estan en
+[`00_LEEME_SATURACION.md`](02_Evidencias/Codificacion_Tematica/00_LEEME_SATURACION.md).
 
 Una entrevista adicional (EV-15, participante DOC-03) fue excluida por retiro del
 consentimiento informado del participante, y su material fue suprimido conforme a la

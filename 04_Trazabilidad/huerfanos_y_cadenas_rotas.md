@@ -4,7 +4,7 @@
 Generado el 2026-08-31 sobre `matriz_trazabilidad.csv`, y actualizado el 2026-09-03
 al anadirse los ocho requisitos no funcionales del componente inteligente y, el 2026-09-06,
 la restriccion `RD-01`: **75 filas**
-y 18 columnas. De ellas, **34 cierran la cadena de extremo a extremo** y las 74 tienen todos sus eslabones declarados.
+y 18 columnas. De ellas, **41 cierran la cadena de extremo a extremo** y las 75 tienen todos sus eslabones declarados.
 
 La guia exige que los huerfanos y las cadenas rotas se listen **con su causa y su
 accion**, no que no existan. Este documento los enumera uno a uno.
@@ -30,15 +30,18 @@ cuenta como cerrada en esta matriz, porque hay dos lecturas y las dos cifras son
 
 | Lectura | Cifra |
 |---|---|
-| Filas **sin ningun eslabon sin declarar** --- cada celda dice que enlace existe o por que no aplica | **74 de 74** |
-| Filas con la cadena **completa**: fuente, caso de uso, clase, proceso, caso de prueba, historia y criterio | **41 de 74** --- 38 clasificadas «Completa» y 3 que la tienen entera pero son restricciones de diseno |
+| Filas **sin ningun eslabon sin declarar** --- cada celda dice que enlace existe o por que no aplica | **75 de 75** |
+| Filas con la cadena **completa**: fuente, caso de uso, clase, proceso, caso de prueba, historia y criterio | **41 de 75** --- 38 clasificadas «Completa» y 3 que la tienen entera pero son restricciones de diseno |
+| Filas que **no cierran** | **34 de 75** --- 9 huerfanas, 16 parciales y 9 restricciones de diseno con algun eslabon que no aplica |
 
 La diferencia no son filas a medio hacer: son filas que **no pueden** tener todos los
 eslabones, y el motivo esta declarado fila a fila en los apartados que siguen.
 
-- **Quince huerfanas** no proceden de entrevista porque nacen del analisis normativo de la
+- **Nueve huerfanas** no proceden de entrevista porque nacen del analisis normativo de la
   Ley Organica de Proteccion de Datos Personales o de decision tecnica. Inventarles una
-  evidencia de campo seria fabricarla.
+  evidencia de campo seria fabricarla. Contando tambien las restricciones de diseno que
+  nacen de la misma via, **catorce filas declaran «Sin evidencia de campo»** y tres mas
+  declaran «No aplica».
 - **Doce restricciones de diseno** no se verifican por caso de prueba sino por revision de
   diseno. Es lo que son. **La ERS define dieciocho, y seis no tienen fila en la matriz**:
   el motivo de cada una esta en el apartado 7.
