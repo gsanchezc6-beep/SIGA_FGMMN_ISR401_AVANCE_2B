@@ -14,7 +14,7 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **130** | 2026-08-30 | 2026-09-07 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **131** | 2026-08-30 | 2026-09-07 |
 | Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **83** | 2026-08-30 | 2026-09-07 |
 | Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **9** | 2026-09-04 | 2026-09-06 |
 
@@ -27,23 +27,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 130**, de 2026-08-30 a 2026-09-07.
+**Confirmaciones: 131**, de 2026-08-30 a 2026-09-07.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 344 |
+| Evidencia de campo y etica | 345 |
+| Documentos de raiz | 137 |
 | Modelado UML e i* | 136 |
-| Documentos de raiz | 135 |
 | Manuscrito y deposito | 116 |
 | Componente empirico | 94 |
 | Paquete de datos | 57 |
 | Producto minimo viable | 53 |
 | Especificacion de requisitos | 48 |
-| Defensa | 39 |
+| Defensa | 41 |
 | Evidencia de autoria | 38 |
-| Trazabilidad | 30 |
+| Trazabilidad | 31 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -180,6 +180,7 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `d927745` | 2026-09-07 | feat(fair): sustituye la autoevaluacion redactada a mano por la salida real de F-UJI |
 | `b4b1375` | 2026-09-07 | chore(integridad): incorpora al manifiesto los tres archivos de la autoevaluacion FAIR |
 | `66af0b2` | 2026-09-07 | feat(validacion): deposita la sesion WT-10 con el tercer usuario tecnico |
+| `9ad7b68` | 2026-09-07 | fix(cifras): pone de acuerdo la matriz, el corpus y la censura con lo que dicen los scripts |
 
 ---
 
