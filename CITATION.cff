@@ -17,7 +17,7 @@ identifiers:
     description: "Deposito FAIR del paquete de replicacion en Zenodo, bajo licencia CC BY 4.0. DOI de concepto: agrupa todas las versiones y resuelve siempre a la mas reciente."
   - type: doi
     value: "10.5281/zenodo.22557171"
-    description: "DOI de la version 2B-1.11.0, la que corresponde al contenido de este arbol. Es el que fija el manuscrito, porque una cita necesita saber que version se cito."
+    description: "DOI de la version 2B-1.11.0, del 2026-09-06. Es el que fija el manuscrito, porque una cita necesita saber que version se cito. El arbol ha avanzado a 2B-1.12.0 y ese deposito esta pendiente: este DOI no resuelve al contenido actual, sino al que el manuscrito cito."
   - type: doi
     value: "10.17605/OSF.IO/7PQ3H"
     description: "Registro previo del protocolo del componente empirico en OSF."
