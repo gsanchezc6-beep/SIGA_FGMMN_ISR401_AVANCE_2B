@@ -14,7 +14,7 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **129** | 2026-08-30 | 2026-09-07 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **130** | 2026-08-30 | 2026-09-07 |
 | Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **83** | 2026-08-30 | 2026-09-07 |
 | Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **9** | 2026-09-04 | 2026-09-06 |
 
@@ -27,23 +27,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 129**, de 2026-08-30 a 2026-09-07.
+**Confirmaciones: 130**, de 2026-08-30 a 2026-09-07.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 336 |
-| Modelado UML e i* | 135 |
-| Documentos de raiz | 132 |
-| Manuscrito y deposito | 115 |
+| Evidencia de campo y etica | 344 |
+| Modelado UML e i* | 136 |
+| Documentos de raiz | 135 |
+| Manuscrito y deposito | 116 |
 | Componente empirico | 94 |
 | Paquete de datos | 57 |
 | Producto minimo viable | 53 |
 | Especificacion de requisitos | 48 |
-| Defensa | 37 |
-| Evidencia de autoria | 37 |
-| Trazabilidad | 28 |
+| Defensa | 39 |
+| Evidencia de autoria | 38 |
+| Trazabilidad | 30 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -179,6 +179,7 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `4dc5f38` | 2026-09-07 | fix(ers): anade a Cedeno Avila a la caratula y regenera el PDF desde su fuente |
 | `d927745` | 2026-09-07 | feat(fair): sustituye la autoevaluacion redactada a mano por la salida real de F-UJI |
 | `b4b1375` | 2026-09-07 | chore(integridad): incorpora al manifiesto los tres archivos de la autoevaluacion FAIR |
+| `66af0b2` | 2026-09-07 | feat(validacion): deposita la sesion WT-10 con el tercer usuario tecnico |
 
 ---
 

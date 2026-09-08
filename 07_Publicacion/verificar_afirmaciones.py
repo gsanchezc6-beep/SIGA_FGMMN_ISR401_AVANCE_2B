@@ -172,8 +172,8 @@ AFIRMACIONES = [
      "reporte.tex; presentacion.pptx; libreto_grabacion.md"),
 
     ("AFI-13",
-     "El registro de consentimientos tiene 21 participantes, 18 citables en el manuscrito",
-     "21|18",
+     "El registro de consentimientos tiene 22 participantes, 19 citables en el manuscrito",
+     "22|19",
      lambda: "%d|%d" % (
          cuenta("02_Evidencias/Consentimientos/registro_consentimientos.csv"),
          cuenta("02_Evidencias/Consentimientos/registro_consentimientos.csv",
