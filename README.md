@@ -94,7 +94,7 @@ solo en el repositorio de su entrega.
 | Que | Identificador |
 |---|---|
 | Paquete de datos en Zenodo | [`10.5281/zenodo.21774350`](https://doi.org/10.5281/zenodo.21774350) --- **DOI de concepto**, resuelve siempre a la version mas reciente |
-| Version citada por el manuscrito | [`10.5281/zenodo.22557171`](https://doi.org/10.5281/zenodo.22557171) --- version `2B-1.11.0`, la que corresponde a este arbol |
+| Version citada por el manuscrito | [`10.5281/zenodo.22663649`](https://doi.org/10.5281/zenodo.22663649) --- version `2B-1.12.0`, la que corresponde a este arbol |
 | Registro previo del protocolo en OSF | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) |
 | **Caratula de identificacion** | [`caratula_identificacion_SGA.pdf`](caratula_identificacion_SGA.pdf), con la URL del repositorio, el identificador del ultimo commit y la etiqueta de linea base. Se deposita aqui ademas de subirse al Sistema de Gestion Academica |
 | **Linea base vigente** | Etiqueta anotada **`2B-final-v4.0`**, la version entregada para el examen final de la semana 19. Sustituye a `2B-final-v3.0`, que se quedo en el estado del 2026-09-04 y no incluye ni el corpus codificado, ni el panel ampliado, ni la tercera sesion tecnica. `2B-final`, `2B-final-v2.1` y `2B-final-v3.0` se conservan como referencia historica |

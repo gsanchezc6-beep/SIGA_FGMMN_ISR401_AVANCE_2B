@@ -11,8 +11,7 @@ Identificadores persistentes bajo los que este material esta depositado, con sus
 | Que | Identificador persistente | Fecha |
 |---|---|---|
 | **Paquete de datos --- DOI de concepto** | [`10.5281/zenodo.21774350`](https://doi.org/10.5281/zenodo.21774350) | resuelve siempre a la version mas reciente |
-| **Ultima version depositada** `2B-1.11.0` | [`10.5281/zenodo.22557171`](https://doi.org/10.5281/zenodo.22557171) | 2026-09-06 |
-| **Version del arbol** `2B-1.12.0` | deposito **pendiente** | el arbol avanzo tras el deposito: WT-10, las cifras de la matriz y las dos caratulas |
+| **Version vigente** `2B-1.12.0` | [`10.5281/zenodo.22663649`](https://doi.org/10.5281/zenodo.22663649) | 2026-09-08 |
 | Registro previo del protocolo | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) | 2026-08-02, 20:25:07 UTC |
 | Instantanea del codigo | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` | 2026-08-31 |
 
@@ -20,6 +19,7 @@ Identificadores persistentes bajo los que este material esta depositado, con sus
 
 | Version | DOI | Fecha | Que cambio despues |
 |---|---|---|---|
+| `2B-1.11.0` | [`10.5281/zenodo.22557171`](https://doi.org/10.5281/zenodo.22557171) | 2026-09-06 | No incluia la tercera sesion tecnica `WT-10`, su matriz tenia 74 filas y el acuerdo de la doble codificacion figuraba con una cifra que no salia de los datos |
 | `2B-1.9.x` | [`10.5281/zenodo.22137679`](https://doi.org/10.5281/zenodo.22137679) | 2026-08-31 | Llevaba la codificacion tematica de diez entrevistas y no incluia el panel ampliado |
 
 **El DOI de una version no se reutiliza.** Cada version publicada en Zenodo recibe el suyo y
@@ -33,7 +33,7 @@ actual del arbol.
 | | Se usa en | Por que |
 |---|---|---|
 | **Concepto** `10.5281/zenodo.21774350` | README, `CITATION.cff`, divulgacion | Lleva siempre a la ultima version. Quien lo siga dentro de un ano encontrara el paquete al dia, no el de hoy |
-| **Version** `10.5281/zenodo.22557171` | Manuscrito, protocolo, analisis de revistas | Fija el contenido exacto que se cito. Una cita que apunta a «la ultima version» no es verificable: lo que se leyo pudo cambiar despues. Corresponde a `2B-1.11.0`, no al arbol actual |
+| **Version** `10.5281/zenodo.22663649` | Manuscrito, protocolo, analisis de revistas | Fija el contenido exacto que se cito. Una cita que apunta a «la ultima version» no es verificable: lo que se leyo pudo cambiar despues. Corresponde a `2B-1.12.0`, que es el contenido de este arbol |
 
 Es la distincion que separa «donde vive esto» de «que fue exactamente lo que cite».
 

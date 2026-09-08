@@ -3,8 +3,8 @@ message: "Si utiliza este trabajo, citelo de la siguiente manera."
 type: software
 
 title: "SIGA - Sistema Inteligente de Gestion de Aulas: especificacion de requisitos y paquete de replicacion"
-version: "2B-1.11.0"
-date-released: "2026-09-06"
+version: "2B-1.12.0"
+date-released: "2026-09-08"
 
 repository-code: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
 url: "https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B"
@@ -16,8 +16,8 @@ identifiers:
     value: "10.5281/zenodo.21774350"
     description: "Deposito FAIR del paquete de replicacion en Zenodo, bajo licencia CC BY 4.0. DOI de concepto: agrupa todas las versiones y resuelve siempre a la mas reciente."
   - type: doi
-    value: "10.5281/zenodo.22557171"
-    description: "DOI de la version 2B-1.11.0, del 2026-09-06. Es el que fija el manuscrito, porque una cita necesita saber que version se cito. El arbol ha avanzado a 2B-1.12.0 y ese deposito esta pendiente: este DOI no resuelve al contenido actual, sino al que el manuscrito cito."
+    value: "10.5281/zenodo.22663649"
+    description: "DOI de la version 2B-1.12.0, del 2026-09-08, que corresponde al contenido de este arbol. Es el que fija el manuscrito, porque una cita necesita saber que version se cito. El de la version anterior, 10.5281/zenodo.22557171, sigue resolviendo y consta en 07_Datos/registro_deposito.md."
   - type: doi
     value: "10.17605/OSF.IO/7PQ3H"
     description: "Registro previo del protocolo del componente empirico en OSF."
