@@ -247,28 +247,34 @@ diapositiva delante.
 
 ---
 
-# 9 · CEDEÑO — Conclusiones y trabajo futuro · 2:00
+# 9 · CEDEÑO — Paquete de replicación · 2:00
 
 *Diapositiva 9.*
 
-> «La respuesta a la pregunta de investigación es que **queda abierta**: con el tamaño de
-> muestra actual **no se puede confirmar ni descartar** una diferencia de calidad. La
-> tendencia numérica favorable al modelo no se interpreta más allá de eso.
+> «Todo lo que acaban de ver se puede rehacer sin pedirnos nada.
 >
-> El trabajo futuro es concreto y sale de nuestros propios números.
+> Publicamos un **paquete de replicación** con los datos crudos, los scripts de análisis y los
+> resultados. **Una sola orden regenera las tablas y las figuras del manuscrito** a partir de
+> los datos. No es un enlace a una carpeta: es el estudio entero, ejecutable.
 >
-> **Primero**, ampliar el panel a treinta y cuatro jueces, que es exactamente el número que
-> pide el cálculo de potencia. Y con evaluadores entrenados, que es la lección que nos dejó
-> el panel ampliado.
+> Y está depositado bajo **tres identificadores persistentes**, los tres comprobados.
 >
-> **Segundo**, regenerar los dos conjuntos de requisitos sobre el corpus completo de
-> dieciséis entrevistas, porque el estudio se ejecutó cuando teníamos diez.
+> El primero es **Zenodo**, con el DOI de la versión 2B-1.12.0 del paquete de datos, bajo
+> licencia Creative Commons. Ese identificador fija el contenido exacto: quien lo siga dentro
+> de cinco años encuentra lo mismo que citamos hoy.
 >
-> **Tercero**, ampliar la ronda terminal más allá del perfil docente: las seis últimas
-> entrevistas son todas de docentes, y eso acota el alcance de la saturación.
+> El segundo es **el Open Science Framework**, donde está el protocolo registrado el dos de
+> agosto, antes de recoger un solo dato, con sello temporal externo al equipo.
 >
-> Las tres contribuciones del principio se sostienen con la evidencia que acaban de ver: la
-> comparación pareada, el pipeline reproducible y el registro completo del proceso.»
+> Y el tercero es **Software Heritage**, el archivo universal de código fuente, que conserva
+> nuestro código con su propio identificador permanente.
+>
+> Sobre ese depósito pasamos la autoevaluación **FAIR con la herramienta F-UJI**, que es
+> externa y automatizada: **veintidós indicadores de veintiséis, un ochenta y cuatro coma
+> sesenta y dos por ciento**. En localizable sacamos **siete de siete**.
+>
+> Es la parte del trabajo que sobrevive al curso: dentro de un año el repositorio puede
+> cambiar, pero esos tres identificadores siguen resolviendo.»
 
 *Avanza y cede a Yeranick.*
 
