@@ -81,11 +81,10 @@ diapositiva delante.
 > publicado junto con el paquete de datos: los scripts, los datos crudos y los resultados.
 > Cualquiera puede regenerar nuestras tablas y nuestras figuras.
 >
-> Y la tercera, que es la que más nos costó: **documentamos las complicaciones reales del
-> estudio en vez de esconderlas**. Un participante retiró su consentimiento y eliminamos su
-> material entero. Cerramos el campo en diez entrevistas y tuvimos que reabrirlo. Y lo
-> intentamos con un panel ampliado de evaluadores que **falló dos veces**. Las tres cosas
-> están en el manuscrito, con sus cifras.»
+> Y la tercera es el **registro completo del proceso**, incluidas sus complicaciones: un
+> participante retiró su consentimiento y su material se eliminó entero; el campo se cerró en
+> diez entrevistas y se reabrió hasta dieciséis; y se intentó un panel ampliado de evaluadores
+> que no alcanzó acuerdo. Las tres constan en el manuscrito con sus cifras.»
 
 *Avanza y cede a Yeranick.*
 
@@ -109,10 +108,8 @@ diapositiva delante.
 > notas de campo**. Los tres perfiles están bien representados; no es que hayamos hablado
 > quince veces con docentes y una con conserjería.
 >
-> Y una cosa que conviene decir ya, porque va a volver a salir: **el perfil que menos
-> pudimos consultar es el técnico**, y es precisamente el destinatario de los requisitos con
-> los umbrales más exigentes. Eso está declarado como amenaza a la validez de constructo, no
-> lo descubrimos hoy.»
+> El perfil menos consultado es el técnico, y es el destinatario de los requisitos con los
+> umbrales más exigentes. Consta como amenaza a la validez de constructo en el manuscrito.»
 
 *Avanza y cede a Gary.*
 
@@ -158,9 +155,8 @@ diapositiva delante.
 > analista humano.** Las cinco. Si nos quedáramos aquí, el titular sería que el modelo
 > escribe mejores requisitos.
 >
-> No nos vamos a quedar aquí. Una diferencia favorable en los datos crudos **no implica, por
-> sí sola, significancia estadística**, y las dos diapositivas siguientes son exactamente
-> sobre eso.»
+> Pero una diferencia favorable en los datos crudos **no implica, por sí sola, significancia
+> estadística**. Las dos diapositivas siguientes son exactamente sobre eso.»
 
 *Avanza.*
 
@@ -181,10 +177,10 @@ diapositiva delante.
 >
 > Y ese era el mejor caso. **Ninguna de las cinco dimensiones sobrevive la corrección.**
 >
-> Lo decimos así de claro porque es la diferencia entre reportar un hallazgo y reportar un
-> artefacto. Cuando se hacen cinco comparaciones sobre los mismos datos, la probabilidad de
-> que alguna salga significativa por azar deja de ser el cinco por ciento. Corregir no es un
-> formalismo: es lo que impide anunciar un resultado que no está.»
+> Es la diferencia entre un hallazgo y un artefacto. Cuando se hacen cinco comparaciones
+> sobre los mismos datos, la probabilidad de que alguna salga significativa por azar deja de
+> ser el cinco por ciento. Corregir no es un formalismo: es lo que impide anunciar un
+> resultado que no está.»
 
 *Avanza.*
 
@@ -205,9 +201,8 @@ diapositiva delante.
 > considera convencional. Para alcanzar ese ochenta harían falta **treinta y cuatro
 > observaciones apareadas**.
 >
-> Publicamos esa cifra sabiendo lo que dice de nosotros. Un trabajo que quisiera aparentar
-> rigor no reportaría una potencia del ocho por ciento: la omitiría. Está calculada por
-> script, versionada, y es la que sostiene todo lo que decimos en la discusión.»
+> La potencia está calculada por script y versionada en el paquete de datos, y es la cifra
+> que sostiene toda la discusión que viene a continuación.»
 
 *Avanza y cede a Yeranick.*
 
@@ -236,18 +231,17 @@ diapositiva delante.
 > **Validez de conclusión.** Intervalos muy anchos, consecuencia directa del tamaño de
 > muestra.
 >
-> Y añado una que no es de manual y que nos parece la más honesta: **intentamos arreglar la
-> primera**. Ampliamos el panel de tres a siete evaluadores, dos veces. Las dos fallaron: el
-> acuerdo entre ellos, medido con kappa de Fleiss, salió **negativo** —menos cero coma cero
-> cero ocho la primera vuelta y menos cero coma cero veintiséis la segunda—, es decir,
-> indistinguible del azar.
+> Sobre la primera hicimos algo más que declararla: **intentamos corregirla**. Ampliamos el
+> panel de tres a siete evaluadores, en dos rondas. En las dos, el acuerdo medido con kappa
+> de Fleiss salió **negativo** —menos cero coma cero cero ocho y menos cero coma cero
+> veintiséis—, indistinguible del azar.
 >
 > Lo interesante es por qué. Habíamos escondido enunciados repetidos en la hoja de
 > puntuación, sin decírselo a nadie. **Tres de los siete evaluadores se contradijeron a sí
 > mismos** hasta en tres puntos sobre el mismo enunciado, en la misma sesión. Uno no repitió
 > ninguna de sus doce puntuaciones. Si alguien no coincide consigo mismo, no puede coincidir
-> con otro: el ruido está dentro de cada evaluador, y por eso añadir evaluadores no arregla
-> nada. Lo publicamos como hallazgo metodológico.»
+> con otro: el ruido está dentro de cada evaluador, y por eso ampliar el panel no lo corrige.
+> Esta rúbrica necesita evaluadores entrenados, y esa es la conclusión que reportamos.»
 
 *Avanza y cede a Cedeño.*
 
@@ -257,10 +251,9 @@ diapositiva delante.
 
 *Diapositiva 9.*
 
-> «La respuesta a la pregunta de investigación es que **queda abierta**, y la damos así, con
-> honestidad y no con evasión: **no se puede confirmar ni descartar** una diferencia de
-> calidad con el tamaño de muestra actual. No sobre-interpretamos la tendencia numérica
-> favorable al modelo, aunque nos habría convenido.
+> «La respuesta a la pregunta de investigación es que **queda abierta**: con el tamaño de
+> muestra actual **no se puede confirmar ni descartar** una diferencia de calidad. La
+> tendencia numérica favorable al modelo no se interpreta más allá de eso.
 >
 > El trabajo futuro es concreto y sale de nuestros propios números.
 >
@@ -271,12 +264,11 @@ diapositiva delante.
 > **Segundo**, regenerar los dos conjuntos de requisitos sobre el corpus completo de
 > dieciséis entrevistas, porque el estudio se ejecutó cuando teníamos diez.
 >
-> **Tercero**, ampliar la ronda terminal más allá del perfil docente. Las seis últimas
-> entrevistas son todas de docentes, y eso es una limitación de la saturación que declaramos
-> nosotros mismos.
+> **Tercero**, ampliar la ronda terminal más allá del perfil docente: las seis últimas
+> entrevistas son todas de docentes, y eso acota el alcance de la saturación.
 >
-> Las tres contribuciones del principio se sostienen con la evidencia que acaban de ver:
-> la comparación pareada, el pipeline reproducible y la divulgación de lo que salió mal.»
+> Las tres contribuciones del principio se sostienen con la evidencia que acaban de ver: la
+> comparación pareada, el pipeline reproducible y el registro completo del proceso.»
 
 *Avanza y cede a Yeranick.*
 
@@ -386,8 +378,8 @@ diapositiva delante.
 >
 > De ahí sale la métrica de corrección: **un residual sobre veinticinco requisitos
 > funcionales, cero coma cero cuatro**, frente a la referencia de cero coma cero cinco.
-> Cumple, y lo decimos con la prudencia que merece: **el margen es de un solo defecto**. Con
-> dos residuales el valor sería cero coma cero ocho y no cumpliría.»
+> Cumple. El margen es de un solo defecto: con dos residuales el valor sería cero coma cero
+> ocho.»
 
 *Avanza y cede a Yeranick.*
 
@@ -418,8 +410,8 @@ diapositiva delante.
 > sesenta y una. Ni un requisito sin actividad, ni una actividad sin requisito. También se
 > recalcula por script sobre el export del tablero.
 >
-> Una precisión honesta sobre ese cien por cien: **mide correspondencia entre dos listas, no
-> avance**. Las sesenta y una actividades están en «Por hacer», que es su estado real.»
+> Ese cien por cien **mide correspondencia entre dos listas, no avance**: las sesenta y una
+> actividades están en «Por hacer», que es su estado en el tablero.»
 
 *Avanza y cede a Cedeño.*
 
@@ -449,11 +441,8 @@ diapositiva delante.
 > En validación, **diez walkthroughs sobre los prototipos, tres con usuario técnico**.
 >
 > Y de las doce notas de campo, **seis son manuscritas y contemporáneas**, escritas durante
-> la sesión, y las otras seis son reconstrucción documentada **y lo dicen ellas mismas en su
-> cabecera**.
->
-> Esa es la idea de fondo de toda nuestra evidencia: **una limitación declarada es evidencia;
-> una limitación callada es un hallazgo del tribunal.**»
+> la sesión, y las otras seis son reconstrucción documentada, con esa condición indicada en
+> su propia cabecera.»
 
 *Avanza y cede a Gary.*
 
