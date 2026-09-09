@@ -47,7 +47,7 @@ diapositiva delante.
 > Aulas, el proyecto fin de curso de Ingeniería de Requerimientos.
 >
 > Soy Gary Sánchez, me acompañan Yeranick Muñoz y Winston Cedeño. Vamos a repartirnos
-> veinticinco minutos: yo llevo el componente empírico, Yeranick el sistema y la
+> 25 minutos: yo llevo el componente empírico, Yeranick el sistema y la
 > trazabilidad, y Winston la evidencia de campo y la verificación de la especificación.
 >
 > El estudio que presentamos compara los requisitos funcionales que elicita un analista
@@ -70,9 +70,9 @@ diapositiva delante.
 > **¿los requisitos funcionales que genera un modelo de lenguaje a partir del mismo material
 > de entrevistas son comparables en calidad a los que elicita un analista humano?**
 >
-> Traemos tres contribuciones.
+> Traemos 3 contribuciones.
 >
-> La primera es que la **comparación es pareada y ciega sobre el mismo corpus**. Los dos
+> La primera es que la **comparación es pareada y ciega sobre el mismo corpus**. Los 2
 > conjuntos de requisitos salen exactamente del mismo material fuente, no de corpus
 > distintos por brazo, que es lo que hace la mayoría de los estudios previos y lo que impide
 > saber si la diferencia viene del método o de los datos.
@@ -83,8 +83,8 @@ diapositiva delante.
 >
 > Y la tercera es el **registro completo del proceso**, incluidas sus complicaciones: un
 > participante retiró su consentimiento y su material se eliminó entero; el campo se cerró en
-> diez entrevistas y se reabrió hasta dieciséis; y se intentó un panel ampliado de evaluadores
-> que no alcanzó acuerdo. Las tres constan en el manuscrito con sus cifras.»
+> 10 entrevistas y se reabrió hasta 16; y se intentó un panel ampliado de evaluadores
+> que no alcanzó acuerdo. Las 3 constan en el manuscrito con sus cifras.»
 
 *Avanza y cede a Yeranick.*
 
@@ -94,19 +94,19 @@ diapositiva delante.
 
 *Diapositiva 3. En pantalla, el diagrama de contexto.*
 
-> «SIGA tiene **seis capacidades centrales**: monitoreo ambiental en tiempo real, control
+> «SIGA tiene **6 capacidades centrales**: monitoreo ambiental en tiempo real, control
 > remoto de los equipos del aula, alertas de anomalías, análisis predictivo de fallas,
 > gestión de mantenimiento y reportes administrativos.
 >
-> Los perfiles con los que trabajamos son tres, y son los que de verdad usan las aulas:
+> Los perfiles con los que trabajamos son 3, y son los que de verdad usan las aulas:
 > **docentes**, **coordinación académica** y **personal de servicios generales e
 > infraestructura**. A ellos se suma el **personal técnico de tecnologías de la
 > información**, que aparece en las sesiones de validación sobre el prototipo.
 >
-> El volumen de campo son **dieciséis entrevistas** transcritas y anonimizadas, **diez
-> sesiones de validación** sobre los prototipos —tres de ellas con usuario técnico— y **doce
-> notas de campo**. Los tres perfiles están bien representados; no es que hayamos hablado
-> quince veces con docentes y una con conserjería.
+> El volumen de campo son **16 entrevistas** transcritas y anonimizadas, **10
+> sesiones de validación** sobre los prototipos —3 de ellas con usuario técnico— y **12
+> notas de campo**. Los 3 perfiles están bien representados; no es que hayamos hablado
+> 15 veces con docentes y una con conserjería.
 >
 > El perfil menos consultado es el técnico, y es el destinatario de los requisitos con los
 > umbrales más exigentes. Consta como amenaza a la validez de constructo en el manuscrito.»
@@ -123,20 +123,20 @@ diapositiva delante.
 > humano se compara con su equivalente generado sobre el mismo material; ciego porque los
 > jueces no sabían qué requisito venía de dónde.
 >
-> El instrumento son **cincuenta y un ítems evaluados en cinco dimensiones de calidad**:
+> El instrumento son **51 ítems evaluados en 5 dimensiones de calidad**:
 > completitud, ausencia de ambigüedad, verificabilidad, corrección respecto de la fuente y
-> consistencia interna. Escala de uno a cinco, con las anclas impresas en la propia hoja de
+> consistencia interna. Escala de 1 a 5, con las anclas impresas en la propia hoja de
 > puntuación.
 >
-> Los evaluaron **tres jueces independientes** de las personas entrevistadas.
+> Los evaluaron **3 jueces independientes** de las personas entrevistadas.
 >
 > El plan de análisis se fijó antes de ver los datos: **Shapiro-Wilk** para decidir si la
-> prueba es paramétrica o no, **corrección de Holm-Bonferroni** porque son cinco
+> prueba es paramétrica o no, **corrección de Holm-Bonferroni** porque son 5
 > comparaciones y no una, y **tamaño del efecto con intervalo de confianza al noventa y
-> cinco por ciento por bootstrap**.
+> 5 % por bootstrap**.
 >
 > Y esto es lo importante: **el protocolo está registrado en el Open Science Framework
-> antes de recoger un solo dato**, con DOI propio y sello temporal externo, del dos de
+> antes de recoger un solo dato**, con DOI propio y sello temporal externo, del 2 de
 > agosto. Eso es lo que permite afirmar que no reescribimos la pregunta después de ver los
 > resultados. Las desviaciones que hubo respecto de ese registro están documentadas una a
 > una, no disimuladas.»
@@ -151,8 +151,8 @@ diapositiva delante.
 
 > «Empecemos por lo que dicen las cifras crudas.
 >
-> **En las cinco dimensiones, la media y la mediana del modelo igualan o superan a las del
-> analista humano.** Las cinco. Si nos quedáramos aquí, el titular sería que el modelo
+> **En las 5 dimensiones, la media y la mediana del modelo igualan o superan a las del
+> analista humano.** Las 5. Si nos quedáramos aquí, el titular sería que el modelo
 > escribe mejores requisitos.
 >
 > Pero una diferencia favorable en los datos crudos **no implica, por sí sola, significancia
@@ -169,17 +169,16 @@ diapositiva delante.
 > «Aquí está la corrección por comparaciones múltiples, y conviene mirarla despacio.
 >
 > El caso más cercano a la significancia es **consistencia interna**. Antes de corregir daba
-> un p de **cero coma cero doce**: por debajo del cero coma cero cinco convencional, o sea,
+> un p de **0,012**: por debajo del 0,05 convencional, o sea,
 > parecía significativo.
 >
-> Después de aplicar **Holm-Bonferroni**, ese mismo p pasa a **cero coma cero cincuenta y
-> nueve**. Ya no lo es.
+> Después de aplicar **Holm-Bonferroni**, ese mismo p pasa a **0,059**. Ya no lo es.
 >
-> Y ese era el mejor caso. **Ninguna de las cinco dimensiones sobrevive la corrección.**
+> Y ese era el mejor caso. **Ninguna de las 5 dimensiones sobrevive la corrección.**
 >
-> Es la diferencia entre un hallazgo y un artefacto. Cuando se hacen cinco comparaciones
+> Es la diferencia entre un hallazgo y un artefacto. Cuando se hacen 5 comparaciones
 > sobre los mismos datos, la probabilidad de que alguna salga significativa por azar deja de
-> ser el cinco por ciento. Corregir no es un formalismo: es lo que impide anunciar un
+> ser el 5 %. Corregir no es un formalismo: es lo que impide anunciar un
 > resultado que no está.»
 
 *Avanza.*
@@ -193,12 +192,12 @@ diapositiva delante.
 > «La tercera parte explica **por qué** no sobrevive nada.
 >
 > Los tamaños del efecto son **grandes en magnitud**, pero sus intervalos de confianza al
-> noventa y cinco por ciento **cruzan el cero**. Un intervalo que cruza el cero significa que
+> 95 % **cruzan el cero**. Un intervalo que cruza el cero significa que
 > los datos son compatibles con que la diferencia sea a favor, en contra, o inexistente.
 >
 > Y la razón es el tamaño de muestra. Calculamos la potencia estadística real del estudio:
-> con tres jueces es del **ocho coma cuatro por ciento**, frente al ochenta por ciento que se
-> considera convencional. Para alcanzar ese ochenta harían falta **treinta y cuatro
+> con 3 jueces es del **8,4 %**, frente al 80 % que se
+> considera convencional. Para alcanzar ese 80 % harían falta **34
 > observaciones apareadas**.
 >
 > La potencia está calculada por script y versionada en el paquete de datos, y es la cifra
@@ -216,9 +215,9 @@ diapositiva delante.
 > estadísticamente con este tamaño de muestra**. No decimos que el modelo sea peor; decimos
 > que con estos datos no se puede afirmar que sea mejor.
 >
-> Las amenazas las agrupamos en las cuatro categorías habituales.
+> Las amenazas las agrupamos en las 4 categorías habituales.
 >
-> **Validez interna.** Un panel de solo tres jueces y una potencia muy baja. Es la más
+> **Validez interna.** Un panel de solo 3 jueces y una potencia muy baja. Es la más
 > grave y ya la han visto cuantificada.
 >
 > **Validez externa.** Un solo dominio, un solo idioma, un solo modelo. Esto no generaliza
@@ -232,14 +231,13 @@ diapositiva delante.
 > muestra.
 >
 > Sobre la primera hicimos algo más que declararla: **intentamos corregirla**. Ampliamos el
-> panel de tres a siete evaluadores, en dos rondas. En las dos, el acuerdo medido con kappa
-> de Fleiss salió **negativo** —menos cero coma cero cero ocho y menos cero coma cero
-> veintiséis—, indistinguible del azar.
+> panel de 3 a 7 evaluadores, en 2 rondas. En las 2, el acuerdo medido con kappa
+> de Fleiss salió **negativo** —−0,008 y −0,026—, indistinguible del azar.
 >
 > Lo interesante es por qué. Habíamos escondido enunciados repetidos en la hoja de
-> puntuación, sin decírselo a nadie. **Tres de los siete evaluadores se contradijeron a sí
-> mismos** hasta en tres puntos sobre el mismo enunciado, en la misma sesión. Uno no repitió
-> ninguna de sus doce puntuaciones. Si alguien no coincide consigo mismo, no puede coincidir
+> puntuación, sin decírselo a nadie. **3 de los 7 evaluadores se contradijeron a sí
+> mismos** hasta en 3 puntos sobre el mismo enunciado, en la misma sesión. Uno no repitió
+> ninguna de sus 12 puntuaciones. Si alguien no coincide consigo mismo, no puede coincidir
 > con otro: el ruido está dentro de cada evaluador, y por eso ampliar el panel no lo corrige.
 > Esta rúbrica necesita evaluadores entrenados, y esa es la conclusión que reportamos.»
 
@@ -257,24 +255,23 @@ diapositiva delante.
 > resultados. **Una sola orden regenera las tablas y las figuras del manuscrito** a partir de
 > los datos. No es un enlace a una carpeta: es el estudio entero, ejecutable.
 >
-> Y está depositado bajo **tres identificadores persistentes**, los tres comprobados.
+> Y está depositado bajo **3 identificadores persistentes**, los 3 comprobados.
 >
 > El primero es **Zenodo**, con el DOI de la versión 2B-1.12.0 del paquete de datos, bajo
 > licencia Creative Commons. Ese identificador fija el contenido exacto: quien lo siga dentro
-> de cinco años encuentra lo mismo que citamos hoy.
+> de 5 años encuentra lo mismo que citamos hoy.
 >
-> El segundo es **el Open Science Framework**, donde está el protocolo registrado el dos de
+> El segundo es **el Open Science Framework**, donde está el protocolo registrado el 2 de
 > agosto, antes de recoger un solo dato, con sello temporal externo al equipo.
 >
 > Y el tercero es **Software Heritage**, el archivo universal de código fuente, que conserva
 > nuestro código con su propio identificador permanente.
 >
 > Sobre ese depósito pasamos la autoevaluación **FAIR con la herramienta F-UJI**, que es
-> externa y automatizada: **veintidós indicadores de veintiséis, un ochenta y cuatro coma
-> sesenta y dos por ciento**. En localizable sacamos **siete de siete**.
+> externa y automatizada: **22 indicadores de 26, un 84,62 %**. En localizable sacamos **7 de 7**.
 >
 > Es la parte del trabajo que sobrevive al curso: dentro de un año el repositorio puede
-> cambiar, pero esos tres identificadores siguen resolviendo.»
+> cambiar, pero esos 3 identificadores siguen resolviendo.»
 
 *Avanza y cede a Yeranick.*
 
@@ -314,7 +311,7 @@ diapositiva delante.
 
 *Diapositiva 10. Comparte la ventana del navegador, no la presentación.*
 
-> «Vamos a ejecutar el prototipo en vivo. Son dos escenarios que elegimos de antemano y que
+> «Vamos a ejecutar el prototipo en vivo. Son 2 escenarios que elegimos de antemano y que
 > están en la matriz de trazabilidad.
 >
 > **El primero es el acceso diferenciado por roles, el requisito RF-19.** Entro como técnico
@@ -322,16 +319,16 @@ diapositiva delante.
 
 *Escribe `tecnico` / `tecnico123`. Entra.*
 
-> «Vean el menú: Aulas, Alertas, Mantenimiento y Configuración. **Cuatro módulos.** No ve
+> «Vean el menú: Aulas, Alertas, Mantenimiento y Configuración. **4 módulos.** No ve
 > Reportes ni Bitácora.
 >
 > Ahora salgo y entro como administrador.»
 
 *Cierra sesión. Escribe `admin` / `admin123`. Entra.*
 
-> «**Los seis módulos.** Aparecen Reportes y Bitácora.
+> «**Los 6 módulos.** Aparecen Reportes y Bitácora.
 >
-> Esto no es un detalle de interfaz. Es lo que nos pidieron los dos usuarios técnicos con
+> Esto no es un detalle de interfaz. Es lo que nos pidieron los 2 usuarios técnicos con
 > los que validamos: que el control corresponda al docente asignado o a un administrador
 > autorizado, y que los estudiantes no puedan manipular los equipos desde la plataforma. La
 > restricción de diseño RD-10 recoge eso, y aquí está implementada.
@@ -352,11 +349,10 @@ diapositiva delante.
 *Crea el ticket. Lo muestra en el módulo de mantenimiento.*
 
 > «Eso cierra la cadena que hoy no existe en la facultad: ahora mismo las incidencias se
-> comunican de palabra al terminar la clase, y no queda registro. Nos lo dijeron los tres
+> comunican de palabra al terminar la clase, y no queda registro. Nos lo dijeron los 3
 > usuarios técnicos, cada uno por su lado.
 >
-> El prototipo cubre **diecisiete de los veinte requisitos obligatorios, un ochenta y cinco
-> por ciento**, frente al sesenta por ciento que pide la guía. El detalle requisito por
+> El prototipo cubre **17 de los 20 requisitos obligatorios, un 85 %**, frente al 60 % que pide la guía. El detalle requisito por
 > requisito está en `cobertura_requisitos.csv`.»
 
 *Vuelve a la presentación. Avanza y cede a Cedeño.*
@@ -369,23 +365,22 @@ diapositiva delante.
 
 > «La especificación no la leímos por encima: **la inspeccionamos con método**.
 >
-> Aplicamos una **inspección de Fagan**, la INS-01, con cinco roles repartidos entre tres
+> Aplicamos una **inspección de Fagan**, la INS-01, con 5 roles repartidos entre 3
 > personas y con una regla: **el autor y el moderador nunca coinciden**. Encontró
-> **dieciséis defectos**: tres críticos, nueve mayores y cuatro menores. Eso da una densidad
-> de **cero coma sesenta y cuatro defectos por requisito funcional**.
+> **16 defectos**: 3 críticos, 9 mayores y 4 menores. Eso da una densidad
+> de **0,64 defectos por requisito funcional**.
 >
 > Después hicimos la **re-inspección REINS-01**, y aquí la regla fue que **cada defecto lo
-> verifica quien no lo corrigió**. Quedaron **quince cerrados y uno residual**: el DEF-06, la
+> verifica quien no lo corrigió**. Quedaron **15 cerrados y 1 residual**: el DEF-06, la
 > apertura individual de cámara, que el comité de control de cambios difirió de forma
 > expresa en la solicitud SC-03.
 >
-> El comité, el CCB-01, resolvió **cuatro solicitudes de cambio**: tres aprobadas y esa
+> El comité, el CCB-01, resolvió **4 solicitudes de cambio**: 3 aprobadas y esa
 > diferida.
 >
-> De ahí sale la métrica de corrección: **un residual sobre veinticinco requisitos
-> funcionales, cero coma cero cuatro**, frente a la referencia de cero coma cero cinco.
-> Cumple. El margen es de un solo defecto: con dos residuales el valor sería cero coma cero
-> ocho.»
+> De ahí sale la métrica de corrección: **1 residual sobre 25 requisitos
+> funcionales, 0,04**, frente a la referencia de 0,05.
+> Cumple. El margen es de 1 solo defecto: con 2 residuales el valor sería 0,08.»
 
 *Avanza y cede a Yeranick.*
 
@@ -395,28 +390,28 @@ diapositiva delante.
 
 *Diapositiva 12.*
 
-> «La matriz de trazabilidad tiene **setenta y cinco filas**, por encima de las sesenta que
+> «La matriz de trazabilidad tiene **75 filas**, por encima de las 60 que
 > pide el criterio, y **ninguna celda vacía**.
 >
-> De esas setenta y cinco, **cuarenta y una cierran la cadena completa**: desde la fuente de
+> De esas 75, **41 cierran la cadena completa**: desde la fuente de
 > campo hasta el criterio de aceptación, pasando por el caso de uso, la clase, el proceso y
 > el caso de prueba.
 >
-> Las otras treinta y cuatro **no están a medio hacer: no pueden cerrar**, y cada una dice
-> por qué. Nueve son huérfanas porque el requisito nace del análisis de la Ley Orgánica de
+> Las otras 34 **no están a medio hacer: no pueden cerrar**, y cada una dice
+> por qué. 9 son huérfanas porque el requisito nace del análisis de la Ley Orgánica de
 > Protección de Datos y no de una entrevista; inventarles una fuente de campo sería
-> fabricarla. Dieciséis son parciales. Y nueve son restricciones de diseño, que se verifican
+> fabricarla. 16 son parciales. Y 9 son restricciones de diseño, que se verifican
 > por revisión y no por caso de prueba. **La cifra se recalcula con un script**, no se cuenta
 > a mano.
 >
-> El tablero de gestión tiene **sesenta y una actividades**: veinticinco requisitos
-> funcionales, veinticuatro no funcionales y doce restricciones de diseño.
+> El tablero de gestión tiene **61 actividades**: 25 requisitos
+> funcionales, 24 no funcionales y 12 restricciones de diseño.
 >
-> Y la sincronización entre el tablero y la matriz es del **cien por cien**: sesenta y una de
-> sesenta y una. Ni un requisito sin actividad, ni una actividad sin requisito. También se
+> Y la sincronización entre el tablero y la matriz es del **100 %**: 61 de
+> 61. Ni un requisito sin actividad, ni una actividad sin requisito. También se
 > recalcula por script sobre el export del tablero.
 >
-> Ese cien por cien **mide correspondencia entre dos listas, no avance**: las sesenta y una
+> Ese 100 % **mide correspondencia entre dos listas, no avance**: las 61
 > actividades están en «Por hacer», que es su estado en el tablero.»
 
 *Avanza y cede a Cedeño.*
@@ -427,27 +422,27 @@ diapositiva delante.
 
 *Diapositiva 13.*
 
-> «El corpus son **dieciséis entrevistas** transcritas y anonimizadas, y **las dieciséis
-> están codificadas temáticamente**: ciento treinta y seis fragmentos bajo cincuenta códigos.
-> Las seis últimas las codificamos el seis de septiembre, repartidas entre los tres por
+> «El corpus son **16 entrevistas** transcritas y anonimizadas, y **las 16
+> están codificadas temáticamente**: 136 fragmentos bajo 50 códigos.
+> Las 6 últimas las codificamos el 6 de septiembre, repartidas entre los 3 por
 > entrevista completa, y cada cita se comprobó literal contra su transcripción antes de
 > entrar.
 >
-> La **curva de saturación alcanza inflexión en la entrevista EV-23**, la decimocuarta, y
-> cierra en uno coma trescientos treinta y tres frente a un umbral de dos coma cinco. Como el
-> resultado cambió justo cuando nos convenía, probamos **las setecientas veinte ordenaciones
-> posibles** del bloque de entrevistas del mismo día: satura en las setecientas veinte.
+> La **curva de saturación alcanza inflexión en la entrevista EV-23**, la 14.ª, y
+> cierra en 1,333 frente a un umbral de 2,5. Como el
+> resultado cambió justo cuando nos convenía, probamos **las 720 ordenaciones
+> posibles** del bloque de entrevistas del mismo día: satura en las 720.
 >
-> La **doble codificación** la hicimos dos personas por separado sobre el mismo subconjunto.
-> El kappa de Cohen es de **cero coma quinientos cuarenta y ocho a nivel de código**, que es
-> acuerdo moderado, y de **cero coma novecientos once a nivel de categoría**. Damos las dos
+> La **doble codificación** la hicimos 2 personas por separado sobre el mismo subconjunto.
+> El kappa de Cohen es de **0,548 a nivel de código**, que es
+> acuerdo moderado, y de **0,911 a nivel de categoría**. Damos las dos
 > porque la diferencia entre ellas es el hallazgo: **coincidimos casi siempre en de qué trata
 > el fragmento y discrepamos en qué código exacto asignarle**.
 >
-> En validación, **diez walkthroughs sobre los prototipos, tres con usuario técnico**.
+> En validación, **10 walkthroughs sobre los prototipos, 3 con usuario técnico**.
 >
-> Y de las doce notas de campo, **seis son manuscritas y contemporáneas**, escritas durante
-> la sesión, y las otras seis son reconstrucción documentada, con esa condición indicada en
+> Y de las 12 notas de campo, **6 son manuscritas y contemporáneas**, escritas durante
+> la sesión, y las otras 6 son reconstrucción documentada, con esa condición indicada en
 > su propia cabecera.»
 
 *Avanza y cede a Gary.*
@@ -458,9 +453,8 @@ diapositiva delante.
 
 *Diapositiva 14.*
 
-> «El reparto de estos veinticinco minutos sigue la contribución real de cada uno, que está
-> declarada confirmación por confirmación en la matriz de aporte individual: **diez minutos,
-> nueve y seis**. Los tres superamos el mínimo de cuatro minutos por integrante.»
+> «El reparto de estos 25 minutos sigue la contribución real de cada uno, que está
+> declarada confirmación por confirmación en la matriz de aporte individual: **10 minutos, 9 y 6**. Los 3 superamos el mínimo de 4 minutos por integrante.»
 
 *Avanza.*
 
@@ -499,16 +493,16 @@ criterio del prototipo. Practiquen el flujo exacto antes, con el servidor ya arr
 
 **«Su resultado depende de haber elegido tres jueces.»**
 
-> «Depende del registro previo, que fija tres y es anterior a los datos. Y los tres
-> concuerdan entre sí: coinciden exactamente en el cincuenta y tres por ciento de sus
-> puntuaciones, frente al treinta y siete por ciento de los siete, que es justo lo que da el
+> «Depende del registro previo, que fija 3 y es anterior a los datos. Y los 3
+> concuerdan entre sí: coinciden exactamente en el 53 % de sus
+> puntuaciones, frente al 37 % de los 7, que es justo lo que da el
 > azar. El criterio para sustituirlos lo escribimos antes de mirar los datos y no se cumplió.
 > Cambiarlo después habría sido elegir el resultado.»
 
 **«¿No saturó porque les convenía?»**
 
-> «Es la pregunta correcta. Por eso probamos las setecientas veinte ordenaciones posibles y
-> satura en todas. Y por eso declaramos tres reservas en el propio documento, incluida una
+> «Es la pregunta correcta. Por eso probamos las 720 ordenaciones posibles y
+> satura en todas. Y por eso declaramos 3 reservas en el propio documento, incluida una
 > que va en contra: las instrucciones de codificación pedían reutilizar códigos, y eso empuja
 > hacia la saturación.»
 
@@ -516,6 +510,6 @@ criterio del prototipo. Practiquen el flujo exacto antes, con el servidor ya arr
 
 > «Porque el enfoque se elegía. La rúbrica de la entrega anterior dice que cada equipo elige
 > uno y solo uno, y exige declararlo y registrarlo en OSF antes de recoger datos. Elegimos el
-> enfoque uno y lo registramos el dos de agosto, antes del primer dato. La tabla de la
+> enfoque uno y lo registramos el 2 de agosto, antes del primer dato. La tabla de la
 > entrega final orienta y recomienda, y permite modificar declarándolo por escrito, que es lo
 > que hicimos.»
