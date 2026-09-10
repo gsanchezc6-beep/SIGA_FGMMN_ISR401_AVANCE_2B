@@ -14,9 +14,9 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **136** | 2026-08-30 | 2026-09-07 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **154** | 2026-08-30 | 2026-09-09 |
 | Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **83** | 2026-08-30 | 2026-09-07 |
-| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **9** | 2026-09-04 | 2026-09-06 |
+| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **11** | 2026-09-04 | 2026-09-09 |
 
 Comprobable con `git shortlog -sne main`. El total de esta tabla es una confirmacion
 menor que el historial completo, porque la declaracion no puede incluir el commit que la deposita.
@@ -27,23 +27,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 136**, de 2026-08-30 a 2026-09-07.
+**Confirmaciones: 154**, de 2026-08-30 a 2026-09-09.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 345 |
-| Documentos de raiz | 151 |
+| Evidencia de campo y etica | 668 |
+| Documentos de raiz | 167 |
 | Modelado UML e i* | 136 |
-| Manuscrito y deposito | 118 |
-| Componente empirico | 94 |
-| Paquete de datos | 58 |
+| Manuscrito y deposito | 124 |
+| Componente empirico | 100 |
+| Defensa | 61 |
+| Paquete de datos | 59 |
+| Especificacion de requisitos | 54 |
 | Producto minimo viable | 53 |
-| Especificacion de requisitos | 50 |
-| Evidencia de autoria | 42 |
-| Defensa | 41 |
-| Trazabilidad | 34 |
+| Evidencia de autoria | 43 |
+| Trazabilidad | 38 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -186,6 +186,24 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `beec5b0` | 2026-09-07 | fix(raiz): retira un residuo y pone al dia las dos caratulas |
 | `9e2dda3` | 2026-09-07 | chore(caratula): regenera la caratula sobre la linea base etiquetada |
 | `d702848` | 2026-09-07 | fix(deposito): el DOI de version ya no dice corresponder al arbol actual |
+| `a473f26` | 2026-09-07 | fix(experimento): el enfoque se elegia, y la declaracion confesaba una desviacion inexistente |
+| `62f1dd8` | 2026-09-07 | fix(composicion): el SGA declara cinco integrantes, no cuatro |
+| `b09f0d4` | 2026-09-07 | fix(defensa): la diapositiva 13 seguia contando nueve sesiones y dos tecnicas |
+| `d651f7f` | 2026-09-07 | fix(panel): el liston de 0,41 no constaba en ningun sitio, y el paquete Zenodo iba desfasado |
+| `b75e522` | 2026-09-08 | fix(defensa): el kappa de la doble codificacion estaba inflado, y el guion negaba la saturacion |
+| `5ef9e8d` | 2026-09-08 | feat(evidencias): recupera el video de EV-16, deposita la solicitud firmada y da respaldo de campo a RNF-IA-03 |
+| `e1c7fbe` | 2026-09-08 | feat(deposito): la version 2B-1.12.0 esta publicada en Zenodo |
+| `2a26ce9` | 2026-09-08 | chore(contenedor): volumenes 055 a 108 del contenedor rehecho |
+| `7c9625a` | 2026-09-08 | chore(contenedor): volumenes 109 a 162 del contenedor rehecho |
+| `dc04e01` | 2026-09-08 | chore(contenedor): volumenes 163 a 216 del contenedor rehecho |
+| `0426933` | 2026-09-08 | chore(contenedor): volumenes 217 a 270 del contenedor rehecho |
+| `aa8a694` | 2026-09-08 | chore(contenedor): volumenes 271 a 316 del contenedor rehecho |
+| `7df0eaa` | 2026-09-08 | chore(contenedor): volumenes 001 a 054 del contenedor rehecho |
+| `81455e4` | 2026-09-08 | feat(restringido): el contenedor se rehace con los dos videos que faltaban |
+| `c7c9a77` | 2026-09-08 | feat(defensa): libreto v2.0, una entrada por diapositiva, y la demo sobre la via verificada |
+| `a194c26` | 2026-09-08 | fix(defensa): el grafico de participacion no seguia su escala y el libreto se elogiaba solo |
+| `0f914b0` | 2026-09-08 | feat(defensa): la diapositiva 9 pasa a ser el paquete de replicacion y el deposito FAIR |
+| `fc145fa` | 2026-09-09 | docs(defensa): las cifras del libreto pasan de letra a digito |
 
 ---
 
@@ -306,15 +324,15 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Transcripcion y anonimizacion del corpus de entrevistas
 
-**Confirmaciones: 9**, de 2026-09-04 a 2026-09-06.
+**Confirmaciones: 11**, de 2026-09-04 a 2026-09-09.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 30 |
+| Evidencia de campo y etica | 33 |
 | Evidencia de autoria | 9 |
-| Documentos de raiz | 7 |
+| Documentos de raiz | 8 |
 | Especificacion de requisitos | 1 |
 | Trazabilidad | 1 |
 
@@ -331,6 +349,8 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `9e549a6` | 2026-09-05 | feat(evidencias): deposita la doble codificacion A7 y su coeficiente de acuerdo |
 | `8a1429e` | 2026-09-06 | feat(validacion): deposita INS-01, REINS-01, el comite CCB-01 y la retrospectiva |
 | `f3334b8` | 2026-09-06 | feat(codificacion): codifica EV-24 y EV-25 y cierra el corpus al 100 por ciento |
+| `3eda626` | 2026-09-09 | feat(evidencias): transcribe y anonimiza las tres sesiones tecnicas, EV-26, EV-27 y EV-28 |
+| `aed73c3` | 2026-09-09 | chore(integridad): incorpora al manifiesto las tres transcripciones tecnicas |
 
 ---
 
@@ -356,4 +376,4 @@ Firma: ______________________________    Fecha: ______________
 
 ---
 
-Generado el 2026-09-07 desde el historial del repositorio.
+Generado el 2026-09-09 desde el historial del repositorio.
