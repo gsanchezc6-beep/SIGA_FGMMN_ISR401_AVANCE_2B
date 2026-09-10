@@ -26,30 +26,33 @@ fecha de cada alta constan en
 | `guion_reparto_exposicion.md` | Distribucion de los 25 minutos dentro de la exposicion |
 | `banco_preguntas.md` | Preguntas previsibles del tribunal, cada una con el artefacto que respalda la respuesta |
 | `folleto_una_hoja.pdf` | Folleto de una hoja con el resumen estructurado y los resultados principales |
-| `2026-09-01_Exposicion_Grabada.mp4` | Exposicion del proyecto grabada por los dos integrantes el 2026-09-01 |
+| `2026-09-09_Defensa_Grabada.mp4` | **La defensa**, grabada por los tres integrantes el 2026-09-09. 24 min 49 s |
+| `2026-09-01_Exposicion_Grabada.mp4` | Exposicion anterior, de 8 min 50 s, grabada por dos integrantes. Se conserva como referencia |
 
-## Sobre el video que si esta, y sobre el que no
+## La defensa grabada
 
-**El archivo depositado no es la grabacion de la defensa.** Conviene que quede dicho antes de
-que alguien lo abra y saque su propia conclusion.
-
-**La defensa se rindio de forma individual**: cada integrante expuso el proyecto completo por
-separado, y **esa sesion no se grabo**. La seccion 8.3 de la guia enumera el video de la
-defensa entre los materiales que se depositan, y ese archivo no existe. Se declara su
-ausencia en lugar de dejar el hueco sin explicacion.
-
-Lo que si consta es `2026-09-01_Exposicion_Grabada.mp4`: una **exposicion del proyecto
-grabada por los dos integrantes** el 2026-09-01, posterior a la defensa y hecha porque el
-entregable pide un video y el video es uno solo. No sustituye a la defensa ni la documenta.
+`2026-09-09_Defensa_Grabada.mp4` es la defensa del proyecto, grabada por **los tres
+integrantes** el 2026-09-09.
 
 | | |
 |---|---|
-| Duracion | 8 min 50 s (530,2 s) |
-| Formato | MP4 H.264, 1280 x 720, 30 fps, audio AAC a 128 kbps |
-| Origen | Grabacion a 1920 x 1080 y 120 fps, recodificada al estandar del repositorio sin recortar |
+| Duracion | 24 min 49 s |
+| Formato | MP4 H.264, 1280 x 720, audio AAC |
+| Estructura | Las 15 diapositivas de `presentacion.pptx`, en el orden y con los tiempos de `libreto_grabacion.md` |
+| Reparto | Sanchez 10 min, Munoz 9 min, Cedeno 6 min. Los tres por encima del minimo de 4 |
 
-**Una limitacion que se declara.** La seccion 8.1 de la guia describe una exposicion de 25
-minutos repartida en siete bloques, y esta grabacion dura menos de nueve. Cubre los siete
-bloques, pero con una profundidad menor que la que esos 25 minutos permitirian. El guion
-completo con los tiempos por bloque consta en `guion.md`, y la estructura de la presentacion
-en `presentacion.pdf`.
+Incluye la **demostracion en vivo del prototipo**: los dos escenarios fijados de antemano
+--- acceso diferenciado por roles, `RF-19`, y la cadena sensor, alerta y ticket, `RF-01`,
+`RF-08` y `RF-11` --- ejecutados sobre el entorno levantado con `npm start`, que es la via
+de despliegue verificada.
+
+**Lo que sustituye.** Hasta el 2026-09-09 este apartado declaraba que el video de la defensa
+no existia: la defensa se habia rendido de forma individual y sin grabar, y lo depositado era
+`2026-09-01_Exposicion_Grabada.mp4`, una exposicion de 8 min 50 s hecha por dos integrantes
+porque el entregable pedia un video. Esa grabacion se conserva como referencia y no se
+retira, pero **ya no es lo que responde por la defensa**.
+
+**Sobre el formato.** El original salio en 413 MB y se recodifico al estandar del repositorio
+para que entrara en GitHub sin Git LFS, sin recortar ni un segundo: la duracion del archivo
+depositado coincide exactamente con la del original, 24 min 49 s, y decodifica de principio a
+fin.
