@@ -1,7 +1,7 @@
 # Declaracion de uso de inteligencia artificial
 
 Proyecto SIGA — Entrega Final (2B) — ISR-401 — Equipo FGMMN
-Ultima actualizacion: 2026-09-04
+Ultima actualizacion: 2026-09-12
 
 Elemento **A9** de la evidencia de autoria. Cubre, seccion por seccion, la herramienta
 empleada, el tipo de asistencia recibida y el metodo concreto con el que el equipo valido
@@ -70,7 +70,7 @@ declaracion cubra el entregable completo y no solo su estado a finales de agosto
 | `CHANGELOG.md` --- version 2B-1.7.0 | Claude (Anthropic) | Redaccion de la entrada, incluida la documentacion de la migracion de repositorio | El motivo y la fecha los aporto el equipo; las fechas del historial se leyeron del repositorio |
 | `10_Autoria/bitacora_sesiones.csv` | Claude (Anthropic) | Script que deriva la bitacora del historial de versiones | Ningun campo se escribe a mano: se regenera con `python 10_Autoria/generar_bitacora.py` y se comprueba que exista al menos una fila por cada dia con commits |
 | `.mailmap` | Claude (Anthropic) | Unificacion de identidades historicas de Git | Comprobado con `git shortlog -sne main`: dos autores, ninguna identidad duplicada, ningun autor ajeno al equipo |
-| Recompilacion del ERS en A4 | Claude (Anthropic) | Cambio de geometria y recompilacion | Verificado sobre el registro de compilacion: cero desbordes horizontales, cero verticales, cero referencias sin resolver, cero errores |
+| Recompilacion del ERS en A4 | Claude (Anthropic) | Cambio de geometria y recompilacion | Verificado sobre el registro de compilacion: cero referencias sin resolver y cero errores. **Corregido el 2026-09-12:** esta fila afirmaba ademas «cero desbordes horizontales, cero verticales», y no era cierto. Recompilado el ERS en limpio, el registro tenia **80 desbordes horizontales**: las tablas conservaban los anchos en centimetros de la maquetacion anterior y sumaban mas que la caja de texto de A4. Se corrigieron el 2026-09-12 y se declaran en ese apartado |
 
 ### Trabajo del 4 de septiembre de 2026
 
@@ -113,12 +113,60 @@ defectos de los scripts de analisis.
 
 | Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
 |---|---|---|---|
-| Codificacion tematica de `EV-20` a `EV-25` | Ninguna | **La codificacion la hicieron las tres personas**, una entrevista completa cada una, y la columna `Analista_codificador` registra quien codifico cada fragmento | La asistencia se limito a repartir los turnos, verificar cada cita contra su transcripcion e incorporarlas con `incorporar_codificacion.py`. **Los codigos, las categorias y los requisitos derivados son juicio del equipo** |
+| Codificacion tematica de `EV-20` a `EV-25` | Ninguna | **La codificacion la hicieron las tres personas**, una entrevista completa cada una, y la columna `Analista_codificador` registra quien codifico cada fragmento | La asistencia se limito a repartir los turnos, verificar cada cita contra su transcripcion e incorporarlas con `incorporar_codificacion.py`. **Los codigos y las categorias son juicio del equipo.** La columna `Requisito_derivado` no lo es en 38 filas: se declara en la fila siguiente |
 | `Requisito_derivado` de 38 filas que quedaron vacias | Claude (Anthropic) | 21 se completaron **por consistencia**, copiando el requisito que ese mismo codigo ya tenia asignado en la codificacion depositada. Las 17 restantes fueron **ocho decisiones** sobre codigos nuevos sin precedente | Cada una de las ocho lleva su justificacion escrita en el script que las aplico, y el criterio se tomo de la convencion que los propios codificadores usaron en los otros codigos nuevos. El equipo puede revertir cualquiera |
 | `02_Evidencias/Codificacion_Tematica/robustez_saturacion.py` | Claude (Anthropic) | Script que prueba las 720 ordenaciones posibles del bloque de entrevistas del mismo dia, para comprobar que la saturacion no depende del orden | Solo biblioteca estandar; se ejecuta y reproduce la cifra publicada. La saturacion se alcanza en las 720 |
-| `06_Experimento/panel_ampliado/` | Claude (Anthropic) | Digitalizacion de las siete hojas de la segunda vuelta desde los PDF, y el script que calcula acuerdo, consistencia intrajuez y efecto | Las 189 puntuaciones se extrajeron del texto del PDF, no a mano. **La decision de mantener los tres jueces del registro previo la fijo el equipo por escrito antes de la sesion**, con su umbral; aqui solo se aplico |
+| `06_Experimento/panel_ampliado/` | Claude (Anthropic) | Digitalizacion de las siete hojas de la segunda vuelta desde los PDF, y el script que calcula acuerdo, consistencia intrajuez y efecto | Las 189 puntuaciones se extrajeron del texto del PDF, no a mano. **La regla de decision —mantener los tres jueces del registro previo si el acuerdo volvia a salir cerca de cero— la fijo el equipo por escrito antes de la segunda sesion**, en `panel_ampliado/protocolo_segunda_vuelta.md`; aqui solo se aplico. **Corregido el 2026-09-12:** esta fila decia «con su umbral», y esa regla no fija ningun umbral numerico; el 0,41 que se llego a citar es la frontera de Landis y Koch, no un liston pactado, como aclara el CHANGELOG desde el 2026-09-08 |
 | Actividad `SIGA-61` del tablero de Jira | Claude (Anthropic) | **Creacion de una actividad en la herramienta**, a peticion expresa del equipo: la restriccion `RD-01` estaba en la ERS y no tenia ni actividad ni fila en la matriz | Se creo desde la cuenta del equipo con el mismo formato que las demas actividades `RD`. El export se **regenero desde Jira**, no se edito el CSV: se comparo fila a fila contra el anterior y `SIGA-61` es la unica diferencia |
 | Censura del consentimiento de `TIC-02` | Claude (Anthropic) | El PDF entregado traia la censura como rectangulos vectoriales superpuestos, con el nombre, la cedula y la firma intactos debajo. Se rehizo quemandola en el mapa de bits | Comprobado despues sobre el archivo resultante: cero dibujos vectoriales, cero texto extraible y cero tinta bajo las bandas. Se revisaron ademas los otros diecisiete consentimientos del repositorio, que no tenian el defecto |
+
+---
+
+### Trabajo del 7 al 10 de septiembre de 2026
+
+Todo lo de este tramo se hizo en sesiones con el asistente; el unico trabajo de campo del
+tramo —la sesion `WT-10` con `TIC-03`, su grabacion y su acta manuscrita— lo hizo el equipo
+y se declara en el apartado 4.
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| `07_Publicacion/verificar_afirmaciones.py` | Claude (Anthropic) | Script que recalcula cada cifra afirmada en el manuscrito, el reporte, las diapositivas y el libreto desde la salida que la sostiene | Termina con codigo distinto de cero si una cifra no coincide; se ejecuto antes de cada confirmacion que tocaba esos documentos |
+| Contenedor cifrado dentro del repositorio | Claude (Anthropic) | Particion del contenedor en volumenes, confirmacion por lotes para esquivar el limite de envio, y en su segunda version el guion `rehacer_contenedor.sh` que el equipo ejecuto en su maquina para incorporar dos videos que faltaban | Comprobado byte a byte que los volumenes reconstruyen un contenedor con la misma SHA-256 y que descifra. La contrasena la custodia el analista lider y se entrega al docente por el Sistema de Gestion Academica |
+| `02_Evidencias/Cuestionario/Instrumento/` | Claude (Anthropic) | Deposito del PDF que el equipo exporto del formulario publicado, y contraste de sus preguntas con las columnas del export de respuestas | Las 30 preguntas coinciden una a una con las 30 columnas |
+| `fair_assessment.*` y `generar_fair_assessment.py` | Claude (Anthropic) | Obtencion de la evaluacion de F-UJI 4.0.0 sobre el deposito de Zenodo y script que compone el informe a partir de su salida | El informe no se redacta: se genera del JSON crudo de F-UJI, depositado junto a el |
+| Acta de `WT-10` | Claude (Anthropic) | Transcripcion a limpio del borrador en Word que redacto el equipo y censura de la hoja de firmas | Se detecto que un parrafo del borrador era copia literal del acta de `TIC-01` y el equipo lo reescribio. Las tres cifras del acta —18 anos, 3 segundos, de 15 a 30 minutos— se contrastaron con la transcripcion de la sesion |
+| Transcripciones `EV-26`, `EV-27` y `EV-28` | Claude (Anthropic) | **Solo formato**: paso de los tres archivos de texto que entrego el equipo a la plantilla del corpus | El contenido se conservo palabra por palabra, con titubeos y repeticiones; los marcadores de hablante ya venian puestos |
+| Solicitud de cambio de composicion y `composicion_equipo.md` | Claude (Anthropic) | Redaccion del escrito y de la actualizacion de la declaracion de composicion | **El escrito lo firmaron los tres integrantes** el 2026-09-08. Los recuentos por autor se leyeron del historial |
+| `06_Experimento/declaracion_enfoque.md` y `panel_ampliado/00_LEEME.md` | Claude (Anthropic) | Correccion de dos afirmaciones que no se sostenian: que el enfoque se asigno sin eleccion y que el liston de 0,41 constaba por escrito | Contrastadas contra el protocolo de la segunda vuelta y contra la guia; la cifra sin fuente se retiro |
+| Manuscrito, reporte y caratulas | Claude (Anthropic) | Actualizacion de `AFI-13`, del DOI de version y de las caratulas, y regeneracion de los PDF desde su fuente | Cada PDF se recompilo desde su `.tex`; ninguna cifra nueva, todas contrastadas con `verificar_afirmaciones.py` |
+| Deposito `2B-1.12.0` en Zenodo | Claude (Anthropic) | Instrucciones paso a paso para la publicacion y preparacion del paquete | **La subida y la publicacion las hizo el equipo** desde su cuenta. El DOI se copio de Zenodo |
+| `08_Defensa/`: diapositivas, notas del orador, libreto v2.0 y banco de preguntas | Claude (Anthropic) | Redaccion del libreto por diapositiva y del reparto por integrante, correccion de diapositivas que afirmaban cosas que el repositorio no sostiene —el kappa de la doble codificacion inflado, la saturacion negada, un despliegue con Docker nunca ejecutado— y sustitucion de la diapositiva 9 | Las cifras del libreto se comprobaron contra sus salidas. **La exposicion, la demostracion en vivo y las respuestas son del equipo**, que grabo la defensa |
+| Deposito de la defensa grabada | Claude (Anthropic) | Recodificacion del video de 413 MB a 80 MB con VLC para respetar el limite de GitHub | Se comprobo que decodifica hasta el ultimo fotograma y que la duracion coincide con la del original, 24 min 49 s |
+| `10_Autoria/verificacion_previa.*` | Claude (Anthropic) | Reejecucion sobre un clon limpio del remoto | La salida del script es la que consta; la firman dos integrantes |
+| **Operaciones de Git** | Claude (Anthropic) | **Buena parte de las confirmaciones y etiquetas del historial, en este tramo y en los anteriores declarados en este documento, las ejecuto el asistente desde la maquina del analista lider**, con el nombre y el correo institucional del integrante al que el equipo atribuyo cada cambio: tambien varias a nombre de Munoz Quinonez y de Cedeno Avila. Por ejemplo, `3eda626`, `aed73c3` y `298e28f` se confirmaron a nombre de Cedeno Avila con las transcripciones y la grabacion que el entrego. La etiqueta `2B-final-v4.0` se borro y se volvio a crear varias veces sobre commits posteriores antes de quedar en `6bb3b08` | El campo *author* de cada confirmacion identifica a quien el equipo atribuye el contenido; no acredita quien tecleo la orden. **El aporte de cada integrante se acredita ademas por las grabaciones de las sesiones de trabajo, las capturas por integrante y el aporte individual firmado** (`10_Autoria/grabaciones/`, `capturas/`, `aporte_individual.pdf`) |
+
+### Trabajo del 11 de septiembre de 2026
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| `CHANGELOG.md` --- version `2B-1.13.0` y regeneracion de los manifiestos (`32d4f49`, `b9783c7`) | Ninguna | Los hizo el analista lider a mano | Se declara en el apartado 4. El manifiesto que regenero no casaba con `verificacion_previa.md` y se corrige el 2026-09-12 |
+
+### Trabajo del 12 de septiembre de 2026
+
+Auditoria del repositorio contra la rubrica de cierre del Proyecto Fin de Curso y
+correccion de lo que encontro.
+
+| Seccion o artefacto | Herramienta | Tipo de asistencia | Metodo de validacion aplicado |
+|---|---|---|---|
+| Auditoria contra la rubrica de cierre | Claude (Anthropic) | Contraste de los once items y de los criterios de piso contra un clon limpio: recompilacion de los tres documentos, ejecucion de las dos cadenas de analisis, comprobacion del manifiesto y lectura de la capa de texto de los PDF | Cada hallazgo se reprodujo con la orden que lo muestra antes de corregirlo |
+| ERS en A4 sin desbordes | Claude (Anthropic) | Las 68 tablas pasan de anchos fijos en centimetros a anchos proporcionales a la caja de texto, y se corrigen los parrafos que se salian del margen; entrada 4.5 del historial de versiones | Recompilado en limpio: **cero desbordes horizontales y verticales, cero errores, cero referencias sin resolver**, y ningun bloque de texto ni imagen pasa del margen derecho en ninguna pagina. No cambia el contenido de ningun requisito |
+| Censura de cedulas y matriculas en los PDF de etica | Claude (Anthropic) | Localizacion de las cedulas y matriculas que seguian en la capa de texto de la solicitud de aprobacion etica, el oficio y los anexos A01, A03, A06, A07 y A09, y censura quemada en el mapa de bits | Comprobado despues: cero cedulas en la capa de texto de todo PDF de la zona publica, salvo las de los tres integrantes en la caratula, el ERS y la solicitud de composicion |
+| Declaracion expresa del tratamiento de datos | Claude (Anthropic) | Redaccion de la seccion 3.2 de `resumen_proceso_etico.md` y de `LICENSE-DATA.txt` | **El plazo y el responsable los decidio el equipo**; el plazo coincide con los 24 meses del plan de gestion de datos aprobado |
+| `07_Datos/`: etapas `conjuntos` y `documento` | Claude (Anthropic) | Dos etapas nuevas del orquestador: los conjuntos A y B en texto plano, y la regeneracion de las tablas y figuras del documento con comparacion byte a byte contra el manifiesto | Ejecutada la orden unica: las 18 salidas del documento salen identicas a las depositadas |
+| Calculo de potencia sin numero escrito a mano | Claude (Anthropic) | `replicar.py` y el `Makefile` cuentan las hojas de jueces en vez de pasar un 3 fijo | La salida `power_calculation.csv` no cambia |
+| Registro de la consigna del modelo y desviacion 5 | Claude (Anthropic) | Nota de estado en `prompt_llm_conjunto_A.md` sobre que parte del registro es integra y cual no existe, y desviacion por el momento del calculo de potencia | Las fechas se leyeron del historial y del registro de OSF |
+| Correcciones de esta declaracion, del manuscrito y del proceso etico | Claude (Anthropic) | Retirada de la afirmacion de los cero desbordes, del umbral de 0,41 como pactado, de la temperatura como registrada y de la contradiccion sobre los requisitos derivados | Cada correccion se contrasto con la fuente que la desmentia |
+| `verificacion_previa.py`, comprobacion 10 | Claude (Anthropic) | La comprobacion de datos personales lee ahora tambien la capa de texto de los PDF | Antes daba por cumplido el criterio con cedulas ajenas en PDF; ahora las detecta |
 
 ---
 
@@ -133,18 +181,22 @@ Se enumeran para que la declaracion sea completa y no solo positiva.
 | El diseno del cuasi-experimento y su protocolo registrado en OSF | El equipo |
 | Las decisiones de priorizacion MoSCoW, Kano y WSJF | El equipo |
 | Los diagramas originales en Visual Paradigm (`.vpp`) y en draw.io | El equipo |
-| El analisis, la discusion, las conclusiones y las amenazas a la validez | El equipo |
-| La codificacion tematica del corpus y la curva de saturacion | El equipo. Incluida la de las seis entrevistas de la ronda terminal: la asistencia recibida se limito a separar los turnos y a buscar terminos, y las columnas de codigo, categoria y juicio se entregaron vacias |
+| El analisis, la discusion y las conclusiones | El equipo. Las **amenazas a la validez** del manuscrito se redactaron con asistencia y se declaran en el apartado del 1 y 2 de septiembre |
+| La codificacion tematica del corpus y la curva de saturacion | El equipo. Incluida la de las seis entrevistas de la ronda terminal: la asistencia recibida se limito a separar los turnos y a buscar terminos, y las columnas de codigo, categoria y juicio se entregaron vacias. **Excepcion:** la columna `Requisito_derivado` de 38 filas, declarada en el apartado del 6 de septiembre |
 | La sesion de validacion comunicativa y su conduccion | El equipo |
-| La defensa oral y la exposicion grabada | El equipo |
+| Las sesiones de validacion con usuario tecnico `WT-08` a `WT-10`, su grabacion, sus actas manuscritas y la transcripcion de su audio | El equipo |
+| La defensa oral: la exposicion, la demostracion en vivo y las respuestas, y su grabacion | El equipo. El libreto y las diapositivas se declaran en el apartado del 7 al 10 de septiembre |
+| `CHANGELOG.md` `2B-1.13.0` y la regeneracion de manifiestos del 2026-09-11 | El analista lider, a mano |
 | La obtencion de los consentimientos informados y de las firmas de testigos | El equipo |
 
 ## 5. Limites que el equipo se impuso
 
-Las secciones evaluativas del reporte —analisis, discusion, conclusiones, justificacion
-de las decisiones de ingenieria y amenazas a la validez— son **produccion propia del
-equipo**, escritas contra la evidencia primaria del proyecto y sostenibles ante el
-tribunal por cualquiera de sus integrantes.
+Las secciones evaluativas del reporte —analisis, discusion, conclusiones y justificacion
+de las decisiones de ingenieria— son **produccion propia del equipo**, escritas contra la
+evidencia primaria del proyecto y sostenibles ante el tribunal por cualquiera de sus
+integrantes. Las amenazas a la validez del manuscrito son la excepcion y estan declaradas
+arriba: se redactaron con asistencia a partir de resultados y desviaciones que el equipo
+ya habia establecido.
 
 Ninguna cifra, tabla, figura, resultado estadistico ni referencia bibliografica de este
 trabajo procede de un modelo de lenguaje. Las cifras se generan por script desde los

@@ -210,16 +210,38 @@ def _autores(raiz):
     # una marca de tiempo de Excel como 46231.7374829051 contiene diez
     # digitos seguidos que no son una cedula.
     RE_CED = re.compile(r"(?<![\d.])\d{10}(?![\d.])")
+    # Los PDF tambien se leen: una cedula en la capa de texto de un PDF es tan
+    # publica como en un .md, y la version anterior de esta comprobacion no los
+    # miraba. Leerlos exige PyMuPDF; sin el, los PDF quedan sin revisar y el
+    # detalle lo dice en lugar de dar el criterio por cumplido.
+    try:
+        import pymupdf as _pdf
+    except ImportError:
+        try:
+            import fitz as _pdf
+        except ImportError:
+            _pdf = None
+    pdf_sin_revisar = 0
     for base, dirs, fs in os.walk(raiz):
         if ".git" in base or "00_Restringido" in base:
             continue
         for f in fs:
-            if not f.lower().endswith((".md", ".csv", ".txt", ".tex")):
-                continue
             p = os.path.join(base, f)
-            try:
-                t = io.open(p, encoding="utf-8", errors="ignore").read()
-            except OSError:
+            if f.lower().endswith(".pdf"):
+                if _pdf is None:
+                    pdf_sin_revisar += 1
+                    continue
+                try:
+                    with _pdf.open(p) as doc:
+                        t = "\n".join(pg.get_text() for pg in doc)
+                except Exception:
+                    continue
+            elif f.lower().endswith((".md", ".csv", ".txt", ".tex")):
+                try:
+                    t = io.open(p, encoding="utf-8", errors="ignore").read()
+                except OSError:
+                    continue
+            else:
                 continue
             for m in RE_CED.findall(t):
                 if m.startswith("20"):              # descarta anios y fechas
@@ -230,11 +252,13 @@ def _autores(raiz):
                 sospechas.append((os.path.relpath(p, raiz), m))
     unicos = sorted(set(x[0] for x in sospechas))
     anotar(10, "Ningun dato personal aparece en la zona publica del repositorio",
-           "CUMPLE" if not sospechas else "NO",
-           ("Ninguna cedula ajena al equipo fuera de la zona restringida. Las %d "
-            "apariciones detectadas son las de los propios integrantes, declaradas "
-            "por ellos en la caratula y en la composicion del equipo, no datos de "
-            "participantes" % propias_vistas)
+           ("CUMPLE" if not pdf_sin_revisar else "MANUAL") if not sospechas else "NO",
+           ("Ninguna cedula ajena al equipo fuera de la zona restringida, incluida "
+            "la capa de texto de los PDF. Las %d apariciones detectadas son las de "
+            "los propios integrantes, declaradas por ellos en la caratula y en la "
+            "composicion del equipo, no datos de participantes" % propias_vistas
+            + ("" if not pdf_sin_revisar else
+               ". %d PDF sin revisar: instale PyMuPDF" % pdf_sin_revisar))
            if not sospechas else
            "%d posible(s) cedula(s) AJENA(S) en %d archivo(s): %s. Revisar YA"
            % (len(sospechas), len(unicos), ", ".join(unicos[:4])))

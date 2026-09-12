@@ -39,10 +39,19 @@ identificador, comprobado uno a uno contra el repositorio.
 **Sobre el committer de una de esas tres confirmaciones.** Una se creo desde la interfaz web
 de GitHub, de modo que su *committer* figura como `GitHub <noreply@github.com>` mientras que
 su *autor* es el integrante con su correo institucional. Git distingue las dos cosas: el autor
-es quien escribe el cambio y es lo que acredita la contribucion; el committer registra por
-que medio se aplico. No hay ningun agente automatizado en la autoria del historial --los tres
-correos de autor son los tres institucionales, comprobable con `git log --format=%ae | sort -u`--
-y GitHub firma esas confirmaciones con su clave, por lo que aparecen como verificadas.
+identifica a quien se atribuye el cambio; el committer registra por que medio se aplico. Los
+tres correos de autor del historial son los tres institucionales, comprobable con
+`git log --format=%ae | sort -u`, y ninguna confirmacion lleva un autor ni un coautor que no
+sea integrante.
+
+**Lo que el campo autor no dice.** Buena parte de las confirmaciones —tambien varias a nombre
+de los otros dos integrantes— las ejecuto un asistente de inteligencia artificial desde la
+maquina del analista lider, con el nombre del integrante al que el equipo atribuyo cada
+cambio. Se declara, con ejemplos, en
+[`10_Autoria/declaracion_uso_ia.md`](../10_Autoria/declaracion_uso_ia.md). Por eso el aporte
+de cada persona no se acredita solo con el recuento de confirmaciones, sino tambien con las
+grabaciones de las sesiones de trabajo, las capturas por integrante y el aporte individual
+firmado de `10_Autoria/`.
 
 **Una precision sobre el recuento.** Una declaracion de aporte no puede incluir el commit
 que la deposita: el identificador todavia no existe cuando se escribe el archivo. Por eso el
