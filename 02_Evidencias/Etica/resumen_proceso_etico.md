@@ -51,7 +51,9 @@ de requisitos).
    terminal.
 7. **Entrega de una copia** del formulario firmado a la persona participante.
 8. **Archivo** del original en `02_Evidencias/Consentimientos/` con nomenclatura
-   `YYYY-MM-DD_Consentimiento_SEUDONIMO.pdf`.
+   `AAAA-MM-DD_Perfil_CODIGO_Consentimiento.pdf`, donde `CODIGO` es el seudónimo
+   (`DOC-nn`, `COORD-nn`, `CONS-nn`, `TIC-nn`): ningún nombre de archivo contiene el
+   nombre de una persona.
 
 ### 2.2 Contenido mínimo del formulario
 
@@ -91,7 +93,7 @@ cubiertos por la adenda de segunda ronda del expediente ético de 2A.
 | **Minimización** | Solo se recogen los datos estrictamente necesarios. No se solicitan datos de categoría especial. Las variables demográficas se publican agregadas. |
 | **Seudonimización** | Toda persona se identifica por seudónimo estable (`DOC-nn`, `COORD-nn`, `CONS-nn`). La tabla de correspondencia no se publica. |
 | **Confidencialidad y seguridad** | El material identificable permanece en repositorio de acceso restringido al equipo, al docente responsable y al tribunal. Se firmó compromiso de confidencialidad por cada integrante. |
-| **Conservación limitada** | Los materiales identificables se conservan durante el período académico y hasta el cierre del proceso de publicación; luego se destruyen conforme al plan de gestión de datos. |
+| **Conservación limitada** | Los materiales identificables se conservan **hasta el 30 de septiembre de 2028** y en esa fecha se destruyen, conforme a la Sección 3.2. |
 | **Responsabilidad proactiva** | El procedimiento de anonimización se verifica mediante doble revisión independiente y acta firmada antes de todo depósito público. |
 
 ### 3.1 Derechos de las personas participantes
@@ -100,6 +102,19 @@ Toda persona participante puede ejercer, en cualquier momento y sin necesidad de
 justificar su decisión, los derechos de **acceso, rectificación, eliminación,
 oposición, portabilidad** y a no ser objeto de decisiones automatizadas, dirigiéndose
 al contacto de la Sección 6.
+
+### 3.2 Declaración expresa del tratamiento
+
+Declaración única de los cuatro elementos que la LOPDP exige conocer antes de tratar datos
+personales. Rige para todo el material del estudio que identifica o puede identificar a una
+persona participante.
+
+| Elemento | Declaración |
+|---|---|
+| **Base de licitud** | **Consentimiento del titular** (LOPDP, art. 7, numeral 1), otorgado por escrito, con firma manuscrita y casillas independientes para la entrevista, la grabación y el uso de los datos anonimizados en publicaciones. Sin consentimiento firmado no se trata ningún dato, y su retiro detiene el tratamiento conforme a la Sección 4. |
+| **Finalidad** | Elicitar y validar los requisitos del sistema SIGA y ejecutar el estudio empírico del Proyecto Fin de Curso de ISR-401. Ningún dato se cede a terceros ni se usa para otro fin. Lo único que se publica son datos **anonimizados**, bajo CC BY 4.0. |
+| **Plazo de conservación** | El material identificable —vídeo, audio, consentimientos firmados y tabla de correspondencia entre código y persona— se conserva **hasta el 30 de septiembre de 2028**: los 24 meses desde la finalización del proyecto que fija la política de retención del plan de gestión de datos aprobado (`Anexos/A04_Plan_Gestion_Datos.pdf`, apartado 9), contados desde el cierre del Proyecto Fin de Curso. En esa fecha se destruye el contenedor cifrado, se retira del repositorio y se levanta el acta de destrucción que exige el apartado 10 del mismo plan. Los datos anonimizados ya publicados no caducan, porque no permiten identificar a nadie. |
+| **Responsable del tratamiento** | **Sánchez Cornejo, Gary Alberto** — <gsanchezc6@uteq.edu.ec>, analista líder del equipo: custodia el contenedor cifrado y su contraseña, y responde por el tratamiento que hace el equipo. El plan de gestión de datos (A04, apartado 13) asigna la **gestión** de los datos al docente responsable, **Ing. Gleiston Guerrero Ulloa**, con el apoyo del analista líder; el docente es además el contacto para ejercer los derechos de la Sección 3.1 y quien firma el acta de destrucción. |
 
 ---
 
@@ -181,12 +196,16 @@ IA generativa en la escritura científica, se declara:
 
 1. **Como objeto de estudio.** Un Modelo Grande de Lenguaje fue utilizado de forma
    deliberada y controlada para generar el Conjunto A de requisitos funcionales que
-   constituye la intervención experimental. El modelo exacto, su versión, la
-   temperatura, los parámetros de muestreo, la fecha y hora de la consulta y el prompt
-   literal están registrados en `06_Experimento/prompts_llm/`.
-2. **Como apoyo de redacción.** Se empleó un LLM para pulir la redacción de párrafos
-   cuyo contenido fue escrito previamente por el equipo con base en datos empíricos.
-   Las personas autoras revisaron y asumen la responsabilidad íntegra del texto final.
+   constituye la intervención experimental. El modelo, la interfaz, la fecha de la
+   consulta y la consigna literal están registrados en `06_Experimento/prompts_llm/`.
+   La temperatura y los parámetros de muestreo **no están disponibles**: la interfaz de
+   chat no los expone, y así se declara en ese registro en lugar de inventar un valor.
+2. **Como asistencia en la elaboración del entregable.** Se empleó un LLM en redacción,
+   en scripts de verificación y de integridad, y en tareas de organización del
+   repositorio. El inventario completo, sección por sección y con el método de validación
+   de cada una, está en
+   [`10_Autoria/declaracion_uso_ia.md`](../../10_Autoria/declaracion_uso_ia.md). Las
+   personas autoras revisaron y asumen la responsabilidad íntegra del resultado.
 3. **Límite infranqueable.** Ningún resultado, cifra, tabla, figura, conclusión ni
    referencia bibliográfica fue producido por un LLM. Toda referencia se verificó
    individualmente y cada DOI se resolvió manualmente antes del envío.

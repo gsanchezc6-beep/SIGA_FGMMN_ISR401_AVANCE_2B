@@ -57,17 +57,23 @@ El tratamiento de los datos personales que dieron origen a este paquete se
 ajusta a la Ley Organica de Proteccion de Datos Personales del Ecuador
 (Registro Oficial Suplemento No. 459 de 26 de mayo de 2021).
 
-  Base de licitud    Consentimiento informado, expreso y por escrito de cada
-                     participante, con codigo de sesion que lo vincula a su
-                     evidencia.
+  Base de licitud    Consentimiento del titular (LOPDP, art. 7, numeral 1):
+                     informado, expreso y por escrito de cada participante, con
+                     codigo de sesion que lo vincula a su evidencia.
   Finalidad          Identificar y justificar los requisitos de un sistema de
                      gestion de aulas, en el marco de la asignatura ISR-401.
-  Plazo              Los datos identificables se conservan hasta el cierre del
-                     periodo academico 2026-2027 PPA y luego se destruyen. La
-                     capa anonimizada, publicada bajo esta licencia, no tiene
-                     plazo de conservacion por no contener datos personales.
-  Responsables       Sanchez Cornejo, Gary Alberto  gsanchezc6@uteq.edu.ec
-                     Munoz Quinonez, Yeranick Esther  ymunozq@uteq.edu.ec
-                     Cedeno Avila, Winston Damian  wcedenoa2@uteq.edu.ec
+  Plazo              Los datos identificables (video, audio, consentimientos
+                     firmados y correspondencia codigo-persona) se conservan
+                     hasta el 30 de septiembre de 2028 (24 meses desde la
+                     finalizacion del proyecto, segun el plan de gestion de
+                     datos A04) y en esa fecha se destruyen. La capa
+                     anonimizada, publicada bajo esta licencia, no tiene plazo
+                     de conservacion por no contener datos personales.
+  Responsable        Sanchez Cornejo, Gary Alberto  gsanchezc6@uteq.edu.ec
+                     Custodio del contenedor cifrado y de su contrasena.
+                     Gestion de los datos (plan A04): Ing. Gleiston Guerrero
+                     Ulloa, docente responsable.
   Derechos           Acceso, rectificacion, supresion y oposicion, ejercitables
                      por escrito ante la direccion de correo del responsable.
+                     Detalle en 02_Evidencias/Etica/resumen_proceso_etico.md,
+                     seccion 3.2.
