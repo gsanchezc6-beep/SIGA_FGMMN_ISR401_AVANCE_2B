@@ -24,7 +24,7 @@ Este README declara el estado real de cada elemento. **Los doce estan depositado
 | A7 | `doble_codificacion/` | **Depositado** | Las dos hojas de codificacion independientes sobre los mismos 39 fragmentos, el script del acuerdo y sus resultados. Kappa de Cohen **0,548** para el codigo y **0,911** para la categoria, con intervalo por bootstrap |
 | A8 | `correspondencia/` | **Depositado** | Tres capturas de la coordinacion de la ronda terminal y la consulta al docente sobre las firmas de A10 con su respuesta. Datos de terceros censurados |
 | A9 | `declaracion_uso_ia.md` | **Depositado** | Por seccion, incluidas aquellas en las que no se empleo ninguna herramienta |
-| A10 | `aporte_individual.md` · `.pdf` | **Depositado y firmado** | Generado desde el historial por `04_Trazabilidad/generar_aporte_individual.py`. El `.md` se regenero el 2026-09-12 y cubre el historial hasta esa fecha. El `.pdf` es el que firmaron los tres integrantes acreditados el 2026-09-04 y cubre el historial hasta ese dia |
+| A10 | `aporte_individual.md` · `.pdf` | **Depositado y firmado** | Generado desde el historial por `04_Trazabilidad/generar_aporte_individual.py`. Regenerado el 2026-09-12 sobre el historial hasta `3530bb2` y **firmado por los tres integrantes acreditados ese mismo dia**; sustituye al firmado el 2026-09-04 |
 | A11 | `exif_inventario.csv` | **Depositado** | Las dos fotografias de A6 con su fecha de captura leida de los metadatos, el dispositivo y el hash. Las dos conservan la fecha |
 | A12 | `.mailmap` | **Depositado** | En la raiz del repositorio, que es donde Git lo lee |
 
@@ -45,11 +45,13 @@ El documento lo firman los tres integrantes acreditados y no nombra a nadie mas.
 seccion 11 de la guia, **ejecutadas sobre un clon limpio del remoto**, no marcadas a mano:
 el detalle de cada una es la salida real de `verificacion_previa.py`.
 
-Va firmada por **dos integrantes**, no por uno. La guia exige que quien comprueba sea una
-persona distinta de quien produjo cada artefacto, y con un solo firmante eso no se puede
-cumplir sobre el arbol entero: los tres tienen confirmaciones y quien mas produjo no puede
-verificarse a si mismo. El reparto se comprueba **por archivo y no por carpeta**, y esta
-explicado en el propio documento.
+Va firmada por **los tres integrantes** el 2026-09-12, sobre el clon limpio de `3530bb2`. La
+guia exige que quien comprueba sea una persona distinta de quien produjo cada artefacto, y
+con un solo firmante eso no se puede cumplir sobre el arbol entero. El reparto **lo calcula
+el script desde el historial, archivo por archivo**: Cedeno Avila verifica lo que no toco,
+Munoz Quinonez lo que toco el y ella no, y Sanchez Cornejo lo que tocaron los otros dos y el
+no. Los dos archivos que tocaron los tres se declaran en el documento como sin verificador
+distinto de su autor.
 
 ## Que no hay aqui
 

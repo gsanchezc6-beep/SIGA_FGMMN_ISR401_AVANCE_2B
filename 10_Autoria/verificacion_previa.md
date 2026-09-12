@@ -9,7 +9,7 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 | | |
 |---|---|
 | Comprobado sobre | un clon limpio del remoto |
-| Version | `0578810` |
+| Version | `3530bb2` |
 
 ---
 
@@ -22,7 +22,7 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 | 3 | No existe ningun archivo de cero o un byte cuyo nombre anuncie contenido de evidencia | **Si** | Cero archivos de 0 o 1 byte en todo el arbol |
 | 4 | La comprobacion de sumas termina sin error sobre el clon limpio | **Si** | 979 de 979 sumas correctas |
 | 5 | Todos los autores del historial son integrantes declarados con correo institucional | **Si** | 3 autor(es): gsanchezc6@uteq.edu.ec, wcedenoa2@uteq.edu.ec, ymunozq@uteq.edu.ec |
-| 6 | Existe etiqueta anotada de linea base, publicada y alcanzable desde la rama por defecto | **Si** | 4 etiqueta(s) anotada(s) y alcanzable(s) desde main: 2B-final, 2B-final-v2.1, 2B-final-v3.0, 2B-final-v4.0 |
+| 6 | Existe etiqueta anotada de linea base, publicada y alcanzable desde la rama por defecto | **Si** | 5 etiqueta(s) anotada(s) y alcanzable(s) desde main: 2B-final, 2B-final-v2.1, 2B-final-v3.0, 2B-final-v4.0, 2B-final-v5.0 |
 | 7 | La carpeta 07_Datos existe y la orden unica de analisis se ejecuta sin error | **Si** | python 07_Datos/scripts/ejecutar.py termino con codigo 0 |
 | 8 | La carpeta 10_Autoria contiene los elementos A1 a A12 | **Si** | Los doce elementos existen y tienen contenido |
 | 9 | Todo numero que aparece en los documentos procede de la salida de un script | Manual | La correspondencia salida-script esta declarada en 07_Publicacion/dataset_zenodo/correspondencia_salidas.csv. Requiere revision humana |
@@ -36,8 +36,10 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 
 Comprobado sobre el cuerpo completo de todos los mensajes de commit: **ninguna**
 marca de coautoria automatizada, ninguna firma de agente, ningun correo de
-notificacion. El historial lo firman unicamente personas del equipo con su correo
-institucional.
+notificacion. Todos los autores del historial son integrantes del equipo con su
+correo institucional. Que parte de las operaciones de Git las ejecuto un asistente
+de inteligencia artificial, con la identidad del integrante al que se atribuia cada
+cambio, se declara en `10_Autoria/declaracion_uso_ia.md`.
 
 ---
 
@@ -76,44 +78,45 @@ Cualquiera puede rehacer la comprobacion sobre la version entregada:
 python 10_Autoria/verificacion_previa.py --clonar
 ```
 
+
 ---
+
+## Reparto de la verificacion
+
+La guia exige que quien comprueba sea **una persona distinta de quien produjo cada
+artefacto**. El reparto **lo calcula este script desde el historial, archivo por
+archivo**: cada archivo lo verifica alguien que no tiene ninguna confirmacion sobre
+el. Se comprueba con `git log --format=%ae -- <archivo>`.
+
+| Firmante | Verifica | Archivos |
+|---|---|---|
+| Cedeno Avila, Winston Damian | Todos los archivos sin ninguna confirmacion suya | 940 |
+| Munoz Quinonez, Yeranick Esther | Los que tienen confirmaciones de Cedeno Avila y ninguna suya | 31 |
+| Sanchez Cornejo, Gary Alberto | Los que tienen confirmaciones de los otros dos y ninguna suya | 2 |
+
+**Archivos de la segunda firma:** `02_Evidencias/Codificacion_Tematica/incorporar_codificacion.py`, `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-05_EV-20_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-06_EV-21_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-07_EV-22_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-08_EV-23_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-09_EV-24_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-03_Docente_DOC-10_EV-25_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-04_Tecnico_TIC-01_EV-26_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-05_Tecnico_TIC-02_EV-27_Transcripcion.md`, `02_Evidencias/Transcripciones/2026-09-07_Tecnico_TIC-03_EV-28_Transcripcion.md`, `02_Evidencias/Transcripciones/control_calidad/00_LEEME.md`, `02_Evidencias/Transcripciones/control_calidad/DOC-05_transcripcion_wcedenoa2.md`, `02_Evidencias/Transcripciones/control_calidad/DOC-05_transcripcion_ymunozq.md`, `02_Evidencias/Transcripciones/control_calidad/DOC-06_transcripcion_wcedenoa2.md`, `02_Evidencias/Transcripciones/control_calidad/DOC-06_transcripcion_ymunozq.md`, `02_Evidencias/Transcripciones/control_calidad/comparacion_transcripciones.csv`, `02_Evidencias/Validacion_Walkthrough/Inspeccion/2026-09-05_INS-01_Registro_Inspeccion.pdf`, `02_Evidencias/Validacion_Walkthrough/Inspeccion/2026-09-05_REINS-01_Registro_Reinspeccion.pdf`, `02_Evidencias/Validacion_Walkthrough/Inspeccion/registro_defectos.csv`, `02_Evidencias/Validacion_Walkthrough/Solicitudes_Cambio/2026-08-31_CCB-01_Acta_Comite.pdf`, `02_Evidencias/Validacion_Walkthrough/Solicitudes_Cambio/SC-01_Delimitar_RF-13_RF-16.pdf`, `02_Evidencias/Validacion_Walkthrough/Solicitudes_Cambio/SC-02_Plazos_y_estados_del_ticket.pdf`, `02_Evidencias/Validacion_Walkthrough/Solicitudes_Cambio/SC-03_Apertura_individual_de_camara.pdf`, `02_Evidencias/Validacion_Walkthrough/Solicitudes_Cambio/SC-04_Prioridad_MoSCoW_RF-20_RF-24_RF-25.pdf`, `04_Trazabilidad/2026-09-05_Retrospectiva_Equipo.pdf`, `08_Defensa/2026-09-09_Defensa_Grabada.mp4`, `08_Defensa/README.md`, `10_Autoria/capturas/2026-09-04_WinstonCD_control_calidad_transcripciones.png`, `10_Autoria/capturas/2026-09-04_WinstonCD_transcripcion_EV-21.png`, `10_Autoria/capturas/2026-09-04_gsanchezc6-beep_paquete_datos_formato_largo.png`, `10_Autoria/capturas/2026-09-04_gsanchezc6-beep_paquete_datos_integridad.png`.
+
+**Archivos de la tercera firma:** `02_Evidencias/Validacion_Walkthrough/Inspeccion/00_LEEME.md`, `02_Evidencias/Validacion_Walkthrough/Solicitudes_Cambio/00_LEEME.md`.
+
+**Sin verificador distinto de su autor:** `01_ERS/Auditoria_Calidad/auditoria_calidad_especificacion.md`, `02_Evidencias/Codificacion_Tematica/codificacion_tematica.csv`. Tienen confirmaciones de los tres
+integrantes, de modo que ninguno puede verificarlos sin comprobar trabajo propio; se
+declaran en lugar de asignarlos. Quedan fuera del reparto los manifiestos de sumas, que
+regenera un script, y los tres archivos de esta verificacion, que no puede verificarse a
+si misma.
 
 ## Firmas
 
-La guia exige que quien comprueba sea **una persona distinta de quien produjo cada
-artefacto**. Con un solo firmante eso no se puede cumplir sobre el arbol entero:
-los tres integrantes tienen confirmaciones, y quien mas produjo no puede verificarse
-a si mismo. Se reparte en dos firmas que **entre las dos cubren todo el arbol sin
-que nadie compruebe lo suyo**.
+Cada firmante declara haber revisado el resultado de arriba y las comprobaciones
+marcadas como manuales, sobre los archivos que el reparto le asigna.
 
-El reparto no es una declaracion de intenciones: sale del historial. Y se comprueba
-**por archivo**, no por carpeta: los dos firmantes tienen confirmaciones dentro de
-`02_Evidencias` y de `10_Autoria`, pero ninguno sobre los archivos que verifica el
-otro.
+**Cedeno Avila, Winston Damian** --- wcedenoa2@uteq.edu.ec
 
-### Primera firma
+Firma: ______________________________    Fecha: ______________
 
-| | |
-|---|---|
-| Nombre | Cedeno Avila, Winston Damian |
-| Correo institucional | wcedenoa2@uteq.edu.ec |
-| Artefactos que **no** produjo, y que por tanto verifica | `01_ERS`, `03_Modelado`, `04_Trazabilidad`, `05_MVP`, `06_Experimento`, `07_Datos`, `07_Publicacion` y `08_Defensa` |
-| Como se comprueba | Cero confirmaciones suyas en esas ocho carpetas, con `git log --format=%ae -- <carpeta>` |
+**Munoz Quinonez, Yeranick Esther** --- ymunozq@uteq.edu.ec
 
-Firma: ____________________________    Fecha: ______________
+Firma: ______________________________    Fecha: ______________
 
-### Segunda firma
+**Sanchez Cornejo, Gary Alberto** --- gsanchezc6@uteq.edu.ec
 
-Cubre lo que produjo el primer firmante, y que por eso el no puede verificar.
-
-| | |
-|---|---|
-| Nombre | Munoz Quinonez, Yeranick Esther |
-| Correo institucional | ymunozq@uteq.edu.ec |
-| Artefactos que **no** produjo, y que por tanto verifica | Los archivos depositados por Cedeno Avila: las seis transcripciones de la ronda terminal (`EV-20` a `EV-25`), la carpeta `control_calidad/` completa, `incorporar_codificacion.py` y sus dos capturas de A2 |
-| Como se comprueba | Cero confirmaciones suyas **sobre esos archivos**. El reparto es por archivo y no por carpeta: los dos tienen confirmaciones en `02_Evidencias` y en `10_Autoria`, pero no sobre los mismos archivos. Se comprueba con `git log --format=%ae -- <archivo>` |
-
-Firma: ____________________________    Fecha: ______________
-
-> Ambos firmantes declaran haber revisado el resultado de arriba y las tres
-> comprobaciones marcadas como manuales, cada uno sobre las rutas que le corresponden.
+Firma: ______________________________    Fecha: ______________

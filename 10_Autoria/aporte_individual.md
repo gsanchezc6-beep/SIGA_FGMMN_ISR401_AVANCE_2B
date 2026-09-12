@@ -14,7 +14,7 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **162** | 2026-08-30 | 2026-09-12 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **164** | 2026-08-30 | 2026-09-12 |
 | Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **83** | 2026-08-30 | 2026-09-07 |
 | Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **12** | 2026-09-04 | 2026-09-09 |
 
@@ -27,14 +27,14 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 162**, de 2026-08-30 a 2026-09-12.
+**Confirmaciones: 164**, de 2026-08-30 a 2026-09-12.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
 | Evidencia de campo y etica | 676 |
-| Documentos de raiz | 170 |
+| Documentos de raiz | 173 |
 | Modelado UML e i* | 136 |
 | Manuscrito y deposito | 126 |
 | Componente empirico | 104 |
@@ -42,8 +42,8 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | Defensa | 61 |
 | Especificacion de requisitos | 57 |
 | Producto minimo viable | 53 |
-| Evidencia de autoria | 48 |
-| Trazabilidad | 40 |
+| Evidencia de autoria | 51 |
+| Trazabilidad | 42 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -212,6 +212,8 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `52713e9` | 2026-09-12 | feat(datos): la orden unica de 07_Datos regenera tambien las tablas y figuras del documento |
 | `814d45d` | 2026-09-12 | fix(publicacion): el manuscrito ya no presenta el 0,41 como umbral pactado |
 | `e13df21` | 2026-09-12 | fix(autoria): la declaracion de uso de IA cuadra con el repositorio |
+| `3080481` | 2026-09-12 | docs: declara la linea base 2B-final-v5.0 y pone al dia README y CHANGELOG |
+| `0578810` | 2026-09-12 | chore(autoria): regenera la bitacora, el aporte individual y el manifiesto sobre el historial al dia |
 
 ---
 

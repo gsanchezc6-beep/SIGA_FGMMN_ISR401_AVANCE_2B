@@ -311,7 +311,51 @@ def etiquetas(raiz):
     return "CUMPLE", det
 
 
-def escribir(marcas, clonado, sha):
+CEDENO = "wcedenoa2@uteq.edu.ec"
+MUNOZ = "ymunozq@uteq.edu.ec"
+SANCHEZ = "gsanchezc6@uteq.edu.ec"
+# Archivos que no se reparten: la propia verificacion no puede verificarse a si
+# misma, y los manifiestos de sumas los regenera un script sobre todo el arbol.
+NO_REPARTIBLES = ("checksums.sha256", "07_Datos/checksums_datos.sha256",
+                  "10_Autoria/verificacion_previa.md",
+                  "10_Autoria/verificacion_previa.pdf",
+                  "10_Autoria/verificacion_previa.py")
+
+
+def reparto(raiz):
+    """Reparte los archivos versionados entre los firmantes, desde el historial.
+
+    Cada archivo lo verifica alguien sin ninguna confirmacion sobre el:
+      1. Cedeno Avila, todo lo que no toco.
+      2. Munoz Quinonez, lo que toco Cedeno y ella no.
+      3. Sanchez Cornejo, lo que tocaron los otros dos y el no.
+    Lo que tocaron los tres no lo puede verificar nadie distinto de quien lo
+    produjo, y se lista aparte en lugar de asignarlo.
+    """
+    salida = correr(["git", "log", "--name-only", "--format=%x1f%ae"], raiz).stdout
+    autores = {}
+    for bloque in salida.split("\x1f")[1:]:
+        lineas = [l for l in bloque.split("\n") if l.strip()]
+        if not lineas:
+            continue
+        for a in lineas[1:]:
+            autores.setdefault(a, set()).add(lineas[0])
+    vivos = [f for f in correr(["git", "ls-files"], raiz).stdout.split("\n")
+             if f and f not in NO_REPARTIBLES]
+    uno = [f for f in vivos if CEDENO not in autores.get(f, set())]
+    resto = [f for f in vivos if CEDENO in autores.get(f, set())]
+    dos = [f for f in resto if MUNOZ not in autores[f]]
+    resto = [f for f in resto if MUNOZ in autores[f]]
+    tres = [f for f in resto if SANCHEZ not in autores[f]]
+    nadie = [f for f in resto if SANCHEZ in autores[f]]
+    return uno, dos, tres, nadie
+
+
+def _lista(archivos):
+    return ", ".join("`%s`" % f for f in archivos) if archivos else "ninguno"
+
+
+def escribir(marcas, clonado, sha, raiz):
     L = ["# Lista de verificacion previa",
          "",
          "**Proyecto SIGA · Equipo FGMMN · ISR-401 · Universidad Tecnica Estatal de Quevedo**",
@@ -340,8 +384,10 @@ def escribir(marcas, clonado, sha):
     else:
         L += ["Comprobado sobre el cuerpo completo de todos los mensajes de commit: **ninguna**",
               "marca de coautoria automatizada, ninguna firma de agente, ningun correo de",
-              "notificacion. El historial lo firman unicamente personas del equipo con su correo",
-              "institucional.", ""]
+              "notificacion. Todos los autores del historial son integrantes del equipo con su",
+              "correo institucional. Que parte de las operaciones de Git las ejecuto un asistente",
+              "de inteligencia artificial, con la identidad del integrante al que se atribuia cada",
+              "cambio, se declara en `10_Autoria/declaracion_uso_ia.md`.", ""]
     L += ["---", "", "## Lo que esta lista no decide", "",
           "Tres comprobaciones quedan marcadas como **manual** a proposito.",
           "",
@@ -373,44 +419,45 @@ def escribir(marcas, clonado, sha):
           "python 10_Autoria/verificacion_previa.py --clonar",
           "```",
           "",
-          "---", "", "## Firmas", "",
+          ""]
+    uno, dos, tres, nadie = reparto(raiz)
+    L += ["---", "", "## Reparto de la verificacion", "",
           "La guia exige que quien comprueba sea **una persona distinta de quien produjo cada",
-          "artefacto**. Con un solo firmante eso no se puede cumplir sobre el arbol entero:",
-          "los tres integrantes tienen confirmaciones, y quien mas produjo no puede verificarse",
-          "a si mismo. Se reparte en dos firmas que **entre las dos cubren todo el arbol sin",
-          "que nadie compruebe lo suyo**.",
+          "artefacto**. El reparto **lo calcula este script desde el historial, archivo por",
+          "archivo**: cada archivo lo verifica alguien que no tiene ninguna confirmacion sobre",
+          "el. Se comprueba con `git log --format=%ae -- <archivo>`.",
           "",
-          "El reparto no es una declaracion de intenciones: sale del historial. Y se comprueba",
-          "**por archivo**, no por carpeta: los dos firmantes tienen confirmaciones dentro de",
-          "`02_Evidencias` y de `10_Autoria`, pero ninguno sobre los archivos que verifica el",
-          "otro.",
+          "| Firmante | Verifica | Archivos |",
+          "|---|---|---|",
+          "| Cedeno Avila, Winston Damian | Todos los archivos sin ninguna confirmacion suya | %d |" % len(uno),
+          "| Munoz Quinonez, Yeranick Esther | Los que tienen confirmaciones de Cedeno Avila y ninguna suya | %d |" % len(dos),
+          "| Sanchez Cornejo, Gary Alberto | Los que tienen confirmaciones de los otros dos y ninguna suya | %d |" % len(tres),
           "",
-          "### Primera firma",
+          "**Archivos de la segunda firma:** %s." % _lista(dos),
           "",
-          "| | |",
-          "|---|---|",
-          "| Nombre | Cedeno Avila, Winston Damian |",
-          "| Correo institucional | wcedenoa2@uteq.edu.ec |",
-          "| Artefactos que **no** produjo, y que por tanto verifica | `01_ERS`, `03_Modelado`, `04_Trazabilidad`, `05_MVP`, `06_Experimento`, `07_Datos`, `07_Publicacion` y `08_Defensa` |",
-          "| Como se comprueba | Cero confirmaciones suyas en esas ocho carpetas, con `git log --format=%ae -- <carpeta>` |",
+          "**Archivos de la tercera firma:** %s." % _lista(tres),
           "",
-          "Firma: ____________________________    Fecha: ______________",
+          "**Sin verificador distinto de su autor:** %s. Tienen confirmaciones de los tres" % _lista(nadie),
+          "integrantes, de modo que ninguno puede verificarlos sin comprobar trabajo propio; se",
+          "declaran en lugar de asignarlos. Quedan fuera del reparto los manifiestos de sumas, que",
+          "regenera un script, y los tres archivos de esta verificacion, que no puede verificarse a",
+          "si misma.",
+          ""]
+    L += ["## Firmas", "",
+          "Cada firmante declara haber revisado el resultado de arriba y las comprobaciones",
+          "marcadas como manuales, sobre los archivos que el reparto le asigna.",
           "",
-          "### Segunda firma",
+          "**Cedeno Avila, Winston Damian** --- wcedenoa2@uteq.edu.ec",
           "",
-          "Cubre lo que produjo el primer firmante, y que por eso el no puede verificar.",
+          "Firma: ______________________________    Fecha: ______________",
           "",
-          "| | |",
-          "|---|---|",
-          "| Nombre | Munoz Quinonez, Yeranick Esther |",
-          "| Correo institucional | ymunozq@uteq.edu.ec |",
-          "| Artefactos que **no** produjo, y que por tanto verifica | Los archivos depositados por Cedeno Avila: las seis transcripciones de la ronda terminal (`EV-20` a `EV-25`), la carpeta `control_calidad/` completa, `incorporar_codificacion.py` y sus dos capturas de A2 |",
-          "| Como se comprueba | Cero confirmaciones suyas **sobre esos archivos**. El reparto es por archivo y no por carpeta: los dos tienen confirmaciones en `02_Evidencias` y en `10_Autoria`, pero no sobre los mismos archivos. Se comprueba con `git log --format=%ae -- <archivo>` |",
+          "**Munoz Quinonez, Yeranick Esther** --- ymunozq@uteq.edu.ec",
           "",
-          "Firma: ____________________________    Fecha: ______________",
+          "Firma: ______________________________    Fecha: ______________",
           "",
-          "> Ambos firmantes declaran haber revisado el resultado de arriba y las tres",
-          "> comprobaciones marcadas como manuales, cada uno sobre las rutas que le corresponden.",
+          "**Sanchez Cornejo, Gary Alberto** --- gsanchezc6@uteq.edu.ec",
+          "",
+          "Firma: ______________________________    Fecha: ______________",
           ""]
     io.open(SALIDA, "w", encoding="utf-8").write("\n".join(L))
 
@@ -435,7 +482,7 @@ def main():
         print("Verificando %s sobre %s\n" % (sha, "un clon limpio" if clonar
                                              else "la copia local"))
         marcas = comprobar(raiz, clonar)
-        escribir(marcas, clonar, sha)
+        escribir(marcas, clonar, sha, raiz)
         print("\nEscrito 10_Autoria/verificacion_previa.md")
         fallos = [r for r in resultados if r[2] == "NO"]
         if fallos:

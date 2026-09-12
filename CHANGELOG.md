@@ -8,6 +8,37 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.14.1] - 2026-09-12
+
+Deposito de los dos documentos firmados que cerraban la version 2B-1.14.0.
+
+### Cambiado
+
+- **`10_Autoria/aporte_individual.pdf` (A10)**, regenerado sobre el historial hasta `3530bb2` y
+  firmado por los tres integrantes el 2026-09-12. Sustituye al firmado el 2026-09-04, que no
+  cubria el trabajo posterior.
+- **`10_Autoria/verificacion_previa.pdf`**, sobre el clon limpio de `3530bb2`, firmado por los
+  tres integrantes el 2026-09-12. El reparto de firmas que declaraba era falso --- decia que
+  Cedeno Avila no tenia confirmaciones en `01_ERS`, `04_Trazabilidad` ni `08_Defensa`, y las
+  tiene ---; ahora `verificacion_previa.py` lo calcula desde el historial, archivo por archivo,
+  y declara aparte los dos archivos que tocaron los tres.
+
+### Linea base
+
+Esta tabla sustituye a la de `[2B-1.14.0]`. **Quien revise el repositorio debe ir directamente
+a la etiqueta vigente**: `git checkout 2B-final-v5.1`.
+
+| Etiqueta | Estado | Que identifica |
+|---|---|---|
+| **`2B-final-v5.1`** | **VIGENTE** | La version entregada a la rubrica de cierre, con los documentos firmados: el ultimo commit de `main` |
+| `2B-final-v5.0` | Historica | La version 2B-1.14.0 antes de depositar los documentos firmados, sobre `3530bb2` |
+| `2B-final-v4.0` | Historica | La del examen final de la semana 19, sobre `6bb3b08` |
+| `2B-final-v3.0` | Historica | La depositada en Zenodo el 2026-09-04 |
+| `2B-final-v2.1` | Historica | La que el docente califico provisionalmente sobre `0e69071` |
+| `2B-final` | Historica | Apunta al mismo commit que `2B-final-v2.1` |
+
+---
+
 ## [2B-1.14.0] - 2026-09-12
 
 Auditoria del repositorio contra la rubrica de cierre del Proyecto Fin de Curso, sobre un
