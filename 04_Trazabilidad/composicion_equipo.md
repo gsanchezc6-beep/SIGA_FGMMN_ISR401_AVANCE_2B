@@ -26,9 +26,11 @@ comprobable con `git shortlog -sne main`:
 
 | Autor del historial | Commits | Correo de la firma | Situacion |
 |---|---|---|---|
-| Gary Alberto Sanchez Cornejo | 76 | gsanchezc6@uteq.edu.ec | Acreditado |
-| Yeranick Esther Munoz Quinonez | 61 | ymunozq@uteq.edu.ec | Acreditado |
-| Winston Damian Cedeno Avila | 3 | wcedenoa2@uteq.edu.ec | Acreditado. **Incorporado el 2026-09-02**; sus confirmaciones empiezan con la ronda terminal |
+| Gary Alberto Sanchez Cornejo | 163 | gsanchezc6@uteq.edu.ec | Acreditado |
+| Yeranick Esther Munoz Quinonez | 83 | ymunozq@uteq.edu.ec | Acreditada |
+| Winston Damian Cedeno Avila | 12 | wcedenoa2@uteq.edu.ec | Acreditado. **Incorporado el 2026-09-02**; sus confirmaciones empiezan con la ronda terminal |
+
+Recuento actualizado el 2026-09-12 sobre el commit `3080481`.
 
 Hasta el 2026-09-03 esta tabla declaraba **cero** confirmaciones para el tercer integrante, y
 se dejaba el cero a la vista porque la alternativa habria sido afirmar una contribucion que el

@@ -14,9 +14,9 @@ desde el propio historial. El detalle confirmacion por confirmacion esta en [`..
 
 | Integrante | Correo institucional | Commits | Primera | Ultima |
 |---|---|---|---|---|
-| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **154** | 2026-08-30 | 2026-09-09 |
+| Gary Alberto Sanchez Cornejo | gsanchezc6@uteq.edu.ec | **162** | 2026-08-30 | 2026-09-12 |
 | Yeranick Esther Munoz Quinonez | ymunozq@uteq.edu.ec | **83** | 2026-08-30 | 2026-09-07 |
-| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **11** | 2026-09-04 | 2026-09-09 |
+| Winston Damian Cedeno Avila | wcedenoa2@uteq.edu.ec | **12** | 2026-09-04 | 2026-09-09 |
 
 Comprobable con `git shortlog -sne main`. El total de esta tabla es una confirmacion
 menor que el historial completo, porque la declaracion no puede incluir el commit que la deposita.
@@ -27,23 +27,23 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Analista lider; especificacion, componente empirico e integracion
 
-**Confirmaciones: 154**, de 2026-08-30 a 2026-09-09.
+**Confirmaciones: 162**, de 2026-08-30 a 2026-09-12.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
-| Evidencia de campo y etica | 668 |
-| Documentos de raiz | 167 |
+| Evidencia de campo y etica | 676 |
+| Documentos de raiz | 170 |
 | Modelado UML e i* | 136 |
-| Manuscrito y deposito | 124 |
-| Componente empirico | 100 |
+| Manuscrito y deposito | 126 |
+| Componente empirico | 104 |
+| Paquete de datos | 72 |
 | Defensa | 61 |
-| Paquete de datos | 59 |
-| Especificacion de requisitos | 54 |
+| Especificacion de requisitos | 57 |
 | Producto minimo viable | 53 |
-| Evidencia de autoria | 43 |
-| Trazabilidad | 38 |
+| Evidencia de autoria | 48 |
+| Trazabilidad | 40 |
 | Otros | 8 |
 
 ### Confirmaciones
@@ -204,6 +204,14 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `a194c26` | 2026-09-08 | fix(defensa): el grafico de participacion no seguia su escala y el libreto se elogiaba solo |
 | `0f914b0` | 2026-09-08 | feat(defensa): la diapositiva 9 pasa a ser el paquete de replicacion y el deposito FAIR |
 | `fc145fa` | 2026-09-09 | docs(defensa): las cifras del libreto pasan de letra a digito |
+| `6bb3b08` | 2026-09-09 | docs(autoria): reejecuta la verificacion previa sobre el clon limpio de 298e28f |
+| `32d4f49` | 2026-09-11 | docs(changelog): declara la linea base vigente 2B-final-v4.0 al tope del registro |
+| `b9783c7` | 2026-09-11 | chore(integridad): regenera los manifiestos sobre la copia actualizada |
+| `25ba498` | 2026-09-12 | fix(ers): el ERS en A4 ya no desborda la caja de texto |
+| `db71b2a` | 2026-09-12 | fix(etica): quema las cedulas de los PDF de etica y declara el tratamiento de datos |
+| `52713e9` | 2026-09-12 | feat(datos): la orden unica de 07_Datos regenera tambien las tablas y figuras del documento |
+| `814d45d` | 2026-09-12 | fix(publicacion): el manuscrito ya no presenta el 0,41 como umbral pactado |
+| `e13df21` | 2026-09-12 | fix(autoria): la declaracion de uso de IA cuadra con el repositorio |
 
 ---
 
@@ -324,15 +332,16 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 
 **Rol:** Transcripcion y anonimizacion del corpus de entrevistas
 
-**Confirmaciones: 11**, de 2026-09-04 a 2026-09-09.
+**Confirmaciones: 12**, de 2026-09-04 a 2026-09-09.
 
 ### Areas sobre las que trabajo
 
 | Area | Archivos tocados |
 |---|---|
 | Evidencia de campo y etica | 33 |
+| Documentos de raiz | 9 |
 | Evidencia de autoria | 9 |
-| Documentos de raiz | 8 |
+| Defensa | 2 |
 | Especificacion de requisitos | 1 |
 | Trazabilidad | 1 |
 
@@ -351,6 +360,7 @@ menor que el historial completo, porque la declaracion no puede incluir el commi
 | `f3334b8` | 2026-09-06 | feat(codificacion): codifica EV-24 y EV-25 y cierra el corpus al 100 por ciento |
 | `3eda626` | 2026-09-09 | feat(evidencias): transcribe y anonimiza las tres sesiones tecnicas, EV-26, EV-27 y EV-28 |
 | `aed73c3` | 2026-09-09 | chore(integridad): incorpora al manifiesto las tres transcripciones tecnicas |
+| `298e28f` | 2026-09-09 | feat(defensa): deposita la defensa grabada a tres voces |
 
 ---
 
@@ -376,4 +386,4 @@ Firma: ______________________________    Fecha: ______________
 
 ---
 
-Generado el 2026-09-09 desde el historial del repositorio.
+Generado el 2026-09-12 desde el historial del repositorio.

@@ -15,7 +15,7 @@ Este README declara el estado real de cada elemento. **Los doce estan depositado
 
 | Cod. | Elemento | Estado | Que contiene |
 |---|---|---|---|
-| A1 | `bitacora_sesiones.csv` | **Depositado** | 11 filas. Derivado del historial por `generar_bitacora.py`: una por persona y dia con confirmaciones. Ningun campo se escribe a mano |
+| A1 | `bitacora_sesiones.csv` | **Depositado** | 24 filas, del 2026-08-30 al 2026-09-12. Derivado del historial por `generar_bitacora.py`: una por persona y dia con confirmaciones. Ningun campo se escribe a mano |
 | A2 | `capturas/` | **Depositado. 3 de 3 por integrante** | Nueve capturas, tres por persona, cada una en su propia maquina. En todas se ven el archivo del proyecto abierto, el reloj del sistema y la sesion de usuario |
 | A3 | Fuentes editables | **Depositado** | En el propio arbol, junto a cada imagen exportada. Inventario de 44 fuentes en `fuentes_editables.md` |
 | A4 | `grabaciones/` | **Depositado** | Dos sesiones de trabajo de 15:18 y 15:43 con pantalla compartida y discusion audible, mas 18 capturas tomadas durante ellas |
@@ -24,7 +24,7 @@ Este README declara el estado real de cada elemento. **Los doce estan depositado
 | A7 | `doble_codificacion/` | **Depositado** | Las dos hojas de codificacion independientes sobre los mismos 39 fragmentos, el script del acuerdo y sus resultados. Kappa de Cohen **0,548** para el codigo y **0,911** para la categoria, con intervalo por bootstrap |
 | A8 | `correspondencia/` | **Depositado** | Tres capturas de la coordinacion de la ronda terminal y la consulta al docente sobre las firmas de A10 con su respuesta. Datos de terceros censurados |
 | A9 | `declaracion_uso_ia.md` | **Depositado** | Por seccion, incluidas aquellas en las que no se empleo ninguna herramienta |
-| A10 | `aporte_individual.md` · `.pdf` | **Depositado y firmado** | Generado desde el historial por `04_Trazabilidad/generar_aporte_individual.py`. Firmado por los tres integrantes acreditados el 2026-09-04 |
+| A10 | `aporte_individual.md` · `.pdf` | **Depositado y firmado** | Generado desde el historial por `04_Trazabilidad/generar_aporte_individual.py`. El `.md` se regenero el 2026-09-12 y cubre el historial hasta esa fecha. El `.pdf` es el que firmaron los tres integrantes acreditados el 2026-09-04 y cubre el historial hasta ese dia |
 | A11 | `exif_inventario.csv` | **Depositado** | Las dos fotografias de A6 con su fecha de captura leida de los metadatos, el dispositivo y el hash. Las dos conservan la fecha |
 | A12 | `.mailmap` | **Depositado** | En la raiz del repositorio, que es donde Git lo lee |
 
