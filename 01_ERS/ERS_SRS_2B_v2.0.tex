@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{longtable}
+\usepackage{array}
 \usepackage{booktabs}
 \usepackage{amssymb}
 \usepackage[table]{xcolor}
@@ -13,6 +14,12 @@
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{lastpage}
+
+% Columna de ancho proporcional al ancho de texto: P{fraccion}. Las tablas se
+% disenaron con anchos fijos en centimetros que, en A4 con margenes de 2,5 cm,
+% sumaban mas que la caja de texto. Asi el ancho total nunca la excede.
+\newcolumntype{P}[1]{>{\hspace{0pt}}p{\dimexpr #1\linewidth-2\tabcolsep-2\arrayrulewidth\relax}}
+\setlength{\emergencystretch}{3em}
 
 \graphicspath{{figuras/}{../03_Modelado/01_Contexto/}{../03_Modelado/02_iStar_SD/}{../03_Modelado/03_iStar_SR/}{../03_Modelado/04_Casos_Uso/}{../03_Modelado/05_Clases/}{../03_Modelado/06_Secuencia/}{../03_Modelado/07_Actividad/}{../03_Modelado/08_Estados/}{../03_Modelado/09_DFD/}{../03_Modelado/10_Componentes/}{../03_Modelado/11_Despliegue/}{../03_Modelado/12_Prototipos_Interfaz/}}
 
