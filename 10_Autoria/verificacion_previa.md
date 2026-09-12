@@ -8,8 +8,8 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 
 | | |
 |---|---|
-| Comprobado sobre | un clon limpio del remoto |
-| Version | `298e28f` |
+| Comprobado sobre | la copia de trabajo local |
+| Version | `32d4f49` |
 
 ---
 
@@ -17,8 +17,8 @@ Seccion 11 de la guia de desarrollo del 2026-09-02. Las doce comprobaciones se
 
 | N.º | Comprobacion | Cumple | Detalle |
 |---|---|---|---|
-| 1 | Se clono en carpeta limpia y se compilo el documento principal desde el .tex siguiendo unicamente el README | **Si** | Compilado sobre el clon con pdfLaTeX + BibTeX, sin errores |
-| 2 | El PDF resultante coincide con el entregado y no presenta referencias sin resolver | **Si** | 27 paginas regeneradas, 0 referencias sin resolver. La comparacion es por contenido y no por suma: pdfLaTeX incrusta la fecha de compilacion, de modo que dos PDF del mismo fuente nunca son byte a byte iguales |
+| 1 | Se clono en carpeta limpia y se compilo el documento principal | Manual | No comprobado: ejecute con --clonar |
+| 2 | El PDF resultante coincide y no tiene referencias sin resolver | Manual | No comprobado: ejecute con --clonar |
 | 3 | No existe ningun archivo de cero o un byte cuyo nombre anuncie contenido de evidencia | **Si** | Cero archivos de 0 o 1 byte en todo el arbol |
 | 4 | La comprobacion de sumas termina sin error sobre el clon limpio | **Si** | 974 de 974 sumas correctas |
 | 5 | Todos los autores del historial son integrantes declarados con correo institucional | **Si** | 3 autor(es): gsanchezc6@uteq.edu.ec, wcedenoa2@uteq.edu.ec, ymunozq@uteq.edu.ec |
