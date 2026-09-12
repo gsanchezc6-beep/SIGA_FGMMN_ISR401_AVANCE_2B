@@ -8,6 +8,33 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.13.0] - 2026-09-11
+
+Cierre de la rubrica de cierre del PFC. Una sola entrada, deliberadamente pequena, para
+resolver el unico item del Bloque A que el repositorio no dejaba cerrado: la declaracion
+de la linea base vigente dentro del propio CHANGELOG.
+
+### Cambiado
+
+- **Linea base vigente, declarada.** El README ya declaraba `2B-final-v4.0` como la unica
+  linea base vigente del examen final (commit `6bb3b08`). El CHANGELOG reproducia la
+  declaracion de la entrada `[2B-1.7.0]`, que nombraba `2B-final-v2.1` y quedo atras al
+  etiquetarse `2B-final-v3.0` y luego `2B-final-v4.0`. Se reescribe aqui, al tope del
+  registro, para que la fuente unica de verdad sea esta:
+
+  | Etiqueta | Estado | Que identifica |
+  |---|---|---|
+  | **`2B-final-v4.0`** | **VIGENTE** | La version entregada para el examen final de la semana 19, sobre el commit `6bb3b08` |
+  | `2B-final-v3.0` | Historica | La que se deposito en Zenodo el 2026-09-04, cuando se cerro `2B-1.9.0` |
+  | `2B-final-v2.1` | Historica | La que el docente califico provisionalmente con 7,80/10 sobre el commit `0e69071` |
+  | `2B-final` | Historica | Apunta al mismo commit que `2B-final-v2.1`. Se conserva porque pudo citarse externamente |
+
+  Las cuatro etiquetas siguen anotadas; el arbol no se reescribe. Lo que se reescribe es
+  unicamente el texto que dice cual es la vigente, para que el repositorio no se lea como
+  si declarara dos lineas base a la vez.
+
+---
+
 ## [2B-1.12.0] - 2026-09-07
 
 La tercera sesion de validacion con usuario tecnico, `WT-10`, que cierra el reparto de
