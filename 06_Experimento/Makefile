@@ -85,7 +85,7 @@ saturacion: entorno
 # inflexion (Enfoque 1). Cohen d=0.5, alpha=0.05, potencia deseada=0.80.
 potencia: entorno
 	$(PY) $(SCRIPTS)/power_calculation.py \
-		--n-actual 3 \
+		--n-actual $(words $(wildcard $(CRUDOS)/juez*.csv)) \
 		--salida-csv $(RES)/power_calculation.csv \
 		--salida-tex $(TABS)/tabla_power_calculation.tex
 

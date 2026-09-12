@@ -1,0 +1,32 @@
+Conjunto B - requisitos funcionales elicitados por el equipo humano
+Proyecto SIGA - cuasi-experimento de evaluacion ciega
+Generado por 07_Datos/scripts/etapa4_conjuntos_texto.py desde
+datos_crudos/paquete_evaluacion_ciega.md y datos_crudos/asignacion_brazo_items.csv.
+No editar a mano.
+Requisitos: 25
+
+Item-01. El sistema debe permitir el monitoreo y ajuste remoto de la climatización del aula.
+Item-02. El sistema debe detectar automáticamente si un aula está ocupada o vacía mediante sensores de presencia.
+Item-03. El sistema debe apagar automáticamente los equipos de un aula cuando esta quede desocupada.
+Item-06. El sistema debe permitir programar horarios automatizados de encendido y apagado de equipos.
+Item-07. El sistema debe analizar el comportamiento histórico de los equipos para estimar la probabilidad de fallas futuras mediante Inteligencia Artificial.
+Item-08. El sistema debe permitir el monitoreo y control remoto de los proyectores del aula.
+Item-09. El sistema debe registrar en una bitácora las acciones relevantes ejecutadas por los usuarios del sistema.
+Item-11. El sistema debe notificar de forma inmediata al personal técnico cuando una falla afecte una clase en curso o comprometa equipos esenciales.
+Item-12. El sistema debe controlar automáticamente el apagado energético de equipos según reglas configuradas.
+Item-13. El usuario autorizado debe poder visualizar y enviar comandos (encender/apagar/ajustar) a los dispositivos de un aula sin desplazarse físicamente.
+Item-14. El sistema debe generar reportes estadísticos periódicos sobre el uso y estado de las aulas.
+Item-19. El sistema debe monitorear la conectividad de red de los dispositivos IoT instalados en las aulas.
+Item-24. El sistema debe permitir a la persona usuaria exportar sus propios datos personales almacenados, conforme al derecho de acceso.
+Item-27. El sistema debe generar y enviar alertas automáticas cuando detecte anomalías técnicas o condiciones fuera de los parámetros configurados.
+Item-29. El sistema debe permitir gestionar solicitudes de mantenimiento, desde su registro hasta su cierre.
+Item-33. El sistema debe capturar en tiempo real temperatura, humedad y ocupación de cada aula mediante sensores IoT distribuidos.
+Item-34. El sistema debe presentar un panel de control centralizado con la información consolidada de sensores, proyectores, climatización y conectividad.
+Item-35. El sistema debe registrar el historial de ocupación de cada aula incluyendo fecha, hora de inicio, fin, duración y estado detectado.
+Item-36. El sistema debe permitir exportar reportes administrativos en formato PDF y Excel.
+Item-38. El sistema debe enviar notificaciones automáticas cuando detecte proyectores o equipos de climatización encendidos fuera del horario académico vigente.
+Item-39. El sistema debe permitir el acceso diferenciado por roles, habilitando únicamente las funciones autorizadas según el perfil del usuario.
+Item-43. El sistema debe integrarse con el sistema de videovigilancia existente para consulta agregada de estado.
+Item-44. El sistema debe analizar patrones de consumo energético de los equipos del aula.
+Item-49. El sistema debe registrar cada falla y mantenimiento con fecha, hora, tipo de incidente, aula, equipo afectado y responsable.
+Item-51. El sistema debe permitir a la persona usuaria solicitar la rectificación de sus datos personales almacenados.

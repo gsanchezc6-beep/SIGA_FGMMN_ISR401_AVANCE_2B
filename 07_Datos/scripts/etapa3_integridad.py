@@ -36,6 +36,10 @@ ESPEJO = {
         "06_Experimento/datos_crudos/corpus_rf_rnf_etiquetado.json",
     "datos_crudos/respuestas_cuestionario.csv":
         "06_Experimento/datos_crudos/respuestas_cuestionario.csv",
+    "datos_crudos/material_fuente_LLM.txt":
+        "06_Experimento/prompts_llm/material_fuente_LLM.txt",
+    "datos_crudos/paquete_evaluacion_ciega.md":
+        "06_Experimento/instrumentos/Paquete_Evaluacion_Ciega_Jueces.md",
 }
 
 

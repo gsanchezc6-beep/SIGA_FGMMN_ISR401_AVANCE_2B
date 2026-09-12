@@ -17,13 +17,20 @@ python 07_Datos/scripts/ejecutar.py
 ```
 
 Eso reconstruye **todo** el contenido de `datos_procesados/` y de `resultados/` a partir
-unicamente de `datos_crudos/`, y termina comprobando la integridad del paquete.
+unicamente de `datos_crudos/`, **regenera las tablas y figuras del documento** y comprueba
+que salen identicas byte a byte a las depositadas, y termina comprobando la integridad del
+paquete.
 
-**No hace falta instalar nada.** Los scripts usan solo la biblioteca estandar de Python
-3.8 o superior. No hay `pip install`, ni entorno virtual, ni fichero de dependencias que
-pueda quedarse obsoleto. Se tomo esa decision precisamente para que la comprobacion de
-reproducibilidad no dependa de que un tercero consiga instalar las versiones correctas de
-nada.
+**Una sola dependencia previa.** Las etapas propias del paquete usan solo la biblioteca
+estandar de Python. La etapa `documento` ejecuta la cadena de analisis estadistico, que
+necesita seis bibliotecas con version fijada. Se instalan una vez, antes de la orden:
+
+```
+pip install -r 06_Experimento/requirements.txt
+```
+
+Si faltan, la etapa `documento` lo dice y se detiene sin tocar nada; no hay que editar
+ningun archivo ni ejecutar nada a mano.
 
 Para ver las etapas sin ejecutarlas:
 
@@ -39,7 +46,7 @@ python 07_Datos/scripts/ejecutar.py --listar
 |---|---|
 | `datos_crudos/` | Los datos **tal como salieron del instrumento**, sin ninguna edicion manual |
 | `datos_procesados/` | Derivados, generados solo por los scripts. Se pueden borrar y regenerar |
-| `scripts/` | El orquestador y las tres etapas |
+| `scripts/` | El orquestador y las cinco etapas |
 | `resultados/` | Tablas generadas por los scripts. Nunca escritas a mano |
 | `diccionario_datos.csv` | Cada columna de cada CSV: tipo, unidad, rango, faltantes y procedencia |
 | `desviaciones.md` | Toda diferencia respecto de lo previsto en el protocolo, con fecha y motivo |
@@ -53,8 +60,17 @@ python 07_Datos/scripts/ejecutar.py --listar
 |---|---|
 | `juez1.csv`, `juez2.csv`, `juez3.csv` | Las hojas de puntuacion devueltas por cada juez. 51 items x 5 dimensiones |
 | `asignacion_brazo_items.csv` | A que brazo del experimento pertenece cada item ciego: `Humano` o `LLM` |
-| `corpus_rf_rnf_etiquetado.json` | El corpus fuente completo del que salieron ambos conjuntos de requisitos |
+| `material_fuente_LLM.txt` | **El corpus fuente comun** del que salieron ambos conjuntos de requisitos: las transcripciones anonimizadas de la segunda ronda de campo, tal como se entregaron al modelo. EV-15 esta suprimida por retiro del consentimiento |
+| `paquete_evaluacion_ciega.md` | El instrumento entregado a los jueces: los 51 enunciados con su identificador ciego, en el orden en que se presentaron |
+| `corpus_rf_rnf_etiquetado.json` | Los requisitos elicitados por el equipo con su trazabilidad: casos de uso, evidencias, componentes y priorizacion |
 | `respuestas_cuestionario.csv` | Las 31 respuestas del cuestionario digital v2.0 (EV-17), anonimas |
+
+Las dos primeras son copias identicas byte a byte de
+`06_Experimento/prompts_llm/material_fuente_LLM.txt` y
+`06_Experimento/instrumentos/Paquete_Evaluacion_Ciega_Jueces.md`; la etapa `integridad` lo
+comprueba. El registro de las instrucciones dadas al modelo —consigna literal, modelo,
+interfaz, fecha y parametros, y que parte de ese registro no existe— esta en
+[`06_Experimento/prompts_llm/prompt_llm_conjunto_A.md`](../06_Experimento/prompts_llm/prompt_llm_conjunto_A.md).
 
 ### Las etapas
 
@@ -62,6 +78,8 @@ python 07_Datos/scripts/ejecutar.py --listar
 |---|---|
 | `formato_largo` | `evaluacion_ciega_formato_largo.csv` — evaluador, requisito, orden de presentacion, brazo, criterio y puntuacion. 765 filas |
 | `acuerdo_ic` | `acuerdo_interevaluador_ic.csv` — kappa de Cohen ponderado y de Fleiss, cada uno con su intervalo de confianza del 95 % |
+| `conjuntos` | `conjunto_A_llm.txt` (26 requisitos) y `conjunto_B_humano.txt` (25), en texto plano y con el enunciado literal que vieron los jueces. No contienen la tabla de desciego |
+| `documento` | Ejecuta `06_Experimento/replicar.py` y compara con `checksums.sha256` las 18 salidas del documento: tablas, figuras y resultados intermedios. Falla si una sola difiere |
 | `integridad` | Comprueba la correspondencia con `06_Experimento`, la cobertura del diccionario, y regenera el manifiesto de sumas |
 
 ---
@@ -123,7 +141,34 @@ paquete son:
 | 765 valoraciones, 51 items, 3 jueces | Reporte, manuscrito y ERS | `formato_largo` |
 
 Los tamanos del efecto, los contrastes de hipotesis y el calculo de potencia se generan en
-`06_Experimento` con `replicar.py`, que es la cadena del estudio y se conserva intacta.
+`06_Experimento` con `replicar.py`, que es la cadena del estudio. La etapa `documento` la
+ejecuta desde aqui y comprueba sus salidas, de modo que tambien esos numeros salen de la
+misma orden unica.
+
+| Numero | Donde aparece | Se regenera con |
+|---|---|---|
+| Tamano del efecto por dimension con IC del 95 %, analisis primario (n = 3 jueces) | Manuscrito | `documento` → `resultados/efectos.csv` |
+| Tamano del efecto por dimension con IC del 95 %, requisito como unidad (25 frente a 26) | Manuscrito, tabla por item | `documento` → `resultados/analisis_por_item.csv` |
+| Potencia alcanzada | Manuscrito y reporte | `documento` → `resultados/power_calculation.csv`, con el numero de jueces **contado** en `datos_crudos/`, no escrito a mano |
+
+---
+
+## 6b. Justificacion del tamano muestral y del numero de evaluadores
+
+Consta **antes del analisis**, en el registro previo del protocolo en OSF
+(`10.17605/OSF.IO/7PQ3H`, aceptado el 2026-08-02), cuyo texto integro se conserva en
+`06_Experimento/registro_previo/osf_registration_api.json`:
+
+- **Tamano de la muestra.** No hay muestreo: se analiza la **poblacion completa** de
+  requisitos funcionales elegibles generados por los dos enfoques en el estudio de caso,
+  que resultaron ser 25 del equipo y 26 del modelo.
+- **Numero de evaluadores.** Un **minimo de tres** evaluadores independientes, fijado para
+  poder estimar el acuerdo entre pares (kappa de Cohen) y entre todos (kappa de Fleiss) y
+  para reducir el sesgo de un evaluador individual.
+
+Lo que el registro preveia y **no** se hizo en el orden previsto es el calculo de potencia:
+el registro dice que se evaluaria antes de contrastar las hipotesis, y se ejecuto despues.
+Esta declarado como desviacion 5 en [`desviaciones.md`](desviaciones.md).
 
 ---
 

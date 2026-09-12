@@ -3,6 +3,30 @@
 **Enfoque:** 1 (comparación de calidad de RF humanos vs. LLM), Sección 5.1 de la
 Guía y Rúbrica de la Entrega 3 (2A).
 
+## Estado de este registro (actualizado el 2026-09-12)
+
+Este archivo se redactó el 2026-08-02, el mismo día de la consulta, y se conserva tal cual
+a partir del apartado siguiente. Esta nota solo precisa **qué es íntegro y qué no**, porque
+la rúbrica de cierre pide el registro íntegro de las instrucciones dadas a la herramienta.
+
+| | Estado |
+|---|---|
+| Consigna literal que produjo el Conjunto A | **Íntegra**: apartado «Consigna exacta utilizada» |
+| Plantilla de ocho atributos indicada al modelo | **Íntegra**: apartado final |
+| Material fuente entregado | **Íntegro salvo EV-15**: `material_fuente_LLM.txt`. El texto de EV-15 se entregó al modelo el 2026-08-02 y se suprimió del archivo después, cuando el participante retiró su consentimiento (confirmado el 2026-08-13); en su lugar queda una nota. Por eso el archivo tiene hoy 23 934 palabras y no las 27 124 que se citan más abajo |
+| Modelo, interfaz y fecha | **Íntegros**: tabla siguiente |
+| Temperatura, top-p y semilla | **No disponibles**: la interfaz de chat no los expone |
+| Exportación completa de la conversación | **No existe.** La consulta se hizo en una sesión de chat de claude.ai que no se exportó, y no se puede reconstruir a posteriori sin inventarla. Lo que se registró el mismo día es lo que consta en este archivo |
+| Conjunto A resultante | `Conjunto_A_RF_LLM.md`, y en texto plano, tal como lo vieron los jueces, en `07_Datos/datos_procesados/conjunto_A_llm.txt` |
+| Conjunto B con el que se compara | En texto plano en `07_Datos/datos_procesados/conjunto_B_humano.txt` |
+
+La recomendación del final de la sección de limitaciones —repetir la generación por API
+con una sesión nueva antes de la Entrega 2B— **no se ejecutó**. El estudio se hizo con el
+Conjunto A tal como se generó el 2026-08-02 y la exposición previa se declara como amenaza
+a la validez de constructo en el manuscrito.
+
+---
+
 ## Modelo y parámetros
 
 | Campo | Valor |

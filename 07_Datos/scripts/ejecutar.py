@@ -6,9 +6,13 @@ Una sola orden, desde la raiz del repositorio clonado:
     python 07_Datos/scripts/ejecutar.py
 
 Reconstruye todo el contenido de datos_procesados/ y resultados/ a partir
-exclusivamente de datos_crudos/, y termina comprobando la integridad del
-paquete. No pide argumentos, no pregunta nada y no necesita ninguna
-dependencia externa: solo la biblioteca estandar de Python 3.8 o superior.
+exclusivamente de datos_crudos/, regenera las tablas y figuras del documento
+y las compara con el manifiesto, y termina comprobando la integridad del
+paquete. No pide argumentos ni pregunta nada.
+
+Las etapas 1 a 3 y 5 usan solo la biblioteca estandar de Python 3.8 o
+superior. La etapa 4 necesita las dependencias fijadas en
+06_Experimento/requirements.txt, y si faltan lo dice antes de ejecutar nada.
 
 Etapas:
 
@@ -16,7 +20,12 @@ Etapas:
                       orden de presentacion.
     2. acuerdo_ic     Kappa de Cohen ponderado y de Fleiss, cada uno con su
                       intervalo de confianza del 95 % por bootstrap.
-    3. integridad     Correspondencia con 06_Experimento, cobertura del
+    3. conjuntos      Los dos conjuntos de requisitos comparados, cada uno en
+                      su archivo de texto plano.
+    4. documento      Ejecuta 06_Experimento/replicar.py y comprueba que las
+                      tablas y figuras del documento salen identicas byte a
+                      byte a las del manifiesto.
+    5. integridad     Correspondencia con 06_Experimento, cobertura del
                       diccionario de datos y manifiesto de sumas.
 
 Opciones:
@@ -35,6 +44,10 @@ ETAPAS = [
      "Hoja de evaluacion a ciegas en formato largo"),
     ("acuerdo_ic", "etapa2_acuerdo_ic.py",
      "Acuerdo entre evaluadores con intervalo de confianza"),
+    ("conjuntos", "etapa4_conjuntos_texto.py",
+     "Conjuntos A y B de requisitos en texto plano"),
+    ("documento", "etapa5_documento.py",
+     "Tablas y figuras del documento, regeneradas y comprobadas"),
     ("integridad", "etapa3_integridad.py",
      "Correspondencia, diccionario y manifiesto de sumas"),
 ]
@@ -75,7 +88,8 @@ def main():
         print("")
 
     print("Listo. Todo lo de datos_procesados/ y resultados/ procede de")
-    print("datos_crudos/ y de los scripts de esta carpeta.")
+    print("datos_crudos/ y de los scripts de esta carpeta, y las tablas y")
+    print("figuras del documento se regeneraron identicas al manifiesto.")
     return 0
 
 

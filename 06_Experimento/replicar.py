@@ -33,6 +33,12 @@ RES = os.path.join(AQUI, "resultados")
 
 ANALIZAR = os.path.join(SCRIPTS, "analizar_resultados.py")
 
+# El n del calculo de potencia es el numero de jueces cuyas hojas estan en los
+# datos crudos. Se cuenta, no se escribe: si se anade o se retira una hoja, la
+# potencia se recalcula sola.
+N_JUECES = len([f for f in os.listdir(CRUDOS)
+                if f.startswith("juez") and f.endswith(".csv")])
+
 ETAPAS = [
     ("consolidar", [ANALIZAR, "--etapa", "consolidar", "--entrada", CRUDOS, "--salida", PROC]),
     ("acuerdo", [ANALIZAR, "--etapa", "acuerdo", "--entrada", PROC, "--salida", RES]),
@@ -49,7 +55,7 @@ ETAPAS = [
     ("por_item", [os.path.join(SCRIPTS, "analisis_por_item.py"),
                   "--entrada", PROC, "--salida", RES, "--tabla", TABS]),
     ("potencia", [os.path.join(SCRIPTS, "power_calculation.py"),
-                  "--n-actual", "3",
+                  "--n-actual", str(N_JUECES),
                   "--salida-csv", os.path.join(RES, "power_calculation.csv"),
                   "--salida-tex", os.path.join(TABS, "tabla_power_calculation.tex")]),
     ("figuras", [os.path.join(SCRIPTS, "generar_figuras.py"),
