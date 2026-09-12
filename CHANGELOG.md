@@ -8,6 +8,82 @@ que existen en el arbol del repositorio en el commit correspondiente.
 
 ---
 
+## [2B-1.14.0] - 2026-09-12
+
+Auditoria del repositorio contra la rubrica de cierre del Proyecto Fin de Curso, sobre un
+clon limpio de `b9783c7`, y correccion de lo que encontro. No cambia ningun requisito, ningun
+dato crudo ni ninguna cifra de resultados.
+
+### Linea base
+
+Esta tabla sustituye a la de `[2B-1.13.0]` y es la fuente unica de verdad sobre cual es la
+vigente:
+
+| Etiqueta | Estado | Que identifica |
+|---|---|---|
+| **`2B-final-v5.0`** | **VIGENTE** | La version entregada a la rubrica de cierre: el ultimo commit de `main` de esta version |
+| `2B-final-v4.0` | Historica | La del examen final de la semana 19, sobre `6bb3b08` |
+| `2B-final-v3.0` | Historica | La depositada en Zenodo el 2026-09-04 |
+| `2B-final-v2.1` | Historica | La que el docente califico provisionalmente sobre `0e69071` |
+| `2B-final` | Historica | Apunta al mismo commit que `2B-final-v2.1` |
+
+Ninguna etiqueta se mueve ni se borra: la nueva se crea sobre el commit entregado y las
+anteriores quedan como registro de lo que existio en cada fecha.
+
+### Corregido
+
+- **El manifiesto de sumas fallaba sobre un clon limpio.** `sha256sum -c checksums.sha256`
+  daba `FAILED` en `10_Autoria/verificacion_previa.md`: el commit `b9783c7` regenero el
+  manifiesto antes de reescribir ese archivo. Se regenera al final de esta version.
+- **El ERS tenia 80 desbordes horizontales** en A4 (item A4 de la rubrica de cierre). Las 68
+  tablas conservaban anchos fijos en centimetros que sumaban mas que la caja de texto; pasan
+  a anchos proporcionales a ella, y se corrigen los parrafos que se salian del margen. El
+  registro de compilacion queda con cero desbordes horizontales y verticales. El PDF pasa de
+  124 a 130 paginas y su historial de versiones gana la entrada 4.5.
+- **Cedulas en la capa de texto de PDF publicos** (item B6). La solicitud de aprobacion
+  etica, su oficio y los anexos A01, A03, A06, A07 y A09 conservaban en texto extraible las
+  cedulas del docente y de los cinco estudiantes de la nomina original, y las matriculas. Se
+  queman en el mapa de bits. `verificacion_previa.py` no las detectaba porque no leia PDF; su
+  comprobacion 10 los lee ahora.
+- **La declaracion de uso de IA no cuadraba con el repositorio** (criterio de piso P9).
+  Afirmaba cero desbordes en el ERS, un umbral de 0,41 fijado por escrito que no existe, y a
+  la vez que los requisitos derivados de la codificacion eran juicio del equipo y que 38 los
+  completo el asistente. Se corrigen las tres, y se anade lo que faltaba: el trabajo del 7 al
+  12 de septiembre y las operaciones de Git que ejecuto el asistente.
+- **El manuscrito seguia presentando el 0,41 como umbral pactado**, pese a la correccion del
+  CHANGELOG del 2026-09-08. Se retira y se recompila el PDF.
+- **`resumen_proceso_etico.md` decia que la temperatura y los parametros del modelo estaban
+  registrados**, y el registro de la consigna dice que no estan disponibles.
+
+### Anadido
+
+- **Declaracion expresa del tratamiento de datos personales**: base de licitud, finalidad,
+  plazo de conservacion —hasta el 30 de septiembre de 2028, los 24 meses del plan de gestion
+  de datos— y responsable, en la seccion 3.2 de `02_Evidencias/Etica/resumen_proceso_etico.md`
+  y en `07_Datos/LICENSE-DATA.txt`, que antes fijaba otro plazo.
+- **Dos etapas en la orden unica de `07_Datos`** (items B1 y B3). `conjuntos` escribe en texto
+  plano los dos conjuntos de requisitos comparados, tal como los vieron los jueces;
+  `documento` ejecuta la cadena de `06_Experimento` y comprueba byte a byte contra el
+  manifiesto las 18 salidas del documento. El paquete incorpora el corpus fuente comun y el
+  paquete de evaluacion ciega, como copias identicas que la etapa `integridad` vigila.
+- **Desviacion 5** en `07_Datos/desviaciones.md`: no consta que la potencia se calculara antes
+  de contrastar las hipotesis, como preveia el registro previo. Y la justificacion del tamano
+  muestral y del numero de evaluadores, que si es anterior, citada del registro en
+  `README_datos.md`.
+- **Nota de estado en `prompt_llm_conjunto_A.md`**: que parte del registro de la consigna es
+  integra y cual no existe.
+
+### Cambiado
+
+- El calculo de potencia recibe el numero de jueces **contado** en los datos crudos, no un 3
+  escrito en `replicar.py` y en el `Makefile`. La salida no cambia.
+- Se retira `06_Experimento/resultados/resumen_resultados.csv`: ningun script lo generaba y su
+  tamano del efecto para `Correccion_fuente` no coincidia con el de `efectos.csv`.
+- README: la tabla de pendientes ya no da por pendiente la defensa grabada, el arbol incluye
+  `07_Datos/` y `10_Autoria/`, y el manuscrito tiene 15 paginas, no 12.
+
+---
+
 ## [2B-1.13.0] - 2026-09-11
 
 Cierre de la rubrica de cierre del PFC. Una sola entrada, deliberadamente pequena, para

@@ -97,12 +97,12 @@ solo en el repositorio de su entrega.
 | Version citada por el manuscrito | [`10.5281/zenodo.22663649`](https://doi.org/10.5281/zenodo.22663649) --- version `2B-1.12.0`, la que corresponde a este arbol |
 | Registro previo del protocolo en OSF | [`10.17605/OSF.IO/7PQ3H`](https://doi.org/10.17605/OSF.IO/7PQ3H) |
 | **Caratula de identificacion** | [`caratula_identificacion_SGA.pdf`](caratula_identificacion_SGA.pdf), con la URL del repositorio, el identificador del ultimo commit y la etiqueta de linea base. Se deposita aqui ademas de subirse al Sistema de Gestion Academica |
-| **Linea base vigente** | Etiqueta anotada **`2B-final-v4.0`**, la version entregada para el examen final de la semana 19. Sustituye a `2B-final-v3.0`, que se quedo en el estado del 2026-09-04 y no incluye ni el corpus codificado, ni el panel ampliado, ni la tercera sesion tecnica. `2B-final`, `2B-final-v2.1` y `2B-final-v3.0` se conservan como referencia historica |
+| **Linea base vigente** | Etiqueta anotada **`2B-final-v5.0`**, la **unica vigente**: la version entregada a la rubrica de cierre del Proyecto Fin de Curso, sobre el ultimo commit de la rama `main`. Sustituye a `2B-final-v4.0`, que no incluye las correcciones de la version `2B-1.14.0`. `2B-final`, `2B-final-v2.1`, `2B-final-v3.0` y `2B-final-v4.0` se conservan **solo como referencia historica** de lo que se califico o deposito en cada fecha; ninguna es linea base. La caratula nombra el ultimo commit de contenido, porque un archivo no puede contener el identificador del commit que lo deposita |
 | Desviaciones respecto del protocolo | `06_Experimento/registro_previo/bitacora_desviaciones.pdf` |
 | Codigo archivado en Software Heritage | `swh:1:snp:861295fead33417e3efc2753fd4a34897014a891` |
 | Autoevaluacion FAIR | [`fair_assessment.pdf`](fair_assessment.pdf) --- **22 de 26 indicadores, 84,62 %**, nivel *moderate*. Salida real de F-UJI 4.0.0; el volcado crudo esta en `fair_assessment.json` y el informe lo genera `generar_fair_assessment.py` |
 | Manuscrito | `07_Publicacion/manuscrito_final.pdf` |
-| Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 124 paginas, regeneradas desde el `.tex` con el ciclo completo de `bibtex` y sin referencias sin resolver |
+| Especificacion de requisitos | [`01_ERS/ERS_SRS_2B_v2.0.pdf`](01_ERS/ERS_SRS_2B_v2.0.pdf) --- 130 paginas en A4, regeneradas desde el `.tex` con el ciclo completo de `bibtex`: sin referencias sin resolver y **sin ningun desborde** horizontal ni vertical en el registro de compilacion |
 | **Curva de saturacion tematica** | [`02_Evidencias/Codificacion_Tematica/curva_saturacion.png`](02_Evidencias/Codificacion_Tematica/curva_saturacion.png) · datos en `saturacion_por_entrevista.csv` · insertada en el manuscrito, Fig. 4 |
 | **Calculo de potencia** | [`06_Experimento/resultados/power_calculation.csv`](06_Experimento/resultados/power_calculation.csv) · script `scripts_analisis/power_calculation.py` · tabla en el manuscrito, `tabla_power_calculation.tex` |
 
@@ -198,14 +198,25 @@ SIGA_FGMMN_ISR401_AVANCE_2B/
 │
 ├── 07_Publicacion/               Manuscrito y deposito de datos
 │   ├── manuscrito_final.tex      Manuscrito en plantilla Springer LNCS
-│   ├── manuscrito_final.pdf      Compilado, 12 paginas
+│   ├── manuscrito_final.pdf      Compilado, 15 paginas
 │   ├── referencias.bib           40 entradas, 35 con DOI verificado
 │   ├── analisis_revistas.md      Eleccion de la conferencia objetivo
 │   ├── figuras/  tablas/         Producidas por los scripts, no a mano
 │   └── dataset_zenodo/           Paquete depositado en Zenodo con DOI
 │
-└── 08_Defensa/                   Presentacion, guion, folleto y banco de preguntas
+├── 07_Datos/                     Paquete de datos: una sola orden desde los datos crudos
+│   ├── datos_crudos/  datos_procesados/  resultados/
+│   ├── scripts/                  Orquestador ejecutar.py y sus cinco etapas
+│   └── diccionario_datos.csv · README_datos.md · LICENSE-DATA.txt ·
+│       checksums_datos.sha256 · desviaciones.md · registro_deposito.md
+│
+├── 08_Defensa/                   Presentacion, libreto, defensa grabada y banco de preguntas
+│
+└── 10_Autoria/                   Evidencia de autoria, elementos A1 a A12
 ```
+
+La zona restringida cifrada esta en `02_Evidencias/00_Restringido/`, y su contenido y
+custodia se describen en su `README_Restringido.md`.
 
 La estructura sigue el arbol obligatorio de la seccion 9.1 de la guia. Las evidencias
 de etica quedan en `02_Evidencias/Etica/`, junto al resto de la evidencia primaria, y el
@@ -221,8 +232,7 @@ nombra deje de existir**.
 
 | Elemento | Estado |
 |---|---|
-| Tercera sesion de validacion con usuario tecnico | **Realizada el 2026-09-07.** `WT-08`, `WT-09` y `WT-10` estan depositadas |
-| Regrabacion de la defensa a tres voces | El libreto esta cerrado en `08_Defensa/libreto_grabacion.md`. La grabacion del 2026-09-01, con dos integrantes, sigue depositada |
+| Autorizacion del cambio de composicion del equipo | La solicitud esta firmada por los tres y depositada en `04_Trazabilidad/`; **resolverla corresponde al docente** |
 
 **Lo que estuvo en esta tabla y ya no.** Se retira lo que se cumplio, con la fecha, porque
 una tabla de ausencias que no se actualiza acaba declarando huecos que no existen ---
@@ -230,6 +240,8 @@ justo lo contrario de lo que persigue:
 
 | Elemento | Se cerro |
 |---|---|
+| Regrabacion de la defensa a tres voces | 2026-09-09. `08_Defensa/2026-09-09_Defensa_Grabada.mp4`, 24 min 49 s |
+| Tercera sesion de validacion con usuario tecnico | 2026-09-07. `WT-08`, `WT-09` y `WT-10` estan depositadas |
 | `02_Evidencias/Cuestionario/Instrumento/` | 2026-09-07. El formulario seguia publicado y se exporto de ahi; sus 30 preguntas coinciden una a una con las columnas del export de respuestas |
 | `02_Evidencias/Notas_Campo/` | 2026-09-05. Las **doce** notas estan firmadas y depositadas: seis manuscritas de la ronda terminal y seis de observacion de entorno |
 | `02_Evidencias/Validacion_Walkthrough/Inspeccion/` | 2026-09-05. La inspeccion `INS-01` y la re-inspeccion `REINS-01` se celebraron y estan firmadas |
@@ -294,8 +306,16 @@ limpio sin instalar nada.
 
 ### Ejecucion completa
 
-Una sola orden, partiendo unicamente de los datos crudos. Las dos rutas son
-equivalentes y producen las mismas salidas byte a byte:
+Una sola orden, partiendo unicamente de los datos crudos, que reconstruye el paquete de
+datos, **regenera todas las tablas y figuras del documento y comprueba que salen identicas
+byte a byte a las depositadas**:
+
+```bash
+python 07_Datos/scripts/ejecutar.py
+```
+
+Por dentro, esa orden ejecuta la cadena de analisis del componente empirico, que tambien se
+puede lanzar sola por cualquiera de estas dos rutas equivalentes:
 
 ```bash
 python 06_Experimento/replicar.py
@@ -413,15 +433,16 @@ El alcance exacto de cada una se declara en [`LICENSE`](LICENSE).
 
 La declaracion obligatoria, seccion por seccion, con herramienta empleada, tipo de
 asistencia y metodo concreto de validacion aplicado, esta en
-[`02_Evidencias/Etica/declaracion_uso_ia.md`](02_Evidencias/Etica/declaracion_uso_ia.md) y se reproduce como
-anexo del reporte.
+[`10_Autoria/declaracion_uso_ia.md`](10_Autoria/declaracion_uso_ia.md).
 
 Los modelos de lenguaje intervienen en este trabajo en dos capacidades separadas: como
 **objeto de estudio**, generando el Conjunto A de Requisitos Funcionales bajo condiciones
-registradas en [`06_Experimento/prompts_llm/`](06_Experimento/prompts_llm/); y como **apoyo
-de redaccion** sobre contenido escrito por el equipo. Las secciones evaluativas
-—analisis, discusion, conclusiones, justificacion de decisiones de ingenieria y amenazas
-a la validez— son produccion propia verificada contra la evidencia primaria.
+registradas en [`06_Experimento/prompts_llm/`](06_Experimento/prompts_llm/); y como
+**asistencia en la elaboracion del entregable** —redaccion, scripts de verificacion,
+organizacion del repositorio y operaciones de Git—, inventariada en esa declaracion. Las
+secciones evaluativas —analisis, discusion, conclusiones y justificacion de decisiones de
+ingenieria— son produccion propia verificada contra la evidencia primaria; las amenazas a
+la validez del manuscrito se redactaron con asistencia y asi constan.
 
 ---
 
